@@ -37,10 +37,9 @@ Names are provisional until Phase 0 fixes the contracts. In particular,
 The skeleton needs only enough state to expose the distinctions under test:
 
 ```text
-observed -> candidate -> admitted or rejected
-admitted -> suspended -> reinstated
-admitted -> revised
+observed -> candidate -> admitted
 admitted -> revoked
+admitted -> suspended -> revoked
 admitted -> activation considered -> activated or withheld
 ```
 
@@ -50,9 +49,14 @@ model may propose a candidate but cannot declare its own proposal admitted. The
 stand in for that governor.
 
 A selected policy may insert a bounded trial before admission or use
-probationary influence, but the first schema must not require either. Those are
-formation-mechanism choices, not structural properties of developmental
-lineage.
+probationary influence, but the first materialization contract must not require
+either. Those are formation-mechanism choices, not structural properties of
+developmental lineage.
+
+The shared record vocabulary can describe rejection, reinstatement,
+supersession, expiry, and revision, but the first build does not implement them
+unless the fixture is revised to exercise them. A vocabulary entry is not a
+licensed runtime transition.
 
 ## Required separations
 
@@ -112,6 +116,7 @@ Passing this scenario establishes plumbing and separation only.
 ## Explicit non-goals for the first build
 
 - selecting a universal representation of skill or disposition;
+- implementing a universal lifecycle state machine;
 - optimizing retrieval;
 - integrating a production agent framework;
 - supporting distributed writers, compaction, or schema migration;
@@ -140,3 +145,9 @@ simplified so a pre-admission trial is not a schema requirement. It remains
 wire-only and unimplemented. The [instrument map](INSTRUMENTS.md) keeps the next
 design layer in Markdown; schema selection now waits for a named replay,
 separation, or refusal ambiguity that prose cannot settle.
+
+The fixture's semantic schedule and compatibility boundary are now explicit.
+That is sufficient for independent scenario construction, not for exchanging
+materialized event bytes. The record review removed mandatory hash-chain,
+clock, digest, and universal-lifecycle machinery. No code is licensed until the
+remaining Phase 0 packet review closes or exposes another boundary problem.

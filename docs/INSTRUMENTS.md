@@ -50,11 +50,11 @@ production components.
 | --- | --- | --- | --- | --- |
 | Practice boundary | Formation runtime | Current runtime-visible situation, declared practitioner state, exact model output | Committed action and its causal inputs | Treat model preference or harness expectation as an external consequence |
 | Consequence intake | Environment or declared consequence oracle, recorded by runtime | Committed action and externally available result | Attributed consequence occurrence, including missing or contested status | Insert an interpretation or application scope |
-| Developmental recorder and replayer | Formation runtime | Runtime-visible occurrence, interpretation, governance, and influence receipts | Append-only lineage and a reconstructable state view | Accept branch labels, hidden case families, scorer verdicts, or silently repaired history |
+| Developmental recorder and replayer | Formation runtime | Runtime-visible occurrence, interpretation, configuration, governance, and influence receipts | Append-only lineage and a reconstructable state view | Accept branch labels, hidden case families, scorer verdicts, or silently repaired history |
 | Formation procedure boundary | Formation runtime and declared runtime governor | Preserved experience, public mechanism configuration, runtime-visible evidence | Attributable proposed changes and governance receipts, if the selected mechanism emits them | Receive a correct abstraction, eligibility decision, or future case label from the harness |
 | Influence boundary | Formation runtime | Current situation and state currently permitted to influence practice | Considered, selected, or withheld influence plus the exact intervention binding | Equate storage, retrieval, or prompt presence with causal use |
-| Trajectory recorder | Trajectory harness | Assignments, runtime and environment receipts, hidden metadata, costs, scorer inputs | Append-only experimental record joined to lineage by opaque coordinates and digests | Replay trajectory-only material into practitioner state |
-| Prefix, fork, and ablation controller | Trajectory harness | Frozen protocol, one materialized prefix, declared assignment and ablation targets | Comparable branches and explicit causal exclusions | Change unrelated state, foreground inputs, or runtime-visible reasons |
+| Trajectory recorder | Trajectory harness | Assignments, runtime and environment receipts, hidden metadata, costs, scorer inputs | Append-only experimental record joined to lineage by opaque coordinates and content-identity bindings | Replay trajectory-only material into practitioner state |
+| Prefix, fork, and ablation controller | Trajectory harness | Frozen protocol, one materialized prefix, declared assignment and ablation targets | Comparable branches and explicit exclusion assignments | Change unrelated state, foreground inputs, or runtime-visible reasons |
 | Scorer | Scorer under the frozen protocol | Trajectory evidence and declared rubric | Case and trajectory verdicts outside developmental lineage | Govern admission, edit runtime state, or coach later cases |
 
 These surfaces are required by the current questions. Their decomposition is
@@ -99,10 +99,10 @@ The developmental recorder preserves only material available to the situated
 practitioner. Replay derives practitioner state at a named lineage head; cached
 views have no independent authority.
 
-This surface must keep occurrence, interpretation, governance, and influence
-separately attributable. It does not require separate stores or event families
-for every future mechanism. In particular, trial receipts exist only when a
-selected governance policy performs a trial.
+This surface must keep occurrence, interpretation, configuration, governance,
+and influence separately attributable. It does not require separate stores or
+event families for every future mechanism. In particular, trial receipts exist
+only when a selected governance policy performs a trial.
 
 The instrument loses if:
 
@@ -155,8 +155,9 @@ The trajectory recorder preserves the experiment's view: protocol identity,
 branch and case assignment, common-prefix and foreground bindings, witnessed
 runtime events, costs, ablations, and scorer results.
 
-It shares coordinates and digests with developmental lineage only for audit.
-The join must not become a merge.
+It shares coordinates and content-identity bindings with developmental lineage
+only for audit. Exact bytes or a digest may provide identity after a
+materialization syntax is selected. The join must not become a merge.
 
 The instrument loses if a trajectory row can be replayed into practitioner
 state, or if the record cannot show that compared branches received the same

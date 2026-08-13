@@ -6,6 +6,12 @@ Purpose: define the semantic records needed to replay a practitioner and audit a
 trajectory without presuming how skills, dispositions, checks, or working
 knowledge are represented.
 
+The event names below are shared semantic vocabulary, not a requirement that
+every runtime implement one universal lifecycle. A mechanism emits only the
+events its declared policy can produce. A fixture or mechanism specification
+must name the subset it requires before an implementation is judged against
+those transitions.
+
 ## Two bound records
 
 Formation uses two records with different readers and authorities.
@@ -23,27 +29,45 @@ case metadata, fork coordinates, execution receipts, costs, ablations, and
 scorer verdicts. It is never replayed into the practitioner.
 
 The records share opaque encounter, invocation, action, consequence, and event
-coordinates plus content digests where needed. A join is possible for audit; a
-merge is forbidden because it would make harness-only knowledge available to
-the runtime.
+coordinates plus content-identity bindings where an audit comparison requires
+them. A join is possible for audit; a merge is forbidden because it would make
+harness-only knowledge available to the runtime.
 
-## Common event envelope
+## Common semantic receipt
 
 Every event requires:
 
-- a schema version;
+- a contract version identifying the event semantics;
 - a unique event coordinate;
 - a record kind: `developmental` or `trajectory`;
 - an event kind and originating authority;
-- an append order and prior-event binding within its record;
-- a recorded-at time or deterministic logical clock;
+- deterministic order within its record;
 - causal-parent coordinates;
 - encounter and invocation coordinates when applicable;
 - a retention form: inline, referenced, or explicitly redacted; and
-- a content digest over the semantically relevant payload.
+- retained content or an explicit reason it is unavailable.
 
-Wall-clock time is not causal order. Hash linkage can expose mutation relative
-to a trusted head but does not authenticate a privileged writer.
+When a claim depends on equality across records or branches, the receipt also
+needs a content-identity binding sufficient for that claim. The binding may be
+exact retained bytes or a digest once serialization and digest scope are
+selected. Timestamps, logical clocks, prior-event integrity bindings, and hash
+linkage may support audit or storage, but are not semantic requirements of every
+event. Wall-clock time is not causal order, and hash linkage would expose
+mutation only relative to a trusted head; it would not authenticate a
+privileged writer.
+
+### Packet-review disposition
+
+The load-bearing envelope requirements are semantic identity, authority,
+deterministic record order, causal references, and explicit retention. They let
+an audit distinguish what happened, who supplied it, and what later state may
+depend on it.
+
+Schema syntax, timestamps, clocks, hash chains, per-event digests, and
+prior-event integrity bindings are possible instruments rather than properties
+of development. They remain unselected until a materializer or storage threat
+requires them. An integrity mechanism may expose mutation; it cannot establish
+that an originating authority was entitled or truthful.
 
 ## Developmental occurrence events
 
@@ -131,7 +155,7 @@ At each governed decision boundary the runtime records:
 - **activation considered** — current situation coordinate, eligible admitted
   versions considered by the runtime, and the public activation-policy version;
 - **change activated** — selected admitted version, exact materialization or
-  intervention digest, and reason expressed only in runtime-visible terms; or
+  intervention identity, and reason expressed only in runtime-visible terms; or
 - **activation withheld** — that no change was selected, with a runtime-visible
   refusal class.
 
@@ -153,7 +177,7 @@ The harness record includes:
 - **branch assigned** — baseline or mechanism assignment, hidden from runtime;
 - **case assigned** — held-out family and expected-result references;
 - **runtime event witnessed** — binding to developmental event coordinates and
-  digests;
+  content identity;
 - **ablation assigned** — target state element or causal edge, public exclusion
   policy, and harness-only assignment reason and expected-effect reference;
 - **cost observed** — tokens, time, tool use, checks, and storage;
@@ -164,7 +188,7 @@ The harness record includes:
 Scientific verdicts exist only here or in derived scorer output. They never
 become developmental events automatically.
 
-## Lifecycle
+## Policy-transition vocabulary
 
 ```text
 experience closed
@@ -187,6 +211,12 @@ selected policy requires it; the record vocabulary must not silently make one
 governance strategy universal. Unknown states, missing causal parents,
 unresolved retained references, and activation of a non-admitted version fail
 closed.
+
+The first deterministic fixture requires occurrence and configuration receipts,
+proposal, direct admission, activation or withholding, suspension, revocation,
+and replay constraint. It does not require trial, withdrawal, rejection,
+reinstatement, supersession, or expiry support. Listing those transitions here
+fixes their meanings if selected later; it does not put them in the first build.
 
 ## Replay views
 
@@ -235,13 +265,14 @@ A deterministic implementation must refuse:
 - a model output presented as an external consequence;
 - admission without a candidate version, source lineage, policy, warrant, or a
   trial receipt required by that policy;
-- activation before admission or while suspended, superseded, revoked, or
-  expired;
+- activation before admission or while in any policy-declared ineligible state,
+  including suspended, superseded, revoked, or expired;
 - in-place candidate revision;
 - harness-only fields in developmental payloads;
 - scorer verdicts used as governance events;
 - causal references to future or nonexistent events;
-- replay from a broken record binding; and
+- replay from broken declared ordering, causal, or retention bindings, or from
+  a broken integrity binding when one is declared; and
 - an ablation that leaves silently valid-looking dependent state.
 
 ## Loses-condition

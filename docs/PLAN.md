@@ -35,7 +35,10 @@ design before the exit condition is met. The first semantic
 unimplemented. Its first cold review removed pre-admission trial as a mandatory
 stage and retained only the occurrence, interpretation, governance, and
 influence boundaries. The [instrument map](INSTRUMENTS.md) now describes the
-pre-schema surfaces that make those boundaries observable.
+pre-schema surfaces that make those boundaries observable. A Markdown
+interchange audit now fixes the fixture's semantic schedule and declares what
+two fixture constructions must share, without claiming byte-compatible event
+exchange.
 
 ## Phase 1 — build the two-loop skeleton
 
@@ -46,8 +49,9 @@ Deliverables:
 
 - an append-only developmental lineage;
 - a practice-loop port for model, tools, environment, and consequence;
-- a formation-loop port that can register, govern, suspend, revise, and revoke a
-  candidate change, with trial as an optional policy operation;
+- a formation-loop port that can register, govern, suspend, and revoke a
+  candidate change along the fixture-required path, with trial and richer
+  lifecycle transitions remaining optional policy operations;
 - replay that reconstructs runtime state from lineage;
 - explicit activation receipts connecting an admitted change to a later action;
 - deterministic tests for separation, lifecycle, replay, and refusal paths; and

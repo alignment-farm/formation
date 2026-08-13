@@ -31,9 +31,9 @@ same experience.
    applies its declared governance policy, and selectively permits a change to
    influence practice. A pre-admission trial is included only when that policy
    requires one.
-5. **Causal ablation** — matches the governed branch except that the named
-   experience, admitted change, or activation is removed at the frozen causal
-   boundary.
+5. **Causal ablation** — matches the governed branch except that a public replay
+   constraint makes the named experience, admitted change, activation, or
+   causal edge unavailable at the frozen boundary.
 
 A strong static-practice instruction is shared across branches. If a proposed
 formation mechanism cannot beat ordinary persistence, the simpler system wins.
@@ -96,7 +96,7 @@ observable inputs as other branches.
 
 Branches receive different current-state packets, tool outputs, or environment
 revisions. Foreground data is materialized once per comparison group and bound
-by digest.
+by a content-identity rule fixed for that materialization.
 
 ### Hidden model continuity
 

@@ -56,8 +56,8 @@ Formation begins with three distinct roles:
 - The **formation runtime** acts with the model, preserves developmental
   lineage, and governs changes in the practitioner.
 - The **trajectory harness** creates controlled histories, forks identical
-  starting states, supplies environments and consequences, performs ablations,
-  and scores prospective behavior.
+  starting states, schedules environments and declared consequence oracles,
+  assigns ablations, and captures evidence for prospective scoring.
 
 This separation is load-bearing. If the trajectory harness interprets a
 consequence and quietly hands the correct lesson to the model, the experiment
@@ -100,9 +100,11 @@ trajectory experiments and formation-runtime code belong here.
 
 ## Present state
 
-The project is at **Phase 0 concept and boundary stage**. The initial concept,
-authority, record, evaluation, and build documents are drafted but unreviewed.
-No formation mechanism or developmental effect has been earned.
+The project is at **Phase 0 concept and boundary stage**. The concept,
+authority, evaluation, and build documents remain draft packet material. The
+record and fixture have undergone scoped boundary reviews; the packet as a
+whole remains unreviewed. No formation mechanism or developmental effect has
+been earned.
 
 The first deterministic [two-loop fixture](docs/FIXTURE.md) is now a
 cold-reviewed semantic draft. It exists to pressure the boundary before schema
@@ -114,7 +116,9 @@ describes the observable jobs, authority boundaries, receipts, and
 loses-conditions that a future schema must serve. No machine schema or storage
 syntax has been selected. Its first fixture handoff audit found and removed a
 harness-derived ablation view and an authority collapse in the walkthrough;
-that pass remained resolvable in prose.
+that pass remained resolvable in prose. The fixture now also fixes its semantic
+schedule and compatibility boundary while explicitly leaving byte-level event
+exchange for a future materialization decision.
 
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the
