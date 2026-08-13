@@ -43,6 +43,8 @@ runtime-visible experience; experimental verdicts may not.
 - tool results and declared external consequences;
 - runtime-authored interpretations and their source references;
 - public mechanism configuration and governance policy;
+- public replay constraints actually applied by the runtime, without hidden
+  assignment reasons or expected effects;
 - admitted-change state and prior runtime activation receipts; and
 - later counterevidence that an ordinary practitioner could observe.
 
@@ -79,6 +81,7 @@ environment or consequence oracle -> observed consequence -> runtime lineage
 
 runtime experience -> runtime interpretation -> runtime governor
 runtime governor -> admitted state -> later runtime activation
+harness ablation assignment -> public replay constraint -> runtime replay
 
 runtime and environment receipts -> harness evidence -> scorer verdict
 ```
@@ -96,6 +99,8 @@ named baseline being tested:
 - retrieval is keyed by a hidden structural label unavailable in practice;
 - a model-authored interpretation is recorded as an external consequence;
 - a scorer verdict automatically admits, edits, or revokes runtime state;
+- the harness supplies a precomputed or silently repaired practitioner view
+  instead of assigning a public replay constraint for the runtime to apply;
 - the treatment receives a richer foreground situation than its baseline;
 - provider conversation state, prompt caching behavior, or an undeclared prefix
   carries experience across nominally cold invocations;
@@ -117,6 +122,12 @@ If the study concerns naturally diverging developmental trajectories, the
 protocol must say so. Such a study answers a different question from a
 fixed-history mechanism comparison and cannot use paired-case causal language
 without accounting for the divergence.
+
+For an ablation, the harness may select the target and public exclusion policy.
+The runtime must receive that explicit public constraint and apply its own replay
+semantics. The harness retains the hidden branch label, causal-probe reason, and
+expected effect; it may not hand the runtime a precomputed derived state that
+conceals how dependent state disappeared.
 
 ## Governance boundary
 

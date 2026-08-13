@@ -165,16 +165,19 @@ foreground material.
 ## Prefix, fork, and ablation controller
 
 This harness instrument materializes an acquisition prefix once, creates
-declared branches, and removes named causal material for ablation probes. It may
-arrange experience; it may not interpret experience for the runtime.
+declared branches, and assigns named causal exclusions for ablation probes. It
+may arrange experience; it may not interpret experience or derive practitioner
+state for the runtime.
 
 A fork receipt must identify the shared head and public condition delivered to
-each runtime without delivering the hidden branch label. An ablation must
-remove dependent state transitively or make it explicitly unresolved.
+each runtime without delivering the hidden branch label. For an ablation, the
+harness supplies a public target and exclusion policy; the runtime records the
+constraint and applies its own replay semantics. Dependent state must disappear
+transitively or become explicitly unresolved.
 
 The instrument loses if a fork quietly changes foreground data, if an ablation
-repairs the branch, or if the runtime learns the hidden reason or expected
-effect of the exclusion.
+arrives as a precomputed or repaired practitioner view, or if the runtime learns
+the hidden reason or expected effect of the exclusion.
 
 No copy strategy, process-isolation mechanism, or storage snapshot format is
 selected here.

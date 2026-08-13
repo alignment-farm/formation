@@ -91,6 +91,9 @@ Before a formation condition may affect practice, the runtime records:
 - **formation condition bound** — the public mechanism and governance
   configuration assigned to that runtime, excluding branch labels, expected
   results, and other harness-only metadata.
+- **replay constraint bound** — a public exclusion or redaction constraint that
+  the runtime will apply during its own replay, naming the target and policy but
+  excluding a hidden assignment reason or expected effect.
 
 In an experiment, the harness owns the hidden assignment while the runtime owns
 the receipt for the public configuration it actually applies. This event is
@@ -188,6 +191,7 @@ Full developmental replay must be sufficient to derive:
 
 - open and closed encounters;
 - the formation condition in force after each declared fork;
+- replay constraints in force at the selected lineage head;
 - unresolved, contested, and delayed consequences;
 - candidate versions and source experiences;
 - admitted, suspended, superseded, revoked, and expired versions;
@@ -205,9 +209,12 @@ An ablation is a trajectory assignment, not a mutation of retained history. It
 creates a fork whose runtime view excludes a declared experience, candidate,
 admitted version, activation, or causal edge.
 
-Dependent state must either disappear transitively or become explicitly
+The harness records the assignment and gives the runtime only the public target
+and exclusion policy. The runtime records that constraint and derives its own
+view. Dependent state must either disappear transitively or become explicitly
 unresolved. An ablation must not silently repair the branch, alter its
-foreground situation, or expose why the element was removed.
+foreground situation, expose why the element was removed, or arrive as an
+already-derived practitioner view.
 
 ## Conformance requirements
 
@@ -216,6 +223,8 @@ A deterministic implementation must refuse:
 - interpretation payloads presented as occurrence;
 - a formation-condition receipt containing a branch label, expected result, or
   hidden case-family field;
+- a replay-constraint receipt containing a branch label, hidden ablation reason,
+  or expected effect;
 - a model output presented as an external consequence;
 - admission without a candidate version, source lineage, policy, warrant, or a
   trial receipt required by that policy;

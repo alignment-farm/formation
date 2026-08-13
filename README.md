@@ -112,7 +112,9 @@ review removed pre-admission trial as a mandatory lifecycle stage.
 The next layer remains Markdown-first. The [instrument map](docs/INSTRUMENTS.md)
 describes the observable jobs, authority boundaries, receipts, and
 loses-conditions that a future schema must serve. No machine schema or storage
-syntax has been selected.
+syntax has been selected. Its first fixture handoff audit found and removed a
+harness-derived ablation view and an authority collapse in the walkthrough;
+that pass remained resolvable in prose.
 
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the

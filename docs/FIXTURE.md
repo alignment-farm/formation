@@ -166,6 +166,46 @@ runtime receives and records only its public formation condition.
 payload. The difference between the governed and ablation branches is not
 materialized until the declared ablation boundary.
 
+## Instrument handoff audit
+
+The fixture uses the instrument surfaces in [INSTRUMENTS.md](INSTRUMENTS.md).
+This table describes logical handoffs, not required processes or APIs.
+
+| Phase | External arrangement | Runtime receives | Runtime must do | Must remain outside runtime | Required receipt |
+| --- | --- | --- | --- | --- | --- |
+| Protocol binding | Human owner freezes the fixture; harness binds it | Public runtime interface and supported mechanism identifiers | Record its base configuration | Expected paths, scorer keys, budget, and wire verdict | `T-C-001 protocol bound` and `D-C-001 practitioner initialized` |
+| Acquisition | Harness presents one authored situation and schedules the environment | Foreground situation, model output, committed action, external consequence | Conduct practice and preserve the experience without an applicability claim | Future branches, cases, and expected effects | `D-C-002` through `D-C-006`, witnessed by trajectory bindings |
+| Fork and condition | Fork the one retained prefix and assign a condition | Public formation condition only | Record the condition it will apply | Branch label and cross-branch comparison | `T-*-001 branch assigned` plus branch-local `D-*-007 formation condition bound` |
+| Formation opportunity | Schedule runtime processing at `D-C-006` | Preserved experience and public mechanism configuration | Invoke its interpreter and governor; author proposal and eligibility receipts | Expected candidate and whether the authored path should pass | `D-G-008` and `D-G-009`, with trajectory witness digests |
+| Later practice | Present byte-identical foregrounds and environment consequences | Foreground fields only | Decide influence, construct the practice request, commit the action, and record consequence | Case family, expected action, and cross-branch result | Activation or withholding, invocation, action, and consequence receipts |
+| Correction | Harness schedules the same environment-authored correction for every branch | Correction and its source binding | Contest the warrant and apply declared governance | Expected suspension and revocation path | Correction, suspension, revocation, and later withholding receipts |
+| Ablation | Assign a target and public exclusion policy | Target `D-C-005` and `transitive_exclusion` only | Record the replay constraint and derive the constrained view itself | Branch label, `causal_probe` reason, and expected downstream effect | Trajectory assignment plus `D-A-010 replay constraint bound` |
+| Scoring | Harness joins witnessed receipts; scorer applies the authored wire rubric | Nothing | Nothing | Costs, case verdicts, aggregate comparison, and wire verdict | Trajectory-only score and close receipts |
+
+The handoff loses if scheduling a runtime operation gives the harness authority
+to author its result. Knowing the scripted expected output permits the harness
+to score the wire; it does not permit the harness to append that output or a
+derived practitioner view.
+
+### Handoff-audit result
+
+The first Markdown pass exposed two authority collapses in the prose:
+
+1. the ablation path let the harness supply a derived practitioner view; and
+2. the initial handoff table described protocol freezing, environment action,
+   and scoring as undifferentiated harness work.
+
+Both are resolved above by preserving logical authority and making the runtime
+apply its own public replay constraint. The review result is:
+
+```text
+markdown_sufficient
+```
+
+No remaining disagreement in this pass requires machine syntax. Exact byte
+serialization, digest scope, and append binding remain intentionally unsettled
+until a materializer needs to compute them.
+
 ## Governed formation path
 
 The governed runtime appends:
@@ -267,10 +307,19 @@ policy: transitive_exclusion
 reason: causal_probe
 ```
 
-The runtime receives a forked replay view, not the hidden reason or expected
-effect. Excluding `D-C-005` must make the experience warrant, candidate, and
-admission unavailable or explicitly unresolved. It must not leave a
-valid-looking admitted version.
+The harness delivers only the public target and policy. The runtime appends:
+
+```text
+D-A-010 replay constraint bound
+target: D-C-005
+policy: transitive_exclusion
+```
+
+The runtime then derives the constrained view from retained lineage using its
+own replay semantics. It does not receive the hidden reason, expected effect, or
+a harness-produced view. Excluding `D-C-005` must make the experience warrant,
+candidate, and admission unavailable or explicitly unresolved. It must not
+leave a valid-looking admitted version.
 
 On the identical positive foreground case, activation is withheld and
 `blind-commit-v0` releases directly. The environment rejects the action. The
@@ -307,10 +356,12 @@ A conforming implementation refuses each of these mutations independently:
    request.
 6. An ineligible, suspended, or revoked version is activated.
 7. The ablation excludes `D-C-005` but leaves `D-A-009` eligible.
-8. A branch forks from a developmental prefix whose digest differs from
+8. The harness supplies a precomputed practitioner view instead of the runtime
+   recording and applying `D-A-010`.
+9. A branch forks from a developmental prefix whose digest differs from
    `T-C-002`.
-9. A developmental event cites a future or nonexistent causal parent.
-10. A scorer verdict is appended to developmental lineage.
+10. A developmental event cites a future or nonexistent causal parent.
+11. A scorer verdict is appended to developmental lineage.
 
 Each refusal is a separate fixture leg so one early failure cannot mask another.
 
@@ -324,9 +375,10 @@ The fixture passes only when:
 - the governed path replays deterministically through proposal and admission;
 - the positive case activates and the stronger surface decoy does not;
 - external correction produces suspension, revocation, and later silence;
+- the ablation runtime records the public constraint and derives its own view;
 - transitive ablation removes or marks every dependent state item unresolved;
 - the authored positive downstream difference disappears under ablation;
-- all ten refusal legs fail closed; and
+- all eleven refusal legs fail closed; and
 - a clean replay produces the same lineage heads and derived views.
 
 Passing produces one wire verdict. It produces no scientific or mechanism
@@ -335,8 +387,8 @@ verdict.
 ## Loses-condition
 
 This fixture loses if it can pass while the harness inserts the candidate,
-reveals hidden family identity, or treats its expected wire outcome as a runtime
-consequence. It also loses if conformance requires an implementation to adopt
-derived-artifact revision checks, a mandatory candidate trial, or this exact
-governance path as general formation architecture rather than as opaque authored
-fixture content.
+reveals hidden family identity, supplies a derived practitioner view, or treats
+its expected wire outcome as a runtime consequence. It also loses if conformance
+requires an implementation to adopt derived-artifact revision checks, a
+mandatory candidate trial, or this exact governance path as general formation
+architecture rather than as opaque authored fixture content.
