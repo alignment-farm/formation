@@ -25,9 +25,9 @@ Deliverables:
   model-authored lesson; and
 - a threat model for harness leakage and answer-copying shortcuts.
 
-Exit condition: two independent implementations could construct semantically
-compatible trajectory fixtures without agreeing on the formation mechanism.
-They need not yet exchange materialized event bytes.
+Exit condition: two independent readers can construct semantically compatible
+trajectory fixtures without agreeing on the formation mechanism. They need not
+yet allocate machine fields or exchange materialized event bytes.
 
 Current state: the [concept](CONCEPT.md), [authority boundary](AUTHORITY.md),
 [record contract](RECORD.md), [evaluation frame](EVALUATION.md), semantic
@@ -36,8 +36,10 @@ Phase 0 Markdown packet. A two-family cold review has closed its present
 boundary contradictions: runtime roles originate interpretation and governance,
 trial remains optional, fixture replay exclusion is not universal ablation, and
 semantic compatibility is distinct from byte exchange. The packet remains
-pre-evidence and unimplemented. The exit condition has not been exercised until
-two independent constructions are compared against the fixture contract.
+pre-evidence and unimplemented. Grok and Composer independently constructed its
+semantic receipt graph, their disagreements were resolved in Markdown, and both
+then found no remaining semantic disagreement. The Phase 0 semantic exit
+condition is met without selecting machine syntax.
 
 ## Phase 1 — build the two-loop skeleton
 
@@ -129,15 +131,13 @@ automatically generalize to a universal architecture.
 
 1. Treat the cold-reviewed Markdown packet and fixture as the semantic source,
    not as evidence or implementation architecture.
-2. Have two independent constructions enumerate the fixture receipts,
-   authorities, causal relations, public inputs, and refusal outcomes.
-3. Resolve any semantic disagreement in Markdown.
-4. If the constructions agree semantically but cannot exchange computed
-   identity or refusal data, select the smallest machine syntax that resolves
-   that demonstrated ambiguity.
-5. Encode and freeze the first deterministic two-loop boundary without
+2. Keep coordinate allocation, serialization, digest, clock, and storage
+   choices open until a materializer must compute them.
+3. When that pressure arrives, select the smallest machine syntax that resolves
+   it and encode the already-agreed semantic fixture.
+4. Freeze the first deterministic two-loop materialization boundary without
    promoting its policy-specific path into a universal lifecycle.
-6. Implement the lineage and forkable skeleton.
-7. Only then select the first real-engine transfer problem.
+5. Implement the lineage and forkable skeleton.
+6. Only then select the first real-engine transfer problem.
 
-No practitioner-model contact is needed to complete the first five steps.
+No practitioner-model contact is needed to complete the first four steps.

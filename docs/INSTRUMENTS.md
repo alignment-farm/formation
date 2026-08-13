@@ -31,6 +31,27 @@ build-ready.
 Markdown is not a substitute for later validation. It is the least expensive
 place to discover that an object, transition, or field has not yet been earned.
 
+## Independent construction as a review instrument
+
+Before schema selection, two independent readers construct the fixture's
+semantic receipt graph from the public packet alone. Each construction names
+receipt meanings, originating authorities, visibility, causal parents,
+schedule membership, clean outcomes, and refusal boundaries while leaving
+coordinates and byte fields unallocated where the fixture does.
+
+The comparison asks whether prose fixes one semantic object, not whether the
+readers prefer the same notation. Its inspectable receipt is the pair of
+constructions or a retained comparison summary, their disagreement list, the
+Markdown revisions that resolve semantic differences, and a fresh compatibility
+verdict from each reader.
+
+This review instrument loses if the readers share a hidden reconciliation,
+import an implementation architecture, count allowed serialization choices as
+semantic disagreements, or dismiss an authority or causal disagreement because
+a future schema could force one reading. The first fixture has exercised this
+instrument: two model-family constructions exposed prose omissions, those
+omissions were revised, and both rechecks reported no semantic disagreement.
+
 ## Roles are not instruments
 
 An authority says who may know or decide something. An instrument is a means of
