@@ -148,6 +148,18 @@ final semantic and authority rechecks return `PASS`. This establishes local
 identity and separation plumbing only; it does not establish learning,
 governance effectiveness, transfer, or any formation effect.
 
+The next Markdown gate now closes the first proposal and direct-admission
+boundary. Independent readers initially disagreed about who authored the
+candidate, who made the admission decision, what counted as the candidate
+version, and what scope the governor granted. The repaired fixture now fixes
+those meanings: the runtime interpreter authors one candidate from preserved
+experience, the declared governor admits that exact proposal version within an
+explicit scope, and the harness only schedules and witnesses the work. Baseline
+does neither operation; governed and ablation independently produce matching
+semantic paths. Two model families and an additional independent review return
+`PASS`. Markdown remains sufficient, so proposal and admission syntax is still
+unselected.
+
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the
 candidate is learned or useful. The first experimental milestone comes later:

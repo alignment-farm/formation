@@ -1,7 +1,8 @@
 # Deterministic two-loop boundary fixture v0
 
-Status: **Phase 0 cold-reviewed semantic fixture; fixture-local prefix byte
-boundary implemented and independently reviewed; remaining paths wire-only**.
+Status: **Phase 0 cold-reviewed semantic fixture; fixture-local prefix and
+condition-append boundaries implemented and independently reviewed; remaining
+paths wire-only**.
 
 Purpose: make the authority and record contracts concrete enough to expose
 incompatible interpretations before a schema or runtime is built.
@@ -112,6 +113,30 @@ boundary. The runtime invokes the interpreter and originates its output. Shared
 process hosting does not permit the harness role to author, insert, or edit that
 output.
 
+The public formation condition selects and authorizes this interpreter, so the
+condition receipt is a causal parent of the proposal. The interpreter does not
+receive the condition receipt as candidate evidence and may not copy procedure
+names or other configuration into the candidate claim.
+
+For this fixture, the exact text above is the retained candidate
+representation. Its deterministic semantic projection is:
+
+| Meaning | Fixture value |
+| --- | --- |
+| Source experience | `D-C-006 experience closed` |
+| Source consequence | `D-C-005 consequence observed` |
+| Author | `revision-check-candidate-v0`, invoked and recorded by the formation runtime |
+| Claimed applicability | A commitment of a derived object whose acceptability depends on its current authoritative source |
+| Explicit non-applicability | An object whose validity is independent of current authority |
+| Expected practice effect | Compare the artifact and authority revisions; refresh before commitment when they differ |
+| Counterevidence | An externally sourced correction to `D-C-005` showing that revision mismatch was not causal |
+| Expiry | None declared |
+
+These meanings are candidate claims, not environment facts or scorer findings.
+The equality path—commit directly when the revisions already match—belongs to
+the later practice actor under an activated intervention. It is not added to the
+candidate's expected-effect claim.
+
 ### Governor `consequence-warrant-v0`
 
 Admit the candidate directly when all of the following runtime-visible
@@ -129,6 +154,23 @@ Revoke it when an externally sourced correction invalidates the consequence
 that warranted admission. These are authored lifecycle rules, not evidence that
 the policy is generally desirable. This policy deliberately has no candidate
 trial; its admission establishes eligibility only.
+
+The governor is the decision authority for `candidate admitted`; the formation
+runtime invokes it and records its decision. For the first admission, its exact
+semantic output is:
+
+| Meaning | Fixture value |
+| --- | --- |
+| Candidate version | The exact branch-local `candidate proposed` receipt |
+| Policy | `consequence-warrant-v0` |
+| Warrant | `D-C-005` plus satisfaction of the four declared checks above |
+| Admitted scope | Commitments of derived objects whose acceptability depends on the current authoritative source; authority-independent validity is excluded |
+| Initial status | `eligible` |
+| Trial | None |
+
+The proposal receipt is the candidate version. The admission receipt is the
+governed, eligible version later influence decisions must cite. Equivalent text
+without the exact proposal lineage is not the same candidate version.
 
 ### Activator `declared-role-match-v0`
 
@@ -351,12 +393,29 @@ Admission is expected because the authored candidate and consequence are
 constructed to satisfy the authored policy. This establishes governance-path
 traversal only.
 
+The runtime appends the proposal before invoking the governor. After each
+runtime append, the harness may validate and witness the developmental receipt;
+it may not supply or repair it. A second proposal or admission at the same
+fixture head refuses: revision, rejection, supersession, and retry paths are not
+selected here.
+
 The ablation runtime independently produces the same semantic path under
 branch-local coordinates `D-A-008` through `D-A-009`. Its payloads and derived
 view match the governed path apart from coordinates and any implementation-level
 integrity bindings. `D-A-008` has parents `D-C-005`, `D-C-006`, and `D-A-007`;
 `D-A-009` has parents `D-C-005`, `D-A-007`, and `D-A-008`. The ablation is
 applied only after `D-A-009` exists.
+
+Through admission, governed and ablation match on the exact retained candidate
+text, semantic projection, interpreter authorship, admission policy, warrant,
+scope, initial status, and absence of a trial. They remain independently
+authored histories. Their opaque coordinates, exact proposal and admission
+versions, root capabilities, handoffs, and content bindings differ without
+constituting a mechanism difference.
+
+Baseline performs neither proposal nor admission. Its later
+`no_admitted_change` result is an influence-boundary outcome, not a formation
+event inserted during this phase.
 
 ## Later practice paths
 
@@ -689,6 +748,9 @@ The fixture passes only when:
   declared fork, and governed and ablation have identical validated condition
   payloads there apart from their opaque coordinates, runtime handoffs, root
   capabilities, and content bindings;
+- governed and ablation independently produce the same proposal projection and
+  admission decision through their branch-local admitted versions, apart from
+  identity and integrity facts;
 - the governed path replays deterministically through proposal and admission;
 - the positive case activates and the stronger surface decoy does not;
 - external correction produces suspension, revocation, and later silence;

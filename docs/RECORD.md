@@ -121,6 +121,27 @@ The candidate representation may be natural language, structured policy, code,
 an executable check, or another future form. The envelope treats it as retained
 content plus declared interfaces.
 
+The candidate's **author** is the declared interpreter or model that produced
+the interpretation. The formation runtime owns the recorder and preserves that
+authorship; hosting the recorder does not make the runtime, harness, or governor
+the author. When a deterministic runtime interpreter produces the candidate,
+that interpreter is the author. When the runtime asks the cold model to propose
+one, the model is the author. The harness is never an author of treatment
+candidate content.
+
+The retained representation and its declared interfaces are related but not
+interchangeable. The representation is the candidate content. Source
+references, applicability, expected effect, counterevidence, and expiry are the
+claims that later policy can inspect without asking the harness to interpret the
+content. They need not become separate machine fields before syntax is earned,
+but a fixture must state one deterministic projection from its retained
+representation to those meanings.
+
+The `candidate proposed` receipt defines that candidate version. Later
+governance cites the exact proposal version; it does not invent a second
+candidate identity from equivalent prose. A revised candidate is a new proposal
+version rather than an edit to the first.
+
 ## Runtime-configuration events
 
 Before a formation condition may affect practice, the runtime records:
@@ -172,6 +193,19 @@ Governance changes eligibility, not scientific truth:
 Revision creates a new version and supersedes the old one. History is never
 edited in place. Rejection and revocation differ: rejection precedes admission;
 revocation ends a previously admitted version.
+
+The declared runtime governor is the logical decision authority for governance
+receipts. The formation runtime may invoke the governor and host the recorder,
+but the receipt must preserve which governor and policy made the decision. A
+future machine envelope may represent recorder authority and decision authority
+separately; that syntax is not selected here.
+
+Admission scope is the permission boundary granted by the governor. Candidate
+applicability is only the candidate author's claim. A governor may admit the
+same boundary, narrow it, or refuse it, but the admitted scope must be explicit.
+Admission creates a governed version of the cited candidate with its initial
+eligibility status. Later activation cites that admitted version, not merely the
+proposal content.
 
 ## Activation events
 

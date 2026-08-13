@@ -1,6 +1,7 @@
 # Initial build boundary
 
-Status: **planning contract; implementation has not begun**.
+Status: **planning contract; the walking skeleton is incomplete, with two
+fixture-local materialization slices implemented**.
 
 ## First build objective
 
@@ -167,6 +168,16 @@ passes the combined twenty-six-test suite. Independent post-build semantic and
 authority reviews return `PASS` after concrete duplicate-assignment,
 duplicate-witness, forged-root-order, coordinate-channel, and reservation
 mutation attempts were reproduced and closed.
+
+The following proposal and direct-admission boundary remains Markdown-only.
+Cold reconstruction exposed missing distinctions between candidate author and
+recorder, governor and runtime host, candidate applicability and admitted
+scope, and equivalent text and the exact proposal version. The repaired record
+and fixture contracts now fix those meanings, baseline silence,
+treatment-branch equality, and the one-shot causal order. Both model-family
+rechecks and an additional independent review return `PASS`. No deterministic
+identity, validation, or exchange operation has yet been named for these
+receipts, so this semantic convergence does not license their materialization.
 
 The semantic [deterministic fixture v0](FIXTURE.md) and its governing packet have
 been cold-reviewed and simplified so a pre-admission trial is not a schema

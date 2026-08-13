@@ -70,6 +70,13 @@ suite has twenty-six passing tests. Independent post-build reviews return
 `PASS`; no proposal, governance, replay, or formation-effect claim follows from
 this plumbing result.
 
+The proposal and direct-admission semantic gate is also complete in Markdown.
+Independent reconstruction first exposed ambiguity in authorship, version
+identity, admission authority, and scope. The repaired fixture now determines
+one compatible object, and three rechecks return `PASS`. No new computation was
+reached, so proposal and admission bytes, coordinates, and handoffs remain
+unselected.
+
 ## Phase 1 — build the two-loop skeleton
 
 Goal: make practice and formation traversable while keeping all intelligence

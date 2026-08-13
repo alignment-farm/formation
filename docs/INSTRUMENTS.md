@@ -40,6 +40,13 @@ build-ready.
 Markdown is not a substitute for later validation. It is the least expensive
 place to discover that an object, transition, or field has not yet been earned.
 
+The first proposal and direct-admission review exercised this stopping rule.
+Independent readers found real semantic gaps in authorship, version identity,
+governor authority, and admitted scope. Repairing those gaps produced one
+compatible object, but no operation yet needed to compute its bytes, identity,
+validation, or exchange. The correct result was therefore a stronger Markdown
+contract, not another schema.
+
 ## Independent construction as a review instrument
 
 Before schema selection, two independent readers construct the fixture's
