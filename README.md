@@ -111,14 +111,17 @@ cold-reviewed semantic draft. It exists to pressure the boundary before schema
 selection or code; its authored stubs and outcomes are wire-only, and its first
 review removed pre-admission trial as a mandatory lifecycle stage.
 
-The next layer remains Markdown-first. The [instrument map](docs/INSTRUMENTS.md)
-describes the observable jobs, authority boundaries, receipts, and
-loses-conditions that a future schema must serve. No machine schema or storage
-syntax has been selected. Its first fixture handoff audit found and removed a
-harness-derived ablation view and an authority collapse in the walkthrough.
-The independent constructions exposed and then closed fixture ambiguities in
-Markdown. Only a future disagreement that prose cannot settle, or a need to
-compute identity, should force the first materialization syntax.
+The next layer remains Markdown-first. This is semantic prototyping before
+materialization, not documentation before code. The [instrument
+map](docs/INSTRUMENTS.md) keeps the prose epistemically executable by requiring
+authorities, causal receipts, clean and refusal outcomes, loses-conditions, and
+independent reconstruction. Its first fixture handoff audit exposed and removed
+a harness-derived ablation view and an authority collapse in the walkthrough;
+the two independent constructions then exposed and closed the remaining
+semantic ambiguities. No machine schema or storage syntax has been selected.
+Independent convergence on one semantic object closes the review gate; it does
+not force materialization. Formation stays in Markdown until deterministic
+computation, validation, identity, or exchange requires machine syntax.
 
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the

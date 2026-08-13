@@ -9,8 +9,16 @@ unearned architecture.
 
 ## Markdown-first rule
 
-Formation will keep an instrument in prose while prose can still expose the
-important disagreement.
+Markdown-first means semantic prototyping before materialization, not
+documentation before code. Formation will keep an instrument in prose while
+prose can still expose and resolve the important disagreement. Code would
+otherwise freeze unresolved semantics as incidental architecture and make the
+underlying defect harder to inspect.
+
+The prose must remain executable in the epistemic sense: an independent reader
+must be able to reconstruct the implied semantic object and determine what it
+permits, refuses, and fails to establish. Persuasive description alone is
+insufficient.
 
 For each instrument, the documentation should make five things answerable:
 
@@ -21,10 +29,11 @@ For each instrument, the documentation should make five things answerable:
 5. What condition shows that the instrument has crossed the boundary or failed
    to measure its claimed object?
 
-A data structure, class, service, or file format is warranted only after this
-contract leaves an ambiguity that prevents two independent implementations from
-constructing semantically compatible fixtures, or a materializer is ready to
-compute identities that prose deliberately leaves open. The first machine
+A data structure, class, service, or file format is warranted only after
+independent readers agree on the semantic object and a deterministic
+materializer needs to compute identity, validate a record, or exchange an
+instance. An unresolved semantic disagreement stays in Markdown unless typed
+structure is itself required to state the disputed boundary. The first machine
 syntax should resolve that named pressure, not merely make the repository look
 build-ready.
 
@@ -34,10 +43,12 @@ place to discover that an object, transition, or field has not yet been earned.
 ## Independent construction as a review instrument
 
 Before schema selection, two independent readers construct the fixture's
-semantic receipt graph from the public packet alone. Each construction names
-receipt meanings, originating authorities, visibility, causal parents,
-schedule membership, clean outcomes, and refusal boundaries while leaving
-coordinates and byte fields unallocated where the fixture does.
+semantic receipt graph from the public packet alone. They act as independent
+semantic compilers: disagreement is evidence that the source does not yet fix
+one object, not a reason to let implementation choose between readings. Each
+construction names receipt meanings, originating authorities, visibility,
+causal parents, schedule membership, clean outcomes, and refusal boundaries
+while leaving coordinates and byte fields unallocated where the fixture does.
 
 The comparison asks whether prose fixes one semantic object, not whether the
 readers prefer the same notation. Its inspectable receipt is the pair of
@@ -246,6 +257,8 @@ Markdown stops being sufficient when at least one of these occurs:
    computed rather than inspected.
 4. A deterministic materializer is ready to emit records and needs fail-closed
    validation before any runtime or harness code can consume them.
+5. Two implementations need to exchange instances and therefore require one
+   frozen representation and compatibility boundary.
 
 Until then, selecting JSON, JSON Lines, a schema language, or a storage model
 would answer an implementation question the research has not yet forced.

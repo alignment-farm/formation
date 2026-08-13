@@ -139,9 +139,11 @@ lesson, the boundary is insufficient.
 
 Both specifications and the deterministic fixture have completed their current
 Markdown boundary review. Two independent semantic constructions now agree on
-the receipt graph and refusal outcomes. Code remains gated on selecting and
-freezing the smallest materialization contract when a deterministic materializer
-is ready; semantic agreement itself does not select syntax or license code.
+the receipt graph and refusal outcomes. That convergence closes semantic
+prototyping; it does not select syntax or license code. Code remains gated until
+a deterministic materializer actually needs to compute identity, perform
+fail-closed validation, or exchange instances. At that point, select and freeze
+the smallest materialization contract that serves the named need.
 
 The semantic [deterministic fixture v0](FIXTURE.md) and its governing packet have
 been cold-reviewed and simplified so a pre-admission trial is not a schema
@@ -154,5 +156,5 @@ The fixture's semantic schedule and compatibility boundary are now explicit.
 That is sufficient for independent scenario construction, not for exchanging
 materialized event bytes. The record review removed mandatory hash-chain,
 clock, digest, and universal-lifecycle machinery. No code is licensed until the
-first materialization boundary is selected and frozen from a named computation
-need.
+first materialization boundary is selected and frozen from a named computation,
+validation, identity, or exchange need.

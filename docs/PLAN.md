@@ -8,6 +8,14 @@ Build only enough machinery to expose the next uncertainty. Separate wire
 claims, mechanism claims, and developmental findings. A working runtime does not
 establish formation; an attractive trajectory does not establish transfer.
 
+Markdown-first work is semantic prototyping before materialization. Its review
+gate is independent reconstruction: the packet must let independent readers
+derive one compatible semantic object, including authorities, receipt and causal
+order, refusal outcomes, and loses-conditions. Convergence completes the
+semantic gate but does not itself license schema or code. Materialization begins
+only when deterministic computation, validation, identity, or exchange needs a
+machine representation.
+
 ## Phase 0 — establish the boundary
 
 Goal: make the project falsifiable before implementing a candidate mechanism.
@@ -132,7 +140,8 @@ automatically generalize to a universal architecture.
 1. Treat the cold-reviewed Markdown packet and fixture as the semantic source,
    not as evidence or implementation architecture.
 2. Keep coordinate allocation, serialization, digest, clock, and storage
-   choices open until a materializer must compute them.
+   choices open until deterministic computation, validation, identity, or
+   exchange requires them.
 3. When that pressure arrives, select the smallest machine syntax that resolves
    it and encode the already-agreed semantic fixture.
 4. Freeze the first deterministic two-loop materialization boundary without
