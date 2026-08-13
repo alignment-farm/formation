@@ -31,6 +31,10 @@ Stop when the task's scope and authority are clear.
   explanation is evidence to inspect, never the ground truth of what changed.
 - Specifications own mechanism contracts; evidence and scorers own verdicts;
   plans do not establish findings.
+- For public-facing findings and explanations, follow [STYLE_GUIDE.md](STYLE_GUIDE.md).
+  Plain language is a check on whether the writer understands the causal account,
+  not a cosmetic rewrite after technical work. Inter-agent and lab shorthand is
+  allowed, but it must be rewritten before publication.
 - Preserve unrelated work in a dirty tree.
 
 ## Documentation ownership
@@ -47,4 +51,6 @@ Stop when the task's scope and authority are clear.
   named computation earns it.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
+- `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
+  findings and explanations.
 - Directory READMEs route locally and do not duplicate broader status prose.
