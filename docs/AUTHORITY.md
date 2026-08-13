@@ -113,10 +113,13 @@ A controlled formation comparison begins from one materialized prefix:
 
 1. Build the foreground situation and acquisition experience once.
 2. Record the exact runtime-visible prefix and model configuration.
-3. Fork only at the declared persistence or formation assignment.
+3. Fork only for a declared comparison assignment. Mechanism branches bind
+   their public persistence or formation condition at that point; branches that
+   share a condition until a later ablation remain identical until that public
+   condition is bound.
 4. Construct each later foreground case once per comparison group.
-5. Permit branches to differ only through their declared persistent state and
-   its downstream causal effects.
+5. Permit branches to differ only through their declared public conditions,
+   persistent state, and downstream causal effects.
 
 If the study concerns naturally diverging developmental trajectories, the
 protocol must say so. Such a study answers a different question from a

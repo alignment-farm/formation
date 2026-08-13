@@ -75,7 +75,8 @@ These record what happened without stating what should be learned:
 
 - **practitioner initialized** — fixed model identity/configuration, base runtime
   interface/configuration, initial lineage head, and supported mechanism
-  interfaces, without a branch-specific formation condition;
+  interface types, without branch-specific procedure identities or a formation
+  condition;
 - **encounter opened** — the runtime-visible situation and observation boundary;
 - **model invoked** — exact request or retained reference, cold-invocation
   receipt, and returned output;
@@ -87,6 +88,12 @@ These record what happened without stating what should be learned:
 
 A consequence may be missing, delayed, partial, or contested. The record must
 represent those states rather than invent closure.
+
+A correction does not edit an earlier occurrence. It is a new **consequence
+observed** receipt that cites the original consequence and action, retains the
+corrected observation, and lets replay derive the earlier consequence's
+contested or invalidated status. Governance that responds to the correction
+cites both the immutable warrant and the new correction.
 
 ## Interpretation events
 
@@ -113,8 +120,9 @@ content plus declared interfaces.
 Before a formation condition may affect practice, the runtime records:
 
 - **formation condition bound** — the public mechanism and governance
-  configuration assigned to that runtime, excluding branch labels, expected
-  results, and other harness-only metadata.
+  configuration assigned to that runtime, including its selected procedure
+  identities, but excluding branch labels, expected results, and other
+  harness-only metadata.
 - **replay constraint bound** — a public exclusion or redaction constraint that
   the runtime will apply during its own replay, naming the target and policy but
   excluding a hidden assignment reason or expected effect.
@@ -125,11 +133,18 @@ name its public receipt semantics before its records can claim conformance.
 
 In an experiment, the harness owns the hidden assignment while the runtime owns
 the receipt for the public configuration it actually applies. A `formation
-condition bound` event is expected to differ across branches at the declared
-fork boundary. A replay constraint is bound at the lineage point where its
-policy applies; in an ablation of an admitted change, that point follows the
-dependent admission. Outside an experiment, the same receipt categories record
-operator- or runtime-selected configuration without implying a harness exists.
+condition bound` event differs only where branches receive different public
+persistence or formation conditions. Branches whose declared difference occurs
+at a later ablation boundary may share the same fork-time condition. A replay
+constraint is bound at the lineage point where its policy applies; in an
+ablation of an admitted change, that point follows the dependent admission.
+Outside an experiment, the same receipt categories record operator- or
+runtime-selected configuration without implying a harness exists.
+
+The applicable configuration receipt is a causal parent of the first
+interpretation, governance, or influence decision it authorizes. A later
+ablation condition is likewise a parent of the first affected decision. Record
+order alone does not establish that a condition governed an event.
 
 ## Governance events
 
@@ -154,7 +169,8 @@ revocation ends a previously admitted version.
 
 ## Activation events
 
-At each governed decision boundary the runtime records:
+At each declared influence decision boundary after a public formation condition
+has been bound, the runtime records:
 
 - **activation considered** — current situation coordinate, eligible admitted
   versions considered by the runtime, and the public activation-policy version;
@@ -201,7 +217,8 @@ experience closed
      -> candidate withdrawn
      -> candidate rejected
      -> candidate admitted
-     -> trial opened -> trial observed -> candidate rejected or admitted
+     -> (policy-optional) trial opened -> trial observed
+        -> candidate rejected or admitted
 
 candidate admitted
   -> activation considered -> activated or withheld
@@ -236,6 +253,10 @@ Full developmental replay must be sufficient to derive:
 - current eligibility at a specified lineage head;
 - activation and withholding history; and
 - unresolved dependencies caused by redaction or replay exclusion.
+
+These views range over the event kinds supported by the selected policy. An
+unselected transition has an empty history; listing it here does not require the
+first fixture or runtime to implement a producer for it.
 
 The first build may cache these views, but caches have no independent authority.
 Trajectory replay separately derives assignments and verdicts and may join to,
@@ -290,5 +311,5 @@ A deterministic implementation must refuse:
 This contract loses if it forces an unearned ontology of skill, cannot represent
 ambiguous or absent consequences, or cannot keep scientific verdicts outside
 practitioner state. It also loses if two conforming implementations cannot
-exchange a deterministic fixture because the semantic event requirements are
+construct semantically compatible fixtures because the receipt requirements are
 too vague.

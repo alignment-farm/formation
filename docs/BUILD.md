@@ -8,36 +8,25 @@ Build a deterministic walking skeleton that proves the practice loop and
 formation loop can be separated, replayed, forked, and causally inspected. It
 must not claim to learn, generalize, or improve a model.
 
-## Proposed initial layout
+## Required build surfaces
 
-```text
-formation/
-  lineage.py       append, validate, and replay developmental events
-  practice.py      ports and orchestration for situation, inference, action,
-                   and external consequence
-  development.py   candidate-change lifecycle and activation boundary
-  runtime.py       explicit composition of practice and formation loops
-trajectory/
-  harness.py       fork starting states and execute controlled histories
-  fixtures.py      deterministic environments, consequences, and cases
-  scoring.py       computed wire and later behavioral verdicts
-tests/
-  test_lineage.py
-  test_separation.py
-  test_lifecycle.py
-  test_replay.py
-  test_forking.py
-```
+The first build must expose the formation-runtime, trajectory-harness,
+environment-or-oracle, and scorer authorities described in the instrument map.
+It also needs deterministic conformance checks for lineage, replay, separation,
+forking, governance, influence, and refusal paths.
 
-Names are provisional until Phase 0 fixes the contracts. In particular,
-`development.py` must not become a miscellaneous policy container.
+No package, module, class, or file layout is selected yet. Fixture-authored
+practice, interpreter, governor, and influence stubs retain their declared
+logical authorities even if one test process eventually hosts them. Placement
+under test or fixture support cannot give the harness role permission to author
+their developmental receipts.
 
 ## Minimal governance path
 
 The skeleton needs only enough state to expose the distinctions under test:
 
 ```text
-observed -> candidate -> admitted
+observed -> candidate proposed -> admitted
 admitted -> revoked
 admitted -> suspended -> revoked
 admitted -> activation considered -> activated or withheld
@@ -85,18 +74,26 @@ the environment's result or oracle verdict.
 
 The walking skeleton should enact this sequence without an LM:
 
-1. An identical practitioner state is forked into baseline and treatment.
-2. Both take the same authored bad action in a training encounter.
-3. Both receive the same external consequence.
-4. Only treatment proposes a candidate and applies its declared governance
-   policy; this fixture's policy admits directly from the authored consequence
-   warrant.
-5. A structurally matching later encounter activates the admitted change.
-6. A superficially similar but structurally mismatched encounter does not.
-7. Counterevidence suspends or revokes the change.
-8. Replay reproduces every state, and this fixture's declared replay constraint
-   makes only the attributed downstream influence unavailable or explicitly
-   unresolved.
+1. One cold practitioner takes the authored bad action in the acquisition
+   encounter and receives its external consequence.
+2. The retained acquisition prefix is materialized once and forked into
+   baseline, governed, and ablation branches.
+3. Governed and ablation independently propose a candidate and apply the same
+   declared governance policy; this fixture's policy admits directly from the
+   authored consequence warrant. Baseline does neither.
+4. After ablation admission and before later practice, the ablation runtime
+   binds the public replay constraint and derives its own constrained view.
+5. The same structurally matching later encounter reaches all three branches:
+   governed activates, baseline has no admitted change, and ablation withholds
+   for an unresolved dependency.
+6. A superficially similar but structurally mismatched encounter reaches
+   governed and does not activate the admitted change.
+7. The same counterevidence reaches every branch. Governed suspends and revokes
+   under the fixture policy; baseline and ablation emit no governance change.
+8. A later matching governed encounter withholds after revocation.
+9. Replay reproduces every state. In the ablation branch, excluding the source
+   consequence makes its warrant, candidate, admission, and later influence
+   unavailable or explicitly unresolved in the derived view.
 
 Passing this scenario establishes plumbing and separation only.
 
@@ -104,7 +101,8 @@ Passing this scenario establishes plumbing and separation only.
 
 - Event order and causal references are valid and deterministic.
 - Replay is authoritative; caches cannot change semantic state.
-- Forks share an exact prefix and diverge only at declared assignments.
+- Forks share an exact prefix and diverge only at declared public conditions or
+  their downstream effects.
 - No candidate affects practice before admission.
 - Every activation cites the admitted change and current situation.
 - Non-activation is observable without exposing hidden harness labels.
@@ -139,18 +137,21 @@ Those specifications should contain their own loses-conditions. If the same
 tests can be passed by the trajectory harness directly inserting a correct
 lesson, the boundary is insufficient.
 
-Both specifications now have initial drafts. Code remains gated on review plus
-one deterministic fixture that demonstrates their shared coordinates and
-refusal paths.
+Both specifications and the deterministic fixture have completed their current
+Markdown boundary review. Code remains gated on comparing two independent
+semantic constructions and resolving any resulting materialization ambiguity;
+the review itself does not select syntax or license implementation.
 
-The semantic [deterministic fixture v0](FIXTURE.md) has been cold-reviewed and
-simplified so a pre-admission trial is not a schema requirement. It remains
-wire-only and unimplemented. The [instrument map](INSTRUMENTS.md) keeps the next
-design layer in Markdown; schema selection now waits for a named replay,
-separation, or refusal ambiguity that prose cannot settle.
+The semantic [deterministic fixture v0](FIXTURE.md) and its governing packet have
+been cold-reviewed and simplified so a pre-admission trial is not a schema
+requirement. They remain wire-only and unimplemented. The [instrument
+map](INSTRUMENTS.md) keeps the next design layer in Markdown; schema selection
+now waits for a named replay, separation, identity, or refusal ambiguity that
+prose cannot settle.
 
 The fixture's semantic schedule and compatibility boundary are now explicit.
 That is sufficient for independent scenario construction, not for exchanging
 materialized event bytes. The record review removed mandatory hash-chain,
 clock, digest, and universal-lifecycle machinery. No code is licensed until the
-remaining Phase 0 packet review closes or exposes another boundary problem.
+independent construction comparison closes and any resulting materialization
+pressure is resolved.

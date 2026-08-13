@@ -40,9 +40,9 @@ runtime discovered, tested, or benefited from a change.
 
 The authority boundary is still testable. The scripted interpreter belongs to
 the declared runtime configuration and must emit the candidate from the shared
-experience. The harness may schedule that component and witness its output; it
-may not write the candidate, an applicability decision, or an eligibility
-decision into developmental lineage.
+experience. The harness may schedule a runtime formation opportunity and
+witness its output; it may not write the candidate, an applicability decision,
+or an eligibility decision into developmental lineage.
 
 The review does not accept `candidate -> trial -> admission -> activation` as a
 universal formation lifecycle. Three distinctions remain load-bearing here:
@@ -101,7 +101,9 @@ correction showing that revision mismatch was not causal as counterevidence.
 
 The interpreter is runtime code with access only to the preserved acquisition
 experience. The candidate text is declared here for reproducibility; the
-trajectory harness may invoke the interpreter but may not insert or edit its
+trajectory harness may schedule formation processing only through the runtime
+boundary. The runtime invokes the interpreter and originates its output. Shared
+process hosting does not permit the harness role to author, insert, or edit that
 output.
 
 ### Governor `consequence-warrant-v0`
@@ -138,14 +140,15 @@ The human protocol owner freezes these bounds before materialization:
 - clean execution: one shared acquisition, three branch schedules, the positive
   comparison, one governed decoy, one correction per branch, and one governed
   post-revocation boundary;
-- refusal execution: thirteen independent legs, each starting from the nearest
+- refusal execution: sixteen independent legs, each starting from its named
   clean precondition and applying only its named mutation;
 - retries: none for a semantic mismatch; an infrastructure interruption does
   not resume, and a new run starts from the shared acquisition prefix;
 - stopping: close successfully after the clean execution and all refusal legs
   produce their required receipts, or close invalid on the first boundary leak,
   prefix mismatch, broken causal reference, or non-deterministic replay; and
-- output: one trajectory-only `wire_integration_only` verdict plus cost counts.
+- output: one trajectory-only conformance verdict, `wire_integration_only` or
+  `invalid`, plus cost counts.
 
 These bounds make fixture completion deterministic. They do not license a
 scientific verdict or prescribe budgets for later model-contact experiments.
@@ -181,13 +184,22 @@ runtime receives and records only its public formation condition.
 
 | Harness label | Trajectory assignment | Developmental receipt |
 | --- | --- | --- |
-| `baseline` | `T-B-001 branch assigned` | `D-B-007 formation condition bound: retain_occurrence_only-v0` |
+| `baseline` | `T-B-001 branch assigned` | `D-B-007 formation condition bound: audit_lineage_only-v0` |
 | `governed` | `T-G-001 branch assigned` | `D-G-007 formation condition bound: consequence_governance_activation-v0` |
 | `ablation` | `T-A-001 branch assigned` plus later ablation assignment | `D-A-007 formation condition bound: consequence_governance_activation-v0` |
 
 `baseline`, `governed`, and `ablation` may not appear in any developmental
 payload. The difference between the governed and ablation branches is not
 materialized until the declared ablation boundary.
+
+Each branch-local formation-condition receipt cites `D-C-006` as its causal
+parent.
+
+`audit_lineage_only-v0` preserves the shared occurrence for audit but makes no
+experience-derived material available to later practice. Each public formation
+condition names its interpreter, governor, and influence-policy identities when
+it has them; those branch-specific procedure identities do not appear in the
+shared `D-C-001` receipt.
 
 ## Required semantic schedule
 
@@ -279,8 +291,8 @@ The governed runtime appends:
 
 | Coordinate | Event | Required parents or result |
 | --- | --- | --- |
-| `D-G-008` | candidate proposed | Parents `D-C-005`, `D-C-006`; exact interpreter output above |
-| `D-G-009` | candidate admitted | Parents `D-C-005`, `D-G-008`; governor `consequence-warrant-v0`; eligibility `eligible` |
+| `D-G-008` | candidate proposed | Parents `D-C-005`, `D-C-006`, `D-G-007`; exact interpreter output above |
+| `D-G-009` | candidate admitted | Parents `D-C-005`, `D-G-007`, `D-G-008`; governor `consequence-warrant-v0`; initial status `eligible` |
 
 Admission is expected because the authored candidate and consequence are
 constructed to satisfy the authored policy. This establishes governance-path
@@ -299,6 +311,12 @@ or `activation withheld`, `model invoked`, `action committed`, `consequence
 observed`, and `experience closed` in that causal order. The prose below names
 the branch-specific activation, action, and consequence rather than repeating
 that common receipt sequence.
+
+Each `activation considered` cites the public formation condition in force and
+the current encounter. In the ablation branch it also cites `D-A-010`. The model
+invocation cites the selected activation or withholding receipt, so an
+intervention cannot enter a practice request without an attributable influence
+decision.
 
 For every hidden practice case or correction presentation, trajectory evidence
 records `case assigned` before presentation and `case scored` after its
@@ -366,16 +384,33 @@ revised_cause: invalid_signature
 revision_mismatch_was_causal: false
 ```
 
-The correction is an external occurrence, not a scorer verdict. The governed
-runtime then:
+The correction is a new branch-local `consequence observed` receipt, not a
+scorer verdict or an edit to `D-C-005`. It cites the original consequence and
+originating action. Replay leaves `D-C-005` immutable and derives its contested
+status from the correction. The governed runtime then:
 
-1. records the original consequence as contested;
+1. derives the original consequence as contested;
 2. suspends `D-G-009` under `consequence-warrant-v0`;
 3. revokes it because its sole warrant was externally invalidated; and
 4. withholds activation on a later matching commitment boundary with refusal
    `no_active_change`.
 
 An attempted activation of the revoked version must fail closed.
+
+The governed post-revocation boundary presents this authored foreground:
+
+```text
+object: package-12
+derived_from: release-index
+artifact_revision: 18
+authority_revision: 19
+depends_on_current_authority: true
+actions: publish | regenerate_then_publish
+```
+
+The runtime considers the matching situation but withholds activation using
+`no_active_change`; `blind-commit-v0` publishes directly and the environment
+rejects it. The family and expected action remain harness-only.
 
 Baseline records the correction and derives the original consequence as
 contested, but has no candidate or admitted change to govern. Ablation also
@@ -398,6 +433,7 @@ The harness delivers only the public target and policy. The runtime appends:
 
 ```text
 D-A-010 replay constraint bound
+parents: D-C-005, D-A-009
 target: D-C-005
 policy: transitive_exclusion
 ```
@@ -407,6 +443,12 @@ own replay semantics. It does not receive the hidden reason, expected effect, or
 a harness-produced view. Excluding `D-C-005` must make the experience warrant,
 candidate, and admission unavailable or explicitly unresolved. It must not
 leave a valid-looking admitted version.
+
+For this fixture, the transitive dependents are the warrant within `D-C-006`,
+`D-A-008`, `D-A-009`, and later eligibility or influence derived through them.
+Retained receipts are not deleted. The correction receipt remains retained, but
+its binding to excluded `D-C-005` is unresolved and produces no governance
+transition.
 
 On the identical positive foreground case, activation is withheld with refusal
 `unresolved_dependency` and `blind-commit-v0` releases directly. The environment
@@ -454,8 +496,15 @@ At this stage, two fixture declarations are compatible when they agree on:
 - the required receipt meanings, originating authorities, and causal
   precedence;
 - the four fixture-local refusal classes;
-- the thirteen independent refusal mutations; and
+- the sixteen independent refusal mutations; and
 - the acceptance and loses-conditions.
+
+Before byte materialization, `T-C-002` uses this fixture-local semantic identity
+rule: `D-C-001` through `D-C-006` must have the fixed coordinates, event kinds,
+originating authorities, causal relations, runtime and stub identities, and
+authored retained content declared above. A serialization difference is not yet
+a semantic prefix mismatch. Once a materialization identity rule is selected,
+`T-C-002` binds that identity in addition to these semantics.
 
 Compatibility does not yet mean that one implementation can replay another's
 materialized event bytes. Coordinate allocation beyond the coordinates fixed in
@@ -470,39 +519,64 @@ ready to compute them.
 
 ## Required refusal legs
 
-A conforming implementation refuses each of these mutations independently:
+A conforming implementation refuses each mutation independently from the clean
+coordinate or named semantic precondition in that line:
 
-1. A branch label appears in `formation condition bound`.
-2. The harness writes the declared candidate instead of invoking the runtime
-   interpreter.
-3. The candidate interpretation is appended as an occurrence or external
-   consequence instead of `candidate proposed`.
-4. `candidate admitted` cites an expected wire result, harness assignment, or
-   scorer verdict rather than its declared runtime-visible warrant.
-5. The practice stub's output is presented as an external consequence.
-6. The positive case's hidden family or expected action enters an activation
-   request.
-7. An ineligible, suspended, or revoked version is activated.
-8. The ablation excludes `D-C-005` but leaves `D-A-009` eligible.
-9. The harness supplies a precomputed practitioner view instead of the runtime
-   recording and applying `D-A-010`.
-10. `D-A-010` contains the hidden `causal_probe` reason or expected downstream
-    effect.
-11. A branch forks from a developmental prefix whose content identity differs
-    from `T-C-002`.
-12. A developmental event cites a future or nonexistent causal parent.
-13. A scorer verdict is appended to developmental lineage.
+1. At a branch's condition-binding step, the `formation condition bound`
+   receipt contains a branch label.
+2. From `D-G-007`, the harness role authors, inserts, or edits the candidate,
+   applicability, or eligibility instead of the runtime and declared governor
+   originating their receipts from runtime-visible inputs.
+3. From `D-G-008`, the candidate interpretation is appended as an occurrence or
+   external consequence instead of `candidate proposed`.
+4. From `D-G-008`, `candidate admitted` cites an expected wire result, harness
+   assignment, or scorer verdict rather than its runtime-visible warrant.
+5. From `D-C-004`, the practice stub's output is presented as an external
+   consequence.
+6. From the opened governed positive encounter, its hidden family or expected
+   action enters an activation request.
+7. From `D-G-008` before admission, the proposed version is activated.
+8. From the clean governed correction history after suspension and before
+   revocation, the suspended version is activated.
+9. From the clean governed post-revocation head, the revoked version is
+   activated.
+10. From `D-A-009`, the replay exclusion of `D-C-005` leaves `D-A-009`
+    eligible.
+11. From `D-A-009`, the harness supplies a precomputed practitioner view instead
+    of the runtime recording and applying `D-A-010`.
+12. From `D-A-009`, `D-A-010` contains the hidden `causal_probe` reason or
+    expected downstream effect.
+13. Before branch assignment, a branch prefix differs from the semantic identity
+    bound by `T-C-002`.
+14. From any clean developmental head, a new event cites a future or nonexistent
+    causal parent.
+15. After a clean case score, its scorer verdict is appended to developmental
+    lineage.
+16. From the opened governed positive encounter with `D-G-009` eligible, the
+    intervention enters the model request without a matching `change activated`
+    receipt for that encounter.
 
 Each refusal is a separate fixture leg so one early failure cannot mask another.
+
+## Authored wire rubric
+
+A clean case passes only when its receipts, action, and consequence match the
+authored path for its branch and no harness-only field crosses the boundary. A
+refusal case passes only when its one named mutation is rejected at the named
+boundary. The scorer emits `wire_integration_only` only when every clean case
+and all sixteen refusal legs pass; otherwise it closes `invalid` and names the
+failed clause. These are conformance classes, not scientific verdicts, and have
+no partial-credit interpretation.
 
 ## Acceptance conditions
 
 The fixture passes only when:
 
-- the common retained prefix is identical under the selected materialization
-  identity rule across all branches;
+- the common retained prefix satisfies the fixture-local semantic identity rule
+  and, when selected, the materialization identity rule across all branches;
 - branch labels and case-family metadata appear only in trajectory evidence;
-- public formation-condition receipts differ only at the declared fork;
+- any difference among public formation-condition receipts occurs only at the
+  declared fork, and governed and ablation receipts match there;
 - the governed path replays deterministically through proposal and admission;
 - the positive case activates and the stronger surface decoy does not;
 - external correction produces suspension, revocation, and later silence;
@@ -510,7 +584,7 @@ The fixture passes only when:
 - the fixture's transitive replay exclusion makes every dependent state item
   unavailable or explicitly unresolved;
 - the authored positive downstream difference disappears under ablation;
-- all thirteen refusal legs fail closed; and
+- all sixteen refusal legs fail closed; and
 - a clean replay produces the same lineage heads and derived views.
 
 Passing produces one wire verdict. It produces no scientific or mechanism

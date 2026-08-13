@@ -100,11 +100,12 @@ trajectory experiments and formation-runtime code belong here.
 
 ## Present state
 
-The project is at **Phase 0 concept and boundary stage**. The concept,
-authority, evaluation, and build documents remain draft packet material. The
-record and fixture have undergone scoped boundary reviews; the packet as a
-whole remains unreviewed. No formation mechanism or developmental effect has
-been earned.
+The project is at **Phase 0 concept and boundary stage**. The documentation
+packet remains a draft, pre-evidence contract, but it has completed a two-family
+cold boundary review. That review removed the remaining permission for
+harness-originated interpretation, kept fixture replay exclusion distinct from
+ablation in general, and aligned semantic compatibility across the packet. No
+formation mechanism or developmental effect has been earned.
 
 The first deterministic [two-loop fixture](docs/FIXTURE.md) is now a
 cold-reviewed semantic draft. It exists to pressure the boundary before schema
@@ -115,10 +116,10 @@ The next layer remains Markdown-first. The [instrument map](docs/INSTRUMENTS.md)
 describes the observable jobs, authority boundaries, receipts, and
 loses-conditions that a future schema must serve. No machine schema or storage
 syntax has been selected. Its first fixture handoff audit found and removed a
-harness-derived ablation view and an authority collapse in the walkthrough;
-that pass remained resolvable in prose. The fixture now also fixes its semantic
-schedule and compatibility boundary while explicitly leaving byte-level event
-exchange for a future materialization decision.
+harness-derived ablation view and an authority collapse in the walkthrough.
+Two independent constructions must now enumerate the fixture's semantic receipt
+graph and refusal outcomes. Only a disagreement that prose cannot settle, or a
+need to compute identity, should force the first materialization syntax.
 
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the

@@ -152,4 +152,6 @@ or causes harm.
   or another protocol violation destroys the comparison.
 
 These labels bound a result; they do not establish a universal theory of
-formation.
+formation. They apply to contacted scientific comparisons. The deterministic
+fixture's `wire_integration_only` and `invalid` closures are conformance output,
+remain outside `evidence/`, and do not enter these result classes.

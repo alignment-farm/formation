@@ -23,8 +23,10 @@ For each instrument, the documentation should make five things answerable:
 
 A data structure, class, service, or file format is warranted only after this
 contract leaves an ambiguity that prevents two independent implementations from
-exchanging the deterministic fixture. The first machine syntax should resolve a
-named ambiguity, not merely make the repository look build-ready.
+constructing semantically compatible fixtures, or a materializer is ready to
+compute identities that prose deliberately leaves open. The first machine
+syntax should resolve that named pressure, not merely make the repository look
+build-ready.
 
 Markdown is not a substitute for later validation. It is the least expensive
 place to discover that an object, transition, or field has not yet been earned.

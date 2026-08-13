@@ -18,27 +18,26 @@ Deliverables:
   admitted change, activation, transfer, and negative transfer;
 - an authority map for runtime, environment, consequence oracle, and trajectory
   harness;
-- a minimal trajectory schema that keeps occurrence, interpretation, and
-  verdict separate;
+- minimal developmental and trajectory record contracts that keep occurrence
+  and interpretation attributable in developmental lineage while verdicts
+  remain trajectory-only;
 - explicit baselines: cold model, static instruction, raw episodic recall, and
   model-authored lesson; and
 - a threat model for harness leakage and answer-copying shortcuts.
 
-Exit condition: two independent implementations could construct compatible
-trajectory fixtures without agreeing on the formation mechanism.
+Exit condition: two independent implementations could construct semantically
+compatible trajectory fixtures without agreeing on the formation mechanism.
+They need not yet exchange materialized event bytes.
 
 Current state: the [concept](CONCEPT.md), [authority boundary](AUTHORITY.md),
-[record contract](RECORD.md), and [evaluation frame](EVALUATION.md) form the
-initial Phase 0 draft packet. They require review and deterministic fixture
-design before the exit condition is met. The first semantic
-[two-loop fixture](FIXTURE.md) now exercises their shared boundary but remains
-unimplemented. Its first cold review removed pre-admission trial as a mandatory
-stage and retained only the occurrence, interpretation, governance, and
-influence boundaries. The [instrument map](INSTRUMENTS.md) now describes the
-pre-schema surfaces that make those boundaries observable. A Markdown
-interchange audit now fixes the fixture's semantic schedule and declares what
-two fixture constructions must share, without claiming byte-compatible event
-exchange.
+[record contract](RECORD.md), [evaluation frame](EVALUATION.md), semantic
+[two-loop fixture](FIXTURE.md), and [instrument map](INSTRUMENTS.md) form the
+Phase 0 Markdown packet. A two-family cold review has closed its present
+boundary contradictions: runtime roles originate interpretation and governance,
+trial remains optional, fixture replay exclusion is not universal ablation, and
+semantic compatibility is distinct from byte exchange. The packet remains
+pre-evidence and unimplemented. The exit condition has not been exercised until
+two independent constructions are compared against the fixture contract.
 
 ## Phase 1 — build the two-loop skeleton
 
@@ -49,7 +48,7 @@ Deliverables:
 
 - an append-only developmental lineage;
 - a practice-loop port for model, tools, environment, and consequence;
-- a formation-loop port that can register, govern, suspend, and revoke a
+- a formation-loop port that can propose, govern, suspend, and revoke a
   candidate change along the fixture-required path, with trial and richer
   lifecycle transitions remaining optional policy operations;
 - replay that reconstructs runtime state from lineage;
@@ -90,7 +89,7 @@ Minimum branches from an identical model and initial state:
 2. raw episode retrieval;
 3. model-authored lesson;
 4. consequence-governed candidate change; and
-5. admitted change with causal ablation at the later decision boundary.
+5. a declared public ablation of each named causal contributor.
 
 Primary measures:
 
@@ -128,18 +127,17 @@ automatically generalize to a universal architecture.
 
 ## Near-term sequence
 
-1. Review the Phase 0 draft packet for hidden formation work in the harness and
-   unearned ontology in the runtime.
-2. Review the shared deterministic fixture against the authority and record
-   contracts.
-3. Keep describing the required instruments in Markdown until a named replay,
-   separation, or refusal ambiguity requires typed structure.
-4. Select the smallest machine syntax that resolves that demonstrated
-   ambiguity, then encode the fixture without promoting its policy-specific path
-   into a universal lifecycle.
-5. Freeze the first deterministic two-loop boundary contract from that encoded
-   fixture.
+1. Treat the cold-reviewed Markdown packet and fixture as the semantic source,
+   not as evidence or implementation architecture.
+2. Have two independent constructions enumerate the fixture receipts,
+   authorities, causal relations, public inputs, and refusal outcomes.
+3. Resolve any semantic disagreement in Markdown.
+4. If the constructions agree semantically but cannot exchange computed
+   identity or refusal data, select the smallest machine syntax that resolves
+   that demonstrated ambiguity.
+5. Encode and freeze the first deterministic two-loop boundary without
+   promoting its policy-specific path into a universal lifecycle.
 6. Implement the lineage and forkable skeleton.
 7. Only then select the first real-engine transfer problem.
 
-No LM contact is needed to complete the first five steps.
+No practitioner-model contact is needed to complete the first five steps.
