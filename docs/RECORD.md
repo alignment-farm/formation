@@ -49,8 +49,9 @@ to a trusted head but does not authenticate a privileged writer.
 
 These record what happened without stating what should be learned:
 
-- **practitioner initialized** — fixed model identity/configuration, runtime
-  configuration, initial lineage head, and declared mechanism identifiers;
+- **practitioner initialized** — fixed model identity/configuration, base runtime
+  interface/configuration, initial lineage head, and supported mechanism
+  interfaces, without a branch-specific formation condition;
 - **encounter opened** — the runtime-visible situation and observation boundary;
 - **model invoked** — exact request or retained reference, cold-invocation
   receipt, and returned output;
@@ -70,8 +71,9 @@ An interpretation is versioned and cannot mutate occurrence:
 - **candidate proposed** — opaque candidate representation, source-experience
   references, author, claimed applicability, expected effect, and stated
   counterevidence or expiry conditions;
-- **candidate trial opened** — declared policy, evidence available to the trial,
-  and the boundary preventing ordinary activation;
+- **candidate trial opened** — when the governing policy requires one, the
+  declared policy, evidence available to the trial, and the boundary preventing
+  undeclared ordinary influence;
 - **candidate trial observed** — runtime-visible trial outcome receipt and
   declared runtime evaluator authority, without harness-only case metadata;
   and
@@ -82,12 +84,27 @@ The candidate representation may be natural language, structured policy, code,
 an executable check, or another future form. The envelope treats it as retained
 content plus declared interfaces.
 
+## Runtime-configuration events
+
+Before a formation condition may affect practice, the runtime records:
+
+- **formation condition bound** — the public mechanism and governance
+  configuration assigned to that runtime, excluding branch labels, expected
+  results, and other harness-only metadata.
+
+In an experiment, the harness owns the hidden assignment while the runtime owns
+the receipt for the public configuration it actually applies. This event is
+expected to differ across branches at the declared fork boundary. Outside an
+experiment, the same receipt records an operator- or runtime-selected condition
+without implying a harness exists.
+
 ## Governance events
 
 Governance changes eligibility, not scientific truth:
 
-- **candidate admitted** — candidate version, completed trial, admission policy,
-  warranting runtime-visible evidence, scope, and initial status;
+- **candidate admitted** — candidate version, admission policy, warranting
+  runtime-visible evidence, any policy-required trial receipts, scope, and
+  initial status;
 - **candidate rejected** — candidate version and policy basis;
 - **change suspended** — admitted-change version and unresolved or adverse
   evidence preventing activation;
@@ -148,8 +165,8 @@ experience closed
   -> candidate proposed
      -> candidate withdrawn
      -> candidate rejected
-     -> trial opened -> trial observed -> candidate rejected
-                                      -> candidate admitted
+     -> candidate admitted
+     -> trial opened -> trial observed -> candidate rejected or admitted
 
 candidate admitted
   -> activation considered -> activated or withheld
@@ -159,15 +176,18 @@ candidate admitted
   -> expired
 ```
 
-Permitted transitions are policy-versioned. Unknown states, missing causal
-parents, unresolved retained references, and activation of a non-admitted
-version fail closed.
+Permitted transitions are policy-versioned. Trial is optional unless the
+selected policy requires it; the record vocabulary must not silently make one
+governance strategy universal. Unknown states, missing causal parents,
+unresolved retained references, and activation of a non-admitted version fail
+closed.
 
 ## Replay views
 
 Full developmental replay must be sufficient to derive:
 
 - open and closed encounters;
+- the formation condition in force after each declared fork;
 - unresolved, contested, and delayed consequences;
 - candidate versions and source experiences;
 - admitted, suspended, superseded, revoked, and expired versions;
@@ -194,9 +214,11 @@ foreground situation, or expose why the element was removed.
 A deterministic implementation must refuse:
 
 - interpretation payloads presented as occurrence;
+- a formation-condition receipt containing a branch label, expected result, or
+  hidden case-family field;
 - a model output presented as an external consequence;
-- admission without a candidate version, source lineage, completed trial,
-  policy, and warrant;
+- admission without a candidate version, source lineage, policy, warrant, or a
+  trial receipt required by that policy;
 - activation before admission or while suspended, superseded, revoked, or
   expired;
 - in-place candidate revision;

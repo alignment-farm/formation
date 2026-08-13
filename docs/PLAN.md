@@ -30,7 +30,11 @@ trajectory fixtures without agreeing on the formation mechanism.
 Current state: the [concept](CONCEPT.md), [authority boundary](AUTHORITY.md),
 [record contract](RECORD.md), and [evaluation frame](EVALUATION.md) form the
 initial Phase 0 draft packet. They require review and deterministic fixture
-design before the exit condition is met.
+design before the exit condition is met. The first semantic
+[two-loop fixture](FIXTURE.md) now exercises their shared boundary but remains
+unimplemented. Its first cold review removed pre-admission trial as a mandatory
+stage and retained only the occurrence, interpretation, governance, and
+influence boundaries.
 
 ## Phase 1 — build the two-loop skeleton
 
@@ -41,8 +45,8 @@ Deliverables:
 
 - an append-only developmental lineage;
 - a practice-loop port for model, tools, environment, and consequence;
-- a formation-loop port that can register, trial, admit, suspend, revise, and
-  revoke a candidate change;
+- a formation-loop port that can register, govern, suspend, revise, and revoke a
+  candidate change, with trial as an optional policy operation;
 - replay that reconstructs runtime state from lineage;
 - explicit activation receipts connecting an admitted change to a later action;
 - deterministic tests for separation, lifecycle, replay, and refusal paths; and
@@ -121,10 +125,13 @@ automatically generalize to a universal architecture.
 
 1. Review the Phase 0 draft packet for hidden formation work in the harness and
    unearned ontology in the runtime.
-2. Express one shared deterministic fixture against the authority and record
+2. Review the shared deterministic fixture against the authority and record
    contracts.
-3. Freeze the first deterministic two-loop lifecycle from that fixture.
-4. Implement the lineage and forkable skeleton.
-5. Only then select the first real-engine transfer problem.
+3. Select schema syntax and encode the fixture without promoting its
+   policy-specific path into a universal lifecycle.
+4. Freeze the first deterministic two-loop boundary contract from that encoded
+   fixture.
+5. Implement the lineage and forkable skeleton.
+6. Only then select the first real-engine transfer problem.
 
 No LM contact is needed to complete the first four steps.

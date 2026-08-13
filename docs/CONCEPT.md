@@ -14,14 +14,23 @@ The object of study is the governed causal path:
 experience
   -> externally observed consequence
   -> attributed candidate change
-  -> bounded trial
-  -> admitted disposition, skill, check, or working knowledge
+  -> governed eligibility decision
+  -> eligible disposition, skill, check, or working knowledge
   -> selective influence on later action
   -> continued confirmation, revision, suspension, or revocation
 ```
 
+The eligibility decision may include a bounded trial or impose probationary
+limits.
+
 Every arrow is questionable. A coherent architecture is not evidence that any
 arrow works.
+
+The distinctions between occurrence, interpretation, permission to influence,
+and attributable influence are load-bearing. A separate pre-admission trial is
+not. Trial, probationary use, direct consequence-warranted admission, and other
+governance paths are policy choices to compare rather than a universal
+formation sequence.
 
 ## Experience
 
@@ -75,8 +84,9 @@ labels while preserving only the relevant structure.
 ### Formation is not self-instruction
 
 A model can write a plausible lesson after any outcome. Its proposal is a
-candidate, not an earned change. Admission depends on consequence lineage and
-prospective performance.
+candidate, not an earned change. Permission to influence practice depends on
+consequence lineage and declared governance. Benefit remains a prospective
+experimental verdict.
 
 ### Formation is not fine-tuning
 
@@ -162,8 +172,8 @@ permissions remain separable.
    teacher?
 4. Which changes should be active dispositions, callable skills, checks,
    knowledge, or something not yet named?
-5. How does the system test a candidate change before exposing ordinary work to
-   it?
+5. When should governance require a sandboxed trial, allow probationary use, or
+   refuse to expose ordinary work to a candidate at all?
 6. How are negative transfer, contradiction, drift, and expiry detected?
 7. Can formation reduce future context and deliberation cost as competence
    increases?

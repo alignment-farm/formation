@@ -26,9 +26,11 @@ same experience.
    a synthesized lesson. Retrieval policy is frozen and uses only information
    available to the runtime.
 3. **Authored lesson** — the model's immediate post-consequence interpretation
-   is retained and offered without trial-based governance.
+   is retained and offered without a separate runtime eligibility decision.
 4. **Governed candidate** — the declared formation mechanism interprets,
-   trials, admits, and selectively activates a change.
+   applies its declared governance policy, and selectively permits a change to
+   influence practice. A pre-admission trial is included only when that policy
+   requires one.
 5. **Causal ablation** — matches the governed branch except that the named
    experience, admitted change, or activation is removed at the frozen causal
    boundary.

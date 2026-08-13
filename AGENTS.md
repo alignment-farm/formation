@@ -40,6 +40,7 @@ Stop when the task's scope and authority are clear.
 - `docs/AUTHORITY.md` owns role authority and permitted information flow.
 - `docs/RECORD.md` owns developmental-lineage and trajectory-record semantics.
 - `docs/EVALUATION.md` owns baseline comparisons and validity threats.
+- `docs/FIXTURE.md` owns the first deterministic cross-contract scenario.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - Directory READMEs route locally and do not duplicate broader status prose.

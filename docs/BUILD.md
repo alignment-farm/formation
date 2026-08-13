@@ -32,22 +32,27 @@ tests/
 Names are provisional until Phase 0 fixes the contracts. In particular,
 `development.py` must not become a miscellaneous policy container.
 
-## Minimal lifecycle
+## Minimal governance path
 
-The skeleton needs only enough state to expose governance:
+The skeleton needs only enough state to expose the distinctions under test:
 
 ```text
-observed -> candidate -> trial -> admitted
-                    \-> rejected
+observed -> candidate -> admitted or rejected
 admitted -> suspended -> reinstated
 admitted -> revised
 admitted -> revoked
+admitted -> activation considered -> activated or withheld
 ```
 
 Transitions require declared runtime-governor receipts and source lineage. The
 model may propose a candidate but cannot declare its own proposal admitted. The
 [authority boundary](AUTHORITY.md) defines why the trajectory harness cannot
 stand in for that governor.
+
+A selected policy may insert a bounded trial before admission or use
+probationary influence, but the first schema must not require either. Those are
+formation-mechanism choices, not structural properties of developmental
+lineage.
 
 ## Required separations
 
@@ -79,7 +84,9 @@ The walking skeleton should enact this sequence without an LM:
 1. An identical practitioner state is forked into baseline and treatment.
 2. Both take the same authored bad action in a training encounter.
 3. Both receive the same external consequence.
-4. Only treatment processes a candidate change through trial and admission.
+4. Only treatment proposes a candidate and applies its declared governance
+   policy; this fixture's policy admits directly from the authored consequence
+   warrant.
 5. A structurally matching later encounter activates the admitted change.
 6. A superficially similar but structurally mismatched encounter does not.
 7. Counterevidence suspends or revokes the change.
@@ -127,3 +134,8 @@ lesson, the boundary is insufficient.
 Both specifications now have initial drafts. Code remains gated on review plus
 one deterministic fixture that demonstrates their shared coordinates and
 refusal paths.
+
+The semantic [deterministic fixture v0](FIXTURE.md) has been cold-reviewed and
+simplified so a pre-admission trial is not a schema requirement. It remains
+wire-only and unimplemented; schema selection and encoding are still gated on
+the fixture's explicit separation and refusal conditions.

@@ -118,17 +118,20 @@ protocol must say so. Such a study answers a different question from a
 fixed-history mechanism comparison and cannot use paired-case causal language
 without accounting for the divergence.
 
-## Admission boundary
+## Governance boundary
 
 The runtime governor may be deterministic, rule-based, model-mediated, or
 composite. Whatever its form, it must be declared before contact and operate on
 runtime-visible evidence.
 
-A candidate trial is a runtime-governance operation, not a scientific test. Its
+A candidate trial is an optional runtime-governance operation, not a scientific
+test and not a universal lifecycle stage. A policy may require a sandboxed
+trial, permit bounded probationary influence, admit directly from declared
+consequence lineage, or reject without trial. When a trial is used, its
 environment, inputs, and evaluator must be declared and runtime-visible; it may
 use sandboxed or replayed encounters but not hidden trajectory families or
-scorer keys. Passing a trial can warrant admission under policy but cannot
-establish transfer.
+scorer keys. Passing it can warrant admission under policy but cannot establish
+transfer.
 
 “External controller receipt” means a receipt from this declared runtime
 governor or an ordinary environment authority. It does not mean that the

@@ -13,6 +13,7 @@ root [README](../README.md).
 | Who may know, decide, and write what? | [AUTHORITY.md](AUTHORITY.md) |
 | What must developmental lineage and trajectory evidence record? | [RECORD.md](RECORD.md) |
 | What comparisons and threats govern a future claim? | [EVALUATION.md](EVALUATION.md) |
+| What shared deterministic scenario exercises those boundaries? | [FIXTURE.md](FIXTURE.md) |
 
 These documents are pre-evidence. They constrain future work but establish no
 formation finding.

@@ -12,7 +12,7 @@ Its working thesis is:
 
 The model may begin each invocation cold. The practitioner does not. What
 persists is a developmental system around the model: experience lineage,
-consequence attribution, candidate changes, trials, promotion and revocation,
+consequence attribution, candidate changes, governance and revocation,
 activation policy, and prospective evaluation.
 
 Game mastering, coding, writing, research, and operations are possible contact
@@ -35,9 +35,12 @@ Formation adds a second, governed loop:
 
 ```text
 practice loop:    orient -> decide -> act -> observe consequence
-formation loop:   attribute -> propose change -> test -> admit or reject
+formation loop:   attribute -> propose change -> govern eligibility
                   -> activate selectively -> revise or revoke
 ```
+
+Governance may include a bounded trial, but the project does not assume that a
+trial is a universal stage or that it must precede every permitted influence.
 
 The central research question is not whether the system can remember an episode.
 It is whether an experience can cause a warranted change that improves action in
@@ -101,6 +104,11 @@ The project is at **Phase 0 concept and boundary stage**. The initial concept,
 authority, record, evaluation, and build documents are drafted but unreviewed.
 No formation mechanism or developmental effect has been earned.
 
+The first deterministic [two-loop fixture](docs/FIXTURE.md) is now a
+cold-reviewed semantic draft. It exists to pressure the boundary before schema
+selection or code; its authored stubs and outcomes are wire-only, and its first
+review removed pre-admission trial as a mandatory lifecycle stage.
+
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the
 candidate is learned or useful. The first experimental milestone comes later:
@@ -147,4 +155,4 @@ Before substantive work:
 
 The current route is [concept](docs/CONCEPT.md), [authority](docs/AUTHORITY.md),
 [record](docs/RECORD.md), [evaluation](docs/EVALUATION.md), [plan](docs/PLAN.md),
-then [build boundary](docs/BUILD.md).
+then [fixture](docs/FIXTURE.md) and [build boundary](docs/BUILD.md).
