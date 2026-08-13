@@ -94,8 +94,9 @@ The walking skeleton should enact this sequence without an LM:
 5. A structurally matching later encounter activates the admitted change.
 6. A superficially similar but structurally mismatched encounter does not.
 7. Counterevidence suspends or revokes the change.
-8. Replay reproduces every state, and ablation removes only the attributed
-   downstream influence.
+8. Replay reproduces every state, and this fixture's declared replay constraint
+   makes only the attributed downstream influence unavailable or explicitly
+   unresolved.
 
 Passing this scenario establishes plumbing and separation only.
 
@@ -108,7 +109,9 @@ Passing this scenario establishes plumbing and separation only.
 - Every activation cites the admitted change and current situation.
 - Non-activation is observable without exposing hidden harness labels.
 - Suspension and revocation prevent later activation.
-- Removing one experience or change removes its dependent effects or produces an
+- Every ablation names its target, public condition, runtime receipt, and frozen
+  boundary without changing unrelated state.
+- A replay exclusion makes dependent effects unavailable or produces an
   explicit unresolved dependency.
 - Harness-only fields cannot enter the runtime offer.
 - Model self-report cannot manufacture an external consequence or admission.

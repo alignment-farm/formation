@@ -54,7 +54,7 @@ production components.
 | Formation procedure boundary | Formation runtime and declared runtime governor | Preserved experience, public mechanism configuration, runtime-visible evidence | Attributable proposed changes and governance receipts, if the selected mechanism emits them | Receive a correct abstraction, eligibility decision, or future case label from the harness |
 | Influence boundary | Formation runtime | Current situation and state currently permitted to influence practice | Considered, selected, or withheld influence plus the exact intervention binding | Equate storage, retrieval, or prompt presence with causal use |
 | Trajectory recorder | Trajectory harness | Assignments, runtime and environment receipts, hidden metadata, costs, scorer inputs | Append-only experimental record joined to lineage by opaque coordinates and content-identity bindings | Replay trajectory-only material into practitioner state |
-| Prefix, fork, and ablation controller | Trajectory harness | Frozen protocol, one materialized prefix, declared assignment and ablation targets | Comparable branches and explicit exclusion assignments | Change unrelated state, foreground inputs, or runtime-visible reasons |
+| Prefix, fork, and ablation controller | Trajectory harness | Frozen protocol, one materialized prefix, declared assignment and ablation targets | Comparable branches and explicit public condition assignments | Change unrelated state, foreground inputs, or runtime-visible reasons |
 | Scorer | Scorer under the frozen protocol | Trajectory evidence and declared rubric | Case and trajectory verdicts outside developmental lineage | Govern admission, edit runtime state, or coach later cases |
 
 These surfaces are required by the current questions. Their decomposition is
@@ -166,19 +166,21 @@ foreground material.
 ## Prefix, fork, and ablation controller
 
 This harness instrument materializes an acquisition prefix once, creates
-declared branches, and assigns named causal exclusions for ablation probes. It
+declared branches, and assigns named public conditions for ablation probes. It
 may arrange experience; it may not interpret experience or derive practitioner
 state for the runtime.
 
 A fork receipt must identify the shared head and public condition delivered to
 each runtime without delivering the hidden branch label. For an ablation, the
-harness supplies a public target and exclusion policy; the runtime records the
-constraint and applies its own replay semantics. Dependent state must disappear
-transitively or become explicitly unresolved.
+harness supplies a public target and condition; the runtime records and applies
+it under declared semantics. The first fixture's condition is a replay
+constraint, so that runtime derives its own constrained view and makes dependent
+state transitively unavailable or explicitly unresolved. That choice does not
+define every future ablation.
 
 The instrument loses if a fork quietly changes foreground data, if an ablation
 arrives as a precomputed or repaired practitioner view, or if the runtime learns
-the hidden reason or expected effect of the exclusion.
+the hidden reason or expected effect of the condition.
 
 No copy strategy, process-isolation mechanism, or storage snapshot format is
 selected here.

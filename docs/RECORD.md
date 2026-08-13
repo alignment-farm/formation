@@ -119,6 +119,10 @@ Before a formation condition may affect practice, the runtime records:
   the runtime will apply during its own replay, naming the target and policy but
   excluding a hidden assignment reason or expected effect.
 
+These are the runtime-configuration receipts required by the first fixture,
+not an exhaustive configuration vocabulary. A later ablation mechanism must
+name its public receipt semantics before its records can claim conformance.
+
 In an experiment, the harness owns the hidden assignment while the runtime owns
 the receipt for the public configuration it actually applies. A `formation
 condition bound` event is expected to differ across branches at the declared
@@ -179,7 +183,8 @@ The harness record includes:
 - **runtime event witnessed** — binding to developmental event coordinates and
   content identity;
 - **ablation assigned** — target state element or causal edge, public exclusion
-  policy, and harness-only assignment reason and expected-effect reference;
+  or prevention condition, and harness-only assignment reason and
+  expected-effect reference;
 - **cost observed** — tokens, time, tool use, checks, and storage;
 - **case scored** — computed case verdict; and
 - **trajectory closed** — completion, refusal, invalidation, or stopping-rule
@@ -230,7 +235,7 @@ Full developmental replay must be sufficient to derive:
 - admitted, suspended, superseded, revoked, and expired versions;
 - current eligibility at a specified lineage head;
 - activation and withholding history; and
-- unresolved dependencies caused by redaction or ablation.
+- unresolved dependencies caused by redaction or replay exclusion.
 
 The first build may cache these views, but caches have no independent authority.
 Trajectory replay separately derives assignments and verdicts and may join to,
@@ -238,15 +243,20 @@ but never alter, developmental views.
 
 ## Causal ablation
 
-An ablation is a trajectory assignment, not a mutation of retained history. It
-creates a fork whose runtime view excludes a declared experience, candidate,
-admitted version, activation, or causal edge.
+An ablation is a trajectory assignment, not a scientific verdict or a mutation
+of retained history. It prevents a named contributor from affecting the branch
+at a frozen boundary through a declared runtime-visible condition. The harness
+records the assignment and gives the runtime only the public target and
+condition; the runtime records and applies that condition using the mechanism's
+declared semantics.
 
-The harness records the assignment and gives the runtime only the public target
-and exclusion policy. The runtime records that constraint and derives its own
-view. Dependent state must either disappear transitively or become explicitly
-unresolved. An ablation must not silently repair the branch, alter its
-foreground situation, expose why the element was removed, or arrive as an
+The first fixture uses a replay constraint to exclude lineage-derived state.
+For that subtype, the runtime derives its own constrained view and dependent
+state must either disappear transitively or become explicitly unresolved. A
+different ablation mechanism, such as preventing one activation at a decision
+boundary, must specify its runtime-configuration receipt and dependency
+semantics before use. No ablation may silently repair the branch, alter its
+foreground situation, expose why the element was targeted, or arrive as an
 already-derived practitioner view.
 
 Unavailable or unresolved state under a replay constraint is a property of the
@@ -273,7 +283,7 @@ A deterministic implementation must refuse:
 - causal references to future or nonexistent events;
 - replay from broken declared ordering, causal, or retention bindings, or from
   a broken integrity binding when one is declared; and
-- an ablation that leaves silently valid-looking dependent state.
+- a replay exclusion that leaves silently valid-looking dependent state.
 
 ## Loses-condition
 

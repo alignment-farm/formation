@@ -246,7 +246,7 @@ This table describes logical handoffs, not required processes or APIs.
 | Formation opportunity | Schedule runtime processing at `D-C-006` | Preserved experience and public mechanism configuration | Invoke its interpreter and governor; author proposal and eligibility receipts | Expected candidate and whether the authored path should pass | `D-G-008` and `D-G-009`, with trajectory content-identity witnesses |
 | Later practice | Present content-identical foregrounds under one environment rule | Foreground fields only | Decide influence, construct the practice request, commit the action, and record consequence | Case family, expected action, and cross-branch result | Activation or withholding, invocation, action, and consequence receipts |
 | Correction | Harness schedules the same environment-authored correction for every branch | Correction and its source binding | Contest the warrant and apply declared governance | Expected suspension and revocation path | Correction, suspension, revocation, and later withholding receipts |
-| Ablation | Assign a target and public exclusion policy | Target `D-C-005` and `transitive_exclusion` only | Record the replay constraint and derive the constrained view itself | Branch label, `causal_probe` reason, and expected downstream effect | Trajectory assignment plus `D-A-010 replay constraint bound` |
+| Ablation | Assign a target and public ablation condition, here an exclusion policy | Target `D-C-005` and `transitive_exclusion` only | Record the replay constraint and derive the constrained view itself | Branch label, `causal_probe` reason, and expected downstream effect | Trajectory assignment plus `D-A-010 replay constraint bound` |
 | Scoring | Harness joins witnessed receipts; scorer applies the authored wire rubric | Nothing | Nothing | Costs, case verdicts, aggregate comparison, and wire verdict | Trajectory-only score and close receipts |
 
 The handoff loses if scheduling a runtime operation gives the harness authority
@@ -507,8 +507,8 @@ The fixture passes only when:
 - the positive case activates and the stronger surface decoy does not;
 - external correction produces suspension, revocation, and later silence;
 - the ablation runtime records the public constraint and derives its own view;
-- transitive ablation makes every dependent state item unavailable or
-  explicitly unresolved;
+- the fixture's transitive replay exclusion makes every dependent state item
+  unavailable or explicitly unresolved;
 - the authored positive downstream difference disappears under ablation;
 - all thirteen refusal legs fail closed; and
 - a clean replay produces the same lineage heads and derived views.

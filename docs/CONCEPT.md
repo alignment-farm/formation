@@ -15,7 +15,7 @@ experience
   -> externally observed consequence
   -> attributed candidate change
   -> governed eligibility decision
-  -> eligible disposition, skill, check, or working knowledge
+  -> change eligible to influence practice
   -> selective influence on later action
   -> continued confirmation, revision, suspension, or revocation
 ```
@@ -52,7 +52,7 @@ generalize. That scope is a later interpretation and may be wrong.
 ## Formation
 
 Formation is a durable change in the practitioner's future preparedness that is
-causally attributable to experience and governed across its lifecycle.
+causally attributable to experience and governed while it can affect practice.
 
 Candidate forms include:
 

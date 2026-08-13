@@ -10,7 +10,8 @@ formation claim. A concrete experiment must freeze a narrower specification.
 The first mechanism experiment compares branches of the same cold model from
 one materialized acquisition prefix. Model identity, weights, inference
 settings, static instructions, tools, foreground cases, and external oracles
-remain fixed. Only the declared persistence or formation condition differs.
+remain fixed. Only the declared persistence, formation, or ablation condition
+differs.
 
 The preferred fork point is after one shared experience and its external
 consequence have been recorded for audit but before branches apply their
@@ -31,9 +32,12 @@ same experience.
    applies its declared governance policy, and selectively permits a change to
    influence practice. A pre-admission trial is included only when that policy
    requires one.
-5. **Causal ablation** — matches the governed branch except that a public replay
-   constraint makes the named experience, admitted change, activation, or
-   causal edge unavailable at the frozen boundary.
+5. **Causal ablation** — matches the governed branch except that a declared
+   public ablation condition prevents a named experience, admitted change,
+   activation, or causal edge from contributing at the frozen boundary. The
+   runtime applies that condition using its own declared semantics; a replay
+   constraint is one option for lineage-derived state, not a universal ablation
+   mechanism.
 
 A strong static-practice instruction is shared across branches. If a proposed
 formation mechanism cannot beat ordinary persistence, the simpler system wins.

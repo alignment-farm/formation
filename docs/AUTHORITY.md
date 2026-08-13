@@ -23,7 +23,7 @@ runtime.
 | Human protocol owner | Pre-contact question, mechanism definitions, branch plan, budget, stopping rule | Per-case rescue, post-contact rubric changes, hidden intervention presented as runtime behavior |
 | Environment | Situation transitions, tool results, and externally observable consequences | Candidate lessons, admission, or claims about why the practitioner acted |
 | Cold model | Inference outputs requested by the runtime, including candidate interpretations when asked | External facts, consequence truth, admission, evaluation verdicts, or claims of causal influence |
-| Formation runtime | Runtime-visible lineage, interpretation procedure, candidate lifecycle, activation, and the exact offer or intervention supplied to practice | Hidden case families, expected answers, counterfactual outcomes, scorer verdicts, or branch labels |
+| Formation runtime | Execution and replay of runtime-visible lineage, invocation of the selected formation procedure and governor, activation, and the exact offer or intervention supplied to practice | Hidden case families, expected answers, counterfactual outcomes, scorer verdicts, branch labels, or governance decisions outside the declared governor |
 | Runtime governor | Admission, suspension, revision, and revocation under a declared policy using runtime-visible evidence | Scientific verdicts or undisclosed evaluator knowledge |
 | Consequence oracle | A declared judgment about an action or outcome when the environment does not yield one directly | Candidate content, activation, or retrospective protocol repair |
 | Trajectory harness | Identical-prefix construction, assignment, forking, hidden case metadata, execution schedule, ablation, and evidence capture | Interpreting experience on the runtime's behalf or placing a correct abstraction in practitioner state |
@@ -43,7 +43,7 @@ runtime-visible experience; experimental verdicts may not.
 - tool results and declared external consequences;
 - runtime-authored interpretations and their source references;
 - public mechanism configuration and governance policy;
-- public replay constraints actually applied by the runtime, without hidden
+- public ablation conditions actually applied by the runtime, without hidden
   assignment reasons or expected effects;
 - admitted-change state and prior runtime activation receipts; and
 - later counterevidence that an ordinary practitioner could observe.
@@ -81,7 +81,7 @@ environment or consequence oracle -> observed consequence -> runtime lineage
 
 runtime experience -> runtime interpretation -> runtime governor
 runtime governor -> admitted state -> later runtime activation
-harness ablation assignment -> public replay constraint -> runtime replay
+harness ablation assignment -> public ablation condition -> runtime application
 
 runtime and environment receipts -> harness evidence -> scorer verdict
 ```
@@ -100,7 +100,7 @@ named baseline being tested:
 - a model-authored interpretation is recorded as an external consequence;
 - a scorer verdict automatically admits, edits, or revokes runtime state;
 - the harness supplies a precomputed or silently repaired practitioner view
-  instead of assigning a public replay constraint for the runtime to apply;
+  instead of assigning a public ablation condition for the runtime to apply;
 - the treatment receives a richer foreground situation than its baseline;
 - provider conversation state, prompt caching behavior, or an undeclared prefix
   carries experience across nominally cold invocations;
@@ -123,11 +123,14 @@ protocol must say so. Such a study answers a different question from a
 fixed-history mechanism comparison and cannot use paired-case causal language
 without accounting for the divergence.
 
-For an ablation, the harness may select the target and public exclusion policy.
-The runtime must receive that explicit public constraint and apply its own replay
-semantics. The harness retains the hidden branch label, causal-probe reason, and
-expected effect; it may not hand the runtime a precomputed derived state that
-conceals how dependent state disappeared.
+For an ablation, the frozen protocol names the target and public condition; the
+harness assigns them. The runtime must receive that condition explicitly and
+apply its declared semantics.
+When the condition excludes lineage-derived state, the runtime applies its own
+replay semantics and exposes missing dependent state rather than accepting a
+precomputed view. Other ablation mechanisms must declare an equivalent
+runtime-visible boundary before use. The harness retains the hidden branch
+label, causal-probe reason, and expected effect.
 
 ## Governance boundary
 
