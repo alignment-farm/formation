@@ -70,12 +70,15 @@ suite has twenty-six passing tests. Independent post-build reviews return
 `PASS`; no proposal, governance, replay, or formation-effect claim follows from
 this plumbing result.
 
-The proposal and direct-admission semantic gate is also complete in Markdown.
-Independent reconstruction first exposed ambiguity in authorship, version
-identity, admission authority, and scope. The repaired fixture now determines
-one compatible object, and three rechecks return `PASS`. No new computation was
-reached, so proposal and admission bytes, coordinates, and handoffs remain
-unselected.
+The proposal and direct-admission gate is implemented as typed in-memory
+capabilities. Its first review closed authorship, version identity, admission
+authority, and scope in Markdown. Shared foreground later created a named need
+for exact admitted roots. The [admitted-root contract](ADMITTED_ROOT.md) now
+produces them from a label-blind treatment batch through distinct interpreter
+and governor authorities. Proposal and admission receipt bytes remain
+unselected. The implementation passes 45 tests and final post-build review
+returns `PASS` after rejecting and repairing a superficially green 39-test
+state.
 
 The fixture-local replay-exclusion gate is complete in Markdown. Cold review
 found and closed a target-keyed oracle that could mimic the advertised
@@ -101,8 +104,8 @@ It explicitly excludes the governed activation handoff from the shared
 comparison. Focused review found a named computation in provenance, root
 binding, and one-time consumption. The fixture-local
 [foreground-delivery contract](FOREGROUND_DELIVERY.md) earns typed capabilities
-but no serialization or digest. Implementation waits for the real governed
-admission and ablation-constraint root capabilities it must consume. Two model
+but no serialization or digest. The governed admitted root is now materialized;
+implementation waits for the ablation-constraint root it must consume. Two model
 families independently reconstructed that boundary and returned
 `CONTRACT_STABLE_CODE_BLOCKED`.
 

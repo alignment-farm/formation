@@ -267,3 +267,14 @@ class ForkController:
         self._assigned_roots.append(current)
         self._assigned_labels.append(label)
         return current
+
+    def require_roots_in_issuance_order(
+        self, controller: object
+    ) -> tuple[FrozenBranchRoot, ...]:
+        """Return the complete assigned root set in its label-blind order."""
+
+        if controller is not self._assignment_controller:
+            raise ForkRefusal("exact_assignment_controller_required")
+        if len(self._assigned_roots) != 3 or len(self._assigned_labels) != 3:
+            raise ForkRefusal("fixture_assignments_incomplete")
+        return tuple(self.require_issued_root(root) for root in self._issued_roots)

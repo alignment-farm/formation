@@ -47,6 +47,19 @@ compatible object, but no operation yet needed to compute its bytes, identity,
 validation, or exchange. The correct result was therefore a stronger Markdown
 contract, not another schema.
 
+The later shared-foreground gate changed that result without retroactively
+licensing receipt bytes. It required an exact governed admitted root and an
+exact ablation lineage ancestor, making provenance, one-shot identity, and a
+machine handoff observable needs. The resulting
+[ADMITTED_ROOT.md](ADMITTED_ROOT.md) selects fixture-local semantic capabilities
+only. Post-build attack then demonstrated a second instrument lesson: authority
+labels do not prove authority execution. A 39-test implementation let the
+runtime host hardcode both results while advertising interpreter and governor
+names. The repaired runtime invokes distinct source-reading interpreter and
+exact-proposal governor capabilities and preserves their provenance through
+the returned root. Forty-five tests and an independent mechanical recheck now
+pass.
+
 The replay-exclusion review exercised the same rule from the other direction.
 It rejected a target-keyed answer as counterfeit replay and made the retained
 dependency projection authoritative. That repair still did not force machine

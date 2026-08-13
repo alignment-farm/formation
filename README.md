@@ -190,9 +190,24 @@ then separated value equality from provenance: equal fields cannot prove the
 same freeze, correct root, or one-time use. The resulting
 [foreground-delivery contract](docs/FOREGROUND_DELIVERY.md) earns typed
 capabilities and validation, but no byte format or digest. Its implementation
-is gated on real governed-admission and ablation-constraint root capabilities.
+was gated on real governed-admission and ablation-constraint root capabilities;
+the governed root now exists, leaving the ablation constraint as the remaining
+prerequisite.
 Two independent model families reconstructed that same boundary and returned
 `CONTRACT_STABLE_CODE_BLOCKED`.
+
+That gate forced the first typed proposal-to-admission boundary. The new
+[admitted-root contract](docs/ADMITTED_ROOT.md) consumes exactly the two public
+treatment roots in label-blind issuance order, derives each proposal from the
+retained acquisition receipts through a distinct interpreter authority, and
+lets a distinct governor admit that exact proposal once. It returns two
+branch-local admitted roots without selecting proposal or admission bytes.
+Post-build review rejected an initially green 39-test implementation because
+authority names could stand in for authority calls and nested provenance could
+be changed. The repaired 45-test slice preserves and revalidates the complete
+source-to-admission chain; independent mechanical recheck returns `PASS`.
+Foreground delivery now waits only for the ablation replay-constraint root
+containing `D-A-010`.
 
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the
@@ -205,8 +220,8 @@ formation from raw episodic recall and authored lessons.
 | Place | Responsibility |
 | --- | --- |
 | [docs/](docs/README.md) | Concept, research program, and implementation boundary |
-| [`formation/`](formation/README.md) | Runtime-owned fixture prefix and condition-append producers; not yet a general runtime |
-| [`trajectory/`](trajectory/README.md) | Harness-owned fixture validation, fork, assignment, and witness checks; not yet a general harness |
+| [`formation/`](formation/README.md) | Runtime-owned fixture prefix, condition append, and typed admission producers; not yet a general runtime |
+| [`trajectory/`](trajectory/README.md) | Harness-owned fixture validation, fork, assignment, admission, and witness checks; not yet a general harness |
 | [`tests/`](tests/README.md) | Deterministic contract and separation tests |
 | `evidence/` | Future primary trajectories and computed verdicts, never hand-written claims |
 

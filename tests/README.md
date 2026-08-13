@@ -1,6 +1,7 @@
 # Deterministic contract tests
 
-The current tests cover the fixture-local prefix and first condition-append
-licenses. They establish byte, validation, handoff, fork, information-flow, and
-once-only append plumbing. They establish no formation mechanism or
-developmental effect.
+The current 45 tests cover the fixture-local prefix, first condition append,
+and typed admitted-root licenses. They establish byte identity where selected,
+semantic capability identity where bytes remain unselected, validation,
+handoffs, authority separation, fork and information-flow boundaries, and
+once-only transitions. They establish no formation effect.

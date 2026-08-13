@@ -826,7 +826,9 @@ provenance, root binding, and one-time consumption. The resulting
 capabilities and validators while leaving foreground bytes unselected. Two
 independent cold contract reconstructions agreed on that boundary and returned
 `CONTRACT_STABLE_CODE_BLOCKED` because the governed admitted root and ablation
-constraint root are not yet materialized.
+constraint root were not yet materialized. The governed admitted root is now
+implemented under [ADMITTED_ROOT.md](ADMITTED_ROOT.md); the ablation constraint
+root remains open.
 
 ## Required refusal legs
 

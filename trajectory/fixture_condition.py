@@ -54,6 +54,10 @@ class ConditionAppendRefusal(ValueError):
     """The condition segment cannot become the branch-local root."""
 
 
+class TreatmentRootBatchRefusal(ValueError):
+    """The exact label-blind treatment root batch is unavailable."""
+
+
 @dataclass(frozen=True)
 class BranchAssignment:
     coordinate: str
@@ -109,6 +113,37 @@ class BranchLocalRoot:
     condition_segment: bytes
     head: str
     condition_binding: ConditionBinding
+    _issuer: object
+
+
+class _TreatmentRootBatchUse:
+    def __init__(self, controller: ConditionAppendController) -> None:
+        self._controller = controller
+        self._batch: TreatmentRootBatch | None = None
+        self.used = False
+
+    def bind(self, batch: TreatmentRootBatch) -> None:
+        if self._batch is not None:
+            raise TreatmentRootBatchRefusal("treatment_root_batch_already_bound")
+        self._batch = batch
+
+    def consume(self, batch: object) -> tuple[BranchLocalRoot, BranchLocalRoot]:
+        if self.used:
+            raise TreatmentRootBatchRefusal("treatment_root_batch_already_consumed")
+        current = self._controller.require_treatment_root_batch(batch)
+        if current is not self._batch:
+            raise TreatmentRootBatchRefusal("exact_treatment_root_batch_required")
+        self.used = True
+        return current.roots
+
+
+@dataclass(frozen=True)
+class TreatmentRootBatch:
+    """Exact two-root public-treatment set in label-blind issuance order."""
+
+    run_id: str
+    roots: tuple[BranchLocalRoot, BranchLocalRoot]
+    _use: _TreatmentRootBatchUse
     _issuer: object
 
 
@@ -192,6 +227,11 @@ class ConditionAppendController:
         self._roots: list[BranchLocalRoot] = []
         self._witnessed_coordinates: list[str] = []
         self._root_snapshots: list[tuple[object, ...]] = []
+        self._root_conditions: list[tuple[BranchLocalRoot, str]] = []
+        self._treatment_batch_issuer = object()
+        self._treatment_batch: TreatmentRootBatch | None = None
+        self._treatment_batch_snapshot: tuple[object, ...] | None = None
+        self._formation_controller: object | None = None
         self._forks.register_assignment_controller(self._issuer)
 
     def assign(
@@ -402,6 +442,7 @@ class ConditionAppendController:
             _issuer=self._root_issuer,
         )
         self._roots.append(local_root)
+        self._root_conditions.append((local_root, current.condition))
         self._root_snapshots.append(
             (
                 local_root,
@@ -438,3 +479,83 @@ class ConditionAppendController:
             raise ConditionAppendRefusal("branch_local_root_changed")
         self._forks.require_issued_root(root.prefix_root)
         return root
+
+    def issue_treatment_root_batch(self) -> TreatmentRootBatch:
+        if self._treatment_batch is not None:
+            raise TreatmentRootBatchRefusal("treatment_root_batch_already_issued")
+        if len(self._roots) != 3 or len(self._root_conditions) != 3:
+            raise TreatmentRootBatchRefusal("all_condition_roots_required")
+        try:
+            prefix_roots = self._forks.require_roots_in_issuance_order(self._issuer)
+        except ForkRefusal as error:
+            raise TreatmentRootBatchRefusal(str(error)) from error
+        local_by_prefix = {id(root.prefix_root): root for root in self._roots}
+        if len(local_by_prefix) != 3:
+            raise TreatmentRootBatchRefusal("three_distinct_condition_roots_required")
+        ordered = tuple(local_by_prefix.get(id(prefix)) for prefix in prefix_roots)
+        if any(root is None for root in ordered):
+            raise TreatmentRootBatchRefusal("condition_root_set_mismatch")
+        condition_by_root = {id(root): condition for root, condition in self._root_conditions}
+        treatment = tuple(
+            root
+            for root in ordered
+            if root is not None and condition_by_root.get(id(root)) == TREATMENT_CONDITION
+        )
+        if len(treatment) != 2 or treatment[0] is treatment[1]:
+            raise TreatmentRootBatchRefusal("exact_two_treatment_roots_required")
+        first = self.require_returned_root(treatment[0])
+        second = self.require_returned_root(treatment[1])
+        if first.prefix_root.run_id != second.prefix_root.run_id:
+            raise TreatmentRootBatchRefusal("treatment_root_run_mismatch")
+        use = _TreatmentRootBatchUse(self)
+        batch = TreatmentRootBatch(
+            run_id=first.prefix_root.run_id,
+            roots=(first, second),
+            _use=use,
+            _issuer=self._treatment_batch_issuer,
+        )
+        use.bind(batch)
+        self._treatment_batch = batch
+        self._treatment_batch_snapshot = (
+            batch.run_id,
+            batch.roots,
+            batch._use,
+            batch._issuer,
+        )
+        return batch
+
+    def require_treatment_root_batch(self, batch: object) -> TreatmentRootBatch:
+        if (
+            type(batch) is not TreatmentRootBatch
+            or batch is not self._treatment_batch
+            or batch._issuer is not self._treatment_batch_issuer
+            or self._treatment_batch_snapshot is None
+        ):
+            raise TreatmentRootBatchRefusal("exact_treatment_root_batch_required")
+        snapshot = self._treatment_batch_snapshot
+        if (
+            batch.run_id != snapshot[0]
+            or batch.roots is not snapshot[1]
+            or batch._use is not snapshot[2]
+            or batch._issuer is not snapshot[3]
+        ):
+            raise TreatmentRootBatchRefusal("treatment_root_batch_changed")
+        if len(batch.roots) != 2 or batch.roots[0] is batch.roots[1]:
+            raise TreatmentRootBatchRefusal("exact_two_treatment_roots_required")
+        for root in batch.roots:
+            self.require_returned_root(root)
+            condition = next(
+                (value for item, value in self._root_conditions if item is root), None
+            )
+            if condition != TREATMENT_CONDITION:
+                raise TreatmentRootBatchRefusal("non_treatment_root_in_batch")
+        return batch
+
+    def register_formation_controller(
+        self, batch: object, controller: object
+    ) -> TreatmentRootBatch:
+        current = self.require_treatment_root_batch(batch)
+        if self._formation_controller is not None:
+            raise TreatmentRootBatchRefusal("formation_controller_already_registered")
+        self._formation_controller = controller
+        return current

@@ -180,15 +180,22 @@ authority reviews return `PASS` after concrete duplicate-assignment,
 duplicate-witness, forged-root-order, coordinate-channel, and reservation
 mutation attempts were reproduced and closed.
 
-The following proposal and direct-admission boundary remains Markdown-only.
-Cold reconstruction exposed missing distinctions between candidate author and
-recorder, governor and runtime host, candidate applicability and admitted
-scope, and equivalent text and the exact proposal version. The repaired record
-and fixture contracts now fix those meanings, baseline silence,
-treatment-branch equality, and the one-shot causal order. Both model-family
-rechecks and an additional independent review return `PASS`. No deterministic
-identity, validation, or exchange operation has yet been named for these
-receipts, so this semantic convergence does not license their materialization.
+The proposal and direct-admission boundary is now implemented as typed
+in-memory capabilities. Its earlier Markdown review fixed candidate author
+versus recorder, governor versus runtime host, candidate applicability versus
+admitted scope, and equivalent text versus the exact proposal version. Shared
+foreground then named the missing computation: later work needs exact current
+admitted-root identities. [ADMITTED_ROOT.md](ADMITTED_ROOT.md) therefore
+licenses one label-blind two-root batch, source-reading interpreter authorship,
+direct governor admission over the exact proposal, and returned admitted roots,
+while leaving receipt bytes and a general lifecycle schema unselected.
+
+The implementation passes 45 tests. Post-build review rejected the first
+39-test green state: it reproduced shallow nested mutation, upstream-binding
+mutation, and authority strings that did not prove distinct interpreter or
+governor calls. The repaired slice retains and revalidates the complete runtime
+chain from condition root through source, authorship, proposal, decision, and
+admission. Final independent mechanical recheck returns `PASS`.
 
 The next cold gate contacted fixture-local transitive replay exclusion. It
 exposed a lineage-insensitive shortcut: returning the documented closure from
@@ -219,20 +226,21 @@ branch root, compares each received projection directly, and adds refusal legs
 wrong-root, and twice-consumed deliveries cannot be refused by value inspection
 alone. The [foreground-delivery contract](FOREGROUND_DELIVERY.md) therefore
 earns a narrow typed freeze, root-bound delivery, consumption, and witness
-boundary without selecting bytes. Implementation waits for real governed
-admission and ablation-constraint root capabilities. Two independent cold
-reconstructions agreed on the full contract and returned
+boundary without selecting bytes. The contract originally waited for real
+governed-admission and ablation-constraint root capabilities. The governed
+prerequisite is now implemented; the ablation constraint remains open. Two
+independent cold reconstructions agreed on the full contract and returned
 `CONTRACT_STABLE_CODE_BLOCKED`.
 
 The semantic [deterministic fixture v0](FIXTURE.md) and its governing packet have
 been cold-reviewed and simplified so a pre-admission trial is not a schema
-requirement. The shared-prefix and first condition-append boundaries now have
-licensed fixture-local implementations; the later proposal, governance,
+requirement. The shared-prefix, first condition-append, and direct-admission
+boundaries now have licensed fixture-local implementations; later governance,
 practice, replay, ablation, and scoring paths remain wire-only. The [instrument
 map](INSTRUMENTS.md) keeps each later design layer in Markdown until another
 named replay, separation, identity, or refusal ambiguity requires machine
 syntax. The later foreground-delivery contract is semantically earned but not
-yet buildable because two of its three required current-root inputs remain
+yet buildable because its ablation replay-constraint root remains
 unmaterialized.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
