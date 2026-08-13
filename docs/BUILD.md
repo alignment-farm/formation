@@ -106,6 +106,11 @@ Passing this scenario establishes plumbing and separation only.
   their downstream effects.
 - No candidate affects practice before admission.
 - Every activation cites the admitted change and current situation.
+- The exact admitted lineage object considered is the one selected, bound into
+  the encounter-local intervention, and consumed by request construction.
+- A model invocation retains an exact request or binding to the immutable
+  activation handoff; repeated names or copied candidate text do not establish
+  identity.
 - Non-activation is observable without exposing hidden harness labels.
 - Suspension and revocation prevent later activation.
 - Every ablation names its target, public condition, runtime receipt, and frozen
@@ -193,6 +198,15 @@ compatible object. They do not license code: with one fixed graph, exact graph
 validation followed by the authored result remains observationally equivalent
 to a general traversal. Adding graph variants solely to force that distinction
 would select unearned replay architecture.
+
+The activation-identity gate remains Markdown-only as well. Cold reconstruction
+found that repeated version names and copied candidate text could imitate an
+attributable activation. The repaired fixture fixes the exact admitted and
+proposal lineage objects, causal parents, encounter-local intervention handoff,
+one-shot request consumption, withheld-path absence, and refusal legs 21
+through 24. Independent rechecks agree on one semantic object. No byte identity
+or cross-boundary exchange is required to enforce those same-runtime
+references, so an activation or request materialization contract is not earned.
 
 The semantic [deterministic fixture v0](FIXTURE.md) and its governing packet have
 been cold-reviewed and simplified so a pre-admission trial is not a schema

@@ -196,7 +196,7 @@ The human protocol owner freezes these bounds before materialization:
 - clean execution: one shared acquisition, three branch schedules, the positive
   comparison, one governed decoy, one correction per branch, and one governed
   post-revocation boundary;
-- refusal execution: twenty independent legs, each starting from its named
+- refusal execution: twenty-four independent legs, each starting from its named
   clean precondition and applying only its named mutation;
 - retries: none for a semantic mismatch; an infrastructure interruption does
   not resume, and a new run starts from the shared acquisition prefix;
@@ -427,16 +427,54 @@ below names the branch-specific activation, action, and consequence rather than
 repeating that common receipt sequence. The later external correction is not a
 practice encounter; its smaller receipt path is specified separately.
 
-Each `activation considered` cites the public formation condition in force and
-the current encounter. In the ablation branch it also cites `D-A-010`. The model
-invocation cites the selected activation or withholding receipt, so an
-intervention cannot enter a practice request without an attributable influence
-decision.
+Each `activation considered` has the public formation condition in force, the
+current encounter, and every exact admitted version actually considered as
+causal inputs. In the governed positive and decoy encounters that set contains
+the branch-local admitted version aliased here as `D-G-009`; in the ablation
+branch the decision also cites `D-A-010`. A `change activated` receipt has the
+considered receipt and exact selected admitted version as parents. The model
+invocation cites the exact activation or withholding receipt for that encounter,
+so an intervention cannot enter a practice request without an attributable
+influence decision.
 
 The eligible set in `activation considered` contains `D-G-009` only for the
 clean governed positive and decoy encounters. It is empty for baseline, for the
 constrained ablation view, and after governed revocation. The shared acquisition
 precedes any formation condition and therefore has no activation receipt.
+
+For the governed positive path, the runtime resolves the selected admitted
+version from its current lineage and originates one immutable activation
+handoff. Its exact semantic content is:
+
+| Meaning | Fixture value |
+| --- | --- |
+| Encounter | The current governed positive encounter |
+| Considered decision | The exact `activation considered` receipt for that encounter |
+| Selected admitted version | The exact branch-local `candidate admitted` receipt aliased `D-G-009` |
+| Proposal version | The exact `D-G-008` receipt cited by that admission |
+| Intervention procedure | `revision-check-intervention-v0` |
+| Intervention content | The retained candidate representation read through `D-G-009` to `D-G-008` |
+| Selection reason | Both runtime-visible roles `derived_from` and `depends_on_current_authority` are present and the latter is true |
+
+`revision-check-intervention-v0` is a procedure name, not the encounter-local
+intervention identity. That identity is the exact activation handoff above.
+Documentary aliases never enter it; materialized lineage uses the opaque
+branch-local identities. Equivalent candidate text, the ablation branch's
+semantically matching admission, or independently reconstructed fields are not
+the selected object.
+
+The practice boundary consumes this same immutable handoff exactly once when it
+constructs the model request. It may not reopen lineage or mutable storage to
+recreate matching values. The request contains the current foreground plus the
+handoff's intervention identity, admitted-version binding, and exact candidate
+content. The `model invoked` receipt cites the exact encounter-local
+`change activated` receipt and retains the exact request or a content-identity
+binding to it. The harness may witness that result afterward; it may not supply,
+replace, or repair the handoff or request.
+
+On every withheld path, `activation withheld` has the considered receipt as its
+parent and no activation handoff exists. The model request must contain no
+intervention procedure, admitted-version binding, or copied candidate content.
 
 For every hidden practice case or correction presentation, trajectory evidence
 records `case assigned` before presentation. Runtime and environment receipts
@@ -664,7 +702,7 @@ At this stage, two fixture declarations are compatible when they agree on:
 - the required receipt meanings, originating authorities, and causal
   precedence;
 - the four fixture-local refusal classes;
-- the twenty independent refusal mutations; and
+- the twenty-four independent refusal mutations; and
 - the acceptance and loses-conditions.
 
 The semantic identity rule remains: `D-C-001` through `D-C-006` must have the
@@ -689,8 +727,9 @@ The contacted operation is same-producer fork comparison.
 
 Two independent model-family readings constructed the receipt graph from this
 packet without a schema. They agreed on the authorities, three branches,
-formation path, ablation boundary, four refusal classes, sixteen refusal legs,
-and wire verdict. Their disagreements exposed prose-level omissions rather than
+formation path, ablation boundary, four refusal classes, the then-current
+sixteen refusal legs, and wire verdict. Their disagreements exposed prose-level
+omissions rather than
 a need for typed syntax. This revision resolves those omissions by fixing:
 
 - acquisition parents, action-role bindings, and current-authority relevance;
@@ -713,6 +752,11 @@ A later cold replay review exposed a different defect: the enumerated ablation
 answer could stand in for source-sensitive replay. The actual-lineage rule and
 refusal legs 17 through 20 close that counterfeit-oracle path. They add
 fixture-local dependency pressure without selecting a general replay graph.
+
+A later activation-identity review exposed the analogous repeated-name defect
+at the influence boundary. The immutable semantic handoff and refusal legs 21
+through 24 make the actual admitted lineage object, rather than its alias or
+copied text, the source of the intervention and request.
 
 ## Required refusal legs
 
@@ -763,6 +807,18 @@ coordinate or named semantic precondition in that line:
 20. From the clean ablation head, replay makes `D-A-010` unavailable merely
     because its control reference names `D-C-005`, instead of preserving the
     active constraint.
+21. From the opened governed positive encounter, `activation considered` names
+    equivalent candidate text, `D-A-009`, or a documentary alias rather than
+    the exact eligible branch-local admitted lineage object.
+22. From the clean governed considered decision, `change activated` selects an
+    admitted version different from the exact version considered, or omits the
+    considered decision or selected version as a causal parent.
+23. From the clean governed activation, the intervention is constructed from
+    fixture text, an equivalent proposal, or mutable state rather than the exact
+    proposal reached through the selected admission.
+24. From the clean governed activation, request construction or model invocation
+    replaces, reconstructs, tampers with, reuses, or cites a same-named handoff
+    instead of consuming the exact encounter-local handoff once.
 
 Each refusal is a separate fixture leg so one early failure cannot mask another.
 
@@ -772,7 +828,7 @@ A clean case passes only when its receipts, action, and consequence match the
 authored path for its branch and no harness-only field crosses the boundary. A
 refusal case passes only when its one named mutation is rejected at the named
 boundary. The scorer emits `wire_integration_only` only when every clean case
-and all twenty refusal legs pass; otherwise it closes `invalid` and names the
+and all twenty-four refusal legs pass; otherwise it closes `invalid` and names the
 failed clause. These are conformance classes, not scientific verdicts, and have
 no partial-credit interpretation.
 
@@ -797,7 +853,7 @@ The fixture passes only when:
 - the fixture's transitive replay exclusion makes every dependent state item
   unavailable or explicitly unresolved;
 - the authored positive downstream difference disappears under ablation;
-- all twenty refusal legs fail closed; and
+- all twenty-four refusal legs fail closed; and
 - a clean replay produces the same lineage heads and derived views.
 
 Passing produces one wire verdict. It produces no scientific or mechanism

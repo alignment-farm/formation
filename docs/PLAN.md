@@ -85,6 +85,15 @@ model-family rechecks agree on that object, but the fixed graph does not yet
 distinguish an exact validator plus authored result from a general traversal.
 Replay syntax therefore remains unselected.
 
+Exact activation identity is also closed in Markdown. Cold construction found
+and repaired a path where repeated admitted-version names and copied candidate
+text could stand in for attributable influence. The fixture now requires one
+immutable encounter-local handoff from the exact admitted and proposal lineage
+objects into the exact model request, adds refusal legs 21 through 24, and
+forbids any intervention on withheld paths. Independent rechecks agree that
+same-runtime semantic references suffice; no activation or request bytes are
+selected.
+
 ## Phase 1 — build the two-loop skeleton
 
 Goal: make practice and formation traversable while keeping all intelligence

@@ -219,6 +219,30 @@ has been bound, the runtime records:
 - **activation withheld** — that no change was selected, with a runtime-visible
   refusal class.
 
+`Activation considered` treats each eligible admitted version as an exact
+lineage object, not as equivalent candidate text or a policy name. Its causal
+inputs are the current encounter, the public condition and activation policy in
+force, and every admitted version actually considered. A selected activation
+has the considered receipt and the exact selected admitted version as causal
+parents.
+
+For an activated path, the runtime originates one immutable semantic handoff.
+It contains the encounter, considered decision, exact admitted version, proposal
+version reached through that admission, intervention procedure identity, exact
+retained candidate representation used to construct the intervention, and the
+runtime-visible selection reason. The runtime resolves those values from its
+current lineage. Equivalent text, a documentary alias, or a caller-reconstructed
+copy is not the same handoff. This fixes meaning without selecting its later
+machine representation.
+
+Request construction consumes that exact handoff. It may not reopen mutable
+state or independently reconstruct matching fields. The model invocation cites
+the exact encounter-local activation and retains either the exact request or a
+content-identity binding sufficient to show that the admitted-version and
+intervention values in the request came from that handoff. A withheld path has
+no intervention handoff and its request must contain no admitted-version or
+intervention binding.
+
 The subsequent model invocation and action cite the activation decision.
 Presence in a search result or prompt is not enough to claim influence; causal
 contribution still requires a harness-side branch or ablation.

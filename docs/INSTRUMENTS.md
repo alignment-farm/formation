@@ -55,6 +55,14 @@ authored result is indistinguishable from a more general traversal. Inventing
 additional graphs only to force implementation would turn an instrument into an
 architecture generator.
 
+The activation-identity review likewise separated semantic identity from
+machine identity. It closed a repeated-name shortcut by requiring the exact
+admitted lineage object to originate one encounter-local handoff that request
+construction consumes once. Those references remain inside one runtime and do
+not yet need byte comparison or exchange. Selecting request serialization or a
+digest merely because identity matters would confuse a precise semantic object
+with a materialization need.
+
 ## Independent construction as a review instrument
 
 Before schema selection, two independent readers construct the fixture's
@@ -204,9 +212,18 @@ the selected or withheld influence, and the exact materialization or
 intervention supplied to practice. Later causal attribution still belongs to a
 harness comparison or ablation.
 
+On an activated path, one runtime-originated immutable handoff connects the
+exact admitted lineage object to the encounter-local intervention and then to
+the exact model request. Repeating the same version name or candidate text at
+each step is not identity. The practice boundary consumes the handoff; it does
+not reconstruct it from fixture constants or mutable state. A withheld decision
+must produce a request with no intervention binding.
+
 The instrument loses if presence in a store, search result, prompt, or tool list
 is sufficient to claim activation, or if hidden case-family information is
-needed to decide what should influence practice.
+needed to decide what should influence practice. It also loses if a
+name-matching or text-equivalent intervention can enter a request without the
+exact encounter-local handoff selected from current lineage.
 
 ## Trajectory recorder
 

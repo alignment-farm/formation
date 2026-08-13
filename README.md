@@ -171,6 +171,16 @@ the authored result is still indistinguishable from a general traversal. The
 project will not invent alternate graphs merely to force an architecture, so no
 replay schema or implementation is licensed yet.
 
+The first activation-identity gate is also closed in Markdown. Cold readers
+showed that matching an admitted-version name and copying the candidate text
+could counterfeit attributable influence. The repaired contract now requires
+the exact admitted lineage object to be considered and selected, resolves its
+exact proposal, creates one immutable encounter-local intervention handoff, and
+consumes that handoff once in the model request. Withheld paths carry no
+intervention. Two model families and an additional independent review agree on
+the object. Because one runtime can enforce these exact semantic references
+without byte comparison or exchange, no activation schema is licensed.
+
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the
 candidate is learned or useful. The first experimental milestone comes later:
