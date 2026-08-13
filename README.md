@@ -160,6 +160,17 @@ semantic paths. Two model families and an additional independent review return
 `PASS`. Markdown remains sufficient, so proposal and admission syntax is still
 unselected.
 
+The replay-exclusion gate remains Markdown-only too. Its cold review found a
+real counterfeit: a runtime could return the fixture's advertised ablation
+answer whenever it saw `D-C-005` without deriving anything from lineage. The
+record and fixture contracts now require the actual retained dependencies,
+preserve unrelated state and the active constraint, and add four refusal legs
+against that shortcut. Two model families reconstruct the repaired object
+identically. For this one fixed graph, however, an exact graph validator plus
+the authored result is still indistinguishable from a general traversal. The
+project will not invent alternate graphs merely to force an architecture, so no
+replay schema or implementation is licensed yet.
+
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the
 candidate is learned or useful. The first experimental milestone comes later:

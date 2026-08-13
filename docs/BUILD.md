@@ -112,6 +112,10 @@ Passing this scenario establishes plumbing and separation only.
   boundary without changing unrelated state.
 - A replay exclusion makes dependent effects unavailable or produces an
   explicit unresolved dependency.
+- Replay consumes the actual retained dependency projection; a target-keyed
+  fixture lookup cannot stand in for lineage derivation.
+- Replay preserves non-dependent state and the active constraint while making
+  each unresolved result traceable to a retained dependency path.
 - Harness-only fields cannot enter the runtime offer.
 - Model self-report cannot manufacture an external consequence or admission.
 
@@ -178,6 +182,17 @@ treatment-branch equality, and the one-shot causal order. Both model-family
 rechecks and an additional independent review return `PASS`. No deterministic
 identity, validation, or exchange operation has yet been named for these
 receipts, so this semantic convergence does not license their materialization.
+
+The next cold gate contacted fixture-local transitive replay exclusion. It
+exposed a lineage-insensitive shortcut: returning the documented closure from
+the target token could satisfy the earlier fixture. The repaired contracts make
+the actual retained dependency projection authoritative, distinguish
+state-bearing dependencies from control references, preserve non-dependents,
+and add refusal legs 17 through 20. Both model-family rechecks reconstruct one
+compatible object. They do not license code: with one fixed graph, exact graph
+validation followed by the authored result remains observationally equivalent
+to a general traversal. Adding graph variants solely to force that distinction
+would select unearned replay architecture.
 
 The semantic [deterministic fixture v0](FIXTURE.md) and its governing packet have
 been cold-reviewed and simplified so a pre-admission trial is not a schema

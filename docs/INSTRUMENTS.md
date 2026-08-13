@@ -47,6 +47,14 @@ compatible object, but no operation yet needed to compute its bytes, identity,
 validation, or exchange. The correct result was therefore a stronger Markdown
 contract, not another schema.
 
+The replay-exclusion review exercised the same rule from the other direction.
+It rejected a target-keyed answer as counterfeit replay and made the retained
+dependency projection authoritative. That repair still did not force machine
+syntax: on the fixture's single fixed graph, exact graph validation plus the
+authored result is indistinguishable from a more general traversal. Inventing
+additional graphs only to force implementation would turn an instrument into an
+architecture generator.
+
 ## Independent construction as a review instrument
 
 Before schema selection, two independent readers construct the fixture's
@@ -140,6 +148,14 @@ The developmental recorder preserves only material available to the situated
 practitioner. Replay derives practitioner state at a named lineage head; cached
 views have no independent authority.
 
+Derivation is source-sensitive. A fixture may enumerate the expected view for
+inspection, but the replayer must consume the actual retained dependency
+projection at that head. Recognizing a target token and returning the authored
+answer is a fixture oracle, not replay. The selected policy must distinguish
+state-bearing dependencies from control references, preserve non-dependents,
+and expose or refuse broken dependency paths without selecting a universal edge
+schema.
+
 This surface must keep occurrence, interpretation, configuration, governance,
 and influence separately attributable. It does not require separate stores or
 event families for every future mechanism. In particular, trial receipts exist
@@ -150,6 +166,8 @@ The instrument loses if:
 - replay needs branch assignment or scorer state;
 - an interpretation mutates the occurrence it interprets;
 - missing or redacted parents become silently valid state; or
+- a fixture-name lookup can replace traversal of actual retained dependencies;
+- exclusion removes unrelated state or its own active control receipt; or
 - two clean replays of the same retained lineage produce different views.
 
 Storage engine, serialization, hash canonicalization, concurrency, and

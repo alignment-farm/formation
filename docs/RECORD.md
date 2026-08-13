@@ -302,6 +302,28 @@ The first build may cache these views, but caches have no independent authority.
 Trajectory replay separately derives assignments and verdicts and may join to,
 but never alter, developmental views.
 
+Here, **derive** means that the view is a deterministic function of the actual
+retained developmental lineage and the public constraints in force at the
+selected head. Returning a fixture-authored answer from a target token or
+documentary coordinate is not replay, even when that answer matches the clean
+fixture.
+
+Dependency propagation follows the declared meaning of a retained reference,
+not every causal citation indiscriminately. A source, warrant,
+candidate-version, or state-bearing containment reference may make all or part
+of a dependent item unavailable when its referent is excluded. A target or
+control reference may name what a configuration applies to without making the
+configuration itself unavailable. A contacted policy must state those roles
+before implementation; this requirement does not select a universal edge
+schema.
+
+A constrained view preserves unrelated state and makes each unavailable or
+unresolved result traceable to an actual retained dependency path. It must
+refuse broken required references before deriving a view. The same lineage,
+head, and constraints must produce the same view; a changed retained dependency
+must change the view or fail validation rather than being hidden by a
+fixture-name lookup.
+
 ## Causal ablation
 
 An ablation is a trajectory assignment, not a scientific verdict or a mutation
@@ -319,6 +341,13 @@ boundary, must specify its runtime-configuration receipt and dependency
 semantics before use. No ablation may silently repair the branch, alter its
 foreground situation, expose why the element was targeted, or arrive as an
 already-derived practitioner view.
+
+The fixture's enumerated dependent set is the expected result used to inspect
+the derivation, not permission to hard-code that result. The runtime must
+consume the branch's actual retained references at the selected head, preserve
+declared non-dependents, and apply the fixture's dependency roles. A conformer
+that returns the named closure solely because it recognizes `D-C-005` has not
+implemented this replay subtype.
 
 Unavailable or unresolved state under a replay constraint is a property of the
 derived view, not a governance transition. Applying the constraint emits no
@@ -344,7 +373,11 @@ A deterministic implementation must refuse:
 - causal references to future or nonexistent events;
 - replay from broken declared ordering, causal, or retention bindings, or from
   a broken integrity binding when one is declared; and
-- a replay exclusion that leaves silently valid-looking dependent state.
+- a replay exclusion that leaves silently valid-looking dependent state;
+- a replay exclusion that removes unrelated state or its own active constraint;
+  and
+- a constrained view produced from a fixture alias or target-keyed answer
+  instead of the actual retained dependency projection.
 
 ## Loses-condition
 

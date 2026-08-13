@@ -77,6 +77,14 @@ one compatible object, and three rechecks return `PASS`. No new computation was
 reached, so proposal and admission bytes, coordinates, and handoffs remain
 unselected.
 
+The fixture-local replay-exclusion gate is complete in Markdown. Cold review
+found and closed a target-keyed oracle that could mimic the advertised
+constrained view without reading lineage. The repaired fixture now requires the
+actual dependency projection and twenty independent refusal legs. Two
+model-family rechecks agree on that object, but the fixed graph does not yet
+distinguish an exact validator plus authored result from a general traversal.
+Replay syntax therefore remains unselected.
+
 ## Phase 1 — build the two-loop skeleton
 
 Goal: make practice and formation traversable while keeping all intelligence

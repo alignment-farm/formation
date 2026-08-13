@@ -196,7 +196,7 @@ The human protocol owner freezes these bounds before materialization:
 - clean execution: one shared acquisition, three branch schedules, the positive
   comparison, one governed decoy, one correction per branch, and one governed
   post-revocation boundary;
-- refusal execution: sixteen independent legs, each starting from its named
+- refusal execution: twenty independent legs, each starting from its named
   clean precondition and applying only its named mutation;
 - retries: none for a semantic mismatch; an infrastructure interruption does
   not resume, and a new run starts from the shared acquisition prefix;
@@ -585,6 +585,29 @@ a harness-produced view. Excluding `D-C-005` must make the retained experience's
 consequence dependency, candidate, and admission unavailable or explicitly
 unresolved. It must not leave a valid-looking admitted version.
 
+For derivation, the input is the ablation branch's actual retained semantic
+lineage at the head containing `D-A-010`. The runtime reads the target and policy
+from that bound constraint and follows the declared meanings of the retained
+references below. The documentary aliases and this table are inspection
+oracles, not runtime inputs.
+
+| Retained item or view element | Reference role contacted by exclusion | Required constrained result |
+| --- | --- | --- |
+| `D-C-005` | Exclusion target | Receipt retained; unavailable as a usable consequence or warrant |
+| `D-C-006` | State-bearing containment of consequence `D-C-005` | Receipt retained; consequence dependency and experience completeness explicitly unresolved |
+| `D-A-008` | Source consequence `D-C-005` and source experience `D-C-006` | Candidate unavailable or explicitly unresolved |
+| `D-A-009` | Warrant `D-C-005` and candidate version `D-A-008` | Admission unavailable or explicitly unresolved; never eligible-looking |
+| Later eligibility and influence | Derived through `D-A-009` | Empty eligible set and `unresolved_dependency` at the affected decision |
+| Later correction | Correction binding to `D-C-005` | Occurrence retained; binding unresolved; no governance transition |
+| `D-C-001` through `D-C-004` and `D-A-007` | No contacted state dependency | Preserved and available |
+| `D-A-010` | Control reference naming the exclusion target | Preserved as the active constraint; not propagated into its own closure |
+
+Each unavailable or unresolved result must be traceable through the actual
+branch-local references above. Missing, altered, future, or nonexistent required
+references refuse before a view is returned. The same input head and constraint
+produce the same view. A target-keyed lookup that returns this table without
+consuming the retained dependency projection is nonconforming.
+
 For this fixture, the transitive dependents are `D-C-006`'s completeness as a
 retained experience containing the consequence, `D-A-008`, `D-A-009`, and later
 eligibility or influence derived through them. `D-C-006` remains retained but
@@ -624,7 +647,7 @@ No trajectory row is replayable into practitioner state.
 | Runtime configuration | Formation condition at fork; replay constraint at ablation boundary | One universal configuration or storage format |
 | Interpretation and governance | Runtime proposal, direct admission, suspension, revocation | Trial, rejection, reinstatement, supersession, expiry |
 | Influence | Considered, activated, and four authored withholding reasons | A universal activator service or proof of behavioral causality |
-| Developmental replay | Clean branch replay and runtime-derived constrained replay | Hash chain, cache, snapshot, or general exclusion algorithm |
+| Developmental replay | Clean branch replay and runtime-derived constrained replay from actual retained dependencies | Hash chain, cache, snapshot, or general exclusion algorithm |
 | Trajectory evidence | Protocol, prefix, branch, case, witness, ablation, cost, score, and closure receipts | Any trajectory row entering practitioner state |
 
 Coverage means that the semantic boundary is traversed or refused. It does not
@@ -641,7 +664,7 @@ At this stage, two fixture declarations are compatible when they agree on:
 - the required receipt meanings, originating authorities, and causal
   precedence;
 - the four fixture-local refusal classes;
-- the sixteen independent refusal mutations; and
+- the twenty independent refusal mutations; and
 - the acceptance and loses-conditions.
 
 The semantic identity rule remains: `D-C-001` through `D-C-006` must have the
@@ -686,6 +709,11 @@ receipts require them. The two allowed derived-state results are equivalent for
 this fixture only where the acceptance conditions explicitly permit either.
 These open choices do not change the semantic graph or information boundary.
 
+A later cold replay review exposed a different defect: the enumerated ablation
+answer could stand in for source-sensitive replay. The actual-lineage rule and
+refusal legs 17 through 20 close that counterfeit-oracle path. They add
+fixture-local dependency pressure without selecting a general replay graph.
+
 ## Required refusal legs
 
 A conforming implementation refuses each mutation independently from the clean
@@ -724,6 +752,17 @@ coordinate or named semantic precondition in that line:
 16. From the opened governed positive encounter with `D-G-009` eligible, the
     intervention enters the model request without a matching `change activated`
     receipt for that encounter.
+17. From the clean ablation head, a required retained parent or dependency role
+    of `D-C-006`, `D-A-008`, or `D-A-009` is missing or altered, but replay
+    returns the authored closure instead of refusing the broken lineage.
+18. From the clean ablation head, replay marks `D-A-007` or any of `D-C-001`
+    through `D-C-004` unavailable even though no contacted state dependency
+    reaches it.
+19. From the clean ablation head, replay deletes `D-C-006` instead of retaining
+    it with unresolved consequence dependency and completeness.
+20. From the clean ablation head, replay makes `D-A-010` unavailable merely
+    because its control reference names `D-C-005`, instead of preserving the
+    active constraint.
 
 Each refusal is a separate fixture leg so one early failure cannot mask another.
 
@@ -733,7 +772,7 @@ A clean case passes only when its receipts, action, and consequence match the
 authored path for its branch and no harness-only field crosses the boundary. A
 refusal case passes only when its one named mutation is rejected at the named
 boundary. The scorer emits `wire_integration_only` only when every clean case
-and all sixteen refusal legs pass; otherwise it closes `invalid` and names the
+and all twenty refusal legs pass; otherwise it closes `invalid` and names the
 failed clause. These are conformance classes, not scientific verdicts, and have
 no partial-credit interpretation.
 
@@ -758,7 +797,7 @@ The fixture passes only when:
 - the fixture's transitive replay exclusion makes every dependent state item
   unavailable or explicitly unresolved;
 - the authored positive downstream difference disappears under ablation;
-- all sixteen refusal legs fail closed; and
+- all twenty refusal legs fail closed; and
 - a clean replay produces the same lineage heads and derived views.
 
 Passing produces one wire verdict. It produces no scientific or mechanism
