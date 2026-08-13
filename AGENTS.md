@@ -41,6 +41,8 @@ Stop when the task's scope and authority are clear.
 - `docs/RECORD.md` owns developmental-lineage and trajectory-record semantics.
 - `docs/EVALUATION.md` owns baseline comparisons and validity threats.
 - `docs/FIXTURE.md` owns the first deterministic cross-contract scenario.
+- `docs/INSTRUMENTS.md` owns the pre-schema instrument surfaces and the pressure
+  required before machine syntax is selected.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - Directory READMEs route locally and do not duplicate broader status prose.

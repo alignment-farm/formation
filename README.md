@@ -109,6 +109,11 @@ cold-reviewed semantic draft. It exists to pressure the boundary before schema
 selection or code; its authored stubs and outcomes are wire-only, and its first
 review removed pre-admission trial as a mandatory lifecycle stage.
 
+The next layer remains Markdown-first. The [instrument map](docs/INSTRUMENTS.md)
+describes the observable jobs, authority boundaries, receipts, and
+loses-conditions that a future schema must serve. No machine schema or storage
+syntax has been selected.
+
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the
 candidate is learned or useful. The first experimental milestone comes later:
@@ -155,4 +160,5 @@ Before substantive work:
 
 The current route is [concept](docs/CONCEPT.md), [authority](docs/AUTHORITY.md),
 [record](docs/RECORD.md), [evaluation](docs/EVALUATION.md), [plan](docs/PLAN.md),
-then [fixture](docs/FIXTURE.md) and [build boundary](docs/BUILD.md).
+then [fixture](docs/FIXTURE.md), [instrument map](docs/INSTRUMENTS.md), and
+[build boundary](docs/BUILD.md).

@@ -137,5 +137,6 @@ refusal paths.
 
 The semantic [deterministic fixture v0](FIXTURE.md) has been cold-reviewed and
 simplified so a pre-admission trial is not a schema requirement. It remains
-wire-only and unimplemented; schema selection and encoding are still gated on
-the fixture's explicit separation and refusal conditions.
+wire-only and unimplemented. The [instrument map](INSTRUMENTS.md) keeps the next
+design layer in Markdown; schema selection now waits for a named replay,
+separation, or refusal ambiguity that prose cannot settle.

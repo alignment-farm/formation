@@ -34,7 +34,8 @@ design before the exit condition is met. The first semantic
 [two-loop fixture](FIXTURE.md) now exercises their shared boundary but remains
 unimplemented. Its first cold review removed pre-admission trial as a mandatory
 stage and retained only the occurrence, interpretation, governance, and
-influence boundaries.
+influence boundaries. The [instrument map](INSTRUMENTS.md) now describes the
+pre-schema surfaces that make those boundaries observable.
 
 ## Phase 1 — build the two-loop skeleton
 
@@ -127,11 +128,14 @@ automatically generalize to a universal architecture.
    unearned ontology in the runtime.
 2. Review the shared deterministic fixture against the authority and record
    contracts.
-3. Select schema syntax and encode the fixture without promoting its
-   policy-specific path into a universal lifecycle.
-4. Freeze the first deterministic two-loop boundary contract from that encoded
+3. Keep describing the required instruments in Markdown until a named replay,
+   separation, or refusal ambiguity requires typed structure.
+4. Select the smallest machine syntax that resolves that demonstrated
+   ambiguity, then encode the fixture without promoting its policy-specific path
+   into a universal lifecycle.
+5. Freeze the first deterministic two-loop boundary contract from that encoded
    fixture.
-5. Implement the lineage and forkable skeleton.
-6. Only then select the first real-engine transfer problem.
+6. Implement the lineage and forkable skeleton.
+7. Only then select the first real-engine transfer problem.
 
-No LM contact is needed to complete the first four steps.
+No LM contact is needed to complete the first five steps.
