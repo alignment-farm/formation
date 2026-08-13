@@ -80,6 +80,14 @@ unselected. The implementation passes 45 tests and final post-build review
 returns `PASS` after rejecting and repairing a superficially green 39-test
 state.
 
+The fixture-local replay-constraint append is now a fourth completed input. Its
+[typed contract](REPLAY_CONSTRAINT_APPEND.md) turns the exact harness-selected
+ablation admission into one runtime-authored public constraint and a distinct
+post-constraint root. It selects no receipt bytes and does not implement the
+constrained replay view. The combined suite passes 64 tests; independent
+post-build review rejected and repaired a green 57-test state with hidden-state
+reachability and counterfeit provenance before returning `PASS`.
+
 The fixture-local replay-exclusion gate is complete in Markdown. Cold review
 found and closed a target-keyed oracle that could mimic the advertised
 constrained view without reading lineage. The repaired fixture now requires the
@@ -104,10 +112,11 @@ It explicitly excludes the governed activation handoff from the shared
 comparison. Focused review found a named computation in provenance, root
 binding, and one-time consumption. The fixture-local
 [foreground-delivery contract](FOREGROUND_DELIVERY.md) earns typed capabilities
-but no serialization or digest. The governed admitted root is now materialized;
-implementation waits for the ablation-constraint root it must consume. Two model
-families independently reconstructed that boundary and returned
-`CONTRACT_STABLE_CODE_BLOCKED`.
+but no serialization or digest. The governed admitted root and ablation-
+constraint root are now materialized. Two model families independently
+reconstructed that boundary and originally returned
+`CONTRACT_STABLE_CODE_BLOCKED`; a final code-facing type and issuer review now
+precedes implementation.
 
 ## Phase 1 — build the two-loop skeleton
 

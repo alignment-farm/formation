@@ -206,8 +206,21 @@ Post-build review rejected an initially green 39-test implementation because
 authority names could stand in for authority calls and nested provenance could
 be changed. The repaired 45-test slice preserves and revalidates the complete
 source-to-admission chain; independent mechanical recheck returns `PASS`.
-Foreground delivery now waits only for the ablation replay-constraint root
-containing `D-A-010`.
+The last foreground prerequisite is now implemented by the fixture-local
+[replay-constraint append contract](docs/REPLAY_CONSTRAINT_APPEND.md). Two
+independent model families licensed only the typed append and exact returned
+root, while keeping constrained replay unimplemented. Post-build review
+rejected an initially green 57-test state because runtime-facing verifier
+objects could reach harness assignments and caller-created coordinates or
+deliveries could counterfeit provenance. The repaired 64-test boundary uses a
+formation-issued controller, label-blind runtime reservations, a narrow exact-
+delivery registry, and full current-chain revalidation. The resulting root
+proves that the public constraint was bound at the exact ablation admission
+head; it does not prove that replay was derived correctly.
+
+All three typed branch roots required by the shared-foreground contract now
+exist. That contract needs one final code-facing type and issuer review before
+its already specified delivery slice is implemented.
 
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the

@@ -18,6 +18,7 @@ root [README](../README.md).
 | What exact bytes and checks serve the first contacted computation? | [MATERIALIZATION.md](MATERIALIZATION.md) |
 | How does a fork receive one public formation condition without exposing its hidden assignment? | [CONDITION_APPEND.md](CONDITION_APPEND.md) |
 | How do the two treatment roots produce exact branch-local admitted heads without selecting receipt bytes? | [ADMITTED_ROOT.md](ADMITTED_ROOT.md) |
+| How does the exact admitted ablation root receive one public replay constraint without licensing replay traversal? | [REPLAY_CONSTRAINT_APPEND.md](REPLAY_CONSTRAINT_APPEND.md) |
 | How is one positive foreground delivered once to three exact branch heads? | [FOREGROUND_DELIVERY.md](FOREGROUND_DELIVERY.md) |
 
 These documents are pre-evidence. They constrain future work but establish no

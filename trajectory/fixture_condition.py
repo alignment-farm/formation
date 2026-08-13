@@ -559,3 +559,32 @@ class ConditionAppendController:
             raise TreatmentRootBatchRefusal("formation_controller_already_registered")
         self._formation_controller = controller
         return current
+
+    def assignment_label_for_formation(
+        self, root: object, formation_controller: object
+    ) -> str:
+        """Resolve a retained harness assignment without exposing it to runtime."""
+
+        if formation_controller is not self._formation_controller:
+            raise AssignmentRefusal("exact_formation_controller_required")
+        current = self.require_returned_root(root)
+        matching = tuple(
+            assignment
+            for assignment in self._assignments
+            if assignment.root is current.prefix_root
+        )
+        if len(matching) != 1:
+            raise AssignmentRefusal("exact_retained_assignment_required")
+        assignment = matching[0]
+        snapshot = next(
+            (
+                item
+                for item in self._assignment_snapshots
+                if item[0] is assignment
+            ),
+            None,
+        )
+        if snapshot is None:
+            raise AssignmentRefusal("exact_retained_assignment_required")
+        self._require_assignment_delivery(assignment, snapshot[5])
+        return assignment.label

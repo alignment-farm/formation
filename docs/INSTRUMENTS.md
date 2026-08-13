@@ -85,6 +85,18 @@ double consumption. Those claims earn the narrow typed capability and
 validation boundary in [FOREGROUND_DELIVERY.md](FOREGROUND_DELIVERY.md), while
 bytes, digests, and canonical role order remain unselected.
 
+The replay-constraint append applies the same stopping rule to a boundary that
+had previously been grouped with replay. Foreground delivery requires an exact
+ablation head after the public constraint is bound, so recipient selection,
+target-role resolution, one-shot runtime authorship, and returned-root identity
+are now computations. Two independent readers licensed those typed
+capabilities. They explicitly did not license constrained replay: the one fixed
+dependency graph still cannot distinguish traversal from exact validation plus
+an authored closure. Post-build attack also reinforced that verifier
+reachability is part of information flow; a narrow capability that can reach a
+harness controller is not label-free merely because its public fields omit the
+label.
+
 ## Independent construction as a review instrument
 
 Before schema selection, two independent readers construct the fixture's

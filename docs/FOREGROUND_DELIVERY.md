@@ -7,7 +7,8 @@ Two independent model families reconstructed this contract from the same
 sealed Markdown packet. Both returned `CONTRACT_STABLE_CODE_BLOCKED`: the
 contract is internally sufficient, while the governed admitted root and the
 ablation root containing `D-A-010` did not yet exist as typed capabilities.
-The governed admitted root now exists; the ablation constraint remains open.
+The governed admitted root and ablation constraint root now exist. A final
+code-facing type and issuer review remains before this delivery slice begins.
 
 Purpose: define the smallest machine boundary needed to prove that baseline,
 governed, and ablation receive the same positive foreground from one frozen
@@ -86,8 +87,8 @@ not contain them. The controller validates the meanings against trajectory
 assignment and witnessed lineage; it does not infer them from a root's issue
 order, public condition, or documentary alias.
 
-The baseline condition-bound and governed admitted capabilities now exist. The
-ablation replay-constrained root containing `D-A-010` does not. Raw coordinates,
+The baseline condition-bound, governed admitted, and ablation replay-constrained
+capabilities now exist. Raw coordinates,
 prose aliases, mappings, condition-only substitutes for governed or ablation,
 reconstructed equal roots, stale roots, other-run roots, and roots from another
 comparison group refuse.
@@ -266,10 +267,10 @@ capabilities for:
 - the governed admitted head; and
 - the ablation replay-constrained head containing `D-A-010`.
 
-The existing baseline condition root and governed admitted root satisfy their
-two prerequisites. The ablation admitted root is only an ancestor of its
-required replay-constrained root. Using it before `D-A-010` would bypass the
-fixture's causal order.
+The existing baseline condition root, governed admitted root, and ablation
+replay-constrained root satisfy the three prerequisites. The ablation admitted
+root remains only an ancestor of its required replay-constrained root. Using it
+instead would bypass the fixture's causal order.
 
 When all three prerequisites exist, a new cold review must confirm that their
 exact types and issuer boundaries satisfy this contract. Only then may the

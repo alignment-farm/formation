@@ -51,6 +51,8 @@ Stop when the task's scope and authority are clear.
   named computation earns it.
 - `docs/CONDITION_APPEND.md` owns the fixture-local post-fork condition append
   and its information-separation checks.
+- `docs/REPLAY_CONSTRAINT_APPEND.md` owns the fixture-local public replay-
+  constraint append and its boundary with unselected replay derivation.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing

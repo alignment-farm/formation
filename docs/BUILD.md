@@ -197,6 +197,24 @@ governor calls. The repaired slice retains and revalidates the complete runtime
 chain from condition root through source, authorship, proposal, decision, and
 admission. Final independent mechanical recheck returns `PASS`.
 
+The next named computation is the fixture-local public replay-constraint
+append. Its [typed contract](REPLAY_CONSTRAINT_APPEND.md) separates exact
+constraint binding from unearned constrained replay. The implementation
+selects the exact ablation admitted root through retained trajectory assignment,
+delivers only a public target role and `transitive_exclusion`, lets the runtime
+resolve that role inside its own retained lineage, and returns one exact
+post-constraint root. No receipt bytes, digest, replay view, or traversal is
+selected.
+
+The combined 64-test suite passes. Post-build review rejected the first green
+57-test version because broad verifier backpointers exposed harness state and
+caller-created coordinates, deliveries, or runtime facades could counterfeit
+provenance. The repaired boundary factory-issues the sole controller, reserves
+both treatment slots before later ablation assignment, registers one narrow
+exact public delivery, and revalidates the complete one-use chain whenever the
+returned root is consumed. Final independent mechanical recheck returns
+`PASS`.
+
 The next cold gate contacted fixture-local transitive replay exclusion. It
 exposed a lineage-insensitive shortcut: returning the documented closure from
 the target token could satisfy the earlier fixture. The repaired contracts make
@@ -227,21 +245,21 @@ wrong-root, and twice-consumed deliveries cannot be refused by value inspection
 alone. The [foreground-delivery contract](FOREGROUND_DELIVERY.md) therefore
 earns a narrow typed freeze, root-bound delivery, consumption, and witness
 boundary without selecting bytes. The contract originally waited for real
-governed-admission and ablation-constraint root capabilities. The governed
-prerequisite is now implemented; the ablation constraint remains open. Two
-independent cold reconstructions agreed on the full contract and returned
-`CONTRACT_STABLE_CODE_BLOCKED`.
+governed-admission and ablation-constraint root capabilities. Both now exist.
+Two independent cold reconstructions agreed on the full contract and originally
+returned `CONTRACT_STABLE_CODE_BLOCKED`; its exact type and issuer boundary now
+needs a final code-facing review before implementation.
 
 The semantic [deterministic fixture v0](FIXTURE.md) and its governing packet have
 been cold-reviewed and simplified so a pre-admission trial is not a schema
-requirement. The shared-prefix, first condition-append, and direct-admission
-boundaries now have licensed fixture-local implementations; later governance,
-practice, replay, ablation, and scoring paths remain wire-only. The [instrument
+requirement. The shared-prefix, first condition-append, direct-admission, and
+replay-constraint append boundaries now have licensed fixture-local
+implementations; later governance, practice, replay derivation, and scoring
+paths remain wire-only. The [instrument
 map](INSTRUMENTS.md) keeps each later design layer in Markdown until another
 named replay, separation, identity, or refusal ambiguity requires machine
-syntax. The later foreground-delivery contract is semantically earned but not
-yet buildable because its ablation replay-constraint root remains
-unmaterialized.
+syntax. The later foreground-delivery contract is semantically earned, and all
+three prerequisite root capabilities now exist.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not

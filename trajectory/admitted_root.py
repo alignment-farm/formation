@@ -49,6 +49,10 @@ class FormationAppendRefusal(ValueError):
     """The witnessed formation path cannot become an admitted root."""
 
 
+class AdmittedTreatmentBatchRefusal(ValueError):
+    """The exact pair of returned treatment admission roots is unavailable."""
+
+
 @dataclass(frozen=True)
 class ProposalWitness:
     run_id: str
@@ -74,6 +78,106 @@ class AdmittedBranchRoot:
     admission: AdmittedCandidate
     head: object
     _issuer: object
+
+
+class _AdmittedTreatmentBatchUse:
+    def __init__(self, verifiers: tuple[_AdmittedRootVerifier, _AdmittedRootVerifier]) -> None:
+        self._verifiers = verifiers
+        self._batch: AdmittedTreatmentBatch | None = None
+        self._snapshot: tuple[object, ...] | None = None
+        self.used = False
+
+    def bind(self, batch: AdmittedTreatmentBatch) -> None:
+        if self._batch is not None:
+            raise AdmittedTreatmentBatchRefusal("admitted_treatment_batch_already_bound")
+        self._batch = batch
+        self._snapshot = (
+            batch.run_id,
+            batch.roots,
+            batch._use,
+            batch._issuer,
+        )
+
+    def require_root(self, root: object) -> AdmittedBranchRoot:
+        verifier = next(
+            (item for item in self._verifiers if item.root is root), None
+        )
+        if verifier is None:
+            raise AdmittedTreatmentBatchRefusal("exact_admitted_treatment_root_required")
+        return verifier.require(root)
+
+    def require(
+        self, batch: object, *, consumed: bool | None = None
+    ) -> AdmittedTreatmentBatch:
+        if (
+            type(batch) is not AdmittedTreatmentBatch
+            or batch is not self._batch
+            or self._snapshot is None
+            or batch.run_id != self._snapshot[0]
+            or batch.roots is not self._snapshot[1]
+            or batch._use is not self._snapshot[2]
+            or batch._issuer is not self._snapshot[3]
+            or (consumed is not None and self.used is not consumed)
+        ):
+            raise AdmittedTreatmentBatchRefusal("exact_admitted_treatment_batch_required")
+        for root in batch.roots:
+            self.require_root(root)
+        return batch
+
+    def consume(self, batch: object) -> tuple[AdmittedBranchRoot, AdmittedBranchRoot]:
+        if self.used:
+            raise AdmittedTreatmentBatchRefusal("admitted_treatment_batch_already_consumed")
+        self.require(batch, consumed=False)
+        self.used = True
+        return batch.roots
+
+
+@dataclass(frozen=True)
+class AdmittedTreatmentBatch:
+    """Exact two-root admitted set in the original label-blind order."""
+
+    run_id: str
+    roots: tuple[AdmittedBranchRoot, AdmittedBranchRoot]
+    _use: _AdmittedTreatmentBatchUse
+    _issuer: object
+
+
+class _AdmittedRootVerifier:
+    """Detached runtime-chain verifier with no trajectory assignment authority."""
+
+    def __init__(self, root: AdmittedBranchRoot, runtime: object, handoff: object) -> None:
+        self.root = root
+        self._runtime = runtime
+        self._handoff = handoff
+        self._snapshot = (
+            root.run_id,
+            root.condition_root,
+            root.proposal,
+            root.admission,
+            root.head,
+            root._issuer,
+        )
+
+    def require(self, root: object) -> AdmittedBranchRoot:
+        if type(root) is not AdmittedBranchRoot or root is not self.root:
+            raise AdmittedTreatmentBatchRefusal("exact_admitted_treatment_root_required")
+        try:
+            current = self._runtime.require_current_admission(self._handoff)
+        except ValueError as error:
+            raise AdmittedTreatmentBatchRefusal("admitted_treatment_root_changed") from error
+        if (
+            root.run_id != self._snapshot[0]
+            or root.condition_root is not self._snapshot[1]
+            or root.proposal is not self._snapshot[2]
+            or root.admission is not self._snapshot[3]
+            or root.head is not self._snapshot[4]
+            or root._issuer is not self._snapshot[5]
+            or current is not self._handoff
+            or current.admission is not root.admission
+            or current.admission.proposal is not root.proposal
+        ):
+            raise AdmittedTreatmentBatchRefusal("admitted_treatment_root_changed")
+        return root
 
 
 def validate_fixture_proposal(proposal: object) -> str:
@@ -187,6 +291,11 @@ class FormationAppendController:
         self._admission_snapshots: list[tuple[object, ...]] = []
         self._roots: list[AdmittedBranchRoot] = []
         self._root_snapshots: list[tuple[object, ...]] = []
+        self._admitted_batch_issuer = object()
+        self._admitted_batch: AdmittedTreatmentBatch | None = None
+        self._admitted_batch_snapshot: tuple[object, ...] | None = None
+        self._constraint_controller: object | None = None
+        self._constraint_controller_snapshot: object | None = None
 
     def _require_batch_root(self, root: object) -> BranchLocalRoot:
         self._conditions.require_treatment_root_batch(self._batch)
@@ -479,3 +588,110 @@ class FormationAppendController:
         validate_fixture_proposal(root.proposal)
         validate_fixture_admission(root.admission)
         return root
+
+    def issue_admitted_treatment_batch(self) -> AdmittedTreatmentBatch:
+        if self._admitted_batch is not None:
+            raise AdmittedTreatmentBatchRefusal("admitted_treatment_batch_already_issued")
+        if len(self._roots) != 2:
+            raise AdmittedTreatmentBatchRefusal("both_admitted_treatment_roots_required")
+        admitted_by_condition = {id(root.condition_root): root for root in self._roots}
+        ordered = tuple(admitted_by_condition.get(id(root)) for root in self._batch.roots)
+        if (
+            len(ordered) != 2
+            or any(root is None for root in ordered)
+            or ordered[0] is ordered[1]
+        ):
+            raise AdmittedTreatmentBatchRefusal("admitted_treatment_root_set_mismatch")
+        first = self.require_returned_root(ordered[0])
+        second = self.require_returned_root(ordered[1])
+        verifiers = tuple(
+            _AdmittedRootVerifier(
+                root,
+                next(
+                    snapshot[13]
+                    for snapshot in self._root_snapshots
+                    if snapshot[1] is root.condition_root
+                ),
+                next(
+                    snapshot[14]
+                    for snapshot in self._root_snapshots
+                    if snapshot[1] is root.condition_root
+                ),
+            )
+            for root in (first, second)
+        )
+        use = _AdmittedTreatmentBatchUse(verifiers)
+        batch = AdmittedTreatmentBatch(
+            run_id=first.run_id,
+            roots=(first, second),
+            _use=use,
+            _issuer=self._admitted_batch_issuer,
+        )
+        use.bind(batch)
+        self._admitted_batch = batch
+        self._admitted_batch_snapshot = (
+            batch.run_id,
+            batch.roots,
+            batch._use,
+            batch._issuer,
+        )
+        return batch
+
+    def require_admitted_treatment_batch(
+        self, batch: object
+    ) -> AdmittedTreatmentBatch:
+        if (
+            type(batch) is not AdmittedTreatmentBatch
+            or batch is not self._admitted_batch
+            or batch._issuer is not self._admitted_batch_issuer
+            or self._admitted_batch_snapshot is None
+        ):
+            raise AdmittedTreatmentBatchRefusal("exact_admitted_treatment_batch_required")
+        snapshot = self._admitted_batch_snapshot
+        if (
+            batch.run_id != snapshot[0]
+            or batch.roots is not snapshot[1]
+            or batch._use is not snapshot[2]
+            or batch._issuer is not snapshot[3]
+            or len(batch.roots) != 2
+            or batch.roots[0] is batch.roots[1]
+        ):
+            raise AdmittedTreatmentBatchRefusal("admitted_treatment_batch_changed")
+        for root in batch.roots:
+            self.require_returned_root(root)
+        return batch
+
+    def open_constraint_controller(self, batch: object):
+        from trajectory.replay_constraint import ReplayConstraintAppendController
+
+        current = self.require_admitted_treatment_batch(batch)
+        if self._constraint_controller is not None:
+            raise AdmittedTreatmentBatchRefusal("constraint_controller_already_registered")
+        controller = ReplayConstraintAppendController._from_formation(self, current)
+        self._constraint_controller = controller
+        self._constraint_controller_snapshot = controller
+        return controller
+
+    def resolve_ablation_root(
+        self, batch: object, controller: object
+    ) -> AdmittedBranchRoot:
+        current = self.require_admitted_treatment_batch(batch)
+        from trajectory.replay_constraint import ReplayConstraintAppendController
+
+        if (
+            type(controller) is not ReplayConstraintAppendController
+            or controller is not self._constraint_controller
+            or controller is not self._constraint_controller_snapshot
+        ):
+            raise AdmittedTreatmentBatchRefusal("exact_constraint_controller_required")
+        selected = tuple(
+            root
+            for root in current.roots
+            if self._conditions.assignment_label_for_formation(
+                root.condition_root, self._issuer
+            )
+            == "ablation"
+        )
+        if len(selected) != 1:
+            raise AdmittedTreatmentBatchRefusal("exact_ablation_assignment_required")
+        return self.require_returned_root(selected[0])
