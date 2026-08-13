@@ -207,9 +207,21 @@ runtime receives and records only its public formation condition.
 | `governed` | `T-G-001 branch assigned` | `D-G-007 formation condition bound: consequence_governance_activation-v0` |
 | `ablation` | `T-A-001 branch assigned` plus later ablation assignment | `D-A-007 formation condition bound: consequence_governance_activation-v0` |
 
-`baseline`, `governed`, and `ablation` may not appear in any developmental
-payload. The difference between the governed and ablation branches is not
-materialized until the declared ablation boundary.
+The `D-B-*`, `D-G-*`, and `D-A-*` coordinates in this document are prose
+aliases. They let the fixture state branch-specific parents and refusal cases
+without making the hidden assignment part of practitioner state. Materialized
+developmental receipts use runtime-visible opaque coordinates instead. The
+trajectory witness joins each opaque coordinate to its prose alias for audit;
+that join is never replayed into the runtime.
+
+`baseline`, `governed`, and `ablation`, their one-letter aliases, and the prose
+coordinates above may not appear in any runtime-visible field. The public
+condition itself may distinguish the baseline mechanism from the treatment
+mechanism. Governed and ablation receive the same public condition and must
+have identical validated public-condition payloads until the declared ablation
+boundary. Their opaque event coordinates, runtime handoffs, root capabilities,
+and content bindings remain distinct identity facts rather than condition
+differences.
 
 `T-A-001` contains the branch assignment only. The later `ablation assigned`
 receipt is a distinct trajectory event created at schedule step 4; its public
@@ -217,6 +229,12 @@ target and policy do not appear early in `T-A-001`.
 
 Each branch-local formation-condition receipt cites `D-C-006` as its causal
 parent.
+
+The [condition-append contract](CONDITION_APPEND.md) fixes the first machine
+representation after the fork. It gives every fork an exact retained capability
+before the harness assigns a branch, then keeps the six-line prefix unchanged
+while the runtime authors a separate condition segment with an opaque event
+coordinate.
 
 `audit_lineage_only-v0` preserves the shared occurrence for audit but makes no
 experience-derived material available to later practice. Each public formation
@@ -668,7 +686,9 @@ The fixture passes only when:
   and, when selected, the materialization identity rule across all branches;
 - branch labels and case-family metadata appear only in trajectory evidence;
 - any difference among public formation-condition receipts occurs only at the
-  declared fork, and governed and ablation receipts match there;
+  declared fork, and governed and ablation have identical validated condition
+  payloads there apart from their opaque coordinates, runtime handoffs, root
+  capabilities, and content bindings;
 - the governed path replays deterministically through proposal and admission;
 - the positive case activates and the stronger surface decoy does not;
 - external correction produces suspension, revocation, and later silence;

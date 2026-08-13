@@ -1,8 +1,9 @@
 # Fixture-local trajectory code
 
-This directory currently contains only the harness-owned half of the first
-materialization slice: exact validation, the compact `T-C-002` witness, and the
-fork comparison.
+This directory contains the harness-owned parts of two fixture-local slices:
+prefix validation and fork comparison, followed by public-condition assignment,
+condition validation, witness, and append checks.
 
 It is not yet a general trajectory harness. See
-[`docs/MATERIALIZATION.md`](../docs/MATERIALIZATION.md).
+[`docs/MATERIALIZATION.md`](../docs/MATERIALIZATION.md) and
+[`docs/CONDITION_APPEND.md`](../docs/CONDITION_APPEND.md).

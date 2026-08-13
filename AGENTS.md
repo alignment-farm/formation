@@ -49,6 +49,8 @@ Stop when the task's scope and authority are clear.
   required before machine syntax is selected.
 - `docs/MATERIALIZATION.md` owns the first fixture-local byte contract after a
   named computation earns it.
+- `docs/CONDITION_APPEND.md` owns the fixture-local post-fork condition append
+  and its information-separation checks.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing

@@ -69,9 +69,11 @@ class PrefixWitness:
 class FrozenBranchRoot:
     witness_coordinate: str
     handoff_id: str
+    run_id: str
     source_head: str
     binding: PrefixBinding
     artifact: bytes
+    _issuer: object
 
 
 def validate_fixture_prefix(artifact: object) -> str:
@@ -98,7 +100,18 @@ class ForkController:
     def __init__(self, runtime: RuntimePrefixMaterializer) -> None:
         self._runtime = runtime
         self._issuer = object()
+        self._root_issuer = object()
         self._current_witness: PrefixWitness | None = None
+        self._issued_roots: list[FrozenBranchRoot] = []
+        self._root_snapshots: list[
+            tuple[FrozenBranchRoot, str, str, str, str, PrefixBinding, bytes, object]
+        ] = []
+        self._consumed_roots: list[FrozenBranchRoot] = []
+        self._roots_sealed = False
+        self._runtime_roots_claimed = False
+        self._assignment_controller: object | None = None
+        self._assigned_roots: list[FrozenBranchRoot] = []
+        self._assigned_labels: list[str] = []
 
     def witness(self, handoff: object) -> PrefixWitness:
         if self._current_witness is not None:
@@ -124,6 +137,8 @@ class ForkController:
         witness: object,
         claimed_binding: object,
     ) -> FrozenBranchRoot:
+        if self._roots_sealed:
+            raise ForkRefusal("fork_set_already_sealed")
         current = self._runtime.require_current(handoff)
         if not isinstance(witness, PrefixWitness):
             raise ForkRefusal("exact_prefix_witness_required")
@@ -150,10 +165,105 @@ class ForkController:
         if recomputed != witness.binding:
             raise ForkRefusal("branch_binding_mismatch")
 
-        return FrozenBranchRoot(
+        root = FrozenBranchRoot(
             witness_coordinate=witness.coordinate,
             handoff_id=current.handoff_id,
+            run_id=current.run_id,
             source_head=current.source_head,
             binding=recomputed,
             artifact=branch_artifact,
+            _issuer=self._root_issuer,
         )
+        self._issued_roots.append(root)
+        self._root_snapshots.append(
+            (
+                root,
+                root.witness_coordinate,
+                root.handoff_id,
+                root.run_id,
+                root.source_head,
+                PrefixBinding(
+                    root.binding.materializer,
+                    root.binding.identity_contract,
+                    root.binding.algorithm,
+                    root.binding.digest,
+                    root.binding.byte_length,
+                ),
+                root.artifact,
+                root._issuer,
+            )
+        )
+        return root
+
+    def seal_roots(self) -> None:
+        """Freeze the fixture's three label-blind roots before assignment."""
+
+        if self._roots_sealed:
+            raise ForkRefusal("fork_set_already_sealed")
+        if len(self._issued_roots) != 3:
+            raise ForkRefusal("fixture_requires_three_roots")
+        self._roots_sealed = True
+
+    def require_issued_root(self, root: object) -> FrozenBranchRoot:
+        if type(root) is not FrozenBranchRoot:
+            raise ForkRefusal("exact_issued_root_required")
+        if not self._roots_sealed:
+            raise ForkRefusal("fork_set_not_sealed")
+        if root._issuer is not self._root_issuer:
+            raise ForkRefusal("exact_issued_root_required")
+        if not any(root is issued for issued in self._issued_roots):
+            raise ForkRefusal("exact_issued_root_required")
+        snapshot = next(item for item in self._root_snapshots if item[0] is root)
+        if (
+            root.witness_coordinate != snapshot[1]
+            or root.handoff_id != snapshot[2]
+            or root.run_id != snapshot[3]
+            or root.source_head != snapshot[4]
+            or root.binding != snapshot[5]
+            or root.artifact is not snapshot[6]
+            or root._issuer is not snapshot[7]
+        ):
+            raise ForkRefusal("issued_root_changed")
+        if root.run_id != self._runtime.run_id or root.source_head != SOURCE_HEAD:
+            raise ForkRefusal("root_run_or_head_mismatch")
+        return root
+
+    def claim_runtime_roots(self) -> tuple[FrozenBranchRoot, ...]:
+        """Return the sealed roots once, in label-blind issuance order."""
+
+        if not self._roots_sealed:
+            raise ForkRefusal("fork_set_not_sealed")
+        if self._assignment_controller is not None:
+            raise ForkRefusal("runtime_roots_must_precede_assignment")
+        if self._runtime_roots_claimed:
+            raise ForkRefusal("runtime_roots_already_claimed")
+        self._runtime_roots_claimed = True
+        return tuple(self.require_issued_root(root) for root in self._issued_roots)
+
+    def consume_root(self, root: object) -> FrozenBranchRoot:
+        current = self.require_issued_root(root)
+        if any(current is consumed for consumed in self._consumed_roots):
+            raise ForkRefusal("root_already_consumed")
+        self._consumed_roots.append(current)
+        return current
+
+    def register_assignment_controller(self, controller: object) -> None:
+        if not self._runtime_roots_claimed:
+            raise ForkRefusal("runtime_roots_not_claimed")
+        if self._assignment_controller is not None:
+            raise ForkRefusal("assignment_controller_already_registered")
+        self._assignment_controller = controller
+
+    def reserve_assignment(
+        self, root: object, label: str, controller: object
+    ) -> FrozenBranchRoot:
+        current = self.require_issued_root(root)
+        if controller is not self._assignment_controller:
+            raise ForkRefusal("exact_assignment_controller_required")
+        if any(current is assigned for assigned in self._assigned_roots):
+            raise ForkRefusal("root_already_assigned")
+        if label in self._assigned_labels:
+            raise ForkRefusal("fixture_label_already_assigned")
+        self._assigned_roots.append(current)
+        self._assigned_labels.append(label)
+        return current

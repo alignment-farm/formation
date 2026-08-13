@@ -158,10 +158,21 @@ post-build authority reviews found caller-created witness and binding bypasses;
 both were reproduced, repaired, and added to the refusal suite before the final
 reviews returned `PASS`.
 
+The next named computation is the first post-fork condition append. Its
+[fixture-local contract](CONDITION_APPEND.md) closes the hidden-label boundary:
+the runtime reserves opaque coordinates over the sealed unlabeled roots before
+the harness assigns branches, records one public condition in a separate
+segment, and returns an exact immutable branch-local root. The implementation
+passes the combined twenty-six-test suite. Independent post-build semantic and
+authority reviews return `PASS` after concrete duplicate-assignment,
+duplicate-witness, forged-root-order, coordinate-channel, and reservation
+mutation attempts were reproduced and closed.
+
 The semantic [deterministic fixture v0](FIXTURE.md) and its governing packet have
 been cold-reviewed and simplified so a pre-admission trial is not a schema
-requirement. The shared-prefix boundary now has a licensed fixture-local
-implementation; the rest of the fixture remains wire-only. The [instrument
+requirement. The shared-prefix and first condition-append boundaries now have
+licensed fixture-local implementations; the later proposal, governance,
+practice, replay, ablation, and scoring paths remain wire-only. The [instrument
 map](INSTRUMENTS.md) keeps each later design layer in Markdown until another
 named replay, separation, identity, or refusal ambiguity requires machine
 syntax.

@@ -62,6 +62,14 @@ review exposed caller-created witness and binding capabilities; both paths now
 fail closed, and two independent final reviews return `PASS`. This is one
 completed input to Phase 1, not completion of its walking skeleton.
 
+The first post-fork condition append is the second completed input. Its
+[fixture-local contract](CONDITION_APPEND.md) preserves the unchanged prefix,
+reserves opaque developmental coordinates before hidden assignment, and binds a
+runtime-authored public-condition segment to the exact fork root. The combined
+suite has twenty-six passing tests. Independent post-build reviews return
+`PASS`; no proposal, governance, replay, or formation-effect claim follows from
+this plumbing result.
+
 ## Phase 1 — build the two-loop skeleton
 
 Goal: make practice and formation traversable while keeping all intelligence
@@ -152,12 +160,11 @@ automatically generalize to a universal architecture.
 
 1. Treat the cold-reviewed Markdown packet and fixture as the semantic source,
    not as evidence or implementation architecture.
-2. Freeze only the fixture-local prefix syntax required by the contacted fork
-   comparison; keep later coordinate, serialization, clock, and storage choices
-   open.
-3. Cold-check that syntax against the agreed semantic fixture and the distinct
-   validation, provenance, identity, and exchange boundaries.
-4. Freeze the first deterministic two-loop materialization boundary without
+2. Preserve the completed prefix and condition-append contracts; keep later
+   proposal, replay, clock, and storage choices open.
+3. Name the next computation that prose cannot perform and cold-check it
+   against the semantic fixture and authority boundaries.
+4. Extend the deterministic two-loop materialization boundary without
    promoting its policy-specific path into a universal lifecycle.
 5. Implement the lineage and forkable skeleton.
 6. Only then select the first real-engine transfer problem.

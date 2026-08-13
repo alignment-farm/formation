@@ -136,7 +136,17 @@ That slice is now implemented. Eleven deterministic tests pass, including
 refusals for forged handoffs and witnesses, caller-supplied replacement bytes,
 source and artifact mutations, altered bindings, and post-binding tampering.
 Two post-build authority reviews return `PASS`. The full two-loop skeleton and
-every record after `D-C-006` remain unimplemented.
+most records after `D-C-006` remain unimplemented.
+
+The first branch-local append is also materialized. The
+[condition-append contract](docs/CONDITION_APPEND.md) keeps hidden assignments
+in trajectory evidence while each runtime records only its public formation
+condition. It reserves opaque developmental coordinates before assignment,
+keeps the six-line prefix unchanged, and returns an exact immutable two-segment
+root. Twenty-six deterministic tests now pass across both slices, and the
+final semantic and authority rechecks return `PASS`. This establishes local
+identity and separation plumbing only; it does not establish learning,
+governance effectiveness, transfer, or any formation effect.
 
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the
@@ -149,8 +159,8 @@ formation from raw episodic recall and authored lessons.
 | Place | Responsibility |
 | --- | --- |
 | [docs/](docs/README.md) | Concept, research program, and implementation boundary |
-| [`formation/`](formation/README.md) | Runtime-owned fixture prefix source, producer, and handoff; not yet a general runtime |
-| [`trajectory/`](trajectory/README.md) | Harness-owned fixture validator, witness, and fork check; not yet a general harness |
+| [`formation/`](formation/README.md) | Runtime-owned fixture prefix and condition-append producers; not yet a general runtime |
+| [`trajectory/`](trajectory/README.md) | Harness-owned fixture validation, fork, assignment, and witness checks; not yet a general harness |
 | [`tests/`](tests/README.md) | Deterministic contract and separation tests |
 | `evidence/` | Future primary trajectories and computed verdicts, never hand-written claims |
 
