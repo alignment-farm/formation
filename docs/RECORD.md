@@ -13,8 +13,8 @@ Formation uses two records with different readers and authorities.
 ### Developmental lineage
 
 The formation runtime's append-only history. It contains only runtime-visible
-occurrence, interpretation, governance, and activation events. Replay of this
-lineage reconstructs practitioner state.
+occurrence, interpretation, configuration, governance, and activation events.
+Replay of this lineage reconstructs practitioner state.
 
 ### Trajectory evidence
 
@@ -96,10 +96,12 @@ Before a formation condition may affect practice, the runtime records:
   excluding a hidden assignment reason or expected effect.
 
 In an experiment, the harness owns the hidden assignment while the runtime owns
-the receipt for the public configuration it actually applies. This event is
-expected to differ across branches at the declared fork boundary. Outside an
-experiment, the same receipt records an operator- or runtime-selected condition
-without implying a harness exists.
+the receipt for the public configuration it actually applies. A `formation
+condition bound` event is expected to differ across branches at the declared
+fork boundary. A replay constraint is bound at the lineage point where its
+policy applies; in an ablation of an admitted change, that point follows the
+dependent admission. Outside an experiment, the same receipt categories record
+operator- or runtime-selected configuration without implying a harness exists.
 
 ## Governance events
 
@@ -152,7 +154,8 @@ The harness record includes:
 - **case assigned** — held-out family and expected-result references;
 - **runtime event witnessed** — binding to developmental event coordinates and
   digests;
-- **ablation assigned** — exact state element or causal edge removed;
+- **ablation assigned** — target state element or causal edge, public exclusion
+  policy, and harness-only assignment reason and expected-effect reference;
 - **cost observed** — tokens, time, tool use, checks, and storage;
 - **case scored** — computed case verdict; and
 - **trajectory closed** — completion, refusal, invalidation, or stopping-rule
@@ -215,6 +218,10 @@ view. Dependent state must either disappear transitively or become explicitly
 unresolved. An ablation must not silently repair the branch, alter its
 foreground situation, expose why the element was removed, or arrive as an
 already-derived practitioner view.
+
+Unavailable or unresolved state under a replay constraint is a property of the
+derived view, not a governance transition. Applying the constraint emits no
+`change suspended`, `change revoked`, or `change expired` receipt.
 
 ## Conformance requirements
 

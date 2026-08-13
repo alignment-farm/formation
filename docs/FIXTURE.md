@@ -321,10 +321,10 @@ a harness-produced view. Excluding `D-C-005` must make the experience warrant,
 candidate, and admission unavailable or explicitly unresolved. It must not
 leave a valid-looking admitted version.
 
-On the identical positive foreground case, activation is withheld and
-`blind-commit-v0` releases directly. The environment rejects the action. The
-harness records this authored difference as a wire causal receipt, never as
-evidence of acquired competence.
+On the identical positive foreground case, activation is withheld with refusal
+`unresolved_dependency` and `blind-commit-v0` releases directly. The environment
+rejects the action. The harness records this authored difference as a wire
+causal receipt, never as evidence of acquired competence.
 
 ## Trajectory bindings
 
