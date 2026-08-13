@@ -123,6 +123,21 @@ Independent convergence on one semantic object closes the review gate; it does
 not force materialization. Formation stays in Markdown until deterministic
 computation, validation, identity, or exchange requires machine syntax.
 
+That pressure has now arrived for one narrow operation: proving that every
+fixture branch starts from the same materialized developmental prefix. The
+[first materialization contract](docs/MATERIALIZATION.md) selects exact bytes
+and a content binding only for `D-C-001` through `D-C-006`. Grok and Composer
+independently reconstructed the repaired contract and returned
+`code_slice_licensed`. The license covers only the fixture-local source adapter,
+producer, validator, handoff, comparison, binding, and refusal tests. It does not
+select a general event schema or storage format.
+
+That slice is now implemented. Eleven deterministic tests pass, including
+refusals for forged handoffs and witnesses, caller-supplied replacement bytes,
+source and artifact mutations, altered bindings, and post-binding tampering.
+Two post-build authority reviews return `PASS`. The full two-loop skeleton and
+every record after `D-C-006` remain unimplemented.
+
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the
 candidate is learned or useful. The first experimental milestone comes later:
@@ -134,9 +149,9 @@ formation from raw episodic recall and authored lessons.
 | Place | Responsibility |
 | --- | --- |
 | [docs/](docs/README.md) | Concept, research program, and implementation boundary |
-| `formation/` | Formation runtime; created only when the first build slice begins |
-| `trajectory/` | External trajectory harness; created only when its contract is specified |
-| `tests/` | Deterministic contract and separation tests |
+| [`formation/`](formation/README.md) | Runtime-owned fixture prefix source, producer, and handoff; not yet a general runtime |
+| [`trajectory/`](trajectory/README.md) | Harness-owned fixture validator, witness, and fork check; not yet a general harness |
+| [`tests/`](tests/README.md) | Deterministic contract and separation tests |
 | `evidence/` | Future primary trajectories and computed verdicts, never hand-written claims |
 
 ## Evidence and authority

@@ -49,6 +49,19 @@ semantic receipt graph, their disagreements were resolved in Markdown, and both
 then found no remaining semantic disagreement. The Phase 0 semantic exit
 condition is met without selecting machine syntax.
 
+The first post-exit computation is now named: compare the exact acquisition
+prefix across baseline, governed, and ablation forks. Two cold constructions
+and a contained comparison separated byte identity from semantic validation and
+provenance. Grok and Composer independently reconstructed the repaired
+[materialization contract](MATERIALIZATION.md) and returned
+`code_slice_licensed`. The licensed work is smaller than Phase 1: it contains
+only the fixture-local prefix path and its refusals.
+
+That slice is implemented with eleven passing deterministic tests. Post-build
+review exposed caller-created witness and binding capabilities; both paths now
+fail closed, and two independent final reviews return `PASS`. This is one
+completed input to Phase 1, not completion of its walking skeleton.
+
 ## Phase 1 — build the two-loop skeleton
 
 Goal: make practice and formation traversable while keeping all intelligence
@@ -139,11 +152,11 @@ automatically generalize to a universal architecture.
 
 1. Treat the cold-reviewed Markdown packet and fixture as the semantic source,
    not as evidence or implementation architecture.
-2. Keep coordinate allocation, serialization, digest, clock, and storage
-   choices open until deterministic computation, validation, identity, or
-   exchange requires them.
-3. When that pressure arrives, select the smallest machine syntax that resolves
-   it and encode the already-agreed semantic fixture.
+2. Freeze only the fixture-local prefix syntax required by the contacted fork
+   comparison; keep later coordinate, serialization, clock, and storage choices
+   open.
+3. Cold-check that syntax against the agreed semantic fixture and the distinct
+   validation, provenance, identity, and exchange boundaries.
 4. Freeze the first deterministic two-loop materialization boundary without
    promoting its policy-specific path into a universal lifecycle.
 5. Implement the lineage and forkable skeleton.

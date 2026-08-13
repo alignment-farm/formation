@@ -43,6 +43,8 @@ Stop when the task's scope and authority are clear.
 - `docs/FIXTURE.md` owns the first deterministic cross-contract scenario.
 - `docs/INSTRUMENTS.md` owns the pre-schema instrument surfaces and the pressure
   required before machine syntax is selected.
+- `docs/MATERIALIZATION.md` owns the first fixture-local byte contract after a
+  named computation earns it.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - Directory READMEs route locally and do not duplicate broader status prose.

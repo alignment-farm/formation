@@ -15,6 +15,7 @@ root [README](../README.md).
 | What comparisons and threats govern a future claim? | [EVALUATION.md](EVALUATION.md) |
 | What shared deterministic scenario exercises those boundaries? | [FIXTURE.md](FIXTURE.md) |
 | Which instruments make the boundaries observable before schema selection? | [INSTRUMENTS.md](INSTRUMENTS.md) |
+| What exact bytes and checks serve the first contacted computation? | [MATERIALIZATION.md](MATERIALIZATION.md) |
 
 These documents are pre-evidence. They constrain future work but establish no
 formation finding.

@@ -126,6 +126,13 @@ protocol must say so. Such a study answers a different question from a
 fixed-history mechanism comparison and cannot use paired-case causal language
 without accounting for the divergence.
 
+The first fixture's [materialization contract](MATERIALIZATION.md) keeps
+semantic validation, provenance, and byte identity separate. Its digest can
+show that branch artifacts contain the same bytes. It cannot show that the
+runtime produced valid developmental content or that the harness did not
+rebuild byte-identical content. Those claims require the validator and an
+auditable runtime handoff respectively.
+
 For an ablation, the frozen protocol names the target and public condition; the
 harness assigns them. The runtime must receive that condition explicitly and
 apply its declared semantics.

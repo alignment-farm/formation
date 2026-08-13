@@ -263,6 +263,13 @@ Markdown stops being sufficient when at least one of these occurs:
 Until then, selecting JSON, JSON Lines, a schema language, or a storage model
 would answer an implementation question the research has not yet forced.
 
+The first pressure is now contacted: the fixture must compare one produced
+prefix across three forks. The [materialization contract](MATERIALIZATION.md)
+selects one fixture-local JSON Lines artifact and a SHA-256 binding. It keeps
+semantic validation, runtime provenance, byte identity, and future exchange as
+four separate checks. Its two-family cold reconstruction closed and licensed
+only the fixture-local implementation slice.
+
 ## Loses-condition
 
 This instrument map loses if it can be satisfied only by reproducing the

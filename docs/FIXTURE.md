@@ -1,6 +1,7 @@
 # Deterministic two-loop boundary fixture v0
 
-Status: **Phase 0 cold-reviewed semantic fixture; wire-only and unimplemented**.
+Status: **Phase 0 cold-reviewed semantic fixture; fixture-local prefix byte
+boundary implemented and independently reviewed; remaining paths wire-only**.
 
 Purpose: make the authority and record contracts concrete enough to expose
 incompatible interpretations before a schema or runtime is built.
@@ -191,7 +192,9 @@ The corresponding trajectory prefix is:
 
 Every branch starts from developmental head `D-C-006`, whose retained prefix is
 bound by `T-C-002`. The harness must refuse a fork whose prefix identity
-differs.
+differs. The exact draft artifact and check are defined by the [first
+materialization contract](MATERIALIZATION.md); they do not apply to later
+receipts.
 
 ## Branch assignment and public configuration
 
@@ -310,9 +313,12 @@ apply its own public replay constraint. The review result is:
 markdown_sufficient
 ```
 
-No remaining disagreement in this pass requires machine syntax. Exact byte
-serialization, digest scope, and integrity binding remain intentionally
-unsettled until a materializer needs to compute them.
+No remaining disagreement in this handoff pass required machine syntax. A later
+contact with the fork operation did: prose cannot compute whether three branch
+roots contain the same materialized prefix. The resulting fixture-local
+contract is isolated in [MATERIALIZATION.md](MATERIALIZATION.md); two independent
+model families reconstructed it and licensed only its narrow implementation
+slice.
 
 ## Governed formation path
 
@@ -561,23 +567,23 @@ At this stage, two fixture declarations are compatible when they agree on:
 - the sixteen independent refusal mutations; and
 - the acceptance and loses-conditions.
 
-Before byte materialization, `T-C-002` uses this fixture-local semantic identity
-rule: `D-C-001` through `D-C-006` must have the fixed coordinates, event kinds,
-originating authorities, causal relations, runtime and stub identities, and
-authored retained content declared above. A serialization difference is not yet
-a semantic prefix mismatch. Once a materialization identity rule is selected,
-`T-C-002` binds that identity in addition to these semantics.
+The semantic identity rule remains: `D-C-001` through `D-C-006` must have the
+fixed coordinates, event kinds, originating authorities, causal relations,
+runtime and stub identities, and authored retained content declared above. The
+fixture validator checks that rule. The draft [materialization
+identity](MATERIALIZATION.md) then binds the validated artifact bytes verbatim;
+it does not canonicalize the graph or replace semantic validation.
 
 Compatibility does not yet mean that one implementation can replay another's
-materialized event bytes. Coordinate allocation beyond the coordinates fixed in
-this document, event serialization, digest scope, integrity binding, clocks,
-storage, and ancillary implementation receipts remain unselected. A future
-machine syntax must preserve the semantic contract; it may not decide a
-disagreement about authority or schedule by making one interpretation parse.
+materialized event bytes. The prefix draft selects fixture-local serialization
+and digest scope only for one producer and its forks. Coordinate allocation and
+serialization after `D-C-006`, integrity binding, clocks, storage, and ancillary
+implementation receipts remain unselected. Machine syntax must preserve the
+semantic contract; it may not decide a disagreement about authority or schedule
+by making one interpretation parse.
 
-This is the limit of the Markdown fixture declaration. Byte exchange and digest
-comparison become a separate materialization question when an implementation is
-ready to compute them.
+Cross-implementation byte exchange remains a separate materialization question.
+The contacted operation is same-producer fork comparison.
 
 ### Independent-construction comparison
 
@@ -595,12 +601,13 @@ a need for typed syntax. This revision resolves those omissions by fixing:
   refusal mutation; and
 - the exact activated intervention identity and its admitted-version binding.
 
-Coordinate allocation for unnamed receipts, encounter-coordinate spelling,
-byte serialization, computed content identity, timestamps, storage, and the
-choice between unavailable and explicitly unresolved derived state remain
-deliberately open. The two allowed derived-state results are equivalent for this
-fixture only where the acceptance conditions explicitly permit either. These
-open choices do not change the semantic graph or information boundary.
+Coordinate allocation for unnamed receipts, serialization after the shared
+prefix, timestamps, storage, and the choice between unavailable and explicitly
+unresolved derived state remain deliberately open. The prefix contract fixes
+`E-C-001`, `I-C-001`, `A-C-001`, and `K-C-001` only where its six literal
+receipts require them. The two allowed derived-state results are equivalent for
+this fixture only where the acceptance conditions explicitly permit either.
+These open choices do not change the semantic graph or information boundary.
 
 ## Required refusal legs
 

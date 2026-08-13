@@ -140,21 +140,34 @@ lesson, the boundary is insufficient.
 Both specifications and the deterministic fixture have completed their current
 Markdown boundary review. Two independent semantic constructions now agree on
 the receipt graph and refusal outcomes. That convergence closes semantic
-prototyping; it does not select syntax or license code. Code remains gated until
-a deterministic materializer actually needs to compute identity, perform
-fail-closed validation, or exchange instances. At that point, select and freeze
-the smallest materialization contract that serves the named need.
+prototyping; it did not by itself select syntax or license code. The first named
+need is now content identity across the fixture fork. Its [fixture-local
+materialization contract](MATERIALIZATION.md) selects a producer artifact,
+validator, runtime handoff, and byte binding. Grok and Composer independently
+reconstructed the repaired contract, found no remaining authority contradiction,
+and returned `code_slice_licensed`.
+
+That confirmation licenses only the fixture-local source adapter,
+six-line producer, exact-literal validator, frozen runtime handoff, direct byte
+comparison, compact digest binding, and their refusal tests. It does not license
+the full walking skeleton, a general recorder, replay schema, storage layer, or
+trajectory harness.
+
+That licensed slice is implemented. Eleven deterministic tests pass. Two
+post-build authority reviews found caller-created witness and binding bypasses;
+both were reproduced, repaired, and added to the refusal suite before the final
+reviews returned `PASS`.
 
 The semantic [deterministic fixture v0](FIXTURE.md) and its governing packet have
 been cold-reviewed and simplified so a pre-admission trial is not a schema
-requirement. They remain wire-only and unimplemented. The [instrument
-map](INSTRUMENTS.md) keeps the next design layer in Markdown; schema selection
-now waits for a named replay, separation, identity, or refusal ambiguity that
-prose cannot settle.
+requirement. The shared-prefix boundary now has a licensed fixture-local
+implementation; the rest of the fixture remains wire-only. The [instrument
+map](INSTRUMENTS.md) keeps each later design layer in Markdown until another
+named replay, separation, identity, or refusal ambiguity requires machine
+syntax.
 
-The fixture's semantic schedule and compatibility boundary are now explicit.
-That is sufficient for independent scenario construction, not for exchanging
-materialized event bytes. The record review removed mandatory hash-chain,
-clock, digest, and universal-lifecycle machinery. No code is licensed until the
-first materialization boundary is selected and frozen from a named computation,
-validation, identity, or exchange need.
+The fixture's semantic schedule and compatibility boundary are explicit. The
+prefix draft selects SHA-256 only for same-producer fork comparison; it does not
+license byte exchange, per-event digests, hash chains, clocks, or a universal
+lifecycle. The independently reconstructed literal bytes and refusal ownership
+license only the prefix slice above; the full walking skeleton remains gated.

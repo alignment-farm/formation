@@ -56,6 +56,12 @@ event. Wall-clock time is not causal order, and hash linkage would expose
 mutation only relative to a trusted head; it would not authenticate a
 privileged writer.
 
+The first such selection is fixture-local. The [first materialization
+contract](MATERIALIZATION.md) binds one six-receipt prefix artifact verbatim.
+Its digest establishes byte equality only. The fixture validator owns semantic
+content and information separation; the runtime handoff owns provenance. No
+binding may promote either of those claims from a digest match.
+
 ### Packet-review disposition
 
 The load-bearing envelope requirements are semantic identity, authority,
