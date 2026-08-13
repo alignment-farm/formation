@@ -260,6 +260,9 @@ The harness record includes:
   begin;
 - **branch assigned** — baseline or mechanism assignment, hidden from runtime;
 - **case assigned** — held-out family and expected-result references;
+- **foreground bound** — one frozen, public comparison-group situation and the
+  exact recipient set authorized to receive it, with hidden family and expected
+  results retained separately;
 - **runtime event witnessed** — binding to developmental event coordinates and
   content identity;
 - **ablation assigned** — target state element or causal edge, public exclusion
@@ -272,6 +275,19 @@ The harness record includes:
 
 Scientific verdicts exist only here or in derived scorer output. They never
 become developmental events automatically.
+
+For a paired comparison, `foreground bound` precedes branch-local `case
+assigned` and presentation. Each case assignment cites the one foreground
+binding. Each recipient consumes one delivery derived from that binding, and
+its `encounter opened` receipt retains the exact public situation received. A
+later trajectory witness compares that received foreground projection to the
+binding. It does not compare the complete model requests, activation state,
+actions, or consequences.
+
+The foreground binding records public situation content once while keeping the
+comparison group and recipient mapping in trajectory evidence. A runtime
+delivery contains only the public situation. It contains no branch label,
+family, expected result, scorer key, or cross-branch identity.
 
 ## Policy-transition vocabulary
 

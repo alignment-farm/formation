@@ -121,6 +121,20 @@ A controlled formation comparison begins from one materialized prefix:
 5. Permit branches to differ only through their declared public conditions,
    persistent state, and downstream causal effects.
 
+A comparison-group foreground is frozen before branch-local case assignment or
+delivery. Hidden family, branch, expected-action, and scorer information may
+select where and when the frozen foreground is presented; none may change its
+public content. Each branch receives one delivery derived from that same frozen
+value. Branch execution order may differ, but independently rebuilding or
+reopening a mutable foreground source per branch violates the comparison even
+when rebuilt values happen to match.
+
+Foreground identity is narrower than runtime-offer identity. The foreground is
+the common current situation presented to every compared branch. A later model
+request may also contain branch-local admitted state or an activation handoff.
+Those permitted downstream differences must not enter the shared-foreground
+comparison.
+
 If the study concerns naturally diverging developmental trajectories, the
 protocol must say so. Such a study answers a different question from a
 fixed-history mechanism comparison and cannot use paired-case causal language

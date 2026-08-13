@@ -104,6 +104,8 @@ Passing this scenario establishes plumbing and separation only.
 - Replay is authoritative; caches cannot change semantic state.
 - Forks share an exact prefix and diverge only at declared public conditions or
   their downstream effects.
+- Each paired comparison uses one frozen, closed foreground delivered once to
+  every declared branch; later request differences do not alter that identity.
 - No candidate affects practice before admission.
 - Every activation cites the admitted change and current situation.
 - The exact admitted lineage object considered is the one selected, bound into
@@ -208,6 +210,20 @@ through 24. Independent rechecks agree on one semantic object. No byte identity
 or cross-boundary exchange is required to enforce those same-runtime
 references, so an activation or request materialization contract is not earned.
 
+The shared positive-foreground semantic gate is closed. Cold review exposed an
+ambiguous freeze point, inconsistent role count, and possible confusion between
+the common situation and the intentionally different model requests. The
+repaired fixture freezes one closed seven-role value, derives one delivery per
+branch root, compares each received projection directly, and adds refusal legs
+25 through 31. A focused license review then found that rebuilt-equal,
+wrong-root, and twice-consumed deliveries cannot be refused by value inspection
+alone. The [foreground-delivery contract](FOREGROUND_DELIVERY.md) therefore
+earns a narrow typed freeze, root-bound delivery, consumption, and witness
+boundary without selecting bytes. Implementation waits for real governed
+admission and ablation-constraint root capabilities. Two independent cold
+reconstructions agreed on the full contract and returned
+`CONTRACT_STABLE_CODE_BLOCKED`.
+
 The semantic [deterministic fixture v0](FIXTURE.md) and its governing packet have
 been cold-reviewed and simplified so a pre-admission trial is not a schema
 requirement. The shared-prefix and first condition-append boundaries now have
@@ -215,7 +231,9 @@ licensed fixture-local implementations; the later proposal, governance,
 practice, replay, ablation, and scoring paths remain wire-only. The [instrument
 map](INSTRUMENTS.md) keeps each later design layer in Markdown until another
 named replay, separation, identity, or refusal ambiguity requires machine
-syntax.
+syntax. The later foreground-delivery contract is semantically earned but not
+yet buildable because two of its three required current-root inputs remain
+unmaterialized.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not

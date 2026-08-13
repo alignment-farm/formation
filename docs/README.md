@@ -17,6 +17,7 @@ root [README](../README.md).
 | Which instruments make the boundaries observable before schema selection? | [INSTRUMENTS.md](INSTRUMENTS.md) |
 | What exact bytes and checks serve the first contacted computation? | [MATERIALIZATION.md](MATERIALIZATION.md) |
 | How does a fork receive one public formation condition without exposing its hidden assignment? | [CONDITION_APPEND.md](CONDITION_APPEND.md) |
+| How is one positive foreground delivered once to three exact branch heads? | [FOREGROUND_DELIVERY.md](FOREGROUND_DELIVERY.md) |
 
 These documents are pre-evidence. They constrain future work but establish no
 formation finding.

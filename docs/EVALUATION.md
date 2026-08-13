@@ -102,6 +102,14 @@ Branches receive different current-state packets, tool outputs, or environment
 revisions. Foreground data is materialized once per comparison group and bound
 by a content-identity rule fixed for that materialization.
 
+That rule applies to the closed public situation, not the complete model
+request. Treatment may add a declared activation handoff after receiving the
+same foreground. The comparison is invalid if one foreground has a changed,
+missing, or extra role; if hidden assignment information is added; if a branch
+receives a value rebuilt from a mutable source rather than the frozen group
+value; or if full-request equality is used to erase a permitted treatment
+difference.
+
 ### Hidden model continuity
 
 Provider threads, caches with semantic state, or undeclared prefixes carry the

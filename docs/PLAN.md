@@ -94,6 +94,18 @@ forbids any intervention on withheld paths. Independent rechecks agree that
 same-runtime semantic references suffice; no activation or request bytes are
 selected.
 
+Shared positive-foreground semantics are closed. The repaired fixture fixes one
+seven-role freeze before case assignment, one delivery to each branch root,
+direct comparison of every received projection, and refusal legs 25 through 31.
+It explicitly excludes the governed activation handoff from the shared
+comparison. Focused review found a named computation in provenance, root
+binding, and one-time consumption. The fixture-local
+[foreground-delivery contract](FOREGROUND_DELIVERY.md) earns typed capabilities
+but no serialization or digest. Implementation waits for the real governed
+admission and ablation-constraint root capabilities it must consume. Two model
+families independently reconstructed that boundary and returned
+`CONTRACT_STABLE_CODE_BLOCKED`.
+
 ## Phase 1 — build the two-loop skeleton
 
 Goal: make practice and formation traversable while keeping all intelligence

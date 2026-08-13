@@ -63,6 +63,15 @@ not yet need byte comparison or exchange. Selecting request serialization or a
 digest merely because identity matters would confuse a precise semantic object
 with a materialization need.
 
+The shared-foreground review contacted a different stopping point. It fixed one
+closed seven-role value, one freeze, three authorized deliveries, and direct
+comparison of the received projections. The complete model requests remain
+intentionally different. Value inspection checks the seven roles but cannot
+refuse a rebuilt-equal delivery, a correct value bound to the wrong root, or
+double consumption. Those claims earn the narrow typed capability and
+validation boundary in [FOREGROUND_DELIVERY.md](FOREGROUND_DELIVERY.md), while
+bytes, digests, and canonical role order remain unselected.
+
 ## Independent construction as a review instrument
 
 Before schema selection, two independent readers construct the fixture's
@@ -231,13 +240,21 @@ The trajectory recorder preserves the experiment's view: protocol identity,
 branch and case assignment, common-prefix and foreground bindings, witnessed
 runtime events, costs, ablations, and scorer results.
 
+For a paired foreground, it freezes one closed public value before branch-local
+case assignment, records which branch roots may receive it, and later compares
+each runtime's received-foreground projection with that freeze. Delivery order
+is not identity. Rebuilding from a mutable source, adding an extra field, or
+substituting full-request equality is a boundary failure even if later actions
+match the authored path.
+
 It shares coordinates and content-identity bindings with developmental lineage
 only for audit. Exact bytes or a digest may provide identity after a
 materialization syntax is selected. The join must not become a merge.
 
 The instrument loses if a trajectory row can be replayed into practitioner
 state, or if the record cannot show that compared branches received the same
-foreground material.
+foreground material. It also loses if the witness proves equality only after
+discarding extra fields or accidentally compares branch-specific request state.
 
 ## Prefix, fork, and ablation controller
 

@@ -181,6 +181,19 @@ intervention. Two model families and an additional independent review agree on
 the object. Because one runtime can enforce these exact semantic references
 without byte comparison or exchange, no activation schema is licensed.
 
+The shared positive-foreground semantic gate is closed. Its first cold pass
+disagreed about what was shared and where it became fixed. The repaired fixture
+now defines one closed seven-role foreground, freezes it before branch-local
+case assignment, derives one delivery for each of the three branch roots, and
+directly compares every received situation with that freeze. A focused review
+then separated value equality from provenance: equal fields cannot prove the
+same freeze, correct root, or one-time use. The resulting
+[foreground-delivery contract](docs/FOREGROUND_DELIVERY.md) earns typed
+capabilities and validation, but no byte format or digest. Its implementation
+is gated on real governed-admission and ablation-constraint root capabilities.
+Two independent model families reconstructed that same boundary and returned
+`CONTRACT_STABLE_CODE_BLOCKED`.
+
 The first milestone is a deterministic, inspectable two-loop skeleton that can
 represent a practice trajectory and a candidate change without pretending the
 candidate is learned or useful. The first experimental milestone comes later:

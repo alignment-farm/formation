@@ -196,7 +196,7 @@ The human protocol owner freezes these bounds before materialization:
 - clean execution: one shared acquisition, three branch schedules, the positive
   comparison, one governed decoy, one correction per branch, and one governed
   post-revocation boundary;
-- refusal execution: twenty-four independent legs, each starting from its named
+- refusal execution: thirty-one independent legs, each starting from its named
   clean precondition and applying only its named mutation;
 - retries: none for a semantic mismatch; an infrastructure interruption does
   not resume, and a new run starts from the shared acquisition prefix;
@@ -304,18 +304,23 @@ branches, or coordinates for every later receipt.
 4. After `D-A-009` exists and before any later ablation-branch practice, the
    harness assigns the ablation. The ablation runtime records `D-A-010` and
    derives its constrained view.
-5. The positive foreground is materialized once and presented to baseline,
-   governed, and ablation. Their executions may occur in any order; all three
-   bind the same foreground content.
-6. The non-activation decoy is presented to governed only. It tests the
+5. The harness freezes the exact closed positive foreground from the
+   protocol-authored value below and records one trajectory `foreground bound`
+   receipt naming the three branch roots authorized to receive it. This occurs
+   after `D-A-010` and before branch-local case assignment or presentation.
+6. Each positive `case assigned` receipt cites that foreground binding. The
+   harness delivers the same frozen public value once to baseline, governed,
+   and ablation; each runtime consumes its delivery in `encounter opened`.
+   Their executions may occur in any order.
+7. The non-activation decoy is presented to governed only. It tests the
    fixture's authored applicability path, not a cross-branch contrast.
-7. After the positive comparison and governed decoy are complete, the same
+8. After the positive comparison and governed decoy are complete, the same
    environment-authored correction is presented to all three branches.
-8. Governed applies its declared suspension and revocation policy, then receives
+9. Governed applies its declared suspension and revocation policy, then receives
    one later matching commitment boundary to demonstrate post-revocation
    silence. Baseline and ablation emit no governance transition from the
    correction.
-9. The scorer operates only after all required developmental histories and
+10. The scorer operates only after all required developmental histories and
    trajectory receipts are complete.
 
 The branches need not advance in lockstep outside the shared positive
@@ -348,7 +353,7 @@ This table describes logical handoffs, not required processes or APIs.
 | Acquisition | Harness presents one authored situation and schedules the environment | Foreground situation, model output, committed action, external consequence | Conduct practice and preserve the experience without an applicability claim | Future branches, cases, and expected effects | `D-C-002` through `D-C-006`, witnessed by trajectory bindings |
 | Fork and condition | Fork the one retained prefix and assign a condition | Public formation condition only | Record the condition it will apply | Branch label and cross-branch comparison | `T-*-001 branch assigned` plus branch-local `D-*-007 formation condition bound` |
 | Formation opportunity | Schedule runtime processing at `D-C-006` | Preserved experience and public mechanism configuration | Invoke its interpreter and governor; author proposal and eligibility receipts | Expected candidate and whether the authored path should pass | `D-G-008` and `D-G-009`, with trajectory content-identity witnesses |
-| Later practice | Present content-identical foregrounds under one environment rule | Foreground fields only | Decide influence, construct the practice request, commit the action, and record consequence | Case family, expected action, and cross-branch result | Activation or withholding, invocation, action, and consequence receipts |
+| Later practice | Freeze one closed foreground and deliver it once to each compared root under one environment rule | Exactly the seven public foreground roles | Record the received projection, decide influence, construct the branch-specific practice request, commit the action, and record consequence | Case family, expected action, cross-branch result, and foreground binding | `foreground bound`, activation or withholding, invocation, action, consequence, and direct foreground witnesses |
 | Correction | Harness schedules the same environment-authored correction for every branch | Correction and its source binding | Contest the warrant and apply declared governance | Expected suspension and revocation path | Correction, suspension, revocation, and later withholding receipts |
 | Ablation | Assign a target and public ablation condition, here an exclusion policy | Target `D-C-005` and `transitive_exclusion` only | Record the replay constraint and derive the constrained view itself | Branch label, `causal_probe` reason, and expected downstream effect | Trajectory assignment plus `D-A-010 replay constraint bound` |
 | Scoring | Harness joins witnessed receipts; scorer applies the authored wire rubric | Nothing | Nothing | Costs, case verdicts, aggregate comparison, and wire verdict | Trajectory-only score and close receipts |
@@ -416,6 +421,51 @@ constituting a mechanism difference.
 Baseline performs neither proposal nor admission. Its later
 `no_admitted_change` result is an influence-boundary outcome, not a formation
 event inserted during this phase.
+
+## Shared positive foreground
+
+The positive comparison uses one frozen semantic foreground, called `F+` here
+only for exposition. It is a closed value with exactly seven public roles:
+
+| Role | Exact value |
+| --- | --- |
+| `candidate_object` | `bundle-9` |
+| `derived_from` | `registry-manifest` |
+| `artifact_revision` | integer `7` |
+| `authority_revision` | integer `8` |
+| `depends_on_current_authority` | boolean `true` |
+| `commit_action` | `release` |
+| `refresh_action` | `rebuild_then_release` |
+
+Role order is not semantic. A changed value, missing role, extra role, changed
+value type, branch label, case family, expected result, scorer key, coaching
+text, intervention field, or ablation reason is not `F+`.
+
+The human protocol owner authors this value. After `D-A-010` exists and before
+any positive branch-local case assignment, the harness freezes it once and
+records one trajectory `foreground bound` receipt. That receipt binds the exact
+closed value, comparison group, and three existing branch roots authorized to
+receive it. Hidden recipient mapping stays in trajectory evidence.
+
+The harness derives exactly one public delivery for each authorized root from
+that immutable freeze. Each delivery contains only the seven public roles. It
+does not identify its branch or comparison group to the runtime. Branch
+execution order is free, but a missing, duplicate, reused, late, or wrong-root
+delivery refuses. Reopening or rebuilding from a mutable or independent source
+after the freeze is nonconforming even if the rebuilt role values match.
+
+Each runtime consumes its delivery exactly once when it records the positive
+`encounter opened` receipt, whose situation projection is the exact seven-role
+value received. A trajectory witness then compares that complete projection
+directly with the single foreground binding. No defaulting, ignored extras, or
+semantic paraphrase is permitted.
+
+Foreground identity ends at that projection. It does not require equality of
+the complete encounter receipts, eligible state, activation decisions, model
+requests, actions, or consequences. In particular, the governed model request
+adds its encounter-local activation handoff; baseline and ablation requests do
+not. Comparing complete requests would erase the mechanism difference the
+fixture is meant to exercise.
 
 ## Later practice paths
 
@@ -662,6 +712,13 @@ event kind or evidence of acquired competence.
 
 ## Trajectory bindings
 
+The positive comparison has one `foreground bound` receipt before its three
+branch-local `case assigned` receipts. Each case assignment cites it. Each later
+positive `encounter opened` witness records both the foreground binding and the
+complete seven-role situation projection received by that runtime. The witness
+compares that projection directly to the freeze; it does not compare the full
+model request.
+
 For every developmental event after the fork, one `runtime event witnessed`
 trajectory receipt records:
 
@@ -702,7 +759,7 @@ At this stage, two fixture declarations are compatible when they agree on:
 - the required receipt meanings, originating authorities, and causal
   precedence;
 - the four fixture-local refusal classes;
-- the twenty-four independent refusal mutations; and
+- the thirty-one independent refusal mutations; and
 - the acceptance and loses-conditions.
 
 The semantic identity rule remains: `D-C-001` through `D-C-006` must have the
@@ -757,6 +814,19 @@ A later activation-identity review exposed the analogous repeated-name defect
 at the influence boundary. The immutable semantic handoff and refusal legs 21
 through 24 make the actual admitted lineage object, rather than its alias or
 copied text, the source of the intervention and request.
+
+A later shared-foreground review exposed ambiguity between a common public
+situation and the branch-specific request built from it. The closed seven-role
+freeze and refusal legs 25 through 31 make the foreground provenance and
+comparison exact without requiring the governed request to equal the two
+withheld requests. Two model-family rechecks reconstructed that object. A
+focused license review then distinguished public-value equality from freeze
+provenance, root binding, and one-time consumption. The resulting
+[foreground-delivery contract](FOREGROUND_DELIVERY.md) earns typed local
+capabilities and validators while leaving foreground bytes unselected. Two
+independent cold contract reconstructions agreed on that boundary and returned
+`CONTRACT_STABLE_CODE_BLOCKED` because the governed admitted root and ablation
+constraint root are not yet materialized.
 
 ## Required refusal legs
 
@@ -819,6 +889,27 @@ coordinate or named semantic precondition in that line:
 24. From the clean governed activation, request construction or model invocation
     replaces, reconstructs, tampers with, reuses, or cites a same-named handoff
     instead of consuming the exact encounter-local handoff once.
+25. Before positive case assignment, the `foreground bound` value changes,
+    omits, adds, or changes the type of one of the exact seven public roles.
+26. At the positive freeze or delivery boundary, a branch label, case family,
+    expected result, scorer key, coaching field, intervention field, or ablation
+    reason enters the public foreground.
+27. From the clean positive freeze, one branch delivery changes, omits, adds,
+    substitutes, or defaults a role instead of deriving the complete value from
+    that freeze.
+28. From the clean positive freeze, the controller reopens mutable source state,
+    independently rebuilds the value, or accepts caller replacement rather than
+    deriving every delivery from the one frozen value, even when role values
+    happen to match.
+29. From the clean three-recipient delivery set, one delivery is missing,
+    duplicated, reused, assigned to the wrong root or comparison group, or
+    consumed more than once.
+30. The positive foreground is bound, assigned, or presented before `D-A-010`,
+    or a runtime opens its positive encounter before its case assignment cites
+    the foreground binding.
+31. A positive witness ignores extra received fields, compares only a partial
+    projection, or uses equality of the complete branch-specific model requests
+    instead of direct equality of the closed foreground projection.
 
 Each refusal is a separate fixture leg so one early failure cannot mask another.
 
@@ -828,7 +919,7 @@ A clean case passes only when its receipts, action, and consequence match the
 authored path for its branch and no harness-only field crosses the boundary. A
 refusal case passes only when its one named mutation is rejected at the named
 boundary. The scorer emits `wire_integration_only` only when every clean case
-and all twenty-four refusal legs pass; otherwise it closes `invalid` and names the
+and all thirty-one refusal legs pass; otherwise it closes `invalid` and names the
 failed clause. These are conformance classes, not scientific verdicts, and have
 no partial-credit interpretation.
 
@@ -846,6 +937,10 @@ The fixture passes only when:
 - governed and ablation independently produce the same proposal projection and
   admission decision through their branch-local admitted versions, apart from
   identity and integrity facts;
+- the positive foreground is frozen once as the exact closed seven-role value,
+  delivered once to each declared branch root, and directly matches every
+  received `encounter opened` situation projection without requiring full
+  request equality;
 - the governed path replays deterministically through proposal and admission;
 - the positive case activates and the stronger surface decoy does not;
 - external correction produces suspension, revocation, and later silence;
@@ -853,7 +948,7 @@ The fixture passes only when:
 - the fixture's transitive replay exclusion makes every dependent state item
   unavailable or explicitly unresolved;
 - the authored positive downstream difference disappears under ablation;
-- all twenty-four refusal legs fail closed; and
+- all thirty-one refusal legs fail closed; and
 - a clean replay produces the same lineage heads and derived views.
 
 Passing produces one wire verdict. It produces no scientific or mechanism
@@ -866,4 +961,7 @@ reveals hidden family identity, supplies a derived practitioner view, or treats
 its expected wire outcome as a runtime consequence. It also loses if conformance
 requires an implementation to adopt derived-artifact revision checks, a
 mandatory candidate trial, or this exact governance path as general formation
-architecture rather than as opaque authored fixture content.
+architecture rather than as opaque authored fixture content. It further loses
+if compared branches can receive unequal or differently enriched foregrounds,
+or if foreground identity is confused with equality of their intentionally
+different model requests.
