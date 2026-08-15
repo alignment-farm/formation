@@ -169,8 +169,11 @@ environment handoff. It does not apply either action or predict a consequence.
 The repaired typed implementation passes the combined 162-test suite and a
 final cold recheck after closing a multiple-alias reset path and orphan-binding
 resolution. Environment action application is the next named semantic need;
-it remains Markdown work until its authorities, result boundary, refusals, and
-loses-conditions converge.
+its [contract](ENVIRONMENT_APPLICATION.md) now has converged authorities,
+result boundary, refusals, and loses-conditions. Code-facing review nevertheless
+returns `CODE_SLICE_BLOCKED`: one fixed revision mismatch cannot distinguish
+real rule execution from an action-keyed lookup, and no extra case is justified
+solely to force materialization.
 
 ## Phase 1 — build the two-loop framework
 

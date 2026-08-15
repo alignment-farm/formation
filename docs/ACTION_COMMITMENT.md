@@ -157,7 +157,8 @@ The invocation authority owns predecessor identity and pair issuance. The
 runtime action authority owns policy application, commitment authorship,
 linearity, private environment handoffs, and returned roots. The harness owns
 witness joins and completeness. A later environment boundary owns action
-application and external consequence production.
+application and external result issuance. A still-later runtime intake boundary
+owns the developmental `consequence observed` append.
 
 ## Implementation gate
 
@@ -171,7 +172,8 @@ Code-facing review then confirmed that the existing invocation roots can issue
 detached verifiers and that the established owner-bound factory, issuer token,
 private registry, and sealed-binding patterns can enforce this slice. The
 license covers only the two positive action commitments and their witnesses. It
-does not license environment application or consequence production.
+does not license environment application, external result issuance, or
+consequence intake.
 
 The typed implementation now passes the combined 162-test suite. Its first
 independent post-build review found no blocker, then identified a harder reset

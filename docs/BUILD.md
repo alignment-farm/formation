@@ -324,7 +324,12 @@ resistance, live binding resolution, and explicit witness relations.
 The next named semantic need is environment action application: resolve and
 consume each exact private handoff, let an environment authority produce an
 external result, and preserve that result without treating it as an oracle
-verdict or formation finding. That boundary is not yet licensed for code.
+verdict or formation finding. Its
+[semantic contract](ENVIRONMENT_APPLICATION.md) now passes two independent
+final reconstructions. Code remains blocked because the one fixed foreground
+cannot distinguish revision-rule execution from an action-keyed authored
+lookup. Adding a second revision case solely to force that distinction would
+select unearned fixture architecture.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not

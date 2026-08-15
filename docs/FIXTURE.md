@@ -564,6 +564,26 @@ The changed nouns, action labels, and numbers are documentary pressure only.
 The activator receives authored structured roles, so this is not a transfer
 test.
 
+#### Positive environment rule
+
+The two positive actions use the public fixture rule
+`revision-gated-release-v0`. Each branch-local application begins from its own
+encounter situation; applications do not share mutable artifact state with one
+another.
+
+- `release` leaves `artifact_revision` unchanged. When it differs from
+  `authority_revision`, the environment returns disposition `rejected` and
+  observation `stale_dependency`.
+- `rebuild_then_release` first makes the application-local artifact revision
+  equal the supplied authority revision, then releases. The environment returns
+  disposition `accepted` and observation `released`.
+
+The resulting positive projections are therefore baseline revision 7 to 7
+against authority revision 8, and governed revision 7 to 8 against authority
+revision 8. These exact tokens make the already-authored “rejects” and “accepts”
+outcomes inspectable. They are environment results, not scorer expectations or
+developmental `consequence observed` receipts.
+
 ### Authored non-activation decoy
 
 The harness assigns hidden family `non_transfer_wire` and presents:

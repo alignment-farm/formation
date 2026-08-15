@@ -246,8 +246,12 @@ binding resolution; the repaired 162-test boundary passed a final cold recheck.
 
 The next named semantic need is environment action application. It must consume
 the exact private handoff and preserve an external result while keeping result,
-oracle verdict, and formation claim distinct. Its contract and review gate
-remain ahead of code.
+oracle verdict, and formation claim distinct. The
+[environment-application contract](docs/ENVIRONMENT_APPLICATION.md) now closes
+that semantic gate, but code-facing review blocks implementation: with one
+fixed revision mismatch, action-keyed lookup and real revision-rule execution
+remain observationally equivalent. The project will not add a case solely to
+manufacture implementation pressure.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

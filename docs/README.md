@@ -25,6 +25,7 @@ root [README](../README.md).
 | How do those two decisions prepare requests with exact handoff use or structural intervention absence? | [PRACTICE_REQUEST.md](PRACTICE_REQUEST.md) |
 | How does one stateless fixture actor produce model proposals from those exact requests without claiming an action? | [MODEL_INVOCATION.md](MODEL_INVOCATION.md) |
 | How does the runtime commit those exact proposals without claiming an environment consequence? | [ACTION_COMMITMENT.md](ACTION_COMMITMENT.md) |
+| How does the environment apply those commitments without claiming consequence intake or formation? | [ENVIRONMENT_APPLICATION.md](ENVIRONMENT_APPLICATION.md) |
 
 These documents are pre-evidence. They constrain future work but establish no
 formation finding.
