@@ -221,6 +221,15 @@ the combined 198-test suite and two independent reviews. Contact then stopped
 so no lesson or validation call ran. The next contact must be independently
 chartered; this run may not be extended or replaced after the stop.
 
+The independently chartered successor is now a bounded
+[small-model admission exploration](MODEL_ADMISSION_EXPLORATION.md), not a third
+frontier-model puzzle. It tests local Ministral 3B and Nemotron 4B for three
+properties: reliable task contracts, repeatable cold headroom, and direct-rule
+teachability. Its [normative packet](MODEL_ADMISSION_VECTORS.md) freezes two
+coding families, model artifacts, chat templates, sampling, receipts, order,
+classifiers, and a 32-call ceiling. The semantic gate is closed; runner review
+remains before contact.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence

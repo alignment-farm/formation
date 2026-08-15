@@ -81,6 +81,10 @@ Stop when the task's scope and authority are clear.
 - `docs/PYTHON_BOUNDARY_CONTACT_VECTORS.md` owns the normative executable test
   vectors for that coding contact.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
+- `docs/MODEL_ADMISSION_EXPLORATION.md` owns exploratory small-model admission
+  before any new formation comparison is chartered.
+- `docs/MODEL_ADMISSION_VECTORS.md` owns that exploration's exact development
+  prompts, executable inputs, inference settings, and call order.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
   findings and explanations.

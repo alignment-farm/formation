@@ -309,6 +309,17 @@ cases. The runner sent no lesson or validation prompt. The
 passed independent audit. This is another task-selection result, not evidence
 of formation or transfer.
 
+Those two stops changed model selection. The next
+[admission exploration](docs/MODEL_ADMISSION_EXPLORATION.md) starts with local
+Ministral 3B and Nemotron 4B rather than asking Composer to fail on a harder
+trick. A model qualifies only if it passes four easy contract anchors, shows a
+narrow repeatable cold gap, and solves a different instance when the missing
+rule is stated directly. The exact artifacts, prompts, executable inputs,
+sampling fields, and 32-call ceiling are frozen. Cold review found and repaired
+ordinary-SQL weakness leakage, incomplete classifiers, optional vision loading,
+unfrozen chat templates, and incorrect artifact sizes. Runner implementation
+remains before contact.
+
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone

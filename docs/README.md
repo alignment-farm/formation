@@ -31,6 +31,8 @@ root [README](../README.md).
 | What bounded computation must precede contact with a persistence baseline? | [MICRO_ENVIRONMENT_CHARTER.md](MICRO_ENVIRONMENT_CHARTER.md) |
 | How does the first cold-model contact test nullable SQLite anti-joins and simpler persistence? | [SQLITE_CONTACT_CHARTER.md](SQLITE_CONTACT_CHARTER.md) |
 | How does coding contact test strict Python boundary types without hiding validation answers in persistence? | [PYTHON_BOUNDARY_CONTACT_CHARTER.md](PYTHON_BOUNDARY_CONTACT_CHARTER.md) |
+| How are small local models admitted only when they are reliable, imperfect, and directly teachable? | [MODEL_ADMISSION_EXPLORATION.md](MODEL_ADMISSION_EXPLORATION.md) |
+| Which exact prompts, executable inputs, inference settings, and call order govern that admission search? | [MODEL_ADMISSION_VECTORS.md](MODEL_ADMISSION_VECTORS.md) |
 | Which exact inputs and results score that coding contact? | [PYTHON_BOUNDARY_CONTACT_VECTORS.md](PYTHON_BOUNDARY_CONTACT_VECTORS.md) |
 
 These documents are pre-evidence. They constrain future work but establish no
