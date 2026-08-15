@@ -14,3 +14,10 @@ The second runner implements the
 It accepts one restricted function, runs every frozen input in a fresh child
 process, and stops after exploration unless the predeclared boolean-as-integer
 contrast appears. Its tests also use fake participant outputs.
+
+The third runner implements the
+[small-model admission exploration](../docs/MODEL_ADMISSION_EXPLORATION.md).
+It verifies two exact local GGUF artifacts and their embedded chat templates,
+loads each without vision or speculative decoding, and admits only a model that
+is reliable on ordinary work while showing a repeatable, directly teachable
+boundary gap. Its tests use fake inference envelopes.

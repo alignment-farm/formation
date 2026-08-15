@@ -1,6 +1,6 @@
 # Small-model admission exploration
 
-Status: **exploratory semantics stable; runner pending**.
+Status: **exploratory semantics stable; runner licensed; contact pending**.
 
 ## Purpose
 

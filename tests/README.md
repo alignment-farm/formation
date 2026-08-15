@@ -25,4 +25,7 @@ model-call budget. They verify prompt assembly, executable oracles, engagement
 and stop decisions, exact nineteen-call scheduling, raw-offer separation, and
 retry receipts. Ten more cover the strict Python boundary runner, including its
 source gate, fresh-process oracle, exact vector order, automatic stop, and full
-nineteen-call path. The combined repository suite now contains 198 tests.
+nineteen-call path. Six more cover the local small-model admission runner,
+including its frozen schedules, ordinary-versus-boundary distinction,
+classifiers, full fake packet, and anchor stop. The combined repository suite
+now contains 205 tests.

@@ -228,7 +228,8 @@ properties: reliable task contracts, repeatable cold headroom, and direct-rule
 teachability. Its [normative packet](MODEL_ADMISSION_VECTORS.md) freezes two
 coding families, model artifacts, chat templates, sampling, receipts, order,
 classifiers, and a 32-call ceiling. The semantic gate is closed; runner review
-remains before contact.
+is also closed after the combined 205-test suite and independent review. Contact
+is licensed but has not begun.
 
 ## Phase 1 — build the two-loop framework
 

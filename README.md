@@ -318,7 +318,8 @@ rule is stated directly. The exact artifacts, prompts, executable inputs,
 sampling fields, and 32-call ceiling are frozen. Cold review found and repaired
 ordinary-SQL weakness leakage, incomplete classifiers, optional vision loading,
 unfrozen chat templates, and incorrect artifact sizes. Runner implementation
-remains before contact.
+then passed its 6-test slice, the combined 205-test suite, and independent
+review. Contact is licensed but has not begun.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
