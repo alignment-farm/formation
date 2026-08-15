@@ -331,6 +331,15 @@ remains unresolved. The
 passed independent audit as `EVIDENCE_PARTIAL`. A corrected successor must use
 new development material and disclose its execution vocabulary.
 
+The [corrected Nemotron successor](docs/NEMOTRON_ADMISSION_SUCCESSOR.md) is now
+ready for contact. It retains the same model artifact and settings but uses new
+prompts and tests. Every restriction that can reject Python is stated in the
+prompt, including the complete builtin list. Its runner stores full prompt
+bytes instead of assembling a hidden suffix, labels ordinary and held inputs
+at authorship, and checks the exact model load and request. Twelve fake-contact
+tests and the combined 217-test suite pass. Independent review returned
+`RUNNER_LICENSED`; no successor call has been made.
+
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone

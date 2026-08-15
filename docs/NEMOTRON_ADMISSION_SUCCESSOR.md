@@ -1,7 +1,7 @@
 # Corrected Nemotron admission successor
 
-Status: **reviewed pre-contact successor; no model call licensed until the
-runner is independently licensed**.
+Status: **contact-ready exploratory successor; independently reviewed runner
+licensed; no successor model call made**.
 
 ## Purpose and ancestry
 
@@ -311,6 +311,7 @@ input, schema, name set, or expected row from the first packet; changes the
 model or inference settings; repairs output; continues after an anchor failure;
 or promotes these development cases into a later claim.
 
-No call is licensed until the executable appendix and a runner with the
-disclosed builtins pass fake tests, and independent cold review returns one
-stable protocol.
+The executable appendix and runner with disclosed builtins now pass fake tests,
+and independent cold reviews returned `ADMISSION_PROTOCOL_STABLE` and
+`RUNNER_LICENSED`. Model contact must still use the frozen runner without
+editing this packet.

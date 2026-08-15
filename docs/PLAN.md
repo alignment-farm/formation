@@ -235,6 +235,16 @@ rejected only because the restricted child omitted it, so its result is
 instrument-tainted. The packet is retained as `EVIDENCE_PARTIAL`; a successor
 must use new prompts and vectors and disclose the available execution language.
 
+That [corrected Nemotron successor](NEMOTRON_ADMISSION_SUCCESSOR.md) is now
+contact-ready. It keeps the exact 4B artifact and inference settings, uses fresh
+development material, and states every Python restriction that can cause a
+failure. Its exact appendix assigns every input an ordinary or held class. The
+separate runner passed 12 fake-contact tests and the combined 217-test suite.
+Independent review first rejected private prompt-suffix assembly and weak
+drift tests; full literal prompts, appendix byte checks, vector snapshots,
+retry checks, and exact request/load checks repaired those defects. No
+successor model call has yet occurred.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence

@@ -27,5 +27,8 @@ retry receipts. Ten more cover the strict Python boundary runner, including its
 source gate, fresh-process oracle, exact vector order, automatic stop, and full
 nineteen-call path. Six more cover the local small-model admission runner,
 including its frozen schedules, ordinary-versus-boundary distinction,
-classifiers, full fake packet, and anchor stop. The combined repository suite
-now contains 205 tests.
+classifiers, full fake packet, and anchor stop. Twelve additional fake-contact
+tests cover the corrected Nemotron-only successor, including its disclosed
+builtin environment, exact source and query gates, vector-owned class labels,
+direct-rule constraint, full packet, retry, request/load identity, and anchor
+stop. The combined repository suite now contains 217 tests.

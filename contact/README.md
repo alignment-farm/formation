@@ -21,3 +21,10 @@ It verifies two exact local GGUF artifacts and their embedded chat templates,
 loads each without vision or speculative decoding, and admits only a model that
 is reliable on ordinary work while showing a repeatable, directly teachable
 boundary gap. Its tests use fake inference envelopes.
+
+The fourth runner implements the
+[corrected Nemotron successor](../docs/NEMOTRON_ADMISSION_SUCCESSOR.md) without
+rewriting the first packet. It exposes the complete restricted Python
+environment to the model, uses fresh prompts and vectors, and stores ordinary
+and held class labels on the vectors themselves. Its tests spend no model-call
+budget.
