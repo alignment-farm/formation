@@ -85,6 +85,10 @@ Stop when the task's scope and authority are clear.
   before any new formation comparison is chartered.
 - `docs/MODEL_ADMISSION_VECTORS.md` owns that exploration's exact development
   prompts, executable inputs, inference settings, and call order.
+- `docs/NEMOTRON_ADMISSION_SUCCESSOR.md` owns the fresh, disclosed-instrument
+  successor for the unresolved Nemotron admission.
+- `docs/NEMOTRON_ADMISSION_SUCCESSOR_VECTORS.md` owns that successor's exact
+  prompts, executable inputs, class labels, and call order.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
   findings and explanations.
