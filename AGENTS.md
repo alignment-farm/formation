@@ -89,6 +89,8 @@ Stop when the task's scope and authority are clear.
   successor for the unresolved Nemotron admission.
 - `docs/NEMOTRON_ADMISSION_SUCCESSOR_VECTORS.md` owns that successor's exact
   prompts, executable inputs, class labels, and call order.
+- `docs/GEMMA_CONTRACT_STAIRCASE.md` owns the bounded 270M-to-1B structured-
+  action screen that precedes any new full admission packet.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
   findings and explanations.
