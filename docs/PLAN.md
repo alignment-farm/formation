@@ -191,7 +191,9 @@ The next computation is licensed through the
 [micro-environment charter](MICRO_ENVIRONMENT_CHARTER.md), not by adding more
 fixture lore. Its exhaustive bounded matrix forces state-dependent release and
 authority-dependent rebuild results. Work must stop after one reviewed passing
-engine, then move toward contact where ordinary persistence is allowed to win.
+engine. That engine now passes its repaired 15-test slice and final independent
+review. The next work must move toward contact where ordinary persistence is
+allowed to win; this specimen is closed.
 
 ## Phase 1 — build the two-loop framework
 

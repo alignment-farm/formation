@@ -1,6 +1,6 @@
 # Revision-gated release micro-environment charter
 
-Status: **pre-contact charter; computational code slice licensed**.
+Status: **pre-contact charter; isolated computational implementation complete**.
 
 ## Purpose
 
@@ -271,6 +271,14 @@ comparator fails whenever rebuild must track another authority revision. It
 returned `CODE_SLICE_LICENSED` for only the isolated transition engine,
 external conformance oracle, and frozen tests. Environment-application handoff,
 registry, lineage, and formation code remain unlicensed by this charter.
+
+The isolated implementation now passes 15 focused tests and the combined
+177-test repository suite. Its first independent post-build review rejected a
+green state whose dependency, per-order diagnostic, cross-action identity,
+outcome-pair, and caller-field tests did not fully prove their named clauses.
+The repaired suite closes all five evidence gaps, pins comparator failures to
+the exact counts 7 and 42, and passes final cold recheck with no blockers. The
+charter's stopping condition is met.
 
 ## Loses-conditions
 

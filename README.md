@@ -268,13 +268,16 @@ lesson, applicability claim, or success label. Cold review restored the omitted
 final reconstructions agree. Code remains transitively blocked with its
 environment and intake predecessors.
 
-The [revision-gated release micro-environment](docs/MICRO_ENVIRONMENT_CHARTER.md)
+The implemented
+[revision-gated release micro-environment](docs/MICRO_ENVIRONMENT_CHARTER.md)
 is the first step beyond fixture-only pressure. Its 98 prospective cases require
 the same `release` action to succeed or fail from supplied state and require
 rebuild output to track several authority revisions. Two cold reviews and a
-code-facing review license only this isolated transition engine and its external
-conformance tests. They do not license environment lifecycle plumbing or a
-formation claim.
+code-facing review licensed only this isolated transition engine and its
+external conformance tests. Independent post-build review rejected incomplete
+test evidence before the repaired 15-test slice and combined 177-test suite
+passed final recheck. This does not license environment lifecycle plumbing or a
+formation claim, and the specimen will not be expanded.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

@@ -346,8 +346,10 @@ applicability claim. Its code remains blocked by the same predecessor chain.
 The [micro-environment charter](MICRO_ENVIRONMENT_CHARTER.md) now supplies
 independent computational pressure without expanding the fixture. Its frozen
 98-case matrix defeats action-only and fixed-after-state shortcuts. Cold and
-code-facing reviews license one isolated transition engine plus an external
-test oracle; lifecycle integration remains outside that license.
+code-facing reviews licensed one isolated transition engine plus an external
+test oracle. The repaired 15-test slice and combined 177-test suite pass final
+review after closing five test-evidence gaps. Lifecycle integration remains
+outside that license, and the specimen's stopping condition is met.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not
