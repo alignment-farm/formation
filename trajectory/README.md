@@ -1,6 +1,6 @@
 # Fixture-local trajectory code
 
-This directory contains the harness-owned parts of six fixture-local slices:
+This directory contains the harness-owned parts of seven fixture-local slices:
 prefix validation and fork comparison; public-condition assignment, validation,
 witness, and append checks; and the label-blind treatment batch plus
 proposal/admission witnesses and admitted-root verification; and the hidden
@@ -9,6 +9,8 @@ checks; and the one-time comparison-group freeze, root-bound shared-foreground
 deliveries, and complete three-recipient witness set.
 The sixth witnesses three runtime-authored positive encounter roots and closes
 their assignment joins without placing hidden trajectory state in lineage.
+The seventh witnesses exactly one baseline withholding and one governed
+activation while keeping ablation outside the decision boundary.
 
 It is not yet a general trajectory harness. See
 [`docs/MATERIALIZATION.md`](../docs/MATERIALIZATION.md) and
@@ -17,3 +19,5 @@ It is not yet a general trajectory harness. See
 [`docs/REPLAY_CONSTRAINT_APPEND.md`](../docs/REPLAY_CONSTRAINT_APPEND.md), and
 [`docs/FOREGROUND_DELIVERY.md`](../docs/FOREGROUND_DELIVERY.md).
 See also [`docs/ENCOUNTER_OPENING.md`](../docs/ENCOUNTER_OPENING.md).
+See also
+[`docs/POSITIVE_ACTIVATION_DECISION.md`](../docs/POSITIVE_ACTIVATION_DECISION.md).

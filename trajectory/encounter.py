@@ -47,6 +47,9 @@ class EncounterOpeningController:
         self._issuer = object()
         self._witnesses: list[EncounterOpeningWitness] = []
         self._snapshots: list[tuple[object, ...]] = []
+        self._activation_runtime: object | None = None
+        self._activation_controller: object | None = None
+        self._activation_permit = object()
 
     def witness(
         self,
@@ -146,3 +149,60 @@ class EncounterOpeningController:
         ):
             raise EncounterWitnessRefusal("encounter_witness_set_mismatch")
         return current
+
+    def open_positive_activation_controller(self) -> object:
+        if self._activation_controller is not None:
+            raise EncounterWitnessRefusal("activation_controller_already_opened")
+        witnesses = self.require_complete_witnesses()
+        verifiers = tuple(
+            self.runtime.activation_input_verifier(witness.encounter_root)
+            for witness in witnesses
+        )
+        accepted = tuple(
+            verifier
+            for verifier in verifiers
+            if not verifier.replay_constrained
+        )
+        if len(accepted) != 2:
+            raise EncounterWitnessRefusal("exact_positive_activation_pair_required")
+        from formation.activation import RuntimePositiveActivationAuthority
+        from trajectory.activation import PositiveActivationController
+
+        runtime = RuntimePositiveActivationAuthority(
+            accepted, self, self._activation_permit
+        )
+        controller = PositiveActivationController(
+            self, runtime, self._activation_permit
+        )
+        self._activation_controller = controller
+        return controller
+
+    def _claim_activation_runtime(
+        self, runtime: object, permit: object, verifiers: tuple[object, object]
+    ) -> None:
+        if permit is not self._activation_permit:
+            raise EncounterWitnessRefusal("activation_controller_factory_required")
+        if self._activation_runtime is not None:
+            raise EncounterWitnessRefusal("activation_controller_already_opened")
+        witnessed_roots = {
+            id(item.encounter_root) for item in self.require_complete_witnesses()
+        }
+        if (
+            len(verifiers) != 2
+            or any(id(verifier.root) not in witnessed_roots for verifier in verifiers)
+            or any(verifier.replay_constrained for verifier in verifiers)
+        ):
+            raise EncounterWitnessRefusal("exact_positive_activation_pair_required")
+        self._activation_runtime = runtime
+
+    def _claim_activation_controller(
+        self, controller: object, runtime: object, permit: object
+    ) -> None:
+        if (
+            permit is not self._activation_permit
+            or runtime is not self._activation_runtime
+        ):
+            raise EncounterWitnessRefusal("exact_activation_runtime_required")
+        if self._activation_controller is not None:
+            raise EncounterWitnessRefusal("activation_controller_already_opened")
+        self._activation_controller = controller

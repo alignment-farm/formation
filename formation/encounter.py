@@ -11,6 +11,11 @@ from formation.foreground import (
     RuntimeForegroundConsumer,
     foreground_values,
 )
+from formation.admitted_root import (
+    admission_public_semantics,
+    proposal_public_semantics,
+)
+from formation.condition_append import baseline_condition, treatment_condition
 
 
 _BINDING_ISSUER = object()
@@ -331,6 +336,12 @@ class RuntimeEncounterOpener:
         current = self.require_root(root)
         return _EncounterRootVerifier(current)
 
+    def activation_input_verifier(
+        self, root: object
+    ) -> _ActivationInputVerifier:
+        current = self.require_root(root)
+        return _ActivationInputVerifier(current)
+
 
 class _EncounterRootVerifier:
     """Detached verifier for the exact current encounter-layer head."""
@@ -388,3 +399,110 @@ class _EncounterRootVerifier:
         ):
             raise EncounterOpeningRefusal("encounter_root_changed")
         return root
+
+
+class _ActivationInputVerifier:
+    """Detached public-lineage view for one exact encounter root."""
+
+    def __init__(self, root: EncounterBranchRoot) -> None:
+        self.root = root
+        self._root_verifier = _EncounterRootVerifier(root)
+        predecessor = root.predecessor
+        if hasattr(predecessor, "condition_segment") and not hasattr(
+            predecessor, "admission"
+        ):
+            self.condition = baseline_condition()
+            self.admission = None
+            self.proposal = None
+            self.replay_constrained = False
+            self._predecessor_snapshot = (
+                predecessor,
+                predecessor.condition_segment,
+                predecessor.head,
+                predecessor.condition_binding,
+                predecessor._issuer,
+            )
+            self._admission_snapshot = None
+            self._proposal_snapshot = None
+        elif hasattr(predecessor, "admission") and hasattr(
+            predecessor, "proposal"
+        ):
+            self.condition = treatment_condition()
+            self.admission = predecessor.admission
+            self.proposal = predecessor.proposal
+            self.replay_constrained = False
+            self._predecessor_snapshot = (
+                predecessor,
+                predecessor.run_id,
+                predecessor.condition_root,
+                predecessor.proposal,
+                predecessor.admission,
+                predecessor.head,
+                predecessor._issuer,
+            )
+            self._admission_snapshot = admission_public_semantics(self.admission)
+            self._proposal_snapshot = proposal_public_semantics(self.proposal)
+        elif hasattr(predecessor, "constraint") and hasattr(
+            predecessor, "admitted_root"
+        ):
+            self.condition = treatment_condition()
+            self.admission = None
+            self.proposal = None
+            self.replay_constrained = True
+            self._predecessor_snapshot = (
+                predecessor,
+                predecessor.run_id,
+                predecessor.admitted_root,
+                predecessor.constraint,
+                predecessor.head,
+                predecessor._issuer,
+            )
+            self._admission_snapshot = None
+            self._proposal_snapshot = None
+        else:
+            raise EncounterOpeningRefusal("unsupported_activation_predecessor")
+
+    def require(self, root: object) -> EncounterBranchRoot:
+        current = self._root_verifier.require(root)
+        predecessor = current.predecessor
+        snapshot = self._predecessor_snapshot
+        if predecessor is not snapshot[0]:
+            raise EncounterOpeningRefusal("activation_input_changed")
+        if self.condition == baseline_condition():
+            if (
+                predecessor.condition_segment is not snapshot[1]
+                or predecessor.head != snapshot[2]
+                or predecessor.condition_binding != snapshot[3]
+                or predecessor._issuer is not snapshot[4]
+                or self.admission is not None
+                or self.proposal is not None
+                or self.replay_constrained
+            ):
+                raise EncounterOpeningRefusal("activation_input_changed")
+        elif self.replay_constrained:
+            if (
+                predecessor.run_id != snapshot[1]
+                or predecessor.admitted_root is not snapshot[2]
+                or predecessor.constraint is not snapshot[3]
+                or predecessor.head is not snapshot[4]
+                or predecessor._issuer is not snapshot[5]
+            ):
+                raise EncounterOpeningRefusal("activation_input_changed")
+        else:
+            if (
+                predecessor.run_id != snapshot[1]
+                or predecessor.condition_root is not snapshot[2]
+                or predecessor.proposal is not snapshot[3]
+                or predecessor.admission is not snapshot[4]
+                or predecessor.head is not snapshot[5]
+                or predecessor._issuer is not snapshot[6]
+                or self.admission is not predecessor.admission
+                or self.proposal is not predecessor.proposal
+                or self.admission.proposal is not self.proposal
+                or admission_public_semantics(self.admission)
+                != self._admission_snapshot
+                or proposal_public_semantics(self.proposal)
+                != self._proposal_snapshot
+            ):
+                raise EncounterOpeningRefusal("activation_input_changed")
+        return current

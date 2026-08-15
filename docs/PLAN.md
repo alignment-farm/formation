@@ -60,7 +60,7 @@ only the fixture-local prefix path and its refusals.
 That slice is implemented with eleven passing deterministic tests. Post-build
 review exposed caller-created witness and binding capabilities; both paths now
 fail closed, and two independent final reviews return `PASS`. This is one
-completed input to Phase 1, not completion of its walking skeleton.
+completed input to Phase 1, not completion of its functional framework.
 
 The first post-fork condition append is the second completed input. Its
 [fixture-local contract](CONDITION_APPEND.md) preserves the unchanged prefix,
@@ -133,7 +133,18 @@ head semantics, reachable harness provenance, and order-sensitive verifier
 pairing. The slice stops before activation, replay derivation, and model-request
 construction.
 
-## Phase 1 — build the two-loop skeleton
+The encounter roots then exposed a fixture-local positive activation decision.
+Its [contract](POSITIVE_ACTIVATION_DECISION.md) accepts an unordered,
+label-blind pair containing baseline and governed only. Baseline records the
+public policy over an empty eligible set and withholds; governed activates its
+exact admitted lineage and originates a sealed, privately registered handoff.
+Ablation stays gated on constrained replay. Independent post-build review
+rejected a green state whose cached decision input could be replaced by the
+ablation branch's equal-looking admission. The repaired 117-test boundary
+revalidates exact inputs at append time, and independent recheck returns
+`PASS`. It stops before request construction or any behavioral claim.
+
+## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence
 stubbed and all claims at wire level.
@@ -206,7 +217,7 @@ Questions include interference between changes, skill composition, curriculum
 order, decay, revalidation, recovery after bad formation, and whether later
 competence reduces the need for explicit context.
 
-This phase is not licensed by completion of the wire skeleton. It begins only
+This phase is not licensed by completion of the wire framework. It begins only
 after at least one bounded formation mechanism survives Phase 3.
 
 ## Phase 5 — exceptional practitioners
@@ -229,7 +240,7 @@ automatically generalize to a universal architecture.
    against the semantic fixture and authority boundaries.
 4. Extend the deterministic two-loop materialization boundary without
    promoting its policy-specific path into a universal lifecycle.
-5. Implement the lineage and forkable skeleton.
+5. Implement the lineage and forkable framework.
 6. Only then select the first real-engine transfer problem.
 
 No practitioner-model contact is needed to complete the first four steps.

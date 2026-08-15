@@ -1,11 +1,11 @@
 # Initial build boundary
 
-Status: **planning contract; the walking skeleton is incomplete, with six
+Status: **planning contract; the functional framework is incomplete, with seven
 fixture-local materialization slices implemented**.
 
 ## First build objective
 
-Build a deterministic walking skeleton that proves the practice loop and
+Build a deterministic functional framework that proves the practice loop and
 formation loop can be separated, replayed, forked, and causally inspected. It
 must not claim to learn, generalize, or improve a model.
 
@@ -24,7 +24,7 @@ their developmental receipts.
 
 ## Minimal governance path
 
-The skeleton needs only enough state to expose the distinctions under test:
+The framework needs only enough state to expose the distinctions under test:
 
 ```text
 observed -> candidate proposed -> admitted
@@ -73,7 +73,7 @@ the environment's result or oracle verdict.
 
 ## First deterministic scenario
 
-The walking skeleton should enact this sequence without an LM:
+The functional framework should enact this sequence without an LM:
 
 1. One cold practitioner takes the authored bad action in the acquisition
    encounter and receives its external consequence.
@@ -162,7 +162,7 @@ and returned `code_slice_licensed`.
 That confirmation licenses only the fixture-local source adapter,
 six-line producer, exact-literal validator, frozen runtime handoff, direct byte
 comparison, compact digest binding, and their refusal tests. It does not license
-the full walking skeleton, a general recorder, replay schema, storage layer, or
+the full functional framework, a general recorder, replay schema, storage layer, or
 trajectory harness.
 
 That licensed slice is implemented. Eleven deterministic tests pass. Two
@@ -278,13 +278,22 @@ harness provenance, replaceable opening authority, non-current returned roots,
 order-sensitive verifier pairing, and verifier backpointers before the repaired
 96-test boundary returned `PASS`.
 
-No activation, constrained replay, or model-request implementation follows
-automatically. Those layers remain Markdown-only until another named
-computation distinguishes a real mechanism from a fixture lookup or repeated
-semantic value.
+The encounter roots exposed one smaller activation computation. The
+[positive activation-decision contract](POSITIVE_ACTIVATION_DECISION.md) now has
+a reviewed typed implementation for baseline and governed only. Baseline
+withholds under the public policy over an empty eligible set; governed activates
+the exact admission and proposal retained in its encounter chain and originates
+one privately registered handoff. Ablation remains excluded until constrained
+replay derives its eligible set. Independent review found and repaired an
+equal-lineage substitution through cached decision inputs before the combined
+117-test suite and final recheck returned `PASS`.
+
+No constrained replay, model-request construction, action, or consequence
+implementation follows automatically. The next licensed slice must be earned
+by a named computation at one of those boundaries.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not
 license byte exchange, per-event digests, hash chains, clocks, or a universal
 lifecycle. The independently reconstructed literal bytes and refusal ownership
-license only the prefix slice above; the full walking skeleton remains gated.
+license only the prefix slice above; the full functional framework remains gated.

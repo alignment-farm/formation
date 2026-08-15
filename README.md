@@ -103,7 +103,7 @@ New trajectory experiments and formation-runtime code belong here.
 ## Present state
 
 No formation effect has been earned. What exists today is a reviewed account
-of what the system may do, plus six small code slices that prove identity and
+of what the system may do, plus seven small code slices that prove identity and
 role separation in one deterministic scenario.
 
 The Phase 0 packet —
@@ -125,7 +125,7 @@ exchange between components.
 
 The current code uses exact bytes where byte equality matters and typed objects
 where equal-looking data must not be allowed to substitute for its source or
-authority. Five fixture-local slices are implemented and tested:
+authority. Seven fixture-local slices are implemented and tested:
 
 1. [Shared acquisition prefix](docs/MATERIALIZATION.md). Every fork starts from
    the same six developmental records as exact bytes with a content binding.
@@ -153,6 +153,12 @@ authority. Five fixture-local slices are implemented and tested:
    new current root. A sealed binding keeps freeze and comparison-group state
    unreachable from developmental lineage. Ninety-six tests cover the combined
    boundary.
+7. [Positive activation decisions](docs/POSITIVE_ACTIVATION_DECISION.md). The
+   baseline applies the public activation policy to an empty eligible set and
+   withholds. Governed activates the exact admission reached through its own
+   encounter lineage and originates one privately held handoff. The ablation
+   root remains excluded until constrained replay can derive its eligible set.
+   One hundred seventeen tests cover the combined boundary.
 
 These slices establish local identity, authority separation, and provenance
 checks. They do not establish learning, transfer, governance effectiveness, or
@@ -186,14 +192,24 @@ encounter layer, and returns three exact current encounter roots. A foreground
 witness is now an input to an encounter append, but neither witness is a model
 request, action, or evidence of formation.
 
-No next code slice is licensed. The new encounter roots make later activation
-decisions contactable, but exact activation identity remains sufficient in
-Markdown and constrained replay remains observationally underdetermined on one
-fixed dependency graph. The project should name another computation only when
-a real identity, validation, exchange, or refusal need appears.
+Positive [activation decisions](docs/POSITIVE_ACTIVATION_DECISION.md) are now
+implemented for the two roots that can decide from already materialized public
+state. Baseline records consideration under the same public policy as governed,
+but over an empty eligible set, and withholds. Governed selects the exact
+admission and proposal retained by its encounter lineage, records activation,
+and returns only a sealed binding to a private encounter-local handoff.
+Independent review rejected a green build that allowed a cached decision input
+to be replaced by the ablation branch's equal-looking admission. The repaired
+boundary rechecks the exact condition, admission, and proposal at append time;
+the combined 117-test suite and independent recheck pass.
+
+The next formation-lifecycle boundary is deliberately split. Governed request
+construction now has a concrete one-shot handoff to consume, while the ablation
+decision remains blocked on runtime-derived constrained replay. Neither request
+bytes nor replay traversal has yet been selected.
 
 The first engineering milestone is still ahead: a deterministic two-loop
-skeleton that can represent a practice trajectory and a candidate change without
+framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone
 comes later: a same-model trajectory comparison that can distinguish
 consequence-governed formation from raw episodic recall and authored lessons.
@@ -221,7 +237,7 @@ When sources disagree, prefer the most specific authority for the question:
 7. Plans and build documents for intended work.
 
 No source in the first two classes exists yet. Future plans, fixtures, and
-walking skeletons cannot promote themselves into evidence.
+functional frameworks cannot promote themselves into evidence.
 
 ## Working here
 

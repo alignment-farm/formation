@@ -21,6 +21,7 @@ root [README](../README.md).
 | How does the exact admitted ablation root receive one public replay constraint without licensing replay traversal? | [REPLAY_CONSTRAINT_APPEND.md](REPLAY_CONSTRAINT_APPEND.md) |
 | How is one positive foreground delivered once to three exact branch heads? | [FOREGROUND_DELIVERY.md](FOREGROUND_DELIVERY.md) |
 | How does each received foreground open one branch-local encounter without leaking its hidden assignment? | [ENCOUNTER_OPENING.md](ENCOUNTER_OPENING.md) |
+| How do baseline and governed make exact positive activation decisions without fabricating the ablation replay result? | [POSITIVE_ACTIVATION_DECISION.md](POSITIVE_ACTIVATION_DECISION.md) |
 
 These documents are pre-evidence. They constrain future work but establish no
 formation finding.
