@@ -349,6 +349,15 @@ valid for the exact frozen setup. This is a clean `contract_unreliable` stop,
 not a Formation result. Neither initial local model is admitted; another model
 or inference setup needs a fresh packet.
 
+The next packet begins at the much smaller end. The
+[Gemma structured-action staircase](docs/GEMMA_CONTRACT_STAIRCASE.md) screens
+instruction-tuned 270M and 1B checkpoints on four fresh JSON computations. It
+asks only whether each model can read supplied state, compute a result, and
+return one exact machine-readable action. Passing would earn a new admission
+charter, not admission itself. The separate runner passed nine fake-contact
+tests and the combined 226-test suite, then received `RUNNER_LICENSED`. No
+staircase call has been made.
+
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone

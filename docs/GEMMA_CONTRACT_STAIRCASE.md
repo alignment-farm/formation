@@ -1,7 +1,7 @@
 # Small-model structured-action staircase
 
-Status: **reviewed pre-contact screen; no model call licensed until the runner
-is independently licensed**.
+Status: **contact-ready screen; independently reviewed runner licensed; no
+model call made**.
 
 ## Purpose
 
@@ -314,5 +314,7 @@ repaired, the token limit or settings change between models, a failed model
 continues, a passing screen is called Formation, or any of these four tasks is
 reused in a promoted packet.
 
-No call is licensed until independent cold review returns one stable protocol
-and a runner that passes fake tests is independently licensed.
+Independent cold review returned `STAIRCASE_PROTOCOL_STABLE`. The runner then
+passed nine fake-contact tests and independent review returned
+`RUNNER_LICENSED`. Contact must use that frozen runner without editing this
+packet.

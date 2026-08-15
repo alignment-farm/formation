@@ -28,3 +28,9 @@ rewriting the first packet. It exposes the complete restricted Python
 environment to the model, uses fresh prompts and vectors, and stores ordinary
 and held class labels on the vectors themselves. Its tests spend no model-call
 budget.
+
+The fifth runner implements the
+[Gemma structured-action staircase](../docs/GEMMA_CONTRACT_STAIRCASE.md). It
+screens exact 270M and 1B artifacts on four JSON computations before either can
+earn a full admission packet. It scores only provider message content, never
+reasoning text, and its tests use fake envelopes.

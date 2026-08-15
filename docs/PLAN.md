@@ -253,6 +253,14 @@ exact model and inference setup, not another hidden-instrument failure. Neither
 initial local model is admitted. The next model or inference setup requires a
 new pre-contact packet rather than an edit to either completed run.
 
+The next pre-contact packet is a bounded
+[Gemma structured-action staircase](GEMMA_CONTRACT_STAIRCASE.md). It starts at
+270M parameters, then tests 1B, using four fresh JSON computations rather than
+another source-code gate. Passing only earns a full admission charter; it does
+not establish teachable headroom. Exact Q4_0 artifacts and their shared chat
+template are frozen. The runner passed nine fake-contact tests and the combined
+226-test suite, then received `RUNNER_LICENSED`. No staircase call has occurred.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence

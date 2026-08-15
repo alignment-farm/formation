@@ -31,4 +31,10 @@ classifiers, full fake packet, and anchor stop. Twelve additional fake-contact
 tests cover the corrected Nemotron-only successor, including its disclosed
 builtin environment, exact source and query gates, vector-owned class labels,
 direct-rule constraint, full packet, retry, request/load identity, and anchor
-stop. The combined repository suite now contains 217 tests.
+stop.
+
+Nine fake-contact tests cover the Gemma 270M-to-1B structured-action
+staircase. They lock prompt bytes, documented oracles, artifact identities,
+type-sensitive JSON scoring, refusal precedence, retry behavior, live request
+and load shape, two-model continuation, packet receipts, and cleanup. The
+combined repository suite now contains 226 tests.
