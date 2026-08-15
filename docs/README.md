@@ -27,6 +27,7 @@ root [README](../README.md).
 | How does the runtime commit those exact proposals without claiming an environment consequence? | [ACTION_COMMITMENT.md](ACTION_COMMITMENT.md) |
 | How does the environment apply those commitments without claiming consequence intake or formation? | [ENVIRONMENT_APPLICATION.md](ENVIRONMENT_APPLICATION.md) |
 | How does the runtime retain those environment results without interpreting or scoring them? | [CONSEQUENCE_INTAKE.md](CONSEQUENCE_INTAKE.md) |
+| How are those positive occurrence intervals closed without turning storage into learning? | [EXPERIENCE_CLOSURE.md](EXPERIENCE_CLOSURE.md) |
 
 These documents are pre-evidence. They constrain future work but establish no
 formation finding.

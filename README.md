@@ -261,6 +261,13 @@ developmental parentage, one-shot delivery, durable audit access, and the
 absence of interpretation or experience closure. Its code is blocked by the
 unimplemented environment predecessor.
 
+Positive [experience closure](docs/EXPERIENCE_CLOSURE.md) then joins the exact
+encounter-opened and consequence-observed occurrences without a synopsis,
+lesson, applicability claim, or success label. Cold review restored the omitted
+`activation considered` step and the fixture's dual-parent closure shape. Two
+final reconstructions agree. Code remains transitively blocked with its
+environment and intake predecessors.
+
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone

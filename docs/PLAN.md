@@ -181,6 +181,12 @@ runtime recording, developmental parentage from transport evidence, and one-
 shot delivery from durable audit access. Implementation remains blocked by the
 unmaterialized environment result.
 
+Positive [experience closure](EXPERIENCE_CLOSURE.md) now passes two final cold
+reconstructions. It completes the semantic occurrence interval while preserving
+the considered-decision chain and exact encounter/consequence parents, without
+turning retention into interpretation. Its implementation is transitively
+blocked.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence

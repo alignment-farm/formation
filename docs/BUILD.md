@@ -338,6 +338,11 @@ fields, and makes the action commitment the sole developmental parent. Code is
 blocked transitively because no licensed environment result capability exists
 yet.
 
+Positive [experience closure](EXPERIENCE_CLOSURE.md) is semantically stable as
+well. It validates the exact encounter-to-consequence causal chain, uses the
+encounter and consequence occurrences as dual parents, and adds no summary or
+applicability claim. Its code remains blocked by the same predecessor chain.
+
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not
 license byte exchange, per-event digests, hash chains, clocks, or a universal

@@ -70,6 +70,8 @@ Stop when the task's scope and authority are clear.
   intake.
 - `docs/CONSEQUENCE_INTAKE.md` owns fixture-local recording of the two positive
   environment results as developmental occurrences before experience closure.
+- `docs/EXPERIENCE_CLOSURE.md` owns fixture-local closure of the two positive
+  occurrence intervals without interpretation or applicability claims.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
