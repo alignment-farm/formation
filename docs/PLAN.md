@@ -171,9 +171,12 @@ final cold recheck after closing a multiple-alias reset path and orphan-binding
 resolution. Environment action application is the next named semantic need;
 its [contract](ENVIRONMENT_APPLICATION.md) now has converged authorities,
 result boundary, refusals, and loses-conditions. Code-facing review nevertheless
-returns `CODE_SLICE_BLOCKED`: one fixed revision mismatch cannot distinguish
-real rule execution from an action-keyed lookup, and no extra case is justified
-solely to force materialization.
+originally returned `CODE_SLICE_BLOCKED`: one fixed revision mismatch could not
+distinguish real rule execution from an action-keyed lookup. The completed
+98-case micro-environment now supplies that missing pressure. Cold review
+licensed a narrow composition after the contract froze a visibly different
+diagnostic result and kept seam recorders and harness witnesses from authoring
+output. Implementation is pending.
 
 The next semantic join, [consequence intake](CONSEQUENCE_INTAKE.md), now also
 passes two final reconstructions. It separates environment origination from

@@ -248,10 +248,11 @@ The next named semantic need is environment action application. It must consume
 the exact private handoff and preserve an external result while keeping result,
 oracle verdict, and formation claim distinct. The
 [environment-application contract](docs/ENVIRONMENT_APPLICATION.md) now closes
-that semantic gate, but code-facing review blocks implementation: with one
-fixed revision mismatch, action-keyed lookup and real revision-rule execution
-remain observationally equivalent. The project will not add a case solely to
-manufacture implementation pressure.
+that semantic gate. The reviewed 98-case micro-environment now removes its
+former action-keyed-lookup blocker. Cold code-facing review then licensed a
+narrow composition that must consume each exact handoff, call the existing
+engine, and issue only the result returned by that call. Implementation is
+pending.
 
 That stable result boundary also names the next lifecycle join. The
 [consequence-intake contract](docs/CONSEQUENCE_INTAKE.md) distinguishes an

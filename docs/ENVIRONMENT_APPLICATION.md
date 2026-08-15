@@ -1,7 +1,6 @@
 # Positive environment-application contract
 
-Status: **fixture-local semantic contract; reconstruction stable, code slice
-blocked**.
+Status: **fixture-local semantic contract; narrow code slice licensed**.
 
 Purpose: define the boundary at which the two exact positive commitments become
 externally consequential. The environment consumes each private action handoff
@@ -214,16 +213,51 @@ carrier, order-dependent shared state, unowned result tokens, ambiguous registry
 authority, and confusion between transport currentness and developmental
 append. The semantic gate is closed.
 
-Code remains blocked. In this one frozen foreground, both actions always see
-artifact revision 7 and authority revision 8. A lookup keyed only by action
-value can therefore imitate every clean result of the declared revision rule.
-Tampering and refusal tests can prove identity and fail-closed behavior, but
-they cannot distinguish actual revision comparison from that authored lookup.
-The missing pressure is a retained encounter where the same action value must
-produce a different disposition under different valid revisions. Adding such a
-case solely to force code would expand the fixture rather than answer a need the
-fixture already presents. This is the same observational boundary that keeps
-fixed-graph constrained replay unmaterialized.
+The completed
+[revision-gated release micro-environment](MICRO_ENVIRONMENT_CHARTER.md) removes
+the earlier observational blocker without adding another fixture encounter. Its
+98 prospective cases require `release` to accept and reject under different
+valid states, and require rebuild output to track the supplied authority
+revision. Its external oracle also proves that an action-only lookup and a
+fixed-after-state implementation fail.
+
+The environment-application slice must compose with that reviewed engine. The
+environment authority calls `apply_revision_gated_release` exactly once with a
+`RevisionState` built from the two exact revision roles reached through
+`commitment.invocation.request.situation` and the exact action value carried by
+the consumed handoff. It does not copy the transition rule, choose a result from
+the action, or accept a caller-supplied state. The resulting `RevisionResult`
+supplies the before revision, after revision, authority revision, disposition,
+and observation of the environment-issued capability. The capability also
+retains the exact run, public rule, commitment, and handoff action value.
+
+The lifecycle slice freezes these composition witnesses before implementation:
+
+1. A clean application calls `apply_revision_gated_release` exactly once per
+   consumed handoff. A recorder at that seam may observe only the
+   `RevisionState` and action. They must equal the revision values on the exact
+   retained situation and the exact handoff action value.
+2. The issued transition fields must equal the `RevisionResult` returned by
+   that call. A diagnostic replacement that always returns the valid
+   `rejected` and `stale_dependency` combination must make both issued results
+   carry that diagnostic result. The action-only comparator's unchanged answer
+   for the authored `(7, 8)` pair is not a composition witness.
+3. The production path has no action-to-result table and does not import or
+   call the micro-environment conformance oracle. It does not construct, repair,
+   or choose transition fields outside the engine call.
+4. The seam recorder may record inputs but may not supply or alter engine or
+   environment results. The harness witnesses environment-issued capabilities
+   after the fact; neither recorder nor harness acts as a result or consequence
+   oracle.
+
+The micro-environment suite remains the prospective state-dependence proof. The
+lifecycle suite owns handoff identity and consumption, result authorship and
+registry privacy, sealed transport, complete pair witnessing, atomic failure,
+and refusal of reconstructed state or expected-result substitution.
+
+This licenses only a narrow typed composition around the existing engine. It
+does not reopen the micro-environment charter, add fixture states, or license
+consequence intake.
 
 ## Unselected
 
@@ -245,4 +279,6 @@ harness or runtime authors the result; if one handoff applies twice; if direct
 release silently repairs stale state; if equal-looking values replace exact
 lineage; if private registries become reachable from returned roots or detached
 verifiers; or if an external result is treated as a consequence receipt,
-interpretation, score, or evidence that formation helped.
+interpretation, score, or evidence that formation helped. It also loses if the
+authored pair can be issued without calling the reviewed engine, or if a seam
+recorder or harness supplies, repairs, or replaces result content.
