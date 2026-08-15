@@ -187,6 +187,12 @@ the considered-decision chain and exact encounter/consequence parents, without
 turning retention into interpretation. Its implementation is transitively
 blocked.
 
+The next computation is licensed through the
+[micro-environment charter](MICRO_ENVIRONMENT_CHARTER.md), not by adding more
+fixture lore. Its exhaustive bounded matrix forces state-dependent release and
+authority-dependent rebuild results. Work must stop after one reviewed passing
+engine, then move toward contact where ordinary persistence is allowed to win.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence
