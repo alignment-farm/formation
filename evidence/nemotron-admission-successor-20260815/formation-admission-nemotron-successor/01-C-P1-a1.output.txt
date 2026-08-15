@@ -1,0 +1,8 @@
+def combine_labels(payload):
+    if not isinstance(payload, tuple):
+        raise ValueError
+    if len(payload) != 2:
+        raise ValueError
+    if not (isinstance(payload[0], str) and isinstance(payload[1], str)):
+        raise ValueError
+    return payload[0] +

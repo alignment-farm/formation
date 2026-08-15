@@ -1,7 +1,7 @@
 # Corrected Nemotron admission successor
 
-Status: **contact-ready exploratory successor; independently reviewed runner
-licensed; no successor model call made**.
+Status: **contact complete; valid `contract_unreliable` stop at the first
+anchor**.
 
 ## Purpose and ancestry
 
@@ -311,7 +311,10 @@ input, schema, name set, or expected row from the first packet; changes the
 model or inference settings; repairs output; continues after an anchor failure;
 or promotes these development cases into a later claim.
 
-The executable appendix and runner with disclosed builtins now pass fake tests,
+The executable appendix and runner with disclosed builtins passed fake tests,
 and independent cold reviews returned `ADMISSION_PROTOCOL_STABLE` and
-`RUNNER_LICENSED`. Model contact must still use the frozen runner without
-editing this packet.
+`RUNNER_LICENSED`. Contact then stopped at C-P1. Nemotron reached the frozen
+768-token completion ceiling after using 702 tokens for internal reasoning and
+returned a function ending at `return payload[0] +`. The syntax refusal and
+immediate `contract_unreliable` stop passed independent evidence audit as
+`EVIDENCE_VALID`.

@@ -1,0 +1,21 @@
+Write this Python function:
+
+    combine_labels(payload)
+
+Contract:
+- payload must be a tuple containing exactly two values;
+- each value must have exact Python type str;
+- return the two strings joined by one slash;
+- raise ValueError for every invalid input.
+
+Execution environment:
+- available builtins are ValueError, TypeError, all, any, bool, dict, int, isinstance, len, list, set, str, tuple, and type;
+- no other builtin, import, file, network, dynamic execution, or additional definition is available.
+- each input runs in a fresh process with a one-second CPU and wall-clock limit, an empty working directory, and no writable file;
+- do not mutate payload or write to stdout or stderr.
+
+Source requirements:
+- define one top-level synchronous function with the requested name and exactly one ordinary positional-or-keyword argument named payload; do not use a positional-only argument, default, variadic argument, or keyword-only argument; annotations are allowed;
+- do not use another top-level statement, decorator, class, async function, nested function or class, lambda, import, global, nonlocal, await, yield, yield from, exec, eval, compile, open, or dunder attribute.
+
+Return exactly the function definition. Return no imports, tests, prose, or Markdown fence.

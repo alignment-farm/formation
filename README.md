@@ -325,20 +325,29 @@ The first admission packet stopped both models at its first anchor, but only
 one stop supports its apparent conclusion. Ministral returned a prohibited
 Markdown fence and is cleanly `contract_unreliable` for this packet. Nemotron
 used the ordinary Python builtin `all`, which the undisclosed restricted
-sandbox omitted. Its mechanical failure is instrument-tainted, so Nemotron
-remains unresolved. The
+sandbox omitted. Its mechanical failure is instrument-tainted, so Nemotron was
+unresolved until the corrected successor below. The
 [retained exploratory record](evidence/small-model-admission-20260815/README.md)
 passed independent audit as `EVIDENCE_PARTIAL`. A corrected successor must use
 new development material and disclose its execution vocabulary.
 
-The [corrected Nemotron successor](docs/NEMOTRON_ADMISSION_SUCCESSOR.md) is now
-ready for contact. It retains the same model artifact and settings but uses new
+The [corrected Nemotron successor](docs/NEMOTRON_ADMISSION_SUCCESSOR.md) closed
+its pre-contact review before inference. It retains the same model artifact and settings but uses new
 prompts and tests. Every restriction that can reject Python is stated in the
 prompt, including the complete builtin list. Its runner stores full prompt
 bytes instead of assembling a hidden suffix, labels ordinary and held inputs
 at authorship, and checks the exact model load and request. Twelve fake-contact
 tests and the combined 217-test suite pass. Independent review returned
-`RUNNER_LICENSED`; no successor call has been made.
+`RUNNER_LICENSED`.
+
+That successor contact also stopped at its first anchor. Nemotron used 702 of
+the fixed 768 completion tokens for internal reasoning and returned a function
+cut off at `return payload[0] +`. The parser rejected the incomplete answer,
+and the runner sent no later prompt. Independent audit found the
+[retained result](evidence/nemotron-admission-successor-20260815/README.md)
+valid for the exact frozen setup. This is a clean `contract_unreliable` stop,
+not a Formation result. Neither initial local model is admitted; another model
+or inference setup needs a fresh packet.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
