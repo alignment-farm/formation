@@ -283,8 +283,15 @@ The first [cold-model contact charter](docs/SQLITE_CONTACT_CHARTER.md) is now
 semantically stable. It freezes Composer 2.5, three exploration calls, five
 unseen SQLite tasks, cold/raw/authored-lesson offers, executable scoring, and a
 nineteen-call ceiling. Raw persistence is allowed to win; a not-engaged cold
-model stops the contact. No participant call occurs until the exact runner is
-implemented and reviewed.
+model stops the contact.
+
+That contact is now complete and closed `not_engaged`. Composer 2.5 returned
+correct executable SQLite queries in all three independent cold exploration
+calls, so there was no wrong acquisition experience for persistence to repair.
+The runner correctly sent no lesson and no validation cases. The
+[evidence and plain-language finding](evidence/sqlite-nullable-antijoin-contact-20260815/README.md)
+passed independent audit. This is a task-selection result, not a formation or
+transfer result.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

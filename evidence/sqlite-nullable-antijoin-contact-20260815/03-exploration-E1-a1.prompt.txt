@@ -1,0 +1,11 @@
+You are writing one SQLite query.
+
+Database:
+CREATE TABLE customers(id INTEGER PRIMARY KEY, name TEXT NOT NULL);
+CREATE TABLE orders(id INTEGER PRIMARY KEY, customer_id INTEGER);
+INSERT INTO customers VALUES (1,'Ada'),(2,'Bex'),(3,'Cy');
+INSERT INTO orders VALUES (10,1),(11,NULL);
+
+Question: return customer names for customers who have never placed an order, ordered by name.
+
+Return exactly one SQLite SELECT statement. A single trailing semicolon is allowed. Return no prose and no Markdown fence.

@@ -1,6 +1,6 @@
 # First cold-model contact charter: SQLite nullable anti-joins
 
-Status: **pre-contact charter; contact and runner licensed**.
+Status: **contact complete; valid `not_engaged` stop after exploration**.
 
 ## Purpose
 
@@ -409,3 +409,12 @@ repository suite. Independent review first blocked it because receipts did not
 state no-resume status, retry reason, or retry linkage. The repaired immutable
 attempt receipts name all three, and final review returns `RUNNER_LICENSED` with
 no blockers. Participant contact is licensed under this frozen runner only.
+
+Contact then ran exactly three exploration calls. All three cold Composer 2.5
+outputs were executable and returned the correct ordered rows. Two used
+`NOT EXISTS`; one used `NOT IN` with an explicit null filter. The mechanical
+classification was `not_engaged`, so the runner sent no lesson or validation
+prompt. Independent audit of prompts, outputs, SQLite execution, cold-session
+receipts, and stopping returned `EVIDENCE_VALID` with no discrepancies. The
+bounded finding and raw evidence are retained under
+[`evidence/sqlite-nullable-antijoin-contact-20260815/`](../evidence/sqlite-nullable-antijoin-contact-20260815/README.md).

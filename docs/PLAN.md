@@ -199,7 +199,14 @@ The first move toward contact is now frozen in the
 [SQLite contact charter](SQLITE_CONTACT_CHARTER.md). It is baseline calibration,
 not a governed comparison: cold, raw persistence, and a model-authored lesson
 receive five prospective tasks only if three cold exploration calls engage the
-named failure. Runner review remains the final gate before contact.
+named failure.
+
+That first contact passed its runner gate and then stopped `not_engaged` after
+three cold calls: Composer 2.5 solved the nullable anti-join task every time.
+No persistence or lesson condition ran. The result narrows task selection but
+does not evaluate formation. The next contact must use a different,
+independently chartered practice; this closed run may not be modified or
+extended.
 
 ## Phase 1 — build the two-loop framework
 

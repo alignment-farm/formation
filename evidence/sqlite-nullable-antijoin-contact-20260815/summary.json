@@ -1,0 +1,65 @@
+{
+  "exploration": [
+    {
+      "call_index": 1,
+      "mechanically_engaged": false,
+      "score": {
+        "accepted_query": true,
+        "constraint_met": true,
+        "correct_rows": true,
+        "passed": true,
+        "refusal": null,
+        "rows": [
+          [
+            "Bex"
+          ],
+          [
+            "Cy"
+          ]
+        ]
+      }
+    },
+    {
+      "call_index": 2,
+      "mechanically_engaged": false,
+      "score": {
+        "accepted_query": true,
+        "constraint_met": true,
+        "correct_rows": true,
+        "passed": true,
+        "refusal": null,
+        "rows": [
+          [
+            "Bex"
+          ],
+          [
+            "Cy"
+          ]
+        ]
+      }
+    },
+    {
+      "call_index": 3,
+      "mechanically_engaged": false,
+      "score": {
+        "accepted_query": true,
+        "constraint_met": true,
+        "correct_rows": true,
+        "passed": true,
+        "refusal": null,
+        "rows": [
+          [
+            "Bex"
+          ],
+          [
+            "Cy"
+          ]
+        ]
+      }
+    }
+  ],
+  "exploration_status": "not_engaged",
+  "model": "composer-2.5",
+  "protocol": "sqlite-nullable-antijoin-contact-v0",
+  "validation": []
+}
