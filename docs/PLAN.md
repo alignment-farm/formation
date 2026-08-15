@@ -212,8 +212,9 @@ The independently chartered successor is the
 [Python boundary contact](PYTHON_BOUNDARY_CONTACT_CHARTER.md). It treats exact-
 integer scoring as a predeclared behavioral contrast under ambiguous wording,
 not as proof of an irrational model error. Raw persistence may win across three
-integer-shaped and two boolean-shaped fresh tasks. Runner review remains the
-last gate before contact.
+integer-shaped and two boolean-shaped fresh tasks. The restricted runner passed
+the combined 198-test suite and two independent reviews. Participant contact is
+the next bounded action.
 
 ## Phase 1 — build the two-loop framework
 

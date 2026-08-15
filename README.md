@@ -294,11 +294,14 @@ passed independent audit. This is a task-selection result, not a formation or
 transfer result.
 
 A successor [Python boundary contact](docs/PYTHON_BOUNDARY_CONTACT_CHARTER.md)
-is now frozen before contact. It asks how Composer 2.5 interprets ordinary
+is now frozen and licensed for contact. It asks how Composer 2.5 interprets
+ordinary
 “Python integers” when Python treats booleans as integer subclasses, then allows
 raw failure persistence and a model-authored lesson to compete on fresh integer
-and boolean APIs. Two final cold reviews agree on the exact vectors and bounded
-claim. Participant calls wait for a restricted runner and independent review.
+and boolean APIs. Two cold semantic reviews agree on the exact vectors and
+bounded claim. The restricted runner now passes its 10-test slice, the combined
+198-test suite, and two independent code reviews. No participant call has yet
+been made.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

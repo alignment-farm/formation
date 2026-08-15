@@ -1,6 +1,7 @@
 # Cold coding contact charter: strict Python boundary types
 
-Status: **pre-contact charter; contact semantics stable, runner pending**.
+Status: **pre-contact charter and runner licensed; participant contact
+pending**.
 
 ## Purpose
 
@@ -58,9 +59,10 @@ ends the test as `timeout`. Timeout, crash, stdout/stderr output, mutation of
 the supplied input, or a return outside the declared value closes that test as
 failed. This sandbox is for the frozen small functions only; it is not a
 general untrusted-code sandbox.
-The subprocess receives an empty working directory, 128 MiB of
-address space, and zero writable file size. No repository path enters its
-environment or arguments.
+The subprocess receives an empty working directory and a zero writable-file
+limit. No repository path enters its environment or arguments. The reviewed
+runner does not claim a memory ceiling: this macOS host exposes an address-space
+limit but rejects attempts to lower it before participant code runs.
 
 ## Exploration task
 
@@ -384,5 +386,6 @@ source boundary, complete vectors, report schema, engagement and acquisition,
 offers, schedule, receipts, budget, stop, and claim boundary. Earlier reviews
 exposed and repaired unfair “mistake” framing, a contradiction about acquisition
 test disclosure, incomplete vectors, an unfrozen report, competing timeout
-readings, and incomplete boolean-position coverage. The semantic gate is closed;
-participant contact still waits for runner implementation and review.
+readings, and incomplete boolean-position coverage. The semantic gate is closed.
+The restricted runner and its automatic stop passed two further independent
+reviews. Participant contact is licensed but has not begun.

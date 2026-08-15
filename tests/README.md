@@ -1,6 +1,7 @@
 # Deterministic contract tests
 
-The current 177 tests include 162 tests covering the fixture-local prefix,
+The current 176 non-contact tests include 161 tests covering the fixture-local
+prefix,
 first condition append,
 typed admitted-root boundary, public replay-constraint append, and shared
 positive-foreground delivery, positive encounter opening, and the two-root
@@ -22,4 +23,6 @@ evidence.
 Twelve fake-contact tests cover the SQLite charter runner without spending its
 model-call budget. They verify prompt assembly, executable oracles, engagement
 and stop decisions, exact nineteen-call scheduling, raw-offer separation, and
-retry receipts. The combined repository suite now contains 189 tests.
+retry receipts. Ten more cover the strict Python boundary runner, including its
+source gate, fresh-process oracle, exact vector order, automatic stop, and full
+nineteen-call path. The combined repository suite now contains 198 tests.
