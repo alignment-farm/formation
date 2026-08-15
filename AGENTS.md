@@ -61,6 +61,8 @@ Stop when the task's scope and authority are clear.
   governed positive activation decisions while ablation replay remains gated.
 - `docs/PRACTICE_REQUEST.md` owns fixture-local construction of baseline and
   governed positive practice requests from exact activation decisions.
+- `docs/MODEL_INVOCATION.md` owns fixture-local deterministic actor invocation
+  from the exact baseline and governed positive practice requests.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing

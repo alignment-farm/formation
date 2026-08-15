@@ -135,6 +135,11 @@ class RuntimePositivePracticeRequestAuthority:
         self._roots: list[WithheldRequestRoot | ActivatedRequestRoot] = []
         self._snapshots: list[tuple[object, ...]] = []
         self._active_handoff_consumption: tuple[object, ActivatedDecisionRoot] | None = None
+        self._root_verifiers: list[_RequestRootVerifier] = []
+        self._invocation_factory_permit: object | None = object()
+        self._invocation_claim_permit: object | None = None
+        self._invocation_owner_id: int | None = None
+        self._invocation_authority: object | None = None
 
     def _use_for(self, root: object) -> _RequestPreparationUse:
         use = next((item for item in self._uses if item.root is root), None)
@@ -286,3 +291,56 @@ class RuntimePositivePracticeRequestAuthority:
         if use.used or use.request_root is not None or use._preparations:
             raise PracticeRequestRefusal("practice_decision_predecessor_not_current")
         return use.require(root, used=False)
+
+    def root_verifier(self, root: object) -> _RequestRootVerifier:
+        verifier = _RequestRootVerifier(self.require_root(root))
+        self._root_verifiers.append(verifier)
+        return verifier
+
+    def _require_root_verifier(self, verifier: object) -> _RequestRootVerifier:
+        if (
+            type(verifier) is not _RequestRootVerifier
+            or not any(item is verifier for item in self._root_verifiers)
+            or verifier.require(verifier.root) is not verifier.root
+        ):
+            raise PracticeRequestRefusal("exact_practice_request_root_verifier_required")
+        return verifier
+
+    def _take_invocation_factory_permit(self, owner: object) -> object:
+        permit = self._invocation_factory_permit
+        if permit is None:
+            raise PracticeRequestRefusal("invocation_factory_permit_unavailable")
+        self._invocation_factory_permit = None
+        self._invocation_claim_permit = permit
+        self._invocation_owner_id = id(owner)
+        return permit
+
+    def _claim_invocation_authority(
+        self, authority: object, owner: object, permit: object
+    ) -> None:
+        if (
+            permit is not self._invocation_claim_permit
+            or id(owner) != self._invocation_owner_id
+        ):
+            raise PracticeRequestRefusal("invocation_controller_factory_required")
+        if self._invocation_authority is not None:
+            raise PracticeRequestRefusal("invocation_authority_already_claimed")
+        self._invocation_authority = authority
+
+
+class _RequestRootVerifier:
+    """Snapshot-only verifier with no request-authority backpointer."""
+
+    def __init__(self, root: WithheldRequestRoot | ActivatedRequestRoot) -> None:
+        self.root = root
+        self._snapshot = RuntimePositivePracticeRequestAuthority._snapshot(root)
+
+    def require(self, root: object) -> WithheldRequestRoot | ActivatedRequestRoot:
+        if root is not self.root or type(root) not in (
+            WithheldRequestRoot,
+            ActivatedRequestRoot,
+        ):
+            raise PracticeRequestRefusal("exact_practice_request_root_required")
+        if RuntimePositivePracticeRequestAuthority._snapshot(root) != self._snapshot:
+            raise PracticeRequestRefusal("practice_request_root_changed")
+        return root

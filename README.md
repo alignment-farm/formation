@@ -103,7 +103,7 @@ New trajectory experiments and formation-runtime code belong here.
 ## Present state
 
 No formation effect has been earned. What exists today is a reviewed account
-of what the system may do, plus eight small code slices that prove identity and
+of what the system may do, plus nine small code slices that prove identity and
 role separation in one deterministic scenario.
 
 The Phase 0 packet —
@@ -125,7 +125,7 @@ exchange between components.
 
 The current code uses exact bytes where byte equality matters and typed objects
 where equal-looking data must not be allowed to substitute for its source or
-authority. Eight fixture-local slices are implemented and tested:
+authority. Nine fixture-local slices are implemented and tested:
 
 1. [Shared acquisition prefix](docs/MATERIALIZATION.md). Every fork starts from
    the same six developmental records as exact bytes with a content binding.
@@ -164,6 +164,10 @@ authority. Eight fixture-local slices are implemented and tested:
    private activation handoff once and places that object in its request. No
    prompt format or model invocation is selected. One hundred thirty-six tests
    cover the combined boundary.
+9. [Deterministic model invocation](docs/MODEL_INVOCATION.md). One stateless
+   actor capability receives both exact requests and alone issues their model
+   proposal objects. The runtime records those proposals without committing an
+   action. One hundred fifty tests cover the combined boundary.
 
 These slices establish local identity, authority separation, and provenance
 checks. They do not establish learning, transfer, governance effectiveness, or
@@ -217,9 +221,16 @@ restored rights by resetting guards, let a fake owner claim the registry, or
 consumed a handoff outside live request preparation. The repaired boundary and
 combined 136-test suite pass two final independent rechecks.
 
-The lifecycle boundary remains deliberately split. These are semantic request
-objects, not serialized prompts, and no model has been invoked. Ablation is
-still blocked on runtime-derived constrained replay.
+Deterministic [model invocation](docs/MODEL_INVOCATION.md) now exercises those
+semantic requests without an LM. The same stateless actor proposes `release`
+for baseline and `rebuild_then_release` for governed from request-visible roles.
+Only the actor issues proposal capabilities; the runtime records them. Review
+found and repaired a post-invocation verifier replacement path before the
+combined 150-test suite and final recheck passed.
+
+The lifecycle boundary remains deliberately split. A model proposal is not a
+committed action, and the fixture actor is not evidence of model learning.
+Ablation remains blocked on runtime-derived constrained replay.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

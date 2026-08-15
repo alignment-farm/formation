@@ -154,6 +154,14 @@ live preparation. The repaired 136-test boundary passes two final independent
 rechecks. It stops before prompt serialization, model invocation, action, or
 any behavioral claim; ablation remains gated on constrained replay.
 
+The exact requests then exposed deterministic actor invocation. The
+[model-invocation contract](MODEL_INVOCATION.md) uses one stateless actor
+capability for both branches and requires actor-issued proposal objects so the
+runtime cannot merely write the expected answer. Baseline proposes `release`;
+governed proposes `rebuild_then_release` from the exact request situation and
+handoff. The repaired 150-test boundary passes independent recheck. It stops
+before action commitment, environment consequence, or any learning claim.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence

@@ -1,6 +1,6 @@
 # Fixture-local formation code
 
-This directory contains the runtime-owned parts of eight fixture-local slices:
+This directory contains the runtime-owned parts of nine fixture-local slices:
 the shared six-receipt prefix, the first post-fork formation-condition receipt,
 the in-memory proposal-to-admission root boundary, and the public replay-
 constraint append. The first two adapt runtime sources and emit frozen bytes.
@@ -20,6 +20,8 @@ a private registry and returns only a sealed binding; ablation remains gated.
 The eighth prepares semantic practice requests from those decisions. Baseline
 has structural intervention absence; governed consumes the private handoff once
 and retains its exact identity. It does not serialize or invoke a model.
+The ninth invokes one stateless deterministic actor on both semantic requests
+and records actor-issued proposals without committing an action.
 
 It is not yet a general formation runtime. See
 [`docs/MATERIALIZATION.md`](../docs/MATERIALIZATION.md) and
@@ -31,3 +33,4 @@ See also [`docs/ENCOUNTER_OPENING.md`](../docs/ENCOUNTER_OPENING.md).
 See also
 [`docs/POSITIVE_ACTIVATION_DECISION.md`](../docs/POSITIVE_ACTIVATION_DECISION.md).
 See also [`docs/PRACTICE_REQUEST.md`](../docs/PRACTICE_REQUEST.md).
+See also [`docs/MODEL_INVOCATION.md`](../docs/MODEL_INVOCATION.md).

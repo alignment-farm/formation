@@ -1,6 +1,6 @@
 # Initial build boundary
 
-Status: **planning contract; the functional framework is incomplete, with eight
+Status: **planning contract; the functional framework is incomplete, with nine
 fixture-local materialization slices implemented**.
 
 ## First build objective
@@ -301,9 +301,18 @@ Independent review found and repaired counterfeit verifier and owner paths,
 restorable guards, and orphan handoff consumption before the combined 136-test
 suite and two final rechecks returned `PASS`.
 
-No constrained replay, model invocation, action, or consequence implementation
-follows automatically. The next slice must be earned by a named computation at
-one of those boundaries.
+That request slice did not automatically license constrained replay, model
+invocation, action, or consequence. The exact requests instead exposed the
+narrower deterministic computation below.
+
+The exact semantic requests then earned a deterministic
+[model-invocation contract](MODEL_INVOCATION.md). One frozen stateless actor
+capability authors proposals from request-visible roles; the runtime records but
+does not commit them. The repaired combined 150-test boundary passes final
+independent recheck after closing post-invocation verifier replacement.
+
+No real-model contact, action commitment, constrained replay, or consequence
+implementation follows automatically.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not

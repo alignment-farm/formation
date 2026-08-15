@@ -1,6 +1,6 @@
 # Fixture-local trajectory code
 
-This directory contains the harness-owned parts of eight fixture-local slices:
+This directory contains the harness-owned parts of nine fixture-local slices:
 prefix validation and fork comparison; public-condition assignment, validation,
 witness, and append checks; and the label-blind treatment batch plus
 proposal/admission witnesses and admitted-root verification; and the hidden
@@ -13,6 +13,8 @@ The seventh witnesses exactly one baseline withholding and one governed
 activation while keeping ablation outside the decision boundary.
 The eighth witnesses the exact request roots without constructing, enriching,
 or repairing either request.
+The ninth witnesses exact actor-issued invocation proposals without treating
+them as committed actions.
 
 It is not yet a general trajectory harness. See
 [`docs/MATERIALIZATION.md`](../docs/MATERIALIZATION.md) and
@@ -24,3 +26,4 @@ See also [`docs/ENCOUNTER_OPENING.md`](../docs/ENCOUNTER_OPENING.md).
 See also
 [`docs/POSITIVE_ACTIVATION_DECISION.md`](../docs/POSITIVE_ACTIVATION_DECISION.md).
 See also [`docs/PRACTICE_REQUEST.md`](../docs/PRACTICE_REQUEST.md).
+See also [`docs/MODEL_INVOCATION.md`](../docs/MODEL_INVOCATION.md).
