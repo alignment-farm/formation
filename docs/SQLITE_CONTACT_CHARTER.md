@@ -1,6 +1,6 @@
 # First cold-model contact charter: SQLite nullable anti-joins
 
-Status: **pre-contact charter; contact semantics stable, runner pending**.
+Status: **pre-contact charter; contact and runner licensed**.
 
 ## Purpose
 
@@ -403,3 +403,9 @@ The semantic contact gate is closed. Model contact still waits for a reviewed
 runner that assembles these exact bytes, uses a new empty workspace for every
 call, enforces read-only SQLite scoring, retains the required receipts, and
 stops automatically on `not engaged` or `unstable`.
+
+That runner now passes 12 focused fake-contact tests and the combined 189-test
+repository suite. Independent review first blocked it because receipts did not
+state no-resume status, retry reason, or retry linkage. The repaired immutable
+attempt receipts name all three, and final review returns `RUNNER_LICENSED` with
+no blockers. Participant contact is licensed under this frozen runner only.

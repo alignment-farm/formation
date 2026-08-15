@@ -18,3 +18,8 @@ The other 15 tests cover the isolated revision micro-environment's prospective
 verifies that results depend on supplied state as well as action. These tests
 are a computation specimen, not another formation-runtime slice or formation
 evidence.
+
+Twelve fake-contact tests cover the SQLite charter runner without spending its
+model-call budget. They verify prompt assembly, executable oracles, engagement
+and stop decisions, exact nineteen-call scheduling, raw-offer separation, and
+retry receipts. The combined repository suite now contains 189 tests.
