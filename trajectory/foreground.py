@@ -187,6 +187,9 @@ class ForegroundDeliveryController:
         self._consumers: list[RuntimeForegroundConsumer] = []
         self._witnesses: list[ReceivedForegroundWitness] = []
         self._witness_snapshots: list[tuple[object, ...]] = []
+        self._encounter_controller: object | None = None
+        self._encounter_runtime: object | None = None
+        self._encounter_open_permit = object()
         constraints._claim_foreground_controller(self, _factory_permit)
 
     @classmethod
@@ -454,3 +457,71 @@ class ForegroundDeliveryController:
         ):
             raise ForegroundDeliveryRefusal("foreground_witness_set_mismatch")
         return current
+
+    def open_encounter_controller(self) -> object:
+        """Register the only encounter-opening authority for this foreground."""
+
+        if self._encounter_controller is not None:
+            raise ForegroundDeliveryRefusal("encounter_controller_already_opened")
+        if len(self._consumers) != 3:
+            raise ForegroundDeliveryRefusal("three_foreground_deliveries_required")
+        from formation.encounter import RuntimeEncounterOpener
+        from trajectory.encounter import EncounterOpeningController
+
+        encounter_verifiers = tuple(
+            next(
+                verifier
+                for verifier in self._verifiers
+                if verifier.root is delivery.recipient
+            )
+            for delivery in self._deliveries
+        )
+        runtime = RuntimeEncounterOpener(
+            tuple(self._consumers),
+            encounter_verifiers,
+            self,
+            self._encounter_open_permit,
+        )
+        controller = EncounterOpeningController(
+            self, runtime, self._encounter_open_permit
+        )
+        self._encounter_controller = controller
+        return controller
+
+    def _claim_encounter_runtime(
+        self,
+        runtime: object,
+        permit: object,
+        consumers: tuple[RuntimeForegroundConsumer, ...],
+    ) -> None:
+        if permit is not self._encounter_open_permit:
+            raise ForegroundDeliveryRefusal("encounter_controller_factory_required")
+        if (
+            len(consumers) != 3
+            or any(
+                consumer is not expected
+                for consumer, expected in zip(
+                    consumers, self._consumers, strict=True
+                )
+            )
+        ):
+            raise ForegroundDeliveryRefusal("exact_foreground_consumers_required")
+        if self._encounter_runtime is not None:
+            raise ForegroundDeliveryRefusal("encounter_controller_already_opened")
+        self._encounter_runtime = runtime
+
+    def _require_encounter_runtime(self, runtime: object, permit: object) -> object:
+        if (
+            permit is not self._encounter_open_permit
+            or runtime is not self._encounter_runtime
+        ):
+            raise ForegroundDeliveryRefusal("exact_encounter_runtime_required")
+        return runtime
+
+    def _claim_encounter_controller(
+        self, controller: object, runtime: object, permit: object
+    ) -> None:
+        self._require_encounter_runtime(runtime, permit)
+        if self._encounter_controller is not None:
+            raise ForegroundDeliveryRefusal("encounter_controller_already_opened")
+        self._encounter_controller = controller

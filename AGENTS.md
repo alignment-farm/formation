@@ -53,6 +53,10 @@ Stop when the task's scope and authority are clear.
   and its information-separation checks.
 - `docs/REPLAY_CONSTRAINT_APPEND.md` owns the fixture-local public replay-
   constraint append and its boundary with unselected replay derivation.
+- `docs/FOREGROUND_DELIVERY.md` owns the fixture-local shared positive-
+  foreground freeze, delivery, consumption, and witness boundary.
+- `docs/ENCOUNTER_OPENING.md` owns the fixture-local positive encounter append
+  from an exact received foreground handoff.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing

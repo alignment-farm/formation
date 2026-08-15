@@ -103,7 +103,7 @@ New trajectory experiments and formation-runtime code belong here.
 ## Present state
 
 No formation effect has been earned. What exists today is a reviewed account
-of what the system may do, plus five small code slices that prove identity and
+of what the system may do, plus six small code slices that prove identity and
 role separation in one deterministic scenario.
 
 The Phase 0 packet —
@@ -148,6 +148,11 @@ authority. Five fixture-local slices are implemented and tested:
    source is frozen once, then delivered once to each exact current branch
    head. The runtime returns the received value; the harness checks it against
    the same freeze. Eighty tests cover the combined boundary.
+6. [Positive encounter opening](docs/ENCOUNTER_OPENING.md). Each exact received
+   foreground becomes one runtime-authored `encounter opened` append and one
+   new current root. A sealed binding keeps freeze and comparison-group state
+   unreachable from developmental lineage. Ninety-six tests cover the combined
+   boundary.
 
 These slices establish local identity, authority separation, and provenance
 checks. They do not establish learning, transfer, governance effectiveness, or
@@ -171,9 +176,21 @@ The repaired boundary rechecks source, authority, recipient lineage, freeze,
 group, one-time consumption, and all three returned handoffs. It selects no byte
 format and does not claim that an encounter opened.
 
-The next layer remains Markdown-first until a named computation requires
-materialization. In particular, a foreground witness is not yet an encounter,
-a model request, an action, or evidence of formation.
+Positive [encounter opening](docs/ENCOUNTER_OPENING.md) is now implemented.
+Independent review rejected two green builds: one did not make the returned
+roots current and allowed a second opener to reuse the handoff; the next leaked
+private foreground provenance through a root verifier and allowed an alternate
+controller path. The repaired boundary registers one opening authority, keeps
+the full handoff outside developmental lineage, retires each predecessor at the
+encounter layer, and returns three exact current encounter roots. A foreground
+witness is now an input to an encounter append, but neither witness is a model
+request, action, or evidence of formation.
+
+No next code slice is licensed. The new encounter roots make later activation
+decisions contactable, but exact activation identity remains sufficient in
+Markdown and constrained replay remains observationally underdetermined on one
+fixed dependency graph. The project should name another computation only when
+a real identity, validation, exchange, or refusal need appears.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 skeleton that can represent a practice trajectory and a candidate change without

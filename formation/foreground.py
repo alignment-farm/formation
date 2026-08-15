@@ -262,6 +262,10 @@ class RuntimeForegroundConsumer:
         self._issuer = object()
         self._handoff: ReceivedForegroundHandoff | None = None
         self._handoff_snapshot: tuple[object, ...] | None = None
+        self._encounter_authority: object | None = None
+        self._encounter_permit = object()
+        self._encounter_binding: object | None = None
+        self._encounter_opened = False
 
     def _require_delivery(self, delivery: object) -> PositiveForegroundDelivery:
         if (
@@ -330,6 +334,51 @@ class RuntimeForegroundConsumer:
         ):
             raise ForegroundConsumptionRefusal("received_foreground_handoff_changed")
         return handoff
+
+    def _claim_encounter_authority(self, authority: object, permit: object) -> None:
+        self._require_encounter_unclaimed(permit)
+        self._encounter_authority = authority
+
+    def _require_encounter_unclaimed(self, permit: object) -> None:
+        if permit is not self._encounter_permit:
+            raise ForegroundConsumptionRefusal("encounter_authority_factory_required")
+        if self._encounter_authority is not None:
+            raise ForegroundConsumptionRefusal("encounter_authority_already_registered")
+
+    def _register_encounter_binding(
+        self,
+        authority: object,
+        handoff: object,
+        binding: object,
+        permit: object,
+    ) -> None:
+        if (
+            permit is not self._encounter_permit
+            or authority is not self._encounter_authority
+        ):
+            raise ForegroundConsumptionRefusal("exact_encounter_authority_required")
+        self.require_current(handoff)
+        if self._encounter_binding is not None:
+            raise ForegroundConsumptionRefusal("encounter_opening_already_bound")
+        self._encounter_binding = binding
+
+    def _consume_encounter_binding(
+        self,
+        authority: object,
+        handoff: object,
+        binding: object,
+        permit: object,
+    ) -> None:
+        if (
+            permit is not self._encounter_permit
+            or authority is not self._encounter_authority
+            or binding is not self._encounter_binding
+        ):
+            raise ForegroundConsumptionRefusal("exact_encounter_opening_binding_required")
+        self.require_current(handoff)
+        if self._encounter_opened:
+            raise ForegroundConsumptionRefusal("encounter_opening_already_consumed")
+        self._encounter_opened = True
 
 
 def _issue_positive_foreground_delivery(

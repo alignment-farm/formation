@@ -1,6 +1,6 @@
 # Initial build boundary
 
-Status: **planning contract; the walking skeleton is incomplete, with two
+Status: **planning contract; the walking skeleton is incomplete, with six
 fixture-local materialization slices implemented**.
 
 ## First build objective
@@ -267,6 +267,21 @@ map](INSTRUMENTS.md) keeps each later design layer in Markdown until another
 named replay, separation, identity, or refusal ambiguity requires machine
 syntax. The foreground-delivery contract is implemented without selecting
 serialization, a digest, or encounter semantics.
+
+That delivery boundary exposed the next computation: later activation must
+cite an exact current encounter, not merely a witnessed foreground value. The
+[positive encounter-opening contract](ENCOUNTER_OPENING.md) now has a reviewed
+typed implementation. It appends from each exact predecessor and sealed
+handoff binding, returns one fresh current encounter root, and keeps the
+assignment join trajectory-only. Independent review rejected reachable
+harness provenance, replaceable opening authority, non-current returned roots,
+order-sensitive verifier pairing, and verifier backpointers before the repaired
+96-test boundary returned `PASS`.
+
+No activation, constrained replay, or model-request implementation follows
+automatically. Those layers remain Markdown-only until another named
+computation distinguishes a real mechanism from a fixture lookup or repeated
+semantic value.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not

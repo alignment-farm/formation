@@ -123,6 +123,16 @@ were only local or shallow. A repaired 79-test state then failed because the
 runtime did not retain the exact freeze and comparison group. The current
 80-test boundary closes both defects, and independent recheck returns `PASS`.
 
+That completed delivery exposed the next named computation. The
+[encounter-opening contract](ENCOUNTER_OPENING.md) now has a reviewed typed
+implementation: one runtime-authored append from each exact predecessor and
+sealed handoff binding, one fresh current encounter root, and a trajectory-only
+assignment witness. The combined suite passes 96 tests after independent
+review rejected two green builds with replaceable authority, missing current-
+head semantics, reachable harness provenance, and order-sensitive verifier
+pairing. The slice stops before activation, replay derivation, and model-request
+construction.
+
 ## Phase 1 — build the two-loop skeleton
 
 Goal: make practice and formation traversable while keeping all intelligence
