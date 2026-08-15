@@ -1,0 +1,8 @@
+```python
+def join_pair(payload):
+    if not isinstance(payload, list) or len(payload) != 2:
+        raise ValueError("payload must be a list containing exactly two values")
+    if not all(isinstance(item, str) for item in payload):
+        raise ValueError("each value must be a string")
+    return ":".join(payload)
+```

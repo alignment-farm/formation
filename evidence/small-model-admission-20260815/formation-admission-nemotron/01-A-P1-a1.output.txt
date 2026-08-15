@@ -1,0 +1,6 @@
+def join_pair(payload):
+    if not isinstance(payload, list) or len(payload) != 2:
+        raise ValueError
+    if not all(isinstance(x, str) for x in payload):
+        raise ValueError
+    return payload[0] + ':' + payload[1]

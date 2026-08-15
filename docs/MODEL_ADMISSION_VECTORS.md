@@ -1,6 +1,6 @@
 # Normative packet for small-model admission
 
-Status: **normative appendix stable; runner licensed; contact pending**.
+Status: **first packet complete; retained as contacted development material**.
 
 This appendix freezes the complete development packet governed by
 [the small-model admission charter](MODEL_ADMISSION_EXPLORATION.md). No prompt,

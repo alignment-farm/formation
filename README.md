@@ -319,7 +319,17 @@ sampling fields, and 32-call ceiling are frozen. Cold review found and repaired
 ordinary-SQL weakness leakage, incomplete classifiers, optional vision loading,
 unfrozen chat templates, and incorrect artifact sizes. Runner implementation
 then passed its 6-test slice, the combined 205-test suite, and independent
-review. Contact is licensed but has not begun.
+review.
+
+The first admission packet stopped both models at its first anchor, but only
+one stop supports its apparent conclusion. Ministral returned a prohibited
+Markdown fence and is cleanly `contract_unreliable` for this packet. Nemotron
+used the ordinary Python builtin `all`, which the undisclosed restricted
+sandbox omitted. Its mechanical failure is instrument-tainted, so Nemotron
+remains unresolved. The
+[retained exploratory record](evidence/small-model-admission-20260815/README.md)
+passed independent audit as `EVIDENCE_PARTIAL`. A corrected successor must use
+new development material and disclose its execution vocabulary.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

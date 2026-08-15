@@ -1,0 +1,236 @@
+{
+  "calls": [
+    {
+      "call_id": "A-P1",
+      "condition": "anchor",
+      "family": "anchor",
+      "label": "anchor_fail",
+      "logical_index": 1,
+      "report": {
+        "function_name": "join_pair",
+        "gate_refusal": "markdown_fence",
+        "tests": [
+          {
+            "exception_type": null,
+            "expected": "return:'north:gate'",
+            "input_repr": "['north', 'gate']",
+            "mutated": false,
+            "passed": false,
+            "process_status": "refused",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-01"
+          },
+          {
+            "exception_type": null,
+            "expected": "return:':'",
+            "input_repr": "['', '']",
+            "mutated": false,
+            "passed": false,
+            "process_status": "refused",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-02"
+          },
+          {
+            "exception_type": null,
+            "expected": "raises:ValueError",
+            "input_repr": "None",
+            "mutated": false,
+            "passed": false,
+            "process_status": "refused",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-03"
+          },
+          {
+            "exception_type": null,
+            "expected": "raises:ValueError",
+            "input_repr": "('north', 'gate')",
+            "mutated": false,
+            "passed": false,
+            "process_status": "refused",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-04"
+          },
+          {
+            "exception_type": null,
+            "expected": "raises:ValueError",
+            "input_repr": "[]",
+            "mutated": false,
+            "passed": false,
+            "process_status": "refused",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-05"
+          },
+          {
+            "exception_type": null,
+            "expected": "raises:ValueError",
+            "input_repr": "['north']",
+            "mutated": false,
+            "passed": false,
+            "process_status": "refused",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-06"
+          },
+          {
+            "exception_type": null,
+            "expected": "raises:ValueError",
+            "input_repr": "['north', 'gate', 'west']",
+            "mutated": false,
+            "passed": false,
+            "process_status": "refused",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-07"
+          },
+          {
+            "exception_type": null,
+            "expected": "raises:ValueError",
+            "input_repr": "[1, 'gate']",
+            "mutated": false,
+            "passed": false,
+            "process_status": "refused",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-08"
+          },
+          {
+            "exception_type": null,
+            "expected": "raises:ValueError",
+            "input_repr": "['north', None]",
+            "mutated": false,
+            "passed": false,
+            "process_status": "refused",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-09"
+          }
+        ]
+      },
+      "seed": 1001
+    }
+  ],
+  "family_cells": {},
+  "model": {
+    "byte_count": 2146498240,
+    "family_order": [
+      "Python",
+      "SQLite"
+    ],
+    "indexed_artifact": "mistralai/ministral-3-3b@lmstudio-community/Ministral-3-3B-Instruct-2512-GGUF/Ministral-3-3B-Instruct-2512-Q4_K_M.gguf",
+    "model_key": "mistralai/ministral-3-3b",
+    "name": "Ministral 3B",
+    "relative_file": "lmstudio-community/Ministral-3-3B-Instruct-2512-GGUF/Ministral-3-3B-Instruct-2512-Q4_K_M.gguf",
+    "selected_variant": "mistralai/ministral-3-3b@q4_k_m",
+    "sha256": "ee46f8f2cc4acf15e89699563e23b4a3919dce2e9ce7c44b53778d6590318e96",
+    "template_characters": 7753,
+    "template_sha256": "d28d7df94f0fd7e8d0075a22c473333d6e7dd2bc4c36c83e8b975300a0fb94bc"
+  },
+  "packet_receipt": {
+    "artifact_verification": {
+      "byte_count": 2146498240,
+      "path": "/Users/macos-user/.lmstudio/models/lmstudio-community/Ministral-3-3B-Instruct-2512-GGUF/Ministral-3-3B-Instruct-2512-Q4_K_M.gguf",
+      "sha256": "ee46f8f2cc4acf15e89699563e23b4a3919dce2e9ce7c44b53778d6590318e96",
+      "template_characters": 7753,
+      "template_sha256": "d28d7df94f0fd7e8d0075a22c473333d6e7dd2bc4c36c83e8b975300a0fb94bc"
+    },
+    "cli_version": "CLI commit: 71bd99c",
+    "history_reuse": false,
+    "load": {
+      "command": [
+        "lms",
+        "load",
+        "mistralai/ministral-3-3b",
+        "--gpu",
+        "max",
+        "--context-length",
+        "8192",
+        "--parallel",
+        "1",
+        "--no-speculative-draft-mtp",
+        "--identifier",
+        "formation-admission-mistral",
+        "-y"
+      ],
+      "exit_code": 0,
+      "instance": {
+        "architecture": "mistral3",
+        "contextLength": 8192,
+        "deviceIdentifier": null,
+        "displayName": "Ministral 3 3B",
+        "format": "gguf",
+        "identifier": "formation-admission-mistral",
+        "indexedModelIdentifier": "mistralai/ministral-3-3b",
+        "lastUsedTime": 1786828559885,
+        "maxContextLength": 262144,
+        "modelKey": "mistralai/ministral-3-3b",
+        "parallel": 1,
+        "paramsString": "3B",
+        "path": "mistralai/ministral-3-3b",
+        "publisher": "mistralai",
+        "quantization": {
+          "bits": 4,
+          "name": "Q4_K_M"
+        },
+        "queued": 0,
+        "selectedVariant": "mistralai/ministral-3-3b@q4_k_m",
+        "sizeBytes": 2146519983,
+        "status": "idle",
+        "trainedForToolUse": true,
+        "ttlMs": null,
+        "type": "llm",
+        "variants": [
+          "mistralai/ministral-3-3b@q4_k_m"
+        ],
+        "vision": false
+      },
+      "stderr": "Model loaded successfully in 792.00ms.\n(2.00 GiB)\nTo use the model in the API/SDK, use the identifier \"formation-admission-mistral\".\n",
+      "stdout": "\u001b[?25l\nLoading mistralai/ministral-3-3b 0% \u280b\u001b[?25l\nLoading mistralai/ministral-3-3b 0% \u2819\u001b[?25l\nLoading mistralai/ministral-3-3b 2% \u2819\u001b[?25l\nLoading mistralai/ministral-3-3b 2% \u2839\u001b[?25l\nLoading mistralai/ministral-3-3b 2% \u2838\u001b[?25l\nLoading mistralai/ministral-3-3b 4% \u2838\u001b[?25l\nLoading mistralai/ministral-3-3b 4% \u283c\u001b[?25l\nLoading mistralai/ministral-3-3b 4% \u2834\u001b[?25l\nLoading mistralai/ministral-3-3b 6% \u2834\u001b[?25l\nLoading mistralai/ministral-3-3b 6% \u2826\u001b[?25l\nLoading mistralai/ministral-3-3b 7% \u2826\u001b[?25l\nLoading mistralai/ministral-3-3b 7% \u2827\u001b[?25l\nLoading mistralai/ministral-3-3b 7% \u2807\u001b[?25l\nLoading mistralai/ministral-3-3b 9% \u2807\u001b[?25l\nLoading mistralai/ministral-3-3b 9% \u280f\u001b[?25l\nLoading mistralai/ministral-3-3b 100% \u280f\n\u001b[K\u001b[?25h"
+    },
+    "model": {
+      "byte_count": 2146498240,
+      "family_order": [
+        "Python",
+        "SQLite"
+      ],
+      "indexed_artifact": "mistralai/ministral-3-3b@lmstudio-community/Ministral-3-3B-Instruct-2512-GGUF/Ministral-3-3B-Instruct-2512-Q4_K_M.gguf",
+      "model_key": "mistralai/ministral-3-3b",
+      "name": "Ministral 3B",
+      "relative_file": "lmstudio-community/Ministral-3-3B-Instruct-2512-GGUF/Ministral-3-3B-Instruct-2512-Q4_K_M.gguf",
+      "selected_variant": "mistralai/ministral-3-3b@q4_k_m",
+      "sha256": "ee46f8f2cc4acf15e89699563e23b4a3919dce2e9ce7c44b53778d6590318e96",
+      "template_characters": 7753,
+      "template_sha256": "d28d7df94f0fd7e8d0075a22c473333d6e7dd2bc4c36c83e8b975300a0fb94bc"
+    },
+    "projector_attached": false,
+    "runtime_inventory": "LLM ENGINE                                            SELECTED    MODEL FORMAT\nexecutorch-asr-mac-arm64-apple-metal-advsimd@0.0.8       \u2713            PTE     \nllama.cpp-mac-arm64-apple-metal-advsimd@2.28.2           \u2713            GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.1                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.0                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.25.2                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.24.0                        GGUF    \nmlx-llm-mac-arm64-apple-metal-advsimd@1.11.0             \u2713            MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.1                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.0                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.9.1                           MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.8.5                           MLX     \n",
+    "server": {
+      "command": [
+        "lms",
+        "server",
+        "start"
+      ],
+      "exit_code": 0,
+      "stderr": "Success! Server is now running on port 1234\n",
+      "stdout": ""
+    },
+    "speculative_decoding": false,
+    "text_only": true,
+    "tools": false
+  },
+  "stopping_call": 1,
+  "terminal_result": "contract_unreliable"
+}

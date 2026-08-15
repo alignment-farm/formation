@@ -1,0 +1,236 @@
+{
+  "calls": [
+    {
+      "call_id": "A-P1",
+      "condition": "anchor",
+      "family": "anchor",
+      "label": "anchor_fail",
+      "logical_index": 1,
+      "report": {
+        "function_name": "join_pair",
+        "gate_refusal": null,
+        "tests": [
+          {
+            "exception_type": "NameError",
+            "expected": "return:'north:gate'",
+            "input_repr": "['north', 'gate']",
+            "mutated": false,
+            "passed": false,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-01"
+          },
+          {
+            "exception_type": "NameError",
+            "expected": "return:':'",
+            "input_repr": "['', '']",
+            "mutated": false,
+            "passed": false,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-02"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "None",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-03"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "('north', 'gate')",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-04"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "[]",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-05"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "['north']",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-06"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "['north', 'gate', 'west']",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-07"
+          },
+          {
+            "exception_type": "NameError",
+            "expected": "raises:ValueError",
+            "input_repr": "[1, 'gate']",
+            "mutated": false,
+            "passed": false,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-08"
+          },
+          {
+            "exception_type": "NameError",
+            "expected": "raises:ValueError",
+            "input_repr": "['north', None]",
+            "mutated": false,
+            "passed": false,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "A-P1-09"
+          }
+        ]
+      },
+      "seed": 1001
+    }
+  ],
+  "family_cells": {},
+  "model": {
+    "byte_count": 2837072896,
+    "family_order": [
+      "SQLite",
+      "Python"
+    ],
+    "indexed_artifact": "nvidia/nemotron-3-nano-4b@lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/NVIDIA-Nemotron-3-Nano-4B-Q4_K_M.gguf",
+    "model_key": "nvidia/nemotron-3-nano-4b",
+    "name": "Nemotron 4B",
+    "relative_file": "lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/NVIDIA-Nemotron-3-Nano-4B-Q4_K_M.gguf",
+    "selected_variant": "nvidia/nemotron-3-nano-4b@q4_k_m",
+    "sha256": "083af225449463dd7c38bebc888f9dcad187b834d8b15e08c297dda37c968b50",
+    "template_characters": 10504,
+    "template_sha256": "ab7813c3abdd9cb655905a410728b26c7884eca45ddfab8d9f931553485a7862"
+  },
+  "packet_receipt": {
+    "artifact_verification": {
+      "byte_count": 2837072896,
+      "path": "/Users/macos-user/.lmstudio/models/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/NVIDIA-Nemotron-3-Nano-4B-Q4_K_M.gguf",
+      "sha256": "083af225449463dd7c38bebc888f9dcad187b834d8b15e08c297dda37c968b50",
+      "template_characters": 10504,
+      "template_sha256": "ab7813c3abdd9cb655905a410728b26c7884eca45ddfab8d9f931553485a7862"
+    },
+    "cli_version": "CLI commit: 71bd99c",
+    "history_reuse": false,
+    "load": {
+      "command": [
+        "lms",
+        "load",
+        "nvidia/nemotron-3-nano-4b",
+        "--gpu",
+        "max",
+        "--context-length",
+        "8192",
+        "--parallel",
+        "1",
+        "--no-speculative-draft-mtp",
+        "--identifier",
+        "formation-admission-nemotron",
+        "-y"
+      ],
+      "exit_code": 0,
+      "instance": {
+        "architecture": "nemotron_h",
+        "contextLength": 8192,
+        "deviceIdentifier": null,
+        "displayName": "Nemotron 3 Nano 4B",
+        "format": "gguf",
+        "identifier": "formation-admission-nemotron",
+        "indexedModelIdentifier": "nvidia/nemotron-3-nano-4b",
+        "lastUsedTime": 1786828562614,
+        "maxContextLength": 1048576,
+        "modelKey": "nvidia/nemotron-3-nano-4b",
+        "parallel": 1,
+        "paramsString": "4.0B",
+        "path": "nvidia/nemotron-3-nano-4b",
+        "publisher": "nvidia",
+        "quantization": {
+          "bits": 4,
+          "name": "Q4_K_M"
+        },
+        "queued": 0,
+        "selectedVariant": "nvidia/nemotron-3-nano-4b@q4_k_m",
+        "sizeBytes": 2837173509,
+        "status": "idle",
+        "trainedForToolUse": true,
+        "ttlMs": null,
+        "type": "llm",
+        "variants": [
+          "nvidia/nemotron-3-nano-4b@q4_k_m"
+        ],
+        "vision": false
+      },
+      "stderr": "Model loaded successfully in 787.00ms.\n(2.64 GiB)\nTo use the model in the API/SDK, use the identifier \"formation-admission-nemotron\".\n",
+      "stdout": "\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 0% \u280b\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 0% \u2819\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 2% \u2819\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 2% \u2839\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 2% \u2838\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 4% \u2838\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 4% \u283c\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 6% \u283c\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 6% \u2834\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 6% \u2826\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 7% \u2826\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 7% \u2827\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 7% \u2807\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 9% \u2807\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 9% \u280f\u001b[?25l\nLoading nvidia/nemotron-3-nano-4b 100% \u280f\n\u001b[K\u001b[?25h"
+    },
+    "model": {
+      "byte_count": 2837072896,
+      "family_order": [
+        "SQLite",
+        "Python"
+      ],
+      "indexed_artifact": "nvidia/nemotron-3-nano-4b@lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/NVIDIA-Nemotron-3-Nano-4B-Q4_K_M.gguf",
+      "model_key": "nvidia/nemotron-3-nano-4b",
+      "name": "Nemotron 4B",
+      "relative_file": "lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/NVIDIA-Nemotron-3-Nano-4B-Q4_K_M.gguf",
+      "selected_variant": "nvidia/nemotron-3-nano-4b@q4_k_m",
+      "sha256": "083af225449463dd7c38bebc888f9dcad187b834d8b15e08c297dda37c968b50",
+      "template_characters": 10504,
+      "template_sha256": "ab7813c3abdd9cb655905a410728b26c7884eca45ddfab8d9f931553485a7862"
+    },
+    "projector_attached": false,
+    "runtime_inventory": "LLM ENGINE                                            SELECTED    MODEL FORMAT\nexecutorch-asr-mac-arm64-apple-metal-advsimd@0.0.8       \u2713            PTE     \nllama.cpp-mac-arm64-apple-metal-advsimd@2.28.2           \u2713            GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.1                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.0                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.25.2                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.24.0                        GGUF    \nmlx-llm-mac-arm64-apple-metal-advsimd@1.11.0             \u2713            MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.1                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.0                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.9.1                           MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.8.5                           MLX     \n",
+    "server": {
+      "command": [
+        "lms",
+        "server",
+        "start"
+      ],
+      "exit_code": 0,
+      "stderr": "Success! Server is now running on port 1234\n",
+      "stdout": ""
+    },
+    "speculative_decoding": false,
+    "text_only": true,
+    "tools": false
+  },
+  "stopping_call": 1,
+  "terminal_result": "contract_unreliable"
+}

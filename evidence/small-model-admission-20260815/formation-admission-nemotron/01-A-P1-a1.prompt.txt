@@ -1,0 +1,11 @@
+Write this Python function:
+
+    join_pair(payload)
+
+Contract:
+- payload must be a list containing exactly two values;
+- each value must have exact Python type str;
+- return the two strings joined by one colon;
+- raise ValueError for every invalid input.
+
+Return exactly the function definition. Return no imports, tests, prose, or Markdown fence.

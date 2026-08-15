@@ -229,7 +229,11 @@ teachability. Its [normative packet](MODEL_ADMISSION_VECTORS.md) freezes two
 coding families, model artifacts, chat templates, sampling, receipts, order,
 classifiers, and a 32-call ceiling. The semantic gate is closed; runner review
 is also closed after the combined 205-test suite and independent review. Contact
-is licensed but has not begun.
+then stopped both models at the first anchor. Ministral cleanly violated the
+no-fence response contract. Nemotron used the undisclosed `all` builtin and was
+rejected only because the restricted child omitted it, so its result is
+instrument-tainted. The packet is retained as `EVIDENCE_PARTIAL`; a successor
+must use new prompts and vectors and disclose the available execution language.
 
 ## Phase 1 — build the two-loop framework
 

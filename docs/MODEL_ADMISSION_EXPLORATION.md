@@ -1,6 +1,6 @@
 # Small-model admission exploration
 
-Status: **exploratory semantics stable; runner licensed; contact pending**.
+Status: **first packet closed with partial evidence; Nemotron unresolved**.
 
 ## Purpose
 
