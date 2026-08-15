@@ -278,8 +278,12 @@ separate, and treats its four pair transitions as observations rather than
 learning or schedule-controlled effects. Independent review returned
 `INTERFACE_PROTOCOL_STABLE`. Runner implementation and fake-contact licensing
 then passed 13 focused tests and the combined 239-test suite. Independent
-review returned `RUNNER_LICENSED`; the eight logical calls are licensed but not
-yet run.
+review returned `RUNNER_LICENSED`. All eight calls then completed without retry
+or abort. Each bare reply failed on a Markdown fence; each constrained reply
+was valid JSON with a wrong value. All four pair labels were
+`invalid_to_wrong`, and independent audit returned `EVIDENCE_VALID`. The result
+isolates an interface repair from a computation repair; it is not admission or
+Formation evidence.
 
 ## Phase 1 — build the two-loop framework
 

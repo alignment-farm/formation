@@ -1,0 +1,8 @@
+```python
+data = {"records":[{"tag":"alder","open":true,"rank":2},{"tag":"birch","open":false,"rank":8},{"tag":"clover","open":true,"rank":5},{"tag":"drift","open":true,"rank":1}]}
+result = []
+for record in data["records"]:
+    if record["open"] == true and record["rank"] >= 2:
+        result.append(record)
+print(result)
+```

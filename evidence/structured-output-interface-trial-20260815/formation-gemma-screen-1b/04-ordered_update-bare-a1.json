@@ -1,0 +1,169 @@
+{
+  "attempt_index": 1,
+  "call_id": "ordered_update-bare",
+  "call_label": "gate_fail",
+  "call_state": "invalid",
+  "condition": "bare",
+  "decoded_answer": null,
+  "elapsed_seconds": 0.08792191700194962,
+  "ended_at": "2026-08-15T23:32:23.512065+00:00",
+  "gate_refusal": "markdown_fence",
+  "live_identifier": "formation-gemma-screen-1b",
+  "logical_index": 4,
+  "model_key": "google/gemma-3-1b",
+  "oracle_answer": 29,
+  "output_sha256": "df9099e3a8b1ac17d5718ab55b189cdfceb50840571c318648cfdac9e54cadf5",
+  "packet_receipt": {
+    "adapter_attached": false,
+    "artifact_verification": {
+      "byte_count": 720425472,
+      "path": "/Users/macos-user/.lmstudio/models/lmstudio-community/gemma-3-1B-it-QAT-GGUF/gemma-3-1B-it-QAT-Q4_0.gguf",
+      "sha256": "b25d35b00fe699ef52bf399fa579f2c56664897c013aeba2686965fdb6265f0f",
+      "template_characters": 1532,
+      "template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4"
+    },
+    "cli_version": "CLI commit: 71bd99c",
+    "history_reuse": false,
+    "load": {
+      "command": [
+        "lms",
+        "load",
+        "google/gemma-3-1b",
+        "--gpu",
+        "max",
+        "--context-length",
+        "8192",
+        "--parallel",
+        "1",
+        "--no-speculative-draft-mtp",
+        "--identifier",
+        "formation-gemma-screen-1b",
+        "-y"
+      ],
+      "exit_code": 0,
+      "instance": {
+        "architecture": "gemma3",
+        "contextLength": 8192,
+        "deviceIdentifier": null,
+        "displayName": "Gemma 3 1B",
+        "format": "gguf",
+        "identifier": "formation-gemma-screen-1b",
+        "indexedModelIdentifier": "google/gemma-3-1b",
+        "lastUsedTime": 1786836742719,
+        "maxContextLength": 32768,
+        "modelKey": "google/gemma-3-1b",
+        "parallel": 1,
+        "paramsString": "1B",
+        "path": "google/gemma-3-1b",
+        "publisher": "google",
+        "quantization": {
+          "bits": 4,
+          "name": "Q4_0"
+        },
+        "queued": 0,
+        "selectedVariant": "google/gemma-3-1b@q4_0",
+        "sizeBytes": 720498528,
+        "status": "idle",
+        "trainedForToolUse": false,
+        "ttlMs": null,
+        "type": "llm",
+        "variants": [
+          "google/gemma-3-1b@q4_0"
+        ],
+        "vision": false
+      },
+      "stderr": "Model loaded successfully in 535.00ms.\n(687.12 MiB)\nTo use the model in the API/SDK, use the identifier \"formation-gemma-screen-1b\".\n",
+      "stdout": "\u001b[?25l\nLoading google/gemma-3-1b 0% \u280b\u001b[?25l\nLoading google/gemma-3-1b 0% \u2819\u001b[?25l\nLoading google/gemma-3-1b 2% \u2819\u001b[?25l\nLoading google/gemma-3-1b 2% \u2839\u001b[?25l\nLoading google/gemma-3-1b 2% \u2838\u001b[?25l\nLoading google/gemma-3-1b 4% \u2838\u001b[?25l\nLoading google/gemma-3-1b 4% \u283c\u001b[?25l\nLoading google/gemma-3-1b 6% \u283c\u001b[?25l\nLoading google/gemma-3-1b 6% \u2834\u001b[?25l\nLoading google/gemma-3-1b 6% \u2826\u001b[?25l\nLoading google/gemma-3-1b 7% \u2826\u001b[?25l\nLoading google/gemma-3-1b 100% \u2826\n\u001b[K\u001b[?25h"
+    },
+    "model": {
+      "byte_count": 720425472,
+      "live_identifier": "formation-gemma-screen-1b",
+      "model_key": "google/gemma-3-1b",
+      "name": "Gemma 3 1B Instruct QAT",
+      "relative_file": "lmstudio-community/gemma-3-1B-it-QAT-GGUF/gemma-3-1B-it-QAT-Q4_0.gguf",
+      "selected_variant": "google/gemma-3-1b@q4_0",
+      "sha256": "b25d35b00fe699ef52bf399fa579f2c56664897c013aeba2686965fdb6265f0f",
+      "template_characters": 1532,
+      "template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4"
+    },
+    "projector_attached": false,
+    "runtime_inventory": "LLM ENGINE                                            SELECTED    MODEL FORMAT\nexecutorch-asr-mac-arm64-apple-metal-advsimd@0.0.8       \u2713            PTE     \nllama.cpp-mac-arm64-apple-metal-advsimd@2.28.2           \u2713            GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.1                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.0                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.25.2                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.24.0                        GGUF    \nmlx-llm-mac-arm64-apple-metal-advsimd@1.11.0             \u2713            MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.1                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.0                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.9.1                           MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.8.5                           MLX     \n",
+    "sampling_without_seed": {
+      "frequency_penalty": 0,
+      "max_tokens": 256,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "stream": false,
+      "temperature": 0.2,
+      "top_k": 40,
+      "top_p": 0.95
+    },
+    "server": {
+      "command": [
+        "lms",
+        "server",
+        "start"
+      ],
+      "exit_code": 0,
+      "stderr": "Success! Server is now running on port 1234\n",
+      "stdout": ""
+    },
+    "speculative_decoding": false,
+    "text_only": true,
+    "tools": false
+  },
+  "prompt_sha256": "731e7fc0e043e866750baec575e07f35a07d44f007eb1a34923cd1ea9fd6ef5e",
+  "request_envelope": {
+    "frequency_penalty": 0,
+    "max_tokens": 256,
+    "messages": [
+      {
+        "content": "Compute the requested result from this JSON input:\n{\"start\":17,\"operations\":[{\"kind\":\"subtract\",\"value\":4},{\"kind\":\"double\"},{\"kind\":\"add\",\"value\":3}]}\n\nBegin with start. Apply the operations from left to right: subtract removes value, double multiplies the current result by 2, and add increases it by value. Return the final integer.\nReturn exactly one JSON object with the single key \"answer\". Return no prose or Markdown fence.\nYour complete response has a limit of 256 tokens.",
+        "role": "user"
+      }
+    ],
+    "model": "formation-gemma-screen-1b",
+    "presence_penalty": 0,
+    "repeat_penalty": 1,
+    "seed": 4002,
+    "stream": false,
+    "temperature": 0.2,
+    "top_k": 40,
+    "top_p": 0.95
+  },
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"answer\": 7\n}\n```",
+          "reasoning_content": "",
+          "role": "assistant",
+          "tool_calls": []
+        }
+      }
+    ],
+    "created": 1786836743,
+    "id": "chatcmpl-yr2alyqw1c949t359b9axn",
+    "model": "formation-gemma-screen-1b",
+    "object": "chat.completion",
+    "stats": {},
+    "system_fingerprint": "formation-gemma-screen-1b",
+    "usage": {
+      "completion_tokens": 16,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 119,
+      "total_tokens": 135
+    }
+  },
+  "response_format": null,
+  "retry_of_attempt": null,
+  "retry_reason": null,
+  "seed": 4002,
+  "started_at": "2026-08-15T23:32:23.424135+00:00",
+  "task_id": "ordered_update"
+}

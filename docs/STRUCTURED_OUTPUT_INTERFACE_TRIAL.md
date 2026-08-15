@@ -1,7 +1,6 @@
 # Paired structured-output interface trial
 
-Status: **cold-reviewed pre-contact protocol; runner licensed; model contact
-not yet run**.
+Status: **contact complete; independently audited `EVIDENCE_VALID`**.
 
 ## Purpose
 
@@ -399,4 +398,8 @@ learning.
 
 Independent cold review returned `INTERFACE_PROTOCOL_STABLE`. The separate
 runner passed 13 fake-contact tests and the combined 239-test suite. Independent
-runner review returned `RUNNER_LICENSED`; the eight logical calls are licensed.
+runner review returned `RUNNER_LICENSED`. All eight logical calls then ran
+without retry or abort. Every bare output was invalid because it used a
+Markdown fence; every constrained output was valid JSON with a wrong answer.
+All four pairs were `invalid_to_wrong`. Independent audit returned
+`EVIDENCE_VALID`.

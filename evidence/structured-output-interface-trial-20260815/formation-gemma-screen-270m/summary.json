@@ -1,0 +1,195 @@
+{
+  "abort_reason": null,
+  "calls": [
+    {
+      "call_id": "selection-bare",
+      "call_label": "gate_fail",
+      "call_state": "invalid",
+      "condition": "bare",
+      "decoded_answer": null,
+      "gate_refusal": "markdown_fence",
+      "logical_index": 1,
+      "oracle_answer": [
+        "alder",
+        "clover"
+      ],
+      "seed": 4001,
+      "task_id": "selection"
+    },
+    {
+      "call_id": "selection-constrained",
+      "call_label": "wrong_answer",
+      "call_state": "valid_wrong",
+      "condition": "constrained",
+      "decoded_answer": [
+        "alder",
+        "birch",
+        "clover",
+        "drift"
+      ],
+      "gate_refusal": null,
+      "logical_index": 2,
+      "oracle_answer": [
+        "alder",
+        "clover"
+      ],
+      "seed": 4001,
+      "task_id": "selection"
+    },
+    {
+      "call_id": "ordered_update-bare",
+      "call_label": "gate_fail",
+      "call_state": "invalid",
+      "condition": "bare",
+      "decoded_answer": null,
+      "gate_refusal": "markdown_fence",
+      "logical_index": 3,
+      "oracle_answer": 29,
+      "seed": 4002,
+      "task_id": "ordered_update"
+    },
+    {
+      "call_id": "ordered_update-constrained",
+      "call_label": "wrong_answer",
+      "call_state": "valid_wrong",
+      "condition": "constrained",
+      "decoded_answer": 4,
+      "gate_refusal": null,
+      "logical_index": 4,
+      "oracle_answer": 29,
+      "seed": 4002,
+      "task_id": "ordered_update"
+    }
+  ],
+  "model": {
+    "byte_count": 241410208,
+    "live_identifier": "formation-gemma-screen-270m",
+    "model_key": "google/gemma-3-270m",
+    "name": "Gemma 3 270M Instruct QAT",
+    "relative_file": "lmstudio-community/gemma-3-270m-it-qat-GGUF/gemma-3-270m-it-qat-Q4_0.gguf",
+    "selected_variant": "google/gemma-3-270m@q4_0",
+    "sha256": "5f4b2e17722e510122c464573b880587f4983347a40e5472b858d5a3c1ab8095",
+    "template_characters": 1532,
+    "template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4"
+  },
+  "packet_receipt": {
+    "adapter_attached": false,
+    "artifact_verification": {
+      "byte_count": 241410208,
+      "path": "/Users/macos-user/.lmstudio/models/lmstudio-community/gemma-3-270m-it-qat-GGUF/gemma-3-270m-it-qat-Q4_0.gguf",
+      "sha256": "5f4b2e17722e510122c464573b880587f4983347a40e5472b858d5a3c1ab8095",
+      "template_characters": 1532,
+      "template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4"
+    },
+    "cli_version": "CLI commit: 71bd99c",
+    "history_reuse": false,
+    "load": {
+      "command": [
+        "lms",
+        "load",
+        "google/gemma-3-270m",
+        "--gpu",
+        "max",
+        "--context-length",
+        "8192",
+        "--parallel",
+        "1",
+        "--no-speculative-draft-mtp",
+        "--identifier",
+        "formation-gemma-screen-270m",
+        "-y"
+      ],
+      "exit_code": 0,
+      "instance": {
+        "architecture": "gemma3",
+        "contextLength": 8192,
+        "deviceIdentifier": null,
+        "displayName": "Gemma 3 270m",
+        "format": "gguf",
+        "identifier": "formation-gemma-screen-270m",
+        "indexedModelIdentifier": "google/gemma-3-270m",
+        "lastUsedTime": 1786836740612,
+        "maxContextLength": 32768,
+        "modelKey": "google/gemma-3-270m",
+        "parallel": 1,
+        "paramsString": "270M",
+        "path": "google/gemma-3-270m",
+        "publisher": "google",
+        "quantization": {
+          "bits": 4,
+          "name": "Q4_0"
+        },
+        "queued": 0,
+        "selectedVariant": "google/gemma-3-270m@q4_0",
+        "sizeBytes": 241482166,
+        "status": "idle",
+        "trainedForToolUse": false,
+        "ttlMs": null,
+        "type": "llm",
+        "variants": [
+          "google/gemma-3-270m@q4_0"
+        ],
+        "vision": false
+      },
+      "stderr": "Model loaded successfully in 530.00ms.\n(230.30 MiB)\nTo use the model in the API/SDK, use the identifier \"formation-gemma-screen-270m\".\n",
+      "stdout": "\u001b[?25l\nLoading google/gemma-3-270m 0% \u280b\u001b[?25l\nLoading google/gemma-3-270m 0% \u2819\u001b[?25l\nLoading google/gemma-3-270m 2% \u2819\u001b[?25l\nLoading google/gemma-3-270m 2% \u2839\u001b[?25l\nLoading google/gemma-3-270m 2% \u2838\u001b[?25l\nLoading google/gemma-3-270m 4% \u2838\u001b[?25l\nLoading google/gemma-3-270m 4% \u283c\u001b[?25l\nLoading google/gemma-3-270m 4% \u2834\u001b[?25l\nLoading google/gemma-3-270m 6% \u2834\u001b[?25l\nLoading google/gemma-3-270m 6% \u2826\u001b[?25l\nLoading google/gemma-3-270m 100% \u2826\n\u001b[K\u001b[?25h"
+    },
+    "model": {
+      "byte_count": 241410208,
+      "live_identifier": "formation-gemma-screen-270m",
+      "model_key": "google/gemma-3-270m",
+      "name": "Gemma 3 270M Instruct QAT",
+      "relative_file": "lmstudio-community/gemma-3-270m-it-qat-GGUF/gemma-3-270m-it-qat-Q4_0.gguf",
+      "selected_variant": "google/gemma-3-270m@q4_0",
+      "sha256": "5f4b2e17722e510122c464573b880587f4983347a40e5472b858d5a3c1ab8095",
+      "template_characters": 1532,
+      "template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4"
+    },
+    "projector_attached": false,
+    "runtime_inventory": "LLM ENGINE                                            SELECTED    MODEL FORMAT\nexecutorch-asr-mac-arm64-apple-metal-advsimd@0.0.8       \u2713            PTE     \nllama.cpp-mac-arm64-apple-metal-advsimd@2.28.2           \u2713            GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.1                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.0                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.25.2                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.24.0                        GGUF    \nmlx-llm-mac-arm64-apple-metal-advsimd@1.11.0             \u2713            MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.1                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.0                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.9.1                           MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.8.5                           MLX     \n",
+    "sampling_without_seed": {
+      "frequency_penalty": 0,
+      "max_tokens": 256,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "stream": false,
+      "temperature": 0.2,
+      "top_k": 40,
+      "top_p": 0.95
+    },
+    "server": {
+      "command": [
+        "lms",
+        "server",
+        "start"
+      ],
+      "exit_code": 0,
+      "stderr": "Success! Server is now running on port 1234\n",
+      "stdout": ""
+    },
+    "speculative_decoding": false,
+    "text_only": true,
+    "tools": false
+  },
+  "pairs": [
+    {
+      "bare_call_id": "selection-bare",
+      "bare_call_state": "invalid",
+      "constrained_call_id": "selection-constrained",
+      "constrained_call_state": "valid_wrong",
+      "model_key": "google/gemma-3-270m",
+      "pair_label": "invalid_to_wrong",
+      "task_id": "selection"
+    },
+    {
+      "bare_call_id": "ordered_update-bare",
+      "bare_call_state": "invalid",
+      "constrained_call_id": "ordered_update-constrained",
+      "constrained_call_state": "valid_wrong",
+      "model_key": "google/gemma-3-270m",
+      "pair_label": "invalid_to_wrong",
+      "task_id": "ordered_update"
+    }
+  ],
+  "trial_status": "complete"
+}

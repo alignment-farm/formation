@@ -374,7 +374,15 @@ length, pattern, or numeric bound. The protocol received
 `INTERFACE_PROTOCOL_STABLE`; no model call is licensed until its separate
 runner passes fake-contact tests and cold review. That runner now passes 13
 focused tests and the combined 239-test suite, and independent review returned
-`RUNNER_LICENSED`. The eight logical calls are licensed but not yet run.
+`RUNNER_LICENSED`.
+
+All eight calls then completed without retry or abort. The JSON grammar removed
+the Markdown fence in every constrained call, so all four constrained replies
+were valid machine-readable objects. All four answers were still wrong. The
+[retained paired result](evidence/structured-output-interface-trial-20260815/README.md)
+passed independent audit as `EVIDENCE_VALID`. This is evidence that the
+constraint repaired the reply container in these cases, not the computation
+inside it.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
