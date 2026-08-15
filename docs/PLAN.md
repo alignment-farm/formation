@@ -115,8 +115,13 @@ binding, and one-time consumption. The fixture-local
 but no serialization or digest. The governed admitted root and ablation-
 constraint root are now materialized. Two model families independently
 reconstructed that boundary and originally returned
-`CONTRACT_STABLE_CODE_BLOCKED`; a final code-facing type and issuer review now
-precedes implementation.
+`CONTRACT_STABLE_CODE_BLOCKED`. A later code-facing type and issuer review
+confirmed that the three root types can remain distinct behind narrow
+currentness verifiers. The fixture-local delivery boundary is implemented. Its
+first 73-test state failed conformance review because authority and currentness
+were only local or shallow. A repaired 79-test state then failed because the
+runtime did not retain the exact freeze and comparison group. The current
+80-test boundary closes both defects, and independent recheck returns `PASS`.
 
 ## Phase 1 — build the two-loop skeleton
 

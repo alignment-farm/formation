@@ -695,3 +695,29 @@ class FormationAppendController:
         if len(selected) != 1:
             raise AdmittedTreatmentBatchRefusal("exact_ablation_assignment_required")
         return self.require_returned_root(selected[0])
+
+    def foreground_root_verifier(
+        self, root: object, constraint_controller: object
+    ) -> _AdmittedRootVerifier:
+        """Return the retained label-free verifier to the registered next gate."""
+
+        from trajectory.replay_constraint import ReplayConstraintAppendController
+
+        if (
+            type(constraint_controller) is not ReplayConstraintAppendController
+            or constraint_controller is not self._constraint_controller
+            or constraint_controller is not self._constraint_controller_snapshot
+        ):
+            raise AdmittedTreatmentBatchRefusal("exact_constraint_controller_required")
+        current = self.require_returned_root(root)
+        verifier = next(
+            (
+                item
+                for item in self._admitted_batch._use._verifiers
+                if item.root is current
+            ),
+            None,
+        )
+        if verifier is None or verifier.require(current) is not current:
+            raise AdmittedTreatmentBatchRefusal("exact_admitted_treatment_root_required")
+        return verifier

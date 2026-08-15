@@ -247,19 +247,26 @@ earns a narrow typed freeze, root-bound delivery, consumption, and witness
 boundary without selecting bytes. The contract originally waited for real
 governed-admission and ablation-constraint root capabilities. Both now exist.
 Two independent cold reconstructions agreed on the full contract and originally
-returned `CONTRACT_STABLE_CODE_BLOCKED`; its exact type and issuer boundary now
-needs a final code-facing review before implementation.
+returned `CONTRACT_STABLE_CODE_BLOCKED`. A later code-facing review confirmed
+that the three deliberately different root types can meet the contract through
+narrow currentness verifiers. The implemented boundary now registers one
+foreground authority, freezes the exact source once, derives one root-bound
+delivery per case, and witnesses three unchanged consumptions. Independent
+review rejected two superficially green states before the repaired 80-test
+boundary returned `PASS`: the first lacked global one-shot authority and deep
+currentness, and the second did not carry the exact freeze and comparison-group
+provenance into runtime consumption.
 
 The semantic [deterministic fixture v0](FIXTURE.md) and its governing packet have
 been cold-reviewed and simplified so a pre-admission trial is not a schema
-requirement. The shared-prefix, first condition-append, direct-admission, and
-replay-constraint append boundaries now have licensed fixture-local
-implementations; later governance, practice, replay derivation, and scoring
-paths remain wire-only. The [instrument
+requirement. The shared-prefix, first condition-append, direct-admission,
+replay-constraint append, and shared-foreground delivery boundaries now have
+licensed fixture-local implementations; later governance, practice, replay
+derivation, and scoring paths remain wire-only. The [instrument
 map](INSTRUMENTS.md) keeps each later design layer in Markdown until another
 named replay, separation, identity, or refusal ambiguity requires machine
-syntax. The later foreground-delivery contract is semantically earned, and all
-three prerequisite root capabilities now exist.
+syntax. The foreground-delivery contract is implemented without selecting
+serialization, a digest, or encounter semantics.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not

@@ -1,14 +1,16 @@
 # Shared positive-foreground delivery contract
 
-Status: **fixture-local materialization contract; semantic boundary closed;
-implementation prerequisites not yet materialized**.
+Status: **fixture-local typed boundary implemented; independent post-build
+conformance review passes**.
 
 Two independent model families reconstructed this contract from the same
 sealed Markdown packet. Both returned `CONTRACT_STABLE_CODE_BLOCKED`: the
 contract is internally sufficient, while the governed admitted root and the
 ablation root containing `D-A-010` did not yet exist as typed capabilities.
-The governed admitted root and ablation constraint root now exist. A final
-code-facing type and issuer review remains before this delivery slice begins.
+The governed admitted root and ablation constraint root now exist. The final
+code-facing type and issuer review licensed their deliberately different root
+types through narrow currentness verifiers rather than a false common root
+interface. The delivery slice is implemented without selecting bytes.
 
 Purpose: define the smallest machine boundary needed to prove that baseline,
 governed, and ablation receive the same positive foreground from one frozen
@@ -259,9 +261,9 @@ The witness owns received-projection and comparison-scope refusals.
 
 ## Implementation gate
 
-The semantic object and named computation are closed, but this slice is not yet
-buildable. Code begins only after the project materializes typed current root
-capabilities for:
+The semantic object, named computation, and implementation gate are closed.
+Code began only after the project materialized typed current root capabilities
+for:
 
 - the baseline condition-bound head;
 - the governed admitted head; and
@@ -272,10 +274,25 @@ replay-constrained root satisfy the three prerequisites. The ablation admitted
 root remains only an ancestor of its required replay-constrained root. Using it
 instead would bypass the fixture's causal order.
 
-When all three prerequisites exist, a new cold review must confirm that their
-exact types and issuer boundaries satisfy this contract. Only then may the
-foreground freeze, delivery, consumption, witness, and refusal-test slice be
-implemented.
+The required cold review confirmed that the three roots are intentionally
+heterogeneous. The implementation keeps them distinct, registers one
+foreground authority with the existing controller chain, and gives each
+runtime delivery a narrow currentness verifier plus the exact private freeze
+and comparison-group provenance.
+
+The first green build passed 73 tests but failed independent conformance review.
+It allowed duplicate foreground controllers, mutable case authorization,
+caller-originated deliveries, shallow source checks, and consumption without
+rechecking the recipient root. After those repairs, a second review found that
+the runtime still could not prove which exact freeze and comparison group had
+authorized a delivery. The repaired boundary retains and revalidates that
+identity through consumption and witnessing. The combined suite now passes 80
+tests, and the final independent recheck returns `PASS`.
+
+This implementation proves only that the exact seven-role foreground from one
+freeze was delivered once to each exact current recipient and witnessed
+unchanged. It does not prove that an encounter opened, that the model consumed a
+request, or that formation occurred.
 
 ## Unselected
 

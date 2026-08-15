@@ -85,6 +85,16 @@ double consumption. Those claims earn the narrow typed capability and
 validation boundary in [FOREGROUND_DELIVERY.md](FOREGROUND_DELIVERY.md), while
 bytes, digests, and canonical role order remain unselected.
 
+Implementation review showed why the capability boundary is the instrument,
+not merely a typed wrapper around the seven values. A green first build could
+repeat the comparison group through another controller, alter a case assignment
+after authorization, and accept shallow or caller-originated provenance. After
+those defects were repaired, review found one more missing fact: runtime
+consumption still did not know which exact freeze and comparison group had
+authorized the delivery. The final boundary carries and revalidates that
+private provenance while exposing only the seven-role practice value. The
+combined suite passes 80 tests, and no bytes were needed to close the gap.
+
 The replay-constraint append applies the same stopping rule to a boundary that
 had previously been grouped with replay. Foreground delivery requires an exact
 ablation head after the public constraint is bound, so recipient selection,

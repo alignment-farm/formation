@@ -116,6 +116,86 @@ class BranchLocalRoot:
     _issuer: object
 
 
+class _BranchLocalRootVerifier:
+    """Detached currentness check that carries no assignment-controller state."""
+
+    def __init__(
+        self, root: BranchLocalRoot, condition: PublicFormationCondition
+    ) -> None:
+        self.root = root
+        self._condition = condition
+        self._condition_snapshot = (
+            condition.condition,
+            condition.interpreter,
+            condition.governor,
+            condition.influence_policy,
+        )
+        prefix = root.prefix_root
+        self._root_snapshot = (
+            root.prefix_root,
+            root.condition_segment,
+            root.head,
+            ConditionBinding(
+                root.condition_binding.materializer,
+                root.condition_binding.identity_contract,
+                root.condition_binding.algorithm,
+                root.condition_binding.digest,
+                root.condition_binding.byte_length,
+            ),
+            root._issuer,
+        )
+        self._prefix_snapshot = (
+            prefix.witness_coordinate,
+            prefix.handoff_id,
+            prefix.run_id,
+            prefix.source_head,
+            type(prefix.binding)(
+                prefix.binding.materializer,
+                prefix.binding.identity_contract,
+                prefix.binding.algorithm,
+                prefix.binding.digest,
+                prefix.binding.byte_length,
+            ),
+            prefix.artifact,
+            prefix._issuer,
+        )
+
+    def require(self, root: object) -> BranchLocalRoot:
+        if type(root) is not BranchLocalRoot or root is not self.root:
+            raise ConditionAppendRefusal("exact_branch_local_root_required")
+        snapshot = self._root_snapshot
+        prefix = root.prefix_root
+        prefix_snapshot = self._prefix_snapshot
+        if (
+            root.prefix_root is not snapshot[0]
+            or root.condition_segment is not snapshot[1]
+            or root.head != snapshot[2]
+            or root.condition_binding != snapshot[3]
+            or root._issuer is not snapshot[4]
+            or prefix.witness_coordinate != prefix_snapshot[0]
+            or prefix.handoff_id != prefix_snapshot[1]
+            or prefix.run_id != prefix_snapshot[2]
+            or prefix.source_head != prefix_snapshot[3]
+            or prefix.binding != prefix_snapshot[4]
+            or prefix.artifact is not prefix_snapshot[5]
+            or prefix._issuer is not prefix_snapshot[6]
+            or compute_condition_binding(root.condition_segment)
+            != root.condition_binding
+        ):
+            raise ConditionAppendRefusal("branch_local_root_changed")
+        if (
+            self._condition.condition,
+            self._condition.interpreter,
+            self._condition.governor,
+            self._condition.influence_policy,
+        ) != self._condition_snapshot:
+            raise ConditionAppendRefusal("branch_local_root_changed")
+        validate_fixture_condition(
+            root.condition_segment, root.head, self._condition
+        )
+        return root
+
+
 class _TreatmentRootBatchUse:
     def __init__(self, controller: ConditionAppendController) -> None:
         self._controller = controller
@@ -588,3 +668,22 @@ class ConditionAppendController:
             raise AssignmentRefusal("exact_retained_assignment_required")
         self._require_assignment_delivery(assignment, snapshot[5])
         return assignment.label
+
+    def foreground_root_verifier(
+        self, root: object, formation_controller: object
+    ) -> _BranchLocalRootVerifier:
+        """Issue a label-free verifier only to the registered formation chain."""
+
+        if formation_controller is not self._formation_controller:
+            raise AssignmentRefusal("exact_formation_controller_required")
+        current = self.require_returned_root(root)
+        condition_name = next(
+            (value for item, value in self._root_conditions if item is current), None
+        )
+        if condition_name == BASELINE_CONDITION:
+            condition = baseline_condition()
+        elif condition_name == TREATMENT_CONDITION:
+            condition = treatment_condition()
+        else:
+            raise AssignmentRefusal("exact_retained_assignment_required")
+        return _BranchLocalRootVerifier(current, condition)

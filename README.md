@@ -1,23 +1,26 @@
 # Formation
 
-Formation is a research and engineering project about the instruments that let
-a cold language model become an exceptional situated practitioner through
-experience after training.
+Formation studies how a language model that starts each call with no memory of
+prior work can still become a particular skilled practitioner through later
+experience. The model weights stay frozen. What must change is the governed
+system around the model: what experience is kept, what changes are proposed,
+which changes may affect later action, and how those changes are checked or
+revoked.
 
 Its working thesis is:
 
 > A frozen, intermittently invoked model can develop into a particular
 > practitioner when a governed system converts experience and consequence into
-> durable, selective, corrigible changes in future behavior.
+> durable, selective changes in future behavior that later counterevidence can
+> revise, suspend, or revoke.
 
-The model may begin each invocation cold. The practitioner does not. What
-persists is a developmental system around the model: experience lineage,
-consequence attribution, candidate changes, governance and revocation,
-activation policy, and prospective evaluation.
+Here *cold* means the model itself carries no project memory between calls.
+The *practitioner* is the model plus the developmental system that persists
+across calls.
 
-Game mastering, coding, writing, research, and operations are possible contact
-domains. None is the project itself. They are places where formation can be
-observed, challenged, and compared.
+Game mastering, coding, writing, research, and operations are useful places to
+test formation. None of them is the project. They are contact domains where
+formation can be observed and adjusted.
 
 ## The question
 
@@ -27,9 +30,9 @@ The ordinary agent loop is good at continuing work:
 assemble context -> infer -> act -> observe -> append -> repeat
 ```
 
-Appending an observation does not establish development. More context can
-produce a different answer without producing an earned or transferable change
-in the practitioner.
+Appending an observation can change the next answer without earning a change
+that should transfer to a later, related situation. More context is not the
+same as development.
 
 Formation adds a second, governed loop:
 
@@ -39,13 +42,12 @@ formation loop:   attribute -> propose change -> govern eligibility
                   -> activate selectively -> revise or revoke
 ```
 
-Governance may include a bounded trial, but the project does not assume that a
-trial is a universal stage or that it must precede every permitted influence.
+A bounded trial may be part of governance. The project does not treat trial as
+a required stage before every permitted influence.
 
-The central research question is not whether the system can remember an episode.
-It is whether an experience can cause a warranted change that improves action in
-a later, novel, structurally related situation without causing inappropriate
-transfer elsewhere.
+The central research question is whether an experience can cause a warranted
+change that improves action in a later, novel, structurally related situation,
+and stays silent where that structure does not apply.
 
 ## The system boundary
 
@@ -59,9 +61,9 @@ Formation begins with three distinct roles:
   starting states, schedules environments and declared consequence oracles,
   assigns ablations, and captures evidence for prospective scoring.
 
-This separation is load-bearing. If the trajectory harness interprets a
-consequence and quietly hands the correct lesson to the model, the experiment
-has measured oracle assistance rather than formation.
+The separation matters because of a concrete failure mode. If the harness
+interprets a consequence and quietly hands the correct lesson to the model, the
+experiment measures oracle assistance rather than formation.
 
 ## What counts as progress
 
@@ -72,171 +74,113 @@ must show:
 2. **Transfer:** the change helps on prospective cases that do not permit answer
    copying or simple episode matching.
 3. **Selectivity:** the change stays silent where its structure does not apply.
-4. **Corrigibility:** later counterevidence can revise, suspend, or revoke it.
+4. **Revision:** later counterevidence can revise, suspend, or revoke an
+   admitted change.
 5. **Causal contribution:** ablation or controlled branching attributes the
    improvement to the acquired change.
 6. **Net value:** the benefit survives the costs of context, checks, latency,
    maintenance, and negative transfer.
 
-“Exceptional” is comparative, not celebratory. A formed practitioner must beat
-the same cold model with static instructions and ordinary persistence on novel
-work, while remaining governable.
+“Exceptional” is comparative. A formed practitioner must beat the same cold
+model with static instructions and ordinary persistence on novel work, while
+remaining governable.
 
 ## Relationship to Construct
 
 [Construct](../construct/README.md) is the immediate experimental ancestor. It
-found meaningful bounded results about offer quality, consequence-earned
-authority, cross-session influence, selective eviction and recovery, and
-governed continuity. Formation accepts those results within their original
-evidence bounds.
+produced bounded results on offer quality, consequence-earned authority,
+cross-session influence, selective eviction and recovery, and governed
+continuity. Formation accepts those results within their original evidence
+bounds.
 
-Formation does **not** assume that Construct's provisional Body Core, event
-schema, projectors, adapters, or vocabulary are the correct architecture for
-development. Those are prior art and potential instruments, not inherited
-requirements. Formation must earn its own objects and mechanisms.
+Formation does not inherit Construct's provisional runtime objects or
+vocabularies as requirements. Those are prior art and candidate instruments.
+Formation must earn its own objects and mechanisms.
 
-Construct should remain reproducible as the lab that owns its findings. New
-trajectory experiments and formation-runtime code belong here.
+Construct remains the lab that owns its findings and should stay reproducible.
+New trajectory experiments and formation-runtime code belong here.
 
 ## Present state
 
-The project has established its **Phase 0 semantic boundary**. The documentation
-packet remains a draft, pre-evidence contract, but it has completed a two-family
-cold boundary review and independent-construction comparison. Grok and Composer
-now enumerate one compatible receipt graph and sixteen refusal outcomes without
-machine syntax. No formation mechanism or developmental effect has been earned.
+No formation effect has been earned. What exists today is a reviewed semantic
+boundary plus a few fixture-local code slices that prove identity and
+separation plumbing for one deterministic scenario.
 
-The first deterministic [two-loop fixture](docs/FIXTURE.md) is now a
-cold-reviewed semantic draft. It exists to pressure the boundary before schema
-selection or code; its authored stubs and outcomes are wire-only, and its first
-review removed pre-admission trial as a mandatory lifecycle stage.
+The Phase 0 packet —
+[concept](docs/CONCEPT.md), [authority](docs/AUTHORITY.md),
+[record](docs/RECORD.md), [evaluation](docs/EVALUATION.md),
+[fixture](docs/FIXTURE.md), and [instrument map](docs/INSTRUMENTS.md) — defines
+roles, records, baselines, and refusal outcomes in Markdown. Independent
+readers from two model families reconstructed one compatible semantic object
+from that packet. Agreement on meaning closed the semantic gate. It did not
+select a machine schema or prove any developmental effect.
 
-The next layer remains Markdown-first. This is semantic prototyping before
-materialization, not documentation before code. The [instrument
-map](docs/INSTRUMENTS.md) keeps the prose epistemically executable by requiring
-authorities, causal receipts, clean and refusal outcomes, loses-conditions, and
-independent reconstruction. Its first fixture handoff audit exposed and removed
-a harness-derived ablation view and an authority collapse in the walkthrough;
-the two independent constructions then exposed and closed the remaining
-semantic ambiguities. No machine schema or storage syntax has been selected.
-Independent convergence on one semantic object closes the review gate; it does
-not force materialization. Formation stays in Markdown until deterministic
-computation, validation, identity, or exchange requires machine syntax.
+Code begins only where the fixture needs exact bytes or typed capabilities.
+Five fixture-local slices are implemented and tested:
 
-That pressure has now arrived for one narrow operation: proving that every
-fixture branch starts from the same materialized developmental prefix. The
-[first materialization contract](docs/MATERIALIZATION.md) selects exact bytes
-and a content binding only for `D-C-001` through `D-C-006`. Grok and Composer
-independently reconstructed the repaired contract and returned
-`code_slice_licensed`. The license covers only the fixture-local source adapter,
-producer, validator, handoff, comparison, binding, and refusal tests. It does not
-select a general event schema or storage format.
+1. [Shared acquisition prefix](docs/MATERIALIZATION.md). Every fork starts from
+   the same six developmental records as exact bytes with a content binding.
+   Eleven tests refuse forged handoffs, replacement bytes, mutated sources,
+   altered bindings, and post-binding tampering.
+2. [Condition append](docs/CONDITION_APPEND.md). After the fork, each runtime
+   records only its public formation condition. Hidden branch assignments stay
+   in trajectory evidence. The six-line prefix stays unchanged. Twenty-six
+   tests cover both this slice and the prefix.
+3. [Admitted roots](docs/ADMITTED_ROOT.md). On the two treatment branches, a
+   distinct interpreter authors one candidate from retained experience, and a
+   distinct governor admits that exact proposal once within an explicit scope.
+   The harness schedules and witnesses; it does not author or admit. Forty-five
+   tests preserve and revalidate the source-to-admission chain.
+4. [Replay-constraint append](docs/REPLAY_CONSTRAINT_APPEND.md). The ablation
+   branch receives one public constraint bound at the exact admitted head. The
+   slice does not implement constrained replay itself. Sixty-four tests cover
+   the combined boundary.
+5. [Shared foreground delivery](docs/FOREGROUND_DELIVERY.md). One protocol
+   source is frozen once, then delivered once to each exact current branch
+   head. The runtime returns the received value; the harness checks it against
+   the same freeze. Eighty tests cover the combined boundary.
 
-That slice is now implemented. Eleven deterministic tests pass, including
-refusals for forged handoffs and witnesses, caller-supplied replacement bytes,
-source and artifact mutations, altered bindings, and post-binding tampering.
-Two post-build authority reviews return `PASS`. The full two-loop skeleton and
-most records after `D-C-006` remain unimplemented.
+These slices establish local identity, authority separation, and provenance
+checks. They do not establish learning, transfer, governance effectiveness, or
+any formation claim.
 
-The first branch-local append is also materialized. The
-[condition-append contract](docs/CONDITION_APPEND.md) keeps hidden assignments
-in trajectory evidence while each runtime records only its public formation
-condition. It reserves opaque developmental coordinates before assignment,
-keeps the six-line prefix unchanged, and returns an exact immutable two-segment
-root. Twenty-six deterministic tests now pass across both slices, and the
-final semantic and authority rechecks return `PASS`. This establishes local
-identity and separation plumbing only; it does not establish learning,
-governance effectiveness, transfer, or any formation effect.
+Several later fixture meanings are closed in Markdown and not yet coded as
+general mechanisms. Proposal and admission receipt bytes remain unselected.
+Replay exclusion forbids answering from a target key without reading lineage,
+but the fixed graph still does not force a general traversal architecture, so
+no replay schema is licensed. Activation identity requires the exact admitted
+lineage object to be considered, selected, handed off once, and consumed in the
+model request; withheld paths carry no intervention, and no activation schema
+is licensed.
 
-The next Markdown gate now closes the first proposal and direct-admission
-boundary. Independent readers initially disagreed about who authored the
-candidate, who made the admission decision, what counted as the candidate
-version, and what scope the governor granted. The repaired fixture now fixes
-those meanings: the runtime interpreter authors one candidate from preserved
-experience, the declared governor admits that exact proposal version within an
-explicit scope, and the harness only schedules and witnesses the work. Baseline
-does neither operation; governed and ablation independently produce matching
-semantic paths. Two model families and an additional independent review return
-`PASS`. Markdown remains sufficient, so proposal and admission syntax is still
-unselected.
+Shared foreground delivery is now implemented. Independent review rejected two
+green intermediate builds. The first could repeat or alter authority outside
+one controller. The second delivered the right values to the right roots but
+did not retain which exact freeze and comparison group had authorized them.
+The repaired boundary rechecks source, authority, recipient lineage, freeze,
+group, one-time consumption, and all three returned handoffs. It selects no byte
+format and does not claim that an encounter opened.
 
-The replay-exclusion gate remains Markdown-only too. Its cold review found a
-real counterfeit: a runtime could return the fixture's advertised ablation
-answer whenever it saw `D-C-005` without deriving anything from lineage. The
-record and fixture contracts now require the actual retained dependencies,
-preserve unrelated state and the active constraint, and add four refusal legs
-against that shortcut. Two model families reconstruct the repaired object
-identically. For this one fixed graph, however, an exact graph validator plus
-the authored result is still indistinguishable from a general traversal. The
-project will not invent alternate graphs merely to force an architecture, so no
-replay schema or implementation is licensed yet.
+The next layer remains Markdown-first until a named computation requires
+materialization. In particular, a foreground witness is not yet an encounter,
+a model request, an action, or evidence of formation.
 
-The first activation-identity gate is also closed in Markdown. Cold readers
-showed that matching an admitted-version name and copying the candidate text
-could counterfeit attributable influence. The repaired contract now requires
-the exact admitted lineage object to be considered and selected, resolves its
-exact proposal, creates one immutable encounter-local intervention handoff, and
-consumes that handoff once in the model request. Withheld paths carry no
-intervention. Two model families and an additional independent review agree on
-the object. Because one runtime can enforce these exact semantic references
-without byte comparison or exchange, no activation schema is licensed.
-
-The shared positive-foreground semantic gate is closed. Its first cold pass
-disagreed about what was shared and where it became fixed. The repaired fixture
-now defines one closed seven-role foreground, freezes it before branch-local
-case assignment, derives one delivery for each of the three branch roots, and
-directly compares every received situation with that freeze. A focused review
-then separated value equality from provenance: equal fields cannot prove the
-same freeze, correct root, or one-time use. The resulting
-[foreground-delivery contract](docs/FOREGROUND_DELIVERY.md) earns typed
-capabilities and validation, but no byte format or digest. Its implementation
-was gated on real governed-admission and ablation-constraint root capabilities;
-the governed root now exists, leaving the ablation constraint as the remaining
-prerequisite.
-Two independent model families reconstructed that same boundary and returned
-`CONTRACT_STABLE_CODE_BLOCKED`.
-
-That gate forced the first typed proposal-to-admission boundary. The new
-[admitted-root contract](docs/ADMITTED_ROOT.md) consumes exactly the two public
-treatment roots in label-blind issuance order, derives each proposal from the
-retained acquisition receipts through a distinct interpreter authority, and
-lets a distinct governor admit that exact proposal once. It returns two
-branch-local admitted roots without selecting proposal or admission bytes.
-Post-build review rejected an initially green 39-test implementation because
-authority names could stand in for authority calls and nested provenance could
-be changed. The repaired 45-test slice preserves and revalidates the complete
-source-to-admission chain; independent mechanical recheck returns `PASS`.
-The last foreground prerequisite is now implemented by the fixture-local
-[replay-constraint append contract](docs/REPLAY_CONSTRAINT_APPEND.md). Two
-independent model families licensed only the typed append and exact returned
-root, while keeping constrained replay unimplemented. Post-build review
-rejected an initially green 57-test state because runtime-facing verifier
-objects could reach harness assignments and caller-created coordinates or
-deliveries could counterfeit provenance. The repaired 64-test boundary uses a
-formation-issued controller, label-blind runtime reservations, a narrow exact-
-delivery registry, and full current-chain revalidation. The resulting root
-proves that the public constraint was bound at the exact ablation admission
-head; it does not prove that replay was derived correctly.
-
-All three typed branch roots required by the shared-foreground contract now
-exist. That contract needs one final code-facing type and issuer review before
-its already specified delivery slice is implemented.
-
-The first milestone is a deterministic, inspectable two-loop skeleton that can
-represent a practice trajectory and a candidate change without pretending the
-candidate is learned or useful. The first experimental milestone comes later:
-a same-model trajectory comparison that can distinguish consequence-governed
-formation from raw episodic recall and authored lessons.
+The first engineering milestone is still ahead: a deterministic two-loop
+skeleton that can represent a practice trajectory and a candidate change without
+pretending the candidate is learned or useful. The first experimental milestone
+comes later: a same-model trajectory comparison that can distinguish
+consequence-governed formation from raw episodic recall and authored lessons.
 
 ## Project map
 
-| Place | Responsibility |
-| --- | --- |
-| [docs/](docs/README.md) | Concept, research program, and implementation boundary |
-| [`formation/`](formation/README.md) | Runtime-owned fixture prefix, condition append, and typed admission producers; not yet a general runtime |
-| [`trajectory/`](trajectory/README.md) | Harness-owned fixture validation, fork, assignment, admission, and witness checks; not yet a general harness |
-| [`tests/`](tests/README.md) | Deterministic contract and separation tests |
-| `evidence/` | Future primary trajectories and computed verdicts, never hand-written claims |
+
+| Place                                 | Responsibility                                                                                               |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| [docs/](docs/README.md)               | Concept, research program, and implementation boundary                                                       |
+| `[formation/](formation/README.md)`   | Runtime-owned fixture producers, constraint binding, and foreground consumption; not yet a general runtime   |
+| `[trajectory/](trajectory/README.md)` | Harness-owned fixture validation, assignment, provenance, and witness checks; not yet a general harness      |
+| `[tests/](tests/README.md)`           | Deterministic contract and separation tests                                                                  |
+| `evidence/`                           | Future primary trajectories and computed verdicts, never hand-written claims                                 |
 
 ## Evidence and authority
 

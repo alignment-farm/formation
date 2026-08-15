@@ -180,6 +180,55 @@ class ReplayConstraintBranchRoot:
     _issuer: object
 
 
+class _ReplayConstraintRootVerifier:
+    """Detached currentness check with no ablation-assignment authority."""
+
+    def __init__(
+        self,
+        root: ReplayConstraintBranchRoot,
+        runtime: RuntimeReplayConstraintMaterializer,
+        handoff: ReplayConstraintHandoff,
+        admitted_verifier: object,
+    ) -> None:
+        self.root = root
+        self._runtime = runtime
+        self._handoff = handoff
+        self._admitted_verifier = admitted_verifier
+        self._snapshot = (
+            root.run_id,
+            root.admitted_root,
+            root.constraint,
+            root.head,
+            root._issuer,
+        )
+
+    def require(self, root: object) -> ReplayConstraintBranchRoot:
+        if type(root) is not ReplayConstraintBranchRoot or root is not self.root:
+            raise ReplayConstraintAppendRefusal(
+                "exact_replay_constraint_root_required"
+            )
+        try:
+            current = self._runtime.require_current(self._handoff)
+            admitted = self._admitted_verifier.require(root.admitted_root)
+        except ValueError as error:
+            raise ReplayConstraintAppendRefusal(
+                "replay_constraint_root_changed"
+            ) from error
+        if (
+            root.run_id != self._snapshot[0]
+            or root.admitted_root is not self._snapshot[1]
+            or root.constraint is not self._snapshot[2]
+            or root.head is not self._snapshot[3]
+            or root._issuer is not self._snapshot[4]
+            or current is not self._handoff
+            or current.event is not root.constraint
+            or admitted is not root.admitted_root
+        ):
+            raise ReplayConstraintAppendRefusal("replay_constraint_root_changed")
+        validate_fixture_replay_constraint(root.constraint)
+        return root
+
+
 def validate_fixture_replay_constraint(event: object) -> str:
     if type(event) is not ReplayConstraintBound:
         raise ReplayConstraintValidationRefusal("invalid_fixture_replay_constraint")
@@ -233,6 +282,8 @@ class ReplayConstraintAppendController:
         self._runtime: RuntimeReplayConstraintMaterializer | None = None
         self._reservation: object | None = None
         self._delivery_registry = _IssuedDeliveryRegistry(_DELIVERY_USE_ISSUER)
+        self._foreground_controller: object | None = None
+        self._foreground_open_permit: object | None = None
 
     @classmethod
     def _from_formation(
@@ -523,3 +574,60 @@ class ReplayConstraintAppendController:
         self._formations.require_returned_root(root.admitted_root)
         validate_fixture_replay_constraint(root.constraint)
         return root
+
+    def foreground_root_verifier(
+        self, root: object
+    ) -> _ReplayConstraintRootVerifier:
+        current = self.require_returned_root(root)
+        if self._root_snapshot is None:
+            raise ReplayConstraintAppendRefusal("exact_replay_constraint_root_required")
+        admitted_verifier = self._formations.foreground_root_verifier(
+            current.admitted_root, self
+        )
+        return _ReplayConstraintRootVerifier(
+            current,
+            self._root_snapshot[5],
+            self._root_snapshot[6],
+            admitted_verifier,
+        )
+
+    def open_foreground_controller(
+        self, baseline: object, governed: object, ablation: object
+    ):
+        """Register the fixture's single foreground authority."""
+
+        if self._foreground_controller is not None:
+            raise ReplayConstraintAppendRefusal(
+                "foreground_controller_already_registered"
+            )
+        from trajectory.foreground import ForegroundDeliveryController
+
+        permit = object()
+        self._foreground_open_permit = permit
+        try:
+            controller = ForegroundDeliveryController._from_constraint_controller(
+                self, baseline, governed, ablation, permit
+            )
+        finally:
+            self._foreground_open_permit = None
+        if controller is not self._foreground_controller:
+            raise ReplayConstraintAppendRefusal(
+                "foreground_controller_registration_failed"
+            )
+        return controller
+
+    def _claim_foreground_controller(
+        self, controller: object, permit: object
+    ) -> None:
+        from trajectory.foreground import ForegroundDeliveryController
+
+        if (
+            type(controller) is not ForegroundDeliveryController
+            or self._foreground_controller is not None
+            or permit is None
+            or permit is not self._foreground_open_permit
+        ):
+            raise ReplayConstraintAppendRefusal(
+                "foreground_controller_registration_refused"
+            )
+        self._foreground_controller = controller
