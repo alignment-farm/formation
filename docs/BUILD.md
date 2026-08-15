@@ -1,6 +1,6 @@
 # Initial build boundary
 
-Status: **planning contract; the functional framework is incomplete, with nine
+Status: **planning contract; the functional framework is incomplete, with ten
 fixture-local materialization slices implemented**.
 
 ## First build objective
@@ -311,14 +311,20 @@ capability authors proposals from request-visible roles; the runtime records but
 does not commit them. The repaired combined 150-test boundary passes final
 independent recheck after closing post-invocation verifier replacement.
 
-No real-model contact, action commitment, constrained replay, or consequence
-implementation follows automatically.
+No real-model contact, environment action application, constrained replay, or
+consequence implementation follows automatically.
 
-Action commitment is now the next licensed slice. Its
+Action commitment is now implemented. Its
 [contract](ACTION_COMMITMENT.md) separates the exact actor proposal from the
 runtime-authored commitment and a distinct private environment handoff. Two
-cold reconstructions and a code-facing review agree on that boundary; code and
-tests remain pending.
+cold reconstructions and a code-facing review agreed on that boundary. The
+combined 162-test suite and final cold recheck pass after hardening reset
+resistance, live binding resolution, and explicit witness relations.
+
+The next named semantic need is environment action application: resolve and
+consume each exact private handoff, let an environment authority produce an
+external result, and preserve that result without treating it as an oracle
+verdict or formation finding. That boundary is not yet licensed for code.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not

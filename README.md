@@ -103,7 +103,7 @@ New trajectory experiments and formation-runtime code belong here.
 ## Present state
 
 No formation effect has been earned. What exists today is a reviewed account
-of what the system may do, plus nine small code slices that prove identity and
+of what the system may do, plus ten small code slices that prove identity and
 role separation in one deterministic scenario.
 
 The Phase 0 packet —
@@ -125,7 +125,7 @@ exchange between components.
 
 The current code uses exact bytes where byte equality matters and typed objects
 where equal-looking data must not be allowed to substitute for its source or
-authority. Nine fixture-local slices are implemented and tested:
+authority. Ten fixture-local slices are implemented and tested:
 
 1. [Shared acquisition prefix](docs/MATERIALIZATION.md). Every fork starts from
    the same six developmental records as exact bytes with a content binding.
@@ -168,6 +168,11 @@ authority. Nine fixture-local slices are implemented and tested:
    actor capability receives both exact requests and alone issues their model
    proposal objects. The runtime records those proposals without committing an
    action. One hundred fifty tests cover the combined boundary.
+10. [Positive action commitment](docs/ACTION_COMMITMENT.md). The runtime turns
+    each exact positive proposal into a distinct commitment under its declared
+    policy and returns only a sealed binding for the private environment
+    handoff. It does not apply the action or produce a consequence. One hundred
+    sixty-two tests cover the combined boundary.
 
 These slices establish local identity, authority separation, and provenance
 checks. They do not establish learning, transfer, governance effectiveness, or
@@ -229,15 +234,20 @@ found and repaired a post-invocation verifier replacement path before the
 combined 150-test suite and final recheck passed.
 
 The lifecycle boundary remains deliberately split. A model proposal is not a
-committed action, and the fixture actor is not evidence of model learning.
+committed action, a committed action is not an environment result, and the
+fixture actor is not evidence of model learning.
 Ablation remains blocked on runtime-derived constrained replay.
 
-The next named computation is now licensed in Markdown. The
-[positive action-commitment contract](docs/ACTION_COMMITMENT.md) requires the
-runtime to turn each exact actor-issued proposal into a distinct commitment
-event and a sealed environment binding. It keeps proposal authorship, runtime
-commitment, and later environment consequence separate. Implementation remains
-pending.
+Positive [action commitment](docs/ACTION_COMMITMENT.md) is now implemented.
+The runtime turns each exact actor-issued proposal into a distinct commitment
+event and a sealed environment binding. Independent review found no blocker,
+then motivated stronger resistance to combined alias resets and orphaned
+binding resolution; the repaired 162-test boundary passed a final cold recheck.
+
+The next named semantic need is environment action application. It must consume
+the exact private handoff and preserve an external result while keeping result,
+oracle verdict, and formation claim distinct. Its contract and review gate
+remain ahead of code.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

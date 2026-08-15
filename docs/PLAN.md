@@ -166,7 +166,11 @@ Action commitment is closed at the semantic and code-license gates. The
 [contract](ACTION_COMMITMENT.md) selects one runtime-authored commitment from
 each exact positive actor proposal, plus a sealed binding for a distinct private
 environment handoff. It does not apply either action or predict a consequence.
-Implementation is the next task.
+The repaired typed implementation passes the combined 162-test suite and a
+final cold recheck after closing a multiple-alias reset path and orphan-binding
+resolution. Environment action application is the next named semantic need;
+it remains Markdown work until its authorities, result boundary, refusals, and
+loses-conditions converge.
 
 ## Phase 1 — build the two-loop framework
 

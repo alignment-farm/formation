@@ -148,6 +148,11 @@ class RuntimePositiveModelInvocationAuthority:
         self._uses = tuple(_InvocationUse(item) for item in verifiers)
         self._roots: list[WithheldInvocationRoot | ActivatedInvocationRoot] = []
         self._snapshots: list[tuple[object, ...]] = []
+        self._root_verifiers: list[_InvocationRootVerifier] = []
+        self._action_factory_permit: object | None = object()
+        self._action_claim_permit: object | None = None
+        self._action_owner_id: int | None = None
+        self._action_authority: object | None = None
 
     def _use_for(self, root: object) -> _InvocationUse:
         use = next((item for item in self._uses if item.root is root), None)
@@ -205,4 +210,57 @@ class RuntimePositiveModelInvocationAuthority:
         if not use.used or use.invocation_root is not root or use._invocations != [root]:
             raise ModelInvocationRefusal("model_invocation_root_changed")
         use.require(root.predecessor)
+        return root
+
+    def root_verifier(self, root: object) -> _InvocationRootVerifier:
+        verifier = _InvocationRootVerifier(self.require_root(root))
+        self._root_verifiers.append(verifier)
+        return verifier
+
+    def _require_root_verifier(self, verifier: object) -> _InvocationRootVerifier:
+        if (
+            type(verifier) is not _InvocationRootVerifier
+            or not any(item is verifier for item in self._root_verifiers)
+            or verifier.require(verifier.root) is not verifier.root
+        ):
+            raise ModelInvocationRefusal("exact_invocation_root_verifier_required")
+        return verifier
+
+    def _take_action_factory_permit(self, owner: object) -> object:
+        permit = self._action_factory_permit
+        if permit is None:
+            raise ModelInvocationRefusal("action_factory_permit_unavailable")
+        self._action_factory_permit = None
+        self._action_claim_permit = permit
+        self._action_owner_id = id(owner)
+        return permit
+
+    def _claim_action_authority(
+        self, authority: object, owner: object, permit: object
+    ) -> None:
+        if (
+            permit is not self._action_claim_permit
+            or id(owner) != self._action_owner_id
+        ):
+            raise ModelInvocationRefusal("action_controller_factory_required")
+        if self._action_authority is not None:
+            raise ModelInvocationRefusal("action_authority_already_claimed")
+        self._action_authority = authority
+
+
+class _InvocationRootVerifier:
+    def __init__(self, root: WithheldInvocationRoot | ActivatedInvocationRoot) -> None:
+        self.root = root
+        self._snapshot = RuntimePositiveModelInvocationAuthority._snapshot(root)
+
+    def require(
+        self, root: object
+    ) -> WithheldInvocationRoot | ActivatedInvocationRoot:
+        if root is not self.root or type(root) not in (
+            WithheldInvocationRoot,
+            ActivatedInvocationRoot,
+        ):
+            raise ModelInvocationRefusal("exact_model_invocation_root_required")
+        if RuntimePositiveModelInvocationAuthority._snapshot(root) != self._snapshot:
+            raise ModelInvocationRefusal("model_invocation_root_changed")
         return root

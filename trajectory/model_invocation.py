@@ -28,6 +28,9 @@ class PositiveModelInvocationController:
         self.runtime = runtime
         self._issuer = object()
         self._witnesses: list[ModelInvocationWitness] = []
+        self._action_runtime: object | None = None
+        self._action_controller: object | None = None
+        self._action_permit = runtime._take_action_factory_permit(self)
 
     def witness(self, request_witness: object, root: object) -> ModelInvocationWitness:
         request_witness = self._requests.require_witness(request_witness)
@@ -54,3 +57,58 @@ class PositiveModelInvocationController:
         if len({id(item.invocation_root.invocation.actor) for item in current}) != 1:
             raise ModelInvocationWitnessRefusal("model_invocation_actor_mismatch")
         return current
+
+    def open_positive_action_commitment_controller(self) -> object:
+        if self._action_controller is not None:
+            raise ModelInvocationWitnessRefusal("action_controller_already_opened")
+        verifiers = tuple(
+            self.runtime.root_verifier(item.invocation_root)
+            for item in self.require_complete_witnesses()
+        )
+        from formation.action_commitment import (
+            COMMIT_POLICY,
+            RuntimePositiveActionCommitmentAuthority,
+        )
+        from trajectory.action_commitment import PositiveActionCommitmentController
+
+        runtime = RuntimePositiveActionCommitmentAuthority(
+            verifiers, COMMIT_POLICY, self.runtime, self, self._action_permit
+        )
+        controller = PositiveActionCommitmentController(
+            self, runtime, self._action_permit
+        )
+        self._action_controller = controller
+        return controller
+
+    def _preflight_action_runtime(
+        self, permit: object, verifiers: tuple[object, object]
+    ) -> None:
+        if permit is not self._action_permit:
+            raise ModelInvocationWitnessRefusal("action_controller_factory_required")
+        if self._action_runtime is not None:
+            raise ModelInvocationWitnessRefusal("action_controller_already_opened")
+        roots = {id(item.invocation_root) for item in self.require_complete_witnesses()}
+        if (
+            len(verifiers) != 2
+            or {id(item.root) for item in verifiers} != roots
+            or any(
+                self.runtime._require_root_verifier(item) is not item
+                for item in verifiers
+            )
+        ):
+            raise ModelInvocationWitnessRefusal("exact_positive_action_pair_required")
+
+    def _claim_action_runtime(
+        self, runtime: object, permit: object, verifiers: tuple[object, object]
+    ) -> None:
+        self._preflight_action_runtime(permit, verifiers)
+        self._action_runtime = runtime
+
+    def _claim_action_controller(
+        self, controller: object, runtime: object, permit: object
+    ) -> None:
+        if permit is not self._action_permit or runtime is not self._action_runtime:
+            raise ModelInvocationWitnessRefusal("exact_action_runtime_required")
+        if self._action_controller is not None:
+            raise ModelInvocationWitnessRefusal("action_controller_already_opened")
+        self._action_controller = controller

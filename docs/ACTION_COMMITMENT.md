@@ -1,7 +1,6 @@
 # Positive action-commitment contract
 
-Status: **fixture-local semantic contract; code slice licensed, implementation
-pending**.
+Status: **fixture-local semantic contract; typed implementation complete**.
 
 Purpose: define the next practice-boundary append for the exact baseline and
 governed positive invocation roots. The runtime commits one external action from
@@ -173,6 +172,16 @@ detached verifiers and that the established owner-bound factory, issuer token,
 private registry, and sealed-binding patterns can enforce this slice. The
 license covers only the two positive action commitments and their witnesses. It
 does not license environment application or consequence production.
+
+The typed implementation now passes the combined 162-test suite. Its first
+independent post-build review found no blocker, then identified a harder reset
+attack: clearing several per-use aliases together could mint a second
+commitment while leaving the first environment binding resolvable. The repaired
+runtime also anchors spentness in its issued-root registry and makes binding
+resolution depend on the one live commitment lineage. It names policy,
+invocation, proposal, action-value, and binding checks directly in the witness.
+A final cold recheck attacked those repairs and returned `PASS` with no
+blockers.
 
 ## Unselected
 
