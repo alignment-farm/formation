@@ -208,6 +208,13 @@ does not evaluate formation. The next contact must use a different,
 independently chartered practice; this closed run may not be modified or
 extended.
 
+The independently chartered successor is the
+[Python boundary contact](PYTHON_BOUNDARY_CONTACT_CHARTER.md). It treats exact-
+integer scoring as a predeclared behavioral contrast under ambiguous wording,
+not as proof of an irrational model error. Raw persistence may win across three
+integer-shaped and two boolean-shaped fresh tasks. Runner review remains the
+last gate before contact.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence

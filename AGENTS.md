@@ -76,6 +76,10 @@ Stop when the task's scope and authority are clear.
   specimen that must distinguish state-dependent execution from action lookup.
 - `docs/SQLITE_CONTACT_CHARTER.md` owns the first cold-model baseline contact
   with SQLite and its frozen engagement, persistence, and stopping rules.
+- `docs/PYTHON_BOUNDARY_CONTACT_CHARTER.md` owns the cold coding contact for
+  exact Python boundary types and its frozen persistence comparison.
+- `docs/PYTHON_BOUNDARY_CONTACT_VECTORS.md` owns the normative executable test
+  vectors for that coding contact.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing

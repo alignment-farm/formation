@@ -293,6 +293,13 @@ The runner correctly sent no lesson and no validation cases. The
 passed independent audit. This is a task-selection result, not a formation or
 transfer result.
 
+A successor [Python boundary contact](docs/PYTHON_BOUNDARY_CONTACT_CHARTER.md)
+is now frozen before contact. It asks how Composer 2.5 interprets ordinary
+“Python integers” when Python treats booleans as integer subclasses, then allows
+raw failure persistence and a model-authored lesson to compete on fresh integer
+and boolean APIs. Two final cold reviews agree on the exact vectors and bounded
+claim. Participant calls wait for a restricted runner and independent review.
+
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone
