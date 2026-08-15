@@ -144,6 +144,16 @@ ablation branch's equal-looking admission. The repaired 117-test boundary
 revalidates exact inputs at append time, and independent recheck returns
 `PASS`. It stops before request construction or any behavioral claim.
 
+That activation boundary left one governed handoff with a named one-shot
+consumer. The [practice-request contract](PRACTICE_REQUEST.md) now has a typed
+implementation for baseline and governed. Baseline request structure contains
+no intervention field; governed consumes and retains the exact encounter-local
+handoff without parallel copied values. Independent review rejected
+counterfeit verifier and owner paths, resettable rights, and consumption outside
+live preparation. The repaired 136-test boundary passes two final independent
+rechecks. It stops before prompt serialization, model invocation, action, or
+any behavioral claim; ablation remains gated on constrained replay.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence

@@ -40,6 +40,9 @@ class PositiveActivationController:
         self._issuer = object()
         self._witnesses: list[ActivationDecisionWitness] = []
         self._snapshots: list[tuple[object, ...]] = []
+        self._practice_runtime: object | None = None
+        self._practice_controller: object | None = None
+        self._practice_permit = runtime._take_practice_factory_permit(self)
 
     def witness(
         self,
@@ -112,3 +115,68 @@ class PositiveActivationController:
         if types != {WithheldDecisionRoot, ActivatedDecisionRoot} or len(predecessors) != 2:
             raise ActivationWitnessRefusal("activation_witness_set_mismatch")
         return current
+
+    def open_positive_practice_request_controller(self) -> object:
+        if self._practice_controller is not None:
+            raise ActivationWitnessRefusal("practice_request_controller_already_opened")
+        witnesses = self.require_complete_witnesses()
+        verifiers = tuple(
+            self.runtime.root_verifier(witness.decision_root) for witness in witnesses
+        )
+        from formation.practice_request import RuntimePositivePracticeRequestAuthority
+        from trajectory.practice_request import PositivePracticeRequestController
+
+        runtime = RuntimePositivePracticeRequestAuthority(
+            verifiers, self.runtime, self, self._practice_permit
+        )
+        controller = PositivePracticeRequestController(
+            self, runtime, self._practice_permit
+        )
+        self._practice_controller = controller
+        return controller
+
+    def _claim_practice_runtime(
+        self, runtime: object, permit: object, verifiers: tuple[object, object]
+    ) -> None:
+        if permit is not self._practice_permit:
+            raise ActivationWitnessRefusal("practice_request_controller_factory_required")
+        if self._practice_runtime is not None:
+            raise ActivationWitnessRefusal("practice_request_controller_already_opened")
+        roots = {id(item.decision_root) for item in self.require_complete_witnesses()}
+        if (
+            len(verifiers) != 2
+            or {id(item.root) for item in verifiers} != roots
+            or any(
+                self.runtime._require_root_verifier(verifier) is not verifier
+                for verifier in verifiers
+            )
+        ):
+            raise ActivationWitnessRefusal("exact_positive_request_pair_required")
+        self._practice_runtime = runtime
+
+    def _preflight_practice_runtime(
+        self, permit: object, verifiers: tuple[object, object]
+    ) -> None:
+        if permit is not self._practice_permit:
+            raise ActivationWitnessRefusal("practice_request_controller_factory_required")
+        if self._practice_runtime is not None:
+            raise ActivationWitnessRefusal("practice_request_controller_already_opened")
+        roots = {id(item.decision_root) for item in self.require_complete_witnesses()}
+        if (
+            len(verifiers) != 2
+            or {id(item.root) for item in verifiers} != roots
+            or any(
+                self.runtime._require_root_verifier(verifier) is not verifier
+                for verifier in verifiers
+            )
+        ):
+            raise ActivationWitnessRefusal("exact_positive_request_pair_required")
+
+    def _claim_practice_controller(
+        self, controller: object, runtime: object, permit: object
+    ) -> None:
+        if permit is not self._practice_permit or runtime is not self._practice_runtime:
+            raise ActivationWitnessRefusal("exact_practice_request_runtime_required")
+        if self._practice_controller is not None:
+            raise ActivationWitnessRefusal("practice_request_controller_already_opened")
+        self._practice_controller = controller

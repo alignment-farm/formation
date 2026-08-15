@@ -175,6 +175,8 @@ class _ActivationHandoffUse:
             handoff._issuer,
         )
         self.request_consumed = False
+        self.request_consumer: object | None = None
+        self._request_consumptions: list[object] = []
 
     def require(
         self, binding: object, decision_root: object
@@ -243,7 +245,21 @@ class RuntimePositiveActivationAuthority:
         self._decision_roots: list[WithheldDecisionRoot | ActivatedDecisionRoot] = []
         self._decision_snapshots: list[tuple[object, ...]] = []
         self._handoff_uses: list[_ActivationHandoffUse] = []
+        self._root_verifiers: list[_DecisionRootVerifier] = []
         self._issuer = object()
+        self._practice_authority: object | None = None
+        self._practice_factory_permit: object | None = object()
+        self._practice_claim_permit: object | None = None
+        self._practice_owner_id: int | None = None
+
+    def _take_practice_factory_permit(self, owner: object) -> object:
+        permit = self._practice_factory_permit
+        if permit is None:
+            raise ActivationDecisionRefusal("practice_request_factory_permit_unavailable")
+        self._practice_factory_permit = None
+        self._practice_claim_permit = permit
+        self._practice_owner_id = id(owner)
+        return permit
 
     def _use_for(self, root: object) -> _DecisionUse:
         use = next((item for item in self._uses if item.root is root), None)
@@ -420,8 +436,61 @@ class RuntimePositiveActivationAuthority:
             raise ActivationDecisionRefusal("exact_activation_handoff_binding_required")
         return use.require(binding, root)
 
+    def _claim_practice_authority(
+        self, authority: object, owner: object, permit: object
+    ) -> None:
+        if (
+            permit is not self._practice_claim_permit
+            or id(owner) != self._practice_owner_id
+        ):
+            raise ActivationDecisionRefusal("practice_request_controller_factory_required")
+        if self._practice_authority is not None:
+            raise ActivationDecisionRefusal("practice_request_authority_already_claimed")
+        self._practice_authority = authority
+
+    def _consume_request_handoff(
+        self,
+        authority: object,
+        binding: object,
+        root: object,
+        preparation_token: object,
+    ) -> ActivationHandoff:
+        if authority is not self._practice_authority:
+            raise ActivationDecisionRefusal("exact_practice_request_authority_required")
+        current = self.require_root(root)
+        authority._require_active_handoff_consumption(preparation_token, current)
+        use = next(
+            (item for item in self._handoff_uses if item.binding is binding), None
+        )
+        if use is None:
+            raise ActivationDecisionRefusal("exact_activation_handoff_binding_required")
+        use.require(binding, current)
+        if (
+            use.request_consumed
+            or use.request_consumer is not None
+            or use._request_consumptions
+        ):
+            raise ActivationDecisionRefusal("activation_handoff_already_consumed")
+        use.request_consumed = True
+        use.request_consumer = authority
+        use._request_consumptions.append(authority)
+        return use.handoff
+
     def root_verifier(self, root: object) -> _DecisionRootVerifier:
-        return _DecisionRootVerifier(self.require_root(root))
+        verifier = _DecisionRootVerifier(self.require_root(root))
+        self._root_verifiers.append(verifier)
+        return verifier
+
+    def _require_root_verifier(
+        self, verifier: object
+    ) -> _DecisionRootVerifier:
+        if (
+            type(verifier) is not _DecisionRootVerifier
+            or not any(item is verifier for item in self._root_verifiers)
+            or verifier.require(verifier.root) is not verifier.root
+        ):
+            raise ActivationDecisionRefusal("exact_activation_root_verifier_required")
+        return verifier
 
 
 class _DecisionRootVerifier:

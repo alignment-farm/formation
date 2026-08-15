@@ -515,9 +515,11 @@ the selected object.
 
 The practice boundary consumes this same immutable handoff exactly once when it
 constructs the model request. It may not reopen lineage or mutable storage to
-recreate matching values. The request contains the current foreground plus the
-handoff's intervention identity, admitted-version binding, and exact candidate
-content. The `model invoked` receipt cites the exact encounter-local
+recreate matching values. The request contains the current foreground and the
+exact handoff. The intervention identity, admitted-version binding, and exact
+candidate content are available through that handoff, not copied into parallel
+request fields that could disagree with it. The `model invoked` receipt cites
+the exact encounter-local
 `change activated` receipt and retains the exact request or a content-identity
 binding to it. The harness may witness that result afterward; it may not supply,
 replace, or repair the handoff or request.

@@ -1,6 +1,6 @@
 # Initial build boundary
 
-Status: **planning contract; the functional framework is incomplete, with seven
+Status: **planning contract; the functional framework is incomplete, with eight
 fixture-local materialization slices implemented**.
 
 ## First build objective
@@ -288,9 +288,22 @@ replay derives its eligible set. Independent review found and repaired an
 equal-lineage substitution through cached decision inputs before the combined
 117-test suite and final recheck returned `PASS`.
 
-No constrained replay, model-request construction, action, or consequence
-implementation follows automatically. The next licensed slice must be earned
-by a named computation at one of those boundaries.
+That activation slice did not automatically license constrained replay, request
+construction, action, or consequence. Its private handoff instead exposed the
+next narrower computation below.
+
+The governed handoff then named a narrower exchange before model contact. The
+[practice-request contract](PRACTICE_REQUEST.md) now has a reviewed typed
+implementation. It prepares one baseline request with structural intervention
+absence and one governed request containing the exact handoff consumed from the
+private activation registry. It selects no prompt bytes or provider format.
+Independent review found and repaired counterfeit verifier and owner paths,
+restorable guards, and orphan handoff consumption before the combined 136-test
+suite and two final rechecks returned `PASS`.
+
+No constrained replay, model invocation, action, or consequence implementation
+follows automatically. The next slice must be earned by a named computation at
+one of those boundaries.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not

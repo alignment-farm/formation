@@ -103,7 +103,7 @@ New trajectory experiments and formation-runtime code belong here.
 ## Present state
 
 No formation effect has been earned. What exists today is a reviewed account
-of what the system may do, plus seven small code slices that prove identity and
+of what the system may do, plus eight small code slices that prove identity and
 role separation in one deterministic scenario.
 
 The Phase 0 packet —
@@ -125,7 +125,7 @@ exchange between components.
 
 The current code uses exact bytes where byte equality matters and typed objects
 where equal-looking data must not be allowed to substitute for its source or
-authority. Seven fixture-local slices are implemented and tested:
+authority. Eight fixture-local slices are implemented and tested:
 
 1. [Shared acquisition prefix](docs/MATERIALIZATION.md). Every fork starts from
    the same six developmental records as exact bytes with a content binding.
@@ -159,6 +159,11 @@ authority. Seven fixture-local slices are implemented and tested:
    encounter lineage and originates one privately held handoff. The ablation
    root remains excluded until constrained replay can derive its eligible set.
    One hundred seventeen tests cover the combined boundary.
+8. [Practice-request construction](docs/PRACTICE_REQUEST.md). Baseline prepares
+   a request with no intervention-shaped field. Governed consumes the exact
+   private activation handoff once and places that object in its request. No
+   prompt format or model invocation is selected. One hundred thirty-six tests
+   cover the combined boundary.
 
 These slices establish local identity, authority separation, and provenance
 checks. They do not establish learning, transfer, governance effectiveness, or
@@ -203,10 +208,18 @@ to be replaced by the ablation branch's equal-looking admission. The repaired
 boundary rechecks the exact condition, admission, and proposal at append time;
 the combined 117-test suite and independent recheck pass.
 
-The next formation-lifecycle boundary is deliberately split. Governed request
-construction now has a concrete one-shot handoff to consume, while the ablation
-decision remains blocked on runtime-derived constrained replay. Neither request
-bytes nor replay traversal has yet been selected.
+Positive [practice requests](docs/PRACTICE_REQUEST.md) are now implemented for
+baseline and governed. The baseline request has no intervention-shaped field.
+The governed request consumes the exact private activation handoff once and
+retains that object rather than copied admission or candidate fields.
+Independent review rejected green states that accepted counterfeit verifiers,
+restored rights by resetting guards, let a fake owner claim the registry, or
+consumed a handoff outside live request preparation. The repaired boundary and
+combined 136-test suite pass two final independent rechecks.
+
+The lifecycle boundary remains deliberately split. These are semantic request
+objects, not serialized prompts, and no model has been invoked. Ablation is
+still blocked on runtime-derived constrained replay.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
