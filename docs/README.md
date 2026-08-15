@@ -24,6 +24,7 @@ root [README](../README.md).
 | How do baseline and governed make exact positive activation decisions without fabricating the ablation replay result? | [POSITIVE_ACTIVATION_DECISION.md](POSITIVE_ACTIVATION_DECISION.md) |
 | How do those two decisions prepare requests with exact handoff use or structural intervention absence? | [PRACTICE_REQUEST.md](PRACTICE_REQUEST.md) |
 | How does one stateless fixture actor produce model proposals from those exact requests without claiming an action? | [MODEL_INVOCATION.md](MODEL_INVOCATION.md) |
+| How does the runtime commit those exact proposals without claiming an environment consequence? | [ACTION_COMMITMENT.md](ACTION_COMMITMENT.md) |
 
 These documents are pre-evidence. They constrain future work but establish no
 formation finding.

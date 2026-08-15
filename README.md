@@ -232,6 +232,13 @@ The lifecycle boundary remains deliberately split. A model proposal is not a
 committed action, and the fixture actor is not evidence of model learning.
 Ablation remains blocked on runtime-derived constrained replay.
 
+The next named computation is now licensed in Markdown. The
+[positive action-commitment contract](docs/ACTION_COMMITMENT.md) requires the
+runtime to turn each exact actor-issued proposal into a distinct commitment
+event and a sealed environment binding. It keeps proposal authorship, runtime
+commitment, and later environment consequence separate. Implementation remains
+pending.
+
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone

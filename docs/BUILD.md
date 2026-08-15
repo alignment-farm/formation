@@ -314,6 +314,12 @@ independent recheck after closing post-invocation verifier replacement.
 No real-model contact, action commitment, constrained replay, or consequence
 implementation follows automatically.
 
+Action commitment is now the next licensed slice. Its
+[contract](ACTION_COMMITMENT.md) separates the exact actor proposal from the
+runtime-authored commitment and a distinct private environment handoff. Two
+cold reconstructions and a code-facing review agree on that boundary; code and
+tests remain pending.
+
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not
 license byte exchange, per-event digests, hash chains, clocks, or a universal

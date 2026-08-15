@@ -162,6 +162,12 @@ governed proposes `rebuild_then_release` from the exact request situation and
 handoff. The repaired 150-test boundary passes independent recheck. It stops
 before action commitment, environment consequence, or any learning claim.
 
+Action commitment is closed at the semantic and code-license gates. The
+[contract](ACTION_COMMITMENT.md) selects one runtime-authored commitment from
+each exact positive actor proposal, plus a sealed binding for a distinct private
+environment handoff. It does not apply either action or predict a consequence.
+Implementation is the next task.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence
