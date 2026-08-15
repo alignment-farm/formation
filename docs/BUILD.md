@@ -331,6 +331,13 @@ cannot distinguish revision-rule execution from an action-keyed authored
 lookup. Adding a second revision case solely to force that distinction would
 select unearned fixture architecture.
 
+The [consequence-intake contract](CONSEQUENCE_INTAKE.md) is also semantically
+stable. It gives the environment external-occurrence authority and the runtime
+recording authority, retains the exact result without copied observation
+fields, and makes the action commitment the sole developmental parent. Code is
+blocked transitively because no licensed environment result capability exists
+yet.
+
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not
 license byte exchange, per-event digests, hash chains, clocks, or a universal

@@ -610,10 +610,10 @@ The runtime never learns that this is a non-transfer case.
 
 ## Counterevidence and revocation
 
-After the positive comparison and governed decoy, the environment presents the
-same correction to each branch's copy of the shared acquisition consequence.
-Each runtime appends a branch-local external occurrence referring back to
-`D-C-005`:
+After the positive comparison and governed decoy, the environment originates
+and presents the same correction to each branch's copy of the shared acquisition
+consequence. Each runtime records and appends a branch-local external occurrence
+referring back to `D-C-005`:
 
 ```text
 corrects: D-C-005

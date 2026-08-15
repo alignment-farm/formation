@@ -253,6 +253,14 @@ fixed revision mismatch, action-keyed lookup and real revision-rule execution
 remain observationally equivalent. The project will not add a case solely to
 manufacture implementation pressure.
 
+That stable result boundary also names the next lifecycle join. The
+[consequence-intake contract](docs/CONSEQUENCE_INTAKE.md) distinguishes an
+environment-originated result from the runtime-recorded `consequence observed`
+event. Two final cold reconstructions agree on exact result retention, sole
+developmental parentage, one-shot delivery, durable audit access, and the
+absence of interpretation or experience closure. Its code is blocked by the
+unimplemented environment predecessor.
+
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone

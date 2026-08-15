@@ -175,6 +175,12 @@ returns `CODE_SLICE_BLOCKED`: one fixed revision mismatch cannot distinguish
 real rule execution from an action-keyed lookup, and no extra case is justified
 solely to force materialization.
 
+The next semantic join, [consequence intake](CONSEQUENCE_INTAKE.md), now also
+passes two final reconstructions. It separates environment origination from
+runtime recording, developmental parentage from transport evidence, and one-
+shot delivery from durable audit access. Implementation remains blocked by the
+unmaterialized environment result.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence

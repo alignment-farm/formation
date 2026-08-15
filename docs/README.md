@@ -26,6 +26,7 @@ root [README](../README.md).
 | How does one stateless fixture actor produce model proposals from those exact requests without claiming an action? | [MODEL_INVOCATION.md](MODEL_INVOCATION.md) |
 | How does the runtime commit those exact proposals without claiming an environment consequence? | [ACTION_COMMITMENT.md](ACTION_COMMITMENT.md) |
 | How does the environment apply those commitments without claiming consequence intake or formation? | [ENVIRONMENT_APPLICATION.md](ENVIRONMENT_APPLICATION.md) |
+| How does the runtime retain those environment results without interpreting or scoring them? | [CONSEQUENCE_INTAKE.md](CONSEQUENCE_INTAKE.md) |
 
 These documents are pre-evidence. They constrain future work but establish no
 formation finding.
