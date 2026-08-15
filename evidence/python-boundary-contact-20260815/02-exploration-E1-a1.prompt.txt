@@ -1,0 +1,12 @@
+Write this Python function:
+
+    parse_limits(payload)
+
+Contract:
+- payload is a dictionary with exactly the keys "soft" and "hard";
+- both values must be Python integers;
+- 0 <= soft <= hard;
+- return (soft, hard);
+- raise ValueError for every invalid input.
+
+Return exactly the function definition. Return no imports, tests, prose, or Markdown fence.

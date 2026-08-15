@@ -294,14 +294,19 @@ passed independent audit. This is a task-selection result, not a formation or
 transfer result.
 
 A successor [Python boundary contact](docs/PYTHON_BOUNDARY_CONTACT_CHARTER.md)
-is now frozen and licensed for contact. It asks how Composer 2.5 interprets
-ordinary
-“Python integers” when Python treats booleans as integer subclasses, then allows
-raw failure persistence and a model-authored lesson to compete on fresh integer
-and boolean APIs. Two cold semantic reviews agree on the exact vectors and
-bounded claim. The restricted runner now passes its 10-test slice, the combined
-198-test suite, and two independent code reviews. No participant call has yet
-been made.
+asked how Composer 2.5 resolves ordinary “Python integers” when `bool` is a
+subclass of `int`. The charter allows raw failure persistence and a
+model-authored lesson to compete on five fresh coding tasks only if exploration
+engages; otherwise the run stops. Two cold semantic reviews agree on the exact
+vectors and bounded claim. The restricted runner passed its 10-test slice, the
+combined 198-test suite, and two independent code reviews.
+
+That contact also closed `not_engaged`. Each of three cold functions used an
+exact-type check and passed all 24 frozen inputs, including the held boolean
+cases. The runner sent no lesson or validation prompt. The
+[evidence and plain-language finding](evidence/python-boundary-contact-20260815/README.md)
+passed independent audit. This is another task-selection result, not evidence
+of formation or transfer.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

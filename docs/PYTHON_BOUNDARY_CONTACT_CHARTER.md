@@ -1,7 +1,6 @@
 # Cold coding contact charter: strict Python boundary types
 
-Status: **pre-contact charter and runner licensed; participant contact
-pending**.
+Status: **contact complete; stopped as not engaged**.
 
 ## Purpose
 
@@ -388,4 +387,6 @@ exposed and repaired unfair “mistake” framing, a contradiction about acquisi
 test disclosure, incomplete vectors, an unfrozen report, competing timeout
 readings, and incomplete boolean-position coverage. The semantic gate is closed.
 The restricted runner and its automatic stop passed two further independent
-reviews. Participant contact is licensed but has not begun.
+reviews. Composer 2.5 then passed all 24 exploration vectors in each of three
+cold calls. The runner stopped without a lesson or validation call, and an
+independent audit returned `EVIDENCE_VALID`.

@@ -1,0 +1,12 @@
+def parse_limits(payload):
+    if not isinstance(payload, dict):
+        raise ValueError
+    if set(payload) != {"soft", "hard"}:
+        raise ValueError
+    soft = payload["soft"]
+    hard = payload["hard"]
+    if type(soft) is not int or type(hard) is not int:
+        raise ValueError
+    if soft < 0 or hard < 0 or soft > hard:
+        raise ValueError
+    return (soft, hard)

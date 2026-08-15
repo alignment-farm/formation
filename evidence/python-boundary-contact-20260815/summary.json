@@ -1,0 +1,1227 @@
+{
+  "contact_status": "stopped",
+  "exploration": [
+    {
+      "acquisition_shape": false,
+      "all_tests_complete": true,
+      "call_index": 1,
+      "complete": true,
+      "input_characters": 352,
+      "oracle_diagnostics": {
+        "source_refusal": null,
+        "test_durations": [
+          {
+            "elapsed_seconds": 0.0321171669929754,
+            "test_id": "E-O01"
+          },
+          {
+            "elapsed_seconds": 0.024284125000122003,
+            "test_id": "E-O02"
+          },
+          {
+            "elapsed_seconds": 0.021434166003018618,
+            "test_id": "E-O03"
+          },
+          {
+            "elapsed_seconds": 0.021271375007927418,
+            "test_id": "E-O04"
+          },
+          {
+            "elapsed_seconds": 0.01996104199497495,
+            "test_id": "E-O05"
+          },
+          {
+            "elapsed_seconds": 0.020319832998211496,
+            "test_id": "E-O06"
+          },
+          {
+            "elapsed_seconds": 0.0191670000058366,
+            "test_id": "E-O07"
+          },
+          {
+            "elapsed_seconds": 0.018933416999061592,
+            "test_id": "E-O08"
+          },
+          {
+            "elapsed_seconds": 0.019855332997394726,
+            "test_id": "E-O09"
+          },
+          {
+            "elapsed_seconds": 0.020844625003519468,
+            "test_id": "E-O10"
+          },
+          {
+            "elapsed_seconds": 0.02045450000150595,
+            "test_id": "E-O11"
+          },
+          {
+            "elapsed_seconds": 0.019475458000670187,
+            "test_id": "E-O12"
+          },
+          {
+            "elapsed_seconds": 0.019065582993789576,
+            "test_id": "E-O13"
+          },
+          {
+            "elapsed_seconds": 0.019818625005427748,
+            "test_id": "E-O14"
+          },
+          {
+            "elapsed_seconds": 0.020640624992665835,
+            "test_id": "E-O15"
+          },
+          {
+            "elapsed_seconds": 0.020577208008035086,
+            "test_id": "E-O16"
+          },
+          {
+            "elapsed_seconds": 0.019556291998014785,
+            "test_id": "E-O17"
+          },
+          {
+            "elapsed_seconds": 0.018896207999205217,
+            "test_id": "E-O18"
+          },
+          {
+            "elapsed_seconds": 0.01939445800962858,
+            "test_id": "E-O19"
+          },
+          {
+            "elapsed_seconds": 0.01973820899729617,
+            "test_id": "E-O20"
+          },
+          {
+            "elapsed_seconds": 0.019552375000785105,
+            "test_id": "E-O21"
+          },
+          {
+            "elapsed_seconds": 0.01959895799518563,
+            "test_id": "E-H01"
+          },
+          {
+            "elapsed_seconds": 0.019398625008761883,
+            "test_id": "E-H02"
+          },
+          {
+            "elapsed_seconds": 0.01912037500005681,
+            "test_id": "E-H03"
+          }
+        ]
+      },
+      "output_characters": 383,
+      "passed_tests": 24,
+      "report": {
+        "function_name": "parse_limits",
+        "python_version": "3.14.6",
+        "source_sha256": "7ecbc63d22ea36b8a73c3ad4058c41523432b9be84f4cc10a137d870ad9d7f8a",
+        "tests": [
+          {
+            "exception_type": null,
+            "expected": "return:(0, 3)",
+            "input_repr": "{'soft': 0, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "returned",
+            "returned_repr": "(0, 3)",
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O01"
+          },
+          {
+            "exception_type": null,
+            "expected": "return:(2, 2)",
+            "input_repr": "{'soft': 2, 'hard': 2}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "returned",
+            "returned_repr": "(2, 2)",
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O02"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "None",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O03"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "[0, 3]",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O04"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "(0, 3)",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O05"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "'x'",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O06"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O07"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O08"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O09"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': 3, 'mode': 'x'}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O10"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': '0', 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O11"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0.0, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O12"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': None, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O13"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': [0], 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O14"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': '3'}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O15"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': 3.0}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O16"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': None}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O17"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': [3]}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O18"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': -1, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O19"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': -1}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O20"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 4, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O21"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': True, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-H01"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': False}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-H02"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': False, 'hard': True}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-H03"
+          }
+        ]
+      },
+      "total_tests": 24
+    },
+    {
+      "acquisition_shape": false,
+      "all_tests_complete": true,
+      "call_index": 2,
+      "complete": true,
+      "input_characters": 352,
+      "oracle_diagnostics": {
+        "source_refusal": null,
+        "test_durations": [
+          {
+            "elapsed_seconds": 0.03232870899955742,
+            "test_id": "E-O01"
+          },
+          {
+            "elapsed_seconds": 0.024539709003875032,
+            "test_id": "E-O02"
+          },
+          {
+            "elapsed_seconds": 0.021690708003006876,
+            "test_id": "E-O03"
+          },
+          {
+            "elapsed_seconds": 0.02073029200255405,
+            "test_id": "E-O04"
+          },
+          {
+            "elapsed_seconds": 0.02031570899998769,
+            "test_id": "E-O05"
+          },
+          {
+            "elapsed_seconds": 0.020146458002272993,
+            "test_id": "E-O06"
+          },
+          {
+            "elapsed_seconds": 0.019644166008220054,
+            "test_id": "E-O07"
+          },
+          {
+            "elapsed_seconds": 0.019410332999541424,
+            "test_id": "E-O08"
+          },
+          {
+            "elapsed_seconds": 0.01957008399767801,
+            "test_id": "E-O09"
+          },
+          {
+            "elapsed_seconds": 0.01981570899079088,
+            "test_id": "E-O10"
+          },
+          {
+            "elapsed_seconds": 0.020557125011691824,
+            "test_id": "E-O11"
+          },
+          {
+            "elapsed_seconds": 0.01970520800387021,
+            "test_id": "E-O12"
+          },
+          {
+            "elapsed_seconds": 0.018937540997285396,
+            "test_id": "E-O13"
+          },
+          {
+            "elapsed_seconds": 0.019145416998071596,
+            "test_id": "E-O14"
+          },
+          {
+            "elapsed_seconds": 0.019297125007142313,
+            "test_id": "E-O15"
+          },
+          {
+            "elapsed_seconds": 0.019712374996743165,
+            "test_id": "E-O16"
+          },
+          {
+            "elapsed_seconds": 0.019137584007694386,
+            "test_id": "E-O17"
+          },
+          {
+            "elapsed_seconds": 0.019362292005098425,
+            "test_id": "E-O18"
+          },
+          {
+            "elapsed_seconds": 0.018944082999951206,
+            "test_id": "E-O19"
+          },
+          {
+            "elapsed_seconds": 0.01890845800517127,
+            "test_id": "E-O20"
+          },
+          {
+            "elapsed_seconds": 0.019382416998269036,
+            "test_id": "E-O21"
+          },
+          {
+            "elapsed_seconds": 0.019072084003710188,
+            "test_id": "E-H01"
+          },
+          {
+            "elapsed_seconds": 0.01895520801190287,
+            "test_id": "E-H02"
+          },
+          {
+            "elapsed_seconds": 0.018716750011662953,
+            "test_id": "E-H03"
+          }
+        ]
+      },
+      "output_characters": 369,
+      "passed_tests": 24,
+      "report": {
+        "function_name": "parse_limits",
+        "python_version": "3.14.6",
+        "source_sha256": "d9fa3ec795db29247aa38713346cb3a4d1ea8dc33c7e1f9f4220d37703cd30c2",
+        "tests": [
+          {
+            "exception_type": null,
+            "expected": "return:(0, 3)",
+            "input_repr": "{'soft': 0, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "returned",
+            "returned_repr": "(0, 3)",
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O01"
+          },
+          {
+            "exception_type": null,
+            "expected": "return:(2, 2)",
+            "input_repr": "{'soft': 2, 'hard': 2}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "returned",
+            "returned_repr": "(2, 2)",
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O02"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "None",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O03"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "[0, 3]",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O04"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "(0, 3)",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O05"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "'x'",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O06"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O07"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O08"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O09"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': 3, 'mode': 'x'}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O10"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': '0', 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O11"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0.0, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O12"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': None, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O13"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': [0], 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O14"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': '3'}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O15"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': 3.0}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O16"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': None}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O17"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': [3]}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O18"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': -1, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O19"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': -1}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O20"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 4, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O21"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': True, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-H01"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': False}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-H02"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': False, 'hard': True}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-H03"
+          }
+        ]
+      },
+      "total_tests": 24
+    },
+    {
+      "acquisition_shape": false,
+      "all_tests_complete": true,
+      "call_index": 3,
+      "complete": true,
+      "input_characters": 352,
+      "oracle_diagnostics": {
+        "source_refusal": null,
+        "test_durations": [
+          {
+            "elapsed_seconds": 0.03133104198786896,
+            "test_id": "E-O01"
+          },
+          {
+            "elapsed_seconds": 0.024385249998886138,
+            "test_id": "E-O02"
+          },
+          {
+            "elapsed_seconds": 0.021808416990097612,
+            "test_id": "E-O03"
+          },
+          {
+            "elapsed_seconds": 0.0206266669993056,
+            "test_id": "E-O04"
+          },
+          {
+            "elapsed_seconds": 0.020169958006590605,
+            "test_id": "E-O05"
+          },
+          {
+            "elapsed_seconds": 0.019779249996645376,
+            "test_id": "E-O06"
+          },
+          {
+            "elapsed_seconds": 0.01935066700389143,
+            "test_id": "E-O07"
+          },
+          {
+            "elapsed_seconds": 0.01893679100612644,
+            "test_id": "E-O08"
+          },
+          {
+            "elapsed_seconds": 0.018960875007905997,
+            "test_id": "E-O09"
+          },
+          {
+            "elapsed_seconds": 0.019509334000758827,
+            "test_id": "E-O10"
+          },
+          {
+            "elapsed_seconds": 0.01950195799872745,
+            "test_id": "E-O11"
+          },
+          {
+            "elapsed_seconds": 0.019219041991163976,
+            "test_id": "E-O12"
+          },
+          {
+            "elapsed_seconds": 0.018950291007058695,
+            "test_id": "E-O13"
+          },
+          {
+            "elapsed_seconds": 0.019563417008612305,
+            "test_id": "E-O14"
+          },
+          {
+            "elapsed_seconds": 0.023325083995587192,
+            "test_id": "E-O15"
+          },
+          {
+            "elapsed_seconds": 0.02129370899638161,
+            "test_id": "E-O16"
+          },
+          {
+            "elapsed_seconds": 0.019653957991977222,
+            "test_id": "E-O17"
+          },
+          {
+            "elapsed_seconds": 0.01899237500037998,
+            "test_id": "E-O18"
+          },
+          {
+            "elapsed_seconds": 0.019356791002792306,
+            "test_id": "E-O19"
+          },
+          {
+            "elapsed_seconds": 0.01941037501092069,
+            "test_id": "E-O20"
+          },
+          {
+            "elapsed_seconds": 0.01943429200036917,
+            "test_id": "E-O21"
+          },
+          {
+            "elapsed_seconds": 0.01967158299521543,
+            "test_id": "E-H01"
+          },
+          {
+            "elapsed_seconds": 0.019194916996639222,
+            "test_id": "E-H02"
+          },
+          {
+            "elapsed_seconds": 0.01917108400084544,
+            "test_id": "E-H03"
+          }
+        ]
+      },
+      "output_characters": 381,
+      "passed_tests": 24,
+      "report": {
+        "function_name": "parse_limits",
+        "python_version": "3.14.6",
+        "source_sha256": "bad0b0eb9accf827fb6a0f6a58c49ac9a04c7e1d52863e1267e38ac91dc3c957",
+        "tests": [
+          {
+            "exception_type": null,
+            "expected": "return:(0, 3)",
+            "input_repr": "{'soft': 0, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "returned",
+            "returned_repr": "(0, 3)",
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O01"
+          },
+          {
+            "exception_type": null,
+            "expected": "return:(2, 2)",
+            "input_repr": "{'soft': 2, 'hard': 2}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "returned",
+            "returned_repr": "(2, 2)",
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O02"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "None",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O03"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "[0, 3]",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O04"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "(0, 3)",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O05"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "'x'",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O06"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O07"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O08"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O09"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': 3, 'mode': 'x'}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O10"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': '0', 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O11"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0.0, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O12"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': None, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O13"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': [0], 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O14"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': '3'}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O15"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': 3.0}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O16"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': None}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O17"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': [3]}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O18"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': -1, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O19"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': -1}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O20"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 4, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-O21"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': True, 'hard': 3}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-H01"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': 0, 'hard': False}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-H02"
+          },
+          {
+            "exception_type": "ValueError",
+            "expected": "raises:ValueError",
+            "input_repr": "{'soft': False, 'hard': True}",
+            "mutated": false,
+            "passed": true,
+            "process_status": "raised",
+            "returned_repr": null,
+            "stderr": "",
+            "stdout": "",
+            "test_id": "E-H03"
+          }
+        ]
+      },
+      "total_tests": 24
+    }
+  ],
+  "exploration_status": "not_engaged",
+  "model": "composer-2.5",
+  "protocol": "python-boundary-contact-v0",
+  "validation": []
+}

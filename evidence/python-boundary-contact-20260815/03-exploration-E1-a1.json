@@ -1,0 +1,30 @@
+{
+  "agent_version": "2026.08.11-e8db854",
+  "attempt_index": 1,
+  "case_id": "E1",
+  "command": [
+    "agent",
+    "-p",
+    "--mode",
+    "ask",
+    "--model",
+    "composer-2.5",
+    "--trust",
+    "--workspace",
+    "/var/folders/pb/62gd1c2x37q6pr4lqr3tvx9c0000gn/T/formation-sqlite-contact-4_lz4drf",
+    "<exact-prompt>"
+  ],
+  "condition": "exploration",
+  "elapsed_seconds": 9.13677650000318,
+  "ended_at": "2026-08-15T20:17:50.592437+00:00",
+  "exit_code": 0,
+  "logical_index": 3,
+  "no_resume": true,
+  "output_sha256": "bad0b0eb9accf827fb6a0f6a58c49ac9a04c7e1d52863e1267e38ac91dc3c957",
+  "prompt_sha256": "5a260af878542aad723ff0dacce66da468fc3891dc97f35b491599a8d9f4be6a",
+  "retry_of_attempt": null,
+  "retry_reason": null,
+  "started_at": "2026-08-15T20:17:41.455659+00:00",
+  "workspace": "/var/folders/pb/62gd1c2x37q6pr4lqr3tvx9c0000gn/T/formation-sqlite-contact-4_lz4drf",
+  "workspace_was_empty": true
+}

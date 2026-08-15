@@ -213,8 +213,10 @@ The independently chartered successor is the
 integer scoring as a predeclared behavioral contrast under ambiguous wording,
 not as proof of an irrational model error. Raw persistence may win across three
 integer-shaped and two boolean-shaped fresh tasks. The restricted runner passed
-the combined 198-test suite and two independent reviews. Participant contact is
-the next bounded action.
+the combined 198-test suite and two independent reviews. Contact then stopped
+`not_engaged`: all three cold implementations passed all 24 exploration inputs,
+so no lesson or validation call ran. The next contact must be independently
+chartered; this run may not be extended or replaced after the stop.
 
 ## Phase 1 — build the two-loop framework
 
