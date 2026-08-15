@@ -1,7 +1,7 @@
 # Paired structured-output interface trial
 
-Status: **cold-reviewed pre-contact protocol; runner implementation is not yet
-licensed and no model call is licensed**.
+Status: **cold-reviewed pre-contact protocol; runner licensed; model contact
+not yet run**.
 
 ## Purpose
 
@@ -397,5 +397,6 @@ between calls, if a failed call stops its pair, if the scorer trusts provider
 metadata instead of visible content, or if a pair transition is described as
 learning.
 
-Independent cold review returned `INTERFACE_PROTOCOL_STABLE`. No call is
-licensed until an independently reviewed fake-tested runner is licensed.
+Independent cold review returned `INTERFACE_PROTOCOL_STABLE`. The separate
+runner passed 13 fake-contact tests and the combined 239-test suite. Independent
+runner review returned `RUNNER_LICENSED`; the eight logical calls are licensed.

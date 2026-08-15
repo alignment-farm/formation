@@ -372,7 +372,9 @@ both the bare interface and a shape-only JSON grammar, then scores valid
 structure separately from a correct value. The grammar carries no answer list,
 length, pattern, or numeric bound. The protocol received
 `INTERFACE_PROTOCOL_STABLE`; no model call is licensed until its separate
-runner passes fake-contact tests and cold review.
+runner passes fake-contact tests and cold review. That runner now passes 13
+focused tests and the combined 239-test suite, and independent review returned
+`RUNNER_LICENSED`. The eight logical calls are licensed but not yet run.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

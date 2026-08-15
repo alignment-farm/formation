@@ -34,3 +34,9 @@ The fifth runner implements the
 screens exact 270M and 1B artifacts on four JSON computations before either can
 earn a full admission packet. It scores only provider message content, never
 reasoning text, and its tests use fake envelopes.
+
+The sixth runner implements the
+[paired structured-output interface trial](../docs/STRUCTURED_OUTPUT_INTERFACE_TRIAL.md).
+It sends fresh tasks through bare and shape-only JSON-schema conditions, checks
+that `response_format` is the sole request difference, and classifies structure
+separately from answer correctness. Its tests spend no model-call budget.

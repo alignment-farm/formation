@@ -277,7 +277,9 @@ requests on two fresh tasks per model, keeps structure and answer correctness
 separate, and treats its four pair transitions as observations rather than
 learning or schedule-controlled effects. Independent review returned
 `INTERFACE_PROTOCOL_STABLE`. Runner implementation and fake-contact licensing
-come next; model contact remains unlicensed.
+then passed 13 focused tests and the combined 239-test suite. Independent
+review returned `RUNNER_LICENSED`; the eight logical calls are licensed but not
+yet run.
 
 ## Phase 1 — build the two-loop framework
 
