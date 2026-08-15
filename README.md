@@ -102,9 +102,9 @@ New trajectory experiments and formation-runtime code belong here.
 
 ## Present state
 
-No formation effect has been earned. What exists today is a reviewed semantic
-boundary plus a few fixture-local code slices that prove identity and
-separation plumbing for one deterministic scenario.
+No formation effect has been earned. What exists today is a reviewed account
+of what the system may do, plus five small code slices that prove identity and
+role separation in one deterministic scenario.
 
 The Phase 0 packet —
 [concept](docs/CONCEPT.md), [authority](docs/AUTHORITY.md),
@@ -115,8 +115,17 @@ readers from two model families reconstructed one compatible semantic object
 from that packet. Agreement on meaning closed the semantic gate. It did not
 select a machine schema or prove any developmental effect.
 
-Code begins only where the fixture needs exact bytes or typed capabilities.
-Five fixture-local slices are implemented and tested:
+Markdown serves as a semantic prototype here. It states who may decide what,
+what must be recorded, what must be refused, and what result would prove the
+account wrong. Independent readers then reconstruct the implied system without
+seeing an implementation. Their disagreements expose missing or contradictory
+rules before code turns those rules into incidental architecture. Code begins
+only when the fixture needs a machine to compute identity, validation, or an
+exchange between components.
+
+The current code uses exact bytes where byte equality matters and typed objects
+where equal-looking data must not be allowed to substitute for its source or
+authority. Five fixture-local slices are implemented and tested:
 
 1. [Shared acquisition prefix](docs/MATERIALIZATION.md). Every fork starts from
    the same six developmental records as exact bytes with a content binding.
@@ -144,14 +153,15 @@ These slices establish local identity, authority separation, and provenance
 checks. They do not establish learning, transfer, governance effectiveness, or
 any formation claim.
 
-Several later fixture meanings are closed in Markdown and not yet coded as
-general mechanisms. Proposal and admission receipt bytes remain unselected.
-Replay exclusion forbids answering from a target key without reading lineage,
-but the fixed graph still does not force a general traversal architecture, so
-no replay schema is licensed. Activation identity requires the exact admitted
-lineage object to be considered, selected, handed off once, and consumed in the
-model request; withheld paths carry no intervention, and no activation schema
-is licensed.
+Some later steps are precise enough to describe but have not earned code.
+Proposal and admission records do not yet need a byte format. Constrained
+replay must derive its result from the preserved dependency history rather than
+return a prepared answer for a known target. But one fixed example cannot show
+whether code performs a general dependency traversal or merely validates that
+example, so the project has not selected replay code or a replay schema.
+Likewise, selective activation must carry the exact admitted change into one
+model request and remain absent from withheld paths. Those same-runtime
+identity checks still do not require an activation format.
 
 Shared foreground delivery is now implemented. Independent review rejected two
 green intermediate builds. The first could repeat or alter authority outside
@@ -173,14 +183,13 @@ consequence-governed formation from raw episodic recall and authored lessons.
 
 ## Project map
 
-
-| Place                                 | Responsibility                                                                                               |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| [docs/](docs/README.md)               | Concept, research program, and implementation boundary                                                       |
-| `[formation/](formation/README.md)`   | Runtime-owned fixture producers, constraint binding, and foreground consumption; not yet a general runtime   |
-| `[trajectory/](trajectory/README.md)` | Harness-owned fixture validation, assignment, provenance, and witness checks; not yet a general harness      |
-| `[tests/](tests/README.md)`           | Deterministic contract and separation tests                                                                  |
-| `evidence/`                           | Future primary trajectories and computed verdicts, never hand-written claims                                 |
+| Place | Responsibility |
+| --- | --- |
+| [docs/](docs/README.md) | Concept, research program, and implementation boundary |
+| [formation/](formation/README.md) | Runtime-owned fixture producers, constraint binding, and foreground consumption; not yet a general runtime |
+| [trajectory/](trajectory/README.md) | Harness-owned fixture validation, assignment, provenance, and witness checks; not yet a general harness |
+| [tests/](tests/README.md) | Deterministic contract and separation tests |
+| `evidence/` | Future primary trajectories and computed verdicts, never hand-written claims |
 
 ## Evidence and authority
 
