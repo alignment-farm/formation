@@ -74,6 +74,8 @@ Stop when the task's scope and authority are clear.
   occurrence intervals without interpretation or applicability claims.
 - `docs/MICRO_ENVIRONMENT_CHARTER.md` owns the pre-contact computational
   specimen that must distinguish state-dependent execution from action lookup.
+- `docs/SQLITE_CONTACT_CHARTER.md` owns the first cold-model baseline contact
+  with SQLite and its frozen engagement, persistence, and stopping rules.
 - `docs/PLAN.md` owns staged milestones and stopping conditions.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing

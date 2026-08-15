@@ -351,6 +351,11 @@ test oracle. The repaired 15-test slice and combined 177-test suite pass final
 review after closing five test-evidence gaps. Lifecycle integration remains
 outside that license, and the specimen's stopping condition is met.
 
+The [SQLite contact charter](SQLITE_CONTACT_CHARTER.md) closes the first model-
+contact semantics without claiming formation. Two cold reconstructions agree
+on exact prompts, baseline offers, executable scoring, and stopping. A small
+receipt-producing runner is the only work licensed before participant contact.
+
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not
 license byte exchange, per-event digests, hash chains, clocks, or a universal

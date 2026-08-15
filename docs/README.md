@@ -29,6 +29,7 @@ root [README](../README.md).
 | How does the runtime retain those environment results without interpreting or scoring them? | [CONSEQUENCE_INTAKE.md](CONSEQUENCE_INTAKE.md) |
 | How are those positive occurrence intervals closed without turning storage into learning? | [EXPERIENCE_CLOSURE.md](EXPERIENCE_CLOSURE.md) |
 | What bounded computation must precede contact with a persistence baseline? | [MICRO_ENVIRONMENT_CHARTER.md](MICRO_ENVIRONMENT_CHARTER.md) |
+| How does the first cold-model contact test nullable SQLite anti-joins and simpler persistence? | [SQLITE_CONTACT_CHARTER.md](SQLITE_CONTACT_CHARTER.md) |
 
 These documents are pre-evidence. They constrain future work but establish no
 formation finding.

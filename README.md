@@ -279,6 +279,13 @@ test evidence before the repaired 15-test slice and combined 177-test suite
 passed final recheck. This does not license environment lifecycle plumbing or a
 formation claim, and the specimen will not be expanded.
 
+The first [cold-model contact charter](docs/SQLITE_CONTACT_CHARTER.md) is now
+semantically stable. It freezes Composer 2.5, three exploration calls, five
+unseen SQLite tasks, cold/raw/authored-lesson offers, executable scoring, and a
+nineteen-call ceiling. Raw persistence is allowed to win; a not-engaged cold
+model stops the contact. No participant call occurs until the exact runner is
+implemented and reviewed.
+
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone

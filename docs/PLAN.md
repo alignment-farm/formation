@@ -195,6 +195,12 @@ engine. That engine now passes its repaired 15-test slice and final independent
 review. The next work must move toward contact where ordinary persistence is
 allowed to win; this specimen is closed.
 
+The first move toward contact is now frozen in the
+[SQLite contact charter](SQLITE_CONTACT_CHARTER.md). It is baseline calibration,
+not a governed comparison: cold, raw persistence, and a model-authored lesson
+receive five prospective tasks only if three cold exploration calls engage the
+named failure. Runner review remains the final gate before contact.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence
