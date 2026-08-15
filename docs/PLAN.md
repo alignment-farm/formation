@@ -271,6 +271,14 @@ ask whether a declared grammar-constrained interface is useful. Such a
 constraint could remove fences, but the 1B payload shows that it would not by
 itself correct the computed answer.
 
+The resulting [paired interface trial](STRUCTURED_OUTPUT_INTERFACE_TRIAL.md)
+is now frozen and cold-reviewed. It compares bare and shape-only JSON-schema
+requests on two fresh tasks per model, keeps structure and answer correctness
+separate, and treats its four pair transitions as observations rather than
+learning or schedule-controlled effects. Independent review returned
+`INTERFACE_PROTOCOL_STABLE`. Runner implementation and fake-contact licensing
+come next; model contact remains unlicensed.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence

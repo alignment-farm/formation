@@ -366,6 +366,14 @@ charter under the bare text interface. A later packet may separately test a
 grammar-constrained JSON interface. That could remove fences, but the 1B
 payload shows it would not by itself supply the missing computed record.
 
+That bounded [paired interface trial](docs/STRUCTURED_OUTPUT_INTERFACE_TRIAL.md)
+is now frozen and cold-reviewed. It gives each checkpoint two fresh tasks under
+both the bare interface and a shape-only JSON grammar, then scores valid
+structure separately from a correct value. The grammar carries no answer list,
+length, pattern, or numeric bound. The protocol received
+`INTERFACE_PROTOCOL_STABLE`; no model call is licensed until its separate
+runner passes fake-contact tests and cold review.
+
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone
