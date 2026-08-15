@@ -1,7 +1,7 @@
 # Small-model structured-action staircase
 
-Status: **contact-ready screen; independently reviewed runner licensed; no
-model call made**.
+Status: **contact complete; both models validly stopped
+`contract_unreliable` at task 1**.
 
 ## Purpose
 
@@ -316,5 +316,7 @@ reused in a promoted packet.
 
 Independent cold review returned `STAIRCASE_PROTOCOL_STABLE`. The runner then
 passed nine fake-contact tests and independent review returned
-`RUNNER_LICENSED`. Contact must use that frozen runner without editing this
-packet.
+`RUNNER_LICENSED`. In contact, both models returned Markdown fences at task 1.
+The 270M model returned Python instead of JSON. The 1B model returned a JSON
+array with the wrong shape and omitted one required label. Both immediate
+`contract_unreliable` stops passed independent audit as `EVIDENCE_VALID`.

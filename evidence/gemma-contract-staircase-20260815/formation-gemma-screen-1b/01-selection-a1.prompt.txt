@@ -1,0 +1,6 @@
+Compute the requested result from this JSON input:
+{"records":[{"label":"cove","kept":false},{"label":"brim","kept":true},{"label":"dawn","kept":true}]}
+
+Return the labels whose kept value is true, sorted alphabetically.
+Return exactly one JSON object with the single key "answer". Its value must be a JSON array of strings. Return no prose or Markdown fence.
+Your complete response has a limit of 256 tokens.

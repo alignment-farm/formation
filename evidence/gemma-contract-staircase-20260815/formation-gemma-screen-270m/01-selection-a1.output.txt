@@ -1,0 +1,8 @@
+```python
+data = {"records":[{"label":"cove","kept":false},{"label":"brim","kept":true},{"label":"dawn","kept":true}]}
+result = []
+for record in data["records"]:
+    if record["kept"]:
+        result.append(record["label"])
+print(result)
+```

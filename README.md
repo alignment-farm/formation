@@ -355,8 +355,16 @@ instruction-tuned 270M and 1B checkpoints on four fresh JSON computations. It
 asks only whether each model can read supplied state, compute a result, and
 return one exact machine-readable action. Passing would earn a new admission
 charter, not admission itself. The separate runner passed nine fake-contact
-tests and the combined 226-test suite, then received `RUNNER_LICENSED`. No
-staircase call has been made.
+tests and the combined 226-test suite, then received `RUNNER_LICENSED`.
+
+Both Gemma checkpoints stopped at task 1. The 270M model returned fenced Python
+instead of JSON. The 1B model returned a fenced array, omitted the required
+object, and selected only one of two records. The
+[retained screen](evidence/gemma-contract-staircase-20260815/README.md) passed
+independent audit as `EVIDENCE_VALID`. Neither model earns a full admission
+charter under the bare text interface. A later packet may separately test a
+grammar-constrained JSON interface. That could remove fences, but the 1B
+payload shows it would not by itself supply the missing computed record.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

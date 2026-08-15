@@ -259,7 +259,17 @@ The next pre-contact packet is a bounded
 another source-code gate. Passing only earns a full admission charter; it does
 not establish teachable headroom. Exact Q4_0 artifacts and their shared chat
 template are frozen. The runner passed nine fake-contact tests and the combined
-226-test suite, then received `RUNNER_LICENSED`. No staircase call has occurred.
+226-test suite, then received `RUNNER_LICENSED`.
+
+Both staircase models then stopped at task 1. The 270M model returned fenced
+Python rather than the requested JSON action. The 1B model returned a fenced
+array with the wrong shape and only one of the two required labels. Both
+responses ended normally within the declared token limit, and independent
+audit returned `EVIDENCE_VALID`. Neither checkpoint earns a full admission
+charter under the bare text interface. A separate pre-contact decision can now
+ask whether a declared grammar-constrained interface is useful. Such a
+constraint could remove fences, but the 1B payload shows that it would not by
+itself correct the computed answer.
 
 ## Phase 1 — build the two-loop framework
 
