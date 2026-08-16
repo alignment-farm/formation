@@ -93,6 +93,8 @@ Stop when the task's scope and authority are clear.
   action screen that precedes any new full admission packet.
 - `docs/STRUCTURED_OUTPUT_INTERFACE_TRIAL.md` owns the paired bare-versus-
   grammar-constrained JSON trial after that screen.
+- `docs/GRANITE_COMPUTATION_GATE.md` owns the next candidate's four-call
+  constrained computation gate.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
   findings and explanations.

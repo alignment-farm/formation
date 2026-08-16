@@ -285,6 +285,13 @@ was valid JSON with a wrong value. All four pair labels were
 isolates an interface repair from a computation repair; it is not admission or
 Formation evidence.
 
+Candidate selection now proceeds one checkpoint at a time. The exact local
+Granite 4.0 H Tiny artifact is first because it is the smallest untested
+text-only candidate already present. Its [four-call gate](GRANITE_COMPUTATION_GATE.md)
+uses fresh constrained computations and requires 4/4 exact answers merely to
+earn a full admission charter. Cold review returned `GRANITE_GATE_STABLE`;
+runner implementation remains pending and no contact is licensed.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence

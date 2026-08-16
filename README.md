@@ -384,6 +384,14 @@ passed independent audit as `EVIDENCE_VALID`. This is evidence that the
 constraint repaired the reply container in these cases, not the computation
 inside it.
 
+The next candidate is the exact local Granite 4.0 H Tiny artifact, selected as
+the smallest untested text-only checkpoint already present. Its
+[four-call computation gate](docs/GRANITE_COMPUTATION_GATE.md) uses the fixed
+JSON action surface on fresh filtering, ordered-update, revision, and graph
+tasks. A strict 4/4 pass only earns a later admission charter. Cold review
+returned `GRANITE_GATE_STABLE`; runner implementation and contact remain
+unlicensed.
+
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone

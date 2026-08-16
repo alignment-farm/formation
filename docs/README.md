@@ -37,6 +37,7 @@ root [README](../README.md).
 | Which exact prompts, inputs, class labels, and call order govern that successor? | [NEMOTRON_ADMISSION_SUCCESSOR_VECTORS.md](NEMOTRON_ADMISSION_SUCCESSOR_VECTORS.md) |
 | Can either of two much smaller Gemma models reliably return basic computed JSON before a full admission packet is authored? | [GEMMA_CONTRACT_STAIRCASE.md](GEMMA_CONTRACT_STAIRCASE.md) |
 | Does a declared JSON-schema constraint remove formatting failures without being mistaken for correct computation? | [STRUCTURED_OUTPUT_INTERFACE_TRIAL.md](STRUCTURED_OUTPUT_INTERFACE_TRIAL.md) |
+| Can the exact local Granite candidate clear four fresh constrained computation anchors before a full admission charter is written? | [GRANITE_COMPUTATION_GATE.md](GRANITE_COMPUTATION_GATE.md) |
 | Which exact inputs and results score that coding contact? | [PYTHON_BOUNDARY_CONTACT_VECTORS.md](PYTHON_BOUNDARY_CONTACT_VECTORS.md) |
 
 These documents are pre-evidence. They constrain future work but establish no
