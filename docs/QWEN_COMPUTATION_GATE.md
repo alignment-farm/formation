@@ -1,7 +1,7 @@
 # Qwen computation gate
 
-Status: **cold-reviewed pre-contact protocol; runner and model contact not yet
-licensed**.
+Status: **cold-reviewed pre-contact protocol; runner licensed; model contact
+not yet run**.
 
 ## Decision and ancestry
 
@@ -253,4 +253,6 @@ No inference call is licensed until cold review returns one stable protocol and
 an independently reviewed fake-tested runner is licensed.
 
 Independent cold review returned `QWEN_GATE_STABLE`. Runner implementation and
-its separate license remain pending.
+its 9-test fake-contact slice pass with the combined 258-test suite.
+Independent runner review returned `RUNNER_LICENSED`; exactly four inference
+calls are licensed.

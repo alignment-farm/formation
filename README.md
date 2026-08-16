@@ -406,8 +406,10 @@ The next candidate is the installed Qwen 3.5 9B MLX package. Its
 families chosen before Granite contact while replacing every input and answer.
 The protocol binds all package and LM Studio hub-control files, records the
 actual 262,144-token multimodal load, permits text strings only, and discloses
-default thinking. Cold review returned `QWEN_GATE_STABLE`; runner and contact
-remain unlicensed.
+default thinking. Cold review returned `QWEN_GATE_STABLE`. The separate runner
+now passes 9 focused tests and the
+combined 258-test suite. Independent review returned `RUNNER_LICENSED`;
+exactly four calls are licensed but not yet run.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

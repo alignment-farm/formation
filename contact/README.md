@@ -45,3 +45,7 @@ The seventh runner implements the
 [Granite computation gate](../docs/GRANITE_COMPUTATION_GATE.md). It tests one
 exact text-only artifact on four fresh constrained computations. Passing only
 earns a later admission charter; its tests use fake envelopes.
+
+The eighth runner implements the [Qwen computation gate](../docs/QWEN_COMPUTATION_GATE.md).
+It binds a complete MLX package plus hub thinking controls, permits only text
+strings on the multimodal request surface, and uses fresh fake-tested tasks.

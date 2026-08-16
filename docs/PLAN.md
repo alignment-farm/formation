@@ -302,8 +302,9 @@ That successor is the exact installed Qwen 3.5 9B MLX package. Its
 before Granite contact but fresh inputs and answers. It binds the complete MLX
 package and hub controls, accepts the actual multimodal 262,144-token load while
 permitting text strings only, and freezes default thinking plus content-only
-scoring. Cold review returned `QWEN_GATE_STABLE`; runner implementation remains
-pending and no inference call is licensed.
+scoring. Cold review returned `QWEN_GATE_STABLE`. The runner now passes 9 focused
+tests and the combined 258-test suite. Independent review returned
+`RUNNER_LICENSED`; exactly four calls are licensed but not yet run.
 
 ## Phase 1 — build the two-loop framework
 
