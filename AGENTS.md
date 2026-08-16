@@ -95,6 +95,8 @@ Stop when the task's scope and authority are clear.
   grammar-constrained JSON trial after that screen.
 - `docs/GRANITE_COMPUTATION_GATE.md` owns the next candidate's four-call
   constrained computation gate.
+- `docs/QWEN_COMPUTATION_GATE.md` owns the fresh successor gate for the exact
+  installed Qwen 3.5 9B MLX package.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
   findings and explanations.

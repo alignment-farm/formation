@@ -401,6 +401,14 @@ revision, and crossed into an unreachable graph branch. The
 independent audit as `EVIDENCE_VALID`. This exact Granite setup closes
 `computation_unreliable` and does not earn an admission charter.
 
+The next candidate is the installed Qwen 3.5 9B MLX package. Its
+[fresh computation gate](docs/QWEN_COMPUTATION_GATE.md) retains the four task
+families chosen before Granite contact while replacing every input and answer.
+The protocol binds all package and LM Studio hub-control files, records the
+actual 262,144-token multimodal load, permits text strings only, and discloses
+default thinking. Cold review returned `QWEN_GATE_STABLE`; runner and contact
+remain unlicensed.
+
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
 pretending the candidate is learned or useful. The first experimental milestone

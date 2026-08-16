@@ -297,6 +297,14 @@ Independent audit returned `EVIDENCE_VALID`; this exact Granite setup closes
 `computation_unreliable` and does not earn an admission charter. Candidate
 selection may now move to a separately frozen checkpoint.
 
+That successor is the exact installed Qwen 3.5 9B MLX package. Its
+[computation gate](QWEN_COMPUTATION_GATE.md) uses the same four families fixed
+before Granite contact but fresh inputs and answers. It binds the complete MLX
+package and hub controls, accepts the actual multimodal 262,144-token load while
+permitting text strings only, and freezes default thinking plus content-only
+scoring. Cold review returned `QWEN_GATE_STABLE`; runner implementation remains
+pending and no inference call is licensed.
+
 ## Phase 1 — build the two-loop framework
 
 Goal: make practice and formation traversable while keeping all intelligence
