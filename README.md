@@ -390,7 +390,9 @@ the smallest untested text-only checkpoint already present. Its
 JSON action surface on fresh filtering, ordered-update, revision, and graph
 tasks. A strict 4/4 pass only earns a later admission charter. Cold review
 returned `GRANITE_GATE_STABLE`; runner implementation and contact remain
-unlicensed.
+unlicensed. The runner now passes 10 focused tests and the combined 249-test
+suite. Independent review returned `RUNNER_LICENSED`; exactly four calls are
+licensed but not yet run.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

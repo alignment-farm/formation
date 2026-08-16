@@ -40,3 +40,8 @@ The sixth runner implements the
 It sends fresh tasks through bare and shape-only JSON-schema conditions, checks
 that `response_format` is the sole request difference, and classifies structure
 separately from answer correctness. Its tests spend no model-call budget.
+
+The seventh runner implements the
+[Granite computation gate](../docs/GRANITE_COMPUTATION_GATE.md). It tests one
+exact text-only artifact on four fresh constrained computations. Passing only
+earns a later admission charter; its tests use fake envelopes.

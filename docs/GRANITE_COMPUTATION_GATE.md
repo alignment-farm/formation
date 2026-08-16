@@ -1,7 +1,7 @@
 # Granite computation gate
 
-Status: **cold-reviewed pre-contact protocol; runner and model contact not yet
-licensed**.
+Status: **cold-reviewed pre-contact protocol; runner licensed; model contact
+not yet run**.
 
 ## Decision
 
@@ -310,4 +310,5 @@ No call is licensed until independent cold review returns one stable protocol
 and an independently reviewed fake-tested runner is licensed.
 
 Independent cold review returned `GRANITE_GATE_STABLE`. Runner implementation
-and its separate license remain pending.
+then passed 10 fake-contact tests and the combined 249-test suite. Independent
+runner review returned `RUNNER_LICENSED`; exactly four calls are licensed.

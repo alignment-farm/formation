@@ -290,7 +290,9 @@ Granite 4.0 H Tiny artifact is first because it is the smallest untested
 text-only candidate already present. Its [four-call gate](GRANITE_COMPUTATION_GATE.md)
 uses fresh constrained computations and requires 4/4 exact answers merely to
 earn a full admission charter. Cold review returned `GRANITE_GATE_STABLE`;
-runner implementation remains pending and no contact is licensed.
+the runner then passed 10 focused tests and the combined 249-test suite.
+Independent review returned `RUNNER_LICENSED`; exactly four calls are licensed
+but not yet run.
 
 ## Phase 1 — build the two-loop framework
 
