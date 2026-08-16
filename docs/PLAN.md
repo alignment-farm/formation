@@ -291,8 +291,11 @@ text-only candidate already present. Its [four-call gate](GRANITE_COMPUTATION_GA
 uses fresh constrained computations and requires 4/4 exact answers merely to
 earn a full admission charter. Cold review returned `GRANITE_GATE_STABLE`;
 the runner then passed 10 focused tests and the combined 249-test suite.
-Independent review returned `RUNNER_LICENSED`; exactly four calls are licensed
-but not yet run.
+Independent review returned `RUNNER_LICENSED`; exactly four calls were licensed
+under the frozen gate. All four then completed with valid JSON and wrong answers.
+Independent audit returned `EVIDENCE_VALID`; this exact Granite setup closes
+`computation_unreliable` and does not earn an admission charter. Candidate
+selection may now move to a separately frozen checkpoint.
 
 ## Phase 1 — build the two-loop framework
 

@@ -1,0 +1,197 @@
+{
+  "abort_reason": null,
+  "artifact_verification": {
+    "byte_count": 4230975936,
+    "path": "/Users/macos-user/.lmstudio/models/lmstudio-community/granite-4.0-h-tiny-GGUF/granite-4.0-h-tiny-Q4_K_M.gguf",
+    "sha256": "064bea0136420b38d0b65697fa5e772e28b112eee1757aacc7f64eba6bf37810",
+    "template_characters": 6099,
+    "template_sha256": "fed2756d2d24e127b951dcf139d0b03ab7db8ef23a456128ebc9c2db4901d476"
+  },
+  "calls": [
+    {
+      "call_id": "filtered_ordering",
+      "call_label": "wrong_answer",
+      "call_state": "valid_wrong",
+      "condition": "constrained",
+      "decoded_answer": [
+        "maple",
+        "ash",
+        "birch"
+      ],
+      "gate_refusal": null,
+      "logical_index": 1,
+      "oracle_answer": [
+        "ash",
+        "maple"
+      ],
+      "seed": 5001,
+      "task_id": "filtered_ordering"
+    },
+    {
+      "call_id": "ordered_operations",
+      "call_label": "wrong_answer",
+      "call_state": "valid_wrong",
+      "condition": "constrained",
+      "decoded_answer": 10,
+      "gate_refusal": null,
+      "logical_index": 2,
+      "oracle_answer": 17,
+      "seed": 5002,
+      "task_id": "ordered_operations"
+    },
+    {
+      "call_id": "latest_enabled_revisions",
+      "call_label": "wrong_answer",
+      "call_state": "valid_wrong",
+      "condition": "constrained",
+      "decoded_answer": [
+        "oak",
+        "pine"
+      ],
+      "gate_refusal": null,
+      "logical_index": 3,
+      "oracle_answer": [
+        "oak"
+      ],
+      "seed": 5003,
+      "task_id": "latest_enabled_revisions"
+    },
+    {
+      "call_id": "dependency_reachability",
+      "call_label": "wrong_answer",
+      "call_state": "valid_wrong",
+      "condition": "constrained",
+      "decoded_answer": [
+        "clay",
+        "fuel",
+        "kiln",
+        "mold",
+        "sand"
+      ],
+      "gate_refusal": null,
+      "logical_index": 4,
+      "oracle_answer": [
+        "clay",
+        "fuel",
+        "kiln",
+        "mold"
+      ],
+      "seed": 5004,
+      "task_id": "dependency_reachability"
+    }
+  ],
+  "candidate_result": "computation_unreliable",
+  "evidence_class": "exploratory_only",
+  "model": {
+    "byte_count": 4230975936,
+    "live_identifier": "formation-granite-computation-gate",
+    "model_key": "ibm/granite-4-h-tiny",
+    "name": "Granite 4.0 H Tiny",
+    "relative_file": "lmstudio-community/granite-4.0-h-tiny-GGUF/granite-4.0-h-tiny-Q4_K_M.gguf",
+    "selected_variant": "ibm/granite-4-h-tiny@q4_k_m",
+    "sha256": "064bea0136420b38d0b65697fa5e772e28b112eee1757aacc7f64eba6bf37810",
+    "template_characters": 6099,
+    "template_sha256": "fed2756d2d24e127b951dcf139d0b03ab7db8ef23a456128ebc9c2db4901d476"
+  },
+  "packet_receipt": {
+    "adapter_attached": false,
+    "artifact_verification": {
+      "byte_count": 4230975936,
+      "path": "/Users/macos-user/.lmstudio/models/lmstudio-community/granite-4.0-h-tiny-GGUF/granite-4.0-h-tiny-Q4_K_M.gguf",
+      "sha256": "064bea0136420b38d0b65697fa5e772e28b112eee1757aacc7f64eba6bf37810",
+      "template_characters": 6099,
+      "template_sha256": "fed2756d2d24e127b951dcf139d0b03ab7db8ef23a456128ebc9c2db4901d476"
+    },
+    "cli_version": "CLI commit: 71bd99c",
+    "history_reuse": false,
+    "load": {
+      "command": [
+        "lms",
+        "load",
+        "ibm/granite-4-h-tiny",
+        "--gpu",
+        "max",
+        "--context-length",
+        "8192",
+        "--parallel",
+        "1",
+        "--no-speculative-draft-mtp",
+        "--identifier",
+        "formation-granite-computation-gate",
+        "-y"
+      ],
+      "exit_code": 0,
+      "instance": {
+        "architecture": "granitehybrid",
+        "contextLength": 8192,
+        "deviceIdentifier": null,
+        "displayName": "Granite 4 H Tiny",
+        "format": "gguf",
+        "identifier": "formation-granite-computation-gate",
+        "indexedModelIdentifier": "ibm/granite-4-h-tiny",
+        "lastUsedTime": 1786839431442,
+        "maxContextLength": 1048576,
+        "modelKey": "ibm/granite-4-h-tiny",
+        "parallel": 1,
+        "paramsString": "7B",
+        "path": "ibm/granite-4-h-tiny",
+        "publisher": "ibm",
+        "quantization": {
+          "bits": 4,
+          "name": "Q4_K_M"
+        },
+        "queued": 0,
+        "selectedVariant": "ibm/granite-4-h-tiny@q4_k_m",
+        "sizeBytes": 4231029544,
+        "status": "idle",
+        "trainedForToolUse": true,
+        "ttlMs": null,
+        "type": "llm",
+        "variants": [
+          "ibm/granite-4-h-tiny@q4_k_m"
+        ],
+        "vision": false
+      },
+      "stderr": "Model loaded successfully in 798.00ms.\n(3.94 GiB)\nTo use the model in the API/SDK, use the identifier \"formation-granite-computation-gate\".\n",
+      "stdout": "\u001b[?25l\nLoading ibm/granite-4-h-tiny 0% \u280b\u001b[?25l\nLoading ibm/granite-4-h-tiny 0% \u2819\u001b[?25l\nLoading ibm/granite-4-h-tiny 2% \u2819\u001b[?25l\nLoading ibm/granite-4-h-tiny 2% \u2839\u001b[?25l\nLoading ibm/granite-4-h-tiny 2% \u2838\u001b[?25l\nLoading ibm/granite-4-h-tiny 4% \u2838\u001b[?25l\nLoading ibm/granite-4-h-tiny 4% \u283c\u001b[?25l\nLoading ibm/granite-4-h-tiny 4% \u2834\u001b[?25l\nLoading ibm/granite-4-h-tiny 6% \u2834\u001b[?25l\nLoading ibm/granite-4-h-tiny 6% \u2826\u001b[?25l\nLoading ibm/granite-4-h-tiny 7% \u2826\u001b[?25l\nLoading ibm/granite-4-h-tiny 7% \u2827\u001b[?25l\nLoading ibm/granite-4-h-tiny 7% \u2807\u001b[?25l\nLoading ibm/granite-4-h-tiny 9% \u2807\u001b[?25l\nLoading ibm/granite-4-h-tiny 9% \u280f\u001b[?25l\nLoading ibm/granite-4-h-tiny 100% \u280f\n\u001b[K\u001b[?25h"
+    },
+    "model": {
+      "byte_count": 4230975936,
+      "live_identifier": "formation-granite-computation-gate",
+      "model_key": "ibm/granite-4-h-tiny",
+      "name": "Granite 4.0 H Tiny",
+      "relative_file": "lmstudio-community/granite-4.0-h-tiny-GGUF/granite-4.0-h-tiny-Q4_K_M.gguf",
+      "selected_variant": "ibm/granite-4-h-tiny@q4_k_m",
+      "sha256": "064bea0136420b38d0b65697fa5e772e28b112eee1757aacc7f64eba6bf37810",
+      "template_characters": 6099,
+      "template_sha256": "fed2756d2d24e127b951dcf139d0b03ab7db8ef23a456128ebc9c2db4901d476"
+    },
+    "projector_attached": false,
+    "runtime_inventory": "LLM ENGINE                                            SELECTED    MODEL FORMAT\nexecutorch-asr-mac-arm64-apple-metal-advsimd@0.0.8       \u2713            PTE     \nllama.cpp-mac-arm64-apple-metal-advsimd@2.28.2           \u2713            GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.1                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.0                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.25.2                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.24.0                        GGUF    \nmlx-llm-mac-arm64-apple-metal-advsimd@1.11.0             \u2713            MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.1                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.0                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.9.1                           MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.8.5                           MLX     \n",
+    "sampling_without_seed": {
+      "frequency_penalty": 0,
+      "max_tokens": 256,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "stream": false,
+      "temperature": 0.2,
+      "top_k": 40,
+      "top_p": 0.95
+    },
+    "server": {
+      "command": [
+        "lms",
+        "server",
+        "start"
+      ],
+      "exit_code": 0,
+      "stderr": "Success! Server is now running on port 1234\n",
+      "stdout": ""
+    },
+    "speculative_decoding": false,
+    "text_only": true,
+    "tools": false
+  },
+  "packet_status": "complete",
+  "protocol": "granite-computation-gate-v0"
+}

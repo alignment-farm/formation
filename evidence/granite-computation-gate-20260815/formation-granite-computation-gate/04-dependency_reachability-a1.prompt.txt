@@ -1,0 +1,6 @@
+Compute the requested result from this JSON input:
+{"start":["forge"],"dependencies":{"forge":["kiln","mold"],"kiln":["fuel"],"mold":["clay","fuel"],"fuel":[],"clay":[],"unused":["sand"],"sand":[]}}
+
+Starting from every name in start, repeatedly follow dependencies. Return every reachable dependency, but do not include the starting names. Include each name once and sort the result alphabetically. Do not follow entries that are not reachable from start.
+Return exactly one JSON object with the single key "answer". Its value must be a JSON array of strings. Return no prose or Markdown fence.
+Your complete response has a limit of 256 tokens.

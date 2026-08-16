@@ -1,0 +1,6 @@
+Compute the requested result from this JSON input:
+{"start":9,"operations":[{"kind":"add","value":5},{"kind":"triple"},{"kind":"subtract","value":8},{"kind":"halve"}]}
+
+Begin with start. Apply the operations from left to right. Add increases the current value, triple multiplies it by 3, subtract removes value, and halve divides the current value by 2. All intermediate and final values in this input are integers. Return the final integer.
+Return exactly one JSON object with the single key "answer". Return no prose or Markdown fence.
+Your complete response has a limit of 256 tokens.

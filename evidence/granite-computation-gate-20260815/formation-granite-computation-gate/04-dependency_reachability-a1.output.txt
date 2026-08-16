@@ -1,0 +1,9 @@
+{
+  "answer": [
+    "clay",
+    "fuel",
+    "kiln",
+    "mold",
+    "sand"
+  ]
+}

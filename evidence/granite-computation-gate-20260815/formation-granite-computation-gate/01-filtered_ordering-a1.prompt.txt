@@ -1,0 +1,6 @@
+Compute the requested result from this JSON input:
+{"jobs":[{"id":"maple","ready":true,"priority":3},{"id":"cedar","ready":false,"priority":9},{"id":"ash","ready":true,"priority":5},{"id":"birch","ready":true,"priority":1}]}
+
+Return the ids of jobs whose ready value is true and whose priority is at least 3. Sort by priority from highest to lowest, breaking ties alphabetically by id.
+Return exactly one JSON object with the single key "answer". Its value must be a JSON array of strings. Return no prose or Markdown fence.
+Your complete response has a limit of 256 tokens.

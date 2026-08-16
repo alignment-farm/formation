@@ -1,7 +1,6 @@
 # Granite computation gate
 
-Status: **cold-reviewed pre-contact protocol; runner licensed; model contact
-not yet run**.
+Status: **contact complete; independently audited `EVIDENCE_VALID`**.
 
 ## Decision
 
@@ -312,3 +311,7 @@ and an independently reviewed fake-tested runner is licensed.
 Independent cold review returned `GRANITE_GATE_STABLE`. Runner implementation
 then passed 10 fake-contact tests and the combined 249-test suite. Independent
 runner review returned `RUNNER_LICENSED`; exactly four calls are licensed.
+
+All four calls then completed without retry or abort. Every reply was valid
+JSON and every answer was wrong, producing `computation_unreliable` under the
+frozen all-four rule. Independent cold audit returned `EVIDENCE_VALID`.

@@ -1,0 +1,6 @@
+Compute the requested result from this JSON input:
+{"records":[{"name":"iris","revision":1,"enabled":true},{"name":"oak","revision":2,"enabled":true},{"name":"iris","revision":3,"enabled":false},{"name":"pine","revision":1,"enabled":true},{"name":"oak","revision":4,"enabled":true},{"name":"pine","revision":2,"enabled":false}]}
+
+For each name, select only its record with the greatest revision. Keep the name only when that selected record has enabled equal to true. Return the kept names sorted alphabetically.
+Return exactly one JSON object with the single key "answer". Its value must be a JSON array of strings. Return no prose or Markdown fence.
+Your complete response has a limit of 256 tokens.

@@ -1,0 +1,223 @@
+{
+  "attempt_index": 1,
+  "call_id": "dependency_reachability",
+  "call_label": "wrong_answer",
+  "call_state": "valid_wrong",
+  "condition": "constrained",
+  "decoded_answer": [
+    "clay",
+    "fuel",
+    "kiln",
+    "mold",
+    "sand"
+  ],
+  "elapsed_seconds": 0.4870014589978382,
+  "ended_at": "2026-08-16T00:17:13.132053+00:00",
+  "gate_refusal": null,
+  "live_identifier": "formation-granite-computation-gate",
+  "logical_index": 4,
+  "model_key": "ibm/granite-4-h-tiny",
+  "oracle_answer": [
+    "clay",
+    "fuel",
+    "kiln",
+    "mold"
+  ],
+  "output_sha256": "2d577447c536f9c2bba04f52afe7e3ea08786482eddd6f954498c564a1f51bd9",
+  "packet_receipt": {
+    "adapter_attached": false,
+    "artifact_verification": {
+      "byte_count": 4230975936,
+      "path": "/Users/macos-user/.lmstudio/models/lmstudio-community/granite-4.0-h-tiny-GGUF/granite-4.0-h-tiny-Q4_K_M.gguf",
+      "sha256": "064bea0136420b38d0b65697fa5e772e28b112eee1757aacc7f64eba6bf37810",
+      "template_characters": 6099,
+      "template_sha256": "fed2756d2d24e127b951dcf139d0b03ab7db8ef23a456128ebc9c2db4901d476"
+    },
+    "cli_version": "CLI commit: 71bd99c",
+    "history_reuse": false,
+    "load": {
+      "command": [
+        "lms",
+        "load",
+        "ibm/granite-4-h-tiny",
+        "--gpu",
+        "max",
+        "--context-length",
+        "8192",
+        "--parallel",
+        "1",
+        "--no-speculative-draft-mtp",
+        "--identifier",
+        "formation-granite-computation-gate",
+        "-y"
+      ],
+      "exit_code": 0,
+      "instance": {
+        "architecture": "granitehybrid",
+        "contextLength": 8192,
+        "deviceIdentifier": null,
+        "displayName": "Granite 4 H Tiny",
+        "format": "gguf",
+        "identifier": "formation-granite-computation-gate",
+        "indexedModelIdentifier": "ibm/granite-4-h-tiny",
+        "lastUsedTime": 1786839431442,
+        "maxContextLength": 1048576,
+        "modelKey": "ibm/granite-4-h-tiny",
+        "parallel": 1,
+        "paramsString": "7B",
+        "path": "ibm/granite-4-h-tiny",
+        "publisher": "ibm",
+        "quantization": {
+          "bits": 4,
+          "name": "Q4_K_M"
+        },
+        "queued": 0,
+        "selectedVariant": "ibm/granite-4-h-tiny@q4_k_m",
+        "sizeBytes": 4231029544,
+        "status": "idle",
+        "trainedForToolUse": true,
+        "ttlMs": null,
+        "type": "llm",
+        "variants": [
+          "ibm/granite-4-h-tiny@q4_k_m"
+        ],
+        "vision": false
+      },
+      "stderr": "Model loaded successfully in 798.00ms.\n(3.94 GiB)\nTo use the model in the API/SDK, use the identifier \"formation-granite-computation-gate\".\n",
+      "stdout": "\u001b[?25l\nLoading ibm/granite-4-h-tiny 0% \u280b\u001b[?25l\nLoading ibm/granite-4-h-tiny 0% \u2819\u001b[?25l\nLoading ibm/granite-4-h-tiny 2% \u2819\u001b[?25l\nLoading ibm/granite-4-h-tiny 2% \u2839\u001b[?25l\nLoading ibm/granite-4-h-tiny 2% \u2838\u001b[?25l\nLoading ibm/granite-4-h-tiny 4% \u2838\u001b[?25l\nLoading ibm/granite-4-h-tiny 4% \u283c\u001b[?25l\nLoading ibm/granite-4-h-tiny 4% \u2834\u001b[?25l\nLoading ibm/granite-4-h-tiny 6% \u2834\u001b[?25l\nLoading ibm/granite-4-h-tiny 6% \u2826\u001b[?25l\nLoading ibm/granite-4-h-tiny 7% \u2826\u001b[?25l\nLoading ibm/granite-4-h-tiny 7% \u2827\u001b[?25l\nLoading ibm/granite-4-h-tiny 7% \u2807\u001b[?25l\nLoading ibm/granite-4-h-tiny 9% \u2807\u001b[?25l\nLoading ibm/granite-4-h-tiny 9% \u280f\u001b[?25l\nLoading ibm/granite-4-h-tiny 100% \u280f\n\u001b[K\u001b[?25h"
+    },
+    "model": {
+      "byte_count": 4230975936,
+      "live_identifier": "formation-granite-computation-gate",
+      "model_key": "ibm/granite-4-h-tiny",
+      "name": "Granite 4.0 H Tiny",
+      "relative_file": "lmstudio-community/granite-4.0-h-tiny-GGUF/granite-4.0-h-tiny-Q4_K_M.gguf",
+      "selected_variant": "ibm/granite-4-h-tiny@q4_k_m",
+      "sha256": "064bea0136420b38d0b65697fa5e772e28b112eee1757aacc7f64eba6bf37810",
+      "template_characters": 6099,
+      "template_sha256": "fed2756d2d24e127b951dcf139d0b03ab7db8ef23a456128ebc9c2db4901d476"
+    },
+    "projector_attached": false,
+    "runtime_inventory": "LLM ENGINE                                            SELECTED    MODEL FORMAT\nexecutorch-asr-mac-arm64-apple-metal-advsimd@0.0.8       \u2713            PTE     \nllama.cpp-mac-arm64-apple-metal-advsimd@2.28.2           \u2713            GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.1                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.0                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.25.2                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.24.0                        GGUF    \nmlx-llm-mac-arm64-apple-metal-advsimd@1.11.0             \u2713            MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.1                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.0                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.9.1                           MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.8.5                           MLX     \n",
+    "sampling_without_seed": {
+      "frequency_penalty": 0,
+      "max_tokens": 256,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "stream": false,
+      "temperature": 0.2,
+      "top_k": 40,
+      "top_p": 0.95
+    },
+    "server": {
+      "command": [
+        "lms",
+        "server",
+        "start"
+      ],
+      "exit_code": 0,
+      "stderr": "Success! Server is now running on port 1234\n",
+      "stdout": ""
+    },
+    "speculative_decoding": false,
+    "text_only": true,
+    "tools": false
+  },
+  "prompt_sha256": "5fff1d594eb3659d38c47c1c54ec540700f9d475fbe0d317a74f85c87a120639",
+  "request_envelope": {
+    "frequency_penalty": 0,
+    "max_tokens": 256,
+    "messages": [
+      {
+        "content": "Compute the requested result from this JSON input:\n{\"start\":[\"forge\"],\"dependencies\":{\"forge\":[\"kiln\",\"mold\"],\"kiln\":[\"fuel\"],\"mold\":[\"clay\",\"fuel\"],\"fuel\":[],\"clay\":[],\"unused\":[\"sand\"],\"sand\":[]}}\n\nStarting from every name in start, repeatedly follow dependencies. Return every reachable dependency, but do not include the starting names. Include each name once and sort the result alphabetically. Do not follow entries that are not reachable from start.\nReturn exactly one JSON object with the single key \"answer\". Its value must be a JSON array of strings. Return no prose or Markdown fence.\nYour complete response has a limit of 256 tokens.",
+        "role": "user"
+      }
+    ],
+    "model": "formation-granite-computation-gate",
+    "presence_penalty": 0,
+    "repeat_penalty": 1,
+    "response_format": {
+      "json_schema": {
+        "name": "dependency_reachability_answer",
+        "schema": {
+          "additionalProperties": false,
+          "properties": {
+            "answer": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "answer"
+          ],
+          "type": "object"
+        },
+        "strict": true
+      },
+      "type": "json_schema"
+    },
+    "seed": 5004,
+    "stream": false,
+    "temperature": 0.2,
+    "top_k": 40,
+    "top_p": 0.95
+  },
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"answer\": [\n    \"clay\",\n    \"fuel\",\n    \"kiln\",\n    \"mold\",\n    \"sand\"\n  ]\n}",
+          "reasoning_content": "",
+          "role": "assistant",
+          "tool_calls": []
+        }
+      }
+    ],
+    "created": 1786839432,
+    "id": "chatcmpl-rav4ahldrlqij15huqrati",
+    "model": "formation-granite-computation-gate",
+    "object": "chat.completion",
+    "stats": {},
+    "system_fingerprint": "formation-granite-computation-gate",
+    "usage": {
+      "completion_tokens": 33,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 146,
+      "total_tokens": 179
+    }
+  },
+  "response_format": {
+    "json_schema": {
+      "name": "dependency_reachability_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "answer"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "type": "json_schema"
+  },
+  "retry_of_attempt": null,
+  "retry_reason": null,
+  "seed": 5004,
+  "started_at": "2026-08-16T00:17:12.645082+00:00",
+  "task_id": "dependency_reachability"
+}

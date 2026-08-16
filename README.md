@@ -391,8 +391,15 @@ JSON action surface on fresh filtering, ordered-update, revision, and graph
 tasks. A strict 4/4 pass only earns a later admission charter. Cold review
 returned `GRANITE_GATE_STABLE`; runner implementation and contact remain
 unlicensed. The runner now passes 10 focused tests and the combined 249-test
-suite. Independent review returned `RUNNER_LICENSED`; exactly four calls are
-licensed but not yet run.
+suite. Independent review returned `RUNNER_LICENSED`; exactly four calls were
+licensed.
+
+All four calls then returned valid JSON with wrong values. Granite included an
+ineligible job, miscomputed the ordered arithmetic, retained a disabled latest
+revision, and crossed into an unreachable graph branch. The
+[retained gate](evidence/granite-computation-gate-20260815/README.md) passed
+independent audit as `EVIDENCE_VALID`. This exact Granite setup closes
+`computation_unreliable` and does not earn an admission charter.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without
