@@ -1,0 +1,269 @@
+{
+  "attempt_index": 2,
+  "call_id": "ordered_operations",
+  "call_label": "gate_fail",
+  "call_state": "invalid",
+  "condition": "constrained",
+  "decoded_answer": null,
+  "elapsed_seconds": 0.37699350000184495,
+  "ended_at": "2026-08-16T08:09:45.660478+00:00",
+  "gate_refusal": "empty_output",
+  "live_identifier": "formation-qwen-computation-gate",
+  "logical_index": 2,
+  "model_key": "qwen/qwen3.5-9b",
+  "oracle_answer": 21,
+  "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "packet_receipt": {
+    "adapter_attached": false,
+    "audio_input": false,
+    "authored_system_message": false,
+    "cli_version": "CLI commit: 71bd99c",
+    "content_parts": false,
+    "default_thinking": true,
+    "history_reuse": false,
+    "image_input": false,
+    "load": {
+      "command": [
+        "lms",
+        "load",
+        "qwen/qwen3.5-9b",
+        "--gpu",
+        "max",
+        "--parallel",
+        "1",
+        "--no-speculative-draft-mtp",
+        "--identifier",
+        "formation-qwen-computation-gate",
+        "-y"
+      ],
+      "exit_code": 0,
+      "instance": {
+        "architecture": "qwen3_5",
+        "contextLength": 262144,
+        "deviceIdentifier": null,
+        "displayName": "Qwen3.5 9B",
+        "format": "safetensors",
+        "identifier": "formation-qwen-computation-gate",
+        "indexedModelIdentifier": "qwen/qwen3.5-9b",
+        "lastUsedTime": 1786867782192,
+        "maxContextLength": 262144,
+        "modelKey": "qwen/qwen3.5-9b",
+        "parallel": 1,
+        "paramsString": "9B",
+        "path": "qwen/qwen3.5-9b",
+        "publisher": "qwen",
+        "quantization": {
+          "bits": 4,
+          "name": "4bit"
+        },
+        "queued": 0,
+        "selectedVariant": "qwen/qwen3.5-9b@4bit",
+        "sizeBytes": 5977257833,
+        "status": "idle",
+        "trainedForToolUse": true,
+        "ttlMs": null,
+        "type": "llm",
+        "variants": [
+          "qwen/qwen3.5-9b@4bit"
+        ],
+        "vision": true
+      },
+      "stderr": "Model loaded successfully in 4.04s.\n(5.57 GiB)\nTo use the model in the API/SDK, use the identifier \"formation-qwen-computation-gate\".\n",
+      "stdout": "\u001b[?25l\nLoading qwen/qwen3.5-9b 0% \u280b\u001b[?25l\nLoading qwen/qwen3.5-9b 0% \u2819\u001b[?25l\nLoading qwen/qwen3.5-9b 2% \u2819\u001b[?25l\nLoading qwen/qwen3.5-9b 2% \u2839\u001b[?25l\nLoading qwen/qwen3.5-9b 2% \u2838\u001b[?25l\nLoading qwen/qwen3.5-9b 4% \u2838\u001b[?25l\nLoading qwen/qwen3.5-9b 4% \u283c\u001b[?25l\nLoading qwen/qwen3.5-9b 6% \u283c\u001b[?25l\nLoading qwen/qwen3.5-9b 6% \u2834\u001b[?25l\nLoading qwen/qwen3.5-9b 6% \u2826\u001b[?25l\nLoading qwen/qwen3.5-9b 7% \u2826\u001b[?25l\nLoading qwen/qwen3.5-9b 7% \u2827\u001b[?25l\nLoading qwen/qwen3.5-9b 7% \u2807\u001b[?25l\nLoading qwen/qwen3.5-9b 9% \u2807\u001b[?25l\nLoading qwen/qwen3.5-9b 9% \u280f\u001b[?25l\nLoading qwen/qwen3.5-9b 11% \u280f\u001b[?25l\nLoading qwen/qwen3.5-9b 11% \u280b\u001b[?25l\nLoading qwen/qwen3.5-9b 11% \u2819\u001b[?25l\nLoading qwen/qwen3.5-9b 12% \u2819\u001b[?25l\nLoading qwen/qwen3.5-9b 12% \u2839\u001b[?25l\nLoading qwen/qwen3.5-9b 14% \u2839\u001b[?25l\nLoading qwen/qwen3.5-9b 14% \u2838\u001b[?25l\nLoading qwen/qwen3.5-9b 14% \u283c\u001b[?25l\nLoading qwen/qwen3.5-9b 15% \u283c\u001b[?25l\nLoading qwen/qwen3.5-9b 15% \u2834\u001b[?25l\nLoading qwen/qwen3.5-9b 15% \u2826\u001b[?25l\nLoading qwen/qwen3.5-9b 17% \u2826\u001b[?25l\nLoading qwen/qwen3.5-9b 17% \u2827\u001b[?25l\nLoading qwen/qwen3.5-9b 18% \u2827\u001b[?25l\nLoading qwen/qwen3.5-9b 18% \u2807\u001b[?25l\nLoading qwen/qwen3.5-9b 18% \u280f\u001b[?25l\nLoading qwen/qwen3.5-9b 19% \u280f\u001b[?25l\nLoading qwen/qwen3.5-9b 19% \u280b\u001b[?25l\nLoading qwen/qwen3.5-9b 21% \u280b\u001b[?25l\nLoading qwen/qwen3.5-9b 21% \u2819\u001b[?25l\nLoading qwen/qwen3.5-9b 21% \u2839\u001b[?25l\nLoading qwen/qwen3.5-9b 22% \u2839\u001b[?25l\nLoading qwen/qwen3.5-9b 22% \u2838\u001b[?25l\nLoading qwen/qwen3.5-9b 22% \u283c\u001b[?25l\nLoading qwen/qwen3.5-9b 23% \u283c\u001b[?25l\nLoading qwen/qwen3.5-9b 23% \u2834\u001b[?25l\nLoading qwen/qwen3.5-9b 24% \u2834\u001b[?25l\nLoading qwen/qwen3.5-9b 24% \u2826\u001b[?25l\nLoading qwen/qwen3.5-9b 24% \u2827\u001b[?25l\nLoading qwen/qwen3.5-9b 26% \u2827\u001b[?25l\nLoading qwen/qwen3.5-9b 26% \u2807\u001b[?25l\nLoading qwen/qwen3.5-9b 27% \u2807\u001b[?25l\nLoading qwen/qwen3.5-9b 27% \u280f\u001b[?25l\nLoading qwen/qwen3.5-9b 27% \u280b\u001b[?25l\nLoading qwen/qwen3.5-9b 28% \u280b\u001b[?25l\nLoading qwen/qwen3.5-9b 28% \u2819\u001b[?25l\nLoading qwen/qwen3.5-9b 29% \u2819\u001b[?25l\nLoading qwen/qwen3.5-9b 29% \u2839\u001b[?25l\nLoading qwen/qwen3.5-9b 29% \u2838\u001b[?25l\nLoading qwen/qwen3.5-9b 30% \u2838\u001b[?25l\nLoading qwen/qwen3.5-9b 30% \u283c\u001b[?25l\nLoading qwen/qwen3.5-9b 30% \u2834\u001b[?25l\nLoading qwen/qwen3.5-9b 31% \u2834\u001b[?25l\nLoading qwen/qwen3.5-9b 31% \u2826\u001b[?25l\nLoading qwen/qwen3.5-9b 32% \u2826\u001b[?25l\nLoading qwen/qwen3.5-9b 32% \u2827\u001b[?25l\nLoading qwen/qwen3.5-9b 32% \u2807\u001b[?25l\nLoading qwen/qwen3.5-9b 33% \u2807\u001b[?25l\nLoading qwen/qwen3.5-9b 33% \u280f\u001b[?25l\nLoading qwen/qwen3.5-9b 34% \u280f\u001b[?25l\nLoading qwen/qwen3.5-9b 34% \u280b\u001b[?25l\nLoading qwen/qwen3.5-9b 34% \u2819\u001b[?25l\nLoading qwen/qwen3.5-9b 34% \u2819\u001b[?25l\nLoading qwen/qwen3.5-9b 34% \u2839\u001b[?25l\nLoading qwen/qwen3.5-9b 34% \u2838\u001b[?25l\nLoading qwen/qwen3.5-9b 35% \u2838\u001b[?25l\nLoading qwen/qwen3.5-9b 35% \u283c\u001b[?25l\nLoading qwen/qwen3.5-9b 36% \u283c\u001b[?25l\nLoading qwen/qwen3.5-9b 36% \u2834\u001b[?25l\nLoading qwen/qwen3.5-9b 36% \u2826\u001b[?25l\nLoading qwen/qwen3.5-9b 37% \u2826\u001b[?25l\nLoading qwen/qwen3.5-9b 37% \u2827\u001b[?25l\nLoading qwen/qwen3.5-9b 38% \u2827\u001b[?25l\nLoading qwen/qwen3.5-9b 38% \u2807\u001b[?25l\nLoading qwen/qwen3.5-9b 38% \u280f\u001b[?25l\nLoading qwen/qwen3.5-9b 38% \u280f\u001b[?25l\nLoading qwen/qwen3.5-9b 100% \u280f\n\u001b[K\u001b[?25h"
+    },
+    "model": {
+      "live_identifier": "formation-qwen-computation-gate",
+      "model_key": "qwen/qwen3.5-9b",
+      "name": "Qwen 3.5 9B MLX 4bit",
+      "selected_variant": "qwen/qwen3.5-9b@4bit"
+    },
+    "package_verification": {
+      "hub_control_files": [
+        {
+          "byte_count": 770,
+          "path": "/Users/macos-user/.lmstudio/hub/models/qwen/qwen3.5-9b/manifest.json",
+          "sha256": "c19d54c5855a8c596dd6197f715ffff20fc06dead920fce8faba9353edc6c8d1"
+        },
+        {
+          "byte_count": 1695,
+          "path": "/Users/macos-user/.lmstudio/hub/models/qwen/qwen3.5-9b/model.yaml",
+          "sha256": "41e997d0ab4ca5572918e33c1c5284c5a9c4032ce3affe40b33ad76d7706746b"
+        }
+      ],
+      "package_files": [
+        {
+          "byte_count": 7756,
+          "relative_path": "chat_template.jinja",
+          "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+        },
+        {
+          "byte_count": 3331,
+          "relative_path": "config.json",
+          "sha256": "a96942cb6a8a1d3f1d17514d81a1925d04362a6a3233b389d13012211baaa9f8"
+        },
+        {
+          "byte_count": 5349771292,
+          "relative_path": "model-00001-of-00002.safetensors",
+          "sha256": "973cc1efdedb4d327993fb9c27865f0bcfd9015897d5f0ca9ffb6cda6a0768e5"
+        },
+        {
+          "byte_count": 600449850,
+          "relative_path": "model-00002-of-00002.safetensors",
+          "sha256": "597dae0ed72b60acc07382e8ea0cdb9509c54128e07b0eaa9cf4996373d5ca7d"
+        },
+        {
+          "byte_count": 123592,
+          "relative_path": "model.safetensors.index.json",
+          "sha256": "dd023913fb87cfdae27fb11dcf695117c925833796ccac3c64117d6652d8ff1e"
+        },
+        {
+          "byte_count": 390,
+          "relative_path": "preprocessor_config.json",
+          "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+        },
+        {
+          "byte_count": 991,
+          "relative_path": "processor_config.json",
+          "sha256": "45fc17c8dd2474af6b493b52483c26c0584b0082d368c480f9fa611e73070040"
+        },
+        {
+          "byte_count": 19989325,
+          "relative_path": "tokenizer.json",
+          "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523"
+        },
+        {
+          "byte_count": 9187,
+          "relative_path": "tokenizer_config.json",
+          "sha256": "fa71760892f5c601d345e626ebd602055825a50beed7ee160709c95fffa475f0"
+        },
+        {
+          "byte_count": 385,
+          "relative_path": "video_preprocessor_config.json",
+          "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+        },
+        {
+          "byte_count": 6722759,
+          "relative_path": "vocab.json",
+          "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+        }
+      ],
+      "package_path": "/Users/macos-user/.lmstudio/models/lmstudio-community/Qwen3.5-9B-MLX-4bit"
+    },
+    "projector_argument": false,
+    "runtime_inventory": "LLM ENGINE                                            SELECTED    MODEL FORMAT\nexecutorch-asr-mac-arm64-apple-metal-advsimd@0.0.8       \u2713            PTE     \nllama.cpp-mac-arm64-apple-metal-advsimd@2.28.2           \u2713            GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.1                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.27.0                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.25.2                        GGUF    \nllama.cpp-mac-arm64-apple-metal-advsimd@2.24.0                        GGUF    \nmlx-llm-mac-arm64-apple-metal-advsimd@1.11.0             \u2713            MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.1                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.10.0                          MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.9.1                           MLX     \nmlx-llm-mac-arm64-apple-metal-advsimd@1.8.5                           MLX     \n",
+    "sampling_without_seed": {
+      "frequency_penalty": 0,
+      "max_tokens": 1024,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "stream": false,
+      "temperature": 0.2,
+      "top_k": 40,
+      "top_p": 0.95
+    },
+    "server": {
+      "command": [
+        "lms",
+        "server",
+        "start"
+      ],
+      "exit_code": 0,
+      "stderr": "Success! Server is now running on port 1234\n",
+      "stdout": ""
+    },
+    "text_string_only": true,
+    "tools": false,
+    "video_input": false
+  },
+  "prompt_sha256": "56fe1b6243e5cca35d6b9e4a66acf4b88f3644f12bc9d2fd61f387867595e2da",
+  "request_envelope": {
+    "frequency_penalty": 0,
+    "max_tokens": 1024,
+    "messages": [
+      {
+        "content": "Compute the requested result from this JSON input:\n{\"start\":20,\"operations\":[{\"kind\":\"add\",\"value\":6},{\"kind\":\"double\"},{\"kind\":\"subtract\",\"value\":10},{\"kind\":\"halve\"}]}\n\nBegin with start and apply every operation from left to right. Add increases the current value, double multiplies it by 2, subtract removes value, and halve divides the current value by 2. All intermediate and final values are integers. Return the final integer.\nReturn exactly one JSON object with the single key \"answer\". Return no prose or Markdown fence.\nYour complete response has a limit of 1024 tokens.",
+        "role": "user"
+      }
+    ],
+    "model": "formation-qwen-computation-gate",
+    "presence_penalty": 0,
+    "repeat_penalty": 1,
+    "response_format": {
+      "json_schema": {
+        "name": "ordered_operations_answer",
+        "schema": {
+          "additionalProperties": false,
+          "properties": {
+            "answer": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "answer"
+          ],
+          "type": "object"
+        },
+        "strict": true
+      },
+      "type": "json_schema"
+    },
+    "seed": 6002,
+    "stream": false,
+    "temperature": 0.2,
+    "top_k": 40,
+    "top_p": 0.95
+  },
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "",
+          "reasoning_content": "{\"answer\": 15}",
+          "role": "assistant",
+          "tool_calls": []
+        }
+      }
+    ],
+    "created": 1786867785,
+    "id": "chatcmpl-irbwmdnzfm8k5uylgdsxj",
+    "model": "formation-qwen-computation-gate",
+    "object": "chat.completion",
+    "stats": {},
+    "system_fingerprint": "formation-qwen-computation-gate",
+    "usage": {
+      "completion_tokens": 8,
+      "completion_tokens_details": {
+        "reasoning_tokens": 7
+      },
+      "prompt_tokens": 145,
+      "total_tokens": 153
+    }
+  },
+  "response_format": {
+    "json_schema": {
+      "name": "ordered_operations_answer",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "answer": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "answer"
+        ],
+        "type": "object"
+      },
+      "strict": true
+    },
+    "type": "json_schema"
+  },
+  "retry_of_attempt": 1,
+  "retry_reason": "no_model_content",
+  "seed": 6002,
+  "started_at": "2026-08-16T08:09:45.283507+00:00",
+  "task_id": "ordered_operations"
+}

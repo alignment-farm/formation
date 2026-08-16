@@ -1,0 +1,6 @@
+Compute the requested result from this JSON input:
+{"items":[{"code":"elm","active":true,"score":7,"cost":6},{"code":"fir","active":false,"score":10,"cost":2},{"code":"yew","active":true,"score":7,"cost":4},{"code":"oak","active":true,"score":5,"cost":8},{"code":"ash","active":true,"score":9,"cost":3}]}
+
+Keep items whose active value is true and whose cost is at most 6. Sort by score from highest to lowest, breaking ties alphabetically by code. Return the codes.
+Return exactly one JSON object with the single key "answer". Its value must be a JSON array of strings. Return no prose or Markdown fence.
+Your complete response has a limit of 1024 tokens.

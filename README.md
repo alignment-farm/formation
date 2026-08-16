@@ -409,7 +409,16 @@ actual 262,144-token multimodal load, permits text strings only, and discloses
 default thinking. Cold review returned `QWEN_GATE_STABLE`. The separate runner
 now passes 9 focused tests and the
 combined 258-test suite. Independent review returned `RUNNER_LICENSED`;
-exactly four calls are licensed but not yet run.
+exactly four calls were licensed.
+
+All four logical calls then used their single empty-content retry. Qwen placed
+JSON-shaped text in provider `reasoning_content` but left the scored action
+field empty on all eight attempts. The
+[retained gate](evidence/qwen-computation-gate-20260816/README.md) passed cold
+audit as `EVIDENCE_VALID`. This exact MLX/default-thinking setup earns no
+admission charter and closes `computation_unreliable`. Because reasoning text
+is not the declared action, its contents do not establish Qwen's computational
+floor.
 
 The first engineering milestone is still ahead: a deterministic two-loop
 framework that can represent a practice trajectory and a candidate change without

@@ -1,7 +1,6 @@
 # Qwen computation gate
 
-Status: **cold-reviewed pre-contact protocol; runner licensed; model contact
-not yet run**.
+Status: **contact complete; independently audited `EVIDENCE_VALID`**.
 
 ## Decision and ancestry
 
@@ -256,3 +255,10 @@ Independent cold review returned `QWEN_GATE_STABLE`. Runner implementation and
 its 9-test fake-contact slice pass with the combined 258-test suite.
 Independent runner review returned `RUNNER_LICENSED`; exactly four inference
 calls are licensed.
+
+All four logical calls used their one permitted retry. Every attempt returned
+empty visible content while retaining JSON-shaped `reasoning_content`. The
+scored surface therefore closed 4/4 `invalid` with `empty_output`, producing
+`computation_unreliable` for this exact setup. The unscored reasoning payloads
+do not establish a computation verdict. Independent audit returned
+`EVIDENCE_VALID`.

@@ -304,7 +304,13 @@ package and hub controls, accepts the actual multimodal 262,144-token load while
 permitting text strings only, and freezes default thinking plus content-only
 scoring. Cold review returned `QWEN_GATE_STABLE`. The runner now passes 9 focused
 tests and the combined 258-test suite. Independent review returned
-`RUNNER_LICENSED`; exactly four calls are licensed but not yet run.
+`RUNNER_LICENSED`; exactly four calls were licensed.
+
+All four logical calls then used their permitted retry and still returned empty
+visible content. JSON-shaped text appeared only in unscored provider reasoning
+fields. Independent audit returned `EVIDENCE_VALID`: the exact MLX/default-
+thinking setup closes `computation_unreliable` and earns no admission charter,
+while Qwen's computational floor remains unresolved.
 
 ## Phase 1 — build the two-loop framework
 
