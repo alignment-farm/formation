@@ -31,6 +31,13 @@ Stop when the task's scope and authority are clear.
   explanation is evidence to inspect, never the ground truth of what changed.
 - Specifications own mechanism contracts; evidence and scorers own verdicts;
   plans do not establish findings.
+- Before substantive repository work, inspect the proposed task with
+  [Waypoint](tools/README.md). `ON_ROUTE` permits work within the declared
+  maturity boundary. `SUPPORT_ONLY` may satisfy an explicit user request or
+  unblock the current boundary but must not be counted as lifecycle progress.
+  `ROUTE_DRIFT` means stop and return to the current boundary unless the user
+  explicitly changes the governing route. Waypoint cannot license model
+  contact or establish a finding.
 - For public-facing findings and explanations, follow [STYLE_GUIDE.md](STYLE_GUIDE.md).
   Plain language is a check on whether the writer understands the causal account,
   not a cosmetic rewrite after technical work. Inter-agent and lab shorthand is
@@ -98,6 +105,8 @@ Stop when the task's scope and authority are clear.
 - `docs/QWEN_COMPUTATION_GATE.md` owns the fresh successor gate for the exact
   installed Qwen 3.5 9B MLX package.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
+- `tools/README.md` owns project-process instruments that act on agent work
+  selection without entering the runtime, harness, or evidence plane.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
   findings and explanations.
 - Directory READMEs route locally and do not duplicate broader status prose.

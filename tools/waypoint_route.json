@@ -1,0 +1,20 @@
+{
+  "instrument": "waypoint-v0",
+  "current_boundary": "environment_application",
+  "next_boundary": "consequence_intake",
+  "permitted_claim_level": "wire",
+  "model_contact": {
+    "allowed": false,
+    "named_responsibilities": []
+  },
+  "prohibited_work_kinds": [
+    "model_catalog_search",
+    "generic_competence_gate",
+    "model_admission",
+    "model_contact"
+  ],
+  "historical_pressure": [
+    "Formation: two task contacts stopped before persistence, followed by six admission, interface, or computation programs and no developmental comparison.",
+    "Construct: admission rigor selected for questions already legible before contact, so exploration was separated from strict claim promotion."
+  ]
+}

@@ -420,11 +420,31 @@ admission charter and closes `computation_unreliable`. Because reasoning text
 is not the declared action, its contents do not establish Qwen's computational
 floor.
 
-The first engineering milestone is still ahead: a deterministic two-loop
-framework that can represent a practice trajectory and a candidate change without
-pretending the candidate is learned or useful. The first experimental milestone
-comes later: a same-model trajectory comparison that can distinguish
-consequence-governed formation from raw episodic recall and authored lessons.
+### Preparing the next research harness
+
+Formation is on hold while a new research harness is built and tested. A
+research harness is the software and procedure used to run an experiment,
+record what happened, and compare results.
+
+The completed contacts give the new harness a concrete starting point. Two
+task contacts found no acquisition experience for persistence to address.
+Later trials tested model instructions, structured replies, and small-model
+computation. Their retained records define the tested limits of each setup.
+
+The next harness will keep the developmental path visible from the start. It
+must record the experience given to the system, the change preserved from that
+experience, and the effect of that change on later behavior. Small trials will
+test each part before the harness directs a longer Formation experiment.
+
+Work on Formation can resume when the harness can run those trials, preserve a
+clear record, and support review of its decisions. The first engineering
+milestone remains a deterministic two-loop framework that can represent a
+practice trajectory and a candidate change while keeping the candidate's
+status as a proposal clear.
+
+The first experimental milestone comes later: a same-model trajectory
+comparison that can distinguish consequence-governed formation from raw
+episodic recall and authored lessons.
 
 ## Project map
 
@@ -434,7 +454,8 @@ consequence-governed formation from raw episodic recall and authored lessons.
 | [formation/](formation/README.md) | Runtime-owned fixture producers, constraint binding, and foreground consumption; not yet a general runtime |
 | [trajectory/](trajectory/README.md) | Harness-owned fixture validation, assignment, provenance, and witness checks; not yet a general harness |
 | [tests/](tests/README.md) | Deterministic contract and separation tests |
-| `evidence/` | Future primary trajectories and computed verdicts, never hand-written claims |
+| [tools/](tools/README.md) | Agent-facing project-process instruments; never runtime or evidence |
+| `evidence/` | Retained contact records and future primary trajectories, with bounded computed verdicts and explanations |
 
 ## Evidence and authority
 
@@ -448,8 +469,10 @@ When sources disagree, prefer the most specific authority for the question:
 6. This README for the project story, present state, and routing.
 7. Plans and build documents for intended work.
 
-No source in the first two classes exists yet. Future plans, fixtures, and
-functional frameworks cannot promote themselves into evidence.
+The retained admission and task-selection contacts occupy the first two
+classes only for their own bounded questions. No developmental trajectory or
+computed Formation verdict exists yet. Plans, fixtures, and functional
+frameworks cannot promote themselves into evidence.
 
 ## Working here
 
@@ -464,7 +487,11 @@ Before substantive work:
    non-transfer case, consequence oracle, and stopping condition before contact.
 5. Keep claims at the maturity actually supported by code and evidence.
 
-The current route is [concept](docs/CONCEPT.md), [authority](docs/AUTHORITY.md),
-[record](docs/RECORD.md), [evaluation](docs/EVALUATION.md), [plan](docs/PLAN.md),
-then [fixture](docs/FIXTURE.md), [instrument map](docs/INSTRUMENTS.md), and
-[build boundary](docs/BUILD.md).
+The governing route is [concept](docs/CONCEPT.md),
+[authority](docs/AUTHORITY.md), [record](docs/RECORD.md),
+[evaluation](docs/EVALUATION.md), [plan](docs/PLAN.md), [fixture](docs/FIXTURE.md),
+[instrument map](docs/INSTRUMENTS.md), and [build boundary](docs/BUILD.md). The
+current implementation step is the licensed
+[environment-application slice](docs/ENVIRONMENT_APPLICATION.md), followed by
+[consequence intake](docs/CONSEQUENCE_INTAKE.md) and
+[experience closure](docs/EXPERIENCE_CLOSURE.md).

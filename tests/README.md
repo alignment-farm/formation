@@ -1,6 +1,6 @@
 # Deterministic contract tests
 
-The current 176 non-contact tests include 161 tests covering the fixture-local
+The current 190 non-contact tests include 162 tests covering the fixture-local
 prefix,
 first condition append,
 typed admitted-root boundary, public replay-constraint append, and shared
@@ -20,6 +20,12 @@ verifies that results depend on supplied state as well as action. These tests
 are a computation specimen, not another formation-runtime slice or formation
 evidence.
 
+Thirteen tests cover the agent-facing Waypoint process instrument. They pin the
+current route, expose success-to-another-gate and failure-to-another-model
+loops, keep support work distinct from lifecycle progress, hold model contact
+closed without a named responsibility, and enforce wire-level claim maturity.
+They establish no runtime behavior or Formation result.
+
 Twelve fake-contact tests cover the SQLite charter runner without spending its
 model-call budget. They verify prompt assembly, executable oracles, engagement
 and stop decisions, exact nineteen-call scheduling, raw-offer separation, and
@@ -36,5 +42,11 @@ stop.
 Nine fake-contact tests cover the Gemma 270M-to-1B structured-action
 staircase. They lock prompt bytes, documented oracles, artifact identities,
 type-sensitive JSON scoring, refusal precedence, retry behavior, live request
-and load shape, two-model continuation, packet receipts, and cleanup. The
-combined repository suite now contains 226 tests.
+and load shape, two-model continuation, packet receipts, and cleanup.
+
+Thirteen tests cover the paired bare-versus-grammar structured-output trial.
+Ten cover the Granite computation gate, and nine cover the Qwen computation
+gate. They preserve each completed contact's exact interface, scheduling,
+scoring, retry, and receipt boundaries without spending another model call.
+
+The combined repository suite now contains 271 tests and 333 subtests.

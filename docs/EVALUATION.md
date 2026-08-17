@@ -1,6 +1,6 @@
 # Evaluation frame and threats
 
-Status: **Phase 0 draft; no experiment is licensed**.
+Status: **formation-evaluation frame; no Formation experiment is licensed**.
 
 Purpose: define the minimum comparisons and validity pressures for a future
 formation claim. A concrete experiment must freeze a narrower specification.
@@ -76,6 +76,21 @@ Self-reported confidence or influence may be retained as audit material but is
 not a primary oracle.
 
 ## Threats to validity
+
+### Practitioner-model admission selection
+
+A research program may require a model to show dependable baseline behavior,
+a repeatable gap, direct teachability, and clean interface compliance before it
+allows any developmental condition to run. Each check can protect a later
+comparison. In sequence, however, the checks can select away every occupied or
+confounded condition and turn model admission into the research program.
+
+Repeated admission stops do not accumulate into evidence against Formation;
+they show that the intended developmental contrast was not contacted. Model
+selection must not block deterministic lifecycle questions. Once a lifecycle
+component requires real inference, one model should be chosen operationally
+with a minimal responsibility-specific interface check. Strict prospective
+promotion still applies to any later transfer claim.
 
 ### Harness assistance
 

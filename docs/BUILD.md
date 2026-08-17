@@ -353,10 +353,20 @@ test oracle. The repaired 15-test slice and combined 177-test suite pass final
 review after closing five test-evidence gaps. Lifecycle integration remains
 outside that license, and the specimen's stopping condition is met.
 
-The [SQLite contact charter](SQLITE_CONTACT_CHARTER.md) closes the first model-
-contact semantics without claiming formation. Two cold reconstructions agree
-on exact prompts, baseline offers, executable scoring, and stopping. A small
-receipt-producing runner is the only work licensed before participant contact.
+The current build route resumes that lifecycle integration. Implement the
+licensed [environment-application composition](ENVIRONMENT_APPLICATION.md),
+then its [consequence-intake](CONSEQUENCE_INTAKE.md) and
+[experience-closure](EXPERIENCE_CLOSURE.md) successors. Continue the
+deterministic fixture through non-activation, counterevidence, suspension,
+revocation, post-revocation withholding, and replay. Model catalog search and
+generic admission gates are outside this build route. A real model becomes
+relevant only if one of those lifecycle components names an inference
+responsibility the deterministic actor cannot exercise.
+
+The [SQLite contact charter](SQLITE_CONTACT_CHARTER.md) historically closed the
+first model-contact semantics without claiming formation. That completed
+contact stopped `not_engaged`; it does not alter the current deterministic
+build route.
 
 The fixture's semantic schedule and compatibility boundary are explicit. The
 prefix draft selects SHA-256 only for same-producer fork comparison; it does not

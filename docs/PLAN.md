@@ -1,6 +1,7 @@
 # Research and engineering plan
 
-Status: **initial plan; revise before evidence contact when assumptions change**.
+Status: **active plan; deterministic lifecycle route restored after the
+model-admission selection effect**.
 
 ## Program rule
 
@@ -15,6 +16,48 @@ order, refusal outcomes, and loses-conditions. Convergence completes the
 semantic gate but does not itself license schema or code. Materialization begins
 only when deterministic computation, validation, identity, or exchange needs a
 machine representation.
+
+### Research-routing correction
+
+The retained program history shows a recurring selection effect. After two
+practice contacts stopped `not_engaged`, the project made model admission and
+generic contract reliability the organizing problem. Successive admission,
+interface, and computation gates produced valid bounded results but no contact
+with development. Locally sound demands for a clean contrast had composed into
+a route that required the future practitioner to be experimentally legible
+before the lifecycle was allowed to develop.
+
+The project records the following as a methodological interpretation of its
+work history, not as a computed Formation finding:
+
+> Agent-led Formation work has tended to replace developmental uncertainty
+> with admission certainty, producing rigorous non-contact rather than
+> evidence about development.
+
+The correction is procedural:
+
+- do not begin another model-catalog search;
+- do not author another generic model-competence or admission gate;
+- resume the deterministic lifecycle at environment application;
+- complete one end-to-end deterministic path through consequence, formation,
+  selective activation, counterevidence, and revocation;
+- permit model contact only when a lifecycle component names a specific
+  inference responsibility that cannot be tested with a deterministic actor;
+  and
+- for that responsibility, choose one model operationally and perform only the
+  minimal interface check needed to invoke it.
+
+This does not lower the evidence standard. Prospective transfer, non-transfer,
+same-model baselines, external consequences, and causal attribution remain
+requirements for a later Formation claim. The correction prevents those
+requirements from blocking deterministic lifecycle work that makes no such
+claim.
+
+The executable [Waypoint](../tools/README.md) makes this correction visible at
+task-selection time. It asks the working agent to declare the target and both
+successor paths, then compares them with the reviewed current route. Its
+`ON_ROUTE`, `SUPPORT_ONLY`, and `ROUTE_DRIFT` results govern research scheduling
+only. They do not license a mechanism or establish a verdict.
 
 ## Phase 0 — establish the boundary
 
@@ -400,15 +443,19 @@ automatically generalize to a universal architecture.
 
 ## Near-term sequence
 
-1. Treat the cold-reviewed Markdown packet and fixture as the semantic source,
-   not as evidence or implementation architecture.
-2. Preserve the completed prefix and condition-append contracts; keep later
-   proposal, replay, clock, and storage choices open.
-3. Name the next computation that prose cannot perform and cold-check it
-   against the semantic fixture and authority boundaries.
-4. Extend the deterministic two-loop materialization boundary without
-   promoting its policy-specific path into a universal lifecycle.
-5. Implement the lineage and forkable framework.
-6. Only then select the first real-engine transfer problem.
+1. Implement the licensed environment-application composition for the exact
+   baseline and governed action handoffs.
+2. Implement consequence intake and positive experience closure from the exact
+   environment results.
+3. Continue the deterministic fixture through the structurally mismatched case
+   so governed influence is observably withheld where it should not transfer.
+4. Continue through shared counterevidence, governed suspension and revocation,
+   and a later matching encounter that remains uninfluenced after revocation.
+5. Complete constrained replay and the ablation path from retained dependency
+   history, then replay the whole deterministic trajectory.
+6. Reassess model contact only if one completed lifecycle boundary names an
+   inference responsibility that the deterministic actor cannot exercise.
 
-No practitioner-model contact is needed to complete the first four steps.
+No new model search, admission packet, or generic competence gate is on this
+route. No practitioner-model contact is needed to complete the deterministic
+path.
