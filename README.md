@@ -454,7 +454,6 @@ episodic recall and authored lessons.
 | [formation/](formation/README.md) | Runtime-owned fixture producers, constraint binding, and foreground consumption; not yet a general runtime |
 | [trajectory/](trajectory/README.md) | Harness-owned fixture validation, assignment, provenance, and witness checks; not yet a general harness |
 | [tests/](tests/README.md) | Deterministic contract and separation tests |
-| [tools/](tools/README.md) | Agent-facing project-process instruments; never runtime or evidence |
 | `evidence/` | Retained contact records and future primary trajectories, with bounded computed verdicts and explanations |
 
 ## Evidence and authority

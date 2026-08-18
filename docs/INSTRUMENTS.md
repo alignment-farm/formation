@@ -130,46 +130,6 @@ a future schema could force one reading. The first fixture has exercised this
 instrument: two model-family constructions exposed prose omissions, those
 omissions were revised, and both rechecks reported no semantic disagreement.
 
-## Waypoint as research-route pressure
-
-[Waypoint](../tools/README.md) acts on the research process before a proposed
-task begins. It asks whether the task exercises the current Formation lifecycle
-boundary or merely produces another prerequisite for later contact. This is the
-operational question that prose had already answered but agents repeatedly
-failed to preserve while choosing work.
-
-The working agent operates Waypoint. It may read only the public reviewed route
-state and the agent's explicit proposal: task kind, target boundary, success
-path, failure path, claim level, and any current boundary it claims to unblock.
-It may not read hidden case labels, model outputs, scorer results, or
-practitioner state.
-
-Its inspectable effect is a printed route receipt and process exit status:
-
-- `ON_ROUTE` shows that the task contacts the current boundary and stays within
-  its maturity level;
-- `SUPPORT_ONLY` shows that the task may unblock current work but does not
-  advance the lifecycle; and
-- `ROUTE_DRIFT` shows that the task skips the current boundary, opens another
-  admission or model-search loop, or claims more than the current route permits.
-
-Machine syntax is warranted here because the named pressure occurs inside the
-agent's execution loop. A deterministic command must compare both proposed
-successors with the reviewed route and return a fail-loud status before work
-starts. Another prose warning would leave the already observed operational
-failure unchanged.
-
-Waypoint is not a Formation-runtime or trajectory-harness instrument. It cannot
-author lineage, admit a candidate change, license model contact, or score a
-Formation claim. Its route state is public scheduling policy. A route update
-must first be established by the root README and plan.
-
-Waypoint loses if agents can call support work lifecycle progress; if success
-may point to another gate or failure to another model without a loud drift
-result; if a green result is treated as scientific authority; if changing its
-state silently changes the research route; or if it becomes a keyword judge of
-free prose instead of checking the agent's explicit causal declaration.
-
 ## Roles are not instruments
 
 An authority says who may know or decide something. An instrument is a means of

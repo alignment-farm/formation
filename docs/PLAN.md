@@ -53,12 +53,6 @@ requirements for a later Formation claim. The correction prevents those
 requirements from blocking deterministic lifecycle work that makes no such
 claim.
 
-The executable [Waypoint](../tools/README.md) makes this correction visible at
-task-selection time. It asks the working agent to declare the target and both
-successor paths, then compares them with the reviewed current route. Its
-`ON_ROUTE`, `SUPPORT_ONLY`, and `ROUTE_DRIFT` results govern research scheduling
-only. They do not license a mechanism or establish a verdict.
-
 ## Phase 0 — establish the boundary
 
 Goal: make the project falsifiable before implementing a candidate mechanism.
