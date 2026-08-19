@@ -1,0 +1,13 @@
+{
+  "available": true,
+  "condition": "disposable_interface",
+  "consequence_receipt": null,
+  "content": "{\"prediction\":\"cavo\"}",
+  "invocation_coordinate": "iv01",
+  "logical_index": 1,
+  "output_coordinate": "iv01.prediction",
+  "prediction": "cavo",
+  "runtime_material": null,
+  "trial_receipt": null,
+  "world_id": null
+}

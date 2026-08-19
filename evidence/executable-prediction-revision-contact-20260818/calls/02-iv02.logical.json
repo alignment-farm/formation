@@ -1,0 +1,28 @@
+{
+  "available": true,
+  "condition": "acquisition",
+  "consequence_receipt": null,
+  "content": "{\"prediction\":\"zafren\"}",
+  "invocation_coordinate": "iv02",
+  "logical_index": 2,
+  "occurrence": {
+    "input": {
+      "facet": "fira",
+      "mark": "mela",
+      "zone": "zuna"
+    },
+    "prediction": {
+      "status": "available",
+      "value": "zafren"
+    },
+    "result": {
+      "authority": "environment_oracle",
+      "value": "ulmec"
+    }
+  },
+  "output_coordinate": "iv02.prediction",
+  "prediction": "zafren",
+  "runtime_material": null,
+  "trial_receipt": null,
+  "world_id": "J"
+}

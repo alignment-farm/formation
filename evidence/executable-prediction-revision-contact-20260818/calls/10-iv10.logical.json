@@ -1,0 +1,160 @@
+{
+  "condition": "result_withheld",
+  "consequence_receipt": {
+    "authority": "environment_oracle",
+    "delivered_to_model": false,
+    "input": {
+      "facet": "fira",
+      "mark": "melo",
+      "zone": "zuna"
+    },
+    "value": "zafren"
+  },
+  "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuna\"}]},{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"fira\"}]}]},\"predict\":{\"lit\":\"zafren\"}}",
+  "correctness": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "correctness_by_role": {
+    "acquisition": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "copy_control": {
+      "assigned": 2,
+      "correct": 0
+    },
+    "later_revision_test": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "non_transfer": {
+      "assigned": 2,
+      "correct": 0
+    },
+    "primary_test": {
+      "assigned": 1,
+      "correct": 1
+    },
+    "transfer": {
+      "assigned": 2,
+      "correct": 0
+    }
+  },
+  "evaluator_version": "executable-prediction-rule-evaluator-v1",
+  "invocation_coordinate": "iv10",
+  "logical_index": 10,
+  "output_coordinate": "iv10.content",
+  "recognized_kind": "ast_rule",
+  "recognizer_version": "executable-prediction-rule-recognizer-v1",
+  "rule": {
+    "kind": "ast_rule",
+    "raw": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuna\"}]},{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"fira\"}]}]},\"predict\":{\"lit\":\"zafren\"}}",
+    "tree": {
+      "predict": {
+        "lit": "zafren"
+      },
+      "when": {
+        "and": [
+          {
+            "eq": [
+              {
+                "field": "zone"
+              },
+              {
+                "lit": "zuna"
+              }
+            ]
+          },
+          {
+            "eq": [
+              {
+                "field": "facet"
+              },
+              {
+                "lit": "fira"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime_material": {
+    "additional_experience": null,
+    "external_result": {
+      "status": "result_not_revealed",
+      "value": null
+    },
+    "parent_attempt_coordinate": "iv04.content",
+    "parent_raw": "{\"when\":{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuna\"}]},\"predict\":{\"if\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"fira\"}]},{\"lit\":\"zafren\"},{\"lit\":\"ulmec\"}]}}",
+    "test_input": {
+      "facet": "fira",
+      "mark": "melo",
+      "zone": "zuna"
+    },
+    "trial": {
+      "status": "prediction",
+      "value": "{\"when\":{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuna\"}]},\"predict\":{\"if\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"fira\"}]},{\"lit\":\"zafren\"},{\"lit\":\"ulmec\"}]}}"
+    }
+  },
+  "trial_receipt": {
+    "authority": "rule_evaluator",
+    "evaluator_version": "executable-prediction-rule-evaluator-v1",
+    "input": {
+      "facet": "fira",
+      "mark": "melo",
+      "zone": "zuna"
+    },
+    "observation": {
+      "status": "prediction",
+      "value": "{\"when\":{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuna\"}]},\"predict\":{\"if\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"fira\"}]},{\"lit\":\"zafren\"},{\"lit\":\"ulmec\"}]}}"
+    }
+  },
+  "vector": [
+    {
+      "status": "prediction",
+      "value": "zafren"
+    },
+    {
+      "status": "prediction",
+      "value": "zafren"
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    }
+  ],
+  "world_id": "J"
+}

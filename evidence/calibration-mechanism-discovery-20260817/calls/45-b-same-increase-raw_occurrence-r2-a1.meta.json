@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "b-same-increase-raw_occurrence-r2",
+  "elapsed_seconds": 0.9696154580005896,
+  "ended_at": "2026-08-18T02:20:01.066350+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 45,
+  "message": {
+    "content": "{\"action\": \"fenu\"}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "probe_id": "b-same-increase",
+  "relation": "same_family_increase",
+  "repetition": 2,
+  "request_sha256": "984fe7634109bca4600fddd649aba54b8ffe38437a1ae76817fb3cd422fa0919",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"action\": \"fenu\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787019601,
+    "id": "chatcmpl-81r0oEdNUodj9ssCxudHzneQkIg1wRcZ",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 205,
+      "predicted_ms": 377.507,
+      "predicted_n": 12,
+      "predicted_per_second": 31.787490033297395,
+      "predicted_per_token_ms": 31.458916666666667,
+      "prompt_ms": 580.845,
+      "prompt_n": 194,
+      "prompt_per_second": 333.99616076578087,
+      "prompt_per_token_ms": 2.9940463917525775
+    },
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 399,
+      "prompt_tokens_details": {
+        "cached_tokens": 205
+      },
+      "total_tokens": 411
+    }
+  },
+  "response_sha256": "f39d997a1bc338179346aa7e9c6c838dd823e9cfa28b97b93845e5dda6449d49",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:20:00.096734+00:00",
+  "world_id": "world-b"
+}

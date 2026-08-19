@@ -1,0 +1,40 @@
+{
+  "call_id": "world-g-deterministic_restatement-r2",
+  "candidate": {
+    "change": "7e81cf4ce9afe7ad",
+    "counterevidence": "183609a9f5e6b701"
+  },
+  "candidate_comparison_refusal": null,
+  "candidate_comparison_sha256": "edf524cfcda100aa44fec337fe393e687e5ce4159c6dc517e8f514168009ec36",
+  "candidate_comparison_utf8": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"183609a9f5e6b701\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 41,
+  "condition": "deterministic_restatement",
+  "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"183609a9f5e6b701\"}",
+  "draft_is_request_parent": false,
+  "draft_receipt": null,
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "f6d87534c88f64138cf5d540d37146ebc2eea3d6f05846c658487243bf2c1881"
+  },
+  "governance_deferred": false,
+  "logical_index": 27,
+  "material_utf8_length": 535,
+  "message": {
+    "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"183609a9f5e6b701\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 764,
+  "public_formation_condition": "deterministic_restatement",
+  "request_sha256": "6c5a0b6f92b139843aa3c5e897396eb4b9f8c4188cc7edb3e0a0e968255b0829",
+  "response_sha256": "3af0530c33dae9e58e362b90cabb0ca23932aca4f5ab878cd11ef6f60bded225",
+  "responsibility": "candidate",
+  "round": 2,
+  "same_response_draft_canonical": null,
+  "world_id": "world-g"
+}

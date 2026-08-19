@@ -1,12 +1,28 @@
 # Neptune-Style Theory: Findings and Next Steps
 
-Status: **conceptual research review; not a Formation finding, lifecycle
-advance, code license, or model-contact license**.
+Status: **conceptual research review; analytical content retained; all proposed
+sequencing is superseded by the evidence-first plan; not a Formation finding or
+an active steering document**.
 
 This review covers the root [README](README.md) and the current Markdown
 authority set under [`docs/`](docs/README.md). The review may sharpen the
-research program, but it does not move the present `environment_application`
-boundary or satisfy any predecessor required by the deterministic fixture.
+research program, but it does not establish an empirical result or satisfy any
+predecessor required by the deterministic fixture.
+
+## Sequencing revision
+
+This review originally recommended completing the deterministic lifecycle
+before returning to model contact. It later placed a theory packet ahead of
+some empirical work. Neither sequence governs the project now. The root
+[README](README.md) and [plan](docs/PLAN.md) use short exploratory contacts to
+discover a thesis-relevant phenomenon before freezing a validation program.
+The deterministic lifecycle continues as a separate supporting lane.
+
+The analytical propositions, countermodels, and identifying contrasts below
+remain useful challenge material. They constrain what a later claim could
+mean. They do not require the exploratory model to prove in advance that it
+will produce a convenient contrast, and they do not require another theory or
+review packet before contact.
 
 ## Verdict
 
@@ -24,8 +40,9 @@ projects do not:
   ablation before a bounded Formation claim;
 - it explicitly classifies deterministic fixture success as wire conformance,
   not learning evidence; and
-- it has recognized its own model-admission selection effect and restored the
-  deterministic lifecycle route.
+- it has recognized its own model-admission selection effect, closed that
+  ladder as negative research history, and reopened contact with developmental
+  uncertainty.
 
 That is a strong research constitution. It is not yet a Neptune-style theory.
 Most of the current corpus specifies what a valid observation would have to
@@ -97,9 +114,10 @@ This is upstream of mechanism choice. It also directly addresses the project's
 central risk: inheriting the word *formation* from its own vocabulary rather
 than earning a distinct causal object.
 
-Create `docs/NEPTUNE_THEORY.md` only when this packet is ready. It should be a
-short derivation, not another lifecycle contract. Give it the following fixed
-sections:
+If repeated evidence later supports a compact derivation, a
+`docs/NEPTUNE_THEORY.md` may record it. Such a document is optional and must not
+become a prerequisite for discovery. If created, it should be a short
+derivation, not another lifecycle contract, with these sections:
 
 1. **Prior observations** — only empirical findings or retained anomalies that
    genuinely precede the theory, with Construct provenance where applicable.
@@ -230,15 +248,17 @@ themselves.
 
 ### Lane B — observational apparatus
 
-Continue the reviewed route already named in [`docs/PLAN.md`](docs/PLAN.md):
+Continue two non-gating observational tracks under
+[`docs/PLAN.md`](docs/PLAN.md):
 
-1. implement the licensed environment-application composition;
-2. implement consequence intake and positive experience closure;
-3. traverse deterministic non-transfer, counterevidence, suspension,
-   revocation, and post-revocation silence;
-4. complete source-sensitive constrained replay and the ablation path; and
-5. return to model contact only when a lifecycle boundary names an inference
-   responsibility the deterministic actor cannot perform.
+1. run the bounded exploratory developmental contact before selecting a fresh
+   validation problem; and
+2. separately continue the deterministic lifecycle at environment application,
+   consequence intake, and experience closure, followed later by non-transfer,
+   counterevidence, revocation, and replay.
+
+Neither track gates the other. Exploratory contact cannot claim a Formation
+effect, and deterministic conformance cannot claim model development.
 
 Lane A must not call itself completion of any Lane B boundary. Lane B must not
 call conformance evidence support for a Lane A proposition.
@@ -293,20 +313,18 @@ authority and provenance apparatus should not be presumed superior to a
 community system until a bounded result shows that the distinction changes a
 scientific verdict or outcome.
 
-## Immediate sequence
+## Current use of this review
 
-1. Keep `environment_application` as the active lifecycle route and complete
-   its already licensed narrow implementation.
-2. In parallel only at the conceptual level, draft P1 and P2 with explicit
-   causal diagrams, assumptions, proofs, and countermodels.
-3. Ask an independent critic to defeat the derivations, not merely reconstruct
-   their vocabulary.
-4. Promote at most one surviving proposition into one prospective prediction.
-5. Let that prediction select the next experimental contrast and only the
-   apparatus it actually requires.
-6. Revisit the Formation concept vocabulary after the first theory packet.
-   Retain terms that do identifying work; demote terms that only name the
-   authored fixture path.
+- Keep its countermodels and validity threats available when interpreting new
+  evidence.
+- Do not create the proposed theory packet merely to complete the sequence.
+- Let exploratory contact reveal whether there is a stable developmental
+  phenomenon to explain.
+- If such a phenomenon repeats, use these analytical constraints to design a
+  prospective validation that could distinguish it from prompt content,
+  persistence, selection, and harness assistance.
+
+The root [plan](docs/PLAN.md) owns the immediate sequence.
 
 ## Stop conditions
 

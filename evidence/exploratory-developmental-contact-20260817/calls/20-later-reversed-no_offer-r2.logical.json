@@ -1,0 +1,27 @@
+{
+  "action_refusal": null,
+  "call_id": "later-reversed-no_offer-r2",
+  "content": "{\"action\": \"rebuild_then_release\"}",
+  "environment_result": {
+    "action": "rebuild_then_release",
+    "artifact_revision_after": 7,
+    "artifact_revision_before": 8,
+    "authority_revision": 7,
+    "disposition": "accepted",
+    "observation": "released"
+  },
+  "logical_index": 20,
+  "message": {
+    "content": "{\"action\": \"rebuild_then_release\"}",
+    "role": "assistant"
+  },
+  "offer_key": "no_offer",
+  "probe_id": "later-reversed",
+  "repetition": 2,
+  "responsibility": "actor",
+  "situation": {
+    "artifact_revision": 8,
+    "authority_revision": 7
+  },
+  "surfaced_action": "rebuild_then_release"
+}

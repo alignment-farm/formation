@@ -1,0 +1,16 @@
+{
+  "cells": [],
+  "completed_logical_calls": 0,
+  "contact_state": "stopped",
+  "evidence_class": "exploratory_mechanism_observation_only",
+  "formation_verdict": null,
+  "governance": {},
+  "model": "huggingface.co/meta-models/muse-glimmer-30b-gguf:Q4_K_XL",
+  "model_digest": "sha256:ad54b4b4122ee8e98fd5528a4e26bcbf59034b3b8d0d6d0d1acda98a5f759b6e",
+  "physical_attempts": 1,
+  "physical_call_ceiling": 72,
+  "planned_logical_calls": 69,
+  "predecessor_protocol": "calibration-mechanism-discovery-v0",
+  "protocol": "muse-counter-prior-successor-v0",
+  "stop_reason": "http_500"
+}

@@ -1,0 +1,41 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "c-current-raw_occurrence-r2",
+  "content": "{\"action\": \"hold\"}",
+  "environment_result": {
+    "action": "hold",
+    "controller_family": "lyra-31",
+    "device_id": "grove-unit",
+    "increasing_slot": null,
+    "movement_direction": "unchanged",
+    "observation": "held_at_target",
+    "position_after": 8,
+    "position_before": 8,
+    "selected_slot": null,
+    "target": 8
+  },
+  "expected_action": "hold",
+  "expected_action_match": true,
+  "logical_index": 63,
+  "message": {
+    "content": "{\"action\": \"hold\"}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "probe_id": "c-current",
+  "relation": "current_state_sufficient",
+  "repetition": 2,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "lyra-31",
+    "device_id": "grove-unit",
+    "first_control": "gali",
+    "position": 8,
+    "second_control": "horo",
+    "target": 8
+  },
+  "surfaced_action": "hold",
+  "unwarranted_guess": false,
+  "world_id": "world-c"
+}

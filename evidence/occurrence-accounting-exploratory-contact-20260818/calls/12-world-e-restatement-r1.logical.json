@@ -1,0 +1,37 @@
+{
+  "account_is_request_parent": false,
+  "account_receipt": null,
+  "call_id": "world-e-restatement-r1",
+  "candidate": {
+    "change": "In controller family c378816a8c4ed06f, using control c07e743cb43592c8 in phase 96e6b778c4c3439e increases position by 1 and reaches the target.",
+    "counterevidence": null
+  },
+  "candidate_comparison_sha256": "dab22a498d18f982b791422d3b1917a4bdb76eb5d6370d69c14352d0ae07b613",
+  "candidate_comparison_utf8": "{\"change\":\"In controller family c378816a8c4ed06f, using control c07e743cb43592c8 in phase 96e6b778c4c3439e increases position by 1 and reaches the target.\",\"counterevidence\":null}",
+  "candidate_refusal": null,
+  "completion_tokens": 79,
+  "condition": "restatement",
+  "content": "{\"change\":\"In controller family c378816a8c4ed06f, using control c07e743cb43592c8 in phase 96e6b778c4c3439e increases position by 1 and reaches the target.\",\"counterevidence\":null}",
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_not_nonempty_string"
+    ],
+    "source_occurrence_sha256": "6987f481d9283ebf181cc6b7e95e4cbe3439698c832ef1ed249c1e670b8437d1"
+  },
+  "logical_index": 12,
+  "material_utf8_length": 535,
+  "message": {
+    "content": "{\"change\":\"In controller family c378816a8c4ed06f, using control c07e743cb43592c8 in phase 96e6b778c4c3439e increases position by 1 and reaches the target.\",\"counterevidence\":null}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 819,
+  "public_formation_condition": "deterministic_restatement",
+  "request_sha256": "622ec62e5db96e43276d8aa080d13e7846aa9676211f44b0aac5ae362f5bf1d2",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_account": null,
+  "world_id": "world-e"
+}

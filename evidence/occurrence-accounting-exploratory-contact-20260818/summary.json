@@ -1,0 +1,459 @@
+{
+  "accounts": {
+    "world-e": {
+      "account_class": {
+        "class": "indeterminate",
+        "copied_acquisition_controls": [
+          "91dd8389d9c3730a",
+          "c07e743cb43592c8"
+        ],
+        "copied_occurrence_field_names": [
+          "action",
+          "device",
+          "phase",
+          "position",
+          "target"
+        ],
+        "reason": "no_semantic_account_scorer",
+        "relation_already_present_remains_live": true
+      },
+      "account_nonempty": true,
+      "account_object": {
+        "account": "The device 'adfc8f4a1b01d510' with controller family 'c378816a8c4ed06f' started in phase '72b4369223095ae5' at position 0 with a target of 2. The first action '91dd8389d9c3730a' increased the position to 1, switching the phase to '96e6b778c4c3439e'. The second action 'c07e743cb43592c8' increased the position to 2, reaching the target, and switched the phase back to '72b4369223095ae5'."
+      },
+      "account_refusal": null,
+      "call_id": "world-e-account",
+      "completion_tokens": 182,
+      "content": "{\"account\":\"The device 'adfc8f4a1b01d510' with controller family 'c378816a8c4ed06f' started in phase '72b4369223095ae5' at position 0 with a target of 2. The first action '91dd8389d9c3730a' increased the position to 1, switching the phase to '96e6b778c4c3439e'. The second action 'c07e743cb43592c8' increased the position to 2, reaching the target, and switched the phase back to '72b4369223095ae5'.\"}",
+      "fork_point": "occurrence-root",
+      "logical_index": 4,
+      "message": {
+        "content": "{\"account\":\"The device 'adfc8f4a1b01d510' with controller family 'c378816a8c4ed06f' started in phase '72b4369223095ae5' at position 0 with a target of 2. The first action '91dd8389d9c3730a' increased the position to 1, switching the phase to '96e6b778c4c3439e'. The second action 'c07e743cb43592c8' increased the position to 2, reaching the target, and switched the phase back to '72b4369223095ae5'.\"}",
+        "role": "assistant"
+      },
+      "prompt_tokens": 567,
+      "request_sha256": "5b8a3562cb1f70eb714af953c77f7ece4ab043b7dc2f32d60a2d96a77173fbed",
+      "response_sha256": "2c07b3f99268a898154c3673f94cf399f75fbe913f8afe6e9566d6cf062fdf80",
+      "responsibility": "account",
+      "source_occurrence_sha256": "6987f481d9283ebf181cc6b7e95e4cbe3439698c832ef1ed249c1e670b8437d1",
+      "world_id": "world-e"
+    },
+    "world-f": {
+      "account_class": {
+        "class": "indeterminate",
+        "copied_acquisition_controls": [
+          "20de6d24dbe28705",
+          "9c3e211ff8cc41c2"
+        ],
+        "copied_occurrence_field_names": [
+          "action",
+          "controls",
+          "device",
+          "phase",
+          "position",
+          "target"
+        ],
+        "reason": "no_semantic_account_scorer",
+        "relation_already_present_remains_live": true
+      },
+      "account_nonempty": true,
+      "account_object": {
+        "account": "The device 'a4c67fdac36e0ef5' operated under controller family '95d703a257e5a8fb' with controls ['20de6d24dbe28705', '9c3e211ff8cc41c2']. Starting in phase '41dd49a87033606b' at position 0, action '20de6d24dbe28705' was taken, resulting in position -1 and phase '9782ecf0f92e8157'. Then, action '9c3e211ff8cc41c2' was taken, resulting in position -2 and phase '41dd49a87033606b'. The target of 2 was not reached."
+      },
+      "account_refusal": null,
+      "call_id": "world-f-account",
+      "completion_tokens": 203,
+      "content": "{\"account\":\"The device 'a4c67fdac36e0ef5' operated under controller family '95d703a257e5a8fb' with controls ['20de6d24dbe28705', '9c3e211ff8cc41c2']. Starting in phase '41dd49a87033606b' at position 0, action '20de6d24dbe28705' was taken, resulting in position -1 and phase '9782ecf0f92e8157'. Then, action '9c3e211ff8cc41c2' was taken, resulting in position -2 and phase '41dd49a87033606b'. The target of 2 was not reached.\"}",
+      "fork_point": "occurrence-root",
+      "logical_index": 5,
+      "message": {
+        "content": "{\"account\":\"The device 'a4c67fdac36e0ef5' operated under controller family '95d703a257e5a8fb' with controls ['20de6d24dbe28705', '9c3e211ff8cc41c2']. Starting in phase '41dd49a87033606b' at position 0, action '20de6d24dbe28705' was taken, resulting in position -1 and phase '9782ecf0f92e8157'. Then, action '9c3e211ff8cc41c2' was taken, resulting in position -2 and phase '41dd49a87033606b'. The target of 2 was not reached.\"}",
+        "role": "assistant"
+      },
+      "prompt_tokens": 556,
+      "request_sha256": "615fd49b7472701ae7f0fb13ef879d63cbea1bb7f18a096d73f04bbe2e9fde5f",
+      "response_sha256": "54e51b0c098e179d570856ef138e7dfb5ba6bf7a3a7f89ef5afe1e9073ff2c2a",
+      "responsibility": "account",
+      "source_occurrence_sha256": "faa329c565dee0a25ae3faeb980da2efc46349098e9774be9d63ba5dc1a7f97a",
+      "world_id": "world-f"
+    }
+  },
+  "acquisitions": [
+    {
+      "action_refusal": null,
+      "observable": true,
+      "surfaced_actions": [
+        "91dd8389d9c3730a",
+        "c07e743cb43592c8"
+      ],
+      "world_id": "world-e"
+    },
+    {
+      "action_refusal": null,
+      "observable": true,
+      "surfaced_actions": [
+        "20de6d24dbe28705",
+        "9c3e211ff8cc41c2"
+      ],
+      "world_id": "world-f"
+    }
+  ],
+  "completed_logical_calls": 37,
+  "contact_state": "completed",
+  "evidence_class": "exploratory_authorship_observation_only",
+  "formation_verdict": null,
+  "interface_observability": {
+    "action_refusal": null,
+    "observable": true,
+    "surfaced_actions": [
+      "hold"
+    ]
+  },
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "physical_attempts": 37,
+  "physical_call_ceiling": 40,
+  "planned_logical_calls": 37,
+  "protocol": "occurrence-accounting-exploratory-contact-v0",
+  "stop_reason": null,
+  "usage": {
+    "completion_tokens": 2901,
+    "prompt_tokens": 24412
+  },
+  "validation_verdict": null,
+  "world_comparisons": [
+    {
+      "account_delivery_conditioned_exact_candidate_difference": false,
+      "all_required_conditions_available_and_stable": false,
+      "carryover_pattern_delivery_contrast_invalid": false,
+      "claim_language": "comparison unavailable or no stable exact difference",
+      "collapse_labels": [],
+      "conditions": {
+        "content_control": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            13,
+            27
+          ],
+          "request_sha256": [
+            "71025ff67b95f4366673cbfcb26101e6c4c41fae0909cd289540268b77bf95e0",
+            "71025ff67b95f4366673cbfcb26101e6c4c41fae0909cd289540268b77bf95e0"
+          ],
+          "samples": [
+            "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":null}",
+            "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":\"c07e743cb43592c8\"}"
+          ],
+          "stable_value": null
+        },
+        "delivered": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            8,
+            22
+          ],
+          "request_sha256": [
+            "220170aee2d79e3825d1a32cb5311f6af0e33eecb5765583b5034a84c13dddd4",
+            "220170aee2d79e3825d1a32cb5311f6af0e33eecb5765583b5034a84c13dddd4"
+          ],
+          "samples": [
+            "{\"change\":\"In the controller family 'c378816a8c4ed06f', the action '91dd8389d9c3730a' increases position during phase '72b4369223095ae5' and decreases position during phase '96e6b778c4c3439e'.\",\"counterevidence\":\"If '91dd8389d9c3730a' ever decreases position during phase '72b4369223095ae5' or increases position during phase '96e6b778c4c3439e'.\"}",
+            "{\"change\":\"c07e743cb43592c8\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "stable_value": null
+        },
+        "direct": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            6,
+            28
+          ],
+          "request_sha256": [
+            "015cff6b1fb77d1fe03474e12b451db58a9695d2c02929e9408623e2acd77117",
+            "015cff6b1fb77d1fe03474e12b451db58a9695d2c02929e9408623e2acd77117"
+          ],
+          "samples": [
+            "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":null}",
+            "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":null}"
+          ],
+          "stable_value": "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":null}"
+        },
+        "occurrence_repeated": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            9,
+            23
+          ],
+          "request_sha256": [
+            "8f0e8897ed2b938755201926ef5bc11585028595c6a11778d8bd626aed00fe7c",
+            "8f0e8897ed2b938755201926ef5bc11585028595c6a11778d8bd626aed00fe7c"
+          ],
+          "samples": [
+            "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":\"c07e743cb43592c8\"}",
+            "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":null}"
+          ],
+          "stable_value": null
+        },
+        "restatement": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            12,
+            26
+          ],
+          "request_sha256": [
+            "622ec62e5db96e43276d8aa080d13e7846aa9676211f44b0aac5ae362f5bf1d2",
+            "622ec62e5db96e43276d8aa080d13e7846aa9676211f44b0aac5ae362f5bf1d2"
+          ],
+          "samples": [
+            "{\"change\":\"In controller family c378816a8c4ed06f, using control c07e743cb43592c8 in phase 96e6b778c4c3439e increases position by 1 and reaches the target.\",\"counterevidence\":null}",
+            "{\"change\":\"In controller family c378816a8c4ed06f, using control c07e743cb43592c8 in phase 96e6b778c4c3439e increases position by 1.\",\"counterevidence\":null}"
+          ],
+          "stable_value": null
+        },
+        "same_response": {
+          "available": false,
+          "internally_stable": false,
+          "logical_indices": [
+            11,
+            25
+          ],
+          "request_sha256": [
+            "cab3d1edf78452df397bceb4649ad99ac6c3d6aa4702c71014e6fb2915a84ab8",
+            "cab3d1edf78452df397bceb4649ad99ac6c3d6aa4702c71014e6fb2915a84ab8"
+          ],
+          "samples": [
+            null,
+            null
+          ],
+          "stable_value": null
+        },
+        "static_expanded": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            10,
+            24
+          ],
+          "request_sha256": [
+            "2c1b887bbc24ea3a74b0f97e60152c0488aff34b80ed2f839f8ae043a8123525",
+            "2c1b887bbc24ea3a74b0f97e60152c0488aff34b80ed2f839f8ae043a8123525"
+          ],
+          "samples": [
+            "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":null}",
+            "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":null}"
+          ],
+          "stable_value": "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":null}"
+        },
+        "withheld": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            7,
+            29
+          ],
+          "request_sha256": [
+            "015cff6b1fb77d1fe03474e12b451db58a9695d2c02929e9408623e2acd77117",
+            "015cff6b1fb77d1fe03474e12b451db58a9695d2c02929e9408623e2acd77117"
+          ],
+          "samples": [
+            "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":null}",
+            "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":null}"
+          ],
+          "stable_value": "{\"change\":\"91dd8389d9c3730a\",\"counterevidence\":null}"
+        }
+      },
+      "delivered_differs_from_direct": false,
+      "direct_withheld_request_bytes_identical": true,
+      "formation_verdict": null,
+      "prompt_mass_comparison_available": false,
+      "prompt_token_deltas": [
+        58,
+        58
+      ],
+      "relation_already_present_remains_live": true,
+      "unavailable_conditions": [
+        "same_response"
+      ],
+      "unstable_conditions": [
+        "delivered",
+        "occurrence_repeated",
+        "restatement",
+        "content_control"
+      ],
+      "validation_verdict": null,
+      "weak_label_available": false,
+      "withheld_matches_direct": true,
+      "world_id": "world-e"
+    },
+    {
+      "account_delivery_conditioned_exact_candidate_difference": false,
+      "all_required_conditions_available_and_stable": false,
+      "carryover_pattern_delivery_contrast_invalid": false,
+      "claim_language": "comparison unavailable or no stable exact difference",
+      "collapse_labels": [],
+      "conditions": {
+        "content_control": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            17,
+            31
+          ],
+          "request_sha256": [
+            "15c7766bee8948a1f97bbbc5040a53a2b0c4462561be28f7a1f5f2538bc6a6ea",
+            "15c7766bee8948a1f97bbbc5040a53a2b0c4462561be28f7a1f5f2538bc6a6ea"
+          ],
+          "samples": [
+            "{\"change\":\"Hold\",\"counterevidence\":null}",
+            "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}"
+          ],
+          "stable_value": null
+        },
+        "delivered": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            20,
+            34
+          ],
+          "request_sha256": [
+            "c35f82320370c37c3d3c0f4764743063bf84d89c33a39190f3af18c444da197d",
+            "c35f82320370c37c3d3c0f4764743063bf84d89c33a39190f3af18c444da197d"
+          ],
+          "samples": [
+            "{\"change\":\"The control '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position by 1\",\"counterevidence\":\"If '20de6d24dbe28705' in phase '41dd49a87033606b' increases position instead of decreasing, this change is invalid.\"}",
+            "{\"change\":\"The action '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position by 1, and action '9c3e211ff8cc41c2' in phase '9782ecf0f92e8157' also decreases position by 1.\",\"counterevidence\":\"If the device ever reaches the target position of 2, this would contradict the established pattern.\"}"
+          ],
+          "stable_value": null
+        },
+        "direct": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            18,
+            32
+          ],
+          "request_sha256": [
+            "151c29b698b772146e558894f0b73559c959a61f976afd08e6c068a0214853d4",
+            "151c29b698b772146e558894f0b73559c959a61f976afd08e6c068a0214853d4"
+          ],
+          "samples": [
+            "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}",
+            "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}"
+          ],
+          "stable_value": "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}"
+        },
+        "occurrence_repeated": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            21,
+            35
+          ],
+          "request_sha256": [
+            "c11feb615b25a3e69a5c4abe0b84ba7c8213a88d73d8845feba1cd3705797ca1",
+            "c11feb615b25a3e69a5c4abe0b84ba7c8213a88d73d8845feba1cd3705797ca1"
+          ],
+          "samples": [
+            "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":\"movement_direction\"}",
+            "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "stable_value": "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":\"movement_direction\"}"
+        },
+        "restatement": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            16,
+            30
+          ],
+          "request_sha256": [
+            "84e5e3755e16b3418094b491a231356a4035bebde468e9e55215ed56d6cb858c",
+            "84e5e3755e16b3418094b491a231356a4035bebde468e9e55215ed56d6cb858c"
+          ],
+          "samples": [
+            "{\"change\":\"The action '20de6d24dbe28705' in controller family '95d703a257e5a8fb' decreases position during phase '41dd49a87033606b'\",\"counterevidence\":\"If '20de6d24dbe28705' increases position during phase '41dd49a87033606b' in future observations.\"}",
+            "{\"change\":\"The action 20de6d24dbe28705 in phase 41dd49a87033606b decreases position, and action 9c3e211ff8cc41c2 in phase 9782ecf0f92e8157 also decreases position. This suggests that the control profile for family 95d703a257e5a8fb consistently decreases position in both phases.\",\"counterevidence\":null}"
+          ],
+          "stable_value": null
+        },
+        "same_response": {
+          "available": false,
+          "internally_stable": false,
+          "logical_indices": [
+            15,
+            37
+          ],
+          "request_sha256": [
+            "537f04c9e53d2c34e0b2076bd3b13fd32dab55b8f2965c208f958f6313818157",
+            "537f04c9e53d2c34e0b2076bd3b13fd32dab55b8f2965c208f958f6313818157"
+          ],
+          "samples": [
+            "{\"change\":\"The control '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position. This change applies to the controller family '95d703a257e5a8fb' and device 'a4c67fdac36e0ef5'. Later observations of position changes in this phase should count against this change.\",\"counterevidence\":null}",
+            null
+          ],
+          "stable_value": null
+        },
+        "static_expanded": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            14,
+            36
+          ],
+          "request_sha256": [
+            "34d1d1217b6a7b4b1832f489bd65a75d84a4cf762ca38cffbed08178ba25774e",
+            "34d1d1217b6a7b4b1832f489bd65a75d84a4cf762ca38cffbed08178ba25774e"
+          ],
+          "samples": [
+            "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}",
+            "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}"
+          ],
+          "stable_value": "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}"
+        },
+        "withheld": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            19,
+            33
+          ],
+          "request_sha256": [
+            "151c29b698b772146e558894f0b73559c959a61f976afd08e6c068a0214853d4",
+            "151c29b698b772146e558894f0b73559c959a61f976afd08e6c068a0214853d4"
+          ],
+          "samples": [
+            "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}",
+            "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}"
+          ],
+          "stable_value": "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}"
+        }
+      },
+      "delivered_differs_from_direct": false,
+      "direct_withheld_request_bytes_identical": true,
+      "formation_verdict": null,
+      "prompt_mass_comparison_available": false,
+      "prompt_token_deltas": [
+        52,
+        52
+      ],
+      "relation_already_present_remains_live": true,
+      "unavailable_conditions": [
+        "same_response"
+      ],
+      "unstable_conditions": [
+        "delivered",
+        "restatement",
+        "content_control"
+      ],
+      "validation_verdict": null,
+      "weak_label_available": false,
+      "withheld_matches_direct": true,
+      "world_id": "world-f"
+    }
+  ]
+}

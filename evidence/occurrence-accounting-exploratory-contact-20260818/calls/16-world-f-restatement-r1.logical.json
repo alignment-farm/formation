@@ -1,0 +1,37 @@
+{
+  "account_is_request_parent": false,
+  "account_receipt": null,
+  "call_id": "world-f-restatement-r1",
+  "candidate": {
+    "change": "The action '20de6d24dbe28705' in controller family '95d703a257e5a8fb' decreases position during phase '41dd49a87033606b'",
+    "counterevidence": "If '20de6d24dbe28705' increases position during phase '41dd49a87033606b' in future observations."
+  },
+  "candidate_comparison_sha256": "ef0eb3ad99c05e98b06d854b69dd241d4c4c92402207795c5413d22b81071ad6",
+  "candidate_comparison_utf8": "{\"change\":\"The action '20de6d24dbe28705' in controller family '95d703a257e5a8fb' decreases position during phase '41dd49a87033606b'\",\"counterevidence\":\"If '20de6d24dbe28705' increases position during phase '41dd49a87033606b' in future observations.\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 113,
+  "condition": "restatement",
+  "content": "{\"change\":\"The action '20de6d24dbe28705' in controller family '95d703a257e5a8fb' decreases position during phase '41dd49a87033606b'\",\"counterevidence\":\"If '20de6d24dbe28705' increases position during phase '41dd49a87033606b' in future observations.\"}",
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "faa329c565dee0a25ae3faeb980da2efc46349098e9774be9d63ba5dc1a7f97a"
+  },
+  "logical_index": 16,
+  "material_utf8_length": 539,
+  "message": {
+    "content": "{\"change\":\"The action '20de6d24dbe28705' in controller family '95d703a257e5a8fb' decreases position during phase '41dd49a87033606b'\",\"counterevidence\":\"If '20de6d24dbe28705' increases position during phase '41dd49a87033606b' in future observations.\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 802,
+  "public_formation_condition": "deterministic_restatement",
+  "request_sha256": "84e5e3755e16b3418094b491a231356a4035bebde468e9e55215ed56d6cb858c",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_account": null,
+  "world_id": "world-f"
+}

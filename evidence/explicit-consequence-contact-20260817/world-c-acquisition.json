@@ -1,0 +1,27 @@
+{
+  "environment_result": {
+    "action": "tess",
+    "controller_family": "lyra-31",
+    "device_id": "lyra-seed",
+    "increasing_slot": null,
+    "movement_direction": "increased",
+    "observation": "target_reached",
+    "position_after": 1,
+    "position_before": 0,
+    "selected_slot": "first",
+    "target": 1
+  },
+  "model_message": {
+    "content": "{\"action\": \"tess\"}",
+    "role": "assistant"
+  },
+  "state": {
+    "controller_family": "lyra-31",
+    "device_id": "lyra-seed",
+    "first_control": "tess",
+    "position": 0,
+    "second_control": "wilo",
+    "target": 1
+  },
+  "surfaced_action": "tess"
+}

@@ -1,0 +1,75 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "world-b-acquisition",
+  "content": "{\"actions\": [\"f255d496ba13354d\", \"c0cb0cf5a7a8966e\"]}",
+  "environment_results": [
+    {
+      "action": "f255d496ba13354d",
+      "before": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "f255d496ba13354d",
+          "c0cb0cf5a7a8966e"
+        ],
+        "device": "eb20f810d311d78d",
+        "phase": "a7fdcdee8ffb8e83",
+        "position": 0,
+        "target": 2
+      },
+      "movement_direction": "decreased",
+      "phase_after": "e4827a8649c41e3f",
+      "position_after": -1,
+      "target_reached": false
+    },
+    {
+      "action": "c0cb0cf5a7a8966e",
+      "before": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "f255d496ba13354d",
+          "c0cb0cf5a7a8966e"
+        ],
+        "device": "eb20f810d311d78d",
+        "phase": "e4827a8649c41e3f",
+        "position": -1,
+        "target": 2
+      },
+      "movement_direction": "decreased",
+      "phase_after": "a7fdcdee8ffb8e83",
+      "position_after": -2,
+      "target_reached": false
+    }
+  ],
+  "expected_actions": null,
+  "expected_actions_match": null,
+  "logical_index": 4,
+  "message": {
+    "content": "{\"actions\": [\"f255d496ba13354d\", \"c0cb0cf5a7a8966e\"]}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "offer_utf8_length": 17,
+  "probe_id": null,
+  "prompt_tokens": 369,
+  "relation": null,
+  "request_sha256": "c12e60bb1c2e4750c5f5f74b637930187245b95cc87bf10d692379b1ca42a079",
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "cabd05ee74f6137f",
+    "controls": [
+      "f255d496ba13354d",
+      "c0cb0cf5a7a8966e"
+    ],
+    "device": "eb20f810d311d78d",
+    "phase": "a7fdcdee8ffb8e83",
+    "position": 0,
+    "target": 2
+  },
+  "surfaced_actions": [
+    "f255d496ba13354d",
+    "c0cb0cf5a7a8966e"
+  ],
+  "warrant_labels": [],
+  "world_id": "world-b"
+}

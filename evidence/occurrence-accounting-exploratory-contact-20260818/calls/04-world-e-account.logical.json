@@ -1,0 +1,38 @@
+{
+  "account_class": {
+    "class": "indeterminate",
+    "copied_acquisition_controls": [
+      "91dd8389d9c3730a",
+      "c07e743cb43592c8"
+    ],
+    "copied_occurrence_field_names": [
+      "action",
+      "device",
+      "phase",
+      "position",
+      "target"
+    ],
+    "reason": "no_semantic_account_scorer",
+    "relation_already_present_remains_live": true
+  },
+  "account_nonempty": true,
+  "account_object": {
+    "account": "The device 'adfc8f4a1b01d510' with controller family 'c378816a8c4ed06f' started in phase '72b4369223095ae5' at position 0 with a target of 2. The first action '91dd8389d9c3730a' increased the position to 1, switching the phase to '96e6b778c4c3439e'. The second action 'c07e743cb43592c8' increased the position to 2, reaching the target, and switched the phase back to '72b4369223095ae5'."
+  },
+  "account_refusal": null,
+  "call_id": "world-e-account",
+  "completion_tokens": 182,
+  "content": "{\"account\":\"The device 'adfc8f4a1b01d510' with controller family 'c378816a8c4ed06f' started in phase '72b4369223095ae5' at position 0 with a target of 2. The first action '91dd8389d9c3730a' increased the position to 1, switching the phase to '96e6b778c4c3439e'. The second action 'c07e743cb43592c8' increased the position to 2, reaching the target, and switched the phase back to '72b4369223095ae5'.\"}",
+  "fork_point": "occurrence-root",
+  "logical_index": 4,
+  "message": {
+    "content": "{\"account\":\"The device 'adfc8f4a1b01d510' with controller family 'c378816a8c4ed06f' started in phase '72b4369223095ae5' at position 0 with a target of 2. The first action '91dd8389d9c3730a' increased the position to 1, switching the phase to '96e6b778c4c3439e'. The second action 'c07e743cb43592c8' increased the position to 2, reaching the target, and switched the phase back to '72b4369223095ae5'.\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 567,
+  "request_sha256": "5b8a3562cb1f70eb714af953c77f7ece4ab043b7dc2f32d60a2d96a77173fbed",
+  "response_sha256": "2c07b3f99268a898154c3673f94cf399f75fbe913f8afe6e9566d6cf062fdf80",
+  "responsibility": "account",
+  "source_occurrence_sha256": "6987f481d9283ebf181cc6b7e95e4cbe3439698c832ef1ed249c1e670b8437d1",
+  "world_id": "world-e"
+}

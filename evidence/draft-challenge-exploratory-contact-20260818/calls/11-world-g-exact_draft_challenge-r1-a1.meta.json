@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-g-exact_draft_challenge-r1",
+  "elapsed_seconds": 2.7317711249997956,
+  "ended_at": "2026-08-18T19:26:40.984988+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 11,
+  "message": {
+    "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the phase after using action '183609a9f5e6b701' is not 'ccdabc1e1f6ca491', this would count against the claim.\"}",
+    "role": "assistant"
+  },
+  "offer_key": "exact_draft_challenge",
+  "probe_id": null,
+  "relation": null,
+  "repetition": 1,
+  "request_sha256": "17484c414c6e0aede87cad3e9c38053cd11ae756fd0c458531045eb8b9ba1428",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the phase after using action '183609a9f5e6b701' is not 'ccdabc1e1f6ca491', this would count against the claim.\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787081200,
+    "id": "chatcmpl-b6gXIZBAtijwoWA11MEC6zS9dAPRUBXq",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 496,
+      "predicted_ms": 2386.952,
+      "predicted_n": 71,
+      "predicted_per_second": 29.745047240162346,
+      "predicted_per_token_ms": 33.61904225352113,
+      "prompt_ms": 333.048,
+      "prompt_n": 113,
+      "prompt_per_second": 339.29043261031444,
+      "prompt_per_token_ms": 2.9473274336283186
+    },
+    "usage": {
+      "completion_tokens": 71,
+      "prompt_tokens": 609,
+      "prompt_tokens_details": {
+        "cached_tokens": 496
+      },
+      "total_tokens": 680
+    }
+  },
+  "response_sha256": "5e534e3df99c4e06e2ce68261b5c003c51b6695317704d3483e3c099a4a815f3",
+  "responsibility": "candidate",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T19:26:38.253196+00:00",
+  "world_id": "world-g"
+}

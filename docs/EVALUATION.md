@@ -1,9 +1,38 @@
 # Evaluation frame and threats
 
-Status: **formation-evaluation frame; no Formation experiment is licensed**.
+Status: **formation-validation frame; exploration may discover candidate
+phenomena, but no Formation claim has been established**.
 
 Purpose: define the minimum comparisons and validity pressures for a future
 formation claim. A concrete experiment must freeze a narrower specification.
+
+## Exploration and validation
+
+Exploration and validation answer different questions.
+
+A bounded exploratory contact asks what behavior, variance, misunderstanding,
+or confound appears when a model encounters experience and consequence. It may
+revise prompts, cases, or instruments within a visible budget. It must retain
+every contacted request and result, keep interface constraints fixed across
+compared branches, and say which choices changed after observing output. Its
+result is an observation or a question for later work. It does not receive a
+Formation verdict from this document.
+
+An event before the model receives a participant request is an apparatus event,
+not an exploratory observation about model behavior. It may warrant an
+engineering repair, but it does not consume the scientific question.
+
+A validation experiment asks whether a frozen mechanism passes a prospective
+comparison. It fixes the model, interface, cases, branch construction, scorers,
+budget, and stopping rules before contact. Only this later kind of experiment
+may use the minimum branches, measures, and verdict classes below to support a
+Formation claim.
+
+The admission ladder is closed. A model may enter exploration after only the
+minimal interface check needed for its assigned responsibility. Incorrect,
+variable, or awkward behavior is then part of the contacted phenomenon unless
+the interface fails so completely that no action can be observed. This relaxed
+contact threshold does not relax the evidence threshold for a later claim.
 
 ## Unit of comparison
 
@@ -18,7 +47,7 @@ consequence have been recorded for audit but before branches apply their
 assigned post-experience handling. This isolates what the systems do with the
 same experience.
 
-## Minimum branches
+## Minimum validation branches
 
 1. **Cold / no persistence** — receives the later foreground situation and
    fixed static instructions. The acquisition occurrence remains in audit
@@ -44,6 +73,25 @@ formation mechanism cannot beat ordinary persistence, the simpler system wins.
 Token-matched secondary comparisons may separate mechanism value from extra
 context, but they do not replace the natural-cost comparison.
 
+A candidate mechanism may use a deterministic applicator for generic practice
+competence. That is legitimate only when the applicator is frozen before hidden
+assignments, contains no realized experience-dependent fact, and is disclosed
+as part of the practitioner rather than credited to the cold model. Comparisons
+must include natural direct-practice raw and authored baselines when forcing
+those controls through the applicator's representation could weaken them.
+Same-applicator diagnostics may then identify whether persistence, repeated
+derivation, or governance explains a difference. An applicator-edge ablation
+proves that the edge can change action; it does not by itself prove beneficial
+development.
+
+When an environment assigns a hidden fact after the protocol is frozen, the
+shared static instruction may explain how such facts should be learned and
+used, but it cannot contain the realized hidden fact. A human- or harness-
+authored message that reveals that assignment is an oracle-informed diagnostic
+ceiling, not the ordinary static-practice baseline. Calling it static does not
+make the information pre-contact. This distinction keeps the baseline strong
+without letting privileged setup information substitute for experience.
+
 ## Case families
 
 - **Acquisition** cases establish the consequential experience shared by the
@@ -66,6 +114,8 @@ The runtime never receives these family labels.
 - externally scored task outcome;
 - beneficial and adverse paired differences;
 - activation precision and missed warranted activations;
+- delivery authorization, actual candidate presence, and attributable
+  influence reported separately;
 - correction after counterevidence;
 - exact model input and output cost;
 - tool, check, latency, and persistent-state cost;
@@ -74,6 +124,12 @@ The runtime never receives these family labels.
 
 Self-reported confidence or influence may be retained as audit material but is
 not a primary oracle.
+
+A runtime's pre-inference decision to expose an admitted change is delivery
+authorization, not measured activation. A request receipt can establish that
+candidate content was present. Only a behavioral causal contrast can attribute
+later action to that content. Evaluation must not collapse these three records
+into one activation count.
 
 ## Threats to validity
 
@@ -146,8 +202,9 @@ rubric applied outside practitioner state.
 ### Adaptive protocol repair
 
 Cases, parsers, or rubrics change after outputs are observed. Exploration may
-iterate under a visible budget, but validation requires fresh prospective cases
-and a frozen contract.
+iterate under a visible budget, but its retained record must show each change
+and cannot inherit a validation verdict. Validation requires fresh prospective
+cases and a frozen contract.
 
 ### Trajectory divergence
 
@@ -162,7 +219,7 @@ The formed branch wins by receiving much more context or computation. Natural
 cost is part of the verdict. Include loses-cases where activation buys nothing
 or causes harm.
 
-## Verdict classes
+## Validation verdict classes
 
 - **Supported:** predeclared acquisition, transfer, selectivity, correction,
   causal, and cost criteria pass within the contacted population.
@@ -175,6 +232,7 @@ or causes harm.
   or another protocol violation destroys the comparison.
 
 These labels bound a result; they do not establish a universal theory of
-formation. They apply to contacted scientific comparisons. The deterministic
-fixture's `wire_integration_only` and `invalid` closures are conformance output,
-remain outside `evidence/`, and do not enter these result classes.
+formation. They apply only to frozen, claim-bearing comparisons, not to
+exploratory contacts. The deterministic fixture's
+`wire_integration_only` and `invalid` closures are conformance output, remain
+outside `evidence/`, and do not enter these result classes.

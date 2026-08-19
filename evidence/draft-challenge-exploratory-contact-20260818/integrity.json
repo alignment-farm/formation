@@ -1,0 +1,162 @@
+{
+  "attempts_checked": 39,
+  "checks": [
+    {
+      "stem": "01-interface-disposable-a1",
+      "valid": true
+    },
+    {
+      "stem": "02-world-g-acquisition-a1",
+      "valid": true
+    },
+    {
+      "stem": "03-world-h-acquisition-a1",
+      "valid": true
+    },
+    {
+      "stem": "04-candidate-g-direct-1-a1",
+      "valid": true
+    },
+    {
+      "stem": "05-candidate-h-direct-1-a1",
+      "valid": true
+    },
+    {
+      "stem": "06-candidate-g-direct-2-a1",
+      "valid": true
+    },
+    {
+      "stem": "07-candidate-h-direct-2-a1",
+      "valid": true
+    },
+    {
+      "stem": "08-world-g-draft_withheld-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "09-world-g-exact_draft_replay-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "10-world-g-static_challenge_withheld_draft-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "11-world-g-exact_draft_challenge-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "12-world-g-same_response_draft_challenge-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "13-world-g-occurrence_repeated-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "14-world-g-deterministic_restatement-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "15-world-g-draft_prompt_mass_control-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "16-world-h-draft_prompt_mass_control-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "17-world-h-deterministic_restatement-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "18-world-h-occurrence_repeated-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "19-world-h-same_response_draft_challenge-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "20-world-h-exact_draft_challenge-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "21-world-h-static_challenge_withheld_draft-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "22-world-h-exact_draft_replay-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "23-world-h-draft_withheld-r1-a1",
+      "valid": true
+    },
+    {
+      "stem": "24-world-g-exact_draft_challenge-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "25-world-g-same_response_draft_challenge-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "26-world-g-occurrence_repeated-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "27-world-g-deterministic_restatement-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "28-world-g-draft_prompt_mass_control-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "29-world-g-draft_withheld-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "30-world-g-exact_draft_replay-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "31-world-g-static_challenge_withheld_draft-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "32-world-h-static_challenge_withheld_draft-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "33-world-h-exact_draft_replay-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "34-world-h-draft_withheld-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "35-world-h-draft_prompt_mass_control-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "36-world-h-deterministic_restatement-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "37-world-h-occurrence_repeated-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "38-world-h-same_response_draft_challenge-r2-a1",
+      "valid": true
+    },
+    {
+      "stem": "39-world-h-exact_draft_challenge-r2-a1",
+      "valid": true
+    }
+  ],
+  "valid": true
+}

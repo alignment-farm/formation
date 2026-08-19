@@ -1,0 +1,27 @@
+{
+  "action_refusal": null,
+  "call_id": "interface-disposable",
+  "content": "{\"action\": \"rebuild_then_release\"}",
+  "environment_result": {
+    "action": "rebuild_then_release",
+    "artifact_revision_after": 4,
+    "artifact_revision_before": 3,
+    "authority_revision": 4,
+    "disposition": "accepted",
+    "observation": "released"
+  },
+  "logical_index": 1,
+  "message": {
+    "content": "{\"action\": \"rebuild_then_release\"}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "probe_id": null,
+  "repetition": null,
+  "responsibility": "actor",
+  "situation": {
+    "artifact_revision": 3,
+    "authority_revision": 4
+  },
+  "surfaced_action": "rebuild_then_release"
+}

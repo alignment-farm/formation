@@ -1,0 +1,30 @@
+{
+  "call_id": "world-b-interpretation",
+  "candidate": {
+    "change": "c0cb0cf5a7a8966e",
+    "counterevidence": "movement_direction"
+  },
+  "candidate_refusal": null,
+  "candidate_utf8_length": 68,
+  "content": "{\"change\":\"c0cb0cf5a7a8966e\",\"counterevidence\":\"movement_direction\"}",
+  "governance": {
+    "admitted": false,
+    "candidate": {
+      "change": "c0cb0cf5a7a8966e",
+      "counterevidence": "movement_direction"
+    },
+    "occurrence_sha256": "659ffc8e0f0bc47ee71edd6b208573f067d2794d9bab9089f392c42def322913",
+    "refusals": [
+      "change_copies_acquisition_control"
+    ]
+  },
+  "logical_index": 5,
+  "message": {
+    "content": "{\"change\":\"c0cb0cf5a7a8966e\",\"counterevidence\":\"movement_direction\"}",
+    "role": "assistant"
+  },
+  "occurrence_utf8_length": 682,
+  "prompt_tokens": 545,
+  "responsibility": "interpreter",
+  "world_id": "world-b"
+}

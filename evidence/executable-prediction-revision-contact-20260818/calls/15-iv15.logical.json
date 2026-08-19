@@ -1,0 +1,132 @@
+{
+  "condition": "visible_material",
+  "consequence_receipt": {
+    "authority": "environment_oracle",
+    "delivered_to_model": true,
+    "input": {
+      "facet": "fira",
+      "mark": "melo",
+      "zone": "zuna"
+    },
+    "value": "zafren"
+  },
+  "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}],\"predict\":{\"if\":[{\"eq\":{\"field\":\"mark\",\"lit\":\"melo\"}},{\"lit\":\"zafren\"}},{\"lit\":\"ulmec\"}}}",
+  "correctness": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "correctness_by_role": {
+    "acquisition": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "copy_control": {
+      "assigned": 2,
+      "correct": 0
+    },
+    "later_revision_test": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "non_transfer": {
+      "assigned": 2,
+      "correct": 0
+    },
+    "primary_test": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "transfer": {
+      "assigned": 2,
+      "correct": 0
+    }
+  },
+  "evaluator_version": "executable-prediction-rule-evaluator-v1",
+  "invocation_coordinate": "iv15",
+  "logical_index": 15,
+  "output_coordinate": "iv15.content",
+  "recognized_kind": "literal_rule",
+  "recognizer_version": "executable-prediction-rule-recognizer-v1",
+  "rule": {
+    "kind": "literal_rule",
+    "raw": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}],\"predict\":{\"if\":[{\"eq\":{\"field\":\"mark\",\"lit\":\"melo\"}},{\"lit\":\"zafren\"}},{\"lit\":\"ulmec\"}}}",
+    "tree": null
+  },
+  "runtime_material": {
+    "additional_experience": null,
+    "external_result": {
+      "status": "revealed",
+      "value": "zafren"
+    },
+    "parent_attempt_coordinate": "pvj01",
+    "parent_raw": "CONTROLJQPXMV",
+    "test_input": {
+      "facet": "fira",
+      "mark": "melo",
+      "zone": "zuna"
+    },
+    "trial": {
+      "status": "prediction",
+      "value": "CONTROLJQPXMV"
+    }
+  },
+  "trial_receipt": {
+    "authority": "rule_evaluator",
+    "evaluator_version": "executable-prediction-rule-evaluator-v1",
+    "input": {
+      "facet": "fira",
+      "mark": "melo",
+      "zone": "zuna"
+    },
+    "observation": {
+      "status": "prediction",
+      "value": "CONTROLJQPXMV"
+    }
+  },
+  "vector": [
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}],\"predict\":{\"if\":[{\"eq\":{\"field\":\"mark\",\"lit\":\"melo\"}},{\"lit\":\"zafren\"}},{\"lit\":\"ulmec\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}],\"predict\":{\"if\":[{\"eq\":{\"field\":\"mark\",\"lit\":\"melo\"}},{\"lit\":\"zafren\"}},{\"lit\":\"ulmec\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}],\"predict\":{\"if\":[{\"eq\":{\"field\":\"mark\",\"lit\":\"melo\"}},{\"lit\":\"zafren\"}},{\"lit\":\"ulmec\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}],\"predict\":{\"if\":[{\"eq\":{\"field\":\"mark\",\"lit\":\"melo\"}},{\"lit\":\"zafren\"}},{\"lit\":\"ulmec\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}],\"predict\":{\"if\":[{\"eq\":{\"field\":\"mark\",\"lit\":\"melo\"}},{\"lit\":\"zafren\"}},{\"lit\":\"ulmec\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}],\"predict\":{\"if\":[{\"eq\":{\"field\":\"mark\",\"lit\":\"melo\"}},{\"lit\":\"zafren\"}},{\"lit\":\"ulmec\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}],\"predict\":{\"if\":[{\"eq\":{\"field\":\"mark\",\"lit\":\"melo\"}},{\"lit\":\"zafren\"}},{\"lit\":\"ulmec\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}],\"predict\":{\"if\":[{\"eq\":{\"field\":\"mark\",\"lit\":\"melo\"}},{\"lit\":\"zafren\"}},{\"lit\":\"ulmec\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}],\"predict\":{\"if\":[{\"eq\":{\"field\":\"mark\",\"lit\":\"melo\"}},{\"lit\":\"zafren\"}},{\"lit\":\"ulmec\"}}}"
+    }
+  ],
+  "world_id": "J"
+}

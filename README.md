@@ -2,10 +2,9 @@
 
 Formation studies how a language model that starts each call with no memory of
 prior work can still become a particular skilled practitioner through later
-experience. The model weights stay frozen. What must change is the governed
-system around the model: what experience is kept, what changes are proposed,
-which changes may affect later action, and how those changes are checked or
-revoked.
+experience. The model weights stay frozen. What changes is the governed system
+around the model: which experiences it preserves, which proposed changes may
+affect later action, and how later evidence can revise or revoke those changes.
 
 Its working thesis is:
 
@@ -14,25 +13,24 @@ Its working thesis is:
 > durable, selective changes in future behavior that later counterevidence can
 > revise, suspend, or revoke.
 
-Here *cold* means the model itself carries no project memory between calls.
-The *practitioner* is the model plus the developmental system that persists
-across calls.
+Here *cold* means that the model carries no project memory between calls. The
+*practitioner* is the cold model together with the developmental system that
+persists across calls.
 
-Game mastering, coding, writing, research, and operations are useful places to
-test formation. None of them is the project. They are contact domains where
-formation can be observed and adjusted.
+Game mastering, coding, writing, research, and operations are possible test
+domains. None of them defines the project.
 
 ## The question
 
-The ordinary agent loop is good at continuing work:
+An ordinary agent loop is good at continuing work:
 
 ```text
 assemble context -> infer -> act -> observe -> append -> repeat
 ```
 
-Appending an observation can change the next answer without earning a change
-that should transfer to a later, related situation. More context is not the
-same as development.
+But appending an observation can change the next answer without creating a
+change that should transfer to a new situation. More context is not the same as
+development.
 
 Formation adds a second, governed loop:
 
@@ -42,16 +40,16 @@ formation loop:   attribute -> propose change -> govern eligibility
                   -> activate selectively -> revise or revoke
 ```
 
-A bounded trial may be part of governance. The project does not treat trial as
-a required stage before every permitted influence.
+A bounded trial may be part of governance. The project does not require a trial
+before every permitted influence.
 
-The central research question is whether an experience can cause a warranted
-change that improves action in a later, novel, structurally related situation,
-and stays silent where that structure does not apply.
+The central question is whether experience can cause a warranted change that
+improves action in a later, novel, structurally related situation while staying
+silent where that structure does not apply.
 
 ## The system boundary
 
-Formation begins with three distinct roles:
+Formation begins with three separate roles:
 
 - The **cold model** supplies inference. It is replaceable and receives no
   weight updates within the project boundary.
@@ -61,29 +59,27 @@ Formation begins with three distinct roles:
   starting states, schedules environments and declared consequence oracles,
   assigns ablations, and captures evidence for prospective scoring.
 
-The separation matters because of a concrete failure mode. If the harness
-interprets a consequence and quietly hands the correct lesson to the model, the
-experiment measures oracle assistance rather than formation.
+This separation prevents a specific mistake. If the harness interprets a
+consequence and quietly gives the model the correct lesson, the experiment
+measures oracle assistance rather than formation.
 
 ## What counts as progress
 
-A formation claim requires more than changed behavior. At minimum, the system
-must show:
+A changed answer is not enough. A Formation claim requires at least:
 
 1. **Acquisition:** consequential experience causes a later behavioral change.
-2. **Transfer:** the change helps on prospective cases that do not permit answer
-   copying or simple episode matching.
+2. **Transfer:** the change helps on prospective cases that prevent answer
+   copying and simple episode matching.
 3. **Selectivity:** the change stays silent where its structure does not apply.
-4. **Revision:** later counterevidence can revise, suspend, or revoke an
-   admitted change.
+4. **Revision:** later counterevidence can revise, suspend, or revoke it.
 5. **Causal contribution:** ablation or controlled branching attributes the
    improvement to the acquired change.
 6. **Net value:** the benefit survives the costs of context, checks, latency,
    maintenance, and negative transfer.
 
-“Exceptional” is comparative. A formed practitioner must beat the same cold
-model with static instructions and ordinary persistence on novel work, while
-remaining governable.
+“Exceptional” is comparative. A formed practitioner must outperform the same
+cold model with static instructions and ordinary persistence on novel work,
+while remaining governable.
 
 ## Relationship to Construct
 
@@ -93,367 +89,90 @@ cross-session influence, selective eviction and recovery, and governed
 continuity. Formation accepts those results within their original evidence
 bounds.
 
-Formation does not inherit Construct's provisional runtime objects or
-vocabularies as requirements. Those are prior art and candidate instruments.
-Formation must earn its own objects and mechanisms.
+Formation does not inherit Construct’s runtime objects or vocabulary as
+requirements. They are prior work and candidate instruments. Formation must
+earn its own mechanisms.
 
 Construct remains the lab that owns its findings and should stay reproducible.
 New trajectory experiments and formation-runtime code belong here.
 
 ## Present state
 
-No formation effect has been earned. What exists today is a reviewed account
-of what the system may do, plus ten small code slices that prove identity and
-role separation in one deterministic scenario.
+No Formation effect has been earned. The project has deterministic machinery,
+several completed exploratory contacts, and a narrower measurement problem.
+Working code, stored text, and changed model output remain instrument or
+observation facts unless a prospective comparison supports a stronger claim.
 
-The Phase 0 packet —
-[concept](docs/CONCEPT.md), [authority](docs/AUTHORITY.md),
-[record](docs/RECORD.md), [evaluation](docs/EVALUATION.md),
-[fixture](docs/FIXTURE.md), and [instrument map](docs/INSTRUMENTS.md) — defines
-roles, records, baselines, and refusal outcomes in Markdown. Independent
-readers from two model families reconstructed one compatible semantic object
-from that packet. Agreement on meaning closed the semantic gate. It did not
-select a machine schema or prove any developmental effect.
+### Current empirical problem
 
-Markdown serves as a semantic prototype here. It states who may decide what,
-what must be recorded, what must be refused, and what result would prove the
-account wrong. Independent readers then reconstruct the implied system without
-seeing an implementation. Their disagreements expose missing or contradictory
-rules before code turns those rules into incidental architecture. Code begins
-only when the fixture needs a machine to compute identity, validation, or an
-exchange between components.
+The latest exploratory contact asked whether an unselected model-authored
+interpretation could affect later cold-model action. Qwen completed all 109
+calls without retry. The six information paths produced the same proposed
+actions on 15 of 16 later cases. On the remaining case, two byte-identical
+requests also returned different actions. The observed branch difference is
+therefore no larger than the variation seen with the same input.
 
-The current code uses exact bytes where byte equality matters and typed objects
-where equal-looking data must not be allowed to substitute for its source or
-authority. Ten fixture-local slices are implemented and tested:
+This result does not show formation. It identifies the next empirical problem:
+measure ordinary same-request variation well enough to tell it apart from a
+condition effect. The complete counts, requests, responses, and limits are in
+the [evidence account](evidence/unselected-lineage-behavior-contact-20260819-contact/README.md).
+The preceding executable-prediction contact found the same instability in a
+different form; its [evidence](evidence/executable-prediction-revision-contact-20260818/README.md)
+remains useful background.
 
-1. [Shared acquisition prefix](docs/MATERIALIZATION.md). Every fork starts from
-   the same six developmental records as exact bytes with a content binding.
-   Eleven tests refuse forged handoffs, replacement bytes, mutated sources,
-   altered bindings, and post-binding tampering.
-2. [Condition append](docs/CONDITION_APPEND.md). After the fork, each runtime
-   records only its public formation condition. Hidden branch assignments stay
-   in trajectory evidence. The six-line prefix stays unchanged. Twenty-six
-   tests cover both this slice and the prefix.
-3. [Admitted roots](docs/ADMITTED_ROOT.md). On the two treatment branches, a
-   distinct interpreter authors one candidate from retained experience, and a
-   distinct governor admits that exact proposal once within an explicit scope.
-   The harness schedules and witnesses; it does not author or admit. Forty-five
-   tests preserve and revalidate the source-to-admission chain.
-4. [Replay-constraint append](docs/REPLAY_CONSTRAINT_APPEND.md). The ablation
-   branch receives one public constraint bound at the exact admitted head. The
-   slice does not implement constrained replay itself. Sixty-four tests cover
-   the combined boundary.
-5. [Shared foreground delivery](docs/FOREGROUND_DELIVERY.md). One protocol
-   source is frozen once, then delivered once to each exact current branch
-   head. The runtime returns the received value; the harness checks it against
-   the same freeze. Eighty tests cover the combined boundary.
-6. [Positive encounter opening](docs/ENCOUNTER_OPENING.md). Each exact received
-   foreground becomes one runtime-authored `encounter opened` append and one
-   new current root. A sealed binding keeps freeze and comparison-group state
-   unreachable from developmental lineage. Ninety-six tests cover the combined
-   boundary.
-7. [Positive activation decisions](docs/POSITIVE_ACTIVATION_DECISION.md). The
-   baseline applies the public activation policy to an empty eligible set and
-   withholds. Governed activates the exact admission reached through its own
-   encounter lineage and originates one privately held handoff. The ablation
-   root remains excluded until constrained replay can derive its eligible set.
-   One hundred seventeen tests cover the combined boundary.
-8. [Practice-request construction](docs/PRACTICE_REQUEST.md). Baseline prepares
-   a request with no intervention-shaped field. Governed consumes the exact
-   private activation handoff once and places that object in its request. No
-   prompt format or model invocation is selected. One hundred thirty-six tests
-   cover the combined boundary.
-9. [Deterministic model invocation](docs/MODEL_INVOCATION.md). One stateless
-   actor capability receives both exact requests and alone issues their model
-   proposal objects. The runtime records those proposals without committing an
-   action. One hundred fifty tests cover the combined boundary.
-10. [Positive action commitment](docs/ACTION_COMMITMENT.md). The runtime turns
-    each exact positive proposal into a distinct commitment under its declared
-    policy and returns only a sealed binding for the private environment
-    handoff. It does not apply the action or produce a consequence. One hundred
-    sixty-two tests cover the combined boundary.
+The mechanism, deterministic specimen, charter, runner, and earlier review
+records remain available for audit. They are completed research history, not a
+mandatory sequence for the next exploratory test. A pre-contact import failure
+also remains recorded, but it is an engineering failure rather than a consumed
+scientific contact.
 
-These slices establish local identity, authority separation, and provenance
-checks. They do not establish learning, transfer, governance effectiveness, or
-any formation claim.
+### Working method
 
-Some later steps are precise enough to describe but have not earned code.
-Proposal and admission records do not yet need a byte format. Constrained
-replay must derive its result from the preserved dependency history rather than
-return a prepared answer for a known target. But one fixed example cannot show
-whether code performs a general dependency traversal or merely validates that
-example, so the project has not selected replay code or a replay schema.
-Likewise, selective activation must carry the exact admitted change into one
-model request and remain absent from withheld paths. Those same-runtime
-identity checks still do not require an activation format.
+> Move quickly enough to encounter reality, then become deliberate when
+> interpreting evidence or making a claim.
 
-Shared foreground delivery is now implemented. Independent review rejected two
-green intermediate builds. The first could repeat or alter authority outside
-one controller. The second delivered the right values to the right roots but
-did not retain which exact freeze and comparison group had authorized them.
-The repaired boundary rechecks source, authority, recipient lineage, freeze,
-group, one-time consumption, and all three returned handoffs. It selects no byte
-format and does not claim that an encounter opened.
+Discovery comes before validation. An exploratory contact needs a clear
+question, an observation that would matter, an exact model and interface, a
+small budget and stopping condition, and a place to retain evidence. It does
+not need a new chain of license documents or automatic model reviews.
 
-Positive [encounter opening](docs/ENCOUNTER_OPENING.md) is now implemented.
-Independent review rejected two green builds: one did not make the returned
-roots current and allowed a second opener to reuse the handoff; the next leaked
-private foreground provenance through a root verifier and allowed an alternate
-controller path. The repaired boundary registers one opening authority, keeps
-the full handoff outside developmental lineage, retires each predecessor at the
-encounter layer, and returns three exact current encounter roots. A foreground
-witness is now an input to an encounter append, but neither witness is a model
-request, action, or evidence of formation.
+If repeated evidence exposes a phenomenon that bears on the Formation thesis,
+the project can then test it again with prospective controls, transfer and
+non-transfer cases, replication, and outside criticism. Cursor models may help
+with occasional internal critique when a human requests it. They are not
+external peer reviewers and do not decide whether an experiment may proceed.
 
-Positive [activation decisions](docs/POSITIVE_ACTIVATION_DECISION.md) are now
-implemented for the two roots that can decide from already materialized public
-state. Baseline records consideration under the same public policy as governed,
-but over an empty eligible set, and withholds. Governed selects the exact
-admission and proposal retained by its encounter lineage, records activation,
-and returns only a sealed binding to a private encounter-local handoff.
-Independent review rejected a green build that allowed a cached decision input
-to be replaced by the ablation branch's equal-looking admission. The repaired
-boundary rechecks the exact condition, admission, and proposal at append time;
-the combined 117-test suite and independent recheck pass.
+The route to this result matters. Earlier contacts showed that interface
+compliance and computation are separate, that shape constraints can repair JSON
+without repairing an answer, and that several model setups could not perform
+their assigned responsibility. Later contacts exposed problems in consequence
+interpretation, selective influence, and model-authored reusable changes. Those
+results are retained as bounded research history; they are not another
+admission ladder. See [Research history](docs/RESEARCH_HISTORY.md).
 
-Positive [practice requests](docs/PRACTICE_REQUEST.md) are now implemented for
-baseline and governed. The baseline request has no intervention-shaped field.
-The governed request consumes the exact private activation handoff once and
-retains that object rather than copied admission or candidate fields.
-Independent review rejected green states that accepted counterfeit verifiers,
-restored rights by resetting guards, let a fake owner claim the registry, or
-consumed a handoff outside live request preparation. The repaired boundary and
-combined 136-test suite pass two final independent rechecks.
+### Supporting implementation lane
 
-Deterministic [model invocation](docs/MODEL_INVOCATION.md) now exercises those
-semantic requests without an LM. The same stateless actor proposes `release`
-for baseline and `rebuild_then_release` for governed from request-visible roles.
-Only the actor issues proposal capabilities; the runtime records them. Review
-found and repaired a post-invocation verifier replacement path before the
-combined 150-test suite and final recheck passed.
+A separate deterministic lane builds the runtime and harness boundaries needed
+for later causal work. Ten fixture-local slices are implemented through
+[action commitment](docs/ACTION_COMMITMENT.md). The next implementation step is
+[environment application](docs/ENVIRONMENT_APPLICATION.md), followed by
+[consequence intake](docs/CONSEQUENCE_INTAKE.md) and
+[experience closure](docs/EXPERIENCE_CLOSURE.md).
 
-The lifecycle boundary remains deliberately split. A model proposal is not a
-committed action, a committed action is not an environment result, and the
-fixture actor is not evidence of model learning.
-Ablation remains blocked on runtime-derived constrained replay.
-
-Positive [action commitment](docs/ACTION_COMMITMENT.md) is now implemented.
-The runtime turns each exact actor-issued proposal into a distinct commitment
-event and a sealed environment binding. Independent review found no blocker,
-then motivated stronger resistance to combined alias resets and orphaned
-binding resolution; the repaired 162-test boundary passed a final cold recheck.
-
-The next named semantic need is environment action application. It must consume
-the exact private handoff and preserve an external result while keeping result,
-oracle verdict, and formation claim distinct. The
-[environment-application contract](docs/ENVIRONMENT_APPLICATION.md) now closes
-that semantic gate. The reviewed 98-case micro-environment now removes its
-former action-keyed-lookup blocker. Cold code-facing review then licensed a
-narrow composition that must consume each exact handoff, call the existing
-engine, and issue only the result returned by that call. Implementation is
-pending.
-
-That stable result boundary also names the next lifecycle join. The
-[consequence-intake contract](docs/CONSEQUENCE_INTAKE.md) distinguishes an
-environment-originated result from the runtime-recorded `consequence observed`
-event. Two final cold reconstructions agree on exact result retention, sole
-developmental parentage, one-shot delivery, durable audit access, and the
-absence of interpretation or experience closure. Its code is blocked by the
-unimplemented environment predecessor.
-
-Positive [experience closure](docs/EXPERIENCE_CLOSURE.md) then joins the exact
-encounter-opened and consequence-observed occurrences without a synopsis,
-lesson, applicability claim, or success label. Cold review restored the omitted
-`activation considered` step and the fixture's dual-parent closure shape. Two
-final reconstructions agree. Code remains transitively blocked with its
-environment and intake predecessors.
-
-The implemented
-[revision-gated release micro-environment](docs/MICRO_ENVIRONMENT_CHARTER.md)
-is the first step beyond fixture-only pressure. Its 98 prospective cases require
-the same `release` action to succeed or fail from supplied state and require
-rebuild output to track several authority revisions. Two cold reviews and a
-code-facing review licensed only this isolated transition engine and its
-external conformance tests. Independent post-build review rejected incomplete
-test evidence before the repaired 15-test slice and combined 177-test suite
-passed final recheck. This does not license environment lifecycle plumbing or a
-formation claim, and the specimen will not be expanded.
-
-The first [cold-model contact charter](docs/SQLITE_CONTACT_CHARTER.md) is now
-semantically stable. It freezes Composer 2.5, three exploration calls, five
-unseen SQLite tasks, cold/raw/authored-lesson offers, executable scoring, and a
-nineteen-call ceiling. Raw persistence is allowed to win; a not-engaged cold
-model stops the contact.
-
-That contact is now complete and closed `not_engaged`. Composer 2.5 returned
-correct executable SQLite queries in all three independent cold exploration
-calls, so there was no wrong acquisition experience for persistence to repair.
-The runner correctly sent no lesson and no validation cases. The
-[evidence and plain-language finding](evidence/sqlite-nullable-antijoin-contact-20260815/README.md)
-passed independent audit. This is a task-selection result, not a formation or
-transfer result.
-
-A successor [Python boundary contact](docs/PYTHON_BOUNDARY_CONTACT_CHARTER.md)
-asked how Composer 2.5 resolves ordinary “Python integers” when `bool` is a
-subclass of `int`. The charter allows raw failure persistence and a
-model-authored lesson to compete on five fresh coding tasks only if exploration
-engages; otherwise the run stops. Two cold semantic reviews agree on the exact
-vectors and bounded claim. The restricted runner passed its 10-test slice, the
-combined 198-test suite, and two independent code reviews.
-
-That contact also closed `not_engaged`. Each of three cold functions used an
-exact-type check and passed all 24 frozen inputs, including the held boolean
-cases. The runner sent no lesson or validation prompt. The
-[evidence and plain-language finding](evidence/python-boundary-contact-20260815/README.md)
-passed independent audit. This is another task-selection result, not evidence
-of formation or transfer.
-
-Those two stops changed model selection. The next
-[admission exploration](docs/MODEL_ADMISSION_EXPLORATION.md) starts with local
-Ministral 3B and Nemotron 4B rather than asking Composer to fail on a harder
-trick. A model qualifies only if it passes four easy contract anchors, shows a
-narrow repeatable cold gap, and solves a different instance when the missing
-rule is stated directly. The exact artifacts, prompts, executable inputs,
-sampling fields, and 32-call ceiling are frozen. Cold review found and repaired
-ordinary-SQL weakness leakage, incomplete classifiers, optional vision loading,
-unfrozen chat templates, and incorrect artifact sizes. Runner implementation
-then passed its 6-test slice, the combined 205-test suite, and independent
-review.
-
-The first admission packet stopped both models at its first anchor, but only
-one stop supports its apparent conclusion. Ministral returned a prohibited
-Markdown fence and is cleanly `contract_unreliable` for this packet. Nemotron
-used the ordinary Python builtin `all`, which the undisclosed restricted
-sandbox omitted. Its mechanical failure is instrument-tainted, so Nemotron was
-unresolved until the corrected successor below. The
-[retained exploratory record](evidence/small-model-admission-20260815/README.md)
-passed independent audit as `EVIDENCE_PARTIAL`. A corrected successor must use
-new development material and disclose its execution vocabulary.
-
-The [corrected Nemotron successor](docs/NEMOTRON_ADMISSION_SUCCESSOR.md) closed
-its pre-contact review before inference. It retains the same model artifact and settings but uses new
-prompts and tests. Every restriction that can reject Python is stated in the
-prompt, including the complete builtin list. Its runner stores full prompt
-bytes instead of assembling a hidden suffix, labels ordinary and held inputs
-at authorship, and checks the exact model load and request. Twelve fake-contact
-tests and the combined 217-test suite pass. Independent review returned
-`RUNNER_LICENSED`.
-
-That successor contact also stopped at its first anchor. Nemotron used 702 of
-the fixed 768 completion tokens for internal reasoning and returned a function
-cut off at `return payload[0] +`. The parser rejected the incomplete answer,
-and the runner sent no later prompt. Independent audit found the
-[retained result](evidence/nemotron-admission-successor-20260815/README.md)
-valid for the exact frozen setup. This is a clean `contract_unreliable` stop,
-not a Formation result. Neither initial local model is admitted; another model
-or inference setup needs a fresh packet.
-
-The next packet begins at the much smaller end. The
-[Gemma structured-action staircase](docs/GEMMA_CONTRACT_STAIRCASE.md) screens
-instruction-tuned 270M and 1B checkpoints on four fresh JSON computations. It
-asks only whether each model can read supplied state, compute a result, and
-return one exact machine-readable action. Passing would earn a new admission
-charter, not admission itself. The separate runner passed nine fake-contact
-tests and the combined 226-test suite, then received `RUNNER_LICENSED`.
-
-Both Gemma checkpoints stopped at task 1. The 270M model returned fenced Python
-instead of JSON. The 1B model returned a fenced array, omitted the required
-object, and selected only one of two records. The
-[retained screen](evidence/gemma-contract-staircase-20260815/README.md) passed
-independent audit as `EVIDENCE_VALID`. Neither model earns a full admission
-charter under the bare text interface. A later packet may separately test a
-grammar-constrained JSON interface. That could remove fences, but the 1B
-payload shows it would not by itself supply the missing computed record.
-
-That bounded [paired interface trial](docs/STRUCTURED_OUTPUT_INTERFACE_TRIAL.md)
-is now frozen and cold-reviewed. It gives each checkpoint two fresh tasks under
-both the bare interface and a shape-only JSON grammar, then scores valid
-structure separately from a correct value. The grammar carries no answer list,
-length, pattern, or numeric bound. The protocol received
-`INTERFACE_PROTOCOL_STABLE`; no model call is licensed until its separate
-runner passes fake-contact tests and cold review. That runner now passes 13
-focused tests and the combined 239-test suite, and independent review returned
-`RUNNER_LICENSED`.
-
-All eight calls then completed without retry or abort. The JSON grammar removed
-the Markdown fence in every constrained call, so all four constrained replies
-were valid machine-readable objects. All four answers were still wrong. The
-[retained paired result](evidence/structured-output-interface-trial-20260815/README.md)
-passed independent audit as `EVIDENCE_VALID`. This is evidence that the
-constraint repaired the reply container in these cases, not the computation
-inside it.
-
-The next candidate is the exact local Granite 4.0 H Tiny artifact, selected as
-the smallest untested text-only checkpoint already present. Its
-[four-call computation gate](docs/GRANITE_COMPUTATION_GATE.md) uses the fixed
-JSON action surface on fresh filtering, ordered-update, revision, and graph
-tasks. A strict 4/4 pass only earns a later admission charter. Cold review
-returned `GRANITE_GATE_STABLE`; runner implementation and contact remain
-unlicensed. The runner now passes 10 focused tests and the combined 249-test
-suite. Independent review returned `RUNNER_LICENSED`; exactly four calls were
-licensed.
-
-All four calls then returned valid JSON with wrong values. Granite included an
-ineligible job, miscomputed the ordered arithmetic, retained a disabled latest
-revision, and crossed into an unreachable graph branch. The
-[retained gate](evidence/granite-computation-gate-20260815/README.md) passed
-independent audit as `EVIDENCE_VALID`. This exact Granite setup closes
-`computation_unreliable` and does not earn an admission charter.
-
-The next candidate is the installed Qwen 3.5 9B MLX package. Its
-[fresh computation gate](docs/QWEN_COMPUTATION_GATE.md) retains the four task
-families chosen before Granite contact while replacing every input and answer.
-The protocol binds all package and LM Studio hub-control files, records the
-actual 262,144-token multimodal load, permits text strings only, and discloses
-default thinking. Cold review returned `QWEN_GATE_STABLE`. The separate runner
-now passes 9 focused tests and the
-combined 258-test suite. Independent review returned `RUNNER_LICENSED`;
-exactly four calls were licensed.
-
-All four logical calls then used their single empty-content retry. Qwen placed
-JSON-shaped text in provider `reasoning_content` but left the scored action
-field empty on all eight attempts. The
-[retained gate](evidence/qwen-computation-gate-20260816/README.md) passed cold
-audit as `EVIDENCE_VALID`. This exact MLX/default-thinking setup earns no
-admission charter and closes `computation_unreliable`. Because reasoning text
-is not the declared action, its contents do not establish Qwen's computational
-floor.
-
-### Preparing the next research harness
-
-Formation is on hold while a new research harness is built and tested. A
-research harness is the software and procedure used to run an experiment,
-record what happened, and compare results.
-
-The completed contacts give the new harness a concrete starting point. Two
-task contacts found no acquisition experience for persistence to address.
-Later trials tested model instructions, structured replies, and small-model
-computation. Their retained records define the tested limits of each setup.
-
-The next harness will keep the developmental path visible from the start. It
-must record the experience given to the system, the change preserved from that
-experience, and the effect of that change on later behavior. Small trials will
-test each part before the harness directs a longer Formation experiment.
-
-Work on Formation can resume when the harness can run those trials, preserve a
-clear record, and support review of its decisions. The first engineering
-milestone remains a deterministic two-loop framework that can represent a
-practice trajectory and a candidate change while keeping the candidate's
-status as a proposal clear.
-
-The first experimental milestone comes later: a same-model trajectory
-comparison that can distinguish consequence-governed formation from raw
-episodic recall and authored lessons.
+This lane does not gate the exploratory contact. Completing it would establish
+plumbing and authority separation, not model development. The detailed
+milestones and stopping conditions live in the [plan](docs/PLAN.md).
 
 ## Project map
 
 | Place | Responsibility |
 | --- | --- |
-| [docs/](docs/README.md) | Concept, research program, and implementation boundary |
+| [docs/](docs/README.md) | Concept, research contracts, history, and forward plan |
+| [docs/RESEARCH_HISTORY.md](docs/RESEARCH_HISTORY.md) | Chronological account of closed research routes and how each exposed the next problem |
 | [formation/](formation/README.md) | Runtime-owned fixture producers, constraint binding, and foreground consumption; not yet a general runtime |
 | [trajectory/](trajectory/README.md) | Harness-owned fixture validation, assignment, provenance, and witness checks; not yet a general harness |
-| [tests/](tests/README.md) | Deterministic contract and separation tests |
+| [contact/](contact/README.md) | Narrow executors for bounded exploratory and validation contacts |
+| [tests/](tests/README.md) | Deterministic contract, separation, and fake-contact tests |
 | `evidence/` | Retained contact records and future primary trajectories, with bounded computed verdicts and explanations |
 
 ## Evidence and authority
@@ -468,29 +187,45 @@ When sources disagree, prefer the most specific authority for the question:
 6. This README for the project story, present state, and routing.
 7. Plans and build documents for intended work.
 
-The retained admission and task-selection contacts occupy the first two
-classes only for their own bounded questions. No developmental trajectory or
-computed Formation verdict exists yet. Plans, fixtures, and functional
-frameworks cannot promote themselves into evidence.
+Research history explains how the project arrived here. It does not override a
+specification, evidence record, scorer, or current route.
+
+The retained admission and task-selection contacts occupy the first two classes
+only for their own bounded questions. No developmental trajectory or computed
+Formation verdict exists yet. Plans, fixtures, and functional frameworks cannot
+promote themselves into evidence.
 
 ## Working here
+
+Run `uv sync` once to create the locked Python 3.14 environment. Run the full
+deterministic and fake-contact suite with `uv run pytest -q`.
 
 Before substantive work:
 
 1. Read this page and the nearest directory README.
-2. Name whether the task serves concept formation, runtime engineering,
-   trajectory instrumentation, or a specific experiment.
-3. State what would distinguish the proposed mechanism from retrieval, answer
-   copying, prompt accumulation, or harness assistance.
-4. For experiments, name the same-model baseline, transfer target,
-   non-transfer case, consequence oracle, and stopping condition before contact.
+2. Name whether the task serves the current empirical problem, the
+   deterministic supporting lane, concept formation, or later validation.
+3. For mechanism or validation work, state what would distinguish the proposed
+   account from retrieval, answer copying, prompt accumulation, or harness
+   assistance.
+4. For exploration, name the question, observation of interest, model and
+   interface, budget, stopping rule, and evidence destination. Record external
+   consequences and branch information when the experiment uses them. For
+   validation, also freeze the same-model baseline, transfer target,
+   non-transfer case, oracle, replication plan, and prospective verdict before
+   contact.
 5. Keep claims at the maturity actually supported by code and evidence.
 
 The governing route is [concept](docs/CONCEPT.md),
 [authority](docs/AUTHORITY.md), [record](docs/RECORD.md),
 [evaluation](docs/EVALUATION.md), [plan](docs/PLAN.md), [fixture](docs/FIXTURE.md),
-[instrument map](docs/INSTRUMENTS.md), and [build boundary](docs/BUILD.md). The
-current implementation step is the licensed
-[environment-application slice](docs/ENVIRONMENT_APPLICATION.md), followed by
-[consequence intake](docs/CONSEQUENCE_INTAKE.md) and
-[experience closure](docs/EXPERIENCE_CLOSURE.md).
+[instrument map](docs/INSTRUMENTS.md), and [build boundary](docs/BUILD.md).
+The completed
+[unselected-lineage contact](evidence/unselected-lineage-behavior-contact-20260819-contact/README.md)
+defines the immediate empirical problem: same-request variation. Its only
+apparent branch effect was matched by disagreement between byte-identical calls.
+The bounded repeatability runner is implemented and fake-tested. It selects
+four exact requests from the retained packet and schedules eight interleaved
+repeats of each. No repeatability contact has run. The next step is an
+explicitly authorized 32-call execution, not another admission or procedural
+review program.

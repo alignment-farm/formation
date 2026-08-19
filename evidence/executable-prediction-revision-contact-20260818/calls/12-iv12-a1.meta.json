@@ -1,0 +1,73 @@
+{
+  "attempt_index": 1,
+  "call_id": "iv12",
+  "condition": "same_response",
+  "elapsed_seconds": 3.8905296250013635,
+  "ended_at": "2026-08-18T23:46:01.132987+00:00",
+  "error": null,
+  "finish_reason": "stop",
+  "http_status": 200,
+  "logical_index": 12,
+  "message": {
+    "content": "{\"parent\": \"{\\\"when\\\":{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"fira\\\"}]},\\\"predict\\\":{\\\"lit\\\":\\\"zafren\\\"}}\", \"successor\": \"{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"fira\\\"}]},{\\\"eq\\\":[{\\\"field\\\":\\\"mark\\\"},{\\\"lit\\\":\\\"mela\\\"}]}]},\\\"predict\\\":{\\\"lit\\\":\\\"ulmec\\\"}}\"}",
+    "role": "assistant"
+  },
+  "request_sha256": "8cacaa4717af3ed9aa0492046bbae2c0df4024a3a5588d5dd1b4fd68da701a84",
+  "response_envelope": {
+    "_formation_transport": {
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "1131",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 18 Aug 2026 23:46:01 GMT",
+        "Server": "llama.cpp"
+      }
+    },
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"parent\": \"{\\\"when\\\":{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"fira\\\"}]},\\\"predict\\\":{\\\"lit\\\":\\\"zafren\\\"}}\", \"successor\": \"{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"fira\\\"}]},{\\\"eq\\\":[{\\\"field\\\":\\\"mark\\\"},{\\\"lit\\\":\\\"mela\\\"}]}]},\\\"predict\\\":{\\\"lit\\\":\\\"ulmec\\\"}}\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787096761,
+    "id": "chatcmpl-zJqdA3QzwptR1zeRVaeFCtxzOu53kzlz",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 260,
+      "predicted_ms": 3281.105,
+      "predicted_n": 97,
+      "predicted_per_second": 29.56321117428427,
+      "predicted_per_token_ms": 33.82582474226804,
+      "prompt_ms": 598.827,
+      "prompt_n": 195,
+      "prompt_per_second": 325.636619591301,
+      "prompt_per_token_ms": 3.070907692307692
+    },
+    "usage": {
+      "completion_tokens": 97,
+      "prompt_tokens": 455,
+      "prompt_tokens_details": {
+        "cached_tokens": 260
+      },
+      "total_tokens": 552
+    }
+  },
+  "response_sha256": "e2d7051950679a331e9424d0937334f15eb63ca25c95ffb3a408b1ebe54682e7",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T23:45:57.242644+00:00",
+  "usage": {
+    "completion_tokens": 97,
+    "prompt_tokens": 455,
+    "prompt_tokens_details": {
+      "cached_tokens": 260
+    },
+    "total_tokens": 552
+  },
+  "world_id": "J"
+}

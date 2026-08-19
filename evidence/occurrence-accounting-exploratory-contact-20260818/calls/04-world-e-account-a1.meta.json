@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-e-account",
+  "elapsed_seconds": 7.589824791000865,
+  "ended_at": "2026-08-18T12:50:15.339333+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 4,
+  "message": {
+    "content": "{\"account\":\"The device 'adfc8f4a1b01d510' with controller family 'c378816a8c4ed06f' started in phase '72b4369223095ae5' at position 0 with a target of 2. The first action '91dd8389d9c3730a' increased the position to 1, switching the phase to '96e6b778c4c3439e'. The second action 'c07e743cb43592c8' increased the position to 2, reaching the target, and switched the phase back to '72b4369223095ae5'.\"}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "probe_id": null,
+  "relation": null,
+  "repetition": null,
+  "request_sha256": "5b8a3562cb1f70eb714af953c77f7ece4ab043b7dc2f32d60a2d96a77173fbed",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"account\":\"The device 'adfc8f4a1b01d510' with controller family 'c378816a8c4ed06f' started in phase '72b4369223095ae5' at position 0 with a target of 2. The first action '91dd8389d9c3730a' increased the position to 1, switching the phase to '96e6b778c4c3439e'. The second action 'c07e743cb43592c8' increased the position to 2, reaching the target, and switched the phase back to '72b4369223095ae5'.\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787057415,
+    "id": "chatcmpl-oKZy90jmiuGxlIhy8rOWND2OSmGQl7t2",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 0,
+      "predicted_ms": 6146.123,
+      "predicted_n": 182,
+      "predicted_per_second": 29.61216363551462,
+      "predicted_per_token_ms": 33.76990659340659,
+      "prompt_ms": 1428.421,
+      "prompt_n": 567,
+      "prompt_per_second": 396.94179797132637,
+      "prompt_per_token_ms": 2.5192610229276897
+    },
+    "usage": {
+      "completion_tokens": 182,
+      "prompt_tokens": 567,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 749
+    }
+  },
+  "response_sha256": "2c07b3f99268a898154c3673f94cf399f75fbe913f8afe6e9566d6cf062fdf80",
+  "responsibility": "account",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T12:50:07.749495+00:00",
+  "world_id": "world-e"
+}

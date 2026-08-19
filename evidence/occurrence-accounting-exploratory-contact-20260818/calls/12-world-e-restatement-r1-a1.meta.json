@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-e-restatement-r1",
+  "elapsed_seconds": 3.5628952920014854,
+  "ended_at": "2026-08-18T12:50:50.393910+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 12,
+  "message": {
+    "content": "{\"change\":\"In controller family c378816a8c4ed06f, using control c07e743cb43592c8 in phase 96e6b778c4c3439e increases position by 1 and reaches the target.\",\"counterevidence\":null}",
+    "role": "assistant"
+  },
+  "offer_key": "restatement",
+  "probe_id": null,
+  "relation": null,
+  "repetition": 1,
+  "request_sha256": "622ec62e5db96e43276d8aa080d13e7846aa9676211f44b0aac5ae362f5bf1d2",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"change\":\"In controller family c378816a8c4ed06f, using control c07e743cb43592c8 in phase 96e6b778c4c3439e increases position by 1 and reaches the target.\",\"counterevidence\":null}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787057450,
+    "id": "chatcmpl-EDHwruncfUB6XFv6NIZty8pVZLxymlCt",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 525,
+      "predicted_ms": 2669.637,
+      "predicted_n": 79,
+      "predicted_per_second": 29.592038168485075,
+      "predicted_per_token_ms": 33.79287341772152,
+      "prompt_ms": 866.5,
+      "prompt_n": 294,
+      "prompt_per_second": 339.29601846508945,
+      "prompt_per_token_ms": 2.947278911564626
+    },
+    "usage": {
+      "completion_tokens": 79,
+      "prompt_tokens": 819,
+      "prompt_tokens_details": {
+        "cached_tokens": 525
+      },
+      "total_tokens": 898
+    }
+  },
+  "response_sha256": "2e4a3b793a8a2e2b115b3214fcbde7dcc1092ffdccffb7ef53dd0a175ed0df72",
+  "responsibility": "candidate",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T12:50:46.831009+00:00",
+  "world_id": "world-e"
+}

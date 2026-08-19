@@ -1,0 +1,73 @@
+{
+  "attempt_index": 1,
+  "call_id": "iv07",
+  "condition": "repeated_parent",
+  "elapsed_seconds": 0.9695095830102218,
+  "ended_at": "2026-08-18T23:45:48.513694+00:00",
+  "error": null,
+  "finish_reason": "stop",
+  "http_status": 200,
+  "logical_index": 7,
+  "message": {
+    "content": "{\"when\":{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},\"predict\":{\"lit\":\"vesan\"}}",
+    "role": "assistant"
+  },
+  "request_sha256": "05a0e31f6a32d52844ab36552c98ece2e1c70e61cbc90e7eeda1ffc3d47dca65",
+  "response_envelope": {
+    "_formation_transport": {
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "825",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 18 Aug 2026 23:45:48 GMT",
+        "Server": "llama.cpp"
+      }
+    },
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"when\":{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},\"predict\":{\"lit\":\"vesan\"}}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787096748,
+    "id": "chatcmpl-tDbuNLv7OqwpgxDmADZedT3H9cLj5S24",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 400,
+      "predicted_ms": 917.233,
+      "predicted_n": 28,
+      "predicted_per_second": 30.526594660244456,
+      "predicted_per_token_ms": 32.75832142857143,
+      "prompt_ms": 34.743,
+      "prompt_n": 1,
+      "prompt_per_second": 28.78277638661025,
+      "prompt_per_token_ms": 34.743
+    },
+    "usage": {
+      "completion_tokens": 28,
+      "prompt_tokens": 401,
+      "prompt_tokens_details": {
+        "cached_tokens": 400
+      },
+      "total_tokens": 429
+    }
+  },
+  "response_sha256": "cdd61b6c4a65b28c54dff5e366c9a1e88266fe2e715d8f2858cb87a8db6c39f6",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T23:45:47.544357+00:00",
+  "usage": {
+    "completion_tokens": 28,
+    "prompt_tokens": 401,
+    "prompt_tokens_details": {
+      "cached_tokens": 400
+    },
+    "total_tokens": 429
+  },
+  "world_id": "K"
+}

@@ -1,0 +1,27 @@
+{
+  "action_refusal": null,
+  "call_id": "later-current-raw_experience-r1",
+  "content": "{\"action\": \"rebuild_then_release\"}",
+  "environment_result": {
+    "action": "rebuild_then_release",
+    "artifact_revision_after": 2,
+    "artifact_revision_before": 2,
+    "authority_revision": 2,
+    "disposition": "accepted",
+    "observation": "released"
+  },
+  "logical_index": 15,
+  "message": {
+    "content": "{\"action\": \"rebuild_then_release\"}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_experience",
+  "probe_id": "later-current",
+  "repetition": 1,
+  "responsibility": "actor",
+  "situation": {
+    "artifact_revision": 2,
+    "authority_revision": 2
+  },
+  "surfaced_action": "rebuild_then_release"
+}

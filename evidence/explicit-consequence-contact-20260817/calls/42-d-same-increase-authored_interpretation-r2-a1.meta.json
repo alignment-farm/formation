@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "d-same-increase-authored_interpretation-r2",
+  "elapsed_seconds": 0.8134292920003645,
+  "ended_at": "2026-08-18T02:33:41.409369+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 42,
+  "message": {
+    "content": "{\"action\": \"juno\"}",
+    "role": "assistant"
+  },
+  "offer_key": "authored_interpretation",
+  "probe_id": "d-same-increase",
+  "relation": "same_family_increase",
+  "repetition": 2,
+  "request_sha256": "44ec1e4b69090ac143f20d1992b1251b24df80f31c21c62572dad0e83308d186",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"action\": \"juno\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787020421,
+    "id": "chatcmpl-AYBY54qQpf6C0JBfr1c6aL1DYrtB34xA",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 141,
+      "predicted_ms": 376.187,
+      "predicted_n": 12,
+      "predicted_per_second": 31.899028940394004,
+      "predicted_per_token_ms": 31.348916666666668,
+      "prompt_ms": 426.122,
+      "prompt_n": 143,
+      "prompt_per_second": 335.5846447730931,
+      "prompt_per_token_ms": 2.979874125874126
+    },
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 284,
+      "prompt_tokens_details": {
+        "cached_tokens": 141
+      },
+      "total_tokens": 296
+    }
+  },
+  "response_sha256": "c70c8ed94aff6b281ae067f85a6df546d814f390b96685feace11fb679b3da96",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:33:40.595946+00:00",
+  "world_id": "world-d"
+}

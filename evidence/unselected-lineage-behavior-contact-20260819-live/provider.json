@@ -1,0 +1,74 @@
+{
+  "chat_template": null,
+  "commands": {
+    "docker_version": {
+      "command": [
+        "docker",
+        "version",
+        "--format",
+        "{{json .}}"
+      ],
+      "returncode": 1,
+      "stderr": "Cannot connect to the Docker daemon at unix:///Users/macos-user/.docker/run/docker.sock. Is the docker daemon running?\n",
+      "stdout": "{\"Client\":{\"Version\":\"29.7.2\",\"ApiVersion\":\"1.55\",\"DefaultAPIVersion\":\"1.55\",\"GitCommit\":\"a7dcaa6\",\"GoVersion\":\"go1.26.5\",\"Os\":\"darwin\",\"Arch\":\"arm64\",\"BuildTime\":\"Wed Aug  5 18:27:50 2026\",\"Context\":\"desktop-linux\"},\"Server\":null}\n"
+    },
+    "model_inspect": {
+      "command": [
+        "docker",
+        "model",
+        "inspect",
+        "ai/qwen3:14B-Q6_K"
+      ],
+      "returncode": 1,
+      "stderr": "unable to initialize standalone model runner: unable to identify existing standalone model runner: unable to prune stopped model runner containers: unable to identify model runner containers: Cannot connect to the Docker daemon at unix:///Users/macos-user/.docker/run/docker.sock. Is the docker daemon running?\n",
+      "stdout": ""
+    },
+    "model_list": {
+      "command": [
+        "docker",
+        "model",
+        "list"
+      ],
+      "returncode": 1,
+      "stderr": "unable to initialize standalone model runner: unable to identify existing standalone model runner: unable to prune stopped model runner containers: unable to identify model runner containers: Cannot connect to the Docker daemon at unix:///Users/macos-user/.docker/run/docker.sock. Is the docker daemon running?\n",
+      "stdout": ""
+    },
+    "model_status": {
+      "command": [
+        "docker",
+        "model",
+        "status"
+      ],
+      "returncode": 1,
+      "stderr": "unable to initialize standalone model runner: unable to identify existing standalone model runner: unable to prune stopped model runner containers: unable to identify model runner containers: Cannot connect to the Docker daemon at unix:///Users/macos-user/.docker/run/docker.sock. Is the docker daemon running?\n",
+      "stdout": ""
+    },
+    "model_version": {
+      "command": [
+        "docker",
+        "model",
+        "version"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "Client:\n Version:    v1.2.6\n OS/Arch:    darwin/arm64\n\nServer:\n Version:    (not reachable)\n Engine:     Docker Engine\n"
+    }
+  },
+  "endpoint": {
+    "error": "URLError(ConnectionRefusedError(61, 'Connection refused'))",
+    "url": "http://localhost:12434/engines/v1/models"
+  },
+  "inspection": null,
+  "refusals": [
+    "model_status_failed",
+    "model_list_failed",
+    "model_inspect_failed",
+    "docker_version_failed",
+    "model_inspect_invalid",
+    "model_runner_client_server_mismatch",
+    "llama_backend_mismatch",
+    "docker_version_invalid",
+    "endpoint_unavailable"
+  ],
+  "valid": false
+}

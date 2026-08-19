@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-e-same_response-r2",
+  "elapsed_seconds": 9.95047474999592,
+  "ended_at": "2026-08-18T12:51:33.712321+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 25,
+  "message": {
+    "content": "{\"account\":\"The device started in phase '72b4369223095ae5' with position 0 and target 2. The first action was '91dd8389d9c3730a', which increased the position to 1 and toggled the phase to '96e6b778c4c3439e'. The second action was 'c07e743cb43592c8', which increased the position to 2, reaching the target, and toggled the phase back to '72b4369223095ae5'.\",\"change\":\"In controller family 'c378816a8c4ed06f', the control '91dd8389d9c3730a' increases position in phase '72b4369223095ae5' and decreases it in phase '96e6b778c4c3439e'. The control 'c07e743cb43592c8' increases position in phase",
+    "role": "assistant"
+  },
+  "offer_key": "same_response",
+  "probe_id": null,
+  "relation": null,
+  "repetition": 2,
+  "request_sha256": "cab3d1edf78452df397bceb4649ad99ac6c3d6aa4702c71014e6fb2915a84ab8",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "{\"account\":\"The device started in phase '72b4369223095ae5' with position 0 and target 2. The first action was '91dd8389d9c3730a', which increased the position to 1 and toggled the phase to '96e6b778c4c3439e'. The second action was 'c07e743cb43592c8', which increased the position to 2, reaching the target, and toggled the phase back to '72b4369223095ae5'.\",\"change\":\"In controller family 'c378816a8c4ed06f', the control '91dd8389d9c3730a' increases position in phase '72b4369223095ae5' and decreases it in phase '96e6b778c4c3439e'. The control 'c07e743cb43592c8' increases position in phase",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787057493,
+    "id": "chatcmpl-0o5lHAVGxhwovKuZhirNFORQLF6cg6Fa",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 222,
+      "predicted_ms": 8727.283,
+      "predicted_n": 256,
+      "predicted_per_second": 29.3332988055962,
+      "predicted_per_token_ms": 34.09094921875,
+      "prompt_ms": 1204.77,
+      "prompt_n": 398,
+      "prompt_per_second": 330.35351145861864,
+      "prompt_per_token_ms": 3.0270603015075377
+    },
+    "usage": {
+      "completion_tokens": 256,
+      "prompt_tokens": 620,
+      "prompt_tokens_details": {
+        "cached_tokens": 222
+      },
+      "total_tokens": 876
+    }
+  },
+  "response_sha256": "33e5d648a4af6eb1334ccfc88468891a62f2264f2fa9d67915a5ad4a7d826d44",
+  "responsibility": "candidate",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T12:51:23.761825+00:00",
+  "world_id": "world-e"
+}

@@ -1,0 +1,160 @@
+{
+  "condition": "later_repeated_successor",
+  "consequence_receipt": {
+    "authority": "environment_oracle",
+    "delivered_to_model": true,
+    "input": {
+      "facet": "daro",
+      "mark": "kela",
+      "zone": "puno"
+    },
+    "value": "vesan"
+  },
+  "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]}]},\"predict\":{\"lit\":\"qoril\"}}",
+  "correctness": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "correctness_by_role": {
+    "acquisition": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "copy_control": {
+      "assigned": 2,
+      "correct": 0
+    },
+    "later_revision_test": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "non_transfer": {
+      "assigned": 2,
+      "correct": 0
+    },
+    "primary_test": {
+      "assigned": 1,
+      "correct": 1
+    },
+    "transfer": {
+      "assigned": 2,
+      "correct": 0
+    }
+  },
+  "evaluator_version": "executable-prediction-rule-evaluator-v1",
+  "invocation_coordinate": "iv32",
+  "logical_index": 32,
+  "output_coordinate": "iv32.content",
+  "recognized_kind": "ast_rule",
+  "recognizer_version": "executable-prediction-rule-recognizer-v1",
+  "rule": {
+    "kind": "ast_rule",
+    "raw": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]}]},\"predict\":{\"lit\":\"qoril\"}}",
+    "tree": {
+      "predict": {
+        "lit": "qoril"
+      },
+      "when": {
+        "and": [
+          {
+            "eq": [
+              {
+                "field": "facet"
+              },
+              {
+                "lit": "dara"
+              }
+            ]
+          },
+          {
+            "neq": [
+              {
+                "field": "mark"
+              },
+              {
+                "lit": "kela"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime_material": {
+    "additional_experience": null,
+    "external_result": {
+      "status": "revealed",
+      "value": "vesan"
+    },
+    "parent_attempt_coordinate": "iv17.content",
+    "parent_raw": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]}]},\"predict\":{\"lit\":\"qoril\"}}",
+    "test_input": {
+      "facet": "daro",
+      "mark": "kela",
+      "zone": "puno"
+    },
+    "trial": {
+      "status": "out_of_scope",
+      "value": null
+    }
+  },
+  "trial_receipt": {
+    "authority": "rule_evaluator",
+    "evaluator_version": "executable-prediction-rule-evaluator-v1",
+    "input": {
+      "facet": "daro",
+      "mark": "kela",
+      "zone": "puno"
+    },
+    "observation": {
+      "status": "out_of_scope",
+      "value": null
+    }
+  },
+  "vector": [
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "prediction",
+      "value": "qoril"
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "prediction",
+      "value": "qoril"
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    },
+    {
+      "status": "out_of_scope",
+      "value": null
+    }
+  ],
+  "world_id": "K"
+}

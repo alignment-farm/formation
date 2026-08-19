@@ -1,0 +1,36 @@
+{
+  "account_is_request_parent": true,
+  "account_receipt": "world-f-account",
+  "call_id": "world-f-content_control-r1",
+  "candidate": {
+    "change": "Hold",
+    "counterevidence": null
+  },
+  "candidate_comparison_sha256": "f7253a79ba1c7ff1e6c3d3a1efffec142739d4091fc07ea8835aac9be4b58e27",
+  "candidate_comparison_utf8": "{\"change\":\"Hold\",\"counterevidence\":null}",
+  "candidate_refusal": null,
+  "completion_tokens": 16,
+  "condition": "content_control",
+  "content": "{\"change\":\"Hold\",\"counterevidence\":null}",
+  "fork_point": "post-account",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "counterevidence_not_nonempty_string"
+    ],
+    "source_occurrence_sha256": "faa329c565dee0a25ae3faeb980da2efc46349098e9774be9d63ba5dc1a7f97a"
+  },
+  "logical_index": 17,
+  "material_utf8_length": 439,
+  "message": {
+    "content": "{\"change\":\"Hold\",\"counterevidence\":null}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 803,
+  "public_formation_condition": "account_content_control",
+  "request_sha256": "15c7766bee8948a1f97bbbc5040a53a2b0c4462561be28f7a1f5f2538bc6a6ea",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_account": null,
+  "world_id": "world-f"
+}

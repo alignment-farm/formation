@@ -1,0 +1,39 @@
+{
+  "action_refusal": null,
+  "activated": false,
+  "call_id": "a-current-governed_candidate-r2",
+  "content": "{\"action\": \"hold\"}",
+  "environment_result": {
+    "action": "hold",
+    "controller_family": "noru-17",
+    "device_id": "ember-unit",
+    "increasing_slot": null,
+    "observation": "held_at_target",
+    "position_after": 5,
+    "position_before": 5,
+    "target": 5
+  },
+  "expected_action": "hold",
+  "expected_action_match": true,
+  "logical_index": 65,
+  "message": {
+    "content": "{\"action\": \"hold\"}",
+    "role": "assistant"
+  },
+  "offer_key": "governed_candidate",
+  "probe_id": "a-current",
+  "relation": "current_state_sufficient",
+  "repetition": 2,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "noru-17",
+    "device_id": "ember-unit",
+    "first_control": "zori",
+    "position": 5,
+    "second_control": "meka",
+    "target": 5
+  },
+  "surfaced_action": "hold",
+  "unwarranted_guess": false,
+  "world_id": "world-a"
+}

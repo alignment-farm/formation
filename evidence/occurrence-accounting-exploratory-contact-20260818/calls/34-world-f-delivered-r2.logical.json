@@ -1,0 +1,36 @@
+{
+  "account_is_request_parent": true,
+  "account_receipt": "world-f-account",
+  "call_id": "world-f-delivered-r2",
+  "candidate": {
+    "change": "The action '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position by 1, and action '9c3e211ff8cc41c2' in phase '9782ecf0f92e8157' also decreases position by 1.",
+    "counterevidence": "If the device ever reaches the target position of 2, this would contradict the established pattern."
+  },
+  "candidate_comparison_sha256": "15100b958f14b02c8b8fd69282f5964bb136de18749dac27d7c5e9f87df5ec4d",
+  "candidate_comparison_utf8": "{\"change\":\"The action '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position by 1, and action '9c3e211ff8cc41c2' in phase '9782ecf0f92e8157' also decreases position by 1.\",\"counterevidence\":\"If the device ever reaches the target position of 2, this would contradict the established pattern.\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 118,
+  "condition": "delivered",
+  "content": "{\"change\":\"The action '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position by 1, and action '9c3e211ff8cc41c2' in phase '9782ecf0f92e8157' also decreases position by 1.\",\"counterevidence\":\"If the device ever reaches the target position of 2, this would contradict the established pattern.\"}",
+  "fork_point": "post-account",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "faa329c565dee0a25ae3faeb980da2efc46349098e9774be9d63ba5dc1a7f97a"
+  },
+  "logical_index": 34,
+  "material_utf8_length": 439,
+  "message": {
+    "content": "{\"change\":\"The action '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position by 1, and action '9c3e211ff8cc41c2' in phase '9782ecf0f92e8157' also decreases position by 1.\",\"counterevidence\":\"If the device ever reaches the target position of 2, this would contradict the established pattern.\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 751,
+  "public_formation_condition": "exact_account_output",
+  "request_sha256": "c35f82320370c37c3d3c0f4764743063bf84d89c33a39190f3af18c444da197d",
+  "responsibility": "candidate",
+  "round": 2,
+  "same_response_account": null,
+  "world_id": "world-f"
+}

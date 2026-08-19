@@ -1,0 +1,75 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "world-a-acquisition",
+  "content": "{\"actions\": [\"43a13cb4e3e6aa9e\", \"49e88bb42ae5d914\"]}",
+  "environment_results": [
+    {
+      "action": "43a13cb4e3e6aa9e",
+      "before": {
+        "controller_family": "418e2788910b4d0d",
+        "controls": [
+          "43a13cb4e3e6aa9e",
+          "49e88bb42ae5d914"
+        ],
+        "device": "e2c63376b741984e",
+        "phase": "48ec89c0bb579d0a",
+        "position": 0,
+        "target": 2
+      },
+      "movement_direction": "increased",
+      "phase_after": "713562aa1a463b44",
+      "position_after": 1,
+      "target_reached": false
+    },
+    {
+      "action": "49e88bb42ae5d914",
+      "before": {
+        "controller_family": "418e2788910b4d0d",
+        "controls": [
+          "43a13cb4e3e6aa9e",
+          "49e88bb42ae5d914"
+        ],
+        "device": "e2c63376b741984e",
+        "phase": "713562aa1a463b44",
+        "position": 1,
+        "target": 2
+      },
+      "movement_direction": "increased",
+      "phase_after": "48ec89c0bb579d0a",
+      "position_after": 2,
+      "target_reached": true
+    }
+  ],
+  "expected_actions": null,
+  "expected_actions_match": null,
+  "logical_index": 2,
+  "message": {
+    "content": "{\"actions\": [\"43a13cb4e3e6aa9e\", \"49e88bb42ae5d914\"]}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "offer_utf8_length": 17,
+  "probe_id": null,
+  "prompt_tokens": 375,
+  "relation": null,
+  "request_sha256": "90201bd6caa3c83523fdddf289cf27ddd588963d931d807e34c17f827c0208d9",
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "418e2788910b4d0d",
+    "controls": [
+      "43a13cb4e3e6aa9e",
+      "49e88bb42ae5d914"
+    ],
+    "device": "e2c63376b741984e",
+    "phase": "48ec89c0bb579d0a",
+    "position": 0,
+    "target": 2
+  },
+  "surfaced_actions": [
+    "43a13cb4e3e6aa9e",
+    "49e88bb42ae5d914"
+  ],
+  "warrant_labels": [],
+  "world_id": "world-a"
+}

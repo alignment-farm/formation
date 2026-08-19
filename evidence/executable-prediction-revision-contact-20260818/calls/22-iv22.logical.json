@@ -1,0 +1,121 @@
+{
+  "condition": "repeated_occurrence",
+  "consequence_receipt": null,
+  "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\",\"lit\":\"kela\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"puna\"}}]},\"predict\":{\"lit\":\"vesan\"}}",
+  "correctness": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "correctness_by_role": {
+    "acquisition": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "copy_control": {
+      "assigned": 2,
+      "correct": 0
+    },
+    "later_revision_test": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "non_transfer": {
+      "assigned": 2,
+      "correct": 0
+    },
+    "primary_test": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "transfer": {
+      "assigned": 2,
+      "correct": 0
+    }
+  },
+  "evaluator_version": "executable-prediction-rule-evaluator-v1",
+  "invocation_coordinate": "iv22",
+  "logical_index": 22,
+  "output_coordinate": "iv22.content",
+  "recognized_kind": "literal_rule",
+  "recognizer_version": "executable-prediction-rule-recognizer-v1",
+  "rule": {
+    "kind": "literal_rule",
+    "raw": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\",\"lit\":\"kela\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"puna\"}}]},\"predict\":{\"lit\":\"vesan\"}}",
+    "tree": null
+  },
+  "runtime_material": {
+    "additional_experience": {
+      "input": {
+        "facet": "dara",
+        "mark": "kela",
+        "zone": "puna"
+      },
+      "prediction": {
+        "status": "available",
+        "value": "vesan"
+      },
+      "result": {
+        "authority": "environment_oracle",
+        "value": "vesan"
+      }
+    },
+    "external_result": {
+      "status": "not_available",
+      "value": null
+    },
+    "parent_attempt_coordinate": null,
+    "parent_raw": null,
+    "test_input": null,
+    "trial": {
+      "status": "not_available",
+      "value": null
+    }
+  },
+  "trial_receipt": null,
+  "vector": [
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\",\"lit\":\"kela\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"puna\"}}]},\"predict\":{\"lit\":\"vesan\"}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\",\"lit\":\"kela\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"puna\"}}]},\"predict\":{\"lit\":\"vesan\"}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\",\"lit\":\"kela\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"puna\"}}]},\"predict\":{\"lit\":\"vesan\"}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\",\"lit\":\"kela\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"puna\"}}]},\"predict\":{\"lit\":\"vesan\"}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\",\"lit\":\"kela\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"puna\"}}]},\"predict\":{\"lit\":\"vesan\"}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\",\"lit\":\"kela\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"puna\"}}]},\"predict\":{\"lit\":\"vesan\"}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\",\"lit\":\"kela\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"puna\"}}]},\"predict\":{\"lit\":\"vesan\"}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\",\"lit\":\"kela\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"puna\"}}]},\"predict\":{\"lit\":\"vesan\"}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\",\"lit\":\"kela\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"puna\"}}]},\"predict\":{\"lit\":\"vesan\"}}"
+    }
+  ],
+  "world_id": "K"
+}

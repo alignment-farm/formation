@@ -1,0 +1,41 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "d-same-decrease-raw_occurrence-r1",
+  "content": "{\"action\": \"loro\"}",
+  "environment_result": {
+    "action": "loro",
+    "controller_family": "vesa-58",
+    "device_id": "meadow-unit",
+    "increasing_slot": null,
+    "movement_direction": "increased",
+    "observation": "target_not_reached",
+    "position_after": 23,
+    "position_before": 22,
+    "selected_slot": "second",
+    "target": 21
+  },
+  "expected_action": "kavi",
+  "expected_action_match": false,
+  "logical_index": 21,
+  "message": {
+    "content": "{\"action\": \"loro\"}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "probe_id": "d-same-decrease",
+  "relation": "same_family_decrease",
+  "repetition": 1,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "vesa-58",
+    "device_id": "meadow-unit",
+    "first_control": "kavi",
+    "position": 22,
+    "second_control": "loro",
+    "target": 21
+  },
+  "surfaced_action": "loro",
+  "unwarranted_guess": false,
+  "world_id": "world-d"
+}

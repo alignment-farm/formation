@@ -1,0 +1,41 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "d-same-increase-raw_occurrence-r1",
+  "content": "{\"action\": \"ivar\"}",
+  "environment_result": {
+    "action": "ivar",
+    "controller_family": "vesa-58",
+    "device_id": "harbor-unit",
+    "increasing_slot": null,
+    "movement_direction": "decreased",
+    "observation": "target_not_reached",
+    "position_after": 21,
+    "position_before": 22,
+    "selected_slot": "first",
+    "target": 23
+  },
+  "expected_action": "juno",
+  "expected_action_match": false,
+  "logical_index": 10,
+  "message": {
+    "content": "{\"action\": \"ivar\"}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "probe_id": "d-same-increase",
+  "relation": "same_family_increase",
+  "repetition": 1,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "vesa-58",
+    "device_id": "harbor-unit",
+    "first_control": "ivar",
+    "position": 22,
+    "second_control": "juno",
+    "target": 23
+  },
+  "surfaced_action": "ivar",
+  "unwarranted_guess": false,
+  "world_id": "world-d"
+}

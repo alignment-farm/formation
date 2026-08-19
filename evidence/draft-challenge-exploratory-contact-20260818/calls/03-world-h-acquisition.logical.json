@@ -1,0 +1,32 @@
+{
+  "action_refusal": null,
+  "actor_material_bytes": "EXPERIENCE-DERIVED MATERIAL\n{\"material\":null}",
+  "call_id": "world-h-acquisition",
+  "completion_tokens": 40,
+  "content": "{\"actions\": [\"aa94f3ae24c6630b\", \"a3dd902b2fe11658\"]}",
+  "logical_index": 3,
+  "message": {
+    "content": "{\"actions\": [\"aa94f3ae24c6630b\", \"a3dd902b2fe11658\"]}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 373,
+  "request_sha256": "4c1bbc21a08818033eb4e3dbd0737068496e25d8ae703e44f92e39c073cdb565",
+  "response_sha256": "4d0815ffca1f86e3802f434d2dfcdd8d7fdce8df612732dcf629c1fc49ca92f9",
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "04a6549a17c2f498",
+    "controls": [
+      "aa94f3ae24c6630b",
+      "a3dd902b2fe11658"
+    ],
+    "device": "e52fe06ac648cd96",
+    "phase": "b1a356711b7c0edf",
+    "position": 0,
+    "target": 2
+  },
+  "surfaced_actions": [
+    "aa94f3ae24c6630b",
+    "a3dd902b2fe11658"
+  ],
+  "world_id": "world-h"
+}

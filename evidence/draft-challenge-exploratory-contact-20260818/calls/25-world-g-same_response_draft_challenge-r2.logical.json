@@ -1,0 +1,40 @@
+{
+  "call_id": "world-g-same_response_draft_challenge-r2",
+  "candidate": {
+    "change": "In the controller family 'cd32522fbc89d0cc', pressing the first control ('7e81cf4ce9afe7ad') in phase 'ccdabc1e1f6ca491' increases position by 1 and transitions to phase 'de7c867e5bd687b5'. This action is reusable and applies to the same device and family.",
+    "counterevidence": "If pressing '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' does not increase position or transition to 'de7c867e5bd687b5', this claim is invalidated."
+  },
+  "candidate_comparison_refusal": null,
+  "candidate_comparison_sha256": "81b06368e75425a1107fd3f58ce7f0888b5bc20b45e9d8a3bdb31a50341730b4",
+  "candidate_comparison_utf8": "{\"change\":\"In the controller family 'cd32522fbc89d0cc', pressing the first control ('7e81cf4ce9afe7ad') in phase 'ccdabc1e1f6ca491' increases position by 1 and transitions to phase 'de7c867e5bd687b5'. This action is reusable and applies to the same device and family.\",\"counterevidence\":\"If pressing '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' does not increase position or transition to 'de7c867e5bd687b5', this claim is invalidated.\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 339,
+  "condition": "same_response_draft_challenge",
+  "content": "{\n  \"draft\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', pressing the first control ('7e81cf4ce9afe7ad') in phase 'ccdabc1e1f6ca491' increases position by 1 and transitions to phase 'de7c867e5bd687b5'. This action is reusable and applies to the same device and family.\",\n    \"counterevidence\": \"If pressing '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' does not increase position or transition to 'de7c867e5bd687b5', this claim is invalidated.\"\n  },\n  \"final\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', pressing the first control ('7e81cf4ce9afe7ad') in phase 'ccdabc1e1f6ca491' increases position by 1 and transitions to phase 'de7c867e5bd687b5'. This action is reusable and applies to the same device and family.\",\n    \"counterevidence\": \"If pressing '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' does not increase position or transition to 'de7c867e5bd687b5', this claim is invalidated.\"\n  }\n}",
+  "draft_is_request_parent": false,
+  "draft_receipt": null,
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "f6d87534c88f64138cf5d540d37146ebc2eea3d6f05846c658487243bf2c1881"
+  },
+  "governance_deferred": false,
+  "logical_index": 25,
+  "material_utf8_length": 17,
+  "message": {
+    "content": "{\n  \"draft\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', pressing the first control ('7e81cf4ce9afe7ad') in phase 'ccdabc1e1f6ca491' increases position by 1 and transitions to phase 'de7c867e5bd687b5'. This action is reusable and applies to the same device and family.\",\n    \"counterevidence\": \"If pressing '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' does not increase position or transition to 'de7c867e5bd687b5', this claim is invalidated.\"\n  },\n  \"final\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', pressing the first control ('7e81cf4ce9afe7ad') in phase 'ccdabc1e1f6ca491' increases position by 1 and transitions to phase 'de7c867e5bd687b5'. This action is reusable and applies to the same device and family.\",\n    \"counterevidence\": \"If pressing '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' does not increase position or transition to 'de7c867e5bd687b5', this claim is invalidated.\"\n  }\n}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 622,
+  "public_formation_condition": "same_response_draft_challenge",
+  "request_sha256": "bbc4821ce6703952fc7484c768cd8f6847d8a735c39459545fcc758b76468ca6",
+  "response_sha256": "6ba1050592ac98fa2d85fa4c1f6a06717ac1537d1a908270afe07f0ce5baeb64",
+  "responsibility": "candidate",
+  "round": 2,
+  "same_response_draft_canonical": "{\"change\":\"In the controller family 'cd32522fbc89d0cc', pressing the first control ('7e81cf4ce9afe7ad') in phase 'ccdabc1e1f6ca491' increases position by 1 and transitions to phase 'de7c867e5bd687b5'. This action is reusable and applies to the same device and family.\",\"counterevidence\":\"If pressing '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' does not increase position or transition to 'de7c867e5bd687b5', this claim is invalidated.\"}",
+  "world_id": "world-g"
+}

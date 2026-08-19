@@ -1,0 +1,41 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "c-same-decrease-authored_interpretation-r2",
+  "content": "{\"action\": \"doro\"}",
+  "environment_result": {
+    "action": "doro",
+    "controller_family": "lyra-31",
+    "device_id": "flint-unit",
+    "increasing_slot": null,
+    "movement_direction": "decreased",
+    "observation": "target_reached",
+    "position_after": 11,
+    "position_before": 12,
+    "selected_slot": "second",
+    "target": 11
+  },
+  "expected_action": "doro",
+  "expected_action_match": true,
+  "logical_index": 46,
+  "message": {
+    "content": "{\"action\": \"doro\"}",
+    "role": "assistant"
+  },
+  "offer_key": "authored_interpretation",
+  "probe_id": "c-same-decrease",
+  "relation": "same_family_decrease",
+  "repetition": 2,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "lyra-31",
+    "device_id": "flint-unit",
+    "first_control": "cavi",
+    "position": 12,
+    "second_control": "doro",
+    "target": 11
+  },
+  "surfaced_action": "doro",
+  "unwarranted_guess": false,
+  "world_id": "world-c"
+}

@@ -1,0 +1,64 @@
+{
+  "acquisition_state": {
+    "artifact_revision": 7,
+    "authority_revision": 8
+  },
+  "actor_settings": {
+    "max_tokens": 128,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "endpoint": "http://localhost:12434/engines/llama.cpp/v1/chat/completions",
+  "inspect_tag": "docker.io/ai/qwen3:14B-Q6_K",
+  "interface_state": {
+    "artifact_revision": 3,
+    "authority_revision": 4
+  },
+  "interpreter_settings": {
+    "max_tokens": 384,
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "offers": [
+    "no_offer",
+    "raw_experience",
+    "runtime_interpretation",
+    "frozen_lesson"
+  ],
+  "physical_call_ceiling": 30,
+  "planned_logical_calls": 27,
+  "probes": [
+    {
+      "probe_id": "later-adjacent",
+      "state": {
+        "artifact_revision": 41,
+        "authority_revision": 42
+      }
+    },
+    {
+      "probe_id": "later-reversed",
+      "state": {
+        "artifact_revision": 8,
+        "authority_revision": 7
+      }
+    },
+    {
+      "probe_id": "later-current",
+      "state": {
+        "artifact_revision": 2,
+        "authority_revision": 2
+      }
+    }
+  ],
+  "protocol": "exploratory-developmental-contact-v0",
+  "static_lesson": "Compare the artifact revision with the authority revision. If they match, choose `release`. If they differ, choose `rebuild_then_release` so the artifact is rebuilt to the authority revision before release.",
+  "static_lesson_author": "human_protocol_owner_pre_contact",
+  "validation_verdicts_forbidden": true
+}

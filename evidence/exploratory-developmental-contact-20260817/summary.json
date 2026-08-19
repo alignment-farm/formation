@@ -1,0 +1,219 @@
+{
+  "cells": [
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "rebuild_then_release",
+        "rebuild_then_release"
+      ],
+      "environment_dispositions": [
+        "accepted",
+        "accepted"
+      ],
+      "offer_key": "no_offer",
+      "probe_id": "later-adjacent",
+      "within_cell_action_disagreement": false
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "release",
+        "rebuild_then_release"
+      ],
+      "environment_dispositions": [
+        "rejected",
+        "accepted"
+      ],
+      "offer_key": "raw_experience",
+      "probe_id": "later-adjacent",
+      "within_cell_action_disagreement": true
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "rebuild_then_release",
+        "rebuild_then_release"
+      ],
+      "environment_dispositions": [
+        "accepted",
+        "accepted"
+      ],
+      "offer_key": "runtime_interpretation",
+      "probe_id": "later-adjacent",
+      "within_cell_action_disagreement": false
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "rebuild_then_release",
+        "rebuild_then_release"
+      ],
+      "environment_dispositions": [
+        "accepted",
+        "accepted"
+      ],
+      "offer_key": "frozen_lesson",
+      "probe_id": "later-adjacent",
+      "within_cell_action_disagreement": false
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "rebuild_then_release",
+        "rebuild_then_release"
+      ],
+      "environment_dispositions": [
+        "accepted",
+        "accepted"
+      ],
+      "offer_key": "no_offer",
+      "probe_id": "later-reversed",
+      "within_cell_action_disagreement": false
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "rebuild_then_release",
+        "release"
+      ],
+      "environment_dispositions": [
+        "accepted",
+        "rejected"
+      ],
+      "offer_key": "raw_experience",
+      "probe_id": "later-reversed",
+      "within_cell_action_disagreement": true
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "rebuild_then_release",
+        "rebuild_then_release"
+      ],
+      "environment_dispositions": [
+        "accepted",
+        "accepted"
+      ],
+      "offer_key": "runtime_interpretation",
+      "probe_id": "later-reversed",
+      "within_cell_action_disagreement": false
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "rebuild_then_release",
+        "rebuild_then_release"
+      ],
+      "environment_dispositions": [
+        "accepted",
+        "accepted"
+      ],
+      "offer_key": "frozen_lesson",
+      "probe_id": "later-reversed",
+      "within_cell_action_disagreement": false
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "release",
+        "release"
+      ],
+      "environment_dispositions": [
+        "accepted",
+        "accepted"
+      ],
+      "offer_key": "no_offer",
+      "probe_id": "later-current",
+      "within_cell_action_disagreement": false
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "rebuild_then_release",
+        "rebuild_then_release"
+      ],
+      "environment_dispositions": [
+        "accepted",
+        "accepted"
+      ],
+      "offer_key": "raw_experience",
+      "probe_id": "later-current",
+      "within_cell_action_disagreement": false
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "rebuild_then_release",
+        "rebuild_then_release"
+      ],
+      "environment_dispositions": [
+        "accepted",
+        "accepted"
+      ],
+      "offer_key": "runtime_interpretation",
+      "probe_id": "later-current",
+      "within_cell_action_disagreement": false
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "release",
+        "release"
+      ],
+      "environment_dispositions": [
+        "accepted",
+        "accepted"
+      ],
+      "offer_key": "frozen_lesson",
+      "probe_id": "later-current",
+      "within_cell_action_disagreement": false
+    }
+  ],
+  "completed_logical_calls": 27,
+  "contact_state": "complete",
+  "evidence_class": "exploratory_observation_only",
+  "formation_verdict": null,
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "physical_attempts": 27,
+  "physical_call_ceiling": 30,
+  "planned_logical_calls": 27,
+  "protocol": "exploratory-developmental-contact-v0",
+  "stop_reason": null
+}

@@ -1,0 +1,73 @@
+{
+  "attempt_index": 1,
+  "call_id": "iv10",
+  "condition": "result_withheld",
+  "elapsed_seconds": 2.2661399579956196,
+  "ended_at": "2026-08-18T23:45:54.600292+00:00",
+  "error": null,
+  "finish_reason": "stop",
+  "http_status": 200,
+  "logical_index": 10,
+  "message": {
+    "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuna\"}]},{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"fira\"}]}]},\"predict\":{\"lit\":\"zafren\"}}",
+    "role": "assistant"
+  },
+  "request_sha256": "f6cf32bb4561ed866a27a59c8906eeb5e11bbd59637c5d0d5eb954b538f1d88d",
+  "response_envelope": {
+    "_formation_transport": {
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "908",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 18 Aug 2026 23:45:54 GMT",
+        "Server": "llama.cpp"
+      }
+    },
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuna\"}]},{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"fira\"}]}]},\"predict\":{\"lit\":\"zafren\"}}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787096754,
+    "id": "chatcmpl-eSpuhtwazvlgbz4HXNFcZjCvVFrpBURC",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 330,
+      "predicted_ms": 1673.111,
+      "predicted_n": 50,
+      "predicted_per_second": 29.884448790307395,
+      "predicted_per_token_ms": 33.46222,
+      "prompt_ms": 580.68,
+      "prompt_n": 213,
+      "prompt_per_second": 366.8113246538542,
+      "prompt_per_token_ms": 2.7261971830985914
+    },
+    "usage": {
+      "completion_tokens": 50,
+      "prompt_tokens": 543,
+      "prompt_tokens_details": {
+        "cached_tokens": 330
+      },
+      "total_tokens": 593
+    }
+  },
+  "response_sha256": "d423a8dd6c4d8a5fdd8f1d6ae734b7152afa9e8dacd5fba49750c1685219bd94",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T23:45:52.334331+00:00",
+  "usage": {
+    "completion_tokens": 50,
+    "prompt_tokens": 543,
+    "prompt_tokens_details": {
+      "cached_tokens": 330
+    },
+    "total_tokens": 593
+  },
+  "world_id": "J"
+}

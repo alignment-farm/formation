@@ -1,0 +1,60 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "a-current-raw_occurrence",
+  "content": "{\"actions\": [\"hold\"]}",
+  "environment_results": [
+    {
+      "action": "hold",
+      "before": {
+        "controller_family": "418e2788910b4d0d",
+        "controls": [
+          "ab3de3c86d1a3762",
+          "b0ab827c7b6094e2"
+        ],
+        "device": "abf06a862f8580e1",
+        "phase": "48ec89c0bb579d0a",
+        "position": 7,
+        "target": 7
+      },
+      "movement_direction": "unchanged",
+      "phase_after": "48ec89c0bb579d0a",
+      "position_after": 7,
+      "target_reached": true
+    }
+  ],
+  "expected_actions": [
+    "hold"
+  ],
+  "expected_actions_match": true,
+  "logical_index": 65,
+  "message": {
+    "content": "{\"actions\": [\"hold\"]}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "offer_utf8_length": 691,
+  "probe_id": "a-current",
+  "prompt_tokens": 689,
+  "relation": "already_current",
+  "request_sha256": "98fb23ecf0310af2bc874451a2c956770f2758f53ec4aa8b1851a928402d4e2d",
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "418e2788910b4d0d",
+    "controls": [
+      "ab3de3c86d1a3762",
+      "b0ab827c7b6094e2"
+    ],
+    "device": "abf06a862f8580e1",
+    "phase": "48ec89c0bb579d0a",
+    "position": 7,
+    "target": 7
+  },
+  "surfaced_actions": [
+    "hold"
+  ],
+  "warrant_labels": [
+    "warranted"
+  ],
+  "world_id": "world-a"
+}

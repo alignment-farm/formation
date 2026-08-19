@@ -1,0 +1,39 @@
+{
+  "call_id": "world-g-exact_draft_challenge-r2",
+  "candidate": {
+    "change": "7e81cf4ce9afe7ad",
+    "counterevidence": "If the position increases again after using this action, it would contradict the rule that the increasing slot is opposite in the two phases."
+  },
+  "candidate_comparison_refusal": null,
+  "candidate_comparison_sha256": "e8903c48f58b6176821b1e3babc8325372ed45b32a08fa316ce63c411ed6ec85",
+  "candidate_comparison_utf8": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the position increases again after using this action, it would contradict the rule that the increasing slot is opposite in the two phases.\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 51,
+  "condition": "exact_draft_challenge",
+  "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the position increases again after using this action, it would contradict the rule that the increasing slot is opposite in the two phases.\"}",
+  "draft_is_request_parent": true,
+  "draft_receipt": "candidate-g-direct-1",
+  "fork_point": "post-source",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "f6d87534c88f64138cf5d540d37146ebc2eea3d6f05846c658487243bf2c1881"
+  },
+  "governance_deferred": false,
+  "logical_index": 24,
+  "material_utf8_length": 91,
+  "message": {
+    "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the position increases again after using this action, it would contradict the rule that the increasing slot is opposite in the two phases.\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 609,
+  "public_formation_condition": "exact_draft_challenge",
+  "request_sha256": "17484c414c6e0aede87cad3e9c38053cd11ae756fd0c458531045eb8b9ba1428",
+  "response_sha256": "9fcf70ed4add2b2d10f844dedc8e35c16bdbd641530f66e1fa5f6fdddac31ab4",
+  "responsibility": "candidate",
+  "round": 2,
+  "same_response_draft_canonical": null,
+  "world_id": "world-g"
+}

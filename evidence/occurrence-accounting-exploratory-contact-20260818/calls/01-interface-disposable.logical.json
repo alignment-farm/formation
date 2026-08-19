@@ -1,0 +1,30 @@
+{
+  "action_refusal": null,
+  "actor_material_bytes": "EXPERIENCE-DERIVED MATERIAL\n{\"material\":null}",
+  "call_id": "interface-disposable",
+  "completion_tokens": 11,
+  "content": "{\"actions\": [\"hold\"]}",
+  "logical_index": 1,
+  "message": {
+    "content": "{\"actions\": [\"hold\"]}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 368,
+  "request_sha256": "7cf18eaea9f66ab8405bbfe975b1151cf4f444d92b269ddec854ff2011751116",
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "c5feb6f0d132c08e",
+    "controls": [
+      "3185f44dddd55df2",
+      "9f66ade0f8ea381a"
+    ],
+    "device": "0ac23ba43c882959",
+    "phase": "50679bf78e69e0d6",
+    "position": 3,
+    "target": 3
+  },
+  "surfaced_actions": [
+    "hold"
+  ],
+  "world_id": null
+}

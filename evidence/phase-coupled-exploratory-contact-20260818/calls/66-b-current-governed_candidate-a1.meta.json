@@ -1,0 +1,60 @@
+{
+  "activated": false,
+  "attempt_index": 1,
+  "call_id": "b-current-governed_candidate",
+  "elapsed_seconds": 0.8151521249965299,
+  "ended_at": "2026-08-18T10:54:44.293039+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 66,
+  "message": {
+    "content": "{\"actions\": [\"hold\"]}",
+    "role": "assistant"
+  },
+  "offer_key": "governed_candidate",
+  "probe_id": "b-current",
+  "relation": "already_current",
+  "repetition": null,
+  "request_sha256": "f2df45c3460c0a0063342724e5ea48afe9aa8ef596442918211af4ee43f0f1ce",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"actions\": [\"hold\"]}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787050484,
+    "id": "chatcmpl-Icw1aOP4zObibSonERMdMarh3UsK6qCw",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 229,
+      "predicted_ms": 341.031,
+      "predicted_n": 11,
+      "predicted_per_second": 32.25513223138072,
+      "predicted_per_token_ms": 31.00281818181818,
+      "prompt_ms": 446.355,
+      "prompt_n": 146,
+      "prompt_per_second": 327.09390507555645,
+      "prompt_per_token_ms": 3.0572260273972605
+    },
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 375,
+      "prompt_tokens_details": {
+        "cached_tokens": 229
+      },
+      "total_tokens": 386
+    }
+  },
+  "response_sha256": "9e5f78d95a2613b033061710d06cd8179016402598156b4f4ba6d690ae54944e",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T10:54:43.477902+00:00",
+  "world_id": "world-b"
+}

@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "b-unobserved-decoy-raw_occurrence-r2",
+  "elapsed_seconds": 1.0256110000000263,
+  "ended_at": "2026-08-18T02:20:10.745550+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 59,
+  "message": {
+    "content": "{\"action\": \"kelo\"}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "probe_id": "b-unobserved-decoy",
+  "relation": "unobserved_family_decoy",
+  "repetition": 2,
+  "request_sha256": "8d48227678d5d8bfe191a38abd707a85ee8fcea006c49d0d7c9dd5e4653fdb5e",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"action\": \"kelo\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787019610,
+    "id": "chatcmpl-r1kanJuJO1pCuNEDbIwKgiF4vWS6Wchv",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 208,
+      "predicted_ms": 375.056,
+      "predicted_n": 12,
+      "predicted_per_second": 31.995222046841008,
+      "predicted_per_token_ms": 31.254666666666665,
+      "prompt_ms": 639.286,
+      "prompt_n": 194,
+      "prompt_per_second": 303.4635515246697,
+      "prompt_per_token_ms": 3.295288659793814
+    },
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 402,
+      "prompt_tokens_details": {
+        "cached_tokens": 208
+      },
+      "total_tokens": 414
+    }
+  },
+  "response_sha256": "2914f662b11ac1d42e154e8d2b31ee97e4ad11aad2deeb3e89a586ed9c8b092d",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:20:09.719940+00:00",
+  "world_id": "world-b"
+}

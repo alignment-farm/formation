@@ -1,0 +1,78 @@
+{
+  "action_refusal": null,
+  "activated": false,
+  "call_id": "b-p1-down-content_ablation",
+  "content": "{\"actions\": [\"c91e1a0e760ddb08\", \"45f7fc5cc2047071\"]}",
+  "environment_results": [
+    {
+      "action": "c91e1a0e760ddb08",
+      "before": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "c91e1a0e760ddb08",
+          "45f7fc5cc2047071"
+        ],
+        "device": "125569c2598f087c",
+        "phase": "e4827a8649c41e3f",
+        "position": 40,
+        "target": 38
+      },
+      "movement_direction": "increased",
+      "phase_after": "a7fdcdee8ffb8e83",
+      "position_after": 41,
+      "target_reached": false
+    },
+    {
+      "action": "45f7fc5cc2047071",
+      "before": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "c91e1a0e760ddb08",
+          "45f7fc5cc2047071"
+        ],
+        "device": "125569c2598f087c",
+        "phase": "a7fdcdee8ffb8e83",
+        "position": 41,
+        "target": 38
+      },
+      "movement_direction": "increased",
+      "phase_after": "e4827a8649c41e3f",
+      "position_after": 42,
+      "target_reached": false
+    }
+  ],
+  "expected_actions": [
+    "45f7fc5cc2047071",
+    "c91e1a0e760ddb08"
+  ],
+  "expected_actions_match": false,
+  "logical_index": 52,
+  "message": {
+    "content": "{\"actions\": [\"c91e1a0e760ddb08\", \"45f7fc5cc2047071\"]}",
+    "role": "assistant"
+  },
+  "offer_key": "content_ablation",
+  "offer_utf8_length": 17,
+  "probe_id": "b-p1-down",
+  "prompt_tokens": 376,
+  "relation": "same_family_commitment",
+  "request_sha256": "f5fce5c6a587d2418add01fae5e599970329518a891d55bfdc4cff21c62d7ae0",
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "cabd05ee74f6137f",
+    "controls": [
+      "c91e1a0e760ddb08",
+      "45f7fc5cc2047071"
+    ],
+    "device": "125569c2598f087c",
+    "phase": "e4827a8649c41e3f",
+    "position": 40,
+    "target": 38
+  },
+  "surfaced_actions": [
+    "c91e1a0e760ddb08",
+    "45f7fc5cc2047071"
+  ],
+  "warrant_labels": [],
+  "world_id": "world-b"
+}

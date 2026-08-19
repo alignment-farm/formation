@@ -1,0 +1,13 @@
+{
+  "admitted": true,
+  "candidate": {
+    "controller_family": "lyra-31",
+    "counterevidence": "If the first slot did not increase the position, the observation would not indicate target_reached.",
+    "increasing_slot": "first",
+    "scope": "same_controller_family"
+  },
+  "derivation_surface": "selected_slot_and_movement_direction_only",
+  "refusals": [],
+  "runtime_derived_increasing_slot": "first",
+  "source_family": "lyra-31"
+}

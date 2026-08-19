@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "action": "f255d496ba13354d",
+      "before": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "f255d496ba13354d",
+          "c0cb0cf5a7a8966e"
+        ],
+        "device": "eb20f810d311d78d",
+        "phase": "a7fdcdee8ffb8e83",
+        "position": 0,
+        "target": 2
+      },
+      "consequence": {
+        "movement_direction": "decreased",
+        "phase_after": "e4827a8649c41e3f",
+        "position_after": -1,
+        "target_reached": false
+      }
+    },
+    {
+      "action": "c0cb0cf5a7a8966e",
+      "before": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "f255d496ba13354d",
+          "c0cb0cf5a7a8966e"
+        ],
+        "device": "eb20f810d311d78d",
+        "phase": "e4827a8649c41e3f",
+        "position": -1,
+        "target": 2
+      },
+      "consequence": {
+        "movement_direction": "decreased",
+        "phase_after": "a7fdcdee8ffb8e83",
+        "position_after": -2,
+        "target_reached": false
+      }
+    }
+  ]
+}

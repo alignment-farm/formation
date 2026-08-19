@@ -1,0 +1,31 @@
+{
+  "action_refusal": null,
+  "actor_material_bytes": "EXPERIENCE-DERIVED MATERIAL\n{\"material\":null}",
+  "call_id": "world-e-acquisition",
+  "completion_tokens": 42,
+  "content": "{\"actions\": [\"91dd8389d9c3730a\", \"c07e743cb43592c8\"]}",
+  "logical_index": 2,
+  "message": {
+    "content": "{\"actions\": [\"91dd8389d9c3730a\", \"c07e743cb43592c8\"]}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 377,
+  "request_sha256": "259da31274b02bdc7454f30946069f53ead04d47224af91b0ad51bd05b82f7a4",
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "c378816a8c4ed06f",
+    "controls": [
+      "91dd8389d9c3730a",
+      "c07e743cb43592c8"
+    ],
+    "device": "adfc8f4a1b01d510",
+    "phase": "72b4369223095ae5",
+    "position": 0,
+    "target": 2
+  },
+  "surfaced_actions": [
+    "91dd8389d9c3730a",
+    "c07e743cb43592c8"
+  ],
+  "world_id": "world-e"
+}

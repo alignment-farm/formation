@@ -1,0 +1,60 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "b-current-authored_direct",
+  "content": "{\"actions\": [\"hold\"]}",
+  "environment_results": [
+    {
+      "action": "hold",
+      "before": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "2ae7131dd2485a9f",
+          "45c5f8d4d8fbd8d8"
+        ],
+        "device": "8da6ced685a9c8c4",
+        "phase": "e4827a8649c41e3f",
+        "position": 9,
+        "target": 9
+      },
+      "movement_direction": "unchanged",
+      "phase_after": "e4827a8649c41e3f",
+      "position_after": 9,
+      "target_reached": true
+    }
+  ],
+  "expected_actions": [
+    "hold"
+  ],
+  "expected_actions_match": true,
+  "logical_index": 69,
+  "message": {
+    "content": "{\"actions\": [\"hold\"]}",
+    "role": "assistant"
+  },
+  "offer_key": "authored_direct",
+  "offer_utf8_length": 81,
+  "probe_id": "b-current",
+  "prompt_tokens": 398,
+  "relation": "already_current",
+  "request_sha256": "dabe8383392ed7d56e3164769eae3987ddfc551d13abb255313224613668ddba",
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "cabd05ee74f6137f",
+    "controls": [
+      "2ae7131dd2485a9f",
+      "45c5f8d4d8fbd8d8"
+    ],
+    "device": "8da6ced685a9c8c4",
+    "phase": "e4827a8649c41e3f",
+    "position": 9,
+    "target": 9
+  },
+  "surfaced_actions": [
+    "hold"
+  ],
+  "warrant_labels": [
+    "warranted"
+  ],
+  "world_id": "world-b"
+}

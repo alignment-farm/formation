@@ -1,0 +1,73 @@
+{
+  "attempt_index": 1,
+  "call_id": "iv14",
+  "condition": "deterministic_restatement",
+  "elapsed_seconds": 3.0778085000056308,
+  "ended_at": "2026-08-18T23:46:07.079035+00:00",
+  "error": null,
+  "finish_reason": "stop",
+  "http_status": 200,
+  "logical_index": 14,
+  "message": {
+    "content": "{\"when\":{\"and\":[{\"exists\":\"facet\"},{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"exists\":\"mark\"},{\"eq\":{\"field\":\"mark\",\"lit\":\"mela\"}},{\"exists\":\"zone\"},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}}]},\"predict\":{\"if\":[{\"bool\":true},{\"lit\":\"zafren\"},{\"lit\":\"ulmec\"}]}}",
+    "role": "assistant"
+  },
+  "request_sha256": "150cb3cafbb949f77aee31ee12caa8201e0ac348f0af7819c978fa92f7ab863b",
+  "response_envelope": {
+    "_formation_transport": {
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "1058",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 18 Aug 2026 23:46:07 GMT",
+        "Server": "llama.cpp"
+      }
+    },
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"when\":{\"and\":[{\"exists\":\"facet\"},{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"exists\":\"mark\"},{\"eq\":{\"field\":\"mark\",\"lit\":\"mela\"}},{\"exists\":\"zone\"},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}}]},\"predict\":{\"if\":[{\"bool\":true},{\"lit\":\"zafren\"},{\"lit\":\"ulmec\"}]}}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787096767,
+    "id": "chatcmpl-ADn3YPHq5pWBxHxUsmdoogS3n141ITce",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 322,
+      "predicted_ms": 2735.188,
+      "predicted_n": 81,
+      "predicted_per_second": 29.61405212365658,
+      "predicted_per_token_ms": 33.76775308641975,
+      "prompt_ms": 330.524,
+      "prompt_n": 101,
+      "prompt_per_second": 305.57538938170904,
+      "prompt_per_token_ms": 3.2725148514851483
+    },
+    "usage": {
+      "completion_tokens": 81,
+      "prompt_tokens": 423,
+      "prompt_tokens_details": {
+        "cached_tokens": 322
+      },
+      "total_tokens": 504
+    }
+  },
+  "response_sha256": "80a9ba6775eb9f53cc580282967ddaa37d5729942f9b1a6aaf77c96c8dc9216c",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T23:46:04.001466+00:00",
+  "usage": {
+    "completion_tokens": 81,
+    "prompt_tokens": 423,
+    "prompt_tokens_details": {
+      "cached_tokens": 322
+    },
+    "total_tokens": 504
+  },
+  "world_id": "J"
+}

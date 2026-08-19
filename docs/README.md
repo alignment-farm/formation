@@ -1,45 +1,120 @@
 # Documentation
 
-This directory owns Formation's current concept and forward plan. Start with the
-root [README](../README.md).
+This directory contains Formation’s concepts, mechanism contracts, experiment
+charters, history, and forward plan. Start with the root [README](../README.md)
+for the project story and current boundary.
 
-## Read by question
+## Core authority
 
 | Question | Owner |
 | --- | --- |
 | What phenomenon is Formation trying to produce and distinguish? | [CONCEPT.md](CONCEPT.md) |
-| What sequence of milestones governs the research program? | [PLAN.md](PLAN.md) |
-| What should the first implementation contain and exclude? | [BUILD.md](BUILD.md) |
+| What work is active, supporting, blocked, or closed? | [PLAN.md](PLAN.md) |
+| How did closed routes expose the current problem? | [RESEARCH_HISTORY.md](RESEARCH_HISTORY.md) |
 | Who may know, decide, and write what? | [AUTHORITY.md](AUTHORITY.md) |
-| What must developmental lineage and trajectory evidence record? | [RECORD.md](RECORD.md) |
-| What comparisons and threats govern a future claim? | [EVALUATION.md](EVALUATION.md) |
-| What shared deterministic scenario exercises those boundaries? | [FIXTURE.md](FIXTURE.md) |
-| Which instruments make the boundaries observable before schema selection? | [INSTRUMENTS.md](INSTRUMENTS.md) |
-| What exact bytes and checks serve the first contacted computation? | [MATERIALIZATION.md](MATERIALIZATION.md) |
-| How does a fork receive one public formation condition without exposing its hidden assignment? | [CONDITION_APPEND.md](CONDITION_APPEND.md) |
-| How do the two treatment roots produce exact branch-local admitted heads without selecting receipt bytes? | [ADMITTED_ROOT.md](ADMITTED_ROOT.md) |
-| How does the exact admitted ablation root receive one public replay constraint without licensing replay traversal? | [REPLAY_CONSTRAINT_APPEND.md](REPLAY_CONSTRAINT_APPEND.md) |
-| How is one positive foreground delivered once to three exact branch heads? | [FOREGROUND_DELIVERY.md](FOREGROUND_DELIVERY.md) |
-| How does each received foreground open one branch-local encounter without leaking its hidden assignment? | [ENCOUNTER_OPENING.md](ENCOUNTER_OPENING.md) |
-| How do baseline and governed make exact positive activation decisions without fabricating the ablation replay result? | [POSITIVE_ACTIVATION_DECISION.md](POSITIVE_ACTIVATION_DECISION.md) |
-| How do those two decisions prepare requests with exact handoff use or structural intervention absence? | [PRACTICE_REQUEST.md](PRACTICE_REQUEST.md) |
-| How does one stateless fixture actor produce model proposals from those exact requests without claiming an action? | [MODEL_INVOCATION.md](MODEL_INVOCATION.md) |
-| How does the runtime commit those exact proposals without claiming an environment consequence? | [ACTION_COMMITMENT.md](ACTION_COMMITMENT.md) |
-| How does the environment apply those commitments without claiming consequence intake or formation? | [ENVIRONMENT_APPLICATION.md](ENVIRONMENT_APPLICATION.md) |
-| How does the runtime retain those environment results without interpreting or scoring them? | [CONSEQUENCE_INTAKE.md](CONSEQUENCE_INTAKE.md) |
-| How are those positive occurrence intervals closed without turning storage into learning? | [EXPERIENCE_CLOSURE.md](EXPERIENCE_CLOSURE.md) |
-| What bounded computation must precede contact with a persistence baseline? | [MICRO_ENVIRONMENT_CHARTER.md](MICRO_ENVIRONMENT_CHARTER.md) |
-| How does the first cold-model contact test nullable SQLite anti-joins and simpler persistence? | [SQLITE_CONTACT_CHARTER.md](SQLITE_CONTACT_CHARTER.md) |
-| How does coding contact test strict Python boundary types without hiding validation answers in persistence? | [PYTHON_BOUNDARY_CONTACT_CHARTER.md](PYTHON_BOUNDARY_CONTACT_CHARTER.md) |
-| How are small local models admitted only when they are reliable, imperfect, and directly teachable? | [MODEL_ADMISSION_EXPLORATION.md](MODEL_ADMISSION_EXPLORATION.md) |
-| Which exact prompts, executable inputs, inference settings, and call order govern that admission search? | [MODEL_ADMISSION_VECTORS.md](MODEL_ADMISSION_VECTORS.md) |
-| How is the instrument-tainted Nemotron admission continued with a disclosed Python execution vocabulary and fresh development material? | [NEMOTRON_ADMISSION_SUCCESSOR.md](NEMOTRON_ADMISSION_SUCCESSOR.md) |
-| Which exact prompts, inputs, class labels, and call order govern that successor? | [NEMOTRON_ADMISSION_SUCCESSOR_VECTORS.md](NEMOTRON_ADMISSION_SUCCESSOR_VECTORS.md) |
-| Can either of two much smaller Gemma models reliably return basic computed JSON before a full admission packet is authored? | [GEMMA_CONTRACT_STAIRCASE.md](GEMMA_CONTRACT_STAIRCASE.md) |
-| Does a declared JSON-schema constraint remove formatting failures without being mistaken for correct computation? | [STRUCTURED_OUTPUT_INTERFACE_TRIAL.md](STRUCTURED_OUTPUT_INTERFACE_TRIAL.md) |
-| Can the exact local Granite candidate clear four fresh constrained computation anchors before a full admission charter is written? | [GRANITE_COMPUTATION_GATE.md](GRANITE_COMPUTATION_GATE.md) |
-| Can the exact local Qwen 3.5 9B MLX package clear the same predeclared computation families on fresh inputs? | [QWEN_COMPUTATION_GATE.md](QWEN_COMPUTATION_GATE.md) |
-| Which exact inputs and results score that coding contact? | [PYTHON_BOUNDARY_CONTACT_VECTORS.md](PYTHON_BOUNDARY_CONTACT_VECTORS.md) |
+| What must developmental lineage and trajectory evidence retain? | [RECORD.md](RECORD.md) |
+| What separates exploration from claim-bearing validation? | [EVALUATION.md](EVALUATION.md) |
+| What should the first general implementation contain and exclude? | [BUILD.md](BUILD.md) |
+| How should public findings and explanations be written? | [STYLE_GUIDE.md](../STYLE_GUIDE.md) |
 
-These documents are pre-evidence. They constrain future work but establish no
-formation finding.
+Specifications own mechanism contracts. Evidence and scorers own verdicts. The
+plan owns intended work and stopping conditions. Research history explains the
+sequence but cannot license a model call or establish a finding.
+
+## Current evidence and route
+
+The completed [unselected-lineage contact](../evidence/unselected-lineage-behavior-contact-20260819-contact/README.md)
+continued six information paths into later Qwen action. All six paths agreed on
+15 of 16 cases. The only apparent branch difference was the same size as a
+disagreement between byte-identical requests. The packet therefore supports no
+condition effect or Formation claim.
+
+The next empirical problem is same-request variation. A bounded runner now
+selects four exact requests from the completed packet and schedules eight
+interleaved repeats of each. It retains every response and reports a separate
+action distribution for each request. The runner has passed no-contact checks,
+but the 32-call repeatability contact has not run. That estimate is needed
+before a one-cell branch difference can carry causal weight.
+
+The technical path into the completed packet remains available through the
+[post-prediction route](POST_EXECUTABLE_PREDICTION_ROUTE_SELECTION.md),
+[unselected-lineage mechanism](UNSELECTED_LINEAGE_BEHAVIOR_MECHANISM.md),
+[deterministic specimen](UNSELECTED_LINEAGE_BEHAVIOR_SPECIMEN.md), and
+[exploratory charter](UNSELECTED_LINEAGE_EXPLORATORY_CHARTER.md). The full
+sequence belongs to [research history](RESEARCH_HISTORY.md). Historical model
+reviews are internal critique records, not external peer review or gates for
+the next exploratory test.
+
+The failed file-path launch, its one-use interpretation, and the later repair
+are also retained. Under the current method, a failure before participant
+contact is an engineering event. It does not consume the scientific question
+or require another route-selection exercise.
+
+## Earlier developmental route
+
+These documents remain authoritative for the problems and contacts that led to
+the current chain:
+
+| Question or contact | Document |
+| --- | --- |
+| First bounded developmental comparison | [EXPLORATORY_DEVELOPMENTAL_CONTACT.md](EXPLORATORY_DEVELOPMENTAL_CONTACT.md) |
+| Experience-dependent calibration gap | [CALIBRATION_INFORMATION_GAP.md](CALIBRATION_INFORMATION_GAP.md) |
+| Raw, authored, and governed calibration offers | [CALIBRATION_MECHANISM_DISCOVERY.md](CALIBRATION_MECHANISM_DISCOVERY.md) |
+| Single larger-model operational successor | [MUSE_COUNTER_PRIOR_SUCCESSOR.md](MUSE_COUNTER_PRIOR_SUCCESSOR.md) |
+| Explicit environment consequence fields | [EXPLICIT_CONSEQUENCE_REPRESENTATION.md](EXPLICIT_CONSEQUENCE_REPRESENTATION.md) |
+| Final explicit-consequence contact | [EXPLICIT_CONSEQUENCE_CONTACT.md](EXPLICIT_CONSEQUENCE_CONTACT.md) |
+| Separation of availability from attributable influence | [AVAILABILITY_TO_INFLUENCE.md](AVAILABILITY_TO_INFLUENCE.md) |
+| Rejected generic-applicator mechanism | [CALIBRATION_APPLICATOR_MECHANISM.md](CALIBRATION_APPLICATOR_MECHANISM.md) |
+| Rejected prospective validation packet | [CALIBRATION_APPLICATOR_VALIDATION.md](CALIBRATION_APPLICATOR_VALIDATION.md) |
+| Review that closed the applicator route | [CALIBRATION_APPLICATOR_VALIDATION_REVIEW.md](CALIBRATION_APPLICATOR_VALIDATION_REVIEW.md) |
+| Model-mediated procedural influence problem | [PROCEDURAL_INFLUENCE_PROBLEM.md](PROCEDURAL_INFLUENCE_PROBLEM.md) |
+| Selection of the phase-coupled domain | [PROCEDURAL_DOMAIN_SELECTION.md](PROCEDURAL_DOMAIN_SELECTION.md) |
+| Phase-coupled mechanism and its review | [PHASE_COUPLED_CONTROL_PROPOSAL.md](PHASE_COUPLED_CONTROL_PROPOSAL.md), [PHASE_COUPLED_CONTROL_REVIEW.md](PHASE_COUPLED_CONTROL_REVIEW.md) |
+| Deterministic phase-coupled specimen | [PHASE_COUPLED_CONTROL_SPECIMEN.md](PHASE_COUPLED_CONTROL_SPECIMEN.md) |
+| Completed phase-coupled contact | [PHASE_COUPLED_EXPLORATORY_CHARTER.md](PHASE_COUPLED_EXPLORATORY_CHARTER.md) |
+| Experience-grounded authorship problem and route choice | [EXPERIENCE_GROUNDED_AUTHORSHIP.md](EXPERIENCE_GROUNDED_AUTHORSHIP.md), [AUTHORSHIP_MECHANISM_SELECTION.md](AUTHORSHIP_MECHANISM_SELECTION.md) |
+| Occurrence-accounting mechanism and completed contact | [OCCURRENCE_ACCOUNTING_MECHANISM.md](OCCURRENCE_ACCOUNTING_MECHANISM.md), [OCCURRENCE_ACCOUNTING_EXPLORATORY_CHARTER.md](OCCURRENCE_ACCOUNTING_EXPLORATORY_CHARTER.md) |
+
+## Supporting deterministic apparatus
+
+The [fixture](FIXTURE.md) and [instrument map](INSTRUMENTS.md) define the shared
+deterministic scenario. The implemented path runs through:
+
+1. [Materialization](MATERIALIZATION.md)
+2. [Condition append](CONDITION_APPEND.md)
+3. [Admitted roots](ADMITTED_ROOT.md)
+4. [Replay-constraint append](REPLAY_CONSTRAINT_APPEND.md)
+5. [Foreground delivery](FOREGROUND_DELIVERY.md)
+6. [Encounter opening](ENCOUNTER_OPENING.md)
+7. [Positive activation](POSITIVE_ACTIVATION_DECISION.md)
+8. [Practice request](PRACTICE_REQUEST.md)
+9. [Model invocation](MODEL_INVOCATION.md)
+10. [Action commitment](ACTION_COMMITMENT.md)
+
+The next contracts are [environment application](ENVIRONMENT_APPLICATION.md),
+[consequence intake](CONSEQUENCE_INTAKE.md), and
+[experience closure](EXPERIENCE_CLOSURE.md). The
+[micro-environment charter](MICRO_ENVIRONMENT_CHARTER.md) owns the isolated
+state-dependent transition engine. This apparatus supports observation and
+causal audit; it does not establish model development.
+
+## Closed task selection and screening
+
+The [SQLite](SQLITE_CONTACT_CHARTER.md) and
+[Python-boundary](PYTHON_BOUNDARY_CONTACT_CHARTER.md) contacts are completed
+task-selection results. The admission and model-screening ladder is also
+closed:
+
+- [Small-model admission](MODEL_ADMISSION_EXPLORATION.md)
+- [Nemotron successor](NEMOTRON_ADMISSION_SUCCESSOR.md)
+- [Gemma staircase](GEMMA_CONTRACT_STAIRCASE.md)
+- [Structured-output trial](STRUCTURED_OUTPUT_INTERFACE_TRIAL.md)
+- [Granite gate](GRANITE_COMPUTATION_GATE.md)
+- [Qwen gate](QWEN_COMPUTATION_GATE.md)
+
+Their vector appendices are [Python boundary vectors](PYTHON_BOUNDARY_CONTACT_VECTORS.md),
+[model-admission vectors](MODEL_ADMISSION_VECTORS.md), and
+[Nemotron successor vectors](NEMOTRON_ADMISSION_SUCCESSOR_VECTORS.md).
+
+These packets remain authoritative for their exact contacts. They are not an
+active path toward admitting a practitioner.

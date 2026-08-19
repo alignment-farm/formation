@@ -1,0 +1,706 @@
+{
+  "completed_logical_calls": 39,
+  "contact_state": "completed",
+  "evidence_class": "exploratory_authorship_observation_only",
+  "formation_verdict": null,
+  "governance_applied_after_authorship": true,
+  "integrity": {
+    "attempts_checked": 39,
+    "checks": [
+      {
+        "stem": "01-interface-disposable-a1",
+        "valid": true
+      },
+      {
+        "stem": "02-world-g-acquisition-a1",
+        "valid": true
+      },
+      {
+        "stem": "03-world-h-acquisition-a1",
+        "valid": true
+      },
+      {
+        "stem": "04-candidate-g-direct-1-a1",
+        "valid": true
+      },
+      {
+        "stem": "05-candidate-h-direct-1-a1",
+        "valid": true
+      },
+      {
+        "stem": "06-candidate-g-direct-2-a1",
+        "valid": true
+      },
+      {
+        "stem": "07-candidate-h-direct-2-a1",
+        "valid": true
+      },
+      {
+        "stem": "08-world-g-draft_withheld-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "09-world-g-exact_draft_replay-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "10-world-g-static_challenge_withheld_draft-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "11-world-g-exact_draft_challenge-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "12-world-g-same_response_draft_challenge-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "13-world-g-occurrence_repeated-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "14-world-g-deterministic_restatement-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "15-world-g-draft_prompt_mass_control-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "16-world-h-draft_prompt_mass_control-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "17-world-h-deterministic_restatement-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "18-world-h-occurrence_repeated-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "19-world-h-same_response_draft_challenge-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "20-world-h-exact_draft_challenge-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "21-world-h-static_challenge_withheld_draft-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "22-world-h-exact_draft_replay-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "23-world-h-draft_withheld-r1-a1",
+        "valid": true
+      },
+      {
+        "stem": "24-world-g-exact_draft_challenge-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "25-world-g-same_response_draft_challenge-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "26-world-g-occurrence_repeated-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "27-world-g-deterministic_restatement-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "28-world-g-draft_prompt_mass_control-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "29-world-g-draft_withheld-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "30-world-g-exact_draft_replay-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "31-world-g-static_challenge_withheld_draft-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "32-world-h-static_challenge_withheld_draft-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "33-world-h-exact_draft_replay-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "34-world-h-draft_withheld-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "35-world-h-draft_prompt_mass_control-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "36-world-h-deterministic_restatement-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "37-world-h-occurrence_repeated-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "38-world-h-same_response_draft_challenge-r2-a1",
+        "valid": true
+      },
+      {
+        "stem": "39-world-h-exact_draft_challenge-r2-a1",
+        "valid": true
+      }
+    ],
+    "valid": true
+  },
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "physical_attempts": 39,
+  "physical_call_ceiling": 42,
+  "planned_logical_calls": 39,
+  "protocol": "draft-challenge-exploratory-contact-v0",
+  "stop_reason": null,
+  "usage": {
+    "completion_tokens": 2704,
+    "prompt_tokens": 24081
+  },
+  "validation_verdict": null,
+  "world_comparisons": [
+    {
+      "carryover_pattern_challenge_contrast_invalid": false,
+      "challenge_anchor_available_and_stable": false,
+      "claim_language": "per-condition observation only",
+      "collapse_labels": [],
+      "conditions": {
+        "deterministic_restatement": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            14,
+            27
+          ],
+          "prompt_tokens": [
+            764,
+            764
+          ],
+          "raw_content": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"183609a9f5e6b701\"}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"183609a9f5e6b701\"}"
+          ],
+          "request_sha256": [
+            "6c5a0b6f92b139843aa3c5e897396eb4b9f8c4188cc7edb3e0a0e968255b0829",
+            "6c5a0b6f92b139843aa3c5e897396eb4b9f8c4188cc7edb3e0a0e968255b0829"
+          ],
+          "samples": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"183609a9f5e6b701\"}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"183609a9f5e6b701\"}"
+          ],
+          "stable_value": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"183609a9f5e6b701\"}"
+        },
+        "direct_candidate": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            4,
+            6
+          ],
+          "prompt_tokens": [
+            538,
+            538
+          ],
+          "raw_content": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}"
+          ],
+          "request_sha256": [
+            "669e80de885a977451c2ca19da958a103fadd30a5e5a081cb168bf2d0ec7f841",
+            "669e80de885a977451c2ca19da958a103fadd30a5e5a081cb168bf2d0ec7f841"
+          ],
+          "samples": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}"
+          ],
+          "stable_value": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}"
+        },
+        "draft_prompt_mass_control": {
+          "available": false,
+          "internally_stable": false,
+          "logical_indices": [
+            15,
+            28
+          ],
+          "prompt_tokens": [
+            609,
+            609
+          ],
+          "raw_content": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"position_after\":2,\"target_reached\":true}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"movement_direction decreased in phase de7c867e5bd687b5\"}"
+          ],
+          "request_sha256": [
+            "f72afbf7a8d381e7f33ad5a535340120a34f23a5916be33bc9695754683ed262",
+            "f72afbf7a8d381e7f33ad5a535340120a34f23a5916be33bc9695754683ed262"
+          ],
+          "samples": [
+            null,
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"movement_direction decreased in phase de7c867e5bd687b5\"}"
+          ],
+          "stable_value": null
+        },
+        "draft_withheld": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            8,
+            29
+          ],
+          "prompt_tokens": [
+            538,
+            538
+          ],
+          "raw_content": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}"
+          ],
+          "request_sha256": [
+            "669e80de885a977451c2ca19da958a103fadd30a5e5a081cb168bf2d0ec7f841",
+            "669e80de885a977451c2ca19da958a103fadd30a5e5a081cb168bf2d0ec7f841"
+          ],
+          "samples": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}"
+          ],
+          "stable_value": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}"
+        },
+        "exact_draft_challenge": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            11,
+            24
+          ],
+          "prompt_tokens": [
+            609,
+            609
+          ],
+          "raw_content": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the phase after using action '183609a9f5e6b701' is not 'ccdabc1e1f6ca491', this would count against the claim.\"}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the position increases again after using this action, it would contradict the rule that the increasing slot is opposite in the two phases.\"}"
+          ],
+          "request_sha256": [
+            "17484c414c6e0aede87cad3e9c38053cd11ae756fd0c458531045eb8b9ba1428",
+            "17484c414c6e0aede87cad3e9c38053cd11ae756fd0c458531045eb8b9ba1428"
+          ],
+          "samples": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the phase after using action '183609a9f5e6b701' is not 'ccdabc1e1f6ca491', this would count against the claim.\"}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the position increases again after using this action, it would contradict the rule that the increasing slot is opposite in the two phases.\"}"
+          ],
+          "stable_value": null
+        },
+        "exact_draft_replay": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            9,
+            30
+          ],
+          "prompt_tokens": [
+            562,
+            562
+          ],
+          "raw_content": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}"
+          ],
+          "request_sha256": [
+            "013d1fe17c56df9a842bc96e0e46ceb1ffbd80e8790c97a29eaaa3f3ee6f9854",
+            "013d1fe17c56df9a842bc96e0e46ceb1ffbd80e8790c97a29eaaa3f3ee6f9854"
+          ],
+          "samples": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}"
+          ],
+          "stable_value": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}"
+        },
+        "occurrence_repeated": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            13,
+            26
+          ],
+          "prompt_tokens": [
+            824,
+            824
+          ],
+          "raw_content": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"183609a9f5e6b701\"}"
+          ],
+          "request_sha256": [
+            "034e83896c56ea699a6efcbe3769f248096c61add439ec1284a1831112881fdb",
+            "034e83896c56ea699a6efcbe3769f248096c61add439ec1284a1831112881fdb"
+          ],
+          "samples": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"183609a9f5e6b701\"}"
+          ],
+          "stable_value": null
+        },
+        "same_response_draft_challenge": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            12,
+            25
+          ],
+          "prompt_tokens": [
+            622,
+            622
+          ],
+          "raw_content": [
+            "{\n  \"draft\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', using the control '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' increases position by 1 and moves to phase 'de7c867e5bd687b5'.\",\n    \"counterevidence\": \"If in phase 'ccdabc1e1f6ca491', using control '7e81cf4ce9afe7ad' does not increase position by 1 or does not transition to phase 'de7c867e5bd687b5', this would count against the claim.\"\n  },\n  \"final\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', using the control '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' increases position by 1 and moves to phase 'de7c867e5bd687b5'.\",\n    \"counterevidence\": \"If in phase 'ccdabc1e1f6ca491', using control '7e81cf4ce9afe7ad' does not increase position by 1 or does not transition to phase 'de7c867e5bd687b5', this would count against the claim.\"\n  }\n}",
+            "{\n  \"draft\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', pressing the first control ('7e81cf4ce9afe7ad') in phase 'ccdabc1e1f6ca491' increases position by 1 and transitions to phase 'de7c867e5bd687b5'. This action is reusable and applies to the same device and family.\",\n    \"counterevidence\": \"If pressing '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' does not increase position or transition to 'de7c867e5bd687b5', this claim is invalidated.\"\n  },\n  \"final\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', pressing the first control ('7e81cf4ce9afe7ad') in phase 'ccdabc1e1f6ca491' increases position by 1 and transitions to phase 'de7c867e5bd687b5'. This action is reusable and applies to the same device and family.\",\n    \"counterevidence\": \"If pressing '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' does not increase position or transition to 'de7c867e5bd687b5', this claim is invalidated.\"\n  }\n}"
+          ],
+          "request_sha256": [
+            "bbc4821ce6703952fc7484c768cd8f6847d8a735c39459545fcc758b76468ca6",
+            "bbc4821ce6703952fc7484c768cd8f6847d8a735c39459545fcc758b76468ca6"
+          ],
+          "samples": [
+            "{\"change\":\"In the controller family 'cd32522fbc89d0cc', using the control '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' increases position by 1 and moves to phase 'de7c867e5bd687b5'.\",\"counterevidence\":\"If in phase 'ccdabc1e1f6ca491', using control '7e81cf4ce9afe7ad' does not increase position by 1 or does not transition to phase 'de7c867e5bd687b5', this would count against the claim.\"}",
+            "{\"change\":\"In the controller family 'cd32522fbc89d0cc', pressing the first control ('7e81cf4ce9afe7ad') in phase 'ccdabc1e1f6ca491' increases position by 1 and transitions to phase 'de7c867e5bd687b5'. This action is reusable and applies to the same device and family.\",\"counterevidence\":\"If pressing '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' does not increase position or transition to 'de7c867e5bd687b5', this claim is invalidated.\"}"
+          ],
+          "stable_value": null
+        },
+        "static_challenge_withheld_draft": {
+          "available": false,
+          "internally_stable": false,
+          "logical_indices": [
+            10,
+            31
+          ],
+          "prompt_tokens": [
+            568,
+            568
+          ],
+          "raw_content": [
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"position_after\":2}",
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the device reaches the target position in the next step, the phase would change again, which would contradict the rule that the phase-to-slot profile is stable within one controller family.\"}"
+          ],
+          "request_sha256": [
+            "602774ddf8bc6c2a898861228f24ffa56ed27b7d247d3498341a2f18de989cca",
+            "602774ddf8bc6c2a898861228f24ffa56ed27b7d247d3498341a2f18de989cca"
+          ],
+          "samples": [
+            null,
+            "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the device reaches the target position in the next step, the phase would change again, which would contradict the rule that the phase-to-slot profile is stable within one controller family.\"}"
+          ],
+          "stable_value": null
+        }
+      },
+      "direct_withheld_request_bytes_identical": true,
+      "exact_challenge_source_candidate_match": false,
+      "exact_challenge_source_raw_output_matches": [
+        false,
+        false
+      ],
+      "formation_verdict": null,
+      "local_prompt_token_parity": true,
+      "mechanism_label": null,
+      "prompt_mass_comparison_available": true,
+      "provider_prompt_token_parity": true,
+      "source_candidate_comparison_utf8": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}",
+      "source_candidate_member_of_stable_direct": true,
+      "source_content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":null}",
+      "source_draft_identifier": "candidate-g-direct-1",
+      "unavailable_conditions": [
+        "static_challenge_withheld_draft",
+        "draft_prompt_mass_control"
+      ],
+      "unstable_conditions": [
+        "exact_draft_challenge",
+        "same_response_draft_challenge",
+        "occurrence_repeated"
+      ],
+      "validation_verdict": null,
+      "withheld_audit_failed": false,
+      "withheld_audit_invalid": false,
+      "withheld_audit_unstable": false,
+      "withheld_matches_direct": true,
+      "world_id": "world-g"
+    },
+    {
+      "carryover_pattern_challenge_contrast_invalid": false,
+      "challenge_anchor_available_and_stable": true,
+      "claim_language": "per-condition observation only",
+      "collapse_labels": [],
+      "conditions": {
+        "deterministic_restatement": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            17,
+            36
+          ],
+          "prompt_tokens": [
+            796,
+            796
+          ],
+          "raw_content": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction increased\"}",
+            "{\"change\":\"The control 'aa94f3ae24c6630b' in family 04a6549a17c2f498 decreases position during phase b1a356711b7c0edf\",\"counterevidence\":\"If 'aa94f3ae24c6630b' increases position during phase b1a356711b7c0edf in a future observation\"}"
+          ],
+          "request_sha256": [
+            "a4c9ace6a619c94ed646ead49cb0b07a9eb764832d0f007efb6a3998be6fc1bb",
+            "a4c9ace6a619c94ed646ead49cb0b07a9eb764832d0f007efb6a3998be6fc1bb"
+          ],
+          "samples": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction increased\"}",
+            "{\"change\":\"The control 'aa94f3ae24c6630b' in family 04a6549a17c2f498 decreases position during phase b1a356711b7c0edf\",\"counterevidence\":\"If 'aa94f3ae24c6630b' increases position during phase b1a356711b7c0edf in a future observation\"}"
+          ],
+          "stable_value": null
+        },
+        "direct_candidate": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            5,
+            7
+          ],
+          "prompt_tokens": [
+            557,
+            557
+          ],
+          "raw_content": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "request_sha256": [
+            "26fe4166c6270be2c3938f654b63d86b07b55cfb0433c02db9af23b6d5742268",
+            "26fe4166c6270be2c3938f654b63d86b07b55cfb0433c02db9af23b6d5742268"
+          ],
+          "samples": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "stable_value": "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+        },
+        "draft_prompt_mass_control": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            16,
+            35
+          ],
+          "prompt_tokens": [
+            633,
+            633
+          ],
+          "raw_content": [
+            "{\"change\":\"QNIOUINGYPGYNPYLPKSRLWIUSMSLRNLIWUGIJIUQQRJL\",\"counterevidence\":null}",
+            "{\"change\":\"QNIOUINGYPGYNPYLPKSRLWIUSMSLRNLIWUGIJIUQQRJL\",\"counterevidence\":null}"
+          ],
+          "request_sha256": [
+            "51c1ff6c2a637245d05c916892b1f7c14a3c7800c4beb22dec93fcdabfe38947",
+            "51c1ff6c2a637245d05c916892b1f7c14a3c7800c4beb22dec93fcdabfe38947"
+          ],
+          "samples": [
+            "{\"change\":\"QNIOUINGYPGYNPYLPKSRLWIUSMSLRNLIWUGIJIUQQRJL\",\"counterevidence\":null}",
+            "{\"change\":\"QNIOUINGYPGYNPYLPKSRLWIUSMSLRNLIWUGIJIUQQRJL\",\"counterevidence\":null}"
+          ],
+          "stable_value": "{\"change\":\"QNIOUINGYPGYNPYLPKSRLWIUSMSLRNLIWUGIJIUQQRJL\",\"counterevidence\":null}"
+        },
+        "draft_withheld": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            23,
+            34
+          ],
+          "prompt_tokens": [
+            557,
+            557
+          ],
+          "raw_content": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "request_sha256": [
+            "26fe4166c6270be2c3938f654b63d86b07b55cfb0433c02db9af23b6d5742268",
+            "26fe4166c6270be2c3938f654b63d86b07b55cfb0433c02db9af23b6d5742268"
+          ],
+          "samples": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "stable_value": "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+        },
+        "exact_draft_challenge": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            20,
+            39
+          ],
+          "prompt_tokens": [
+            633,
+            633
+          ],
+          "raw_content": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "request_sha256": [
+            "dc1492e6794fc043ba997c79174353a61456aa2799ce08f4517a5c69c79a4f0a",
+            "dc1492e6794fc043ba997c79174353a61456aa2799ce08f4517a5c69c79a4f0a"
+          ],
+          "samples": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "stable_value": "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+        },
+        "exact_draft_replay": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            22,
+            33
+          ],
+          "prompt_tokens": [
+            586,
+            586
+          ],
+          "raw_content": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "request_sha256": [
+            "4cdee6fa7c8b0ab4c0d47083560429261780f6690eaba27e2689afc1c2b2e756",
+            "4cdee6fa7c8b0ab4c0d47083560429261780f6690eaba27e2689afc1c2b2e756"
+          ],
+          "samples": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "stable_value": "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+        },
+        "occurrence_repeated": {
+          "available": true,
+          "internally_stable": true,
+          "logical_indices": [
+            18,
+            37
+          ],
+          "prompt_tokens": [
+            862,
+            862
+          ],
+          "raw_content": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "request_sha256": [
+            "de027354fd4118fa4584c1aa22b112b4ea5d62b3a24319313120b12a10c90e3a",
+            "de027354fd4118fa4584c1aa22b112b4ea5d62b3a24319313120b12a10c90e3a"
+          ],
+          "samples": [
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+            "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+          ],
+          "stable_value": "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}"
+        },
+        "same_response_draft_challenge": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            19,
+            38
+          ],
+          "prompt_tokens": [
+            641,
+            641
+          ],
+          "raw_content": [
+            "{\n  \"draft\": {\n    \"change\": \"In controller family 04a6549a17c2f498, action aa94f3ae24c6630b decreases position during phase b1a356711b7c0edf, and action a3dd902b2fe11658 decreases position during phase 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, action aa94f3ae24c6630b increases position instead of decreasing it, or if in phase 0a4aa47fe9bf67f7, action a3dd902b2fe11658 increases position instead of decreasing it.\"\n  },\n  \"final\": {\n    \"change\": \"In controller family 04a6549a17c2f498, action aa94f3ae24c6630b decreases position during phase b1a356711b7c0edf, and action a3dd902b2fe11658 decreases position during phase 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, action aa94f3ae24c6630b increases position instead of decreasing it, or if in phase 0a4aa47fe9bf67f7, action a3dd902b2fe11658 increases position instead of decreasing it.\"\n  }\n}",
+            "{\n  \"draft\": {\n    \"change\": \"In controller family 04a6549a17c2f498, when in phase b1a356711b7c0edf, using control aa94f3ae24c6630b decreases position by 1 and switches phase to 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, using control aa94f3ae24c6630b does not decrease position by 1 or does not switch phase to 0a4aa47fe9bf67f7.\"\n  },\n  \"final\": {\n    \"change\": \"In controller family 04a6549a17c2f498, when in phase b1a356711b7c0edf, using control aa94f3ae24c6630b decreases position by 1 and switches phase to 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, using control aa94f3ae24c6630b does not decrease position by 1 or does not switch phase to 0a4aa47fe9bf67f7.\"\n  }\n}"
+          ],
+          "request_sha256": [
+            "a806453a67865f132599f54be7c48ca1f4f2e2dbecd831128406b18ef7ff8c87",
+            "a806453a67865f132599f54be7c48ca1f4f2e2dbecd831128406b18ef7ff8c87"
+          ],
+          "samples": [
+            "{\"change\":\"In controller family 04a6549a17c2f498, action aa94f3ae24c6630b decreases position during phase b1a356711b7c0edf, and action a3dd902b2fe11658 decreases position during phase 0a4aa47fe9bf67f7.\",\"counterevidence\":\"If in phase b1a356711b7c0edf, action aa94f3ae24c6630b increases position instead of decreasing it, or if in phase 0a4aa47fe9bf67f7, action a3dd902b2fe11658 increases position instead of decreasing it.\"}",
+            "{\"change\":\"In controller family 04a6549a17c2f498, when in phase b1a356711b7c0edf, using control aa94f3ae24c6630b decreases position by 1 and switches phase to 0a4aa47fe9bf67f7.\",\"counterevidence\":\"If in phase b1a356711b7c0edf, using control aa94f3ae24c6630b does not decrease position by 1 or does not switch phase to 0a4aa47fe9bf67f7.\"}"
+          ],
+          "stable_value": null
+        },
+        "static_challenge_withheld_draft": {
+          "available": true,
+          "internally_stable": false,
+          "logical_indices": [
+            21,
+            32
+          ],
+          "prompt_tokens": [
+            587,
+            587
+          ],
+          "raw_content": [
+            "{\"change\":\"aa94f3ae24c6630b\",\"counterevidence\":\"a3dd902b2fe11658\"}",
+            "{\"change\":\"aa94f3ae24c6630b\",\"counterevidence\":\"If the next action is 'a3dd902b2fe11658', it would contradict the observed movement direction and phase transition pattern.\"}"
+          ],
+          "request_sha256": [
+            "c71f2f462e168152ca9288c9385505f1a741b7ea5ff035dea61afc28938d0651",
+            "c71f2f462e168152ca9288c9385505f1a741b7ea5ff035dea61afc28938d0651"
+          ],
+          "samples": [
+            "{\"change\":\"aa94f3ae24c6630b\",\"counterevidence\":\"a3dd902b2fe11658\"}",
+            "{\"change\":\"aa94f3ae24c6630b\",\"counterevidence\":\"If the next action is 'a3dd902b2fe11658', it would contradict the observed movement direction and phase transition pattern.\"}"
+          ],
+          "stable_value": null
+        }
+      },
+      "direct_withheld_request_bytes_identical": true,
+      "exact_challenge_source_candidate_match": true,
+      "exact_challenge_source_raw_output_matches": [
+        true,
+        true
+      ],
+      "formation_verdict": null,
+      "local_prompt_token_parity": true,
+      "mechanism_label": null,
+      "prompt_mass_comparison_available": true,
+      "provider_prompt_token_parity": true,
+      "source_candidate_comparison_utf8": "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+      "source_candidate_member_of_stable_direct": true,
+      "source_content": "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction\"}",
+      "source_draft_identifier": "candidate-h-direct-1",
+      "unavailable_conditions": [],
+      "unstable_conditions": [
+        "static_challenge_withheld_draft",
+        "same_response_draft_challenge",
+        "deterministic_restatement"
+      ],
+      "validation_verdict": null,
+      "withheld_audit_failed": false,
+      "withheld_audit_invalid": false,
+      "withheld_audit_unstable": false,
+      "withheld_matches_direct": true,
+      "world_id": "world-h"
+    }
+  ]
+}

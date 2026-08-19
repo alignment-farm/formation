@@ -1,0 +1,41 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "world-d-acquisition",
+  "content": "{\"action\": \"coro\"}",
+  "environment_result": {
+    "action": "coro",
+    "controller_family": "vesa-58",
+    "device_id": "vesa-seed",
+    "increasing_slot": null,
+    "movement_direction": "decreased",
+    "observation": "target_not_reached",
+    "position_after": -1,
+    "position_before": 0,
+    "selected_slot": "first",
+    "target": 1
+  },
+  "expected_action": null,
+  "expected_action_match": null,
+  "logical_index": 4,
+  "message": {
+    "content": "{\"action\": \"coro\"}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "probe_id": null,
+  "relation": null,
+  "repetition": null,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "vesa-58",
+    "device_id": "vesa-seed",
+    "first_control": "coro",
+    "position": 0,
+    "second_control": "dune",
+    "target": 1
+  },
+  "surfaced_action": "coro",
+  "unwarranted_guess": false,
+  "world_id": "world-d"
+}

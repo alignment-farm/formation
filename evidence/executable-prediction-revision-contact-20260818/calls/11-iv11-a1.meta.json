@@ -1,0 +1,73 @@
+{
+  "attempt_index": 1,
+  "call_id": "iv11",
+  "condition": "parent_withheld",
+  "elapsed_seconds": 2.6356245420029154,
+  "ended_at": "2026-08-18T23:45:57.239623+00:00",
+  "error": null,
+  "finish_reason": "stop",
+  "http_status": 200,
+  "logical_index": 11,
+  "message": {
+    "content": "{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}]},\"predict\":{\"if\":[{\"bool\":true},{\"lit\":\"zafren\"},{\"lit\":\"ulmec\"}]}}",
+    "role": "assistant"
+  },
+  "request_sha256": "ea0d126efc749204695c5b04d8174d47a2af66c2c8c459a947beca25d8ece552",
+  "response_envelope": {
+    "_formation_transport": {
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "990",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 18 Aug 2026 23:45:57 GMT",
+        "Server": "llama.cpp"
+      }
+    },
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"when\":{\"and\":[{\"eq\":{\"field\":\"facet\",\"lit\":\"fira\"}},{\"eq\":{\"field\":\"zone\",\"lit\":\"zuna\"}},{\"neq\":{\"field\":\"mark\",\"lit\":\"mela\"}}]},\"predict\":{\"if\":[{\"bool\":true},{\"lit\":\"zafren\"},{\"lit\":\"ulmec\"}]}}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787096757,
+    "id": "chatcmpl-M4CmybdiA2TwFmbtquEJskiQI2PQGAfE",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 330,
+      "predicted_ms": 2354.539,
+      "predicted_n": 70,
+      "predicted_per_second": 29.729811228440045,
+      "predicted_per_token_ms": 33.63627142857143,
+      "prompt_ms": 268.82,
+      "prompt_n": 89,
+      "prompt_per_second": 331.07655680380924,
+      "prompt_per_token_ms": 3.020449438202247
+    },
+    "usage": {
+      "completion_tokens": 70,
+      "prompt_tokens": 419,
+      "prompt_tokens_details": {
+        "cached_tokens": 330
+      },
+      "total_tokens": 489
+    }
+  },
+  "response_sha256": "d2deee3cd45da3241fbfa8205ebb78a1bf65ac2ad55f91e97b8c3055097223a9",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T23:45:54.604145+00:00",
+  "usage": {
+    "completion_tokens": 70,
+    "prompt_tokens": 419,
+    "prompt_tokens_details": {
+      "cached_tokens": 330
+    },
+    "total_tokens": 489
+  },
+  "world_id": "J"
+}

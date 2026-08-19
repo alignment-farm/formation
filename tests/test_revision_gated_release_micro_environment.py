@@ -229,7 +229,10 @@ class RevisionGatedReleaseTests(unittest.TestCase):
                     imports.update(alias.name.split(".")[0] for alias in node.names)
                 elif isinstance(node, ast.ImportFrom) and node.module:
                     imports.add(node.module.split(".")[0])
-        self.assertLessEqual(imports, {"dataclasses", "micro_environment"})
+        self.assertLessEqual(
+            imports,
+            {"dataclasses", "hashlib", "json", "micro_environment", "typing"},
+        )
 
 
 if __name__ == "__main__":

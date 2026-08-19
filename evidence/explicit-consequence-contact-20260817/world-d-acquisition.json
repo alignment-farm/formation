@@ -1,0 +1,27 @@
+{
+  "environment_result": {
+    "action": "coro",
+    "controller_family": "vesa-58",
+    "device_id": "vesa-seed",
+    "increasing_slot": null,
+    "movement_direction": "decreased",
+    "observation": "target_not_reached",
+    "position_after": -1,
+    "position_before": 0,
+    "selected_slot": "first",
+    "target": 1
+  },
+  "model_message": {
+    "content": "{\"action\": \"coro\"}",
+    "role": "assistant"
+  },
+  "state": {
+    "controller_family": "vesa-58",
+    "device_id": "vesa-seed",
+    "first_control": "coro",
+    "position": 0,
+    "second_control": "dune",
+    "target": 1
+  },
+  "surfaced_action": "coro"
+}

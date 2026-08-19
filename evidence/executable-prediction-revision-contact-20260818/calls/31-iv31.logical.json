@@ -1,0 +1,132 @@
+{
+  "condition": "later_successor",
+  "consequence_receipt": {
+    "authority": "environment_oracle",
+    "delivered_to_model": true,
+    "input": {
+      "facet": "daro",
+      "mark": "kela",
+      "zone": "puno"
+    },
+    "value": "vesan"
+  },
+  "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}],\"predict\":{\"lit\":\"vesan\"}}}",
+  "correctness": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "correctness_by_role": {
+    "acquisition": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "copy_control": {
+      "assigned": 2,
+      "correct": 0
+    },
+    "later_revision_test": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "non_transfer": {
+      "assigned": 2,
+      "correct": 0
+    },
+    "primary_test": {
+      "assigned": 1,
+      "correct": 0
+    },
+    "transfer": {
+      "assigned": 2,
+      "correct": 0
+    }
+  },
+  "evaluator_version": "executable-prediction-rule-evaluator-v1",
+  "invocation_coordinate": "iv31",
+  "logical_index": 31,
+  "output_coordinate": "iv31.content",
+  "recognized_kind": "literal_rule",
+  "recognizer_version": "executable-prediction-rule-recognizer-v1",
+  "rule": {
+    "kind": "literal_rule",
+    "raw": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}],\"predict\":{\"lit\":\"vesan\"}}}",
+    "tree": null
+  },
+  "runtime_material": {
+    "additional_experience": null,
+    "external_result": {
+      "status": "revealed",
+      "value": "vesan"
+    },
+    "parent_attempt_coordinate": "iv17.content",
+    "parent_raw": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]}]},\"predict\":{\"lit\":\"qoril\"}}",
+    "test_input": {
+      "facet": "daro",
+      "mark": "kela",
+      "zone": "puno"
+    },
+    "trial": {
+      "status": "out_of_scope",
+      "value": null
+    }
+  },
+  "trial_receipt": {
+    "authority": "rule_evaluator",
+    "evaluator_version": "executable-prediction-rule-evaluator-v1",
+    "input": {
+      "facet": "daro",
+      "mark": "kela",
+      "zone": "puno"
+    },
+    "observation": {
+      "status": "out_of_scope",
+      "value": null
+    }
+  },
+  "vector": [
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}],\"predict\":{\"lit\":\"vesan\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}],\"predict\":{\"lit\":\"vesan\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}],\"predict\":{\"lit\":\"vesan\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}],\"predict\":{\"lit\":\"vesan\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}],\"predict\":{\"lit\":\"vesan\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}],\"predict\":{\"lit\":\"vesan\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}],\"predict\":{\"lit\":\"vesan\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}],\"predict\":{\"lit\":\"vesan\"}}}"
+    },
+    {
+      "status": "prediction",
+      "value": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}],\"predict\":{\"lit\":\"vesan\"}}}"
+    }
+  ],
+  "world_id": "K"
+}

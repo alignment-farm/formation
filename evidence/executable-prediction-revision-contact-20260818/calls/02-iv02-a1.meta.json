@@ -1,0 +1,73 @@
+{
+  "attempt_index": 1,
+  "call_id": "iv02",
+  "condition": "acquisition",
+  "elapsed_seconds": 0.579662834003102,
+  "ended_at": "2026-08-18T23:45:39.664887+00:00",
+  "error": null,
+  "finish_reason": "stop",
+  "http_status": 200,
+  "logical_index": 2,
+  "message": {
+    "content": "{\"prediction\":\"zafren\"}",
+    "role": "assistant"
+  },
+  "request_sha256": "91382a1e90ba334cc7c30e15684082a938326d691262c8f74296aa3e691aaed3",
+  "response_envelope": {
+    "_formation_transport": {
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "770",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 18 Aug 2026 23:45:39 GMT",
+        "Server": "llama.cpp"
+      }
+    },
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"prediction\":\"zafren\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787096739,
+    "id": "chatcmpl-ZBpFGOKwSQEzmajK1QGNiWTkaloZzx86",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 60,
+      "predicted_ms": 374.852,
+      "predicted_n": 12,
+      "predicted_per_second": 32.01263431967817,
+      "predicted_per_token_ms": 31.237666666666666,
+      "prompt_ms": 175.555,
+      "prompt_n": 43,
+      "prompt_per_second": 244.93748397937966,
+      "prompt_per_token_ms": 4.082674418604651
+    },
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 103,
+      "prompt_tokens_details": {
+        "cached_tokens": 60
+      },
+      "total_tokens": 115
+    }
+  },
+  "response_sha256": "88c00fcf9fbfaccc769fd8dc3061f5e71862634d589f4a1773d6b94de933f77b",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T23:45:39.085359+00:00",
+  "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 103,
+    "prompt_tokens_details": {
+      "cached_tokens": 60
+    },
+    "total_tokens": 115
+  },
+  "world_id": "J"
+}

@@ -1,0 +1,73 @@
+{
+  "attempt_index": 1,
+  "call_id": "iv16",
+  "condition": "static_instruction",
+  "elapsed_seconds": 9.318441124996752,
+  "ended_at": "2026-08-18T23:46:19.514899+00:00",
+  "error": null,
+  "finish_reason": "stop",
+  "http_status": 200,
+  "logical_index": 16,
+  "message": {
+    "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"zuna\"}},{\"or\":[{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"mela\"}]}],\"{\"not\":{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"mela\"}]}}}}]}},\"predict\":{\"lit\":\"zafren\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"zuno\"}},{\"or\":[{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"mela\"}]}],\"{\"not\":{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"mela\"}]}}}}]}},\"predict\":{\"lit\":\"ulmec\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"zuni\"}},{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}]}},\"predict\":{\"lit\":\"zafren\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"zuni\"}},{\"not\":{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}]}},\"predict\":{\"lit\":\"ulmec\"}}",
+    "role": "assistant"
+  },
+  "request_sha256": "20b8f6eb617a0839b2f39f4cb0d97138e32bf67bd6805d6e4881cd1601d6226d",
+  "response_envelope": {
+    "_formation_transport": {
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "1779",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 18 Aug 2026 23:46:19 GMT",
+        "Server": "llama.cpp"
+      }
+    },
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"zuna\"}},{\"or\":[{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"mela\"}]}],\"{\"not\":{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"mela\"}]}}}}]}},\"predict\":{\"lit\":\"zafren\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"zuno\"}},{\"or\":[{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"mela\"}]}],\"{\"not\":{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"mela\"}]}}}}]}},\"predict\":{\"lit\":\"ulmec\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"zuni\"}},{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}]}},\"predict\":{\"lit\":\"zafren\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"zuni\"}},{\"not\":{\"eq\":{\"field\":\"facet\"},{\"lit\":\"fira\"}]}},\"predict\":{\"lit\":\"ulmec\"}}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787096779,
+    "id": "chatcmpl-CFouUHvtE1MroZHWnq9fPEnaWYQ92dRZ",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 266,
+      "predicted_ms": 9036.226,
+      "predicted_n": 266,
+      "predicted_per_second": 29.43706808572517,
+      "predicted_per_token_ms": 33.97077443609023,
+      "prompt_ms": 270.094,
+      "prompt_n": 95,
+      "prompt_per_second": 351.7293979133191,
+      "prompt_per_token_ms": 2.8430947368421053
+    },
+    "usage": {
+      "completion_tokens": 266,
+      "prompt_tokens": 361,
+      "prompt_tokens_details": {
+        "cached_tokens": 266
+      },
+      "total_tokens": 627
+    }
+  },
+  "response_sha256": "0bb5fd062727b736932766d0998b5d669349468519f5041249ee7f8bc3762962",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T23:46:10.196634+00:00",
+  "usage": {
+    "completion_tokens": 266,
+    "prompt_tokens": 361,
+    "prompt_tokens_details": {
+      "cached_tokens": 266
+    },
+    "total_tokens": 627
+  },
+  "world_id": "J"
+}

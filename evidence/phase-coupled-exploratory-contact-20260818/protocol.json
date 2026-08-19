@@ -1,0 +1,449 @@
+{
+  "actor_settings": {
+    "max_tokens": 128,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "commitment_cases": [
+    {
+      "case_id": "a-p0-up",
+      "commitment": true,
+      "expected_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "profile": {
+        "controller_family": "418e2788910b4d0d",
+        "phase_zero_increasing_slot": 0,
+        "phases": [
+          "48ec89c0bb579d0a",
+          "713562aa1a463b44"
+        ]
+      },
+      "relation": "same_family_commitment",
+      "state": {
+        "controller_family": "418e2788910b4d0d",
+        "controls": [
+          "f2436f5682e9fa1a",
+          "1630d33cf00b85a0"
+        ],
+        "device": "5daafeba44700e4a",
+        "phase": "48ec89c0bb579d0a",
+        "position": 10,
+        "target": 12
+      },
+      "world_id": "world-a"
+    },
+    {
+      "case_id": "a-p0-down",
+      "commitment": true,
+      "expected_actions": [
+        "78025e8f696c5986",
+        "6f3cd77e3eda3722"
+      ],
+      "profile": {
+        "controller_family": "418e2788910b4d0d",
+        "phase_zero_increasing_slot": 0,
+        "phases": [
+          "48ec89c0bb579d0a",
+          "713562aa1a463b44"
+        ]
+      },
+      "relation": "same_family_commitment",
+      "state": {
+        "controller_family": "418e2788910b4d0d",
+        "controls": [
+          "6f3cd77e3eda3722",
+          "78025e8f696c5986"
+        ],
+        "device": "0283d37fb2f261f8",
+        "phase": "48ec89c0bb579d0a",
+        "position": 10,
+        "target": 8
+      },
+      "world_id": "world-a"
+    },
+    {
+      "case_id": "a-p1-up",
+      "commitment": true,
+      "expected_actions": [
+        "2341a53aaa5fcf49",
+        "13eed001c1ff06a6"
+      ],
+      "profile": {
+        "controller_family": "418e2788910b4d0d",
+        "phase_zero_increasing_slot": 0,
+        "phases": [
+          "48ec89c0bb579d0a",
+          "713562aa1a463b44"
+        ]
+      },
+      "relation": "same_family_commitment",
+      "state": {
+        "controller_family": "418e2788910b4d0d",
+        "controls": [
+          "13eed001c1ff06a6",
+          "2341a53aaa5fcf49"
+        ],
+        "device": "bf25d7ad05fa3966",
+        "phase": "713562aa1a463b44",
+        "position": 20,
+        "target": 22
+      },
+      "world_id": "world-a"
+    },
+    {
+      "case_id": "a-p1-down",
+      "commitment": true,
+      "expected_actions": [
+        "2fc0146f35188936",
+        "a3e2fdaef0816f8c"
+      ],
+      "profile": {
+        "controller_family": "418e2788910b4d0d",
+        "phase_zero_increasing_slot": 0,
+        "phases": [
+          "48ec89c0bb579d0a",
+          "713562aa1a463b44"
+        ]
+      },
+      "relation": "same_family_commitment",
+      "state": {
+        "controller_family": "418e2788910b4d0d",
+        "controls": [
+          "2fc0146f35188936",
+          "a3e2fdaef0816f8c"
+        ],
+        "device": "6a29c326c8338238",
+        "phase": "713562aa1a463b44",
+        "position": 20,
+        "target": 18
+      },
+      "world_id": "world-a"
+    },
+    {
+      "case_id": "b-p0-up",
+      "commitment": true,
+      "expected_actions": [
+        "933157db26a0398a",
+        "36fe253f69414cdb"
+      ],
+      "profile": {
+        "controller_family": "cabd05ee74f6137f",
+        "phase_zero_increasing_slot": 1,
+        "phases": [
+          "a7fdcdee8ffb8e83",
+          "e4827a8649c41e3f"
+        ]
+      },
+      "relation": "same_family_commitment",
+      "state": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "36fe253f69414cdb",
+          "933157db26a0398a"
+        ],
+        "device": "18f73d6d1e3d7ff9",
+        "phase": "a7fdcdee8ffb8e83",
+        "position": 30,
+        "target": 32
+      },
+      "world_id": "world-b"
+    },
+    {
+      "case_id": "b-p0-down",
+      "commitment": true,
+      "expected_actions": [
+        "e4ee5c8c37e6b8cc",
+        "fc216678eb3e1ce0"
+      ],
+      "profile": {
+        "controller_family": "cabd05ee74f6137f",
+        "phase_zero_increasing_slot": 1,
+        "phases": [
+          "a7fdcdee8ffb8e83",
+          "e4827a8649c41e3f"
+        ]
+      },
+      "relation": "same_family_commitment",
+      "state": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "e4ee5c8c37e6b8cc",
+          "fc216678eb3e1ce0"
+        ],
+        "device": "379d52df2a8c40a5",
+        "phase": "a7fdcdee8ffb8e83",
+        "position": 30,
+        "target": 28
+      },
+      "world_id": "world-b"
+    },
+    {
+      "case_id": "b-p1-up",
+      "commitment": true,
+      "expected_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "profile": {
+        "controller_family": "cabd05ee74f6137f",
+        "phase_zero_increasing_slot": 1,
+        "phases": [
+          "a7fdcdee8ffb8e83",
+          "e4827a8649c41e3f"
+        ]
+      },
+      "relation": "same_family_commitment",
+      "state": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "77d0684a164f6e33",
+          "4b732ad67a9d8698"
+        ],
+        "device": "1c4dc1793123bb3a",
+        "phase": "e4827a8649c41e3f",
+        "position": 40,
+        "target": 42
+      },
+      "world_id": "world-b"
+    },
+    {
+      "case_id": "b-p1-down",
+      "commitment": true,
+      "expected_actions": [
+        "45f7fc5cc2047071",
+        "c91e1a0e760ddb08"
+      ],
+      "profile": {
+        "controller_family": "cabd05ee74f6137f",
+        "phase_zero_increasing_slot": 1,
+        "phases": [
+          "a7fdcdee8ffb8e83",
+          "e4827a8649c41e3f"
+        ]
+      },
+      "relation": "same_family_commitment",
+      "state": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "c91e1a0e760ddb08",
+          "45f7fc5cc2047071"
+        ],
+        "device": "125569c2598f087c",
+        "phase": "e4827a8649c41e3f",
+        "position": 40,
+        "target": 38
+      },
+      "world_id": "world-b"
+    }
+  ],
+  "commitment_offers": [
+    "no_persistence",
+    "raw_occurrence",
+    "authored_direct",
+    "governed_candidate",
+    "presence_ablation",
+    "content_ablation"
+  ],
+  "endpoint": "http://localhost:12434/engines/llama.cpp/v1/chat/completions",
+  "formation_and_validation_verdicts_forbidden": true,
+  "inspect_tag": "docker.io/ai/qwen3:14B-Q6_K",
+  "interface_state": {
+    "controller_family": "3567613b634c6b73",
+    "controls": [
+      "bda7a8524aa59738",
+      "3e6a342405643c74"
+    ],
+    "device": "e50da0587d85afe4",
+    "phase": "525ad4296f9065f9",
+    "position": 3,
+    "target": 3
+  },
+  "interpreter_settings": {
+    "max_tokens": 256,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "physical_call_ceiling": 72,
+  "planned_logical_calls": 69,
+  "probe_cases": [
+    {
+      "case_id": "a-other",
+      "commitment": false,
+      "expected_actions": [
+        "hold"
+      ],
+      "profile": {
+        "controller_family": "38e53c39643e5d39",
+        "phase_zero_increasing_slot": 1,
+        "phases": [
+          "c59dba393c6b9ab5",
+          "ed82435270fae71b"
+        ]
+      },
+      "relation": "unobserved_family",
+      "state": {
+        "controller_family": "38e53c39643e5d39",
+        "controls": [
+          "94fd8e79c52d9b28",
+          "9bae416d06fdc594"
+        ],
+        "device": "7c459798a90ec52d",
+        "phase": "c59dba393c6b9ab5",
+        "position": 4,
+        "target": 5
+      },
+      "world_id": "world-a"
+    },
+    {
+      "case_id": "b-other",
+      "commitment": false,
+      "expected_actions": [
+        "hold"
+      ],
+      "profile": {
+        "controller_family": "d61fdcf3cb2327db",
+        "phase_zero_increasing_slot": 0,
+        "phases": [
+          "10a4fce7ea3861e7",
+          "fe07ba41b4f75840"
+        ]
+      },
+      "relation": "unobserved_family",
+      "state": {
+        "controller_family": "d61fdcf3cb2327db",
+        "controls": [
+          "50ecfb1b91c64226",
+          "6ee06644c42e68e0"
+        ],
+        "device": "0926df441abbc04b",
+        "phase": "fe07ba41b4f75840",
+        "position": 9,
+        "target": 8
+      },
+      "world_id": "world-b"
+    },
+    {
+      "case_id": "a-current",
+      "commitment": false,
+      "expected_actions": [
+        "hold"
+      ],
+      "profile": {
+        "controller_family": "418e2788910b4d0d",
+        "phase_zero_increasing_slot": 0,
+        "phases": [
+          "48ec89c0bb579d0a",
+          "713562aa1a463b44"
+        ]
+      },
+      "relation": "already_current",
+      "state": {
+        "controller_family": "418e2788910b4d0d",
+        "controls": [
+          "ab3de3c86d1a3762",
+          "b0ab827c7b6094e2"
+        ],
+        "device": "abf06a862f8580e1",
+        "phase": "48ec89c0bb579d0a",
+        "position": 7,
+        "target": 7
+      },
+      "world_id": "world-a"
+    },
+    {
+      "case_id": "b-current",
+      "commitment": false,
+      "expected_actions": [
+        "hold"
+      ],
+      "profile": {
+        "controller_family": "cabd05ee74f6137f",
+        "phase_zero_increasing_slot": 1,
+        "phases": [
+          "a7fdcdee8ffb8e83",
+          "e4827a8649c41e3f"
+        ]
+      },
+      "relation": "already_current",
+      "state": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "2ae7131dd2485a9f",
+          "45c5f8d4d8fbd8d8"
+        ],
+        "device": "8da6ced685a9c8c4",
+        "phase": "e4827a8649c41e3f",
+        "position": 9,
+        "target": 9
+      },
+      "world_id": "world-b"
+    }
+  ],
+  "probe_offers": [
+    "no_persistence",
+    "raw_occurrence",
+    "authored_direct",
+    "governed_candidate"
+  ],
+  "protocol": "phase-coupled-exploratory-contact-v0",
+  "public_rule": "Each device has two ordered controls and one of two public phases. In each\nphase, exactly one ordered slot increases position by one and the other\ndecreases it by one. The increasing slot is opposite in the two phases. Every\ncontrol action toggles phase. Hold changes neither position nor phase. The\nphase-to-slot profile is stable within one controller family. Control strings\nhave no reusable meaning across devices.\nUse current position, target, phase, and any warranted family evidence to choose\nan action or committed action sequence. If no warranted profile evidence applies\nto the current family, hold rather than guess a control.",
+  "token_delta_ceiling": 24,
+  "worlds": [
+    {
+      "acquisition": {
+        "controller_family": "418e2788910b4d0d",
+        "controls": [
+          "43a13cb4e3e6aa9e",
+          "49e88bb42ae5d914"
+        ],
+        "device": "e2c63376b741984e",
+        "phase": "48ec89c0bb579d0a",
+        "position": 0,
+        "target": 2
+      },
+      "profile": {
+        "controller_family": "418e2788910b4d0d",
+        "phase_zero_increasing_slot": 0,
+        "phases": [
+          "48ec89c0bb579d0a",
+          "713562aa1a463b44"
+        ]
+      },
+      "world_id": "world-a"
+    },
+    {
+      "acquisition": {
+        "controller_family": "cabd05ee74f6137f",
+        "controls": [
+          "f255d496ba13354d",
+          "c0cb0cf5a7a8966e"
+        ],
+        "device": "eb20f810d311d78d",
+        "phase": "a7fdcdee8ffb8e83",
+        "position": 0,
+        "target": 2
+      },
+      "profile": {
+        "controller_family": "cabd05ee74f6137f",
+        "phase_zero_increasing_slot": 1,
+        "phases": [
+          "a7fdcdee8ffb8e83",
+          "e4827a8649c41e3f"
+        ]
+      },
+      "world_id": "world-b"
+    }
+  ]
+}

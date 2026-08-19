@@ -1,0 +1,41 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "c-same-increase-raw_occurrence-r2",
+  "content": "{\"action\": \"amir\"}",
+  "environment_result": {
+    "action": "amir",
+    "controller_family": "lyra-31",
+    "device_id": "cedar-unit",
+    "increasing_slot": null,
+    "movement_direction": "increased",
+    "observation": "target_reached",
+    "position_after": 13,
+    "position_before": 12,
+    "selected_slot": "first",
+    "target": 13
+  },
+  "expected_action": "amir",
+  "expected_action_match": true,
+  "logical_index": 38,
+  "message": {
+    "content": "{\"action\": \"amir\"}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "probe_id": "c-same-increase",
+  "relation": "same_family_increase",
+  "repetition": 2,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "lyra-31",
+    "device_id": "cedar-unit",
+    "first_control": "amir",
+    "position": 12,
+    "second_control": "bexo",
+    "target": 13
+  },
+  "surfaced_action": "amir",
+  "unwarranted_guess": false,
+  "world_id": "world-c"
+}

@@ -1,0 +1,39 @@
+{
+  "call_id": "world-h-deterministic_restatement-r1",
+  "candidate": {
+    "change": "a3dd902b2fe11658",
+    "counterevidence": "movement_direction increased"
+  },
+  "candidate_comparison_refusal": null,
+  "candidate_comparison_sha256": "6369684cebf3e471343910e33621d85b5555f1dd18a9bf9d2b37453a715a4f2d",
+  "candidate_comparison_utf8": "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction increased\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 31,
+  "condition": "deterministic_restatement",
+  "content": "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction increased\"}",
+  "draft_is_request_parent": false,
+  "draft_receipt": null,
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "871eda706782211de643424ca2b61c771b5d1cfabfc49bd0a1334b6d2855659a"
+  },
+  "governance_deferred": false,
+  "logical_index": 17,
+  "material_utf8_length": 539,
+  "message": {
+    "content": "{\"change\":\"a3dd902b2fe11658\",\"counterevidence\":\"movement_direction increased\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 796,
+  "public_formation_condition": "deterministic_restatement",
+  "request_sha256": "a4c9ace6a619c94ed646ead49cb0b07a9eb764832d0f007efb6a3998be6fc1bb",
+  "response_sha256": "e02d7391a36534ed440f1b4c713b35a9d94e75088c9517a27f536cfa35265be0",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_draft_canonical": null,
+  "world_id": "world-h"
+}

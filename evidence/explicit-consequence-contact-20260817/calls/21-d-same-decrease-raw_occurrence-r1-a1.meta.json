@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "d-same-decrease-raw_occurrence-r1",
+  "elapsed_seconds": 0.9642804590002925,
+  "ended_at": "2026-08-18T02:33:27.182170+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 21,
+  "message": {
+    "content": "{\"action\": \"loro\"}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "probe_id": "d-same-decrease",
+  "relation": "same_family_decrease",
+  "repetition": 1,
+  "request_sha256": "f664443f3682875cf7b6511275d4a7c2a59493d3438249997a612ca6d1e0c543",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"action\": \"loro\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787020407,
+    "id": "chatcmpl-sy501kgvE64QpwxB21H5lHJetcxtfMVV",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 204,
+      "predicted_ms": 375.452,
+      "predicted_n": 12,
+      "predicted_per_second": 31.961475767874454,
+      "predicted_per_token_ms": 31.287666666666667,
+      "prompt_ms": 577.573,
+      "prompt_n": 212,
+      "prompt_per_second": 367.0531690366413,
+      "prompt_per_token_ms": 2.724400943396226
+    },
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 416,
+      "prompt_tokens_details": {
+        "cached_tokens": 204
+      },
+      "total_tokens": 428
+    }
+  },
+  "response_sha256": "9a99c2d71f6fa744cb23157c5ed9efd309d86cdedc0102e0c8f4b303d901243c",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:33:26.217889+00:00",
+  "world_id": "world-d"
+}

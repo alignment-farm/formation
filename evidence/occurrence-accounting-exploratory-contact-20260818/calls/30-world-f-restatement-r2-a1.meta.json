@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-f-restatement-r2",
+  "elapsed_seconds": 4.945657625001331,
+  "ended_at": "2026-08-18T12:51:46.675499+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 30,
+  "message": {
+    "content": "{\"change\":\"The action 20de6d24dbe28705 in phase 41dd49a87033606b decreases position, and action 9c3e211ff8cc41c2 in phase 9782ecf0f92e8157 also decreases position. This suggests that the control profile for family 95d703a257e5a8fb consistently decreases position in both phases.\",\"counterevidence\":null}",
+    "role": "assistant"
+  },
+  "offer_key": "restatement",
+  "probe_id": null,
+  "relation": null,
+  "repetition": 2,
+  "request_sha256": "84e5e3755e16b3418094b491a231356a4035bebde468e9e55215ed56d6cb858c",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"change\":\"The action 20de6d24dbe28705 in phase 41dd49a87033606b decreases position, and action 9c3e211ff8cc41c2 in phase 9782ecf0f92e8157 also decreases position. This suggests that the control profile for family 95d703a257e5a8fb consistently decreases position in both phases.\",\"counterevidence\":null}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787057506,
+    "id": "chatcmpl-jcuHL6kQVrVKWqG7u6kgGS4SLk7FSpe1",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 514,
+      "predicted_ms": 4109.28,
+      "predicted_n": 121,
+      "predicted_per_second": 29.44554763851575,
+      "predicted_per_token_ms": 33.960991735537185,
+      "prompt_ms": 819.666,
+      "prompt_n": 288,
+      "prompt_per_second": 351.3626281924588,
+      "prompt_per_token_ms": 2.8460625000000004
+    },
+    "usage": {
+      "completion_tokens": 121,
+      "prompt_tokens": 802,
+      "prompt_tokens_details": {
+        "cached_tokens": 514
+      },
+      "total_tokens": 923
+    }
+  },
+  "response_sha256": "3fe8cd54fa9100dd32518b662f6a75e7686946b1f5a2b16a66fd13c2b90381a0",
+  "responsibility": "candidate",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T12:51:41.729833+00:00",
+  "world_id": "world-f"
+}

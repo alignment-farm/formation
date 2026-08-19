@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "d-unobserved-decoy-raw_occurrence-r1",
+  "elapsed_seconds": 0.9640675840000767,
+  "ended_at": "2026-08-18T02:33:31.953563+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 28,
+  "message": {
+    "content": "{\"action\": \"mira\"}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "probe_id": "d-unobserved-decoy",
+  "relation": "unobserved_family_decoy",
+  "repetition": 1,
+  "request_sha256": "d679d6ba3c09c449ae65957d66bfea8ab4ecc194ce736a1abbcbd81d0e63c718",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"action\": \"mira\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787020411,
+    "id": "chatcmpl-d5aaOBV4KazhDM0KzLYfaz9xO1dKUtuG",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 209,
+      "predicted_ms": 375.403,
+      "predicted_n": 12,
+      "predicted_per_second": 31.965647584062992,
+      "predicted_per_token_ms": 31.283583333333336,
+      "prompt_ms": 577.758,
+      "prompt_n": 212,
+      "prompt_per_second": 366.9356374122037,
+      "prompt_per_token_ms": 2.7252735849056604
+    },
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 421,
+      "prompt_tokens_details": {
+        "cached_tokens": 209
+      },
+      "total_tokens": 433
+    }
+  },
+  "response_sha256": "8ba633940c6277acfa7ee38a1bdaa6ccc8545e43ea439311fcd929e19fc560eb",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:33:30.989496+00:00",
+  "world_id": "world-d"
+}

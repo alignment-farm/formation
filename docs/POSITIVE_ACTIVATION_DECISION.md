@@ -10,6 +10,20 @@ Governed activates the exact admitted change whose applicability matches the
 current situation. The ablation result remains excluded until constrained
 replay can derive its eligible set from retained lineage.
 
+## Claim boundary for the historical name
+
+This fixture predates the sharper distinction between delivery and influence.
+Its `activation decision`, `ChangeActivated`, and `ActivationHandoff` names are
+retained as wire-contract names. Semantically, this boundary decides whether a
+change is eligible and authorizes its later delivery. It does not observe the
+model action and therefore cannot establish the concept-level event of
+attributable activation defined in [CONCEPT.md](CONCEPT.md).
+
+The later request receipt may establish that the handoff was consumed and its
+content was present. Only a behavioral causal contrast can establish that the
+content influenced the action. Passing this contract's tests proves the
+fixture-local decision and handoff behavior, not formed competence.
+
 ## Why this is a two-root boundary
 
 The positive encounter-opening slice returns three exact current roots. Two can

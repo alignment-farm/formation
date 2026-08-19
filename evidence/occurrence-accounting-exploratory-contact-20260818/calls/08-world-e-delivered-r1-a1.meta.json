@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-e-delivered-r1",
+  "elapsed_seconds": 6.1058148330048425,
+  "ended_at": "2026-08-18T12:50:32.776722+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 8,
+  "message": {
+    "content": "{\"change\":\"In the controller family 'c378816a8c4ed06f', the action '91dd8389d9c3730a' increases position during phase '72b4369223095ae5' and decreases position during phase '96e6b778c4c3439e'.\",\"counterevidence\":\"If '91dd8389d9c3730a' ever decreases position during phase '72b4369223095ae5' or increases position during phase '96e6b778c4c3439e'.\"}",
+    "role": "assistant"
+  },
+  "offer_key": "delivered",
+  "probe_id": null,
+  "relation": null,
+  "repetition": 1,
+  "request_sha256": "220170aee2d79e3825d1a32cb5311f6af0e33eecb5765583b5034a84c13dddd4",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"change\":\"In the controller family 'c378816a8c4ed06f', the action '91dd8389d9c3730a' increases position during phase '72b4369223095ae5' and decreases position during phase '96e6b778c4c3439e'.\",\"counterevidence\":\"If '91dd8389d9c3730a' ever decreases position during phase '72b4369223095ae5' or increases position during phase '96e6b778c4c3439e'.\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787057432,
+    "id": "chatcmpl-ikVXyTWGvcPt95OwQJohM9BcIE82UpmR",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 525,
+      "predicted_ms": 5508.842,
+      "predicted_n": 162,
+      "predicted_per_second": 29.407269259129233,
+      "predicted_per_token_ms": 34.005197530864194,
+      "prompt_ms": 585.076,
+      "prompt_n": 216,
+      "prompt_per_second": 369.1828070199427,
+      "prompt_per_token_ms": 2.7086851851851854
+    },
+    "usage": {
+      "completion_tokens": 162,
+      "prompt_tokens": 741,
+      "prompt_tokens_details": {
+        "cached_tokens": 525
+      },
+      "total_tokens": 903
+    }
+  },
+  "response_sha256": "e66f967a626b2630ca321a2fbb8617b245e8a05fe3b6e679d9af8d5cb173c123",
+  "responsibility": "candidate",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T12:50:26.670896+00:00",
+  "world_id": "world-e"
+}

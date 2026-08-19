@@ -1,0 +1,39 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "b-current-no_persistence-r1",
+  "content": "{\"action\": \"hold\"}",
+  "environment_result": {
+    "action": "hold",
+    "controller_family": "tavi-42",
+    "device_id": "willow-unit",
+    "increasing_slot": null,
+    "observation": "held_at_target",
+    "position_after": 6,
+    "position_before": 6,
+    "target": 6
+  },
+  "expected_action": "hold",
+  "expected_action_match": true,
+  "logical_index": 34,
+  "message": {
+    "content": "{\"action\": \"hold\"}",
+    "role": "assistant"
+  },
+  "offer_key": "no_persistence",
+  "probe_id": "b-current",
+  "relation": "current_state_sufficient",
+  "repetition": 1,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "tavi-42",
+    "device_id": "willow-unit",
+    "first_control": "peli",
+    "position": 6,
+    "second_control": "ranu",
+    "target": 6
+  },
+  "surfaced_action": "hold",
+  "unwarranted_guess": false,
+  "world_id": "world-b"
+}

@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "b-same-decrease-raw_occurrence-r2",
+  "elapsed_seconds": 0.9961314160000256,
+  "ended_at": "2026-08-18T02:20:05.790977+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 52,
+  "message": {
+    "content": "{\"action\": \"jora\"}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "probe_id": "b-same-decrease",
+  "relation": "same_family_decrease",
+  "repetition": 2,
+  "request_sha256": "e88a9100a412a84748596bb0885e0a7b2b01f001f1bbedd4e9b8da4fee2b888b",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"action\": \"jora\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787019605,
+    "id": "chatcmpl-0eF0LkxXkRlfYgjAMsogkHoQJjdYp3Yn",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 205,
+      "predicted_ms": 375.666,
+      "predicted_n": 12,
+      "predicted_per_second": 31.943268754691665,
+      "predicted_per_token_ms": 31.3055,
+      "prompt_ms": 609.001,
+      "prompt_n": 194,
+      "prompt_per_second": 318.55448513220836,
+      "prompt_per_token_ms": 3.1391804123711338
+    },
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 399,
+      "prompt_tokens_details": {
+        "cached_tokens": 205
+      },
+      "total_tokens": 411
+    }
+  },
+  "response_sha256": "6d93c85ec60fe7970b676e9f8ca04eba8fbefb08855328e4dc84d19cb19396e2",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:20:04.794847+00:00",
+  "world_id": "world-b"
+}

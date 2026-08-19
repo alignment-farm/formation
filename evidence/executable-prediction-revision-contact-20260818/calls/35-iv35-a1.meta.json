@@ -1,0 +1,73 @@
+{
+  "attempt_index": 1,
+  "call_id": "iv35",
+  "condition": "later_same_response",
+  "elapsed_seconds": 5.241155083000194,
+  "ended_at": "2026-08-18T23:47:21.897906+00:00",
+  "error": null,
+  "finish_reason": "stop",
+  "http_status": 200,
+  "logical_index": 35,
+  "message": {
+    "content": "{\"parent\":\"RULE_AST_V1\\n{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"dara\\\"}]},{\\\"neq\\\":[{\\\"field\\\":\\\"mark\\\"},{\\\"lit\\\":\\\"kela\\\"}]}]},\\\"predict\\\":{\\\"lit\\\":\\\"qoril\\\"}}\",\"successor\":\"RULE_AST_V1\\n{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"dara\\\"}]},{\\\"eq\\\":[{\\\"field\\\":\\\"zone\\\"},{\\\"lit\\\":\\\"puna\\\"}]}]},\\\"predict\\\":{\\\"lit\\\":\\\"vesan\\\"}}\"}",
+    "role": "assistant"
+  },
+  "request_sha256": "de77c6bdc1b9e4bb835134095393095bd80728540a6b29a6a68dfbcb0b305b01",
+  "response_envelope": {
+    "_formation_transport": {
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "1247",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 18 Aug 2026 23:47:21 GMT",
+        "Server": "llama.cpp"
+      }
+    },
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"parent\":\"RULE_AST_V1\\n{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"dara\\\"}]},{\\\"neq\\\":[{\\\"field\\\":\\\"mark\\\"},{\\\"lit\\\":\\\"kela\\\"}]}]},\\\"predict\\\":{\\\"lit\\\":\\\"qoril\\\"}}\",\"successor\":\"RULE_AST_V1\\n{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"dara\\\"}]},{\\\"eq\\\":[{\\\"field\\\":\\\"zone\\\"},{\\\"lit\\\":\\\"puna\\\"}]}]},\\\"predict\\\":{\\\"lit\\\":\\\"vesan\\\"}}\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787096841,
+    "id": "chatcmpl-0zqxTr5TfeY2FuNSgI6S5sVIk8Tm8AHL",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 259,
+      "predicted_ms": 4391.574,
+      "predicted_n": 129,
+      "predicted_per_second": 29.37443385902185,
+      "predicted_per_token_ms": 34.04320930232558,
+      "prompt_ms": 837.464,
+      "prompt_n": 265,
+      "prompt_per_second": 316.4315122799308,
+      "prompt_per_token_ms": 3.1602415094339626
+    },
+    "usage": {
+      "completion_tokens": 129,
+      "prompt_tokens": 524,
+      "prompt_tokens_details": {
+        "cached_tokens": 259
+      },
+      "total_tokens": 653
+    }
+  },
+  "response_sha256": "a39ce41490f58fda80e7b948dc8d6dea0da27114a3649384b0b69dea1a077108",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T23:47:16.656876+00:00",
+  "usage": {
+    "completion_tokens": 129,
+    "prompt_tokens": 524,
+    "prompt_tokens_details": {
+      "cached_tokens": 259
+    },
+    "total_tokens": 653
+  },
+  "world_id": "K"
+}

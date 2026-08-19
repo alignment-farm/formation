@@ -1,0 +1,37 @@
+{
+  "account_is_request_parent": true,
+  "account_receipt": "world-f-account",
+  "call_id": "world-f-delivered-r1",
+  "candidate": {
+    "change": "The control '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position by 1",
+    "counterevidence": "If '20de6d24dbe28705' in phase '41dd49a87033606b' increases position instead of decreasing, this change is invalid."
+  },
+  "candidate_comparison_sha256": "82c442087e97aae1a622cbe1db233d155b43bd009f4470858a61c5dc02758dbf",
+  "candidate_comparison_utf8": "{\"change\":\"The control '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position by 1\",\"counterevidence\":\"If '20de6d24dbe28705' in phase '41dd49a87033606b' increases position instead of decreasing, this change is invalid.\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 101,
+  "condition": "delivered",
+  "content": "{\"change\":\"The control '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position by 1\",\"counterevidence\":\"If '20de6d24dbe28705' in phase '41dd49a87033606b' increases position instead of decreasing, this change is invalid.\"}",
+  "fork_point": "post-account",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "faa329c565dee0a25ae3faeb980da2efc46349098e9774be9d63ba5dc1a7f97a"
+  },
+  "logical_index": 20,
+  "material_utf8_length": 439,
+  "message": {
+    "content": "{\"change\":\"The control '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position by 1\",\"counterevidence\":\"If '20de6d24dbe28705' in phase '41dd49a87033606b' increases position instead of decreasing, this change is invalid.\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 751,
+  "public_formation_condition": "exact_account_output",
+  "request_sha256": "c35f82320370c37c3d3c0f4764743063bf84d89c33a39190f3af18c444da197d",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_account": null,
+  "world_id": "world-f"
+}

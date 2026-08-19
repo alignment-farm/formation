@@ -1,0 +1,40 @@
+{
+  "call_id": "world-g-exact_draft_challenge-r1",
+  "candidate": {
+    "change": "7e81cf4ce9afe7ad",
+    "counterevidence": "If the phase after using action '183609a9f5e6b701' is not 'ccdabc1e1f6ca491', this would count against the claim."
+  },
+  "candidate_comparison_refusal": null,
+  "candidate_comparison_sha256": "ffacd60707840226e4b2d236bd55d809ebf1d2f898ac2b99893f05bba7a20ed2",
+  "candidate_comparison_utf8": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the phase after using action '183609a9f5e6b701' is not 'ccdabc1e1f6ca491', this would count against the claim.\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 71,
+  "condition": "exact_draft_challenge",
+  "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the phase after using action '183609a9f5e6b701' is not 'ccdabc1e1f6ca491', this would count against the claim.\"}",
+  "draft_is_request_parent": true,
+  "draft_receipt": "candidate-g-direct-1",
+  "fork_point": "post-source",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "f6d87534c88f64138cf5d540d37146ebc2eea3d6f05846c658487243bf2c1881"
+  },
+  "governance_deferred": false,
+  "logical_index": 11,
+  "material_utf8_length": 91,
+  "message": {
+    "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the phase after using action '183609a9f5e6b701' is not 'ccdabc1e1f6ca491', this would count against the claim.\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 609,
+  "public_formation_condition": "exact_draft_challenge",
+  "request_sha256": "17484c414c6e0aede87cad3e9c38053cd11ae756fd0c458531045eb8b9ba1428",
+  "response_sha256": "5e534e3df99c4e06e2ce68261b5c003c51b6695317704d3483e3c099a4a815f3",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_draft_canonical": null,
+  "world_id": "world-g"
+}

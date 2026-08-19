@@ -1,0 +1,216 @@
+{
+  "actor_settings": {
+    "max_tokens": 128,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "endpoint": "http://localhost:12434/engines/llama.cpp/v1/chat/completions",
+  "inspect_tag": "docker.io/ai/qwen3:14B-Q6_K",
+  "interface_state": {
+    "controller_family": "interface-family",
+    "device_id": "interface-device",
+    "first_control": "loki",
+    "position": 4,
+    "second_control": "senu",
+    "target": 4
+  },
+  "interpreter_settings": {
+    "max_tokens": 256,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "none_offer": "NONE",
+  "offers": [
+    "no_persistence",
+    "raw_occurrence",
+    "authored_interpretation",
+    "governed_candidate"
+  ],
+  "physical_call_ceiling": 72,
+  "planned_logical_calls": 69,
+  "protocol": "calibration-mechanism-discovery-v0",
+  "public_rule": "Each controller family keeps one calibration across its devices. One ordered control slot increases position and the other decreases it. Device-specific control names may change. Different controller families are independently calibrated. Choose the least-cost warranted action. If position already equals target, choose `hold`. If this decision has no experience establishing the current family's calibration, choose `request_calibration` rather than guess.",
+  "validation_verdicts_forbidden": true,
+  "worlds": [
+    {
+      "acquisition": {
+        "controller_family": "noru-17",
+        "device_id": "noru-seed",
+        "first_control": "dax",
+        "position": 0,
+        "second_control": "lume",
+        "target": 1
+      },
+      "acquisition_profile": {
+        "controller_family": "noru-17",
+        "increasing_slot": "first_increases"
+      },
+      "probes": [
+        {
+          "expected_action": "sile",
+          "probe_id": "a-same-increase",
+          "profile": {
+            "controller_family": "noru-17",
+            "increasing_slot": "first_increases"
+          },
+          "relation": "same_family_increase",
+          "state": {
+            "controller_family": "noru-17",
+            "device_id": "opal-unit",
+            "first_control": "sile",
+            "position": 10,
+            "second_control": "toru",
+            "target": 11
+          }
+        },
+        {
+          "expected_action": "vask",
+          "probe_id": "a-same-decrease",
+          "profile": {
+            "controller_family": "noru-17",
+            "increasing_slot": "first_increases"
+          },
+          "relation": "same_family_decrease",
+          "state": {
+            "controller_family": "noru-17",
+            "device_id": "quill-unit",
+            "first_control": "nemi",
+            "position": 10,
+            "second_control": "vask",
+            "target": 9
+          }
+        },
+        {
+          "expected_action": "request_calibration",
+          "probe_id": "a-unobserved-decoy",
+          "profile": {
+            "controller_family": "noru-17b",
+            "increasing_slot": "second_increases"
+          },
+          "relation": "unobserved_family_decoy",
+          "state": {
+            "controller_family": "noru-17b",
+            "device_id": "noru-seed-echo",
+            "first_control": "kiri",
+            "position": 3,
+            "second_control": "pavo",
+            "target": 4
+          }
+        },
+        {
+          "expected_action": "hold",
+          "probe_id": "a-current",
+          "profile": {
+            "controller_family": "noru-17",
+            "increasing_slot": "first_increases"
+          },
+          "relation": "current_state_sufficient",
+          "state": {
+            "controller_family": "noru-17",
+            "device_id": "ember-unit",
+            "first_control": "zori",
+            "position": 5,
+            "second_control": "meka",
+            "target": 5
+          }
+        }
+      ],
+      "world_id": "world-a"
+    },
+    {
+      "acquisition": {
+        "controller_family": "tavi-42",
+        "device_id": "tavi-seed",
+        "first_control": "brin",
+        "position": 0,
+        "second_control": "sova",
+        "target": 1
+      },
+      "acquisition_profile": {
+        "controller_family": "tavi-42",
+        "increasing_slot": "second_increases"
+      },
+      "probes": [
+        {
+          "expected_action": "gora",
+          "probe_id": "b-same-increase",
+          "profile": {
+            "controller_family": "tavi-42",
+            "increasing_slot": "second_increases"
+          },
+          "relation": "same_family_increase",
+          "state": {
+            "controller_family": "tavi-42",
+            "device_id": "river-unit",
+            "first_control": "fenu",
+            "position": 20,
+            "second_control": "gora",
+            "target": 21
+          }
+        },
+        {
+          "expected_action": "havi",
+          "probe_id": "b-same-decrease",
+          "profile": {
+            "controller_family": "tavi-42",
+            "increasing_slot": "second_increases"
+          },
+          "relation": "same_family_decrease",
+          "state": {
+            "controller_family": "tavi-42",
+            "device_id": "stone-unit",
+            "first_control": "havi",
+            "position": 20,
+            "second_control": "jora",
+            "target": 19
+          }
+        },
+        {
+          "expected_action": "request_calibration",
+          "probe_id": "b-unobserved-decoy",
+          "profile": {
+            "controller_family": "tavi-42b",
+            "increasing_slot": "first_increases"
+          },
+          "relation": "unobserved_family_decoy",
+          "state": {
+            "controller_family": "tavi-42b",
+            "device_id": "tavi-seed-echo",
+            "first_control": "kelo",
+            "position": 7,
+            "second_control": "mavi",
+            "target": 8
+          }
+        },
+        {
+          "expected_action": "hold",
+          "probe_id": "b-current",
+          "profile": {
+            "controller_family": "tavi-42",
+            "increasing_slot": "second_increases"
+          },
+          "relation": "current_state_sufficient",
+          "state": {
+            "controller_family": "tavi-42",
+            "device_id": "willow-unit",
+            "first_control": "peli",
+            "position": 6,
+            "second_control": "ranu",
+            "target": 6
+          }
+        }
+      ],
+      "world_id": "world-b"
+    }
+  ]
+}

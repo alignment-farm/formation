@@ -1,0 +1,13 @@
+{
+  "admitted": true,
+  "candidate": {
+    "controller_family": "vesa-58",
+    "counterevidence": "position_after is -1, which is less than the target of 1, indicating the selected slot may not be the increasing one.",
+    "increasing_slot": "second",
+    "scope": "same_controller_family"
+  },
+  "derivation_surface": "selected_slot_and_movement_direction_only",
+  "refusals": [],
+  "runtime_derived_increasing_slot": "second",
+  "source_family": "vesa-58"
+}

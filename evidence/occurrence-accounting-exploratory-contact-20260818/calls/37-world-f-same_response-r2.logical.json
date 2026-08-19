@@ -1,0 +1,33 @@
+{
+  "account_is_request_parent": false,
+  "account_receipt": null,
+  "call_id": "world-f-same_response-r2",
+  "candidate": null,
+  "candidate_comparison_sha256": null,
+  "candidate_comparison_utf8": null,
+  "candidate_refusal": "invalid_json",
+  "completion_tokens": 256,
+  "condition": "same_response",
+  "content": "{\"account\":\"The device was operated through two steps. In the first step, action '20de6d24dbe28705' was performed, which decreased the position from 0 to -1 and toggled the phase from '41dd49a87033606b' to '9782ecf0f92e8157'. In the second step, action '9c3e211ff8cc41c2' was performed, which decreased the position from -1 to -2 and toggled the phase back to '41dd49a87033606b'. The target of 2 was not reached.\",\"change\":\"The phase-to-slot profile for controller family '95d703a257e5a8fb' warrants that the increasing slot is opposite in the two phases. This suggests that in phase '41dd49a87033606b', the increasing slot is '9c3e211ff8cc41c2', and in phase '9782ecf0f92e81",
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "invalid_json"
+    ],
+    "source_occurrence_sha256": "faa329c565dee0a25ae3faeb980da2efc46349098e9774be9d63ba5dc1a7f97a"
+  },
+  "logical_index": 37,
+  "material_utf8_length": 17,
+  "message": {
+    "content": "{\"account\":\"The device was operated through two steps. In the first step, action '20de6d24dbe28705' was performed, which decreased the position from 0 to -1 and toggled the phase from '41dd49a87033606b' to '9782ecf0f92e8157'. In the second step, action '9c3e211ff8cc41c2' was performed, which decreased the position from -1 to -2 and toggled the phase back to '41dd49a87033606b'. The target of 2 was not reached.\",\"change\":\"The phase-to-slot profile for controller family '95d703a257e5a8fb' warrants that the increasing slot is opposite in the two phases. This suggests that in phase '41dd49a87033606b', the increasing slot is '9c3e211ff8cc41c2', and in phase '9782ecf0f92e81",
+    "role": "assistant"
+  },
+  "prompt_tokens": 609,
+  "public_formation_condition": "same_response_sequence",
+  "request_sha256": "537f04c9e53d2c34e0b2076bd3b13fd32dab55b8f2965c208f958f6313818157",
+  "responsibility": "candidate",
+  "round": 2,
+  "same_response_account": null,
+  "world_id": "world-f"
+}

@@ -1,0 +1,1886 @@
+{
+  "acquisitions": [
+    {
+      "action_refusal": null,
+      "environment_results": [
+        {
+          "action": "43a13cb4e3e6aa9e",
+          "before": {
+            "controller_family": "418e2788910b4d0d",
+            "controls": [
+              "43a13cb4e3e6aa9e",
+              "49e88bb42ae5d914"
+            ],
+            "device": "e2c63376b741984e",
+            "phase": "48ec89c0bb579d0a",
+            "position": 0,
+            "target": 2
+          },
+          "movement_direction": "increased",
+          "phase_after": "713562aa1a463b44",
+          "position_after": 1,
+          "target_reached": false
+        },
+        {
+          "action": "49e88bb42ae5d914",
+          "before": {
+            "controller_family": "418e2788910b4d0d",
+            "controls": [
+              "43a13cb4e3e6aa9e",
+              "49e88bb42ae5d914"
+            ],
+            "device": "e2c63376b741984e",
+            "phase": "713562aa1a463b44",
+            "position": 1,
+            "target": 2
+          },
+          "movement_direction": "increased",
+          "phase_after": "48ec89c0bb579d0a",
+          "position_after": 2,
+          "target_reached": true
+        }
+      ],
+      "observable": true,
+      "surfaced_actions": [
+        "43a13cb4e3e6aa9e",
+        "49e88bb42ae5d914"
+      ],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "environment_results": [
+        {
+          "action": "f255d496ba13354d",
+          "before": {
+            "controller_family": "cabd05ee74f6137f",
+            "controls": [
+              "f255d496ba13354d",
+              "c0cb0cf5a7a8966e"
+            ],
+            "device": "eb20f810d311d78d",
+            "phase": "a7fdcdee8ffb8e83",
+            "position": 0,
+            "target": 2
+          },
+          "movement_direction": "decreased",
+          "phase_after": "e4827a8649c41e3f",
+          "position_after": -1,
+          "target_reached": false
+        },
+        {
+          "action": "c0cb0cf5a7a8966e",
+          "before": {
+            "controller_family": "cabd05ee74f6137f",
+            "controls": [
+              "f255d496ba13354d",
+              "c0cb0cf5a7a8966e"
+            ],
+            "device": "eb20f810d311d78d",
+            "phase": "e4827a8649c41e3f",
+            "position": -1,
+            "target": 2
+          },
+          "movement_direction": "decreased",
+          "phase_after": "a7fdcdee8ffb8e83",
+          "position_after": -2,
+          "target_reached": false
+        }
+      ],
+      "observable": true,
+      "surfaced_actions": [
+        "f255d496ba13354d",
+        "c0cb0cf5a7a8966e"
+      ],
+      "world_id": "world-b"
+    }
+  ],
+  "cells": [
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-up",
+      "expected_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 377,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-up",
+      "expected_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 691,
+      "prompt_tokens": 688,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-up",
+      "expected_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 79,
+      "prompt_tokens": 412,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-up",
+      "expected_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 377,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-up",
+      "expected_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "presence_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 377,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-up",
+      "expected_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "content_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 377,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "f2436f5682e9fa1a",
+        "1630d33cf00b85a0"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-down",
+      "expected_actions": [
+        "78025e8f696c5986",
+        "6f3cd77e3eda3722"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 691,
+      "prompt_tokens": 688,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "6f3cd77e3eda3722",
+        "78025e8f696c5986"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-down",
+      "expected_actions": [
+        "78025e8f696c5986",
+        "6f3cd77e3eda3722"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 79,
+      "prompt_tokens": 412,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "6f3cd77e3eda3722",
+        "78025e8f696c5986"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-down",
+      "expected_actions": [
+        "78025e8f696c5986",
+        "6f3cd77e3eda3722"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 377,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "6f3cd77e3eda3722",
+        "78025e8f696c5986"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-down",
+      "expected_actions": [
+        "78025e8f696c5986",
+        "6f3cd77e3eda3722"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "presence_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 377,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "6f3cd77e3eda3722",
+        "78025e8f696c5986"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-down",
+      "expected_actions": [
+        "78025e8f696c5986",
+        "6f3cd77e3eda3722"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "content_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 377,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "6f3cd77e3eda3722",
+        "78025e8f696c5986"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p0-down",
+      "expected_actions": [
+        "78025e8f696c5986",
+        "6f3cd77e3eda3722"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 377,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "6f3cd77e3eda3722",
+        "78025e8f696c5986"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-up",
+      "expected_actions": [
+        "2341a53aaa5fcf49",
+        "13eed001c1ff06a6"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 79,
+      "prompt_tokens": 406,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "13eed001c1ff06a6",
+        "2341a53aaa5fcf49"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-up",
+      "expected_actions": [
+        "2341a53aaa5fcf49",
+        "13eed001c1ff06a6"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 371,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "13eed001c1ff06a6",
+        "2341a53aaa5fcf49"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-up",
+      "expected_actions": [
+        "2341a53aaa5fcf49",
+        "13eed001c1ff06a6"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "presence_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 371,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "13eed001c1ff06a6",
+        "2341a53aaa5fcf49"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-up",
+      "expected_actions": [
+        "2341a53aaa5fcf49",
+        "13eed001c1ff06a6"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "content_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 371,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "13eed001c1ff06a6",
+        "2341a53aaa5fcf49"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-up",
+      "expected_actions": [
+        "2341a53aaa5fcf49",
+        "13eed001c1ff06a6"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 371,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "13eed001c1ff06a6",
+        "2341a53aaa5fcf49"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-up",
+      "expected_actions": [
+        "2341a53aaa5fcf49",
+        "13eed001c1ff06a6"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 691,
+      "prompt_tokens": 682,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "13eed001c1ff06a6",
+        "2341a53aaa5fcf49"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-down",
+      "expected_actions": [
+        "2fc0146f35188936",
+        "a3e2fdaef0816f8c"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 380,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "a3e2fdaef0816f8c",
+        "2fc0146f35188936"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-down",
+      "expected_actions": [
+        "2fc0146f35188936",
+        "a3e2fdaef0816f8c"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "presence_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 380,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "a3e2fdaef0816f8c",
+        "2fc0146f35188936"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-down",
+      "expected_actions": [
+        "2fc0146f35188936",
+        "a3e2fdaef0816f8c"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "content_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 380,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "2fc0146f35188936",
+        "a3e2fdaef0816f8c"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-down",
+      "expected_actions": [
+        "2fc0146f35188936",
+        "a3e2fdaef0816f8c"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 380,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "2fc0146f35188936",
+        "a3e2fdaef0816f8c"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-down",
+      "expected_actions": [
+        "2fc0146f35188936",
+        "a3e2fdaef0816f8c"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 691,
+      "prompt_tokens": 691,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "a3e2fdaef0816f8c",
+        "2fc0146f35188936"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-p1-down",
+      "expected_actions": [
+        "2fc0146f35188936",
+        "a3e2fdaef0816f8c"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 79,
+      "prompt_tokens": 415,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "2fc0146f35188936",
+        "a3e2fdaef0816f8c"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-up",
+      "expected_actions": [
+        "933157db26a0398a",
+        "36fe253f69414cdb"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "presence_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 369,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "36fe253f69414cdb",
+        "933157db26a0398a"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-up",
+      "expected_actions": [
+        "933157db26a0398a",
+        "36fe253f69414cdb"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "content_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 369,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "36fe253f69414cdb",
+        "933157db26a0398a"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-up",
+      "expected_actions": [
+        "933157db26a0398a",
+        "36fe253f69414cdb"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 369,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "36fe253f69414cdb",
+        "933157db26a0398a"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-up",
+      "expected_actions": [
+        "933157db26a0398a",
+        "36fe253f69414cdb"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 695,
+      "prompt_tokens": 671,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "36fe253f69414cdb",
+        "933157db26a0398a"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-up",
+      "expected_actions": [
+        "933157db26a0398a",
+        "36fe253f69414cdb"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 81,
+      "prompt_tokens": 392,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "36fe253f69414cdb",
+        "933157db26a0398a"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-up",
+      "expected_actions": [
+        "933157db26a0398a",
+        "36fe253f69414cdb"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 369,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "36fe253f69414cdb",
+        "933157db26a0398a"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-down",
+      "expected_actions": [
+        "e4ee5c8c37e6b8cc",
+        "fc216678eb3e1ce0"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "content_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 367,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "e4ee5c8c37e6b8cc",
+        "fc216678eb3e1ce0"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-down",
+      "expected_actions": [
+        "e4ee5c8c37e6b8cc",
+        "fc216678eb3e1ce0"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 367,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "e4ee5c8c37e6b8cc",
+        "fc216678eb3e1ce0"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-down",
+      "expected_actions": [
+        "e4ee5c8c37e6b8cc",
+        "fc216678eb3e1ce0"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 695,
+      "prompt_tokens": 669,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "fc216678eb3e1ce0",
+        "e4ee5c8c37e6b8cc"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-down",
+      "expected_actions": [
+        "e4ee5c8c37e6b8cc",
+        "fc216678eb3e1ce0"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 81,
+      "prompt_tokens": 390,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "e4ee5c8c37e6b8cc",
+        "fc216678eb3e1ce0"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-down",
+      "expected_actions": [
+        "e4ee5c8c37e6b8cc",
+        "fc216678eb3e1ce0"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 367,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "fc216678eb3e1ce0",
+        "e4ee5c8c37e6b8cc"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p0-down",
+      "expected_actions": [
+        "e4ee5c8c37e6b8cc",
+        "fc216678eb3e1ce0"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "presence_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 367,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "e4ee5c8c37e6b8cc",
+        "fc216678eb3e1ce0"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-up",
+      "expected_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 380,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-up",
+      "expected_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 695,
+      "prompt_tokens": 682,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-up",
+      "expected_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 81,
+      "prompt_tokens": 403,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-up",
+      "expected_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 380,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-up",
+      "expected_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "presence_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 380,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-up",
+      "expected_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "content_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 380,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "77d0684a164f6e33",
+        "4b732ad67a9d8698"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-down",
+      "expected_actions": [
+        "45f7fc5cc2047071",
+        "c91e1a0e760ddb08"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 695,
+      "prompt_tokens": 678,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "c91e1a0e760ddb08",
+        "45f7fc5cc2047071"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-down",
+      "expected_actions": [
+        "45f7fc5cc2047071",
+        "c91e1a0e760ddb08"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 81,
+      "prompt_tokens": 399,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "c91e1a0e760ddb08",
+        "45f7fc5cc2047071"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-down",
+      "expected_actions": [
+        "45f7fc5cc2047071",
+        "c91e1a0e760ddb08"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 376,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "c91e1a0e760ddb08",
+        "45f7fc5cc2047071"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-down",
+      "expected_actions": [
+        "45f7fc5cc2047071",
+        "c91e1a0e760ddb08"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "presence_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 376,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "c91e1a0e760ddb08",
+        "45f7fc5cc2047071"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-down",
+      "expected_actions": [
+        "45f7fc5cc2047071",
+        "c91e1a0e760ddb08"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "content_ablation",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 376,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "c91e1a0e760ddb08",
+        "45f7fc5cc2047071"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-p1-down",
+      "expected_actions": [
+        "45f7fc5cc2047071",
+        "c91e1a0e760ddb08"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 376,
+      "relation": "same_family_commitment",
+      "surfaced_actions": [
+        "c91e1a0e760ddb08",
+        "45f7fc5cc2047071"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-other",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 375,
+      "relation": "unobserved_family",
+      "surfaced_actions": [
+        "9bae416d06fdc594"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "unwarranted_guess"
+      ],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-other",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 691,
+      "prompt_tokens": 686,
+      "relation": "unobserved_family",
+      "surfaced_actions": [
+        "9bae416d06fdc594"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "unwarranted_guess"
+      ],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-other",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 79,
+      "prompt_tokens": 410,
+      "relation": "unobserved_family",
+      "surfaced_actions": [
+        "9bae416d06fdc594"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "unwarranted_guess"
+      ],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-other",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 375,
+      "relation": "unobserved_family",
+      "surfaced_actions": [
+        "9bae416d06fdc594"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "unwarranted_guess"
+      ],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-other",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 695,
+      "prompt_tokens": 674,
+      "relation": "unobserved_family",
+      "surfaced_actions": [
+        "hold"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [
+        "warranted"
+      ],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-other",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 81,
+      "prompt_tokens": 395,
+      "relation": "unobserved_family",
+      "surfaced_actions": [
+        "6ee06644c42e68e0"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [
+        "unwarranted_guess"
+      ],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-other",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 372,
+      "relation": "unobserved_family",
+      "surfaced_actions": [
+        "6ee06644c42e68e0"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [
+        "unwarranted_guess"
+      ],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-other",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": false,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 372,
+      "relation": "unobserved_family",
+      "surfaced_actions": [
+        "6ee06644c42e68e0"
+      ],
+      "terminal_target_reached": false,
+      "warrant_labels": [
+        "unwarranted_guess"
+      ],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-current",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 79,
+      "prompt_tokens": 413,
+      "relation": "already_current",
+      "surfaced_actions": [
+        "hold"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "warranted"
+      ],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-current",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 378,
+      "relation": "already_current",
+      "surfaced_actions": [
+        "hold"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "warranted"
+      ],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-current",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 378,
+      "relation": "already_current",
+      "surfaced_actions": [
+        "hold"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "warranted"
+      ],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "a-current",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 691,
+      "prompt_tokens": 689,
+      "relation": "already_current",
+      "surfaced_actions": [
+        "hold"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "warranted"
+      ],
+      "world_id": "world-a"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-current",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "governed_candidate",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 375,
+      "relation": "already_current",
+      "surfaced_actions": [
+        "hold"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "warranted"
+      ],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-current",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "no_persistence",
+      "offer_utf8_length": 17,
+      "prompt_tokens": 375,
+      "relation": "already_current",
+      "surfaced_actions": [
+        "hold"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "warranted"
+      ],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-current",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "raw_occurrence",
+      "offer_utf8_length": 695,
+      "prompt_tokens": 677,
+      "relation": "already_current",
+      "surfaced_actions": [
+        "hold"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "warranted"
+      ],
+      "world_id": "world-b"
+    },
+    {
+      "action_refusal": null,
+      "case_id": "b-current",
+      "expected_actions": [
+        "hold"
+      ],
+      "expected_actions_match": true,
+      "offer_key": "authored_direct",
+      "offer_utf8_length": 81,
+      "prompt_tokens": 398,
+      "relation": "already_current",
+      "surfaced_actions": [
+        "hold"
+      ],
+      "terminal_target_reached": true,
+      "warrant_labels": [
+        "warranted"
+      ],
+      "world_id": "world-b"
+    }
+  ],
+  "completed_logical_calls": 69,
+  "contact_state": "completed",
+  "content_diagnostics": [
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "a-p0-up",
+      "interpretable": false,
+      "prompt_token_delta": 0,
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "a-p0-down",
+      "interpretable": false,
+      "prompt_token_delta": 0,
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "a-p1-up",
+      "interpretable": false,
+      "prompt_token_delta": 0,
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "a-p1-down",
+      "interpretable": false,
+      "prompt_token_delta": 0,
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "b-p0-up",
+      "interpretable": false,
+      "prompt_token_delta": 0,
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "b-p0-down",
+      "interpretable": false,
+      "prompt_token_delta": 0,
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "b-p1-up",
+      "interpretable": false,
+      "prompt_token_delta": 0,
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "b-p1-down",
+      "interpretable": false,
+      "prompt_token_delta": 0,
+      "unavailable_reason": "not_authorized"
+    }
+  ],
+  "evidence_class": "exploratory_mechanism_observation_only",
+  "formation_verdict": null,
+  "governance": {
+    "world-a": {
+      "admitted": false,
+      "candidate": {
+        "change": "43a13cb4e3e6aa9e",
+        "counterevidence": "49e88bb42ae5d914"
+      },
+      "occurrence_sha256": "58af2d4430b333e0634cc0e1259a3be5c470869521a03c51be5a7ef6eff8bd25",
+      "refusals": [
+        "change_copies_acquisition_control",
+        "counterevidence_copies_acquisition_control"
+      ]
+    },
+    "world-b": {
+      "admitted": false,
+      "candidate": {
+        "change": "c0cb0cf5a7a8966e",
+        "counterevidence": "movement_direction"
+      },
+      "occurrence_sha256": "659ffc8e0f0bc47ee71edd6b208573f067d2794d9bab9089f392c42def322913",
+      "refusals": [
+        "change_copies_acquisition_control"
+      ]
+    }
+  },
+  "interface_observability": {
+    "action_refusal": null,
+    "observable": true,
+    "surfaced_actions": [
+      "hold"
+    ]
+  },
+  "lexical_diagnostics": [
+    {
+      "available": true,
+      "claim_language": "lexical decoy pressure available",
+      "scores": {
+        "a-current": 0.0,
+        "a-other": 0.005494505494505495,
+        "a-p0-down": 0.005405405405405406,
+        "a-p0-up": 0.0,
+        "a-p1-down": 0.0,
+        "a-p1-up": 0.0
+      },
+      "strictly_exceeds_one_same_family": true,
+      "unrelated_case": "a-other",
+      "world_id": "world-a"
+    },
+    {
+      "available": true,
+      "claim_language": "lexical decoy pressure available",
+      "scores": {
+        "b-current": 0.016666666666666666,
+        "b-other": 0.010810810810810811,
+        "b-p0-down": 0.010638297872340425,
+        "b-p0-up": 0.0106951871657754,
+        "b-p1-down": 0.016129032258064516,
+        "b-p1-up": 0.016304347826086956
+      },
+      "strictly_exceeds_one_same_family": true,
+      "unrelated_case": "b-other",
+      "world_id": "world-b"
+    }
+  ],
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "physical_attempts": 69,
+  "physical_call_ceiling": 72,
+  "planned_logical_calls": 69,
+  "presence_diagnostics": [
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "a-p0-up",
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "a-p0-down",
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "a-p1-up",
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "a-p1-down",
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "b-p0-up",
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "b-p0-down",
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "b-p1-up",
+      "unavailable_reason": "not_authorized"
+    },
+    {
+      "authorized": false,
+      "available": false,
+      "case_id": "b-p1-down",
+      "unavailable_reason": "not_authorized"
+    }
+  ],
+  "protocol": "phase-coupled-exploratory-contact-v0",
+  "request_parity_equivalence_classes": [
+    {
+      "case_id": "a-p0-up",
+      "identical_request_equivalence": true,
+      "offers": [
+        "no_persistence",
+        "governed_candidate",
+        "presence_ablation",
+        "content_ablation"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "2a12c2fbb0704a8f89a92475bdf9c4f239d46ad5e36abae1be7e54d8ba22d23c",
+      "surfaced_actions": [
+        [
+          "f2436f5682e9fa1a",
+          "1630d33cf00b85a0"
+        ],
+        [
+          "f2436f5682e9fa1a",
+          "1630d33cf00b85a0"
+        ],
+        [
+          "f2436f5682e9fa1a",
+          "1630d33cf00b85a0"
+        ],
+        [
+          "f2436f5682e9fa1a",
+          "1630d33cf00b85a0"
+        ]
+      ]
+    },
+    {
+      "case_id": "a-p0-down",
+      "identical_request_equivalence": true,
+      "offers": [
+        "governed_candidate",
+        "presence_ablation",
+        "content_ablation",
+        "no_persistence"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "370c93c4f479f90fafa3159531ceccbed1ef937123da1d792b7c84bf9ecaeb67",
+      "surfaced_actions": [
+        [
+          "6f3cd77e3eda3722",
+          "78025e8f696c5986"
+        ],
+        [
+          "6f3cd77e3eda3722",
+          "78025e8f696c5986"
+        ],
+        [
+          "6f3cd77e3eda3722",
+          "78025e8f696c5986"
+        ],
+        [
+          "6f3cd77e3eda3722",
+          "78025e8f696c5986"
+        ]
+      ]
+    },
+    {
+      "case_id": "a-p1-up",
+      "identical_request_equivalence": true,
+      "offers": [
+        "governed_candidate",
+        "presence_ablation",
+        "content_ablation",
+        "no_persistence"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "3b072a07c69ba1f4b4883c2f910e802147335632f0be0da2ab0e28c60b1f0a02",
+      "surfaced_actions": [
+        [
+          "13eed001c1ff06a6",
+          "2341a53aaa5fcf49"
+        ],
+        [
+          "13eed001c1ff06a6",
+          "2341a53aaa5fcf49"
+        ],
+        [
+          "13eed001c1ff06a6",
+          "2341a53aaa5fcf49"
+        ],
+        [
+          "13eed001c1ff06a6",
+          "2341a53aaa5fcf49"
+        ]
+      ]
+    },
+    {
+      "case_id": "a-p1-down",
+      "identical_request_equivalence": true,
+      "offers": [
+        "governed_candidate",
+        "presence_ablation",
+        "content_ablation",
+        "no_persistence"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "366644f6423358de1be83d37543c831f67051fb420d28c750d6648c70337e1b4",
+      "surfaced_actions": [
+        [
+          "a3e2fdaef0816f8c",
+          "2fc0146f35188936"
+        ],
+        [
+          "a3e2fdaef0816f8c",
+          "2fc0146f35188936"
+        ],
+        [
+          "2fc0146f35188936",
+          "a3e2fdaef0816f8c"
+        ],
+        [
+          "2fc0146f35188936",
+          "a3e2fdaef0816f8c"
+        ]
+      ]
+    },
+    {
+      "case_id": "b-p0-up",
+      "identical_request_equivalence": true,
+      "offers": [
+        "presence_ablation",
+        "content_ablation",
+        "no_persistence",
+        "governed_candidate"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "9819f1990b81ff4fcaa442e7b0c43d33f228bf6859304798e8debf0492417708",
+      "surfaced_actions": [
+        [
+          "36fe253f69414cdb",
+          "933157db26a0398a"
+        ],
+        [
+          "36fe253f69414cdb",
+          "933157db26a0398a"
+        ],
+        [
+          "36fe253f69414cdb",
+          "933157db26a0398a"
+        ],
+        [
+          "36fe253f69414cdb",
+          "933157db26a0398a"
+        ]
+      ]
+    },
+    {
+      "case_id": "b-p0-down",
+      "identical_request_equivalence": true,
+      "offers": [
+        "content_ablation",
+        "no_persistence",
+        "governed_candidate",
+        "presence_ablation"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "c1ac2a30252b3b5649418799a5e50471589cc2fc7747005931364c0c0c29b639",
+      "surfaced_actions": [
+        [
+          "e4ee5c8c37e6b8cc",
+          "fc216678eb3e1ce0"
+        ],
+        [
+          "e4ee5c8c37e6b8cc",
+          "fc216678eb3e1ce0"
+        ],
+        [
+          "fc216678eb3e1ce0",
+          "e4ee5c8c37e6b8cc"
+        ],
+        [
+          "e4ee5c8c37e6b8cc",
+          "fc216678eb3e1ce0"
+        ]
+      ]
+    },
+    {
+      "case_id": "b-p1-up",
+      "identical_request_equivalence": true,
+      "offers": [
+        "no_persistence",
+        "governed_candidate",
+        "presence_ablation",
+        "content_ablation"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "c58b4e52d9ffefe909b230d50843801ed3ae4301153bbca727b6ffc2efcc5cae",
+      "surfaced_actions": [
+        [
+          "77d0684a164f6e33",
+          "4b732ad67a9d8698"
+        ],
+        [
+          "77d0684a164f6e33",
+          "4b732ad67a9d8698"
+        ],
+        [
+          "77d0684a164f6e33",
+          "4b732ad67a9d8698"
+        ],
+        [
+          "77d0684a164f6e33",
+          "4b732ad67a9d8698"
+        ]
+      ]
+    },
+    {
+      "case_id": "b-p1-down",
+      "identical_request_equivalence": true,
+      "offers": [
+        "governed_candidate",
+        "presence_ablation",
+        "content_ablation",
+        "no_persistence"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "f5fce5c6a587d2418add01fae5e599970329518a891d55bfdc4cff21c62d7ae0",
+      "surfaced_actions": [
+        [
+          "c91e1a0e760ddb08",
+          "45f7fc5cc2047071"
+        ],
+        [
+          "c91e1a0e760ddb08",
+          "45f7fc5cc2047071"
+        ],
+        [
+          "c91e1a0e760ddb08",
+          "45f7fc5cc2047071"
+        ],
+        [
+          "c91e1a0e760ddb08",
+          "45f7fc5cc2047071"
+        ]
+      ]
+    },
+    {
+      "case_id": "a-other",
+      "identical_request_equivalence": true,
+      "offers": [
+        "no_persistence",
+        "governed_candidate"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "52bf86e2b8c25e9c5da1caa6aa91f2c7754f80a9ece321ddfe34314b35b2450a",
+      "surfaced_actions": [
+        [
+          "9bae416d06fdc594"
+        ],
+        [
+          "9bae416d06fdc594"
+        ]
+      ]
+    },
+    {
+      "case_id": "b-other",
+      "identical_request_equivalence": true,
+      "offers": [
+        "governed_candidate",
+        "no_persistence"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "c38bca953103b907bf4c0a7e767091d18d3f62f933793a21c971c58d0c65c5df",
+      "surfaced_actions": [
+        [
+          "6ee06644c42e68e0"
+        ],
+        [
+          "6ee06644c42e68e0"
+        ]
+      ]
+    },
+    {
+      "case_id": "a-current",
+      "identical_request_equivalence": true,
+      "offers": [
+        "governed_candidate",
+        "no_persistence"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "9f22fe4a7b06d6f2ed7f664575ec87e677d2bc4f0472c010aca0b2c86b65dabe",
+      "surfaced_actions": [
+        [
+          "hold"
+        ],
+        [
+          "hold"
+        ]
+      ]
+    },
+    {
+      "case_id": "b-current",
+      "identical_request_equivalence": true,
+      "offers": [
+        "governed_candidate",
+        "no_persistence"
+      ],
+      "pairwise_mechanism_comparison_forbidden": true,
+      "request_sha256": "f2df45c3460c0a0063342724e5ea48afe9aa8ef596442918211af4ee43f0f1ce",
+      "surfaced_actions": [
+        [
+          "hold"
+        ],
+        [
+          "hold"
+        ]
+      ]
+    }
+  ],
+  "stop_reason": null,
+  "validation_verdict": null
+}

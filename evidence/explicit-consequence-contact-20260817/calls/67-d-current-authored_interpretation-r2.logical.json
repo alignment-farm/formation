@@ -1,0 +1,41 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "d-current-authored_interpretation-r2",
+  "content": "{\"action\": \"hold\"}",
+  "environment_result": {
+    "action": "hold",
+    "controller_family": "vesa-58",
+    "device_id": "ridge-unit",
+    "increasing_slot": null,
+    "movement_direction": "unchanged",
+    "observation": "held_at_target",
+    "position_after": 7,
+    "position_before": 7,
+    "selected_slot": null,
+    "target": 7
+  },
+  "expected_action": "hold",
+  "expected_action_match": true,
+  "logical_index": 67,
+  "message": {
+    "content": "{\"action\": \"hold\"}",
+    "role": "assistant"
+  },
+  "offer_key": "authored_interpretation",
+  "probe_id": "d-current",
+  "relation": "current_state_sufficient",
+  "repetition": 2,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "vesa-58",
+    "device_id": "ridge-unit",
+    "first_control": "orvi",
+    "position": 7,
+    "second_control": "prax",
+    "target": 7
+  },
+  "surfaced_action": "hold",
+  "unwarranted_guess": false,
+  "world_id": "world-d"
+}

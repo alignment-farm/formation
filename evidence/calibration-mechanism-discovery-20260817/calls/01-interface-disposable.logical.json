@@ -1,0 +1,39 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "interface-disposable",
+  "content": "{\"action\": \"hold\"}",
+  "environment_result": {
+    "action": "hold",
+    "controller_family": "interface-family",
+    "device_id": "interface-device",
+    "increasing_slot": null,
+    "observation": "held_at_target",
+    "position_after": 4,
+    "position_before": 4,
+    "target": 4
+  },
+  "expected_action": null,
+  "expected_action_match": null,
+  "logical_index": 1,
+  "message": {
+    "content": "{\"action\": \"hold\"}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "probe_id": null,
+  "relation": null,
+  "repetition": null,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "interface-family",
+    "device_id": "interface-device",
+    "first_control": "loki",
+    "position": 4,
+    "second_control": "senu",
+    "target": 4
+  },
+  "surfaced_action": "hold",
+  "unwarranted_guess": false,
+  "world_id": null
+}

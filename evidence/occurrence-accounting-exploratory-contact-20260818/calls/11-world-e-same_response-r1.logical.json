@@ -1,0 +1,33 @@
+{
+  "account_is_request_parent": false,
+  "account_receipt": null,
+  "call_id": "world-e-same_response-r1",
+  "candidate": null,
+  "candidate_comparison_sha256": null,
+  "candidate_comparison_utf8": null,
+  "candidate_refusal": "invalid_json",
+  "completion_tokens": 256,
+  "condition": "same_response",
+  "content": "{\n  \"account\": \"The device 'adfc8f4a1b01d510' was operated in two steps. In the first step, the action '91dd8389d9c3730a' was taken, which increased the position from 0 to 1, and the phase changed from '72b4369223095ae5' to '96e6b778c4c3439e'. In the second step, the action 'c07e743cb43592c8' was taken, which increased the position from 1 to 2, reaching the target, and the phase changed back to '72b4369223095ae5'.\",\n  \"change\": \"In the controller family 'c378816a8c4ed06f', the action '91dd8389d9c3730a' is associated with increasing position during phase '72b4369223095ae5', and the action 'c07e",
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "invalid_json"
+    ],
+    "source_occurrence_sha256": "6987f481d9283ebf181cc6b7e95e4cbe3439698c832ef1ed249c1e670b8437d1"
+  },
+  "logical_index": 11,
+  "material_utf8_length": 17,
+  "message": {
+    "content": "{\n  \"account\": \"The device 'adfc8f4a1b01d510' was operated in two steps. In the first step, the action '91dd8389d9c3730a' was taken, which increased the position from 0 to 1, and the phase changed from '72b4369223095ae5' to '96e6b778c4c3439e'. In the second step, the action 'c07e743cb43592c8' was taken, which increased the position from 1 to 2, reaching the target, and the phase changed back to '72b4369223095ae5'.\",\n  \"change\": \"In the controller family 'c378816a8c4ed06f', the action '91dd8389d9c3730a' is associated with increasing position during phase '72b4369223095ae5', and the action 'c07e",
+    "role": "assistant"
+  },
+  "prompt_tokens": 620,
+  "public_formation_condition": "same_response_sequence",
+  "request_sha256": "cab3d1edf78452df397bceb4649ad99ac6c3d6aa4702c71014e6fb2915a84ab8",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_account": null,
+  "world_id": "world-e"
+}

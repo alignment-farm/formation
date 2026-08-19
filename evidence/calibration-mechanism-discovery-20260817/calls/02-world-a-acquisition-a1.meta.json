@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-a-acquisition",
+  "elapsed_seconds": 0.6653326249997917,
+  "ended_at": "2026-08-18T02:19:29.419628+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 2,
+  "message": {
+    "content": "{\"action\": \"dax\"}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "probe_id": null,
+  "relation": null,
+  "repetition": null,
+  "request_sha256": "e3ff62866adc5b7e9de7e98ad0b2a122d91d03b5cf4243c648a997a36fab22f5",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"action\": \"dax\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787019569,
+    "id": "chatcmpl-N4kLFFOfIv7iSJ97vPu7qDuiJLVuBCKu",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 141,
+      "predicted_ms": 372.387,
+      "predicted_n": 12,
+      "predicted_per_second": 32.224540598893086,
+      "predicted_per_token_ms": 31.03225,
+      "prompt_ms": 264.348,
+      "prompt_n": 79,
+      "prompt_per_second": 298.8484875996792,
+      "prompt_per_token_ms": 3.3461772151898734
+    },
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 220,
+      "prompt_tokens_details": {
+        "cached_tokens": 141
+      },
+      "total_tokens": 232
+    }
+  },
+  "response_sha256": "dfab2fd2ac71f7d68b3e5c41f35d9494a8d87575e0c0d2c075f3190ad540c86e",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:19:28.754276+00:00",
+  "world_id": "world-a"
+}

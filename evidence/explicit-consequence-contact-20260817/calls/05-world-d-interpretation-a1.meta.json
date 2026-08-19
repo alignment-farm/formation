@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-d-interpretation",
+  "elapsed_seconds": 2.9620422499992856,
+  "ended_at": "2026-08-18T02:33:16.409578+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 5,
+  "message": {
+    "content": "{\n  \"controller_family\": \"vesa-58\",\n  \"increasing_slot\": \"second\",\n  \"scope\": \"same_controller_family\",\n  \"counterevidence\": \"position_after is -1, which is less than the target of 1, indicating the selected slot may not be the increasing one.\"\n}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "probe_id": null,
+  "relation": null,
+  "repetition": null,
+  "request_sha256": "eb0cc68147f9af97262837a2b1162fd0798572a23ae95c4774a25fac69c23980",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"controller_family\": \"vesa-58\",\n  \"increasing_slot\": \"second\",\n  \"scope\": \"same_controller_family\",\n  \"counterevidence\": \"position_after is -1, which is less than the target of 1, indicating the selected slot may not be the increasing one.\"\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787020396,
+    "id": "chatcmpl-bi7yaLEQAE9pVEQXwusbvjXMHXTnfWJo",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 190,
+      "predicted_ms": 2375.063,
+      "predicted_n": 71,
+      "predicted_per_second": 29.89394386591008,
+      "predicted_per_token_ms": 33.45159154929578,
+      "prompt_ms": 572.764,
+      "prompt_n": 195,
+      "prompt_per_second": 340.4543581649685,
+      "prompt_per_token_ms": 2.937251282051282
+    },
+    "usage": {
+      "completion_tokens": 71,
+      "prompt_tokens": 385,
+      "prompt_tokens_details": {
+        "cached_tokens": 190
+      },
+      "total_tokens": 456
+    }
+  },
+  "response_sha256": "0cb303a2c7156442d6d72b46659a0facb2d600eaea299a26b13cbc32b41c47a1",
+  "responsibility": "interpreter",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:33:13.447537+00:00",
+  "world_id": "world-d"
+}

@@ -1,0 +1,14 @@
+unable to load runner: error waiting for runner to be ready: llama.cpp terminated unexpectedly: llama.cpp failed: failed to load model
+
+Verbose output:
+srv    operator(): operator(): cleaning up before exit...
+0.00.252.861 E srv  llama_server: exiting due to model loading error
+del: [mtmd] failed to get memory usage of mmproj
+0.00.152.667 E llama_model_load: error loading model: unknown model architecture: 'muse-glimmer'
+0.00.152.669 E llama_model_load_from_file_impl: failed to load model
+0.00.152.927 E common_fit_params: encountered an error while trying to fit params to free device memory: failed to load model
+0.00.252.669 E llama_model_load: error loading model: unknown model architecture: 'muse-glimmer'
+0.00.252.671 E llama_model_load_from_file_impl: failed to load model
+0.00.252.672 E cmn  common_init_: failed to load model '/Users/macos-user/.docker/models/bundles/sha256/ad54b4b4122ee8e98fd5528a4e26bcbf59034b3b8d0d6d0d1acda98a5f759b6e/model/model.gguf'
+0.00.252.673 E srv    load_model: failed to load model, '/Users/macos-user/.docker/models/bundles/sha256/ad54b4b4122ee8e98fd5528a4e26bcbf59034b3b8d0d6d0d1acda98a5f759b6e/model/model.gguf'
+0.00.252.675 I

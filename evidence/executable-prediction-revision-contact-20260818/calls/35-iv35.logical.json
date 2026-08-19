@@ -1,0 +1,252 @@
+{
+  "condition": "later_same_response",
+  "consequence_receipt": {
+    "authority": "environment_oracle",
+    "input": {
+      "facet": "daro",
+      "mark": "kela",
+      "zone": "puno"
+    },
+    "value": "vesan"
+  },
+  "content": "{\"parent\":\"RULE_AST_V1\\n{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"dara\\\"}]},{\\\"neq\\\":[{\\\"field\\\":\\\"mark\\\"},{\\\"lit\\\":\\\"kela\\\"}]}]},\\\"predict\\\":{\\\"lit\\\":\\\"qoril\\\"}}\",\"successor\":\"RULE_AST_V1\\n{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"dara\\\"}]},{\\\"eq\\\":[{\\\"field\\\":\\\"zone\\\"},{\\\"lit\\\":\\\"puna\\\"}]}]},\\\"predict\\\":{\\\"lit\\\":\\\"vesan\\\"}}\"}",
+  "envelope_available": true,
+  "invocation_coordinate": "iv35",
+  "logical_index": 35,
+  "output_coordinate": null,
+  "output_coordinates": {
+    "parent": "iv35.parent",
+    "successor": "iv35.successor"
+  },
+  "parent": {
+    "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]}]},\"predict\":{\"lit\":\"qoril\"}}",
+    "correctness": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "correctness_by_role": {
+      "acquisition": {
+        "assigned": 1,
+        "correct": 0
+      },
+      "copy_control": {
+        "assigned": 2,
+        "correct": 0
+      },
+      "later_revision_test": {
+        "assigned": 1,
+        "correct": 0
+      },
+      "non_transfer": {
+        "assigned": 2,
+        "correct": 0
+      },
+      "primary_test": {
+        "assigned": 1,
+        "correct": 1
+      },
+      "transfer": {
+        "assigned": 2,
+        "correct": 0
+      }
+    },
+    "evaluator_version": "executable-prediction-rule-evaluator-v1",
+    "recognized_kind": "ast_rule",
+    "recognizer_version": "executable-prediction-rule-recognizer-v1",
+    "rule": {
+      "kind": "ast_rule",
+      "raw": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"neq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]}]},\"predict\":{\"lit\":\"qoril\"}}",
+      "tree": {
+        "predict": {
+          "lit": "qoril"
+        },
+        "when": {
+          "and": [
+            {
+              "eq": [
+                {
+                  "field": "facet"
+                },
+                {
+                  "lit": "dara"
+                }
+              ]
+            },
+            {
+              "neq": [
+                {
+                  "field": "mark"
+                },
+                {
+                  "lit": "kela"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "vector": [
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "prediction",
+        "value": "qoril"
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "prediction",
+        "value": "qoril"
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      }
+    ]
+  },
+  "runtime_material": null,
+  "successor": {
+    "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}]},\"predict\":{\"lit\":\"vesan\"}}",
+    "correctness": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "correctness_by_role": {
+      "acquisition": {
+        "assigned": 1,
+        "correct": 1
+      },
+      "copy_control": {
+        "assigned": 2,
+        "correct": 0
+      },
+      "later_revision_test": {
+        "assigned": 1,
+        "correct": 0
+      },
+      "non_transfer": {
+        "assigned": 2,
+        "correct": 0
+      },
+      "primary_test": {
+        "assigned": 1,
+        "correct": 0
+      },
+      "transfer": {
+        "assigned": 2,
+        "correct": 0
+      }
+    },
+    "evaluator_version": "executable-prediction-rule-evaluator-v1",
+    "recognized_kind": "ast_rule",
+    "recognizer_version": "executable-prediction-rule-recognizer-v1",
+    "rule": {
+      "kind": "ast_rule",
+      "raw": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}]},\"predict\":{\"lit\":\"vesan\"}}",
+      "tree": {
+        "predict": {
+          "lit": "vesan"
+        },
+        "when": {
+          "and": [
+            {
+              "eq": [
+                {
+                  "field": "facet"
+                },
+                {
+                  "lit": "dara"
+                }
+              ]
+            },
+            {
+              "eq": [
+                {
+                  "field": "zone"
+                },
+                {
+                  "lit": "puna"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "vector": [
+      {
+        "status": "prediction",
+        "value": "vesan"
+      },
+      {
+        "status": "prediction",
+        "value": "vesan"
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      },
+      {
+        "status": "out_of_scope",
+        "value": null
+      }
+    ]
+  },
+  "trial_receipt": null,
+  "world_id": "K"
+}

@@ -1,0 +1,73 @@
+{
+  "attempt_index": 1,
+  "call_id": "iv25",
+  "condition": "static_instruction",
+  "elapsed_seconds": 11.958907958003692,
+  "ended_at": "2026-08-18T23:46:55.149195+00:00",
+  "error": null,
+  "finish_reason": "stop",
+  "http_status": 200,
+  "logical_index": 25,
+  "message": {
+    "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puna\"}},{\"or\":[{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"kela\"}]}],\"bool\":false}]}],\"predict\":{\"lit\":\"qoril\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puna\"}},{\"or\":[{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"kela\"}]}],\"bool\":false}]}],\"predict\":{\"lit\":\"vesan\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puni\"}},{\"eq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}]}],\"predict\":{\"lit\":\"qoril\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puni\"}},{\"neq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}]}],\"predict\":{\"lit\":\"vesan\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puno\"}},{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puna\"}},{\"or\":[{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"kela\"}]}],\"bool\":false}]}],\"predict\":{\"lit\":\"vesan\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puno\"}},{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puna\"}},{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"kela\"}]}]}],\"predict\":{\"lit\":\"qoril\"}}",
+    "role": "assistant"
+  },
+  "request_sha256": "57529e68dfd29ee17647d49bc8dee11390a3436ce654067172fa09ac2f2e0a01",
+  "response_envelope": {
+    "_formation_transport": {
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "2111",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 18 Aug 2026 23:46:55 GMT",
+        "Server": "llama.cpp"
+      }
+    },
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "RULE_AST_V1\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puna\"}},{\"or\":[{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"kela\"}]}],\"bool\":false}]}],\"predict\":{\"lit\":\"qoril\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puna\"}},{\"or\":[{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"kela\"}]}],\"bool\":false}]}],\"predict\":{\"lit\":\"vesan\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puni\"}},{\"eq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}]}],\"predict\":{\"lit\":\"qoril\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puni\"}},{\"neq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}]}],\"predict\":{\"lit\":\"vesan\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puno\"}},{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puna\"}},{\"or\":[{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"kela\"}]}],\"bool\":false}]}],\"predict\":{\"lit\":\"vesan\"}}\n{\"when\":{\"and\":[{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puno\"}},{\"eq\":{\"field\":\"zone\"},{\"lit\":\"puna\"}},{\"and\":[{\"eq\":{\"field\":\"facet\"},{\"lit\":\"dara\"}},{\"eq\":{\"field\":\"mark\"},{\"lit\":\"kela\"}]}]}],\"predict\":{\"lit\":\"qoril\"}}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787096815,
+    "id": "chatcmpl-QCS5P4bhTFTuq7gJDl6GJfL7fR0jKQJp",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 265,
+      "predicted_ms": 11631.838,
+      "predicted_n": 341,
+      "predicted_per_second": 29.31608916836703,
+      "predicted_per_token_ms": 34.110961876832846,
+      "prompt_ms": 315.224,
+      "prompt_n": 93,
+      "prompt_per_second": 295.02829733776616,
+      "prompt_per_token_ms": 3.389505376344086
+    },
+    "usage": {
+      "completion_tokens": 341,
+      "prompt_tokens": 358,
+      "prompt_tokens_details": {
+        "cached_tokens": 265
+      },
+      "total_tokens": 699
+    }
+  },
+  "response_sha256": "0e6cbb2d7b687540a65216ccc28c3b91df347a2563aadfa232f26901526ba09d",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T23:46:43.190414+00:00",
+  "usage": {
+    "completion_tokens": 341,
+    "prompt_tokens": 358,
+    "prompt_tokens_details": {
+      "cached_tokens": 265
+    },
+    "total_tokens": 699
+  },
+  "world_id": "K"
+}

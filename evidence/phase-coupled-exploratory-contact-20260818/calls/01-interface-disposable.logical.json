@@ -1,0 +1,56 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "interface-disposable",
+  "content": "{\"actions\": [\"hold\"]}",
+  "environment_results": [
+    {
+      "action": "hold",
+      "before": {
+        "controller_family": "3567613b634c6b73",
+        "controls": [
+          "bda7a8524aa59738",
+          "3e6a342405643c74"
+        ],
+        "device": "e50da0587d85afe4",
+        "phase": "525ad4296f9065f9",
+        "position": 3,
+        "target": 3
+      },
+      "movement_direction": "unchanged",
+      "phase_after": "525ad4296f9065f9",
+      "position_after": 3,
+      "target_reached": true
+    }
+  ],
+  "expected_actions": null,
+  "expected_actions_match": null,
+  "logical_index": 1,
+  "message": {
+    "content": "{\"actions\": [\"hold\"]}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "offer_utf8_length": 17,
+  "probe_id": null,
+  "prompt_tokens": 379,
+  "relation": null,
+  "request_sha256": "54155b1eb843e3c49cc51d68dbc2398d93fc680bd6921df778a30eb1fe1acc85",
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "3567613b634c6b73",
+    "controls": [
+      "bda7a8524aa59738",
+      "3e6a342405643c74"
+    ],
+    "device": "e50da0587d85afe4",
+    "phase": "525ad4296f9065f9",
+    "position": 3,
+    "target": 3
+  },
+  "surfaced_actions": [
+    "hold"
+  ],
+  "warrant_labels": [],
+  "world_id": null
+}

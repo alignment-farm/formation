@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "a-unobserved-decoy-raw_occurrence-r1",
+  "elapsed_seconds": 0.961961459000122,
+  "ended_at": "2026-08-18T02:19:48.137492+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 25,
+  "message": {
+    "content": "{\"action\": \"kiri\"}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "probe_id": "a-unobserved-decoy",
+  "relation": "unobserved_family_decoy",
+  "repetition": 1,
+  "request_sha256": "53f7dd63cd5e56ad7ebc2149117457ce916e13143beb06e4d1f3f6900aec6663",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"action\": \"kiri\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787019588,
+    "id": "chatcmpl-CKCk6IncYftlSlM4CkZUHLhOgsYhXGNm",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 208,
+      "predicted_ms": 374.921,
+      "predicted_n": 12,
+      "predicted_per_second": 32.006742753806805,
+      "predicted_per_token_ms": 31.243416666666665,
+      "prompt_ms": 576.03,
+      "prompt_n": 193,
+      "prompt_per_second": 335.0519938197664,
+      "prompt_per_token_ms": 2.9846113989637306
+    },
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 401,
+      "prompt_tokens_details": {
+        "cached_tokens": 208
+      },
+      "total_tokens": 413
+    }
+  },
+  "response_sha256": "57dce6b5fbedf415b1c72044e8af665b69e14b0b24b3214ba96f96a2f5935675",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:19:47.175537+00:00",
+  "world_id": "world-a"
+}

@@ -1,0 +1,25 @@
+{
+  "environment_result": {
+    "action": "dax",
+    "controller_family": "noru-17",
+    "device_id": "noru-seed",
+    "increasing_slot": null,
+    "observation": "target_reached",
+    "position_after": 1,
+    "position_before": 0,
+    "target": 1
+  },
+  "model_message": {
+    "content": "{\"action\": \"dax\"}",
+    "role": "assistant"
+  },
+  "state": {
+    "controller_family": "noru-17",
+    "device_id": "noru-seed",
+    "first_control": "dax",
+    "position": 0,
+    "second_control": "lume",
+    "target": 1
+  },
+  "surfaced_action": "dax"
+}

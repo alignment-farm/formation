@@ -1,0 +1,17 @@
+{
+  "control_prompt_tokens": 633,
+  "mass_control_available": true,
+  "prefix_length": 44,
+  "request_sha256": "51c1ff6c2a637245d05c916892b1f7c14a3c7800c4beb22dec93fcdabfe38947",
+  "source_content_sha256": "877812fa603d33b553330b13aab8c808c7a160812c93df7419d68508617b442a",
+  "source_draft_identifier": "candidate-h-direct-1",
+  "source_material_available": true,
+  "target_prompt_tokens": 633,
+  "template_renderer_implementation": "jinja2-3.1.6",
+  "tokenizer_implementation": "tokenizers-0.23.1",
+  "value": "QNIOUINGYPGYNPYLPKSRLWIUSMSLRNLIWUGIJIUQQRJL",
+  "value_sha256": "9468e1c421ef90804795ef604c3f180d54821a8d43f4b342c33cf880b1ee1259",
+  "value_utf8": "QNIOUINGYPGYNPYLPKSRLWIUSMSLRNLIWUGIJIUQQRJL",
+  "value_utf8_length": 44,
+  "world_id": "world-h"
+}

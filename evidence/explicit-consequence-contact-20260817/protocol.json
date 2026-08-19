@@ -1,0 +1,227 @@
+{
+  "actor_settings": {
+    "max_tokens": 128,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "consequence_representation": {
+    "candidate_derivation_fields": [
+      "selected_slot",
+      "movement_direction",
+      "increasing_slot_for_request_calibration_only"
+    ],
+    "implementation": "apply_explicit_calibration_action",
+    "numeric_fallback_forbidden": true
+  },
+  "endpoint": "http://localhost:12434/engines/llama.cpp/v1/chat/completions",
+  "inspect_tag": "docker.io/ai/qwen3:14B-Q6_K",
+  "interface_state": {
+    "controller_family": "interface-family",
+    "device_id": "interface-device",
+    "first_control": "loki",
+    "position": 4,
+    "second_control": "senu",
+    "target": 4
+  },
+  "interpreter_settings": {
+    "max_tokens": 256,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "none_offer": "NONE",
+  "offers": [
+    "no_persistence",
+    "raw_occurrence",
+    "authored_interpretation",
+    "governed_candidate"
+  ],
+  "physical_call_ceiling": 72,
+  "planned_logical_calls": 69,
+  "predecessor_evidence": "../calibration-mechanism-discovery-20260817",
+  "predecessor_protocol": "calibration-mechanism-discovery-v0",
+  "protocol": "explicit-consequence-contact-v0",
+  "public_rule": "Each controller family keeps one calibration across its devices. One ordered control slot increases position and the other decreases it. Device-specific control names may change. Different controller families are independently calibrated. Choose the least-cost warranted action. If position already equals target, choose `hold`. If this decision has no experience establishing the current family's calibration, choose `request_calibration` rather than guess.",
+  "validation_verdicts_forbidden": true,
+  "worlds": [
+    {
+      "acquisition": {
+        "controller_family": "lyra-31",
+        "device_id": "lyra-seed",
+        "first_control": "tess",
+        "position": 0,
+        "second_control": "wilo",
+        "target": 1
+      },
+      "acquisition_profile": {
+        "controller_family": "lyra-31",
+        "increasing_slot": "first_increases"
+      },
+      "probes": [
+        {
+          "expected_action": "amir",
+          "probe_id": "c-same-increase",
+          "profile": {
+            "controller_family": "lyra-31",
+            "increasing_slot": "first_increases"
+          },
+          "relation": "same_family_increase",
+          "state": {
+            "controller_family": "lyra-31",
+            "device_id": "cedar-unit",
+            "first_control": "amir",
+            "position": 12,
+            "second_control": "bexo",
+            "target": 13
+          }
+        },
+        {
+          "expected_action": "doro",
+          "probe_id": "c-same-decrease",
+          "profile": {
+            "controller_family": "lyra-31",
+            "increasing_slot": "first_increases"
+          },
+          "relation": "same_family_decrease",
+          "state": {
+            "controller_family": "lyra-31",
+            "device_id": "flint-unit",
+            "first_control": "cavi",
+            "position": 12,
+            "second_control": "doro",
+            "target": 11
+          }
+        },
+        {
+          "expected_action": "request_calibration",
+          "probe_id": "c-unobserved-decoy",
+          "profile": {
+            "controller_family": "lyra-31x",
+            "increasing_slot": "second_increases"
+          },
+          "relation": "unobserved_family_decoy",
+          "state": {
+            "controller_family": "lyra-31x",
+            "device_id": "lyra-seed-echo",
+            "first_control": "ephi",
+            "position": 4,
+            "second_control": "faro",
+            "target": 5
+          }
+        },
+        {
+          "expected_action": "hold",
+          "probe_id": "c-current",
+          "profile": {
+            "controller_family": "lyra-31",
+            "increasing_slot": "first_increases"
+          },
+          "relation": "current_state_sufficient",
+          "state": {
+            "controller_family": "lyra-31",
+            "device_id": "grove-unit",
+            "first_control": "gali",
+            "position": 8,
+            "second_control": "horo",
+            "target": 8
+          }
+        }
+      ],
+      "world_id": "world-c"
+    },
+    {
+      "acquisition": {
+        "controller_family": "vesa-58",
+        "device_id": "vesa-seed",
+        "first_control": "coro",
+        "position": 0,
+        "second_control": "dune",
+        "target": 1
+      },
+      "acquisition_profile": {
+        "controller_family": "vesa-58",
+        "increasing_slot": "second_increases"
+      },
+      "probes": [
+        {
+          "expected_action": "juno",
+          "probe_id": "d-same-increase",
+          "profile": {
+            "controller_family": "vesa-58",
+            "increasing_slot": "second_increases"
+          },
+          "relation": "same_family_increase",
+          "state": {
+            "controller_family": "vesa-58",
+            "device_id": "harbor-unit",
+            "first_control": "ivar",
+            "position": 22,
+            "second_control": "juno",
+            "target": 23
+          }
+        },
+        {
+          "expected_action": "kavi",
+          "probe_id": "d-same-decrease",
+          "profile": {
+            "controller_family": "vesa-58",
+            "increasing_slot": "second_increases"
+          },
+          "relation": "same_family_decrease",
+          "state": {
+            "controller_family": "vesa-58",
+            "device_id": "meadow-unit",
+            "first_control": "kavi",
+            "position": 22,
+            "second_control": "loro",
+            "target": 21
+          }
+        },
+        {
+          "expected_action": "request_calibration",
+          "probe_id": "d-unobserved-decoy",
+          "profile": {
+            "controller_family": "vesa-58x",
+            "increasing_slot": "first_increases"
+          },
+          "relation": "unobserved_family_decoy",
+          "state": {
+            "controller_family": "vesa-58x",
+            "device_id": "vesa-seed-echo",
+            "first_control": "mira",
+            "position": 9,
+            "second_control": "noro",
+            "target": 10
+          }
+        },
+        {
+          "expected_action": "hold",
+          "probe_id": "d-current",
+          "profile": {
+            "controller_family": "vesa-58",
+            "increasing_slot": "second_increases"
+          },
+          "relation": "current_state_sufficient",
+          "state": {
+            "controller_family": "vesa-58",
+            "device_id": "ridge-unit",
+            "first_control": "orvi",
+            "position": 7,
+            "second_control": "prax",
+            "target": 7
+          }
+        }
+      ],
+      "world_id": "world-d"
+    }
+  ]
+}

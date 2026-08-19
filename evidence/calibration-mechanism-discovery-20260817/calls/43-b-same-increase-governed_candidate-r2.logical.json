@@ -1,0 +1,39 @@
+{
+  "action_refusal": null,
+  "activated": false,
+  "call_id": "b-same-increase-governed_candidate-r2",
+  "content": "{\"action\": \"fenu\"}",
+  "environment_result": {
+    "action": "fenu",
+    "controller_family": "tavi-42",
+    "device_id": "river-unit",
+    "increasing_slot": null,
+    "observation": "target_not_reached",
+    "position_after": 19,
+    "position_before": 20,
+    "target": 21
+  },
+  "expected_action": "gora",
+  "expected_action_match": false,
+  "logical_index": 43,
+  "message": {
+    "content": "{\"action\": \"fenu\"}",
+    "role": "assistant"
+  },
+  "offer_key": "governed_candidate",
+  "probe_id": "b-same-increase",
+  "relation": "same_family_increase",
+  "repetition": 2,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "tavi-42",
+    "device_id": "river-unit",
+    "first_control": "fenu",
+    "position": 20,
+    "second_control": "gora",
+    "target": 21
+  },
+  "surfaced_action": "fenu",
+  "unwarranted_guess": false,
+  "world_id": "world-b"
+}

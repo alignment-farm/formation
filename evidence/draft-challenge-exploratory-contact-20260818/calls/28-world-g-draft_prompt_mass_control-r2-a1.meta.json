@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-g-draft_prompt_mass_control-r2",
+  "elapsed_seconds": 1.8570353749964852,
+  "ended_at": "2026-08-18T19:27:46.434993+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 28,
+  "message": {
+    "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"movement_direction decreased in phase de7c867e5bd687b5\"}",
+    "role": "assistant"
+  },
+  "offer_key": "draft_prompt_mass_control",
+  "probe_id": null,
+  "relation": null,
+  "repetition": 2,
+  "request_sha256": "f72afbf7a8d381e7f33ad5a535340120a34f23a5916be33bc9695754683ed262",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"movement_direction decreased in phase de7c867e5bd687b5\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787081266,
+    "id": "chatcmpl-egBu2YlF5sbnhGJCJEIWtlJa3NfSAfiy",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 496,
+      "predicted_ms": 1468.774,
+      "predicted_n": 44,
+      "predicted_per_second": 29.956957299080734,
+      "predicted_per_token_ms": 33.38122727272727,
+      "prompt_ms": 376.917,
+      "prompt_n": 113,
+      "prompt_per_second": 299.80075188967334,
+      "prompt_per_token_ms": 3.3355486725663717
+    },
+    "usage": {
+      "completion_tokens": 44,
+      "prompt_tokens": 609,
+      "prompt_tokens_details": {
+        "cached_tokens": 496
+      },
+      "total_tokens": 653
+    }
+  },
+  "response_sha256": "d918310f705926bfd0b79d6c15d4bf5167aab315fb7888a81ab86040dcc2fb38",
+  "responsibility": "candidate",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T19:27:44.577943+00:00",
+  "world_id": "world-g"
+}

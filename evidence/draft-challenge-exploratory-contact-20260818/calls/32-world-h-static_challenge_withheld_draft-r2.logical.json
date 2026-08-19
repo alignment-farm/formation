@@ -1,0 +1,40 @@
+{
+  "call_id": "world-h-static_challenge_withheld_draft-r2",
+  "candidate": {
+    "change": "aa94f3ae24c6630b",
+    "counterevidence": "If the next action is 'a3dd902b2fe11658', it would contradict the observed movement direction and phase transition pattern."
+  },
+  "candidate_comparison_refusal": null,
+  "candidate_comparison_sha256": "921390fdc8da403efd89a19f4db7b8c9d6b62d7a7e9f3777e78ccbb70f353695",
+  "candidate_comparison_utf8": "{\"change\":\"aa94f3ae24c6630b\",\"counterevidence\":\"If the next action is 'a3dd902b2fe11658', it would contradict the observed movement direction and phase transition pattern.\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 61,
+  "condition": "static_challenge_withheld_draft",
+  "content": "{\"change\":\"aa94f3ae24c6630b\",\"counterevidence\":\"If the next action is 'a3dd902b2fe11658', it would contradict the observed movement direction and phase transition pattern.\"}",
+  "draft_is_request_parent": false,
+  "draft_receipt": "candidate-h-direct-1",
+  "fork_point": "post-source",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "871eda706782211de643424ca2b61c771b5d1cfabfc49bd0a1334b6d2855659a"
+  },
+  "governance_deferred": false,
+  "logical_index": 32,
+  "material_utf8_length": 17,
+  "message": {
+    "content": "{\"change\":\"aa94f3ae24c6630b\",\"counterevidence\":\"If the next action is 'a3dd902b2fe11658', it would contradict the observed movement direction and phase transition pattern.\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 587,
+  "public_formation_condition": "static_challenge_withheld_draft",
+  "request_sha256": "c71f2f462e168152ca9288c9385505f1a741b7ea5ff035dea61afc28938d0651",
+  "response_sha256": "9a1be8cc9c049ab7d27895a088f73f6970d5b68f27a6fe9e0403137229585a6f",
+  "responsibility": "candidate",
+  "round": 2,
+  "same_response_draft_canonical": null,
+  "world_id": "world-h"
+}

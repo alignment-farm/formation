@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-h-deterministic_restatement-r2",
+  "elapsed_seconds": 4.619338791002519,
+  "ended_at": "2026-08-18T19:28:02.273639+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 36,
+  "message": {
+    "content": "{\"change\":\"The control 'aa94f3ae24c6630b' in family 04a6549a17c2f498 decreases position during phase b1a356711b7c0edf\",\"counterevidence\":\"If 'aa94f3ae24c6630b' increases position during phase b1a356711b7c0edf in a future observation\"}",
+    "role": "assistant"
+  },
+  "offer_key": "deterministic_restatement",
+  "probe_id": null,
+  "relation": null,
+  "repetition": 2,
+  "request_sha256": "a4c9ace6a619c94ed646ead49cb0b07a9eb764832d0f007efb6a3998be6fc1bb",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"change\":\"The control 'aa94f3ae24c6630b' in family 04a6549a17c2f498 decreases position during phase b1a356711b7c0edf\",\"counterevidence\":\"If 'aa94f3ae24c6630b' increases position during phase b1a356711b7c0edf in a future observation\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787081282,
+    "id": "chatcmpl-06prpG4Al0EccInX0Wb3OkPNFOz0yqRy",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 515,
+      "predicted_ms": 3762.895,
+      "predicted_n": 110,
+      "predicted_per_second": 29.23281143906487,
+      "predicted_per_token_ms": 34.20813636363636,
+      "prompt_ms": 845.381,
+      "prompt_n": 281,
+      "prompt_per_second": 332.3945061457497,
+      "prompt_per_token_ms": 3.008473309608541
+    },
+    "usage": {
+      "completion_tokens": 110,
+      "prompt_tokens": 796,
+      "prompt_tokens_details": {
+        "cached_tokens": 515
+      },
+      "total_tokens": 906
+    }
+  },
+  "response_sha256": "190cc0a670d197aa06e07440fe878dc7f5f8df73dbe47b5d98a041043dc68d14",
+  "responsibility": "candidate",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T19:27:57.654262+00:00",
+  "world_id": "world-h"
+}

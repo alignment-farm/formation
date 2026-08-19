@@ -1,0 +1,37 @@
+{
+  "account_is_request_parent": true,
+  "account_receipt": "world-e-account",
+  "call_id": "world-e-delivered-r1",
+  "candidate": {
+    "change": "In the controller family 'c378816a8c4ed06f', the action '91dd8389d9c3730a' increases position during phase '72b4369223095ae5' and decreases position during phase '96e6b778c4c3439e'.",
+    "counterevidence": "If '91dd8389d9c3730a' ever decreases position during phase '72b4369223095ae5' or increases position during phase '96e6b778c4c3439e'."
+  },
+  "candidate_comparison_sha256": "8a99dd70704bc61532dbceb688eb437ba5c69c014057bb3209af4befc878e430",
+  "candidate_comparison_utf8": "{\"change\":\"In the controller family 'c378816a8c4ed06f', the action '91dd8389d9c3730a' increases position during phase '72b4369223095ae5' and decreases position during phase '96e6b778c4c3439e'.\",\"counterevidence\":\"If '91dd8389d9c3730a' ever decreases position during phase '72b4369223095ae5' or increases position during phase '96e6b778c4c3439e'.\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 162,
+  "condition": "delivered",
+  "content": "{\"change\":\"In the controller family 'c378816a8c4ed06f', the action '91dd8389d9c3730a' increases position during phase '72b4369223095ae5' and decreases position during phase '96e6b778c4c3439e'.\",\"counterevidence\":\"If '91dd8389d9c3730a' ever decreases position during phase '72b4369223095ae5' or increases position during phase '96e6b778c4c3439e'.\"}",
+  "fork_point": "post-account",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "6987f481d9283ebf181cc6b7e95e4cbe3439698c832ef1ed249c1e670b8437d1"
+  },
+  "logical_index": 8,
+  "material_utf8_length": 414,
+  "message": {
+    "content": "{\"change\":\"In the controller family 'c378816a8c4ed06f', the action '91dd8389d9c3730a' increases position during phase '72b4369223095ae5' and decreases position during phase '96e6b778c4c3439e'.\",\"counterevidence\":\"If '91dd8389d9c3730a' ever decreases position during phase '72b4369223095ae5' or increases position during phase '96e6b778c4c3439e'.\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 741,
+  "public_formation_condition": "exact_account_output",
+  "request_sha256": "220170aee2d79e3825d1a32cb5311f6af0e33eecb5765583b5034a84c13dddd4",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_account": null,
+  "world_id": "world-e"
+}

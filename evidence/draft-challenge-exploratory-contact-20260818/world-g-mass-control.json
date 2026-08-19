@@ -1,0 +1,17 @@
+{
+  "control_prompt_tokens": 609,
+  "mass_control_available": true,
+  "prefix_length": 38,
+  "request_sha256": "f72afbf7a8d381e7f33ad5a535340120a34f23a5916be33bc9695754683ed262",
+  "source_content_sha256": "37a27560dd5d98b92a835c950a7f40232a01c01bbde5d9972d22e435aaa871d7",
+  "source_draft_identifier": "candidate-g-direct-1",
+  "source_material_available": true,
+  "target_prompt_tokens": 609,
+  "template_renderer_implementation": "jinja2-3.1.6",
+  "tokenizer_implementation": "tokenizers-0.23.1",
+  "value": "QNIOUINGYPGYNPYLPKSRLWIUSMSLRNLIWUGIJI",
+  "value_sha256": "2b1a04ee9d2918f25eb8a3c10e055837eaa4e9f1ca27c883817d34cc8d04a533",
+  "value_utf8": "QNIOUINGYPGYNPYLPKSRLWIUSMSLRNLIWUGIJI",
+  "value_utf8_length": 38,
+  "world_id": "world-g"
+}

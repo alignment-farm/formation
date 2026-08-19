@@ -1,0 +1,19 @@
+{
+  "environment_result": {
+    "action": "rebuild_then_release",
+    "artifact_revision_after": 8,
+    "artifact_revision_before": 7,
+    "authority_revision": 8,
+    "disposition": "accepted",
+    "observation": "released"
+  },
+  "model_message": {
+    "content": "{\"action\": \"rebuild_then_release\"}",
+    "role": "assistant"
+  },
+  "situation": {
+    "artifact_revision": 7,
+    "authority_revision": 8
+  },
+  "surfaced_action": "rebuild_then_release"
+}

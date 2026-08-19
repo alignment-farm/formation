@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-g-static_challenge_withheld_draft-r2",
+  "elapsed_seconds": 2.3564624579958036,
+  "ended_at": "2026-08-18T19:27:51.022969+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 31,
+  "message": {
+    "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the device reaches the target position in the next step, the phase would change again, which would contradict the rule that the phase-to-slot profile is stable within one controller family.\"}",
+    "role": "assistant"
+  },
+  "offer_key": "static_challenge_withheld_draft",
+  "probe_id": null,
+  "relation": null,
+  "repetition": 2,
+  "request_sha256": "602774ddf8bc6c2a898861228f24ffa56ed27b7d247d3498341a2f18de989cca",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"If the device reaches the target position in the next step, the phase would change again, which would contradict the rule that the phase-to-slot profile is stable within one controller family.\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787081271,
+    "id": "chatcmpl-8LA3My0rren2tPz97NFohpHIvPhJbNKv",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 496,
+      "predicted_ms": 2051.532,
+      "predicted_n": 61,
+      "predicted_per_second": 29.733876927096432,
+      "predicted_per_token_ms": 33.631672131147546,
+      "prompt_ms": 293.302,
+      "prompt_n": 72,
+      "prompt_per_second": 245.48076726377587,
+      "prompt_per_token_ms": 4.0736388888888895
+    },
+    "usage": {
+      "completion_tokens": 61,
+      "prompt_tokens": 568,
+      "prompt_tokens_details": {
+        "cached_tokens": 496
+      },
+      "total_tokens": 629
+    }
+  },
+  "response_sha256": "5b8eced65661b88d4381215a6e4f10505c1146d8b978a38c15bcb07f8fd9cf03",
+  "responsibility": "candidate",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T19:27:48.666482+00:00",
+  "world_id": "world-g"
+}

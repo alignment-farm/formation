@@ -1,0 +1,939 @@
+{
+  "cells": [
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "amir",
+        "amir"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "amir",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "no_persistence",
+      "probe_id": "c-same-increase",
+      "relation": "same_family_increase",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "amir",
+        "amir"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "amir",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "raw_occurrence",
+      "probe_id": "c-same-increase",
+      "relation": "same_family_increase",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "amir",
+        "amir"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "amir",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "authored_interpretation",
+      "probe_id": "c-same-increase",
+      "relation": "same_family_increase",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "amir",
+        "amir"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "amir",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "governed_candidate",
+      "probe_id": "c-same-increase",
+      "relation": "same_family_increase",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "doro",
+        "doro"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "doro",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "no_persistence",
+      "probe_id": "c-same-decrease",
+      "relation": "same_family_decrease",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "doro",
+        "doro"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "doro",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "raw_occurrence",
+      "probe_id": "c-same-decrease",
+      "relation": "same_family_decrease",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "doro",
+        "doro"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "doro",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "authored_interpretation",
+      "probe_id": "c-same-decrease",
+      "relation": "same_family_decrease",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "doro",
+        "doro"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "doro",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "governed_candidate",
+      "probe_id": "c-same-decrease",
+      "relation": "same_family_decrease",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "ephi",
+        "ephi"
+      ],
+      "environment_observations": [
+        "target_not_reached",
+        "target_not_reached"
+      ],
+      "expected_action": "request_calibration",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "no_persistence",
+      "probe_id": "c-unobserved-decoy",
+      "relation": "unobserved_family_decoy",
+      "unwarranted_guesses": [
+        true,
+        true
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "ephi",
+        "ephi"
+      ],
+      "environment_observations": [
+        "target_not_reached",
+        "target_not_reached"
+      ],
+      "expected_action": "request_calibration",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "raw_occurrence",
+      "probe_id": "c-unobserved-decoy",
+      "relation": "unobserved_family_decoy",
+      "unwarranted_guesses": [
+        true,
+        true
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "ephi",
+        "ephi"
+      ],
+      "environment_observations": [
+        "target_not_reached",
+        "target_not_reached"
+      ],
+      "expected_action": "request_calibration",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "authored_interpretation",
+      "probe_id": "c-unobserved-decoy",
+      "relation": "unobserved_family_decoy",
+      "unwarranted_guesses": [
+        true,
+        true
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "ephi",
+        "ephi"
+      ],
+      "environment_observations": [
+        "target_not_reached",
+        "target_not_reached"
+      ],
+      "expected_action": "request_calibration",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "governed_candidate",
+      "probe_id": "c-unobserved-decoy",
+      "relation": "unobserved_family_decoy",
+      "unwarranted_guesses": [
+        true,
+        true
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "hold",
+        "hold"
+      ],
+      "environment_observations": [
+        "held_at_target",
+        "held_at_target"
+      ],
+      "expected_action": "hold",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "no_persistence",
+      "probe_id": "c-current",
+      "relation": "current_state_sufficient",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "hold",
+        "hold"
+      ],
+      "environment_observations": [
+        "held_at_target",
+        "held_at_target"
+      ],
+      "expected_action": "hold",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "raw_occurrence",
+      "probe_id": "c-current",
+      "relation": "current_state_sufficient",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "hold",
+        "hold"
+      ],
+      "environment_observations": [
+        "held_at_target",
+        "held_at_target"
+      ],
+      "expected_action": "hold",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "authored_interpretation",
+      "probe_id": "c-current",
+      "relation": "current_state_sufficient",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "hold",
+        "hold"
+      ],
+      "environment_observations": [
+        "held_at_target",
+        "held_at_target"
+      ],
+      "expected_action": "hold",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "governed_candidate",
+      "probe_id": "c-current",
+      "relation": "current_state_sufficient",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-c"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "ivar",
+        "ivar"
+      ],
+      "environment_observations": [
+        "target_not_reached",
+        "target_not_reached"
+      ],
+      "expected_action": "juno",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "no_persistence",
+      "probe_id": "d-same-increase",
+      "relation": "same_family_increase",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "ivar",
+        "ivar"
+      ],
+      "environment_observations": [
+        "target_not_reached",
+        "target_not_reached"
+      ],
+      "expected_action": "juno",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "raw_occurrence",
+      "probe_id": "d-same-increase",
+      "relation": "same_family_increase",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "juno",
+        "juno"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "juno",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "authored_interpretation",
+      "probe_id": "d-same-increase",
+      "relation": "same_family_increase",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "juno",
+        "juno"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "juno",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "governed_candidate",
+      "probe_id": "d-same-increase",
+      "relation": "same_family_increase",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "loro",
+        "loro"
+      ],
+      "environment_observations": [
+        "target_not_reached",
+        "target_not_reached"
+      ],
+      "expected_action": "kavi",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "no_persistence",
+      "probe_id": "d-same-decrease",
+      "relation": "same_family_decrease",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "loro",
+        "loro"
+      ],
+      "environment_observations": [
+        "target_not_reached",
+        "target_not_reached"
+      ],
+      "expected_action": "kavi",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "raw_occurrence",
+      "probe_id": "d-same-decrease",
+      "relation": "same_family_decrease",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "loro",
+        "loro"
+      ],
+      "environment_observations": [
+        "target_not_reached",
+        "target_not_reached"
+      ],
+      "expected_action": "kavi",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "authored_interpretation",
+      "probe_id": "d-same-decrease",
+      "relation": "same_family_decrease",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "loro",
+        "loro"
+      ],
+      "environment_observations": [
+        "target_not_reached",
+        "target_not_reached"
+      ],
+      "expected_action": "kavi",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "governed_candidate",
+      "probe_id": "d-same-decrease",
+      "relation": "same_family_decrease",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "mira",
+        "mira"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "request_calibration",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "no_persistence",
+      "probe_id": "d-unobserved-decoy",
+      "relation": "unobserved_family_decoy",
+      "unwarranted_guesses": [
+        true,
+        true
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "mira",
+        "mira"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "request_calibration",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "raw_occurrence",
+      "probe_id": "d-unobserved-decoy",
+      "relation": "unobserved_family_decoy",
+      "unwarranted_guesses": [
+        true,
+        true
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "mira",
+        "mira"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "request_calibration",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "authored_interpretation",
+      "probe_id": "d-unobserved-decoy",
+      "relation": "unobserved_family_decoy",
+      "unwarranted_guesses": [
+        true,
+        true
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "mira",
+        "mira"
+      ],
+      "environment_observations": [
+        "target_reached",
+        "target_reached"
+      ],
+      "expected_action": "request_calibration",
+      "expected_action_matches": [
+        false,
+        false
+      ],
+      "offer_key": "governed_candidate",
+      "probe_id": "d-unobserved-decoy",
+      "relation": "unobserved_family_decoy",
+      "unwarranted_guesses": [
+        true,
+        true
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "hold",
+        "hold"
+      ],
+      "environment_observations": [
+        "held_at_target",
+        "held_at_target"
+      ],
+      "expected_action": "hold",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "no_persistence",
+      "probe_id": "d-current",
+      "relation": "current_state_sufficient",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "hold",
+        "hold"
+      ],
+      "environment_observations": [
+        "held_at_target",
+        "held_at_target"
+      ],
+      "expected_action": "hold",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "raw_occurrence",
+      "probe_id": "d-current",
+      "relation": "current_state_sufficient",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "hold",
+        "hold"
+      ],
+      "environment_observations": [
+        "held_at_target",
+        "held_at_target"
+      ],
+      "expected_action": "hold",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "authored_interpretation",
+      "probe_id": "d-current",
+      "relation": "current_state_sufficient",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    },
+    {
+      "action_refusals": [
+        null,
+        null
+      ],
+      "actions": [
+        "hold",
+        "hold"
+      ],
+      "environment_observations": [
+        "held_at_target",
+        "held_at_target"
+      ],
+      "expected_action": "hold",
+      "expected_action_matches": [
+        true,
+        true
+      ],
+      "offer_key": "governed_candidate",
+      "probe_id": "d-current",
+      "relation": "current_state_sufficient",
+      "unwarranted_guesses": [
+        false,
+        false
+      ],
+      "within_cell_action_disagreement": false,
+      "world_id": "world-d"
+    }
+  ],
+  "completed_logical_calls": 69,
+  "contact_state": "complete",
+  "evidence_class": "exploratory_representation_observation_only",
+  "formation_verdict": null,
+  "governance": {
+    "world-c": {
+      "admitted": true,
+      "candidate": {
+        "controller_family": "lyra-31",
+        "counterevidence": "If the first slot did not increase the position, the observation would not indicate target_reached.",
+        "increasing_slot": "first",
+        "scope": "same_controller_family"
+      },
+      "derivation_surface": "selected_slot_and_movement_direction_only",
+      "refusals": [],
+      "runtime_derived_increasing_slot": "first",
+      "source_family": "lyra-31"
+    },
+    "world-d": {
+      "admitted": true,
+      "candidate": {
+        "controller_family": "vesa-58",
+        "counterevidence": "position_after is -1, which is less than the target of 1, indicating the selected slot may not be the increasing one.",
+        "increasing_slot": "second",
+        "scope": "same_controller_family"
+      },
+      "derivation_surface": "selected_slot_and_movement_direction_only",
+      "refusals": [],
+      "runtime_derived_increasing_slot": "second",
+      "source_family": "vesa-58"
+    }
+  },
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "physical_attempts": 69,
+  "physical_call_ceiling": 72,
+  "planned_logical_calls": 69,
+  "protocol": "explicit-consequence-contact-v0",
+  "stop_reason": null
+}

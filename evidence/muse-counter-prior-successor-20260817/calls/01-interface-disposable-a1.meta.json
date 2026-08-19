@@ -1,0 +1,25 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "interface-disposable",
+  "elapsed_seconds": 0.540735415999734,
+  "ended_at": "2026-08-18T02:26:40.764496+00:00",
+  "error": "http_500",
+  "http_status": 500,
+  "logical_index": 1,
+  "message": null,
+  "offer_key": null,
+  "probe_id": null,
+  "relation": null,
+  "repetition": null,
+  "request_sha256": "574097318217f037e20ba1610198360f800a48ab8a6bc369cf868569e08aadb8",
+  "response_envelope": {
+    "body": "unable to load runner: error waiting for runner to be ready: llama.cpp terminated unexpectedly: llama.cpp failed: failed to load model\n\nVerbose output:\nsrv    operator(): operator(): cleaning up before exit...\n0.00.252.861 E srv  llama_server: exiting due to model loading error\ndel: [mtmd] failed to get memory usage of mmproj\n0.00.152.667 E llama_model_load: error loading model: unknown model architecture: 'muse-glimmer'\n0.00.152.669 E llama_model_load_from_file_impl: failed to load model\n0.00.152.927 E common_fit_params: encountered an error while trying to fit params to free device memory: failed to load model\n0.00.252.669 E llama_model_load: error loading model: unknown model architecture: 'muse-glimmer'\n0.00.252.671 E llama_model_load_from_file_impl: failed to load model\n0.00.252.672 E cmn  common_init_: failed to load model '/Users/macos-user/.docker/models/bundles/sha256/ad54b4b4122ee8e98fd5528a4e26bcbf59034b3b8d0d6d0d1acda98a5f759b6e/model/model.gguf'\n0.00.252.673 E srv    load_model: failed to load model, '/Users/macos-user/.docker/models/bundles/sha256/ad54b4b4122ee8e98fd5528a4e26bcbf59034b3b8d0d6d0d1acda98a5f759b6e/model/model.gguf'\n0.00.252.675 I\n",
+    "http_status": 500
+  },
+  "response_sha256": "29102e57e09f2a74593579bbef9b355f88389ab63faab81cb939aa84de0f3a43",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:26:40.223600+00:00",
+  "world_id": null
+}

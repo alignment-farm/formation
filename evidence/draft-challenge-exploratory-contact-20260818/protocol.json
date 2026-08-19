@@ -1,0 +1,189 @@
+{
+  "actor_settings": {
+    "max_tokens": 128,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "actor_system": "You are the action-selection component of a cold practitioner. You have no\nmemory outside this request.\n\nPUBLIC OPERATING RULE\nEach device has two ordered controls and one of two public phases. In each\nphase, exactly one ordered slot increases position by one and the other\ndecreases it by one. The increasing slot is opposite in the two phases. Every\ncontrol action toggles phase. Hold changes neither position nor phase. The\nphase-to-slot profile is stable within one controller family. Control strings\nhave no reusable meaning across devices.\nUse current position, target, phase, and any warranted family evidence to choose\nan action or committed action sequence. If no warranted profile evidence applies\nto the current family, hold rather than guess a control.\n\nReturn exactly one JSON object with the single key \"actions\". Its value must be\nan array containing exactly the requested number of entries. Every entry must\nbe copied exactly from PERMITTED ACTIONS. Do not add keys or commentary.",
+  "author_settings": {
+    "max_tokens": 256,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "authorship_responsibility": "State one reusable change in preparedness that the experience warrants,\nincluding where it applies and what later observation should count against it.",
+  "candidate_system": "You are the candidate author inside a formation runtime. You have no memory\noutside this request.\n\nPUBLIC OPERATING RULE\nEach device has two ordered controls and one of two public phases. In each\nphase, exactly one ordered slot increases position by one and the other\ndecreases it by one. The increasing slot is opposite in the two phases. Every\ncontrol action toggles phase. Hold changes neither position nor phase. The\nphase-to-slot profile is stable within one controller family. Control strings\nhave no reusable meaning across devices.\nUse current position, target, phase, and any warranted family evidence to choose\nan action or committed action sequence. If no warranted profile evidence applies\nto the current family, hold rather than guess a control.\n\nReturn exactly one JSON object with only \"change\" and \"counterevidence\". Each\nvalue may be a string or null. Do not add keys or commentary.",
+  "challenge_responsibility": "Review the exact prior model output supplied as `draft_content` using only the\npublic rule and source occurrence. Return the candidate you can support now.\nKeep only claims supported by those sources, state where they apply, and state\nwhat later observation would count against them. Use null for both fields if\nyou withdraw the prior attempt or cannot support a candidate.",
+  "chat_template_bindings": {
+    "add_generation_prompt": true,
+    "add_special_tokens": false,
+    "enable_thinking": "omitted_undefined",
+    "tools": "omitted"
+  },
+  "chat_template_sha256": "57f1fd00f0013a2be96aa79b857391f27e23df5b5f847072b524c897e24d0361",
+  "chat_template_utf8_length": 4100,
+  "conditions": [
+    "direct_candidate",
+    "draft_withheld",
+    "exact_draft_replay",
+    "static_challenge_withheld_draft",
+    "exact_draft_challenge",
+    "same_response_draft_challenge",
+    "occurrence_repeated",
+    "deterministic_restatement",
+    "draft_prompt_mass_control"
+  ],
+  "direct_identifiers": {
+    "world-g": [
+      "candidate-g-direct-1",
+      "candidate-g-direct-2"
+    ],
+    "world-h": [
+      "candidate-h-direct-1",
+      "candidate-h-direct-2"
+    ]
+  },
+  "docker_desktop_platform": "Docker Desktop 4.87.0 (236836)",
+  "docker_model_runner_version": "v1.2.6",
+  "endpoint": "http://localhost:12434/engines/llama.cpp/v1/chat/completions",
+  "formation_and_validation_verdicts_forbidden": true,
+  "governance_timing": "after_all_authorship_calls_or_packet_stop",
+  "inspect_tag": "docker.io/ai/qwen3:14B-Q6_K",
+  "interface_state": {
+    "controller_family": "89572ec331e3be44",
+    "controls": [
+      "de8a1aa2d11135b5",
+      "0bb7b5ead4ac392b"
+    ],
+    "device": "764226e12f57f878",
+    "phase": "5d8e06e178f2e72d",
+    "position": 3,
+    "target": 3
+  },
+  "llama_backend_build": "b9879-metal",
+  "llama_backend_digest": "sha256:b70706f473b4043ca3e0c32704a7fda3412b83bceef0564684187b8011230de8",
+  "mass_control_alphabet": "GHIJKLMNOPQRSTUVWXYZ",
+  "mass_control_max_prefix": 8192,
+  "mass_control_seed": "formation.draft-challenge.prompt-mass.v1",
+  "max_completion_allowance": 10624,
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "physical_call_ceiling": 42,
+  "planned_logical_calls": 39,
+  "protocol": "draft-challenge-exploratory-contact-v0",
+  "public_rule": "Each device has two ordered controls and one of two public phases. In each\nphase, exactly one ordered slot increases position by one and the other\ndecreases it by one. The increasing slot is opposite in the two phases. Every\ncontrol action toggles phase. Hold changes neither position nor phase. The\nphase-to-slot profile is stable within one controller family. Control strings\nhave no reusable meaning across devices.\nUse current position, target, phase, and any warranted family evidence to choose\nan action or committed action sequence. If no warranted profile evidence applies\nto the current family, hold rather than guess a control.",
+  "round_orders": {
+    "round-1-world-g": [
+      "withheld",
+      "replay",
+      "static",
+      "challenge",
+      "same response",
+      "repeated",
+      "restatement",
+      "mass"
+    ],
+    "round-1-world-h": [
+      "mass",
+      "restatement",
+      "repeated",
+      "same response",
+      "challenge",
+      "static",
+      "replay",
+      "withheld"
+    ],
+    "round-2-world-g": [
+      "challenge",
+      "same response",
+      "repeated",
+      "restatement",
+      "mass",
+      "withheld",
+      "replay",
+      "static"
+    ],
+    "round-2-world-h": [
+      "static",
+      "replay",
+      "withheld",
+      "mass",
+      "restatement",
+      "repeated",
+      "same response",
+      "challenge"
+    ]
+  },
+  "same_response_budget": 512,
+  "same_response_settings": {
+    "max_tokens": 512,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "same_response_system": "You are the candidate drafting and review component of a cold practitioner. You\nhave no memory outside this request.\n\nPUBLIC OPERATING RULE\nEach device has two ordered controls and one of two public phases. In each\nphase, exactly one ordered slot increases position by one and the other\ndecreases it by one. The increasing slot is opposite in the two phases. Every\ncontrol action toggles phase. Hold changes neither position nor phase. The\nphase-to-slot profile is stable within one controller family. Control strings\nhave no reusable meaning across devices.\nUse current position, target, phase, and any warranted family evidence to choose\nan action or committed action sequence. If no warranted profile evidence applies\nto the current family, hold rather than guess a control.\n\nReturn exactly one JSON object whose keys, in order, are \"draft\" and \"final\".\nEach value must be an object with only \"change\" and \"counterevidence\". Each\nfield value may be a string or null. Do not add keys or commentary.",
+  "samples_per_condition": 2,
+  "single_call_budget": 256,
+  "static_responsibility": "Review using only the public rule and source occurrence. Return the candidate\nyou can support now. Keep only claims supported by those sources, state where\nthey apply, and state what later observation would count against them. Use null\nfor both fields if you cannot support a candidate.",
+  "template_renderer_implementation": "jinja2-3.1.6",
+  "tokenizer_implementation": "tokenizers-0.23.1",
+  "tokenizer_revision": "7d3da9c56f02b22d31dc1ca97c7ee628d1e2e237",
+  "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+  "tokenizer_utf8_length": 11422654,
+  "worlds": [
+    {
+      "profile": {
+        "controller_family": "cd32522fbc89d0cc",
+        "phase_zero_increasing_slot": 0,
+        "phases": [
+          "ccdabc1e1f6ca491",
+          "de7c867e5bd687b5"
+        ]
+      },
+      "state": {
+        "controller_family": "cd32522fbc89d0cc",
+        "controls": [
+          "7e81cf4ce9afe7ad",
+          "183609a9f5e6b701"
+        ],
+        "device": "fde26f170afcc3ae",
+        "phase": "ccdabc1e1f6ca491",
+        "position": 0,
+        "target": 2
+      },
+      "world_id": "world-g"
+    },
+    {
+      "profile": {
+        "controller_family": "04a6549a17c2f498",
+        "phase_zero_increasing_slot": 1,
+        "phases": [
+          "b1a356711b7c0edf",
+          "0a4aa47fe9bf67f7"
+        ]
+      },
+      "state": {
+        "controller_family": "04a6549a17c2f498",
+        "controls": [
+          "aa94f3ae24c6630b",
+          "a3dd902b2fe11658"
+        ],
+        "device": "e52fe06ac648cd96",
+        "phase": "b1a356711b7c0edf",
+        "position": 0,
+        "target": 2
+      },
+      "world_id": "world-h"
+    }
+  ]
+}

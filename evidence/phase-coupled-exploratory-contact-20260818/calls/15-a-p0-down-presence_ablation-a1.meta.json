@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "a-p0-down-presence_ablation",
+  "elapsed_seconds": 1.5323640420028823,
+  "ended_at": "2026-08-18T10:53:25.711921+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 15,
+  "message": {
+    "content": "{\"actions\": [\"6f3cd77e3eda3722\", \"78025e8f696c5986\"]}",
+    "role": "assistant"
+  },
+  "offer_key": "presence_ablation",
+  "probe_id": "a-p0-down",
+  "relation": "same_family_commitment",
+  "repetition": null,
+  "request_sha256": "370c93c4f479f90fafa3159531ceccbed1ef937123da1d792b7c84bf9ecaeb67",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"actions\": [\"6f3cd77e3eda3722\", \"78025e8f696c5986\"]}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787050405,
+    "id": "chatcmpl-YdVsPn4uMf8DHG6neMvE8jgOFMDxQBOf",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 376,
+      "predicted_ms": 1476.163,
+      "predicted_n": 41,
+      "predicted_per_second": 27.774710516386065,
+      "predicted_per_token_ms": 36.0039756097561,
+      "prompt_ms": 44.875,
+      "prompt_n": 1,
+      "prompt_per_second": 22.284122562674096,
+      "prompt_per_token_ms": 44.875
+    },
+    "usage": {
+      "completion_tokens": 41,
+      "prompt_tokens": 377,
+      "prompt_tokens_details": {
+        "cached_tokens": 376
+      },
+      "total_tokens": 418
+    }
+  },
+  "response_sha256": "0a7f209738b78853ed7d4493134e0b8227662f082de3a518a78f13caa4ce554a",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T10:53:24.179584+00:00",
+  "world_id": "world-a"
+}

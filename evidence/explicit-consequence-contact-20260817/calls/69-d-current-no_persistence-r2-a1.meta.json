@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "d-current-no_persistence-r2",
+  "elapsed_seconds": 0.3839074999996228,
+  "ended_at": "2026-08-18T02:33:59.489660+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 69,
+  "message": {
+    "content": "{\"action\": \"hold\"}",
+    "role": "assistant"
+  },
+  "offer_key": "no_persistence",
+  "probe_id": "d-current",
+  "relation": "current_state_sufficient",
+  "repetition": 2,
+  "request_sha256": "5cdad69166ddc239b4a64dc7b5b9492cb4acdc0b4825f0fef94cd4c0ce044825",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"action\": \"hold\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787020439,
+    "id": "chatcmpl-22Vv9qkWDaCedIlaqD0oaCQadGwX6SEI",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 217,
+      "predicted_ms": 337.748,
+      "predicted_n": 11,
+      "predicted_per_second": 32.568660658242244,
+      "predicted_per_token_ms": 30.704363636363635,
+      "prompt_ms": 34.56,
+      "prompt_n": 1,
+      "prompt_per_second": 28.935185185185183,
+      "prompt_per_token_ms": 34.56
+    },
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 218,
+      "prompt_tokens_details": {
+        "cached_tokens": 217
+      },
+      "total_tokens": 229
+    }
+  },
+  "response_sha256": "ed20a257d52081dc0d8ab75aa529f84689303e1b1478b7747a8d4934ac066433",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:33:59.105752+00:00",
+  "world_id": "world-d"
+}

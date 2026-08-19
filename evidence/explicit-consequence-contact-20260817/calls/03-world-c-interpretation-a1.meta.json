@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-c-interpretation",
+  "elapsed_seconds": 3.1644393339993258,
+  "ended_at": "2026-08-18T02:33:12.786531+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 3,
+  "message": {
+    "content": "{\n  \"controller_family\": \"lyra-31\",\n  \"increasing_slot\": \"first\",\n  \"scope\": \"same_controller_family\",\n  \"counterevidence\": \"If the first slot did not increase the position, the observation would not indicate target_reached.\"\n}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "probe_id": null,
+  "relation": null,
+  "repetition": null,
+  "request_sha256": "7e9e0d3ac28bc3ac7eceb43ae620641b90d9a1d1958ae88b9d950c032ab58cef",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"controller_family\": \"lyra-31\",\n  \"increasing_slot\": \"first\",\n  \"scope\": \"same_controller_family\",\n  \"counterevidence\": \"If the first slot did not increase the position, the observation would not indicate target_reached.\"\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787020392,
+    "id": "chatcmpl-ZqWfaKrcIygR7OVhPimPmawZ2RDNLxnC",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 0,
+      "predicted_ms": 2099.935,
+      "predicted_n": 63,
+      "predicted_per_second": 30.00092860017096,
+      "predicted_per_token_ms": 33.332301587301586,
+      "prompt_ms": 1050.383,
+      "prompt_n": 383,
+      "prompt_per_second": 364.62890202906937,
+      "prompt_per_token_ms": 2.742514360313316
+    },
+    "usage": {
+      "completion_tokens": 63,
+      "prompt_tokens": 383,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 446
+    }
+  },
+  "response_sha256": "7ae9f1a746f7a3ffdcb4ecd007deb02c4ae32a87b5a99d34b7da7852f1cf378d",
+  "responsibility": "interpreter",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:33:09.622088+00:00",
+  "world_id": "world-c"
+}

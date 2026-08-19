@@ -1,0 +1,28 @@
+{
+  "available": true,
+  "condition": "acquisition",
+  "consequence_receipt": null,
+  "content": "{\"prediction\":\"vesan\"}",
+  "invocation_coordinate": "iv03",
+  "logical_index": 3,
+  "occurrence": {
+    "input": {
+      "facet": "dara",
+      "mark": "kela",
+      "zone": "puna"
+    },
+    "prediction": {
+      "status": "available",
+      "value": "vesan"
+    },
+    "result": {
+      "authority": "environment_oracle",
+      "value": "vesan"
+    }
+  },
+  "output_coordinate": "iv03.prediction",
+  "prediction": "vesan",
+  "runtime_material": null,
+  "trial_receipt": null,
+  "world_id": "K"
+}

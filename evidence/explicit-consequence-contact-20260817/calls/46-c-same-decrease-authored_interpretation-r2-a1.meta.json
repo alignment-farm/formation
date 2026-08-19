@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "c-same-decrease-authored_interpretation-r2",
+  "elapsed_seconds": 0.666583541998989,
+  "ended_at": "2026-08-18T02:33:43.939810+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 46,
+  "message": {
+    "content": "{\"action\": \"doro\"}",
+    "role": "assistant"
+  },
+  "offer_key": "authored_interpretation",
+  "probe_id": "c-same-decrease",
+  "relation": "same_family_decrease",
+  "repetition": 2,
+  "request_sha256": "28b60790f7ad4ca57ddffa9b7acdc6b837b1f77336e4e308b364b1b4962a7f4a",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"action\": \"doro\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787020423,
+    "id": "chatcmpl-pl0X1DpQ1sl55iuoO2zPpLLCt06VHPeu",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 209,
+      "predicted_ms": 375.341,
+      "predicted_n": 12,
+      "predicted_per_second": 31.97092776968144,
+      "predicted_per_token_ms": 31.27841666666667,
+      "prompt_ms": 271.161,
+      "prompt_n": 68,
+      "prompt_per_second": 250.77352569137892,
+      "prompt_per_token_ms": 3.9876617647058823
+    },
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 277,
+      "prompt_tokens_details": {
+        "cached_tokens": 209
+      },
+      "total_tokens": 289
+    }
+  },
+  "response_sha256": "870060ab7e39ac1e8e06212217470b942a508fb093ac3e442073d5e527fae637",
+  "responsibility": "actor",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:33:43.273226+00:00",
+  "world_id": "world-c"
+}

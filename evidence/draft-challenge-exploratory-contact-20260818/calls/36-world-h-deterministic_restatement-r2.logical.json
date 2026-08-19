@@ -1,0 +1,40 @@
+{
+  "call_id": "world-h-deterministic_restatement-r2",
+  "candidate": {
+    "change": "The control 'aa94f3ae24c6630b' in family 04a6549a17c2f498 decreases position during phase b1a356711b7c0edf",
+    "counterevidence": "If 'aa94f3ae24c6630b' increases position during phase b1a356711b7c0edf in a future observation"
+  },
+  "candidate_comparison_refusal": null,
+  "candidate_comparison_sha256": "ee985c7a58f869f6b2788dbb8e0309311fd8a410fb6ce5bcb24ac0651693db43",
+  "candidate_comparison_utf8": "{\"change\":\"The control 'aa94f3ae24c6630b' in family 04a6549a17c2f498 decreases position during phase b1a356711b7c0edf\",\"counterevidence\":\"If 'aa94f3ae24c6630b' increases position during phase b1a356711b7c0edf in a future observation\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 110,
+  "condition": "deterministic_restatement",
+  "content": "{\"change\":\"The control 'aa94f3ae24c6630b' in family 04a6549a17c2f498 decreases position during phase b1a356711b7c0edf\",\"counterevidence\":\"If 'aa94f3ae24c6630b' increases position during phase b1a356711b7c0edf in a future observation\"}",
+  "draft_is_request_parent": false,
+  "draft_receipt": null,
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "871eda706782211de643424ca2b61c771b5d1cfabfc49bd0a1334b6d2855659a"
+  },
+  "governance_deferred": false,
+  "logical_index": 36,
+  "material_utf8_length": 539,
+  "message": {
+    "content": "{\"change\":\"The control 'aa94f3ae24c6630b' in family 04a6549a17c2f498 decreases position during phase b1a356711b7c0edf\",\"counterevidence\":\"If 'aa94f3ae24c6630b' increases position during phase b1a356711b7c0edf in a future observation\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 796,
+  "public_formation_condition": "deterministic_restatement",
+  "request_sha256": "a4c9ace6a619c94ed646ead49cb0b07a9eb764832d0f007efb6a3998be6fc1bb",
+  "response_sha256": "190cc0a670d197aa06e07440fe878dc7f5f8df73dbe47b5d98a041043dc68d14",
+  "responsibility": "candidate",
+  "round": 2,
+  "same_response_draft_canonical": null,
+  "world_id": "world-h"
+}

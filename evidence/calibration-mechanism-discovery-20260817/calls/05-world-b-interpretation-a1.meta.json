@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-b-interpretation",
+  "elapsed_seconds": 2.2271608329992887,
+  "ended_at": "2026-08-18T02:19:35.072715+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 5,
+  "message": {
+    "content": "{\n  \"controller_family\": \"tavi-42\",\n  \"increasing_slot\": \"first\",\n  \"scope\": \"same_controller_family\",\n  \"counterevidence\": \"position_after did not reach the target\"\n}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "probe_id": null,
+  "relation": null,
+  "repetition": null,
+  "request_sha256": "b665be9e53e53b51b15464a2a118a8ad481d0cd413194d587f5ce2108727469a",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"controller_family\": \"tavi-42\",\n  \"increasing_slot\": \"first\",\n  \"scope\": \"same_controller_family\",\n  \"counterevidence\": \"position_after did not reach the target\"\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787019575,
+    "id": "chatcmpl-53s1FoqpMhZtCUGte7o0rJSUxkxa2p9V",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 190,
+      "predicted_ms": 1728.981,
+      "predicted_n": 52,
+      "predicted_per_second": 30.075518470127783,
+      "predicted_per_token_ms": 33.249634615384615,
+      "prompt_ms": 483.929,
+      "prompt_n": 177,
+      "prompt_per_second": 365.7561336477046,
+      "prompt_per_token_ms": 2.734062146892655
+    },
+    "usage": {
+      "completion_tokens": 52,
+      "prompt_tokens": 367,
+      "prompt_tokens_details": {
+        "cached_tokens": 190
+      },
+      "total_tokens": 419
+    }
+  },
+  "response_sha256": "44290e9da41e833bfba975c3dbd311fc95c0d22dd56f35453a984e04c162fd73",
+  "responsibility": "interpreter",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:19:32.845551+00:00",
+  "world_id": "world-b"
+}

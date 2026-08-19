@@ -1,0 +1,40 @@
+{
+  "call_id": "world-h-same_response_draft_challenge-r2",
+  "candidate": {
+    "change": "In controller family 04a6549a17c2f498, when in phase b1a356711b7c0edf, using control aa94f3ae24c6630b decreases position by 1 and switches phase to 0a4aa47fe9bf67f7.",
+    "counterevidence": "If in phase b1a356711b7c0edf, using control aa94f3ae24c6630b does not decrease position by 1 or does not switch phase to 0a4aa47fe9bf67f7."
+  },
+  "candidate_comparison_refusal": null,
+  "candidate_comparison_sha256": "02b4a86e5c73d3f1423f6f28595b8819351488b0055451dab2b03a48cde821ff",
+  "candidate_comparison_utf8": "{\"change\":\"In controller family 04a6549a17c2f498, when in phase b1a356711b7c0edf, using control aa94f3ae24c6630b decreases position by 1 and switches phase to 0a4aa47fe9bf67f7.\",\"counterevidence\":\"If in phase b1a356711b7c0edf, using control aa94f3ae24c6630b does not decrease position by 1 or does not switch phase to 0a4aa47fe9bf67f7.\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 331,
+  "condition": "same_response_draft_challenge",
+  "content": "{\n  \"draft\": {\n    \"change\": \"In controller family 04a6549a17c2f498, when in phase b1a356711b7c0edf, using control aa94f3ae24c6630b decreases position by 1 and switches phase to 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, using control aa94f3ae24c6630b does not decrease position by 1 or does not switch phase to 0a4aa47fe9bf67f7.\"\n  },\n  \"final\": {\n    \"change\": \"In controller family 04a6549a17c2f498, when in phase b1a356711b7c0edf, using control aa94f3ae24c6630b decreases position by 1 and switches phase to 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, using control aa94f3ae24c6630b does not decrease position by 1 or does not switch phase to 0a4aa47fe9bf67f7.\"\n  }\n}",
+  "draft_is_request_parent": false,
+  "draft_receipt": null,
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "871eda706782211de643424ca2b61c771b5d1cfabfc49bd0a1334b6d2855659a"
+  },
+  "governance_deferred": false,
+  "logical_index": 38,
+  "material_utf8_length": 17,
+  "message": {
+    "content": "{\n  \"draft\": {\n    \"change\": \"In controller family 04a6549a17c2f498, when in phase b1a356711b7c0edf, using control aa94f3ae24c6630b decreases position by 1 and switches phase to 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, using control aa94f3ae24c6630b does not decrease position by 1 or does not switch phase to 0a4aa47fe9bf67f7.\"\n  },\n  \"final\": {\n    \"change\": \"In controller family 04a6549a17c2f498, when in phase b1a356711b7c0edf, using control aa94f3ae24c6630b decreases position by 1 and switches phase to 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, using control aa94f3ae24c6630b does not decrease position by 1 or does not switch phase to 0a4aa47fe9bf67f7.\"\n  }\n}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 641,
+  "public_formation_condition": "same_response_draft_challenge",
+  "request_sha256": "a806453a67865f132599f54be7c48ca1f4f2e2dbecd831128406b18ef7ff8c87",
+  "response_sha256": "42185dea13c464c13cacba596f380fd9ae0d52bb21c8743cbbd2e159593464e4",
+  "responsibility": "candidate",
+  "round": 2,
+  "same_response_draft_canonical": "{\"change\":\"In controller family 04a6549a17c2f498, when in phase b1a356711b7c0edf, using control aa94f3ae24c6630b decreases position by 1 and switches phase to 0a4aa47fe9bf67f7.\",\"counterevidence\":\"If in phase b1a356711b7c0edf, using control aa94f3ae24c6630b does not decrease position by 1 or does not switch phase to 0a4aa47fe9bf67f7.\"}",
+  "world_id": "world-h"
+}

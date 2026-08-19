@@ -1,0 +1,31 @@
+{
+  "call_id": "world-a-interpretation",
+  "candidate": {
+    "change": "43a13cb4e3e6aa9e",
+    "counterevidence": "49e88bb42ae5d914"
+  },
+  "candidate_refusal": null,
+  "candidate_utf8_length": 66,
+  "content": "{\"change\":\"43a13cb4e3e6aa9e\",\"counterevidence\":\"49e88bb42ae5d914\"}",
+  "governance": {
+    "admitted": false,
+    "candidate": {
+      "change": "43a13cb4e3e6aa9e",
+      "counterevidence": "49e88bb42ae5d914"
+    },
+    "occurrence_sha256": "58af2d4430b333e0634cc0e1259a3be5c470869521a03c51be5a7ef6eff8bd25",
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ]
+  },
+  "logical_index": 3,
+  "message": {
+    "content": "{\"change\":\"43a13cb4e3e6aa9e\",\"counterevidence\":\"49e88bb42ae5d914\"}",
+    "role": "assistant"
+  },
+  "occurrence_utf8_length": 678,
+  "prompt_tokens": 554,
+  "responsibility": "interpreter",
+  "world_id": "world-a"
+}

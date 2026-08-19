@@ -1,0 +1,14 @@
+{
+  "admitted": false,
+  "candidate": {
+    "controller_family": "tavi-42",
+    "counterevidence": "position_after did not reach the target",
+    "increasing_slot": "first",
+    "scope": "same_controller_family"
+  },
+  "refusals": [
+    "candidate_transition_mismatch"
+  ],
+  "runtime_derived_increasing_slot": "second",
+  "source_family": "tavi-42"
+}

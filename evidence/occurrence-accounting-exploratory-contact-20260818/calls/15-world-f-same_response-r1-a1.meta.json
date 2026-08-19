@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-f-same_response-r1",
+  "elapsed_seconds": 9.702736874998664,
+  "ended_at": "2026-08-18T12:51:03.987477+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 15,
+  "message": {
+    "content": "{\"account\":\"The device started in phase '41dd49a87033606b' with position 0 and target 2. The first action was '20de6d24dbe28705', which decreased the position to -1 and changed the phase to '9782ecf0f92e8157'. The second action was '9c3e211ff8cc41c2', which again decreased the position to -2 and changed the phase back to '41dd49a87033606b'. The target of 2 was not reached.\",\"change\":\"The control '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position. This change applies to the controller family '95d703a257e5a8fb' and device 'a4c67fdac36e0ef5'. Later observations of position changes in this phase should count against this change.\",\"counterevidence\":null}",
+    "role": "assistant"
+  },
+  "offer_key": "same_response",
+  "probe_id": null,
+  "relation": null,
+  "repetition": 1,
+  "request_sha256": "537f04c9e53d2c34e0b2076bd3b13fd32dab55b8f2965c208f958f6313818157",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"account\":\"The device started in phase '41dd49a87033606b' with position 0 and target 2. The first action was '20de6d24dbe28705', which decreased the position to -1 and changed the phase to '9782ecf0f92e8157'. The second action was '9c3e211ff8cc41c2', which again decreased the position to -2 and changed the phase back to '41dd49a87033606b'. The target of 2 was not reached.\",\"change\":\"The control '20de6d24dbe28705' in phase '41dd49a87033606b' decreases position. This change applies to the controller family '95d703a257e5a8fb' and device 'a4c67fdac36e0ef5'. Later observations of position changes in this phase should count against this change.\",\"counterevidence\":null}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787057463,
+    "id": "chatcmpl-CpYTavVO1MePtEDLvrlHHeX0QLjDzDZe",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 222,
+      "predicted_ms": 8503.6,
+      "predicted_n": 249,
+      "predicted_per_second": 29.281715979114725,
+      "predicted_per_token_ms": 34.151004016064256,
+      "prompt_ms": 1180.199,
+      "prompt_n": 387,
+      "prompt_per_second": 327.9108014834786,
+      "prompt_per_token_ms": 3.0496098191214474
+    },
+    "usage": {
+      "completion_tokens": 249,
+      "prompt_tokens": 609,
+      "prompt_tokens_details": {
+        "cached_tokens": 222
+      },
+      "total_tokens": 858
+    }
+  },
+  "response_sha256": "1843115b2c26da0fe71bddcabc69cc5b041dede921426d26bea77cdd113f74da",
+  "responsibility": "candidate",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T12:50:54.284719+00:00",
+  "world_id": "world-f"
+}

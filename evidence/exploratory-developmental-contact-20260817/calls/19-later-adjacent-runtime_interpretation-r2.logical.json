@@ -1,0 +1,27 @@
+{
+  "action_refusal": null,
+  "call_id": "later-adjacent-runtime_interpretation-r2",
+  "content": "{\"action\": \"rebuild_then_release\"}",
+  "environment_result": {
+    "action": "rebuild_then_release",
+    "artifact_revision_after": 42,
+    "artifact_revision_before": 41,
+    "authority_revision": 42,
+    "disposition": "accepted",
+    "observation": "released"
+  },
+  "logical_index": 19,
+  "message": {
+    "content": "{\"action\": \"rebuild_then_release\"}",
+    "role": "assistant"
+  },
+  "offer_key": "runtime_interpretation",
+  "probe_id": "later-adjacent",
+  "repetition": 2,
+  "responsibility": "actor",
+  "situation": {
+    "artifact_revision": 41,
+    "authority_revision": 42
+  },
+  "surfaced_action": "rebuild_then_release"
+}

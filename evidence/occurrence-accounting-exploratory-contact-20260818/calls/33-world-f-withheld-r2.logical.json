@@ -1,0 +1,37 @@
+{
+  "account_is_request_parent": false,
+  "account_receipt": "world-f-account",
+  "call_id": "world-f-withheld-r2",
+  "candidate": {
+    "change": "9c3e211ff8cc41c2",
+    "counterevidence": null
+  },
+  "candidate_comparison_sha256": "3063573eb40f10bf702cbd0588a28cef899d409632830cdd39045301537d0c15",
+  "candidate_comparison_utf8": "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}",
+  "candidate_refusal": null,
+  "completion_tokens": 29,
+  "condition": "withheld",
+  "content": "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}",
+  "fork_point": "post-account",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_not_nonempty_string"
+    ],
+    "source_occurrence_sha256": "faa329c565dee0a25ae3faeb980da2efc46349098e9774be9d63ba5dc1a7f97a"
+  },
+  "logical_index": 33,
+  "material_utf8_length": 17,
+  "message": {
+    "content": "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":null}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 556,
+  "public_formation_condition": "withheld_null",
+  "request_sha256": "151c29b698b772146e558894f0b73559c959a61f976afd08e6c068a0214853d4",
+  "responsibility": "candidate",
+  "round": 2,
+  "same_response_account": null,
+  "world_id": "world-f"
+}

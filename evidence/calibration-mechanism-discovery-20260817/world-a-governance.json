@@ -1,0 +1,12 @@
+{
+  "admitted": true,
+  "candidate": {
+    "controller_family": "noru-17",
+    "counterevidence": "position_after does not equal target",
+    "increasing_slot": "first",
+    "scope": "same_controller_family"
+  },
+  "refusals": [],
+  "runtime_derived_increasing_slot": "first",
+  "source_family": "noru-17"
+}

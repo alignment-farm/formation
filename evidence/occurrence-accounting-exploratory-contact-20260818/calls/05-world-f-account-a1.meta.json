@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-f-account",
+  "elapsed_seconds": 7.841191499996057,
+  "ended_at": "2026-08-18T12:50:23.184453+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 5,
+  "message": {
+    "content": "{\"account\":\"The device 'a4c67fdac36e0ef5' operated under controller family '95d703a257e5a8fb' with controls ['20de6d24dbe28705', '9c3e211ff8cc41c2']. Starting in phase '41dd49a87033606b' at position 0, action '20de6d24dbe28705' was taken, resulting in position -1 and phase '9782ecf0f92e8157'. Then, action '9c3e211ff8cc41c2' was taken, resulting in position -2 and phase '41dd49a87033606b'. The target of 2 was not reached.\"}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "probe_id": null,
+  "relation": null,
+  "repetition": null,
+  "request_sha256": "615fd49b7472701ae7f0fb13ef879d63cbea1bb7f18a096d73f04bbe2e9fde5f",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"account\":\"The device 'a4c67fdac36e0ef5' operated under controller family '95d703a257e5a8fb' with controls ['20de6d24dbe28705', '9c3e211ff8cc41c2']. Starting in phase '41dd49a87033606b' at position 0, action '20de6d24dbe28705' was taken, resulting in position -1 and phase '9782ecf0f92e8157'. Then, action '9c3e211ff8cc41c2' was taken, resulting in position -2 and phase '41dd49a87033606b'. The target of 2 was not reached.\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787057423,
+    "id": "chatcmpl-WeEG8ad9jOrs2vN1JCH8UnaC6JIF7XRc",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 203,
+      "predicted_ms": 6875.209,
+      "predicted_n": 203,
+      "predicted_per_second": 29.52637512546891,
+      "predicted_per_token_ms": 33.86802463054187,
+      "prompt_ms": 947.294,
+      "prompt_n": 353,
+      "prompt_per_second": 372.64038408350524,
+      "prompt_per_token_ms": 2.6835524079320114
+    },
+    "usage": {
+      "completion_tokens": 203,
+      "prompt_tokens": 556,
+      "prompt_tokens_details": {
+        "cached_tokens": 203
+      },
+      "total_tokens": 759
+    }
+  },
+  "response_sha256": "54e51b0c098e179d570856ef138e7dfb5ba6bf7a3a7f89ef5afe1e9073ff2c2a",
+  "responsibility": "account",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T12:50:15.343246+00:00",
+  "world_id": "world-f"
+}

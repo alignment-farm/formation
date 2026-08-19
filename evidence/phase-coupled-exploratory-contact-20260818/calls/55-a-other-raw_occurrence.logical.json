@@ -1,0 +1,60 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "a-other-raw_occurrence",
+  "content": "{\"actions\": [\"9bae416d06fdc594\"]}",
+  "environment_results": [
+    {
+      "action": "9bae416d06fdc594",
+      "before": {
+        "controller_family": "38e53c39643e5d39",
+        "controls": [
+          "94fd8e79c52d9b28",
+          "9bae416d06fdc594"
+        ],
+        "device": "7c459798a90ec52d",
+        "phase": "c59dba393c6b9ab5",
+        "position": 4,
+        "target": 5
+      },
+      "movement_direction": "increased",
+      "phase_after": "ed82435270fae71b",
+      "position_after": 5,
+      "target_reached": true
+    }
+  ],
+  "expected_actions": [
+    "hold"
+  ],
+  "expected_actions_match": false,
+  "logical_index": 55,
+  "message": {
+    "content": "{\"actions\": [\"9bae416d06fdc594\"]}",
+    "role": "assistant"
+  },
+  "offer_key": "raw_occurrence",
+  "offer_utf8_length": 691,
+  "probe_id": "a-other",
+  "prompt_tokens": 686,
+  "relation": "unobserved_family",
+  "request_sha256": "9ba06257a1cb474d41524decabaa8779e2edc4374307b080c90d93241ce13c06",
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "38e53c39643e5d39",
+    "controls": [
+      "94fd8e79c52d9b28",
+      "9bae416d06fdc594"
+    ],
+    "device": "7c459798a90ec52d",
+    "phase": "c59dba393c6b9ab5",
+    "position": 4,
+    "target": 5
+  },
+  "surfaced_actions": [
+    "9bae416d06fdc594"
+  ],
+  "warrant_labels": [
+    "unwarranted_guess"
+  ],
+  "world_id": "world-a"
+}

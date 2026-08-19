@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-a-interpretation",
+  "elapsed_seconds": 2.756120875000306,
+  "ended_at": "2026-08-18T02:19:32.179656+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 3,
+  "message": {
+    "content": "{\n  \"controller_family\": \"noru-17\",\n  \"increasing_slot\": \"first\",\n  \"scope\": \"same_controller_family\",\n  \"counterevidence\": \"position_after does not equal target\"\n}",
+    "role": "assistant"
+  },
+  "offer_key": null,
+  "probe_id": null,
+  "relation": null,
+  "repetition": null,
+  "request_sha256": "5338d960392372f6be1aaafe81b1052ab9127e6443459c90c5bb333b4dd03428",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"controller_family\": \"noru-17\",\n  \"increasing_slot\": \"first\",\n  \"scope\": \"same_controller_family\",\n  \"counterevidence\": \"position_after does not equal target\"\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787019572,
+    "id": "chatcmpl-kLvdxgjdzAyEWronjzPoJoYhwR49YC06",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 0,
+      "predicted_ms": 1694.592,
+      "predicted_n": 51,
+      "predicted_per_second": 30.095739859506,
+      "predicted_per_token_ms": 33.22729411764706,
+      "prompt_ms": 1046.31,
+      "prompt_n": 366,
+      "prompt_per_second": 349.8007282736474,
+      "prompt_per_token_ms": 2.8587704918032784
+    },
+    "usage": {
+      "completion_tokens": 51,
+      "prompt_tokens": 366,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 417
+    }
+  },
+  "response_sha256": "ccd439f115c2ea51abbba5a30bc21060456899561fbc72fa03102483deeda67b",
+  "responsibility": "interpreter",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T02:19:29.423532+00:00",
+  "world_id": "world-a"
+}

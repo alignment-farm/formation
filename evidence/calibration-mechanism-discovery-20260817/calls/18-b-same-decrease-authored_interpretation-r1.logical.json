@@ -1,0 +1,39 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "b-same-decrease-authored_interpretation-r1",
+  "content": "{\"action\": \"jora\"}",
+  "environment_result": {
+    "action": "jora",
+    "controller_family": "tavi-42",
+    "device_id": "stone-unit",
+    "increasing_slot": null,
+    "observation": "target_not_reached",
+    "position_after": 21,
+    "position_before": 20,
+    "target": 19
+  },
+  "expected_action": "havi",
+  "expected_action_match": false,
+  "logical_index": 18,
+  "message": {
+    "content": "{\"action\": \"jora\"}",
+    "role": "assistant"
+  },
+  "offer_key": "authored_interpretation",
+  "probe_id": "b-same-decrease",
+  "relation": "same_family_decrease",
+  "repetition": 1,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "tavi-42",
+    "device_id": "stone-unit",
+    "first_control": "havi",
+    "position": 20,
+    "second_control": "jora",
+    "target": 19
+  },
+  "surfaced_action": "jora",
+  "unwarranted_guess": false,
+  "world_id": "world-b"
+}

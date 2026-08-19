@@ -1,0 +1,108 @@
+{
+  "static_rule_ceiling": [
+    {
+      "author": "deterministic_protocol_constructor",
+      "evaluator_version": "executable-prediction-rule-evaluator-v1",
+      "proposal_coordinate": "svj01",
+      "raw": "RULE_AST_V1\n{\"predict\":{\"if\":[{\"and\":[{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"fira\"}]},{\"eq\":[{\"field\":\"mark\"},{\"lit\":\"mela\"}]}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuna\"}]}]},{\"lit\":\"ulmec\"},{\"if\":[{\"and\":[{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"firo\"}]},{\"eq\":[{\"field\":\"mark\"},{\"lit\":\"melo\"}]}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuna\"}]}]},{\"lit\":\"ulmec\"},{\"if\":[{\"and\":[{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"fira\"}]},{\"eq\":[{\"field\":\"mark\"},{\"lit\":\"melo\"}]}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuno\"}]}]},{\"lit\":\"ulmec\"},{\"if\":[{\"and\":[{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"firo\"}]},{\"eq\":[{\"field\":\"mark\"},{\"lit\":\"melo\"}]}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuni\"}]}]},{\"lit\":\"ulmec\"},{\"if\":[{\"and\":[{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"firo\"}]},{\"eq\":[{\"field\":\"mark\"},{\"lit\":\"mela\"}]}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"zuno\"}]}]},{\"lit\":\"ulmec\"},{\"lit\":\"zafren\"}]}]}]}]}]},\"when\":{\"bool\":true}}",
+      "recognizer_version": "executable-prediction-rule-recognizer-v1",
+      "vector": [
+        "ulmec",
+        "zafren",
+        "zafren",
+        "ulmec",
+        "zafren",
+        "ulmec",
+        "zafren",
+        "ulmec",
+        "ulmec"
+      ]
+    },
+    {
+      "author": "deterministic_protocol_constructor",
+      "evaluator_version": "executable-prediction-rule-evaluator-v1",
+      "proposal_coordinate": "svk01",
+      "raw": "RULE_AST_V1\n{\"predict\":{\"if\":[{\"and\":[{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"eq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}]},{\"lit\":\"vesan\"},{\"if\":[{\"and\":[{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"daro\"}]},{\"eq\":[{\"field\":\"mark\"},{\"lit\":\"kelo\"}]}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puna\"}]}]},{\"lit\":\"vesan\"},{\"if\":[{\"and\":[{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"dara\"}]},{\"eq\":[{\"field\":\"mark\"},{\"lit\":\"kelo\"}]}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puno\"}]}]},{\"lit\":\"vesan\"},{\"if\":[{\"and\":[{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"daro\"}]},{\"eq\":[{\"field\":\"mark\"},{\"lit\":\"kelo\"}]}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puni\"}]}]},{\"lit\":\"vesan\"},{\"if\":[{\"and\":[{\"and\":[{\"eq\":[{\"field\":\"facet\"},{\"lit\":\"daro\"}]},{\"eq\":[{\"field\":\"mark\"},{\"lit\":\"kela\"}]}]},{\"eq\":[{\"field\":\"zone\"},{\"lit\":\"puno\"}]}]},{\"lit\":\"vesan\"},{\"lit\":\"qoril\"}]}]}]}]}]},\"when\":{\"bool\":true}}",
+      "recognizer_version": "executable-prediction-rule-recognizer-v1",
+      "vector": [
+        "vesan",
+        "qoril",
+        "qoril",
+        "vesan",
+        "qoril",
+        "vesan",
+        "qoril",
+        "vesan",
+        "vesan"
+      ]
+    }
+  ],
+  "visible_material": [
+    {
+      "author": "deterministic_protocol_constructor",
+      "consequence_receipt": {
+        "authority": "environment_oracle",
+        "input": {
+          "facet": "fira",
+          "mark": "melo",
+          "zone": "zuna"
+        },
+        "value": "zafren"
+      },
+      "proposal_coordinate": "pvj01",
+      "raw": "CONTROLJQPXMV",
+      "recognized_rule": {
+        "kind": "literal_rule",
+        "raw": "CONTROLJQPXMV",
+        "tree": null
+      },
+      "recognizer_version": "executable-prediction-rule-recognizer-v1",
+      "trial_receipt": {
+        "authority": "rule_evaluator",
+        "evaluator_version": "executable-prediction-rule-evaluator-v1",
+        "input": {
+          "facet": "fira",
+          "mark": "melo",
+          "zone": "zuna"
+        },
+        "observation": {
+          "status": "prediction",
+          "value": "CONTROLJQPXMV"
+        }
+      }
+    },
+    {
+      "author": "deterministic_protocol_constructor",
+      "consequence_receipt": {
+        "authority": "environment_oracle",
+        "input": {
+          "facet": "dara",
+          "mark": "kelo",
+          "zone": "puna"
+        },
+        "value": "qoril"
+      },
+      "proposal_coordinate": "pvk01",
+      "raw": "CONTROLKZRWHD",
+      "recognized_rule": {
+        "kind": "literal_rule",
+        "raw": "CONTROLKZRWHD",
+        "tree": null
+      },
+      "recognizer_version": "executable-prediction-rule-recognizer-v1",
+      "trial_receipt": {
+        "authority": "rule_evaluator",
+        "evaluator_version": "executable-prediction-rule-evaluator-v1",
+        "input": {
+          "facet": "dara",
+          "mark": "kelo",
+          "zone": "puna"
+        },
+        "observation": {
+          "status": "prediction",
+          "value": "CONTROLKZRWHD"
+        }
+      }
+    }
+  ]
+}

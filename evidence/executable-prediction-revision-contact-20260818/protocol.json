@@ -1,0 +1,82 @@
+{
+  "acquisition_settings": {
+    "max_tokens": 128,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "endpoint": "http://localhost:12434/engines/llama.cpp/v1/chat/completions",
+  "inspect_tag": "docker.io/ai/qwen3:14B-Q6_K",
+  "instrument_versions": {
+    "canonical_json": "executable-prediction-canonical-json-v1",
+    "rule_evaluator": "executable-prediction-rule-evaluator-v1",
+    "rule_recognizer": "executable-prediction-rule-recognizer-v1",
+    "witness_constructor": "executable-prediction-witness-v1"
+  },
+  "invocation_coordinates": [
+    "iv01",
+    "iv02",
+    "iv03",
+    "iv04",
+    "iv05",
+    "iv06",
+    "iv07",
+    "iv08",
+    "iv09",
+    "iv10",
+    "iv11",
+    "iv12",
+    "iv13",
+    "iv14",
+    "iv15",
+    "iv16",
+    "iv17",
+    "iv18",
+    "iv19",
+    "iv20",
+    "iv21",
+    "iv22",
+    "iv23",
+    "iv24",
+    "iv25",
+    "iv26",
+    "iv27",
+    "iv28",
+    "iv29",
+    "iv30",
+    "iv31",
+    "iv32",
+    "iv33",
+    "iv34",
+    "iv35"
+  ],
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "ordinary_settings": {
+    "max_tokens": 512,
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "physical_call_ceiling": 38,
+  "physical_completion_contingency": 21888,
+  "planned_completion_allowance": 18816,
+  "planned_logical_calls": 35,
+  "protocol": "executable-prediction-revision-contact-v1",
+  "same_response_settings": {
+    "max_tokens": 1024,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "terminal_summary": {
+    "formation_verdict": null,
+    "validation_verdict": null
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "account_is_request_parent": false,
+  "account_receipt": null,
+  "call_id": "world-f-occurrence_repeated-r1",
+  "candidate": {
+    "change": "9c3e211ff8cc41c2",
+    "counterevidence": "movement_direction"
+  },
+  "candidate_comparison_sha256": "054fdb3c1ce202065fb6f4972990144f63ef5c3bc49bb595110bb9b607ab60da",
+  "candidate_comparison_utf8": "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":\"movement_direction\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 30,
+  "condition": "occurrence_repeated",
+  "content": "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":\"movement_direction\"}",
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "faa329c565dee0a25ae3faeb980da2efc46349098e9774be9d63ba5dc1a7f97a"
+  },
+  "logical_index": 21,
+  "material_utf8_length": 695,
+  "message": {
+    "content": "{\"change\":\"9c3e211ff8cc41c2\",\"counterevidence\":\"movement_direction\"}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 860,
+  "public_formation_condition": "exact_occurrence_repeated",
+  "request_sha256": "c11feb615b25a3e69a5c4abe0b84ba7c8213a88d73d8845feba1cd3705797ca1",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_account": null,
+  "world_id": "world-f"
+}

@@ -1,0 +1,40 @@
+{
+  "call_id": "world-g-same_response_draft_challenge-r1",
+  "candidate": {
+    "change": "In the controller family 'cd32522fbc89d0cc', using the control '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' increases position by 1 and moves to phase 'de7c867e5bd687b5'.",
+    "counterevidence": "If in phase 'ccdabc1e1f6ca491', using control '7e81cf4ce9afe7ad' does not increase position by 1 or does not transition to phase 'de7c867e5bd687b5', this would count against the claim."
+  },
+  "candidate_comparison_refusal": null,
+  "candidate_comparison_sha256": "760f6b4e68bd36ea27e3c241cc9ff2e55d7b0f07caeac254859f99ba333f32bb",
+  "candidate_comparison_utf8": "{\"change\":\"In the controller family 'cd32522fbc89d0cc', using the control '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' increases position by 1 and moves to phase 'de7c867e5bd687b5'.\",\"counterevidence\":\"If in phase 'ccdabc1e1f6ca491', using control '7e81cf4ce9afe7ad' does not increase position by 1 or does not transition to phase 'de7c867e5bd687b5', this would count against the claim.\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 331,
+  "condition": "same_response_draft_challenge",
+  "content": "{\n  \"draft\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', using the control '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' increases position by 1 and moves to phase 'de7c867e5bd687b5'.\",\n    \"counterevidence\": \"If in phase 'ccdabc1e1f6ca491', using control '7e81cf4ce9afe7ad' does not increase position by 1 or does not transition to phase 'de7c867e5bd687b5', this would count against the claim.\"\n  },\n  \"final\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', using the control '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' increases position by 1 and moves to phase 'de7c867e5bd687b5'.\",\n    \"counterevidence\": \"If in phase 'ccdabc1e1f6ca491', using control '7e81cf4ce9afe7ad' does not increase position by 1 or does not transition to phase 'de7c867e5bd687b5', this would count against the claim.\"\n  }\n}",
+  "draft_is_request_parent": false,
+  "draft_receipt": null,
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "f6d87534c88f64138cf5d540d37146ebc2eea3d6f05846c658487243bf2c1881"
+  },
+  "governance_deferred": false,
+  "logical_index": 12,
+  "material_utf8_length": 17,
+  "message": {
+    "content": "{\n  \"draft\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', using the control '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' increases position by 1 and moves to phase 'de7c867e5bd687b5'.\",\n    \"counterevidence\": \"If in phase 'ccdabc1e1f6ca491', using control '7e81cf4ce9afe7ad' does not increase position by 1 or does not transition to phase 'de7c867e5bd687b5', this would count against the claim.\"\n  },\n  \"final\": {\n    \"change\": \"In the controller family 'cd32522fbc89d0cc', using the control '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' increases position by 1 and moves to phase 'de7c867e5bd687b5'.\",\n    \"counterevidence\": \"If in phase 'ccdabc1e1f6ca491', using control '7e81cf4ce9afe7ad' does not increase position by 1 or does not transition to phase 'de7c867e5bd687b5', this would count against the claim.\"\n  }\n}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 622,
+  "public_formation_condition": "same_response_draft_challenge",
+  "request_sha256": "bbc4821ce6703952fc7484c768cd8f6847d8a735c39459545fcc758b76468ca6",
+  "response_sha256": "223730755335de72b7a734e1a1f0889c50c3a81bc0004553583e1fd53a5e3639",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_draft_canonical": "{\"change\":\"In the controller family 'cd32522fbc89d0cc', using the control '7e81cf4ce9afe7ad' in phase 'ccdabc1e1f6ca491' increases position by 1 and moves to phase 'de7c867e5bd687b5'.\",\"counterevidence\":\"If in phase 'ccdabc1e1f6ca491', using control '7e81cf4ce9afe7ad' does not increase position by 1 or does not transition to phase 'de7c867e5bd687b5', this would count against the claim.\"}",
+  "world_id": "world-g"
+}

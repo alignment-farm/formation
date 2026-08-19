@@ -1,0 +1,157 @@
+{
+  "account_semantic_classes_emitted": [
+    "indeterminate",
+    "not_classified"
+  ],
+  "actor_settings": {
+    "max_tokens": 128,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "author_settings": {
+    "max_tokens": 256,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "temperature": 0.6,
+    "top_p": 0.95
+  },
+  "conditions": [
+    "direct",
+    "withheld",
+    "delivered",
+    "occurrence_repeated",
+    "static_expanded",
+    "same_response",
+    "restatement",
+    "content_control"
+  ],
+  "content_control_alphabet": "ghijkmnpqrstuvwxyz",
+  "content_control_derivation": "sha256(seed) bytes mapped modulo alphabet, repeated then truncated to the ASCII character count required for exact canonical object byte length",
+  "content_control_seed": "formation.occurrence-accounting.content-control.v1",
+  "endpoint": "http://localhost:12434/engines/llama.cpp/v1/chat/completions",
+  "formation_and_validation_verdicts_forbidden": true,
+  "inspect_tag": "docker.io/ai/qwen3:14B-Q6_K",
+  "interface_state": {
+    "controller_family": "c5feb6f0d132c08e",
+    "controls": [
+      "3185f44dddd55df2",
+      "9f66ade0f8ea381a"
+    ],
+    "device": "0ac23ba43c882959",
+    "phase": "50679bf78e69e0d6",
+    "position": 3,
+    "target": 3
+  },
+  "model": "ai/qwen3:14B-Q6_K",
+  "model_digest": "sha256:2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219",
+  "physical_call_ceiling": 40,
+  "planned_logical_calls": 37,
+  "protocol": "occurrence-accounting-exploratory-contact-v0",
+  "public_formation_conditions": {
+    "content_control": "account_content_control",
+    "delivered": "exact_account_output",
+    "direct": "direct_null",
+    "occurrence_repeated": "exact_occurrence_repeated",
+    "restatement": "deterministic_restatement",
+    "same_response": "same_response_sequence",
+    "static_expanded": "static_expanded_instruction",
+    "withheld": "withheld_null"
+  },
+  "public_rule": "Each device has two ordered controls and one of two public phases. In each\nphase, exactly one ordered slot increases position by one and the other\ndecreases it by one. The increasing slot is opposite in the two phases. Every\ncontrol action toggles phase. Hold changes neither position nor phase. The\nphase-to-slot profile is stable within one controller family. Control strings\nhave no reusable meaning across devices.\nUse current position, target, phase, and any warranted family evidence to choose\nan action or committed action sequence. If no warranted profile evidence applies\nto the current family, hold rather than guess a control.",
+  "round_orders": {
+    "round-1-world-e": [
+      "direct",
+      "withheld",
+      "delivered",
+      "occurrence_repeated",
+      "static_expanded",
+      "same_response",
+      "restatement",
+      "content_control"
+    ],
+    "round-1-world-f": [
+      "static_expanded",
+      "same_response",
+      "restatement",
+      "content_control",
+      "direct",
+      "withheld",
+      "delivered",
+      "occurrence_repeated"
+    ],
+    "round-2-world-e": [
+      "delivered",
+      "occurrence_repeated",
+      "static_expanded",
+      "same_response",
+      "restatement",
+      "content_control",
+      "direct",
+      "withheld"
+    ],
+    "round-2-world-f": [
+      "restatement",
+      "content_control",
+      "direct",
+      "withheld",
+      "delivered",
+      "occurrence_repeated",
+      "static_expanded",
+      "same_response"
+    ]
+  },
+  "samples_per_condition": 2,
+  "token_delta_ceiling": 24,
+  "worlds": [
+    {
+      "profile": {
+        "controller_family": "c378816a8c4ed06f",
+        "phase_zero_increasing_slot": 0,
+        "phases": [
+          "72b4369223095ae5",
+          "96e6b778c4c3439e"
+        ]
+      },
+      "state": {
+        "controller_family": "c378816a8c4ed06f",
+        "controls": [
+          "91dd8389d9c3730a",
+          "c07e743cb43592c8"
+        ],
+        "device": "adfc8f4a1b01d510",
+        "phase": "72b4369223095ae5",
+        "position": 0,
+        "target": 2
+      },
+      "world_id": "world-e"
+    },
+    {
+      "profile": {
+        "controller_family": "95d703a257e5a8fb",
+        "phase_zero_increasing_slot": 1,
+        "phases": [
+          "41dd49a87033606b",
+          "9782ecf0f92e8157"
+        ]
+      },
+      "state": {
+        "controller_family": "95d703a257e5a8fb",
+        "controls": [
+          "20de6d24dbe28705",
+          "9c3e211ff8cc41c2"
+        ],
+        "device": "a4c67fdac36e0ef5",
+        "phase": "41dd49a87033606b",
+        "position": 0,
+        "target": 2
+      },
+      "world_id": "world-f"
+    }
+  ]
+}

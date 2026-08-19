@@ -1,0 +1,39 @@
+{
+  "action_refusal": null,
+  "activated": true,
+  "call_id": "a-same-decrease-governed_candidate-r2",
+  "content": "{\"action\": \"vask\"}",
+  "environment_result": {
+    "action": "vask",
+    "controller_family": "noru-17",
+    "device_id": "quill-unit",
+    "increasing_slot": null,
+    "observation": "target_reached",
+    "position_after": 9,
+    "position_before": 10,
+    "target": 9
+  },
+  "expected_action": "vask",
+  "expected_action_match": true,
+  "logical_index": 47,
+  "message": {
+    "content": "{\"action\": \"vask\"}",
+    "role": "assistant"
+  },
+  "offer_key": "governed_candidate",
+  "probe_id": "a-same-decrease",
+  "relation": "same_family_decrease",
+  "repetition": 2,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "noru-17",
+    "device_id": "quill-unit",
+    "first_control": "nemi",
+    "position": 10,
+    "second_control": "vask",
+    "target": 9
+  },
+  "surfaced_action": "vask",
+  "unwarranted_guess": false,
+  "world_id": "world-a"
+}

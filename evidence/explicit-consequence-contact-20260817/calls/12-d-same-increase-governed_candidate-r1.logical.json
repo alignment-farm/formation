@@ -1,0 +1,41 @@
+{
+  "action_refusal": null,
+  "activated": true,
+  "call_id": "d-same-increase-governed_candidate-r1",
+  "content": "{\"action\": \"juno\"}",
+  "environment_result": {
+    "action": "juno",
+    "controller_family": "vesa-58",
+    "device_id": "harbor-unit",
+    "increasing_slot": null,
+    "movement_direction": "increased",
+    "observation": "target_reached",
+    "position_after": 23,
+    "position_before": 22,
+    "selected_slot": "second",
+    "target": 23
+  },
+  "expected_action": "juno",
+  "expected_action_match": true,
+  "logical_index": 12,
+  "message": {
+    "content": "{\"action\": \"juno\"}",
+    "role": "assistant"
+  },
+  "offer_key": "governed_candidate",
+  "probe_id": "d-same-increase",
+  "relation": "same_family_increase",
+  "repetition": 1,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "vesa-58",
+    "device_id": "harbor-unit",
+    "first_control": "ivar",
+    "position": 22,
+    "second_control": "juno",
+    "target": 23
+  },
+  "surfaced_action": "juno",
+  "unwarranted_guess": false,
+  "world_id": "world-d"
+}

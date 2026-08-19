@@ -1,0 +1,73 @@
+{
+  "attempt_index": 1,
+  "call_id": "iv21",
+  "condition": "same_response",
+  "elapsed_seconds": 6.881322540997644,
+  "ended_at": "2026-08-18T23:46:35.338538+00:00",
+  "error": null,
+  "finish_reason": "stop",
+  "http_status": 200,
+  "logical_index": 21,
+  "message": {
+    "content": "{\"parent\": \"RULE_AST_V1\\n{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"dara\\\"}]},{\\\"eq\\\":[{\\\"field\\\":\\\"zone\\\"},{\\\"lit\\\":\\\"puna\\\"}]}]},\\\"predict\\\":{\\\"if\\\":[{\\\"exists\\\":\\\"mark\\\"},{\\\"lit\\\":\\\"vesan\\\"},{\\\"lit\\\":\\\"qoril\\\"}]}}\", \"successor\": \"RULE_AST_V1\\n{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"dara\\\"}]},{\\\"eq\\\":[{\\\"field\\\":\\\"zone\\\"},{\\\"lit\\\":\\\"puna\\\"}]}]},\\\"predict\\\":{\\\"if\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"mark\\\"},{\\\"lit\\\":\\\"kela\\\"}]},{\\\"lit\\\":\\\"vesan\\\"},{\\\"lit\\\":\\\"qoril\\\"}]}}\"}",
+    "role": "assistant"
+  },
+  "request_sha256": "e133049a480c164d92d75c354ba226da8917bb1eb2281dff3c61fe930ac7a5af",
+  "response_envelope": {
+    "_formation_transport": {
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "1437",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 18 Aug 2026 23:46:35 GMT",
+        "Server": "llama.cpp"
+      }
+    },
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"parent\": \"RULE_AST_V1\\n{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"dara\\\"}]},{\\\"eq\\\":[{\\\"field\\\":\\\"zone\\\"},{\\\"lit\\\":\\\"puna\\\"}]}]},\\\"predict\\\":{\\\"if\\\":[{\\\"exists\\\":\\\"mark\\\"},{\\\"lit\\\":\\\"vesan\\\"},{\\\"lit\\\":\\\"qoril\\\"}]}}\", \"successor\": \"RULE_AST_V1\\n{\\\"when\\\":{\\\"and\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"facet\\\"},{\\\"lit\\\":\\\"dara\\\"}]},{\\\"eq\\\":[{\\\"field\\\":\\\"zone\\\"},{\\\"lit\\\":\\\"puna\\\"}]}]},\\\"predict\\\":{\\\"if\\\":[{\\\"eq\\\":[{\\\"field\\\":\\\"mark\\\"},{\\\"lit\\\":\\\"kela\\\"}]},{\\\"lit\\\":\\\"vesan\\\"},{\\\"lit\\\":\\\"qoril\\\"}]}}\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787096795,
+    "id": "chatcmpl-Hgzh9XDj34JsZ6zmhQ2tATGaTjZFKhFK",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 259,
+      "predicted_ms": 6144.776,
+      "predicted_n": 180,
+      "predicted_per_second": 29.29317521094341,
+      "predicted_per_token_ms": 34.13764444444444,
+      "prompt_ms": 723.986,
+      "prompt_n": 193,
+      "prompt_per_second": 266.57974049221946,
+      "prompt_per_token_ms": 3.7512227979274613
+    },
+    "usage": {
+      "completion_tokens": 180,
+      "prompt_tokens": 452,
+      "prompt_tokens_details": {
+        "cached_tokens": 259
+      },
+      "total_tokens": 632
+    }
+  },
+  "response_sha256": "5e30c47f1af9468e6b83a24a15bd32a8b4d2ce26c917e1fec348951faea10eaf",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T23:46:28.457348+00:00",
+  "usage": {
+    "completion_tokens": 180,
+    "prompt_tokens": 452,
+    "prompt_tokens_details": {
+      "cached_tokens": 259
+    },
+    "total_tokens": 632
+  },
+  "world_id": "K"
+}

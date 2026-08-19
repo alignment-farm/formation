@@ -1,0 +1,40 @@
+{
+  "call_id": "world-h-same_response_draft_challenge-r1",
+  "candidate": {
+    "change": "In controller family 04a6549a17c2f498, action aa94f3ae24c6630b decreases position during phase b1a356711b7c0edf, and action a3dd902b2fe11658 decreases position during phase 0a4aa47fe9bf67f7.",
+    "counterevidence": "If in phase b1a356711b7c0edf, action aa94f3ae24c6630b increases position instead of decreasing it, or if in phase 0a4aa47fe9bf67f7, action a3dd902b2fe11658 increases position instead of decreasing it."
+  },
+  "candidate_comparison_refusal": null,
+  "candidate_comparison_sha256": "bbf97aa67d59089db2da52d8ed4cf8a805be6e371e9cf4cb8783686657198f67",
+  "candidate_comparison_utf8": "{\"change\":\"In controller family 04a6549a17c2f498, action aa94f3ae24c6630b decreases position during phase b1a356711b7c0edf, and action a3dd902b2fe11658 decreases position during phase 0a4aa47fe9bf67f7.\",\"counterevidence\":\"If in phase b1a356711b7c0edf, action aa94f3ae24c6630b increases position instead of decreasing it, or if in phase 0a4aa47fe9bf67f7, action a3dd902b2fe11658 increases position instead of decreasing it.\"}",
+  "candidate_refusal": null,
+  "completion_tokens": 391,
+  "condition": "same_response_draft_challenge",
+  "content": "{\n  \"draft\": {\n    \"change\": \"In controller family 04a6549a17c2f498, action aa94f3ae24c6630b decreases position during phase b1a356711b7c0edf, and action a3dd902b2fe11658 decreases position during phase 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, action aa94f3ae24c6630b increases position instead of decreasing it, or if in phase 0a4aa47fe9bf67f7, action a3dd902b2fe11658 increases position instead of decreasing it.\"\n  },\n  \"final\": {\n    \"change\": \"In controller family 04a6549a17c2f498, action aa94f3ae24c6630b decreases position during phase b1a356711b7c0edf, and action a3dd902b2fe11658 decreases position during phase 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, action aa94f3ae24c6630b increases position instead of decreasing it, or if in phase 0a4aa47fe9bf67f7, action a3dd902b2fe11658 increases position instead of decreasing it.\"\n  }\n}",
+  "draft_is_request_parent": false,
+  "draft_receipt": null,
+  "fork_point": "occurrence-root",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "change_copies_acquisition_control",
+      "counterevidence_copies_acquisition_control"
+    ],
+    "source_occurrence_sha256": "871eda706782211de643424ca2b61c771b5d1cfabfc49bd0a1334b6d2855659a"
+  },
+  "governance_deferred": false,
+  "logical_index": 19,
+  "material_utf8_length": 17,
+  "message": {
+    "content": "{\n  \"draft\": {\n    \"change\": \"In controller family 04a6549a17c2f498, action aa94f3ae24c6630b decreases position during phase b1a356711b7c0edf, and action a3dd902b2fe11658 decreases position during phase 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, action aa94f3ae24c6630b increases position instead of decreasing it, or if in phase 0a4aa47fe9bf67f7, action a3dd902b2fe11658 increases position instead of decreasing it.\"\n  },\n  \"final\": {\n    \"change\": \"In controller family 04a6549a17c2f498, action aa94f3ae24c6630b decreases position during phase b1a356711b7c0edf, and action a3dd902b2fe11658 decreases position during phase 0a4aa47fe9bf67f7.\",\n    \"counterevidence\": \"If in phase b1a356711b7c0edf, action aa94f3ae24c6630b increases position instead of decreasing it, or if in phase 0a4aa47fe9bf67f7, action a3dd902b2fe11658 increases position instead of decreasing it.\"\n  }\n}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 641,
+  "public_formation_condition": "same_response_draft_challenge",
+  "request_sha256": "a806453a67865f132599f54be7c48ca1f4f2e2dbecd831128406b18ef7ff8c87",
+  "response_sha256": "483a1dde59071c3d88902a2b1d9ee82525572a4dccf9571f2c44072253c51ed8",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_draft_canonical": "{\"change\":\"In controller family 04a6549a17c2f498, action aa94f3ae24c6630b decreases position during phase b1a356711b7c0edf, and action a3dd902b2fe11658 decreases position during phase 0a4aa47fe9bf67f7.\",\"counterevidence\":\"If in phase b1a356711b7c0edf, action aa94f3ae24c6630b increases position instead of decreasing it, or if in phase 0a4aa47fe9bf67f7, action a3dd902b2fe11658 increases position instead of decreasing it.\"}",
+  "world_id": "world-h"
+}

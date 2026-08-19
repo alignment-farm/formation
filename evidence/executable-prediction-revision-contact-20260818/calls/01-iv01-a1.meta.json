@@ -1,0 +1,73 @@
+{
+  "attempt_index": 1,
+  "call_id": "iv01",
+  "condition": "disposable_interface",
+  "elapsed_seconds": 4.24814445800439,
+  "ended_at": "2026-08-18T23:45:39.081578+00:00",
+  "error": null,
+  "finish_reason": "stop",
+  "http_status": 200,
+  "logical_index": 1,
+  "message": {
+    "content": "{\"prediction\":\"cavo\"}",
+    "role": "assistant"
+  },
+  "request_sha256": "8eed9cf9ace25f5abaa4c482cb19dfad457e0c2ec75d61d1cc6af519e7620749",
+  "response_envelope": {
+    "_formation_transport": {
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "766",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 18 Aug 2026 23:45:39 GMT",
+        "Server": "llama.cpp"
+      }
+    },
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"prediction\":\"cavo\"}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787096739,
+    "id": "chatcmpl-2MuLD5mWctDvB3Sv2AGK0aiDqt4IW274",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 0,
+      "predicted_ms": 343.527,
+      "predicted_n": 11,
+      "predicted_per_second": 32.0207727485758,
+      "predicted_per_token_ms": 31.22972727272727,
+      "prompt_ms": 360.488,
+      "prompt_n": 101,
+      "prompt_per_second": 280.17576174518985,
+      "prompt_per_token_ms": 3.5691881188118812
+    },
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 101,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 112
+    }
+  },
+  "response_sha256": "15180090621af7b1fd2b7a9775b942fa3e6ad29f19350242a40523ffe8741e5b",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T23:45:34.833482+00:00",
+  "usage": {
+    "completion_tokens": 11,
+    "prompt_tokens": 101,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 112
+  },
+  "world_id": null
+}

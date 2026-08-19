@@ -1,0 +1,60 @@
+{
+  "activated": null,
+  "attempt_index": 1,
+  "call_id": "world-e-same_response-r1",
+  "elapsed_seconds": 10.408261625001614,
+  "ended_at": "2026-08-18T12:50:46.826443+00:00",
+  "error": null,
+  "http_status": 200,
+  "logical_index": 11,
+  "message": {
+    "content": "{\n  \"account\": \"The device 'adfc8f4a1b01d510' was operated in two steps. In the first step, the action '91dd8389d9c3730a' was taken, which increased the position from 0 to 1, and the phase changed from '72b4369223095ae5' to '96e6b778c4c3439e'. In the second step, the action 'c07e743cb43592c8' was taken, which increased the position from 1 to 2, reaching the target, and the phase changed back to '72b4369223095ae5'.\",\n  \"change\": \"In the controller family 'c378816a8c4ed06f', the action '91dd8389d9c3730a' is associated with increasing position during phase '72b4369223095ae5', and the action 'c07e",
+    "role": "assistant"
+  },
+  "offer_key": "same_response",
+  "probe_id": null,
+  "relation": null,
+  "repetition": 1,
+  "request_sha256": "cab3d1edf78452df397bceb4649ad99ac6c3d6aa4702c71014e6fb2915a84ab8",
+  "response_envelope": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "message": {
+          "content": "{\n  \"account\": \"The device 'adfc8f4a1b01d510' was operated in two steps. In the first step, the action '91dd8389d9c3730a' was taken, which increased the position from 0 to 1, and the phase changed from '72b4369223095ae5' to '96e6b778c4c3439e'. In the second step, the action 'c07e743cb43592c8' was taken, which increased the position from 1 to 2, reaching the target, and the phase changed back to '72b4369223095ae5'.\",\n  \"change\": \"In the controller family 'c378816a8c4ed06f', the action '91dd8389d9c3730a' is associated with increasing position during phase '72b4369223095ae5', and the action 'c07e",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1787057446,
+    "id": "chatcmpl-lJfR37JU9o9csqJL05wH2e8nULwA5i1N",
+    "model": "/Users/macos-user/.docker/models/bundles/sha256/2853c9d6ea67819135d15d12d6d9d02eb8932ac56cb1531bd52aa0816075c219/model/model.gguf",
+    "object": "chat.completion",
+    "system_fingerprint": "b1-72874f5",
+    "timings": {
+      "cache_n": 0,
+      "predicted_ms": 8771.95,
+      "predicted_n": 256,
+      "predicted_per_second": 29.18393287695438,
+      "predicted_per_token_ms": 34.2654296875,
+      "prompt_ms": 1614.088,
+      "prompt_n": 620,
+      "prompt_per_second": 384.1178423976884,
+      "prompt_per_token_ms": 2.6033677419354837
+    },
+    "usage": {
+      "completion_tokens": 256,
+      "prompt_tokens": 620,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 876
+    }
+  },
+  "response_sha256": "3dcd6da9940c820c5d2ba46e9fa66b91fbc31d98e55eeb77f3e923592abff312",
+  "responsibility": "candidate",
+  "retry_of_attempt": null,
+  "started_at": "2026-08-18T12:50:36.418168+00:00",
+  "world_id": "world-e"
+}

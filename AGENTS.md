@@ -31,21 +31,62 @@ Stop when the task's scope and authority are clear.
   explanation is evidence to inspect, never the ground truth of what changed.
 - Specifications own mechanism contracts; evidence and scorers own verdicts;
   plans do not establish findings.
-- Stay on the current lifecycle boundary named by the root README and plan.
-  Work that only unblocks that boundary may satisfy an explicit user request
-  but must not be counted as lifecycle progress. Do not skip the boundary or
-  open another admission or model-search loop unless the user explicitly
-  changes the governing route. Process routing cannot license model contact
-  or establish a finding.
-- For public-facing findings and explanations, follow [STYLE_GUIDE.md](STYLE_GUIDE.md).
-  Plain language is a check on whether the writer understands the causal account,
-  not a cosmetic rewrite after technical work. Inter-agent and lab shorthand is
-  allowed, but it must be rewritten before publication.
+- Stay with the current empirical problem named by the root README and plan.
+  Do not open another admission or model-search loop unless the user explicitly
+  changes the route. Plans organize work; they do not turn every reversible
+  implementation step into a new research boundary, license model contact, or
+  establish a finding.
+- Write every README and project update according to
+  [STYLE_GUIDE.md](STYLE_GUIDE.md). This includes current-state summaries,
+  evidence accounts, release notes, and public-facing findings or explanations.
+  Plain language is a check on whether the writer understands the causal
+  account, not a cosmetic rewrite after technical work. Inter-agent and lab
+  shorthand is allowed, but it must be rewritten before it enters a README or
+  project update.
 - Preserve unrelated work in a dirty tree.
+- Use an evidence-producing research loop by default: state one concrete idea,
+  build only the instrument needed to test it, run the authorized test, analyze
+  the retained evidence, document the finding under `STYLE_GUIDE.md`, and use
+  that result to choose the next test. Do not turn routine iteration into a
+  chain of process documents or review gates.
+- Move quickly enough to encounter reality, then become deliberate when
+  interpreting evidence or making a claim. Keep reversible exploratory work
+  light. Apply stronger controls when an observation may become a finding.
+- Before exploratory contact, record only the prospective facts needed to
+  interpret it: the question, the observation that would matter, the exact
+  model and interface, the budget and stopping condition, and the evidence
+  destination. This note may live with the runner or plan. It does not require
+  a separate decision document or model review.
+- Exploration is for discovery. It may produce variance, bad behavior, a null
+  result, or a candidate phenomenon. Once repeated evidence identifies a
+  thesis-relevant phenomenon, move it into a stricter validation phase with
+  frozen comparisons, prospective transfer and non-transfer cases, and stronger
+  review. Do not demand validation-grade certainty before allowing discovery.
+- A failure before any participant-model request is an operational failure, not
+  a scientific contact or a discovery. Retain it when it helps diagnose the
+  apparatus, repair it directly, and do not invent a new research route merely
+  to repeat the intended experiment. Human authorization governs model contact;
+  a mechanical one-use rule does not manufacture scientific finality.
+- Do not run Cursor or other model peer reviews automatically. They require
+  explicit human approval and should normally be reserved for end-of-day or
+  end-of-week synthesis, or for a specifically requested high-risk audit.
+  Treat these reviews as internal model critique, not independent external peer
+  review, experimental evidence, or scientific authority. Different model
+  families on the same machine do not make the review external. Do not convene
+  recursive model reviews in response to model reviews.
+- When a human approves a model review, use the Cursor `agent` CLI in read-only
+  mode. Prefer Composer 2.5 and Grok 4.6; use Kimi K3 or GLM 5.2 only when a
+  third frontier view is requested. Record the exact model identifiers, review
+  question, and terminal verdict.
 
 ## Documentation ownership
 
-- `README.md` owns the whole-project story and current state.
+- `README.md` owns the concise whole-project story, current state, and task
+  routing.
+- `docs/RESEARCH_HISTORY.md` owns the chronological research narrative and
+  links from closed routes to the problems they exposed. It does not license
+  work or override specifications, evidence, scorers, the root README, or the
+  plan.
 - `docs/CONCEPT.md` owns the conceptual frame and research questions.
 - `docs/AUTHORITY.md` owns role authority and permitted information flow.
 - `docs/RECORD.md` owns developmental-lineage and trajectory-record semantics.
@@ -103,6 +144,112 @@ Stop when the task's scope and authority are clear.
   constrained computation gate.
 - `docs/QWEN_COMPUTATION_GATE.md` owns the fresh successor gate for the exact
   installed Qwen 3.5 9B MLX package.
+- `docs/EXPLORATORY_DEVELOPMENTAL_CONTACT.md` owns the bounded Qwen3 14B
+  developmental contact, its Docker interface, offers, budget, and stopping
+  rule.
+- `docs/CALIBRATION_INFORMATION_GAP.md` owns the post-contact information-gap
+  problem, its opaque-control calibration specimen, leakage pressures, and the
+  boundary before a mechanism-discovery contact is frozen.
+- `docs/CALIBRATION_MECHANISM_DISCOVERY.md` owns the bounded two-world
+  exploratory contact with raw occurrence, authored interpretation, and
+  scope-gated candidate offers.
+- `docs/MUSE_COUNTER_PRIOR_SUCCESSOR.md` owns the single larger-model
+  operational successor on the consumed counter-prior calibration packet.
+- `docs/EXPLICIT_CONSEQUENCE_REPRESENTATION.md` owns the environment-issued
+  selected-slot and movement-direction representation after the counter-prior
+  failure.
+- `docs/EXPLICIT_CONSEQUENCE_CONTACT.md` owns the final fresh two-world Qwen
+  contact using that representation.
+- `docs/AVAILABILITY_TO_INFLUENCE.md` owns the post-contact distinction between
+  delivery authorization, candidate presence, and attributable practice
+  influence, plus the mechanism choice before validation.
+- `docs/CALIBRATION_APPLICATOR_MECHANISM.md` owns the selected pre-validation
+  mechanism: model-authored situated calibration knowledge used by one frozen
+  generic applicator and compared with transient raw derivation.
+- `docs/CALIBRATION_APPLICATOR_VALIDATION.md` owns the fresh prospective
+  calibration-fact comparison rejected by cold causal and leakage review.
+- `docs/CALIBRATION_APPLICATOR_VALIDATION_REVIEW.md` owns the two-model review
+  verdict and counterexamples that closed that draft before implementation.
+- `docs/PROCEDURAL_INFLUENCE_PROBLEM.md` owns the current problem of leaving an
+  acquired conditional relation at risk in later cold-model action.
+- `docs/PROCEDURAL_DOMAIN_SELECTION.md` owns the comparison that selects a
+  phase-coupled opaque-control domain for mechanism review only.
+- `docs/PHASE_COUPLED_CONTROL_PROPOSAL.md` owns that pre-contact mechanism
+  proposal, its deterministic specimen obligations, and the boundary before any
+  exploratory charter or contact.
+- `docs/PHASE_COUPLED_CONTROL_REVIEW.md` owns the independent review history
+  and terminal specimen-readiness verdict for that proposal.
+- `docs/PHASE_COUPLED_CONTROL_SPECIMEN.md` owns the deterministic implementation
+  result, independent code-review verdicts, and boundary before any charter.
+- `docs/PHASE_COUPLED_EXPLORATORY_CHARTER.md` owns the completed strict-budget
+  participant-model contact after the conforming specimen.
+- `docs/EXPERIENCE_GROUNDED_AUTHORSHIP.md` owns the post-contact problem of
+  revisable model authorship without answer-shaped runtime assistance.
+- `docs/AUTHORSHIP_MECHANISM_SELECTION.md` owns the analytical choice among
+  added experience, interpretive process, and governor feedback before any
+  authorship mechanism is specified.
+- `docs/OCCURRENCE_ACCOUNTING_MECHANISM.md` owns the selected authorship-only
+  mechanism proposal and its collapse-test comparators before any charter.
+- `docs/OCCURRENCE_ACCOUNTING_EXPLORATORY_CHARTER.md` owns the completed fresh,
+  strict-budget authorship-only contact under that mechanism.
+- `docs/POST_ACCOUNTING_AUTHORSHIP_BOUNDARY.md` owns the post-contact
+  separation between token-independent model authorship and exposed instrument
+  debt before another route is selected.
+- `docs/POST_ACCOUNTING_ROUTE_SELECTION.md` owns the analytical choice of an
+  unconditional model-authored challenge before governance, before any
+  mechanism is specified.
+- `docs/DRAFT_CHALLENGE_MECHANISM.md` owns the exact-draft challenge and
+  revision mechanism, its lineage, controls, and collapse rules before any
+  charter.
+- `docs/DRAFT_CHALLENGE_EXPLORATORY_CHARTER.md` owns the prospective fresh,
+  strict-budget contact under that mechanism before any runner or model call.
+- `docs/POST_CHALLENGE_AUTHORSHIP_BOUNDARY.md` owns the post-contact separation
+  between formal label failures, observed copying, sampling instability, and
+  the next authorship problem before another route is selected.
+- `docs/POST_CHALLENGE_ROUTE_SELECTION.md` owns the analytical choice of one
+  first-output executable prediction rule tested against an independent
+  external result before any mechanism is specified.
+- `docs/EXECUTABLE_PREDICTION_REVISION_MECHANISM.md` owns the authorship-only
+  rule language, measurement interpreter, external-result separation,
+  comparison obligations, and boundary before a strict-budget charter.
+- `docs/EXECUTABLE_PREDICTION_REVISION_CHARTER.md` owns the fresh two-world,
+  strict-budget contact under that mechanism before any runner or model call.
+- `docs/EXECUTABLE_PREDICTION_REVISION_IMPLEMENTATION_DECISION.md` owns the
+  fake-tested runner scope and conformance gates before any live request.
+- `docs/EXECUTABLE_PREDICTION_REVISION_CONTACT_DECISION.md` owns the single
+  live-execution authorization and preflight boundary for that runner.
+- `docs/POST_EXECUTABLE_PREDICTION_BOUNDARY.md` owns the post-contact separation
+  between interface availability, condition-level attribution, transfer, and
+  revision before any later route is selected.
+- `docs/POST_EXECUTABLE_PREDICTION_ROUTE_SELECTION.md` owns the analytical
+  choice of unselected lineage continuation into later cold-model behavior and
+  its exact branch-information matrix before any mechanism is specified.
+- `docs/UNSELECTED_LINEAGE_BEHAVIOR_MECHANISM.md` owns the opaque-control
+  mechanism, six information paths, prospective behavioral roles, total
+  unavailable handling, comparison limits, and boundary before a deterministic
+  domain specimen.
+- `docs/UNSELECTED_LINEAGE_BEHAVIOR_SPECIMEN.md` owns the deterministic
+  environment, foreground, fork, leakage, scorer implementation, conformance
+  reviews, and boundary before any strict-budget charter decision.
+- `docs/UNSELECTED_LINEAGE_CHARTER_DECISION.md` owns the decision to draft one
+  four-block, 109-logical-call exploratory charter using the existing Qwen
+  artifact, without licensing implementation or contact.
+- `docs/UNSELECTED_LINEAGE_EXPLORATORY_CHARTER.md` owns that exact model,
+  published live manifest and leakage witness, prompts, interfaces, schedule,
+  budgets, continuation rules, scorer, claim ceiling, and boundary before any
+  runner implementation decision.
+- `docs/UNSELECTED_LINEAGE_IMPLEMENTATION_DECISION.md` owns the fake-tested
+  runner scope, required replay and transport tests, conformance review, and
+  boundary before any live-contact decision.
+- `docs/UNSELECTED_LINEAGE_CONTACT_DECISION.md` records the historical one-use
+  authorization and the pre-contact import failure. Its one-use interpretation
+  is retired and does not govern future exploration.
+- `docs/POST_UNSELECTED_LINEAGE_ATTEMPT_BOUNDARY.md` records the historical
+  decision to treat that import failure as consumed authority. The current
+  method rejects that decision as unnecessary ceremony.
+- `docs/UNSELECTED_LINEAGE_LAUNCH_REPAIR_DECISION.md` records the resulting
+  module-entrypoint repair and no-contact proofs as engineering history, not as
+  a required template for future experiments.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
   findings and explanations.

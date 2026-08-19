@@ -1,0 +1,36 @@
+{
+  "call_id": "world-g-static_challenge_withheld_draft-r1",
+  "candidate": null,
+  "candidate_comparison_refusal": null,
+  "candidate_comparison_sha256": null,
+  "candidate_comparison_utf8": null,
+  "candidate_refusal": "invalid_json",
+  "completion_tokens": 29,
+  "condition": "static_challenge_withheld_draft",
+  "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"position_after\":2}",
+  "draft_is_request_parent": false,
+  "draft_receipt": "candidate-g-direct-1",
+  "fork_point": "post-source",
+  "governance": {
+    "admitted": false,
+    "refusals": [
+      "invalid_json"
+    ],
+    "source_occurrence_sha256": "f6d87534c88f64138cf5d540d37146ebc2eea3d6f05846c658487243bf2c1881"
+  },
+  "governance_deferred": false,
+  "logical_index": 10,
+  "material_utf8_length": 17,
+  "message": {
+    "content": "{\"change\":\"7e81cf4ce9afe7ad\",\"counterevidence\":\"position_after\":2}",
+    "role": "assistant"
+  },
+  "prompt_tokens": 568,
+  "public_formation_condition": "static_challenge_withheld_draft",
+  "request_sha256": "602774ddf8bc6c2a898861228f24ffa56ed27b7d247d3498341a2f18de989cca",
+  "response_sha256": "57d4bfc5d537139c608d6ff07d3bf75efaabc9a656732e65a97487a457289340",
+  "responsibility": "candidate",
+  "round": 1,
+  "same_response_draft_canonical": null,
+  "world_id": "world-g"
+}

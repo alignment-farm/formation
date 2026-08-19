@@ -1,0 +1,39 @@
+{
+  "action_refusal": null,
+  "activated": null,
+  "call_id": "a-same-increase-authored_interpretation-r1",
+  "content": "{\"action\": \"sile\"}",
+  "environment_result": {
+    "action": "sile",
+    "controller_family": "noru-17",
+    "device_id": "opal-unit",
+    "increasing_slot": null,
+    "observation": "target_reached",
+    "position_after": 11,
+    "position_before": 10,
+    "target": 11
+  },
+  "expected_action": "sile",
+  "expected_action_match": true,
+  "logical_index": 8,
+  "message": {
+    "content": "{\"action\": \"sile\"}",
+    "role": "assistant"
+  },
+  "offer_key": "authored_interpretation",
+  "probe_id": "a-same-increase",
+  "relation": "same_family_increase",
+  "repetition": 1,
+  "responsibility": "actor",
+  "state": {
+    "controller_family": "noru-17",
+    "device_id": "opal-unit",
+    "first_control": "sile",
+    "position": 10,
+    "second_control": "toru",
+    "target": 11
+  },
+  "surfaced_action": "sile",
+  "unwarranted_guess": false,
+  "world_id": "world-a"
+}

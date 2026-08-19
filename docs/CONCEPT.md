@@ -132,8 +132,12 @@ mechanism:
 - An **admitted change** is a candidate the runtime's declared governance policy
   permits to influence practice. Admission is a policy fact, not evidence that
   the change is beneficial or that the model learned.
+- A **delivery authorization** is a pre-inference runtime decision that an
+  admitted change may enter a later practice request. Authorization and actual
+  delivery are mechanism events, not proof that the change affected inference.
 - An **activation** is an attributable use of an admitted change at a later
-  decision boundary. Availability without influence is not activation.
+  decision boundary. Availability, authorization, delivery, or a receipt that
+  names one of those events without influence is not activation.
 - A **manifested change** is a measured behavioral difference caused by an
   activation or by the availability of an admitted change.
 - **Transfer** is beneficial manifested change on a prospective encounter that
