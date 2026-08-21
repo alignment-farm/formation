@@ -1,6 +1,6 @@
 # Deterministic environment specimens
 
-This package contains four isolated deterministic transition engines. The first
+This package contains five isolated deterministic transition engines. The first
 is licensed by the
 [revision micro-environment charter](../docs/MICRO_ENVIRONMENT_CHARTER.md). It
 reads an immutable revision state and one exact action, then returns a fresh
@@ -43,3 +43,11 @@ It distinguishes unavailable content from an available empty proposal, applies
 only already committed actions, and returns factual movement, hold, refusal, or
 not-applied results. Branch construction, retained foregrounds, role assignment,
 and scoring remain outside the environment module.
+
+The fifth engine implements the asymmetric suspension device. Two hidden
+profiles share the same public controls. A task control completes one profile
+and irreversibly fails the other. Diagnostic action preserves the device and
+emits a profile-specific signal; hold preserves it without information. A
+third permitted signal supports paired cases where no retained mapping applies.
+The engine does not interpret a signal, choose an action, retain a record, or
+call a model. Those responsibilities remain outside this package.

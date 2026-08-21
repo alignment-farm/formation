@@ -52,6 +52,39 @@ what happened, when it happened, and why the failure matters.
 - Remove filler, repetition, and claims that do not add meaning.
 - Use lists only when the items are distinct.
 
+## Put explanation before audit detail
+
+A readable sentence can still be hard to understand when the file begins in
+the middle of the research process. Organize public-facing files so a new
+reader learns the story before meeting the contract.
+
+Evidence accounts should normally use this order:
+
+1. State the main result in ordinary language.
+2. Explain the task with a small concrete example.
+3. Say what was changed and what stayed fixed.
+4. Report what happened.
+5. Explain what the result supports and what it does not support.
+6. Put model identifiers, hashes, budgets, scorer thresholds, and replay facts
+   in an audit section at the end.
+
+Project and directory READMEs should normally use this order:
+
+1. Say why the directory exists.
+2. State the current result and next question.
+3. Give a short reading path for the common reader.
+4. Put authority maps, historical indexes, and complete file lists afterward.
+
+Mechanism and experiment specifications should explain the causal idea before
+giving branch names, schedules, verdict formulas, or byte contracts. Define an
+internal term at its first use. A heading made from internal labels does not
+count as a definition.
+
+Some contacted specifications must remain byte-for-byte frozen so their
+evidence can replay. Do not make those files carry the whole teaching burden.
+Keep their exact contract intact and provide a plain-language evidence account
+and directory route around them.
+
 ## Reasoning process
 
 Before writing:
@@ -75,6 +108,8 @@ Before sending or saving text, ask:
 - Are all key claims supported by facts, code, or a source?
 - Can any sentence be shorter without losing meaning?
 - Does the text flow in a useful order?
+- Does the file explain the task before naming its internal parts?
+- Can a reader find the main result without reading the audit section?
 
 If any answer is no, revise the text.
 

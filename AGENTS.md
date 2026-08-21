@@ -83,6 +83,11 @@ Stop when the task's scope and authority are clear.
 
 - `README.md` owns the concise whole-project story, current state, and task
   routing.
+- `README.md` is the only source for the current result and active empirical
+  question. Plans, directory indexes, evidence indexes, and research history
+  must link to it instead of repeating that narrative. When they preserve an
+  earlier “next” question, write it as history so it cannot be mistaken for the
+  active route.
 - `docs/RESEARCH_HISTORY.md` owns the chronological research narrative and
   links from closed routes to the problems they exposed. It does not license
   work or override specifications, evidence, scorers, the root README, or the
@@ -250,6 +255,81 @@ Stop when the task's scope and authority are clear.
 - `docs/UNSELECTED_LINEAGE_LAUNCH_REPAIR_DECISION.md` records the resulting
   module-entrypoint repair and no-contact proofs as engineering history, not as
   a required template for future experiments.
+- `docs/LEARNED_CLERICAL_INSTRUMENT_EXPLORATION.md` owns the restricted
+  second-model sensory encoding and applicability-classification experiment,
+  including its information separation, controls, budget, and claim ceiling.
+- `docs/STRUCTURAL_RECORD_DELIVERY_CALIBRATION.md` owns the supplied-record
+  participant interface comparison after the first learned clerical instrument
+  experiment failed its strong delivery ceiling.
+- `docs/STAGED_CLERICAL_INSTRUMENT_SUCCESSOR.md` owns the staged restricted
+  sensory transcription, sentence writing, scope normalization, exact
+  structural matching, and participant comparison selected by that calibration.
+- `docs/CANONICAL_CLERICAL_RECORD_DIAGNOSTIC.md` owns the retained-transcript
+  structured effect record, deterministic sentence rendering, and fresh action
+  diagnostic after the staged successor reversed its sentence order.
+- `docs/CLERICAL_PROSE_PARSER_DIAGNOSTIC.md` owns extraction of the two explicit
+  effects from retained clerk prose, fixed-order rendering, and the fresh action
+  comparison after direct causal completion failed.
+- `docs/LEARNED_CLERICAL_INSTRUMENT_VALIDATION.md` owns the fresh four-lineage
+  end-to-end validation of restricted transcription, explicit prose, parsing,
+  rendering, structural selection, hidden consequence, removal, and supplied
+  controls.
+- `docs/LEARNED_CLERICAL_REVISION_EXPLORATION.md` owns the first two-lineage
+  old-record, contradictory consequence, revised-record, stale, hidden,
+  removal, chronology, and non-transfer exploration in the learned clerical
+  substrate.
+- `docs/SOURCE_GROUNDED_REVISION_ADMISSION.md` owns the deterministic source-
+  completeness gate between a clerk proposal and current-version chronology.
+- `docs/CLERICAL_SOURCE_SUPPORT_VERIFIER.md` owns the restricted learned check
+  of whether a proposed effect record follows from its exact sensory source.
+- `docs/CLERICAL_SELECTED_EFFECT_PROJECTION.md` owns the decomposed learned
+  projection of a proposed record's observed-actuator field before exact
+  source-consistency comparison.
+- `docs/COMPOSED_CLERICAL_RECORD_ADMISSION.md` owns the zero-call composition
+  of source completeness, exact sensory copying, learned field projection, and
+  exact effect equality into record admission.
+- `docs/COMPOSED_CLERICAL_REVISION_VALIDATION.md` owns the fresh four-lineage
+  behavioral validation of composed admission, version chronology, quarantine,
+  structural selection, and participant influence.
+- `docs/COMPOSED_CLERICAL_REVISION_ENGAGEMENT_SUCCESSOR.md` owns the fresh
+  scorer successor that limits engagement validity to supplied and composed-
+  admission cells while preserving every control denominator.
+- `docs/SELECTIVE_LONGER_LINEAGE_REVISION.md` owns the continuation of those
+  retained lineages through one selective third version while a second record
+  remains unchanged.
+- `docs/COUNTEREVIDENCE_AUTHORITY_DIAGNOSTIC.md` owns the deterministic split
+  between observation-grounded and action-attributed revision warrants.
+- `docs/OBSERVATIONAL_COUNTEREVIDENCE_COMPARISON.md` owns the paired public
+  target-directed and exploratory source-action comparison under both
+  governors.
+- `docs/CONTESTED_COUNTEREVIDENCE_ACCUMULATION.md` owns the deterministic
+  append-only histories and governance states for repeated, corrected,
+  isolated, and unresolved counterevidence.
+- `docs/LEARNED_CONTESTED_COUNTEREVIDENCE_CONTINUATION.md` owns the bounded
+  learned-clerk and later-behavior test across repeated, corrected, isolated,
+  and contested evidence histories.
+- `docs/MIRRORED_RECOVERY_INFLUENCE_SUCCESSOR.md` owns the fresh
+  public-identical, opposite-relation recovery comparison selected by that
+  test's null.
+- `docs/UNCERTAIN_CONSEQUENCE_POLICY_SPECIMEN.md` owns the deterministic
+  safety-responsiveness comparison between immediate revision and two
+  consecutive confirmations.
+- `docs/SUSPENSION_CONSEQUENCE_SPECIMEN.md` owns the deterministic external
+  action, information, and delay comparison for suspension responses.
+- `docs/ASYMMETRIC_SUSPENSION_DOMAIN.md` owns the irreversible task, safe
+  diagnostic, and uninformative hold domain that replaces the symmetric world.
+- `docs/ASYMMETRIC_PROBE_CLERICAL_CONTACT.md` owns the restricted-clerk signal
+  records, fresh diagnostic selection, participant comparison, and frozen live
+  verdict.
+- `docs/SELF_DIRECTED_PROBE_CONTACT.md` owns the participant-chosen diagnostic,
+  two-action trajectory, unmapped-signal non-transfer cases, comparisons, and
+  frozen verdict before contact.
+- `docs/EXPLICIT_APPLICABILITY_RECEIPT_CONTACT.md` owns the exact-match receipt,
+  empty-applicability representation, silent-absence comparisons, and frozen
+  verdict before contact.
+- `docs/MATCHED_APPLICABILITY_RECEIPT_SUCCESSOR.md` owns the exact predecessor-
+  interface replication and receipt-only successor after that comparison did
+  not engage.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
   findings and explanations.

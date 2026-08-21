@@ -308,8 +308,439 @@ and outside criticism belong to validation after repeated evidence has found
 something worth validating. Operational failures remain engineering history;
 they do not consume scientific questions.
 
-This is the handoff to the current state. The root [README](../README.md) and
-[plan](PLAN.md) own the current routing.
+## Same-request repeatability
+
+A bounded follow-up repeated four exact requests from the unselected-lineage
+packet eight times each. It used the same Qwen artifact and Docker request
+bodies, changed no prompt bytes, and interleaved the four requests.
+
+The request behind the earlier byte-identical disagreement returned the
+originally wrong action seven times and the originally correct action once.
+Those were the same two actions observed in the earlier no-persistence and
+ablation calls. The other three requests returned one action each across all
+eight repeats. All 32 calls completed without retry and produced valid allowed
+actions.
+
+The [evidence account](../evidence/same-request-variation-20260819T231848Z/README.md)
+therefore confirms request-specific sampling variation while leaving its
+general rate unknown. It does not establish development. It closes the use of
+one action per branch-case as adequate evidence for this interface. The next
+exploratory comparison must measure action distributions within conditions.
+
+## Canonical mapping, negative transfer, and the scope-gate boundary
+
+The distributional successor completed 98 calls and found no difference among
+authored delivery, authored ablation, raw occurrence, and a static instruction.
+Follow-up instrument tests showed that prompt form mattered: a canonical
+first-then-second family rule changed 15 of 16 same-family decisions, while the
+same clauses in reverse order had no effect. This was a prompt-sensitive
+candidate phenomenon, not yet development.
+
+A fresh two-world authorship contact then exposed the model to one external
+consequence per world. In each world the model authored the exact canonical
+mapping; result-withheld controls authored the exact opposite mapping.
+Delivering the exposed text changed every tested same-family decision, while
+raw, ablated, and no-persistence paths did not. A fresh continuation reproduced
+the same-family effect.
+
+The project moved that candidate into a frozen 258-call validation. Governed,
+ungated, and static delivery each changed all 24 prospective transfer
+decisions. Cold, raw, withheld, and ablated paths changed none. Because the
+governed mechanism did not outperform the simpler answer-shaped lesson, the
+frozen acquisition-transfer-selectivity verdict was null. All branches passed
+the predeclared upward non-transfer cases.
+
+That narrow non-transfer sample concealed a directional failure. A follow-up
+sweep found that both candidate mappings preserved all 32 upward cases but
+reversed 31 of 32 downward cases. A frozen scope-gate successor then showed a
+bounded governance result: exact-family gating preserved all eight downward
+non-transfer decisions that ungated delivery broke. Yet the candidate failed
+to influence matching upward cases reliably, changing only two of eight. The
+successor verdict was `not_engaged`, and Formation remained null.
+
+The chain therefore ends at representation robustness, not at a governance or
+developmental claim. Exact family gating can block the demonstrated harm, but
+the natural-language candidate is too direction-sensitive to support another
+validation. The next experiment must first establish a model-authored
+representation that affects prospective matching cases in both directions.
+
+## Representation classes split authorship from consumption
+
+The next exploration held the experience and action interface fixed while the
+model authored three kinds of retained material: a relation sentence, a JSON
+effect table, and a JSON target policy. Two fresh worlds supplied the same
+underlying controller relation through different acquisition actions and
+consequences. Each form was compared with empty retention and with an author who
+did not see the consequence.
+
+No representation class worked across both worlds. In World A, the sentence
+and effect table stated the correct relation and changed all eight matching
+actions; their withheld counterparts stated the opposite relation and changed
+none. In World B, the exposed sentence and table also stated the opposite
+relation and changed none. The target policy reversed this authorship pattern:
+it was wrong in World A and correct in World B. The correct World B policy still
+changed none of the eight later actions.
+
+The prospective representation verdict was null. The result separates two
+mechanism failures that a single end-to-end score would blur. The model may
+fail to construct a correct account from an informative consequence, and a
+later cold call may ignore an account even when it is correct. The next
+instrument therefore calibrates consumption independently from authorship.
+Known-correct material can diagnose that interface, but it cannot establish
+development or replace model-authored content in a later causal comparison.
+
+## Correct lesson delivery works in two forms
+
+The next contact supplied the correct relation directly. This removed lesson
+writing from the comparison and tested only whether later cold calls could use
+the material. Four fresh controller families each supplied new device names,
+action strings, and targets above and below.
+
+The relation sentence and JSON effect table each produced 32 correct matching
+actions out of 32. Empty retention produced none. The JSON target policy
+produced 6 of 32 and failed at least one direction in every family.
+
+Ungated delivery also showed that neither successful form reliably stayed with
+its named family. The sentence harmed three of eight unrelated cases, and the
+table harmed four. The existing exact-family gate can remove that material,
+but the diagnostic did not apply it.
+
+This is an interface result, not evidence of development, because the harness
+supplied the correct lesson. It selects the sentence and table for a separate
+authorship experiment. The next question is whether an external consequence
+causes the model to write either usable form reliably.
+
+## Staged observation repairs lesson writing
+
+Direct lesson writing remained unreliable. The model often reversed the
+relation when asked to turn a raw action and consequence directly into a full
+sentence or table. The next mechanism split that task. One cold call recorded
+only the selected slot and movement. A second cold call inferred the other
+slot and wrote the full table.
+
+Across eight fresh experiences, the staged path wrote 24 correct tables out of
+24. Direct writing produced 9 of 24, and removing the observation produced
+none. A two-world action successor then used exact staged tables to make all 16
+matching actions while a family check preserved all 32 unrelated actions. Its
+frozen verdict remained null because raw experience also solved one required
+four-action cell.
+
+## Strict validations find a strong but bounded effect
+
+A four-world validation preserved the full causal chain. All exposed
+observations and tables were exact. The staged branch made 29 of 32 matching
+actions, versus 3 cold, none raw, none direct, 8 with the consequence hidden,
+and 3 after removal. The gate preserved 31 of 32 unrelated actions and
+prevented 23 errors. The frozen verdict was null because upward transfer scored
+13 of 16 instead of 14, and one hidden-consequence author guessed the common
+relation.
+
+A fresh validation balanced both possible relations across six worlds so that
+a fixed guess could not solve the packet. Again, all exposed observations and
+tables were exact. The staged branch made 33 of 36 matching actions, versus 18
+cold, 18 raw, 12 hidden, 2 direct, and 18 after removal. It preserved unrelated
+action and the gate prevented 17 errors. One second-increases upward cell scored
+0 of 3; the supplied correct table scored only 1 of 3 on the same cell. That
+left two frozen subgroup scores one below their floors, so the verdict was
+again null.
+
+The next interface comparison used the same model-written observation to
+produce both a sentence and a table. Both forms were exact in all six worlds,
+and both made all 36 matching actions. Its formal `table_preferred` label came
+from an unsound preference rule: unchecked table delivery caused more harm, so
+the gate had more errors to prevent. The evidence supports both gated forms as
+working interfaces in that run. It does not show that the table is behaviorally
+better.
+
+A corrected aggregate validation then used eight fresh balanced worlds and
+treated gate benefit as a separate diagnostic. Every exposed observation and
+table was exact. The staged branch made all 48 matching actions, versus 24
+cold, 22 raw, 24 consequence-hidden, 3 direct, and 24 after removal. It
+preserved the cold unrelated score, while unchecked delivery lost 26 additional
+actions. The frozen bounded validation verdict was supported.
+
+An eight-world revision validation then reversed each relation after the old
+tables had made 45 of 48 actions. Every counterexperience action followed the
+old policy into a contradictory result. All exposed revisions were exact and
+made all 48 post-change actions, versus 24 cold, 3 stale, 17 raw, 27 hidden,
+and 4 after removal. The bounded revision verdict was supported.
+
+Two-table accumulation exposed the next limit. Both sequentially earned tables
+remained useful when the external family gate selected one, scoring 44 of 48.
+Joint list delivery scored 36 and favored the first family. A source-bound
+diagnostic then reversed list order and tested a family-keyed object. The
+favored family shifted with order, but not enough for the frozen order verdict;
+the keyed object scored 44 of 64 against 63 for external gating.
+
+That result created the next handoff. The staged mechanism had earned bounded
+acquisition, selective transfer, and immediate revision, but accumulated
+lessons still depended on exact external identity.
+
+## A restricted second model repairs structural applicability
+
+The next route treated a second model as part of the instrumentation rather
+than as another participant. A 4B clerk received only sensory descriptions and
+consequences. It never received the 14B participant's later controls, target,
+action request, expected action, or score.
+
+The first 368-call experiment was not engaged because the participant could
+not use the new JSON record form. The clerk still classified 10 of 12 later
+devices correctly, including every matching and wholly novel device, but it
+accepted both recombined partial matches. Its one-step effect encoding was also
+wrong in three of four cases.
+
+A supplied-record calibration then found one reliable participant interface.
+A short first-then-second effect sentence made 32 of 32 actions. The staged
+clerical successor split sensory transcription from effect prose. All four
+transcriptions were exact, and all four prose accounts contained both correct
+facts. The clerk put the second-control sentence first, however, and the
+participant ignored that order.
+
+A structured formatter still failed when it had to infer the unobserved
+opposite effect. The next diagnostic removed that inference. It asked the clerk
+to parse two facts already explicit in its own prose into named fields, then
+used a deterministic serializer to impose the calibrated order. All four
+records became exact. The retained structural matcher selected 10 of 12 cases
+with no false novel or recombined selection, and the composed branch made 28
+of 32 matching actions. That was a frozen pipeline candidate.
+
+The fresh four-lineage validation then ran the entire chain without retained
+intermediates. All eight exposed transcriptions, prose accounts, parsed records,
+and rendered sentences were exact. All 24 later feature normalizations and
+structural selections were exact. The full pipeline made 48 of 48 matching
+actions, versus 26 cold, 24 raw, 21 consequence-hidden, and 27 after removal.
+It preserved unrelated action at the cold score and selected no record for all
+eight novel or recombined devices. The frozen learned-instrument verdict is
+supported. Formation remains null.
+
+This result does not show that one model develops alone. It validates a
+multi-model substrate in which a restricted clerk writes structural
+measurements and a separate participant acts. Exact equality over the
+model-written fields is still retrieval.
+
+The first revision exploration preserved four old records, reversed their
+environment relations, and linked four new clerk records to the contradictory
+occurrences. All four old records first guided correct action. All four exposed
+new records were exact. Selecting the newest version made 24 of 24 post-change
+matching actions, versus 12 cold or raw and 0 for stale or removed revisions.
+The frozen exploratory verdict was `revision_candidate`.
+
+The hidden-consequence control exposed an admission defect. Although the clerk
+was told that gauge movement was unavailable, it invented four complete effect
+records. One guessed the new relation correctly. The runtime accepted all four
+because syntactic completeness, rather than source support, determined whether
+a version could become current.
+
+A deterministic source-completeness gate then admitted all four exposed
+proposals and quarantined all four hidden proposals. It deliberately admitted
+an inverted record with a complete source, showing that provenance alone could
+not check interpretation. A learned source-support verifier tried to add that
+judgment. It handled all correct and missing-source pairs but accepted 9 of 12
+stale opposite records, so its frozen verdict was null.
+
+The next experiment split field selection from comparison. The clerk copied the
+proposed effect for the observed actuator on all 48 calls. A deterministic
+composition then bound the sensory source and transcription, checked that
+projection, and compared the two model-written effects. It admitted all 24
+supported retained records and quarantined all 24 stale or missing-source
+records.
+
+The fresh end-to-end validation then reproduced the complete chain. All eight
+old and revised records and selected-effect projections were exact. The
+composition admitted every supported old and revised proposal, quarantined
+every stale and hidden proposal, and selected all 24 later scopes exactly.
+Admitted, supplied, and environment-selected clerk revisions each made 48 of
+48 matching actions. Cold made 25, raw counterexperience made 21, and stale,
+hidden, and removal made none. Unrelated action stayed at cold.
+
+The frozen verdict was nevertheless `not_engaged`. One raw-history control cell
+returned an old action token that did not exist on the current device on all
+three repeats. The scorer required every cell in every branch to contain two
+valid actions. That made a weak-control interface failure veto engagement even
+though the supplied and composed-admission interfaces were fully valid. The
+formal verdict stands. A fresh successor changes only which branches can
+establish engagement; every invalid control output stays wrong in its original
+denominator. The root [README](../README.md) and [plan](PLAN.md) own current
+routing.
+
+That successor used four new lineages and changed no mechanism threshold or
+denominator. All eight old and revised records and projections were exact. The
+gate again admitted every supported proposal and quarantined every stale and
+movement-hidden proposal. Admitted revisions made 45 of 48 matching actions,
+versus 27 cold, 24 raw, and none for stale, hidden, or removal. Supplied
+revisions made the same 45 actions, including the same three misses in one
+cell. Unrelated action lost one of 24 relative to cold. Every output was valid,
+and the frozen bounded verdict was `supported`.
+
+This closes the one-step revision question in the small domain. It supports a
+multi-model substrate, not autonomous development by one model. The next route
+is a longer lineage in which several admitted records coexist and only one is
+revised again. That comparison can expose stale reactivation and cross-record
+interference that a single revision cannot.
+
+The continuation bound the exact supported parent packet. Scope A returned to
+its first relation and produced a model-written version 3; scope B stayed at
+version 2. All four version-3 records and projections were exact. Admission
+accepted them and rejected every stale or movement-hidden proposal. Later
+selection assigned A version 3, B version 2, and no unrelated version on all 72
+calls. The current catalog made 45 of 48 matching actions, including all 24
+unchanged B actions, while stale, hidden, and removal retained only B's 24.
+
+The frozen verdict was null for one earlier event. Only three of four source
+actions followed version 2's target policy. The fourth chose a different valid
+control and happened to reach the new target. Its movement still contradicted
+version 2's effect claim for that selected control, so the source-grounded gate
+admitted its exact revision. The scorer had required both policy attribution
+and claim contradiction on all four.
+
+That miss separates two legitimate but different governance questions.
+Observation-grounded revision can learn from a complete exploratory action and
+consequence. Action-attributed revision requires evidence that the prior record
+caused the source action. The formal result remains null. The next route must
+compare those policies prospectively rather than erasing their distinction.
+
+A deterministic diagnostic then reconstructed both policies from the exact
+packet. All four occurrences had a complete selected control and movement, and
+all four movements contradicted version 2's claim for that control. Only three
+committed actions matched version 2's target recommendation. The observation-
+grounded governor therefore admitted four while the action-attributed governor
+admitted three. This proves the governance fork is computable without a hidden
+answer; it does not decide which fork improves later action.
+
+The next contact made the fork deliberate. A target-directed participant and a
+public deterministic exploration acted from the same supported version-2
+parent. Exploration selected the first valid control without effect knowledge.
+All eight source movements contradicted version 2. The restricted clerk wrote
+equal exact version-3 records from both source origins in all four lineages.
+
+The observation-grounded governor admitted all four exploratory revisions. The
+action-attributed governor quarantined all four because version 2 had not
+chosen those actions. Later observation-grounded exploration made 48 of 48
+matching actions. Action-attributed exploration and removal each made the 24
+unchanged-B actions and none of the 24 changed-A actions. All unrelated scores
+matched cold. The frozen bounded verdict was supported.
+
+This supports learning from deliberate exploration without assigning causal
+blame to the prior record. It also exposes the next governance risk: one
+complete contradiction was reliable only because the environment was
+deterministic. Counterevidence accumulation and contested consequences now
+precede any broader observational policy.
+
+A deterministic accumulation specimen then preserved four append-only
+histories. Two consistent contradictions superseded the current record. A
+contradiction followed by current support retained it and closed the first as
+uncorroborated. One contradiction suspended activation pending corroboration.
+Contested movement suspended activation unresolved. Each decision retained the
+exact ordered sources and their separate roles. This is a governance
+computation, not evidence that the clerk or later participant can use it.
+
+The next learned continuation supplied six real sensory histories to the
+restricted clerk. It wrote all five complete relation records exactly. It also
+wrote a complete relation from a disputed movement, but the source gate blocked
+that proposal because the observation lacked a direction. The governor reached
+all four declared states, the matcher assigned all later catalogs correctly,
+and unchanged B remained 24/24 without unrelated loss.
+
+The frozen verdict was null. Repeated contradiction produced an attributable
+6/6 versus 4/6 removal effect, and suspension protected the isolated lineage at
+3/6 versus 0/6 for immediate use of its lone opposite proposal. Self-correction
+did not produce the required recovery effect: the recovered record and its
+removal both made 6/6 actions. This routes next to a mirrored recovery pair with
+public-identical later requests and opposite hidden relations, not to a
+reinterpretation of the completed null.
+
+The mirrored successor created two fresh worlds with opposite current
+relations behind one visible scope. Each world acquired its current record,
+suspended it after one transient contradiction, and restored it after a final
+supporting observation. All six clerk records and both ordered governance
+histories were exact.
+
+Later cold and removal requests were byte-identical across the hidden worlds.
+They made 24/48 matching actions. Recovered and supplied requests were byte-
+identical within world and made 48/48. No unrelated case received a record, and
+all unrelated conditions remained identically wrong at 0/24. The frozen
+bounded verdict was supported. The next route is the response tradeoff of the
+two-consecutive-observation policy under longer uncertain sequences.
+
+A zero-call specimen then compared that policy with immediate revision across
+five six-step histories. Immediate revision delivered a wrong record on six
+steps, suspended once, and made six false replacements. Two-confirmation never
+delivered a wrong record or made a false replacement, but suspended on eleven
+steps. It adapted one observation later on a clean change and three observations
+after a change interrupted by unresolved evidence. This exposes a tradeoff, not
+an optimal threshold. The next route is to attach external action and delay
+consequences to suspension.
+
+The first suspension-consequence specimen attached those outcomes in a
+mirrored two-control world. It preserved wrong movement, target delay, action
+count, and information separately. Current-record, newest-proposal, cold, and
+explore policies all reached the target in all 12 cases. A task action both
+revealed the hidden relation and remained reversible, so the world could not
+distinguish the policies. Hold alone remained safe but unfinished.
+
+An asymmetric domain replaced reversible movement with terminal task success
+or failure. Its public state remained identical across two hidden profiles.
+Either task control succeeded in one profile and failed in the other. A
+diagnostic action preserved the device and emitted a profile-specific signal;
+hold preserved it without information. The zero-call conformance packet showed
+that an external interpreter could use the signal to complete both profiles in
+two steps. That interpreter remained outside the runtime.
+
+The next contact tested whether a restricted clerk could earn that
+interpretation. From two old diagnostic and task trials, the 4B clerk wrote
+`steady_pattern -> first` and `pulsed_pattern -> second`. Both passed exact
+source checks. On eight fresh paired devices, the runtime performed the
+diagnostic and selected a record only when its model-written signal matched the
+new signal.
+
+The learned and supplied records each completed 24 of 24 matching tasks with no
+failure. Removing the learned records or showing raw source events completed 12
+and failed 12. Reversing the records failed all 24. All learned and supplied
+requests were byte-identical in their matching cells. Four held no-signal cases
+selected no record; learned, removed, supplied, and reversed requests were
+byte-identical there, and the participant held. The frozen bounded verdict was
+`supported`.
+
+This established a learned signal-record substrate, not self-development. The
+runtime still chose the probe. The next route moves that first decision to the
+participant and measures whether retained conditional records cause it to seek
+information before risking a terminal task action.
+
+The self-directed contact put both records in the first request and gave each
+episode at most two actions. Learned and supplied catalogs each completed 17 of
+18 mapped episodes. Removal completed 6, cold 5, and reversed records none.
+However, cold and removal already chose diagnostic first in every mapped
+episode. The records could not be credited for information-seeking.
+
+The prospective unfamiliar signal exposed a stronger limit. It matched neither
+record, yet the learned path attempted a task control in all six paired cases
+and failed three. Removal did the same, so the catalog did not add measurable
+harm, but it failed the frozen absolute selectivity guard. The verdict was
+`harmful`.
+
+An explicit applicability receipt then made an empty exact-match result
+visible. Its first contact changed the shared prompt, and every silent or
+no-record unfamiliar case held. Because the unsafe control pressure vanished,
+the frozen verdict was `not_engaged` rather than supported.
+
+The matched successor restored the harmful contact's exact participant prompt,
+request schema, states, diagnostics, and catalog rendering. Seventy-two full-
+catalog and no-record control request hashes matched their parent bytes. The
+unsafe pressure returned: full catalog and silent absence each attempted all
+six unfamiliar tasks and failed three.
+
+The new receipt listed no applicable record ID and contained no task record for
+that signal. It produced six holds and no failures. On known signals, learned
+and supplied receipts each completed 18 of 18; reversed receipts failed all 18.
+The frozen verdict was `supported`. This supports an explicit runtime
+representation of an empty applicability result, not autonomous abstention or
+learned probing.
+
+This result exposed a remaining first-action problem in the domain pressure.
+In that world, probing preserved the later chance to guess and was attractive
+even without a mapping. A successor would need to make information gathering
+costly or useless without retained knowledge before another causal probe claim
+could be tested.
 
 ## Supporting implementation history
 
@@ -326,6 +757,7 @@ results depend on supplied state as well as action, rather than on an action
 lookup table. These are computation and provenance results. They do not show
 model learning.
 
-Exact milestone status, test counts, and stopping conditions belong to the
-[plan](PLAN.md). Individual contracts own their mechanisms, and the root
-[README](../README.md) owns the concise project story and present boundary.
+The root [README](../README.md#present-state) owns current status and the active
+empirical question. The [plan](PLAN.md) owns standing milestone rules and
+stopping conditions. Individual contracts own their mechanisms, and this file
+owns the route by which the project reached them.

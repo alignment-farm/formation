@@ -139,5 +139,104 @@ schedule, retain exact requests and per-request action distributions, limit
 transport retry, preserve malformed outputs, and refuse evidence-directory
 overwrite. They spend no participant-model calls.
 
-The full locked-environment run passes 443 tests and 362 subtests with
+Seven fake-contact tests cover the distributional developmental comparison.
+They freeze the fresh opaque-control specimen and balanced 98-call schedule,
+prove byte-identical repeats within every branch-case, score action
+distributions, preserve malformed outputs, bound retry, replay from raw
+evidence, refuse overwrite, and prove the default CLI path makes no contact.
+
+Forty-three fake-contact tests cover the seven successor runners: retained
+material consumption, clause order, canonical authorship, scoped continuation,
+candidate validation, the non-transfer sweep, and scope-gate validation. They
+freeze schedules and prospective cases, separate model authorship from external
+results, preserve exact candidate bytes, exercise malformed output and retry,
+replay raw evidence, enforce frozen verdicts, and prove default CLI paths spend
+no participant-model calls.
+
+Seven fake-contact tests cover the representation class exploration. They
+freeze three answer-empty forms and the 190-call schedule, keep device action
+tokens out of retained representations, prove exact-family gating can remove
+every nonmatching candidate byte, exercise all candidate and harm verdicts,
+bound transport retry, replay raw evidence, and prove the default CLI path
+makes no contact.
+
+Seven fake-contact tests cover representation consumption calibration. They
+freeze four fresh source families, three known-correct forms, and the 256-call
+schedule; keep action strings out of the lessons; prove the family gate removes
+unrelated material; exercise candidate, harm, malformed-output, retry, replay,
+and no-contact paths.
+
+Thirteen fake-contact tests cover direct lesson authorship, staged observation
+authorship, and the staged action chain. They freeze balanced consequences,
+direct and removed controls, exact observation bytes, repeated table authorship,
+scoped and ungated later action, replay, malformed output, and no-contact paths.
+
+Forty-one fake-contact tests cover the four-world validation,
+balanced-relation validation, paired sentence-table interface, aggregate
+validation, revision, accumulation, and the retained-table container diagnostic.
+They freeze every schedule through the latest 320-call diagnostic; preserve
+consequence withholding and source hashes; balance both true relations; enforce
+exact raw-evidence replay; exercise supported, collapsed, malformed, and
+no-contact paths; and prove required byte-identical control requests.
+
+Seventy-eight deterministic and fake-contact tests cover the learned clerical
+instrument chain through the selective longer-lineage continuation. They
+enforce separate 4B
+clerk and 14B participant inputs, keep controls and targets out of clerical
+requests, freeze schedules through the 728-call learned-instrument validation,
+404-call revision exploration, both 768-call composed validations, and the
+688-call selective continuation; retain versioned source bindings; quarantine
+missing measurements; exercise the failed broad verifier and successful
+selected-field projector; compose exact admission decisions from retained
+bytes; preserve fixed denominators under the corrected engagement rule; bind
+the exact supported parent packet into a selective third version; replay
+evidence; reconstruct the counterevidence-authority fork from exact retained
+facts; compare public target-directed and exploratory sources under both
+governors; preserve four contested-counterevidence histories and their source
+roles; and prove default live runners make no model contact.
+
+Five additional fake-contact tests cover the learned uncertain-evidence
+continuation. They freeze the six source occurrences and 480-call schedule,
+exercise the generalized source-preserving governor, reproduce the complete
+supported fake comparison, replay every retained request and response, and
+prove the default command makes no model contact.
+
+Five tests cover the mirrored recovery successor. They bind its predecessor,
+freeze public-identical opposite worlds and the 324-call schedule, prove empty
+and guided request identities, reproduce the supported fake comparison, replay
+raw evidence, and prove the default command makes no model contact.
+
+Five tests cover the uncertain-consequence policy specimen. They freeze its
+aggregate tradeoff, prove scorer-only truth is absent from governor receipts,
+check clean and interrupted adaptation delays, refuse broken occurrence order,
+and replay the zero-call packet exactly.
+
+Five tests cover the first suspension-consequence specimen. They preserve the
+mirrored public state, action and information accounting, policy outcomes,
+refusals, and exact zero-call replay.
+
+Eleven tests cover the asymmetric suspension engine and specimen. They verify
+opposite terminal task results, safe diagnostic and hold transitions,
+immutability, order independence, refusals, public identity, the scorer-only
+probe interpreter, and exact replay.
+
+Six fake-contact tests cover the asymmetric clerk and participant runner. They
+freeze its 222-call budget, reject a false clerk record, reproduce the complete
+supported comparison, prove matching and no-signal request identities, replay
+every retained byte, and prove the default command makes no model contact.
+
+Six tests cover the self-directed probe contact. They freeze its dynamic
+two-action ceiling, unfamiliar signal, supported fake trajectory, terminal
+stopping, request identities, exact replay, and no-contact default.
+
+Six tests cover the first explicit applicability receipt contact. They freeze
+its empty exact-match representation, full and silent controls, complete fake
+comparison, request identities, exact replay, and no-contact default.
+
+Six tests cover the matched receipt successor. They bind both completed
+parents, reproduce 72 exact parent control request hashes, preserve the harmful
+interface, exercise the supported empty-receipt comparison, replay every byte,
+and prove the default command makes no model contact.
+
+The full locked-environment run passes 694 tests and 362 subtests with
 `uv run pytest -q`.

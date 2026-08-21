@@ -105,26 +105,35 @@ observation facts unless a prospective comparison supports a stronger claim.
 
 ### Current empirical problem
 
-The latest exploratory contact asked whether an unselected model-authored
-interpretation could affect later cold-model action. Qwen completed all 109
-calls without retry. The six information paths produced the same proposed
-actions on 15 of 16 later cases. On the remaining case, two byte-identical
-requests also returned different actions. The observed branch difference is
-therefore no larger than the variation seen with the same input.
+The latest experiment repaired a representation boundary exposed by a harmful
+result. A restricted clerk had turned earlier consequences into checked signal
+records, but the participant guessed when a new signal matched none of them.
+The successor gave the participant an explicit runtime receipt: either the
+exact matching record, or the fact that no record matched.
 
-This result does not show formation. It identifies the next empirical problem:
-measure ordinary same-request variation well enough to tell it apart from a
-condition effect. The complete counts, requests, responses, and limits are in
-the [evidence account](evidence/unselected-lineage-behavior-contact-20260819-contact/README.md).
-The preceding executable-prediction contact found the same instability in a
-different form; its [evidence](evidence/executable-prediction-revision-contact-20260818/README.md)
-remains useful background.
+The comparison reused 72 exact request bodies from the harmful parent run.
+With a known signal, learned and supplied receipts each completed 18 of 18
+tasks; reversed receipts failed all 18. With an unfamiliar signal, the full
+catalog and silent absence each guessed six times and failed three. An explicit
+empty receipt produced six holds and no failures. The frozen verdict is
+`supported`.
 
-The mechanism, deterministic specimen, charter, runner, and earlier review
-records remain available for audit. They are completed research history, not a
-mandatory sequence for the next exploratory test. A pre-contact import failure
-also remains recorded, but it is an engineering failure rather than a consumed
-scientific contact.
+This supports the receipt as a representation of what the runtime found. It
+does not show that the receipt chose an action, that the learned record beats
+supplied guidance, or that Formation has occurred.
+
+The current question is whether retained knowledge can change the value of
+seeking information. In the existing two-step world, probing is nearly free:
+even a branch with no useful mapping can probe and still retain its chance to
+guess. The next deterministic world must give probing an external cost or lost
+opportunity. It must keep completion, failure, abstention, information, and
+probe cost separate, without telling the participant which first action is
+preferred.
+
+Read the [latest evidence account](evidence/matched-applicability-receipt-successor-20260820T232130Z/README.md)
+for the exact result and limits. The [research history](docs/RESEARCH_HISTORY.md)
+owns the route that led here, and the [plan](docs/PLAN.md) owns standing
+milestones and stopping conditions. Formation remains null.
 
 ### Working method
 
@@ -152,11 +161,8 @@ admission ladder. See [Research history](docs/RESEARCH_HISTORY.md).
 
 ### Supporting implementation lane
 
-A separate deterministic lane builds the runtime and harness boundaries needed
-for later causal work. Ten fixture-local slices are implemented through
-[action commitment](docs/ACTION_COMMITMENT.md). The next implementation step is
-[environment application](docs/ENVIRONMENT_APPLICATION.md), followed by
-[consequence intake](docs/CONSEQUENCE_INTAKE.md) and
+A separate deterministic lane records the runtime and harness boundaries needed
+for causal work. Its fixture-local contracts run from materialization through
 [experience closure](docs/EXPERIENCE_CLOSURE.md).
 
 This lane does not gate the exploratory contact. Completing it would establish
@@ -190,10 +196,10 @@ When sources disagree, prefer the most specific authority for the question:
 Research history explains how the project arrived here. It does not override a
 specification, evidence record, scorer, or current route.
 
-The retained admission and task-selection contacts occupy the first two classes
-only for their own bounded questions. No developmental trajectory or computed
-Formation verdict exists yet. Plans, fixtures, and functional frameworks cannot
-promote themselves into evidence.
+Retained contacts occupy the first two classes only for their own bounded
+questions. Their computed Formation verdicts remain null; no beneficial
+Formation effect has been earned. Plans, fixtures, and functional frameworks
+cannot promote themselves into evidence.
 
 ## Working here
 
@@ -220,12 +226,7 @@ The governing route is [concept](docs/CONCEPT.md),
 [authority](docs/AUTHORITY.md), [record](docs/RECORD.md),
 [evaluation](docs/EVALUATION.md), [plan](docs/PLAN.md), [fixture](docs/FIXTURE.md),
 [instrument map](docs/INSTRUMENTS.md), and [build boundary](docs/BUILD.md).
-The completed
-[unselected-lineage contact](evidence/unselected-lineage-behavior-contact-20260819-contact/README.md)
-defines the immediate empirical problem: same-request variation. Its only
-apparent branch effect was matched by disagreement between byte-identical calls.
-The bounded repeatability runner is implemented and fake-tested. It selects
-four exact requests from the retained packet and schedules eight interleaved
-repeats of each. No repeatability contact has run. The next step is an
-explicitly authorized 32-call execution, not another admission or procedural
-review program.
+The current result and active empirical question appear only in
+[Present state](#present-state). Do not infer the active route from an older
+specification, evidence account, or plan entry. No new model search, admission
+packet, or procedural review program is on this route.

@@ -2,3 +2,7 @@ __pycache__/
 *.py[cod]
 .venv/
 notes/
+
+# Raw model-contact requests and responses are retained locally and backed up
+# outside Git. Committed packets preserve their per-attempt hashes and outcomes.
+evidence/**/attempts/

@@ -1,0 +1,10 @@
+{
+  "corrected_packet_sha256": "96e934d3fe76a390a3366be0aedff2c226a0e17871a9842d110485269a853c1e",
+  "corrected_verdict": {
+    "class": "candidate_found",
+    "scope": "staged_observation_authorship"
+  },
+  "model_calls_added": 0,
+  "original_packet_sha256": "f01357b267920ad683c43c11b6093c51819eece6df84ce28dbcb64add9a2982d",
+  "reason": "The original scorer sorted observation keys and misspelled decreases_position, contrary to the frozen specification."
+}

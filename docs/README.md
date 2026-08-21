@@ -1,15 +1,92 @@
 # Documentation
 
-This directory contains Formation’s concepts, mechanism contracts, experiment
-charters, history, and forward plan. Start with the root [README](../README.md)
-for the project story and current boundary.
+This directory explains what Formation is trying to build, what each
+experiment was designed to test, and how the work is governed. Start with the root
+[README](../README.md) for the short project story. Do not start by opening a
+random specification: many are exact audit records from closed experiments.
 
-## Core authority
+## Where current status lives
+
+The root [README](../README.md#present-state) is the only current-state
+narrative. It states the latest result, its limits, and the active empirical
+question.
+
+This directory preserves concepts, plans, specifications, and research history.
+Those files may describe what was “next” at the time an experiment closed. That
+language is historical and does not override the root README.
+
+## Choose a reading path
+
+- To understand the project, read the root [README](../README.md), then the
+  [concept](CONCEPT.md).
+- To see the current result and the evidence that owns it, follow the link from
+  the root [current state](../README.md#present-state).
+- To continue the work, read the root [current state](../README.md#present-state),
+  then use the [plan](PLAN.md) for milestone rules and stopping conditions.
+- To understand how the project reached this point, read the
+  [research history](RESEARCH_HISTORY.md).
+- To audit an experiment, read its evidence account first, then its frozen
+  specification. The specification preserves exact prompts, comparisons, and
+  limits; it is not the teaching version.
+
+## What the files are for
+
+| Kind of file | What it answers | Read it when |
+| --- | --- | --- |
+| Root README | What is the project doing now? | You need the broad story. |
+| Concept | What would count as development? | You need the research thesis. |
+| Plan | What milestone rules and stopping conditions govern the work? | You are continuing the work. |
+| Evidence account | What actually happened in one experiment? | You want a result. |
+| Experiment specification | What exact comparison was frozen before contact? | You are auditing the result. |
+| Research history | Why did the project change direction? | You need the sequence of lessons. |
+| Authority and record contracts | Who may supply information, and what must be retained? | You are changing the apparatus. |
+
+Specifications own exact mechanism contracts. Evidence and scorers own
+experimental verdicts. The plan states intended work. Research history explains
+the sequence but cannot turn an observation into a finding.
+
+## Recent experiments in plain language
+
+| Question | Result | Best first read |
+| --- | --- | --- |
+| Does the same request always produce the same action? | No. One important request produced both actions across repeats. | [Repeatability evidence](../evidence/same-request-variation-20260819T231848Z/README.md) |
+| Does carrying forward raw experience or a model-written lesson change later action? | Not in the first repeated comparison. | [Distributional evidence](../evidence/distributional-developmental-20260819T233903Z/README.md) |
+| Can the model write a useful control rule after seeing a consequence? | Yes in narrow cases, but a supplied answer-like lesson worked just as well. | [Candidate validation evidence](../evidence/canonical-mapping-candidate-validation-20260820T000646Z/README.md) |
+| Does that rule leave unrelated behavior alone? | No. It often reversed correct actions in the opposite direction. | [Non-transfer evidence](../evidence/candidate-nontransfer-sweep-20260820T001430Z/README.md) |
+| Can a family check block that harm? | Yes, but the underlying rule still failed to guide some matching cases. | [Scope-gate evidence](../evidence/canonical-mapping-scope-gate-validation-20260820T001909Z/README.md) |
+| Does changing the form of the model-written lesson solve the problem? | No. Writing the lesson correctly and using it later failed independently. | [Representation evidence](../evidence/representation-class-exploration-20260820T010342Z/README.md) |
+| Can later calls use a correct lesson across fresh devices? | Yes for a sentence and effect table; no for the tested policy. Both usable forms still need the family gate. | [Consumption evidence](../evidence/representation-consumption-calibration-20260820T112303Z/README.md) |
+| Can a staged model-written table change later action? | Strongly, but two strict validations each missed a subgroup floor by one action. | [Balanced validation](../evidence/balanced-relation-staged-validation-20260820T122857Z/README.md) |
+| Is a sentence or table the better staged form? | Both made all matching actions. The formal table preference came from a flawed gate-benefit rule. | [Paired representation evidence](../evidence/staged-representation-consumption-20260820T124630Z/README.md) |
+| Does the staged chain survive a larger frozen comparison? | Yes. It made 48/48 matching actions, preserved unrelated action, and passed the bounded validation. | [Aggregate validation](../evidence/staged-chain-aggregate-validation-20260820T130635Z/README.md) |
+| Can counterevidence revise a previously useful table? | Yes in the bounded validation. Revised tables made 48/48 post-change actions. | [Revision validation](../evidence/staged-table-revision-validation-20260820T134318Z/README.md) |
+| Can two earned tables coexist and be selected jointly? | They coexist behind an external gate, but tested joint containers were unreliable. | [Container diagnostic](../evidence/accumulated-table-container-20260820T142422Z/README.md) |
+| Can a restricted second model encode and classify experience without seeing the action task? | Yes in the bounded validation. Its full pipeline made 48/48 matching actions and preserved unrelated action. | [Learned-instrument validation](../evidence/learned-clerical-instrument-validation-20260820T171748Z/README.md) |
+| Can that instrument revise an active record after counterevidence? | It produced a revision candidate at 24/24 matching actions, but the clerk also invented records when the needed measurement was hidden. | [Learned revision evidence](../evidence/learned-clerical-revision-20260820T174848Z/README.md) |
+| Can the runtime admit only source-supported clerk revisions? | A broad learned verifier failed, but decomposed projection plus exact checks admitted all 24 supported retained records and quarantined all 24 unsupported ones. | [Composed admission evidence](../evidence/composed-clerical-record-admission-20260820T181541Z/README.md) |
+| Does composed admission survive a fresh behavioral validation? | Every mechanism comparison passed, but one invalid raw-control cell triggered the frozen global engagement veto. | [Fresh composed validation](../evidence/composed-clerical-revision-validation-20260820T183033Z/README.md) |
+| Does it survive when engagement is tied to the tested interfaces? | Admitted revisions made 45/48 matching actions, tied supplied revisions, lost their benefit under removal, and passed the corrected frozen validation. | [Engagement successor](../evidence/composed-clerical-revision-engagement-successor-20260820T185545Z/README.md) |
+| Can one record reach version 3 without corrupting a coexisting version 2? | Every later mechanism comparison passed, but one source action lacked frozen attribution to version 2, so the verdict was null. | [Selective longer lineage](../evidence/selective-longer-lineage-revision-20260820T192314Z/README.md) |
+| Can the two counterevidence policies be computed without answer leakage? | Both use only retained record, action, target, and consequence facts; observation-grounded admits 4/4 and action-attributed 3/4. | [Authority diagnostic](../evidence/counterevidence-authority-diagnostic-20260820T194134Z/README.md) |
+| Can deliberate exploration warrant revision without causal blame of the old record? | Observation-grounded exploration made 48/48 matching actions; action-attributed quarantine and removal each retained only the 24 unchanged-scope actions. | [Observational comparison](../evidence/observational-counterevidence-comparison-20260820T195003Z/README.md) |
+| Can accumulated counterevidence remain source-preserving and governable? | Four exact histories reach superseded, retained, pending-corroboration, and unresolved states without model calls. | [Accumulation specimen](../evidence/contested-counterevidence-accumulation-20260820T200609Z/README.md) |
+| Can the learned clerk and governor carry those histories into later behavior? | Every clerical and governance step passed, but recovered delivery tied removal at 6/6, so the frozen verdict was null. | [Learned continuation](../evidence/learned-contested-counterevidence-continuation-20260820T214847Z/README.md) |
+| Does recovered delivery matter when cold action cannot distinguish opposite worlds? | Recovered and supplied records made 48/48; byte-identical cold and removal requests made 24/48. | [Mirrored recovery](../evidence/mirrored-recovery-influence-successor-20260820T221149Z/README.md) |
+| What does requiring two confirmations gain and cost? | It eliminated six wrong deliveries and six false replacements, but increased suspension from one step to eleven. | [Uncertain-consequence policy](../evidence/uncertain-consequence-policy-specimen-20260820T222304Z/README.md) |
+| Can the first suspension world distinguish active policies? | No. Every task action was reversible and informative, so the policies were observationally equivalent. | [Suspension consequences](../evidence/suspension-consequence-specimen-20260820T222814Z/README.md) |
+| Can a world make uninformed task action dangerous while preserving a diagnostic? | Yes. A wrong task action now fails, while a separate diagnostic reveals a signal. | [Asymmetric domain](../evidence/asymmetric-suspension-domain-20260820T223216Z/README.md) |
+| Can old consequences give that diagnostic signal useful meaning later? | Learned and supplied records each made 24/24 tasks; removal and raw history made 12/24; reversed records failed all 24. | [Clerical contact](../evidence/asymmetric-probe-clerical-contact-20260820T224335Z/README.md) |
+| Do those records cause the participant to seek information? | No. Cold and removal already probed every time, and the learned path guessed beyond its evidence. The verdict was harmful. | [Self-directed probe](../evidence/self-directed-probe-contact-20260820T225832Z/README.md) |
+| Does an explicit no-match receipt prevent unsupported action? | The first comparison did not engage because its controls changed behavior under new wording. | [First receipt contact](../evidence/explicit-applicability-receipt-contact-20260820T231222Z/README.md) |
+| Does the receipt work against exact harmful controls? | Yes. Silent absence guessed and failed three of six unfamiliar cases; an explicit empty receipt held all six. | [Matched receipt successor](../evidence/matched-applicability-receipt-successor-20260820T232130Z/README.md) |
+
+## Authority reference
 
 | Question | Owner |
 | --- | --- |
 | What phenomenon is Formation trying to produce and distinguish? | [CONCEPT.md](CONCEPT.md) |
-| What work is active, supporting, blocked, or closed? | [PLAN.md](PLAN.md) |
+| What is the current result and active question? | Root [README](../README.md#present-state) |
+| What milestone rules and stopping conditions govern the work? | [PLAN.md](PLAN.md) |
 | How did closed routes expose the current problem? | [RESEARCH_HISTORY.md](RESEARCH_HISTORY.md) |
 | Who may know, decide, and write what? | [AUTHORITY.md](AUTHORITY.md) |
 | What must developmental lineage and trajectory evidence retain? | [RECORD.md](RECORD.md) |
@@ -17,43 +94,10 @@ for the project story and current boundary.
 | What should the first general implementation contain and exclude? | [BUILD.md](BUILD.md) |
 | How should public findings and explanations be written? | [STYLE_GUIDE.md](../STYLE_GUIDE.md) |
 
-Specifications own mechanism contracts. Evidence and scorers own verdicts. The
-plan owns intended work and stopping conditions. Research history explains the
-sequence but cannot license a model call or establish a finding.
-
-## Current evidence and route
-
-The completed [unselected-lineage contact](../evidence/unselected-lineage-behavior-contact-20260819-contact/README.md)
-continued six information paths into later Qwen action. All six paths agreed on
-15 of 16 cases. The only apparent branch difference was the same size as a
-disagreement between byte-identical requests. The packet therefore supports no
-condition effect or Formation claim.
-
-The next empirical problem is same-request variation. A bounded runner now
-selects four exact requests from the completed packet and schedules eight
-interleaved repeats of each. It retains every response and reports a separate
-action distribution for each request. The runner has passed no-contact checks,
-but the 32-call repeatability contact has not run. That estimate is needed
-before a one-cell branch difference can carry causal weight.
-
-The technical path into the completed packet remains available through the
-[post-prediction route](POST_EXECUTABLE_PREDICTION_ROUTE_SELECTION.md),
-[unselected-lineage mechanism](UNSELECTED_LINEAGE_BEHAVIOR_MECHANISM.md),
-[deterministic specimen](UNSELECTED_LINEAGE_BEHAVIOR_SPECIMEN.md), and
-[exploratory charter](UNSELECTED_LINEAGE_EXPLORATORY_CHARTER.md). The full
-sequence belongs to [research history](RESEARCH_HISTORY.md). Historical model
-reviews are internal critique records, not external peer review or gates for
-the next exploratory test.
-
-The failed file-path launch, its one-use interpretation, and the later repair
-are also retained. Under the current method, a failure before participant
-contact is an engineering event. It does not consume the scientific question
-or require another route-selection exercise.
-
 ## Earlier developmental route
 
-These documents remain authoritative for the problems and contacts that led to
-the current chain:
+These documents remain authoritative for the earlier problems and contacts in
+the retained chain:
 
 | Question or contact | Document |
 | --- | --- |
@@ -78,7 +122,7 @@ the current chain:
 ## Supporting deterministic apparatus
 
 The [fixture](FIXTURE.md) and [instrument map](INSTRUMENTS.md) define the shared
-deterministic scenario. The implemented path runs through:
+deterministic scenario. Its contracts include:
 
 1. [Materialization](MATERIALIZATION.md)
 2. [Condition append](CONDITION_APPEND.md)
@@ -91,7 +135,7 @@ deterministic scenario. The implemented path runs through:
 9. [Model invocation](MODEL_INVOCATION.md)
 10. [Action commitment](ACTION_COMMITMENT.md)
 
-The next contracts are [environment application](ENVIRONMENT_APPLICATION.md),
+Later contracts cover [environment application](ENVIRONMENT_APPLICATION.md),
 [consequence intake](CONSEQUENCE_INTAKE.md), and
 [experience closure](EXPERIENCE_CLOSURE.md). The
 [micro-environment charter](MICRO_ENVIRONMENT_CHARTER.md) owns the isolated
