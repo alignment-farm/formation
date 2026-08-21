@@ -333,6 +333,9 @@ Stop when the task's scope and authority are clear.
 - `docs/KNOWLEDGE_COST_INTERACTION_SPECIMEN.md` owns the zero-call public
   diagnostic alphabet, external service-window cost, terminal first-action
   hold, exact-match receipts, and frozen predictions before any later contact.
+- `docs/GOVERNED_DIAGNOSTIC_ENCOUNTER_POLICY.md` owns the exact-coverage runtime
+  governor, its authority boundary, retained-record binding, fail-closed cases,
+  and the decision not to repeat its deterministic first action as live contact.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
   findings and explanations.

@@ -26,6 +26,12 @@ The tenth commits each exact positive proposal under a public runtime policy,
 returns a current action root with a sealed environment binding, and keeps the
 full handoff in a private registry without applying the action.
 
+A separate exploratory module implements one declared costly-diagnostic
+policy. It compares a public signal alphabet with exact admitted records,
+authorizes or withholds encounter opening, and binds any later signal selection
+to the same decision and record set. It is a deterministic mechanism specimen,
+not another general runtime slice or a model-behavior result.
+
 It is not yet a general formation runtime. See
 [`docs/MATERIALIZATION.md`](../docs/MATERIALIZATION.md) and
 [`docs/CONDITION_APPEND.md`](../docs/CONDITION_APPEND.md), and
@@ -38,3 +44,5 @@ See also
 See also [`docs/PRACTICE_REQUEST.md`](../docs/PRACTICE_REQUEST.md).
 See also [`docs/MODEL_INVOCATION.md`](../docs/MODEL_INVOCATION.md).
 See also [`docs/ACTION_COMMITMENT.md`](../docs/ACTION_COMMITMENT.md).
+See also
+[`docs/GOVERNED_DIAGNOSTIC_ENCOUNTER_POLICY.md`](../docs/GOVERNED_DIAGNOSTIC_ENCOUNTER_POLICY.md).

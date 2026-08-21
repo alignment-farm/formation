@@ -107,6 +107,22 @@ alphabets; and first- and second-action scores cannot be merged.
 This result establishes only an available instrument. It does not license a
 runner or contact and contains no behavioral threshold or Formation claim.
 
+## Completed governed diagnostic mechanism
+
+After the participant coverage route failed, one zero-call successor moved
+only diagnostic encounter opening into declared runtime governance. The exact
+coverage rule uses public alphabet signals and admitted records, not a hidden
+profile or scorer answer. It authorizes learned, supplied, and reversed
+coverage; withholds removal and uncovered alphabets without an environment
+action; and fails closed on ambiguous or stale inputs.
+
+The mechanism conforms and is bound to the exact retained clerk records.
+Correctness changes the later deterministic task result but not authorization.
+No live first-action contact follows because it would replay a fixed policy
+decision, while the earlier costly contact already measured the downstream
+record-use split. This closes the diagnostic route unless a later question
+introduces a genuine policy uncertainty.
+
 ## What happens after a mechanism survives
 
 Exploration is allowed to find variance, malformed output, harmful behavior,

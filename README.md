@@ -105,34 +105,36 @@ observation facts unless a prospective comparison supports a stronger claim.
 
 ### Current empirical problem
 
-The latest work built the zero-call world needed to test whether retained
-knowledge changes the value of seeking information. Before the first action,
-the public device now states both signals its diagnostic may emit and whether
-using that diagnostic will consume a separate service window. The current
-hidden signal and valid task control remain private.
+The coverage-representation route is closed. Catalogs made the participant pay
+for useless diagnostics, while isolated `complete` and `none` facts made it
+guess task controls. Another prompt variant would test wording, not acquired
+competence.
 
-The deterministic specimen conforms. Covered devices publish two signals that
-each have one exact record fixture. Uncovered devices publish two signals that
-match no record. A costly diagnostic consumes the same public service window
-on both device classes; a free diagnostic preserves it. First-action hold ends
-the episode without a charge. Completion, failure, abstention, information,
-and service-window consumption remain separate facts. No model was called.
+A zero-call successor now makes information acquisition an explicit runtime
+governance decision. Its frozen policy authorizes a costly diagnostic only
+when every signal in the public alphabet has exactly one admitted record. It
+withholds when records are removed or the alphabet is uncovered. Withholding
+invokes no model, applies no environment action, and preserves the service
+window.
 
-The behavioral question is now whether access to records covering the public
-alphabet changes the participant's first action under cost. The frozen
-prediction is an interaction: learned, supplied, and reversed records should
-all make a covered diagnostic look interpretable before use, while removal
-should not. Reversed records should diverge only after the signal arrives.
-Removal must run on both covered and uncovered alphabets, and free-probe
-learned and removal cells must reproduce the earlier pressure to probe.
+The mechanism conforms without hidden task knowledge. It is bound to the exact
+two admitted records from the retained clerk contact. Learned, supplied, and
+reversed records all authorize; removal and uncovered records withhold.
+Reversal changes only the later result: the deterministic interpreter completes
+both learned and supplied profiles and fails both reversed profiles. Nine
+ambiguous, malformed, stale, or mismatched paths fail closed, and exact replay
+passes.
 
-No runner, participant prompt, behavioral threshold, or model contact is yet
-authorized by this specimen. Even a clean later interaction would support only
-that applicable retained knowledge changed whether this cold participant paid
-an external cost for information. It would not show general value-of-
-information reasoning, superiority to supplied guidance, or Formation.
+This is a system-policy result, not autonomous information seeking or
+Formation. A live first-action contact would add no evidence: the governor
+fixes that action, and the costly exploration already observed the downstream
+learned, supplied, and reversed split. The diagnostic branch stops here unless
+a later question introduces a real policy uncertainty, such as partial or
+contested coverage. The active route should now select a different practice
+phenomenon where retained experience can change a model-owned decision rather
+than validate this deterministic composition.
 
-Read the [latest evidence account](evidence/knowledge-cost-interaction-specimen-20260821T112825Z/README.md)
+Read the [latest evidence account](evidence/governed-diagnostic-policy-specimen-20260821T153245Z/README.md)
 for the exact result and limits. The [research history](docs/RESEARCH_HISTORY.md)
 owns the route that led here, and the [plan](docs/PLAN.md) owns standing
 milestones and stopping conditions. Formation remains null.

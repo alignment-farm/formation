@@ -478,3 +478,32 @@ devices; free diagnostics preserve it; first-action hold is terminal; and
 exact-match receipts distinguish one covered record from an empty uncovered
 result. Its exact replay finding is
 `knowledge_cost_interaction_world_available`.
+
+The sixty-seventh runner performs the resulting 72-episode participant
+exploration. Every learned, supplied, and reversed catalog attracts every
+costly probe, including when neither published signal has a matching record.
+Removal probes three covered-alphabet cases and no uncovered cases, while both
+free branches probe every case. Empty costly receipts stop later guesses only
+after the service window is consumed. The frozen verdict is `harmful`.
+
+The sixty-eighth runner adds an exact pre-action coverage receipt while
+reconstructing 48 parent initial request hashes. Learned, supplied, and
+reversed catalog branches still probe every covered and uncovered costly case.
+Removal mostly shifts to direct task guesses and fails five times. The 96-
+episode frozen verdict is `harmful`.
+
+The sixty-ninth runner removes the catalog and calibrates one compact
+`complete` or `none` fact across 72 first-action calls. Neither status causes a
+probe. Complete branches guess every covered task, and none branches mostly
+guess as well. Exact parent controls still probe every case. The frozen verdict
+is `harmful`, and the route decision stops further coverage-representation
+variants.
+
+The seventieth runner makes no model calls. It binds the exact admitted signal
+records from the retained clerk contact into a public-alphabet coverage
+governor. Learned, supplied, and reversed records authorize the diagnostic;
+removal and uncovered alphabets withhold without invoking a model or applying
+an environment action. Correct records complete both deterministic
+continuations and reversed records fail both, proving that correctness did not
+enter authorization. Nine invalid paths fail closed. The exact replay finding
+is `governed_diagnostic_encounter_mechanism_available`.

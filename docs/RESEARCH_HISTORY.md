@@ -757,6 +757,68 @@ probing; require removal on both alphabets; and forbid empty-receipt abstention
 from substituting for the first-action comparison. The result makes a later
 knowledge-by-cost interaction testable but supplies no behavioral evidence.
 
+The 72-episode exploration then crossed learned, removal, supplied, and
+reversed catalogs under cost with learned and removal free-probe controls.
+Learned, supplied, and reversed catalogs each caused all six covered and all
+six uncovered costly probes. Covered learned and supplied paths completed every
+task, while reversal failed every task. Uncovered paths held after the empty
+receipt, but the service window was already consumed. The verdict was
+`harmful`.
+
+Removal did not remove every first-action difference. Without records, the
+participant probed three of six covered-alphabet cases and no uncovered cases,
+then guessed directly elsewhere. Both free branches probed all cases. The
+result therefore rejected the planned knowledge-by-coverage interaction and
+exposed a narrower representation gap: separate alphabet and catalog facts did
+not make their exact coverage relation available before action.
+
+The matched successor exposed that relation directly before action. For each
+public signal it listed matching record IDs and separately listed every signal
+without a match. Learned, supplied, and reversed catalog paths still probed all
+six uncovered devices and paid every service-window cost. Covered learned and
+supplied paths completed all tasks, while reversal failed all tasks. The
+verdict remained `harmful`.
+
+Removal reduced probes without producing safe first action. Its empty receipt
+mostly displaced diagnostic action into direct task guesses and caused five
+failures across the two alphabets. The result showed that probe reduction alone
+cannot establish useful information valuation. It also exposed the full
+catalog as a likely competing representation: the detailed coverage fact did
+not govern action while the catalog remained present.
+
+One final small calibration removed the catalog and supplied only
+`coverage_status: complete` or `coverage_status: none`. It stopped after the
+first action. Every learned, supplied, and reversed complete request guessed a
+task control. Their none requests also guessed, as did ten of twelve removal
+requests. The exact parent catalog and free-removal controls still probed every
+case, so diagnostic behavior remained available.
+
+The frozen verdict was `harmful`, and the prospective decision closed the
+coverage-representation route. The sequence established a useful limit rather
+than a Formation effect: the participant could use a selected record after a
+signal, but the tested alphabet, receipt, and compact-status interfaces did not
+turn applicability into safe costly information-seeking. Any later runtime
+policy would need explicit authority and causal treatment rather than another
+wording variant.
+
+The next zero-call mechanism moved only encounter opening into declared runtime
+governance. It bound the exact two admitted signal records from the retained
+clerk contact and authorized a costly diagnostic only when every public signal
+had exactly one match. Learned, supplied, and reversed coverage authorized;
+removal and an uncovered alphabet withheld without a model invocation or
+environment action. Correct records completed both deterministic
+continuations, while reversed records failed both, so record correctness could
+not have entered the authorization decision. Nine invalid paths failed closed
+and exact replay conformed.
+
+That result did not revive the participant-probing claim. It established a
+runtime policy with an explicit causal contribution. A live first-action
+contact would merely reproduce that fixed policy decision, while the preceding
+costly contact had already measured the post-signal learned, supplied, and
+reversed outcomes. The diagnostic route therefore stopped rather than entering
+a validation loop. A later experiment should return to a model-owned practice
+decision unless it introduces a genuine governance uncertainty.
+
 ## Supporting implementation history
 
 The deterministic runtime and harness lane developed alongside these contacts.

@@ -77,6 +77,10 @@ claims to the externally retained raw attempts by hash.
 | [Explicit applicability receipt](explicit-applicability-receipt-contact-20260820T231222Z/README.md) | Every unsafe control held under changed wording, so the receipt comparison did not engage. |
 | [Matched applicability receipt](matched-applicability-receipt-successor-20260820T232130Z/README.md) | Exact unsafe controls recurred; an explicit empty match receipt replaced six unsupported guesses with six holds. |
 | [Knowledge-cost interaction specimen](knowledge-cost-interaction-specimen-20260821T112825Z/README.md) | A zero-call world now publishes signal coverage and a service-window probe cost before action while keeping the current signal and valid control hidden. |
+| [Knowledge-cost interaction exploration](knowledge-cost-interaction-exploration-20260821T132804Z/README.md) | Every catalog caused every costly probe even when it covered no published signal; removal also differed by alphabet, producing a harmful verdict. |
+| [Pre-action coverage receipt](preaction-coverage-receipt-successor-20260821T144006Z/README.md) | An explicit uncovered-signal list did not overcome the full catalog; catalog paths still probed, while removal mostly guessed directly. |
+| [Compact coverage status](compact-coverage-status-calibration-20260821T151604Z/README.md) | Isolated complete and none statuses both produced task guesses; the harmful verdict closed the coverage-representation route. |
+| [Governed diagnostic policy](governed-diagnostic-policy-specimen-20260821T153245Z/README.md) | Exact admitted-record coverage now governs whether the runtime opens the costly diagnostic; reversal changes later results but not authorization. No model was called. |
 
 For the older sequence, use the [research history](../docs/RESEARCH_HISTORY.md)
 instead of opening directories by date.

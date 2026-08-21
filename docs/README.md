@@ -80,6 +80,10 @@ the sequence but cannot turn an observation into a finding.
 | Does an explicit no-match receipt prevent unsupported action? | The first comparison did not engage because its controls changed behavior under new wording. | [First receipt contact](../evidence/explicit-applicability-receipt-contact-20260820T231222Z/README.md) |
 | Does the receipt work against exact harmful controls? | Yes. Silent absence guessed and failed three of six unfamiliar cases; an explicit empty receipt held all six. | [Matched receipt successor](../evidence/matched-applicability-receipt-successor-20260820T232130Z/README.md) |
 | Can a deterministic world expose whether retained knowledge changes the value of a costly diagnostic? | Yes as an instrument. It publishes the signal alphabet and service-window cost before action while keeping the emitted signal and valid control hidden. No model was called. | [Knowledge-cost specimen](../evidence/knowledge-cost-interaction-specimen-20260821T112825Z/README.md) |
+| Does record coverage change whether the participant pays for a diagnostic? | No. Any catalog caused all costly probes, including when it covered neither published signal. Removal also differed by alphabet. The verdict was harmful. | [Knowledge-cost exploration](../evidence/knowledge-cost-interaction-exploration-20260821T132804Z/README.md) |
+| Does an explicit pre-action coverage receipt repair that failure? | No beside the full catalog. Catalog paths still probed every uncovered case; removal mostly displaced probes into direct guesses. The verdict was harmful. | [Coverage-receipt successor](../evidence/preaction-coverage-receipt-successor-20260821T144006Z/README.md) |
+| Can an isolated `complete` or `none` status guide the first action? | No. Every complete branch guessed, every none branch mostly guessed, and the frozen decision closed the coverage-representation route. | [Compact status calibration](../evidence/compact-coverage-status-calibration-20260821T151604Z/README.md) |
+| Can admitted records govern access to the costly diagnostic without harness action choice? | Yes as a deterministic runtime mechanism. Complete learned, supplied, and reversed coverage authorizes; removal and uncovered alphabets withhold without an environment action. | [Governed policy specimen](../evidence/governed-diagnostic-policy-specimen-20260821T153245Z/README.md) |
 
 ## Authority reference
 
@@ -94,6 +98,7 @@ the sequence but cannot turn an observation into a finding.
 | What separates exploration from claim-bearing validation? | [EVALUATION.md](EVALUATION.md) |
 | What should the first general implementation contain and exclude? | [BUILD.md](BUILD.md) |
 | How should public findings and explanations be written? | [STYLE_GUIDE.md](../STYLE_GUIDE.md) |
+| What governs opening a costly diagnostic encounter? | [GOVERNED_DIAGNOSTIC_ENCOUNTER_POLICY.md](GOVERNED_DIAGNOSTIC_ENCOUNTER_POLICY.md) |
 
 ## Earlier developmental route
 

@@ -227,6 +227,36 @@ outcomes, one-action continuation, covered and empty exact-match receipts,
 separate consequence fields, refusals, immutability, order independence, the
 three prospective behavioral predictions, and exact zero-call replay.
 
+Seven fake-contact tests cover the knowledge-cost interaction exploration.
+They bind the conforming instrument, learned records, and supported empty-
+receipt packet; freeze the exact Qwen artifact, public alphabets, six-condition
+72-episode schedule, 144-call ceiling, and stopping rule; preserve initial
+request identity and separate action scores; reproduce the supported fake
+interaction; replay every retained request and response; and prove the default
+path makes no model contact.
+
+Seven fake-contact tests cover the matched pre-action coverage-receipt
+successor. They freeze the exact set-comparison receipt, prove that it contains
+no action advice, keep reversed records fully covering, bind the harmful parent
+packet, reproduce all 48 parent initial request hashes, preserve learned and
+supplied identity, exercise the supported fake comparison, replay every
+retained request and response, and prove the default path makes no model
+contact.
+
+Seven fake-contact tests cover the compact coverage-status calibration. They
+freeze the first-action-only 72-call schedule, exact `complete` and `none`
+computation, no-advice status form, byte-identical provenance controls, 24
+exact parent request hashes, the explicit route stop, supported fake behavior,
+raw-evidence replay, and the no-contact default path.
+
+Fifteen tests cover the governed diagnostic policy specimen. They bind the
+exact retained admitted-record source, keep hidden profiles out of decisions,
+collapse learned, supplied, and reversed authorization, withhold removal and
+uncovered paths without an environment action, preserve costly external
+transitions and exact post-signal selection, distinguish correct and reversed
+later outcomes, refuse nine malformed or stale paths, and replay the zero-call
+packet exactly.
+
 Six fake-contact tests cover the asymmetric clerk and participant runner. They
 freeze its 222-call budget, reject a false clerk record, reproduce the complete
 supported comparison, prove matching and no-signal request identities, replay
@@ -245,5 +275,5 @@ parents, reproduce 72 exact parent control request hashes, preserve the harmful
 interface, exercise the supported empty-receipt comparison, replay every byte,
 and prove the default command makes no model contact.
 
-The full locked-environment run passes 715 tests and 362 subtests with
+The full locked-environment run passes 751 tests and 362 subtests with
 `uv run pytest -q`.
