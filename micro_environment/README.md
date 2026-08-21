@@ -1,6 +1,6 @@
 # Deterministic environment specimens
 
-This package contains five isolated deterministic transition engines. The first
+This package contains six isolated deterministic transition engines. The first
 is licensed by the
 [revision micro-environment charter](../docs/MICRO_ENVIRONMENT_CHARTER.md). It
 reads an immutable revision state and one exact action, then returns a fresh
@@ -51,3 +51,10 @@ emits a profile-specific signal; hold preserves it without information. A
 third permitted signal supports paired cases where no retained mapping applies.
 The engine does not interpret a signal, choose an action, retain a record, or
 call a model. Those responsibilities remain outside this package.
+
+The sixth engine implements the
+[knowledge-cost interaction specimen](../docs/KNOWLEDGE_COST_INTERACTION_SPECIMEN.md).
+It publishes a diagnostic alphabet and a free or service-window-consuming cost
+before the first action, keeps the emitted signal and valid task slot hidden,
+makes first-action hold terminal, and permits exactly one action after a
+diagnostic. Exact record matching and scoring remain outside the environment.

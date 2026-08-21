@@ -90,6 +90,23 @@ and compared each final state with cold, raw history, supplied records, newest-
 proposal use, and causal removal. Its formal null routed to the completed fresh
 recovery-influence successor described above.
 
+## Completed instrument: can knowledge change the value of information?
+
+The [knowledge-cost specimen](KNOWLEDGE_COST_INTERACTION_SPECIMEN.md) publishes
+the diagnostic alphabet and an external service-window cost before the first
+action. It keeps the emitted signal and valid task control hidden, makes
+first-action hold terminal, and preserves separate completion, failure,
+abstention, information, and cost facts.
+
+Its zero-call evidence conforms. The exact-match receipt returns one record ID
+for covered signals and an empty list for uncovered signals. The specimen also
+freezes the three comparisons needed to interpret later behavior: coverage
+rather than correctness should drive the first action; removal must cross both
+alphabets; and first- and second-action scores cannot be merged.
+
+This result establishes only an available instrument. It does not license a
+runner or contact and contains no behavioral threshold or Formation claim.
+
 ## What happens after a mechanism survives
 
 Exploration is allowed to find variance, malformed output, harmful behavior,

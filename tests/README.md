@@ -1,6 +1,6 @@
 # Deterministic contract tests
 
-The current 177 non-contact tests include 162 tests covering the fixture-local
+The current 198 non-contact tests include 162 tests covering the fixture-local
 prefix,
 first condition append,
 typed admitted-root boundary, public replay-constraint append, and shared
@@ -220,6 +220,13 @@ opposite terminal task results, safe diagnostic and hold transitions,
 immutability, order independence, refusals, public identity, the scorer-only
 probe interpreter, and exact replay.
 
+Twenty-one tests cover the knowledge-cost interaction engine and specimen.
+They freeze the public covered and uncovered alphabets, costly and free
+service-window transitions, terminal first-action hold, opposite hidden task
+outcomes, one-action continuation, covered and empty exact-match receipts,
+separate consequence fields, refusals, immutability, order independence, the
+three prospective behavioral predictions, and exact zero-call replay.
+
 Six fake-contact tests cover the asymmetric clerk and participant runner. They
 freeze its 222-call budget, reject a false clerk record, reproduce the complete
 supported comparison, prove matching and no-signal request identities, replay
@@ -238,5 +245,5 @@ parents, reproduce 72 exact parent control request hashes, preserve the harmful
 interface, exercise the supported empty-receipt comparison, replay every byte,
 and prove the default command makes no model contact.
 
-The full locked-environment run passes 694 tests and 362 subtests with
+The full locked-environment run passes 715 tests and 362 subtests with
 `uv run pytest -q`.

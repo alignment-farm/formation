@@ -76,6 +76,7 @@ claims to the externally retained raw attempts by hash.
 | [Self-directed probe contact](self-directed-probe-contact-20260820T225832Z/README.md) | The catalog guided 17/18 known signals but did not cause probing and guessed beyond its evidence, producing a harmful verdict. |
 | [Explicit applicability receipt](explicit-applicability-receipt-contact-20260820T231222Z/README.md) | Every unsafe control held under changed wording, so the receipt comparison did not engage. |
 | [Matched applicability receipt](matched-applicability-receipt-successor-20260820T232130Z/README.md) | Exact unsafe controls recurred; an explicit empty match receipt replaced six unsupported guesses with six holds. |
+| [Knowledge-cost interaction specimen](knowledge-cost-interaction-specimen-20260821T112825Z/README.md) | A zero-call world now publishes signal coverage and a service-window probe cost before action while keeping the current signal and valid control hidden. |
 
 For the older sequence, use the [research history](../docs/RESEARCH_HISTORY.md)
 instead of opening directories by date.

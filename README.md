@@ -105,32 +105,34 @@ observation facts unless a prospective comparison supports a stronger claim.
 
 ### Current empirical problem
 
-The latest experiment repaired a representation boundary exposed by a harmful
-result. A restricted clerk had turned earlier consequences into checked signal
-records, but the participant guessed when a new signal matched none of them.
-The successor gave the participant an explicit runtime receipt: either the
-exact matching record, or the fact that no record matched.
+The latest work built the zero-call world needed to test whether retained
+knowledge changes the value of seeking information. Before the first action,
+the public device now states both signals its diagnostic may emit and whether
+using that diagnostic will consume a separate service window. The current
+hidden signal and valid task control remain private.
 
-The comparison reused 72 exact request bodies from the harmful parent run.
-With a known signal, learned and supplied receipts each completed 18 of 18
-tasks; reversed receipts failed all 18. With an unfamiliar signal, the full
-catalog and silent absence each guessed six times and failed three. An explicit
-empty receipt produced six holds and no failures. The frozen verdict is
-`supported`.
+The deterministic specimen conforms. Covered devices publish two signals that
+each have one exact record fixture. Uncovered devices publish two signals that
+match no record. A costly diagnostic consumes the same public service window
+on both device classes; a free diagnostic preserves it. First-action hold ends
+the episode without a charge. Completion, failure, abstention, information,
+and service-window consumption remain separate facts. No model was called.
 
-This supports the receipt as a representation of what the runtime found. It
-does not show that the receipt chose an action, that the learned record beats
-supplied guidance, or that Formation has occurred.
+The behavioral question is now whether access to records covering the public
+alphabet changes the participant's first action under cost. The frozen
+prediction is an interaction: learned, supplied, and reversed records should
+all make a covered diagnostic look interpretable before use, while removal
+should not. Reversed records should diverge only after the signal arrives.
+Removal must run on both covered and uncovered alphabets, and free-probe
+learned and removal cells must reproduce the earlier pressure to probe.
 
-The current question is whether retained knowledge can change the value of
-seeking information. In the existing two-step world, probing is nearly free:
-even a branch with no useful mapping can probe and still retain its chance to
-guess. The next deterministic world must give probing an external cost or lost
-opportunity. It must keep completion, failure, abstention, information, and
-probe cost separate, without telling the participant which first action is
-preferred.
+No runner, participant prompt, behavioral threshold, or model contact is yet
+authorized by this specimen. Even a clean later interaction would support only
+that applicable retained knowledge changed whether this cold participant paid
+an external cost for information. It would not show general value-of-
+information reasoning, superiority to supplied guidance, or Formation.
 
-Read the [latest evidence account](evidence/matched-applicability-receipt-successor-20260820T232130Z/README.md)
+Read the [latest evidence account](evidence/knowledge-cost-interaction-specimen-20260821T112825Z/README.md)
 for the exact result and limits. The [research history](docs/RESEARCH_HISTORY.md)
 owns the route that led here, and the [plan](docs/PLAN.md) owns standing
 milestones and stopping conditions. Formation remains null.

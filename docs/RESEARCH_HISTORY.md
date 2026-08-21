@@ -742,6 +742,21 @@ even without a mapping. A successor would need to make information gathering
 costly or useless without retained knowledge before another causal probe claim
 could be tested.
 
+The next zero-call specimen added that missing pressure. Its public state names
+the diagnostic's complete two-signal alphabet and whether the diagnostic will
+consume a separate service window. The hidden profile still determines which
+signal appears and which task control succeeds. Covered alphabets have exact
+record fixtures; uncovered alphabets do not. First-action hold is terminal, and
+task outcome, information, abstention, and service-window consumption remain
+separate.
+
+All deterministic transitions, receipts, refusals, public-identity checks, and
+replay checks conformed. No model was called. The retained predictions require
+covered learned, supplied, and reversed records to attract similar costly
+probing; require removal on both alphabets; and forbid empty-receipt abstention
+from substituting for the first-action comparison. The result makes a later
+knowledge-by-cost interaction testable but supplies no behavioral evidence.
+
 ## Supporting implementation history
 
 The deterministic runtime and harness lane developed alongside these contacts.

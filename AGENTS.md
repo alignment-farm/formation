@@ -330,6 +330,9 @@ Stop when the task's scope and authority are clear.
 - `docs/MATCHED_APPLICABILITY_RECEIPT_SUCCESSOR.md` owns the exact predecessor-
   interface replication and receipt-only successor after that comparison did
   not engage.
+- `docs/KNOWLEDGE_COST_INTERACTION_SPECIMEN.md` owns the zero-call public
+  diagnostic alphabet, external service-window cost, terminal first-action
+  hold, exact-match receipts, and frozen predictions before any later contact.
 - `docs/BUILD.md` owns the initial implementation boundary and build order.
 - `STYLE_GUIDE.md` owns the Feynman-style writing standard for public-facing
   findings and explanations.

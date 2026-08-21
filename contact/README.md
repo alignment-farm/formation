@@ -470,3 +470,11 @@ guess on all six unfamiliar signals and fail three. Empty learned, supplied,
 and reversed receipts are byte-identical and hold 6/6. Known learned and
 supplied receipts complete 18/18; reversed receipts fail 18/18. The frozen
 verdict is `supported`.
+
+The sixty-sixth executable makes no model calls. It conforms the public
+alphabet and service-window world needed for a later knowledge-by-cost test.
+Costly diagnostics consume the same public window on covered and uncovered
+devices; free diagnostics preserve it; first-action hold is terminal; and
+exact-match receipts distinguish one covered record from an empty uncovered
+result. Its exact replay finding is
+`knowledge_cost_interaction_world_available`.

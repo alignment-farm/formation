@@ -79,6 +79,7 @@ the sequence but cannot turn an observation into a finding.
 | Do those records cause the participant to seek information? | No. Cold and removal already probed every time, and the learned path guessed beyond its evidence. The verdict was harmful. | [Self-directed probe](../evidence/self-directed-probe-contact-20260820T225832Z/README.md) |
 | Does an explicit no-match receipt prevent unsupported action? | The first comparison did not engage because its controls changed behavior under new wording. | [First receipt contact](../evidence/explicit-applicability-receipt-contact-20260820T231222Z/README.md) |
 | Does the receipt work against exact harmful controls? | Yes. Silent absence guessed and failed three of six unfamiliar cases; an explicit empty receipt held all six. | [Matched receipt successor](../evidence/matched-applicability-receipt-successor-20260820T232130Z/README.md) |
+| Can a deterministic world expose whether retained knowledge changes the value of a costly diagnostic? | Yes as an instrument. It publishes the signal alphabet and service-window cost before action while keeping the emitted signal and valid control hidden. No model was called. | [Knowledge-cost specimen](../evidence/knowledge-cost-interaction-specimen-20260821T112825Z/README.md) |
 
 ## Authority reference
 
